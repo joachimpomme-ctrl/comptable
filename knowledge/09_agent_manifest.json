@@ -1,0 +1,51 @@
+{
+  "name": "base_knowledge_comptable_financiere_patrimoniale",
+  "generated_at": "2026-05-11T22:35:47",
+  "language": "fr",
+  "scope": [
+    "gestion comptable",
+    "référentiel comptable français",
+    "fiscalité professionnelle BNC/BIC",
+    "location meublée LMNP/LMP",
+    "gestion financière",
+    "gestion de patrimoine",
+    "conformité et déontologie"
+  ],
+  "files": {
+    "documents": "documents.json",
+    "chunks": "chunks.jsonl",
+    "knowledge_cards_candidates": "knowledge_cards_candidates.jsonl",
+    "lexical_index": "lexical_index.json",
+    "qa_tests": "qa_tests.json"
+  },
+  "counts": {
+    "documents": 33,
+    "chunks": 1716,
+    "knowledge_cards_candidates": 7137,
+    "corpus_documents": 32,
+    "supplements": 1
+  },
+  "retrieval_policy": {
+    "default": "hybrid_full_text_plus_embedding_ready_chunks",
+    "mandatory_filters": [
+      "domain_tags",
+      "source_path",
+      "page_start",
+      "page_end"
+    ],
+    "answer_policy": [
+      "Ne jamais répondre sans source issue d'un chunk ou d'une fiche.",
+      "Citer document et page quand disponibles.",
+      "Pour fiscalité, patrimoine et réglementation, afficher le millésime ou signaler qu'il doit être vérifié.",
+      "En cas de conflit ou source insuffisante, refuser de conclure et demander arbitrage expert."
+    ]
+  },
+  "completion_status": {
+    "corpus_inventory": "complete_for_local_files",
+    "recovered_url_pdf_available_but_not_integrated_if_corpus_repaired": true,
+    "recovered_url_pdf_integrated": false,
+    "manual_ocr_pages_integrated": true,
+    "embeddings": "not_generated_here",
+    "expert_validation": "required_for_sensitive_rules"
+  }
+}

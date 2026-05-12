@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent IA Comptable &amp; Patrimoine — Guide d'installation</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #64748b;
+      --accent: #0ea5e9;
+      --success: #059669;
+      --warning: #d97706;
+      --danger: #dc2626;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --code-bg: #1e293b;
+      --code-text: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px; line-height: 1.75; color: var(--text); background: var(--bg);
+    }
+    a { color: var(--primary); }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      color: white; padding: 52px 32px 40px; text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header .subtitle { color: #94a3b8; margin-top: 10px; font-size: 1rem; }
+    .badges { display: flex; gap: 10px; justify-content: center; margin-top: 18px; }
+    .badge {
+      display: inline-block; padding: 4px 14px; border-radius: 20px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+    }
+    .badge-gemini { background: #1a3a6b; color: #93c5fd; border: 1px solid #3b82f6; }
+    .badge-chatgpt { background: #064e3b; color: #6ee7b7; border: 1px solid #10b981; }
+    .badge-both { background: #1e293b; color: #94a3b8; border: 1px solid #475569; }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100; padding: 0 16px;
+    }
+    nav ul { list-style: none; display: flex; overflow-x: auto; gap: 0; }
+    nav a {
+      display: block; padding: 14px 16px;
+      color: var(--muted); text-decoration: none;
+      font-size: 13px; font-weight: 500; white-space: nowrap;
+      border-bottom: 2px solid transparent; transition: all 0.15s;
+    }
+    nav a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+
+    /* ── Main ── */
+    main { max-width: 880px; margin: 0 auto; padding: 48px 24px 80px; }
+    section { margin-bottom: 72px; scroll-margin-top: 60px; }
+
+    h2 {
+      font-size: 1.55rem; color: var(--text); margin-bottom: 24px;
+      padding-bottom: 12px; border-bottom: 2px solid var(--primary);
+      display: flex; align-items: center; gap: 12px;
+    }
+    h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); margin: 32px 0 12px; }
+    p { margin-bottom: 14px; }
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 5px; }
+    strong { color: var(--text); }
+
+    /* ── Platform section ── */
+    .platform-block {
+      border: 1px solid var(--border); border-radius: 10px;
+      overflow: hidden; margin-bottom: 32px;
+    }
+    .platform-block-header {
+      padding: 14px 20px; display: flex; align-items: center; gap: 10px;
+      font-weight: 700; font-size: 1rem;
+    }
+    .platform-block-header.gemini { background: #eff6ff; border-bottom: 2px solid #3b82f6; color: #1d4ed8; }
+    .platform-block-header.chatgpt { background: #ecfdf5; border-bottom: 2px solid #10b981; color: #065f46; }
+    .platform-block-body { padding: 20px 24px; }
+
+    /* ── Steps ── */
+    .steps { display: flex; flex-direction: column; gap: 12px; }
+    .step {
+      display: flex; gap: 16px; padding: 18px 20px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    }
+    .step-num {
+      flex-shrink: 0; width: 28px; height: 28px;
+      background: var(--primary); color: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700; margin-top: 1px;
+    }
+    .step-num.green { background: var(--success); }
+    .step-body h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .step-body p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .step-body p strong { color: var(--text); }
+
+    /* ── Alerts ── */
+    .alert {
+      padding: 14px 18px; border-radius: 8px; margin: 16px 0;
+      font-size: 14px; line-height: 1.6;
+    }
+    .alert strong { display: block; margin-bottom: 4px; }
+    .alert-info { background: #eff6ff; border-left: 4px solid var(--primary); color: #1e40af; }
+    .alert-warning { background: #fffbeb; border-left: 4px solid var(--warning); color: #92400e; }
+    .alert-danger { background: #fef2f2; border-left: 4px solid var(--danger); color: #991b1b; }
+
+    /* ── Code ── */
+    code {
+      font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+      font-size: 12.5px;
+    }
+    .inline-code {
+      background: #f1f5f9; color: #dc2626; padding: 1px 6px; border-radius: 3px;
+    }
+    pre {
+      background: var(--code-bg); color: var(--code-text);
+      padding: 18px 20px; border-radius: 8px; overflow-x: auto;
+      margin: 14px 0; font-size: 13px; line-height: 1.65;
+    }
+
+    /* ── Table ── */
+    .file-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.5px; }
+    .file-table th {
+      background: var(--code-bg); color: #e2e8f0;
+      padding: 10px 14px; text-align: left; font-weight: 600;
+    }
+    .file-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .file-table tr:last-child td { border-bottom: none; }
+    .file-table tr:hover td { background: #f8fafc; }
+    .file-table td:first-child { font-family: monospace; color: var(--primary); font-size: 12.5px; white-space: nowrap; }
+
+    /* ── Prompts ── */
+    .prompt {
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px; border-radius: 0 8px 8px 0;
+      margin: 10px 0; font-style: italic; font-size: 14px; color: #334155;
+    }
+    .prompt::before { content: "Exemple : "; font-style: normal; font-weight: 600; color: var(--accent); }
+
+    /* ── Tags ── */
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+    .tag {
+      background: #f1f5f9; color: var(--muted); border: 1px solid var(--border);
+      padding: 3px 10px; border-radius: 20px; font-size: 12.5px;
+    }
+
+    /* ── Warning box ── */
+    .important-box {
+      background: #fef9ec; border: 2px solid var(--warning);
+      border-radius: 10px; padding: 20px 24px; margin: 20px 0;
+    }
+    .important-box h4 { color: var(--warning); margin-bottom: 8px; font-size: 0.95rem; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center; padding: 32px 16px;
+      color: var(--muted); font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Agent IA Comptable &amp; Patrimoine</h1>
+  <p class="subtitle">Guide d'installation et de configuration &mdash; Version 2026-05-12</p>
+  <div class="badges">
+    <span class="badge badge-gemini">Gemini Gems</span>
+    <span class="badge badge-chatgpt">ChatGPT Custom GPT</span>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#presentation">Presentation</a></li>
+    <li><a href="#prerequis">Prerequis</a></li>
+    <li><a href="#fichiers">Fichiers</a></li>
+    <li><a href="#gemini">Installation Gemini</a></li>
+    <li><a href="#chatgpt">Installation ChatGPT</a></li>
+    <li><a href="#archivage">Archivage Drive</a></li>
+    <li><a href="#utilisation">Utilisation</a></li>
+    <li><a href="#limites">Limites</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- PRESENTATION -->
+  <section id="presentation">
+    <h2>Presentation</h2>
+
+    <p>Cet agent est un assistant IA specialise en <strong>comptabilite, fiscalite des professions liberales, location meublee, gestion financiere et gestion de patrimoine</strong>. Il raisonne a partir d'une base de connaissances structuree — 359 regles curatees, 12 modules metier, 27 exemples calibres — et produit des reponses sourcees, tracables et prudentes.</p>
+
+    <div class="alert alert-warning">
+      <strong>Ce n'est pas un substitut a un professionnel.</strong>
+      Toutes les regles sont des "candidats a valider" (<span class="inline-code">candidate_to_validate</span>). Ne prenez jamais de decision fiscale, patrimoniale ou juridique importante sur la seule base de cet agent.
+    </div>
+
+    <h3>Domaines couverts</h3>
+    <div class="tags">
+      <span class="tag">Comptabilite BNC</span>
+      <span class="tag">Fiscalite PL 2025</span>
+      <span class="tag">LMNP / LMP</span>
+      <span class="tag">Revenus fonciers</span>
+      <span class="tag">Plus-values immobilieres</span>
+      <span class="tag">Gestion financiere</span>
+      <span class="tag">Succession &amp; donations</span>
+      <span class="tag">Assurance-vie</span>
+      <span class="tag">PER / PEE / PERCOL</span>
+      <span class="tag">IFI</span>
+      <span class="tag">SCI</span>
+      <span class="tag">Baremes DMTG</span>
+      <span class="tag">Epargne salariale</span>
+    </div>
+
+    <h3>Hors scope delibere</h3>
+    <ul>
+      <li>Fiscalite crypto-actifs</li>
+      <li>TVA intracommunautaire</li>
+      <li>Fiscalite internationale</li>
+      <li>Credit-bail (comptabilisation preneur)</li>
+    </ul>
+  </section>
+
+  <!-- PREREQUIS -->
+  <section id="prerequis">
+    <h2>Prerequis</h2>
+
+    <div class="platform-block">
+      <div class="platform-block-header gemini">Gemini Gems</div>
+      <div class="platform-block-body">
+        <ul>
+          <li>Compte Google avec abonnement <strong>Google One AI Premium</strong> ou <strong>Google Workspace</strong> (necessaire pour creer des Gems personnalises)</li>
+          <li>Acces Google Drive, Google Docs et Google Sheets (pour l'archivage)</li>
+          <li>Les 13 fichiers de ce package (voir section Fichiers)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="platform-block">
+      <div class="platform-block-header chatgpt">ChatGPT Custom GPT</div>
+      <div class="platform-block-body">
+        <ul>
+          <li>Compte OpenAI avec abonnement <strong>ChatGPT Plus</strong> ou <strong>Team</strong></li>
+          <li>Les 12 fichiers de connaissances de ce package</li>
+          <li>Note : l'archivage Google Drive n'est pas disponible sur ChatGPT</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FICHIERS -->
+  <section id="fichiers">
+    <h2>Structure des fichiers</h2>
+
+    <p>Le package contient les fichiers suivants. Veillez a tous les inclure.</p>
+
+    <table class="file-table">
+      <thead>
+        <tr>
+          <th>Fichier</th>
+          <th>Role</th>
+          <th>Plateforme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>gemini/00_INSTRUCTIONS_GEMINI.md</td>
+          <td>System prompt complet — avec archivage Drive. <strong>A configurer</strong> (remplacer le placeholder du dossier Drive).</td>
+          <td><span class="badge badge-gemini">Gemini</span></td>
+        </tr>
+        <tr>
+          <td>chatgpt/00_INSTRUCTIONS_CHATGPT.md</td>
+          <td>System prompt adapte — sans Drive, avec instructions d'export manuel.</td>
+          <td><span class="badge badge-chatgpt">ChatGPT</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/01_decision_engine.md</td>
+          <td>Moteur decisionnel IF/THEN — 10 modules metier (comptabilite, fiscalite, LMNP, patrimoine...)</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/02_golden_rules_claude_first.md</td>
+          <td>359 regles curatees structurees — coeur du raisonnement metier</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/03_few_shots.md</td>
+          <td>27 exemples calibres (questions/reponses) — calibre le style de l'agent</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/04_formules_et_risques.md</td>
+          <td>7 formules de calcul + 8 risques critiques (amortissements, PV LMNP, IFI...)</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/05_agent_governance.md</td>
+          <td>4 playbooks + risk matrix + deontologie professionnelle</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/06_golden_checklists.md</td>
+          <td>Checklists operationnelles par domaine</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/07_rule_source_crosswalk.jsonl</td>
+          <td>Tracabilite : chaque regle reliee a sa page source PDF</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/08_evaluation_suite.md</td>
+          <td>28 cas de test de reference pour valider le comportement de l'agent</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/09_agent_manifest.json</td>
+          <td>Metadonnees du corpus (scope, counts, statut)</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>knowledge/10_documents.json</td>
+          <td>Inventaire des 33 documents sources du corpus</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
+          <td>scripts/archivage_analyses.gs</td>
+          <td>Script Google Apps Script — archive automatiquement les documents crees dans Drive</td>
+          <td><span class="badge badge-gemini">Gemini</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert alert-info">
+      <strong>Priorite si ChatGPT refuse certains fichiers (limite de taille)</strong>
+      Uploadez en priorite : 01, 02, 03, 04, 05, 06. Ce sont les fichiers les plus importants pour le raisonnement metier.
+    </div>
+  </section>
+
+  <!-- GEMINI -->
+  <section id="gemini">
+    <h2>Installation sur Gemini <span class="badge badge-gemini" style="font-size:11px;vertical-align:middle;margin-left:8px">Gemini Gems</span></h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Acceder aux Gems</h4>
+          <p>Connectez-vous sur <strong>gemini.google.com</strong>. Dans le menu de gauche, cliquez sur <strong>"Mes Gems"</strong> puis <strong>"Nouveau Gem"</strong>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Nommer le Gem</h4>
+          <p>Nom suggere : <span class="inline-code">Agent Comptable &amp; Patrimoine</span><br>
+          Description suggeree : <span class="inline-code">Expert en comptabilite BNC, fiscalite PL, LMNP/LMP, patrimoine et gestion financiere. Reponses sourcees.</span></p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Coller le system prompt</h4>
+          <p>Ouvrez <span class="inline-code">gemini/00_INSTRUCTIONS_GEMINI.md</span>, copiez son contenu integral et collez-le dans le champ <strong>"Instructions"</strong> du Gem.</p>
+          <p><strong>Important :</strong> avant de sauvegarder, remplacez les 2 occurrences de <span class="inline-code">[VOTRE_FOLDER_ID_DRIVE]</span> par l'ID de votre dossier Google Drive. Voir la section Archivage pour obtenir cet ID.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>Ajouter les fichiers de connaissances</h4>
+          <p>Dans la section <strong>"Connaissances"</strong>, uploadez les 10 fichiers du dossier <span class="inline-code">knowledge/</span> (de 01 a 10).</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h4>Activer les outils Google Workspace</h4>
+          <p>Dans la section <strong>"Outils"</strong>, activez :<br>
+          — <strong>Google Drive</strong> — acces aux fichiers<br>
+          — <strong>Google Docs</strong> — creation d'analyses narratives<br>
+          — <strong>Google Sheets</strong> — creation de tableaux chiffres</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num green">6</div>
+        <div class="step-body">
+          <h4>Sauvegarder et tester</h4>
+          <p>Cliquez sur <strong>"Enregistrer"</strong>. Testez avec : <em>"Quels sont les seuils du regime micro-BNC en 2025 ?"</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHATGPT -->
+  <section id="chatgpt">
+    <h2>Installation sur ChatGPT <span class="badge badge-chatgpt" style="font-size:11px;vertical-align:middle;margin-left:8px">Custom GPT</span></h2>
+
+    <div class="alert alert-info">
+      <strong>Version sans Google Drive</strong>
+      L'agent ChatGPT couvre les memes domaines metier que la version Gemini. La seule difference est que l'archivage automatique dans Google Drive n'est pas disponible (ChatGPT ne dispose pas d'integration native Google Workspace).
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Acceder a la creation de GPT</h4>
+          <p>Connectez-vous sur <strong>chatgpt.com</strong>. Cliquez sur <strong>"Explorer les GPTs"</strong> puis <strong>"+ Creer"</strong>. Choisissez l'onglet <strong>"Configurer"</strong>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Nommer le GPT</h4>
+          <p>Nom : <span class="inline-code">Agent Comptable &amp; Patrimoine</span><br>
+          Description : <span class="inline-code">Expert en comptabilite BNC, fiscalite PL, LMNP/LMP, patrimoine. Reponses sourcees et prudentes.</span></p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Coller les instructions</h4>
+          <p>Ouvrez <span class="inline-code">chatgpt/00_INSTRUCTIONS_CHATGPT.md</span>, copiez son contenu et collez-le dans le champ <strong>"Instructions"</strong>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>Uploader les fichiers de connaissances</h4>
+          <p>Dans <strong>"Base de connaissances"</strong>, uploadez les fichiers du dossier <span class="inline-code">knowledge/</span>.<br>
+          Si vous rencontrez une limite de taille, uploadez en priorite les fichiers 01 a 06.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h4>Activer la recherche dans la base de connaissances</h4>
+          <p>Dans <strong>"Capacites"</strong>, cochez <strong>"Recherche dans la base de connaissances"</strong>. Vous pouvez aussi activer <strong>"Interpretation de code"</strong> pour les calculs financiers.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num green">6</div>
+        <div class="step-body">
+          <h4>Sauvegarder et tester</h4>
+          <p>Cliquez sur <strong>"Mettre a jour"</strong>. Testez avec : <em>"Quels sont les seuils du regime micro-BNC en 2025 ?"</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHIVAGE -->
+  <section id="archivage">
+    <h2>Configuration de l'archivage <span class="badge badge-gemini" style="font-size:11px;vertical-align:middle;margin-left:8px">Gemini uniquement</span></h2>
+
+    <p>L'archivage permet a l'agent de sauvegarder les analyses dans Google Drive et d'y acceder lors de futures conversations. Il ne se declenche que sur demande explicite.</p>
+
+    <h3>1. Creer votre dossier Archive dans Google Drive</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Creer le dossier</h4>
+          <p>Ouvrez <strong>drive.google.com</strong>. Creez un nouveau dossier (ex. : <span class="inline-code">Archive Analyses IA</span>). Placez-le ou vous voulez.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Recuperer l'ID du dossier</h4>
+          <p>Ouvrez le dossier. Regardez l'URL dans votre navigateur :</p>
+          <pre>https://drive.google.com/drive/folders/<strong>VOTRE_ID_ICI</strong></pre>
+          <p>La chaine apres <span class="inline-code">/folders/</span> est votre ID. Copiez-la.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Remplacer le placeholder dans les instructions</h4>
+          <p>Dans les instructions de votre Gem, cherchez <span class="inline-code">[VOTRE_FOLDER_ID_DRIVE]</span> et remplacez les <strong>2 occurrences</strong> par votre ID. Sauvegardez le Gem.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>2. Deployer le script d'archivage automatique (optionnel)</h3>
+    <p>Si l'agent cree un document a la racine du Drive plutot que dans le bon dossier, ce script le deplace automatiquement chaque nuit.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Ouvrir Google Apps Script</h4>
+          <p>Allez sur <strong>script.google.com</strong> &rarr; <strong>Nouveau projet</strong>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Coller le script</h4>
+          <p>Copiez le contenu de <span class="inline-code">scripts/archivage_analyses.gs</span> dans l'editeur. Remplacez <span class="inline-code">VOTRE_FOLDER_ID_ICI</span> par votre ID de dossier.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Autoriser et tester</h4>
+          <p>Executez <span class="inline-code">moveAnalysesToArchive()</span>. Google demande une autorisation OAuth : acceptez. Verifiez les logs (menu "Journaux d'execution").</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>Activer le declencheur quotidien</h4>
+          <p>Executez <span class="inline-code">installDailyTrigger()</span> pour activer un archivage automatique a 2h du matin. A faire une seule fois.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Convention de nommage des documents</h3>
+    <p>L'agent nomme automatiquement les documents selon cette convention :</p>
+    <pre>AAAA-MM-JJ &mdash; [Type] &mdash; [Sujet court]
+
+Exemples :
+  2026-05-12 &mdash; Analyse  &mdash; Optimisation PEA
+  2026-05-12 &mdash; Projection &mdash; Revenus LMNP 2026-2030
+  2026-05-12 &mdash; Bilan    &mdash; Situation patrimoniale</pre>
+    <p>Types disponibles : <span class="inline-code">Analyse</span>, <span class="inline-code">Bilan</span>, <span class="inline-code">Synthese</span>, <span class="inline-code">Note</span>, <span class="inline-code">Projection</span>, <span class="inline-code">Comparatif</span>, <span class="inline-code">Recommandation</span></p>
+  </section>
+
+  <!-- UTILISATION -->
+  <section id="utilisation">
+    <h2>Utilisation de l'agent</h2>
+
+    <h3>Questions de base</h3>
+    <div class="prompt">"Quels sont les seuils du regime micro-BNC en 2025 ?"</div>
+    <div class="prompt">"Quelle est la difference entre LMNP et LMP ?"</div>
+    <div class="prompt">"Comment calcule-t-on le BFR d'une entreprise ?"</div>
+
+    <h3>Analyses complexes</h3>
+    <div class="prompt">"Je suis medecin liberal en BNC, CA 150 000 EUR. Comparez micro-BNC et regime reel pour ma situation fiscale 2025."</div>
+    <div class="prompt">"J'ai un bien loue nu, revenu brut 18 000 EUR/an, charges 6 000 EUR. Quel est mon resultat foncier imposable et dans quels cas le passage au meuble serait-il avantageux ?"</div>
+    <div class="prompt">"Quelle strategie de transmission optimale pour un patrimoine de 800 000 EUR avec 2 enfants, TMI 41%, horizon 15 ans ?"</div>
+
+    <h3>Demander un archivage <span class="badge badge-gemini" style="font-size:11px;vertical-align:middle">Gemini</span></h3>
+    <div class="prompt">"Enregistre cette analyse dans un Google Doc."</div>
+    <div class="prompt">"Sauvegarde ce comparatif dans un Google Sheet et mets-le dans mon Drive."</div>
+
+    <h3>Demander un export manuel <span class="badge badge-chatgpt" style="font-size:11px;vertical-align:middle">ChatGPT</span></h3>
+    <div class="prompt">"Genere la version document de cette analyse, que je puisse la copier dans mon Google Doc."</div>
+
+    <h3>Format de reponse</h3>
+    <p>L'agent structure toujours ses reponses en sections :</p>
+    <ul>
+      <li><strong>Situation identifiee</strong> — qualification du cas et du domaine</li>
+      <li><strong>Regles applicables</strong> — avec IDs de regles et statut de validation</li>
+      <li><strong>Application / calcul</strong> — raisonnement etape par etape</li>
+      <li><strong>Points de vigilance</strong> — exceptions, millesimes, risques</li>
+      <li><strong>Sources</strong> — documents et pages de reference</li>
+      <li><strong>Validation requise</strong> — quel professionnel consulter</li>
+    </ul>
+  </section>
+
+  <!-- LIMITES -->
+  <section id="limites">
+    <h2>Limites et avertissements</h2>
+
+    <div class="important-box">
+      <h4>Avertissement important</h4>
+      <p>Toutes les regles de la base de connaissances sont des <strong>"candidats a valider"</strong> (<span class="inline-code">candidate_to_validate</span>). Elles n'ont pas ete validees formellement par un expert-comptable, fiscaliste, notaire ou conseiller en gestion de patrimoine.</p>
+      <p style="margin-top:10px"><strong>Ne prenez jamais une decision fiscale, patrimoniale ou juridique importante sur la seule base des reponses de cet agent.</strong></p>
+    </div>
+
+    <h3>Millesimes</h3>
+    <p>Les baremes fiscaux (IR, PASS, plafonds PER, seuils micro) changent chaque annee avec la Loi de Finances. Verifiez toujours que la reponse utilise le bon millesime. La base doit etre mise a jour en janvier de chaque annee.</p>
+
+    <h3>Decisions a fort enjeu — toujours valider avec un professionnel</h3>
+    <div class="tags">
+      <span class="tag">Option IS d'une SCI</span>
+      <span class="tag">Changement regime matrimonial</span>
+      <span class="tag">Donation-partage</span>
+      <span class="tag">Demembrement</span>
+      <span class="tag">Clause beneficiaire AV complexe</span>
+      <span class="tag">Structuration SEL / SPFPL / holding</span>
+      <span class="tag">Passage micro vers reel</span>
+      <span class="tag">Arbitrage patrimonial familial</span>
+    </div>
+
+    <h3>Differences entre les plateformes</h3>
+    <ul>
+      <li><strong>Gemini :</strong> version complete avec archivage Google Drive et consultation de l'historique.</li>
+      <li><strong>ChatGPT :</strong> memes capacites metier, mais sans integration Google Drive. L'archivage est manuel.</li>
+      <li>Les deux plateformes utilisent les memes fichiers de connaissances.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>Agent IA Comptable &amp; Patrimoine &mdash; Base de connaissances 2025 &mdash; 359+ regles structurees &mdash; 12 modules metier</p>
+  <p style="margin-top:8px">Usage personnel et pedagogique. Ne constitue pas un conseil professionnel.</p>
+</footer>
+
+</body>
+</html>
