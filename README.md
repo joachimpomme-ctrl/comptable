@@ -58,10 +58,29 @@ scripts/
 
 ### Gemini Gems
 
+> Gemini est limite a **10 fichiers** de connaissances. Uploader uniquement les fichiers listes ci-dessous.
+
 1. Ouvrir [gemini.google.com](https://gemini.google.com) > **Mes Gems** > **Nouveau Gem**
 2. Copier le contenu de `gemini/00_INSTRUCTIONS_GEMINI.md` dans le champ **Instructions**
 3. Remplacer les 2 occurrences de `[VOTRE_FOLDER_ID_DRIVE]` par l'ID de votre dossier Google Drive
-4. Uploader les **12 fichiers** du dossier `knowledge/` dans **Connaissances** (fichiers 01-10 + M_CGI JSONL + MD)
+4. Uploader ces **10 fichiers** dans **Connaissances** :
+
+| # | Fichier | Pourquoi |
+|---|---------|----------|
+| 1 | `01_decision_engine.md` | Moteur IF/THEN — coeur du raisonnement |
+| 2 | `02_golden_rules_claude_first.md` | 359 regles curatees |
+| 3 | `03_few_shots.md` | Calibrage du style de reponse |
+| 4 | `04_formules_et_risques.md` | Formules de calcul + risques |
+| 5 | `05_agent_governance.md` | Playbooks + deontologie |
+| 6 | `06_golden_checklists.md` | Checklists par domaine |
+| 7 | `07_rule_source_crosswalk.jsonl` | Tracabilite regles -> sources |
+| 8 | `08_evaluation_suite.md` | Cas de test de reference |
+| 9 | `M_CGI_code_general_impots.md` | 44 articles CGI — texte legal |
+| 10 | `09_agent_manifest.json` | Metadonnees corpus |
+
+> `10_documents.json` et `M_CGI_code_general_impots.jsonl` sont exclus (metadonnees et doublon).
+> Sur **ChatGPT** (sans limite stricte), uploader les 12 fichiers.
+
 5. Activer les outils **Google Drive**, **Google Docs**, **Google Sheets**
 
 ### ChatGPT Custom GPT
