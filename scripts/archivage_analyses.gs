@@ -72,33 +72,35 @@ function moveAnalysesToArchive() {
 }
 
 /**
- * Installe un declencheur quotidien automatique (a lancer une seule fois).
- * Heure : 2h du matin.
+ * Installe un declencheur toutes les 15 minutes (a lancer une seule fois).
  */
-function installDailyTrigger() {
+function installTrigger() {
   ScriptApp.getProjectTriggers()
     .filter(function(t) { return t.getHandlerFunction() === 'moveAnalysesToArchive'; })
     .forEach(function(t) { ScriptApp.deleteTrigger(t); });
 
   ScriptApp.newTrigger('moveAnalysesToArchive')
     .timeBased()
-    .atHour(2)
-    .everyDays(1)
+    .everyMinutes(15)
     .create();
 
-  Logger.log('Declencheur quotidien (2h) installe.');
+  Logger.log('Declencheur toutes les 15 min installe.');
 }
 
 /**
- * Supprime le declencheur quotidien.
+ * Supprime le declencheur.
  */
-function removeDailyTrigger() {
+function removeTrigger() {
   ScriptApp.getProjectTriggers()
     .filter(function(t) { return t.getHandlerFunction() === 'moveAnalysesToArchive'; })
     .forEach(function(t) { ScriptApp.deleteTrigger(t); });
 
   Logger.log('Declencheur supprime.');
 }
+
+// Alias pour compatibilite avec l'ancienne version
+var installDailyTrigger = installTrigger;
+var removeDailyTrigger  = removeTrigger;
 
 // ─── Utilitaires ─────────────────────────────────────────────────────────────
 
