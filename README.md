@@ -22,31 +22,34 @@ Agent IA specialise en comptabilite, fiscalite des professions liberales, locati
 | M11 | Epargne salariale (PEE, PERCOL, interessement) |
 | M12 | Transmission, Pacte Dutreil, DPE, decote IFI |
 | FORM | 7 formules de calcul + 8 risques critiques |
+| M_CGI | 44 articles du Code General des Impots (texte legal, millesime 2026) |
 
 ---
 
 ## Structure du depot
 
 ```
-README.md                          <- Ce fichier
-GUIDE_INSTALLATION.html            <- Guide detaille (ouvrir dans un navigateur)
+README.md                               <- Ce fichier
+GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un navigateur)
 gemini/
-  00_INSTRUCTIONS_GEMINI.md        <- System prompt Gemini (avec archivage Drive)
+  00_INSTRUCTIONS_GEMINI.md             <- System prompt Gemini (avec archivage Drive)
 chatgpt/
-  00_INSTRUCTIONS_CHATGPT.md       <- System prompt ChatGPT (sans Drive)
+  00_INSTRUCTIONS_CHATGPT.md            <- System prompt ChatGPT (sans Drive)
 knowledge/
-  01_decision_engine.md            <- Moteur decisionnel IF/THEN (10 modules)
-  02_golden_rules_claude_first.md  <- 359 regles curatees
-  03_few_shots.md                  <- 27 exemples calibres
-  04_formules_et_risques.md        <- Formules + risques critiques
-  05_agent_governance.md           <- Playbooks + risk matrix
-  06_golden_checklists.md          <- Checklists par domaine
-  07_rule_source_crosswalk.jsonl   <- Tracabilite regles -> sources PDF
-  08_evaluation_suite.md           <- 28 cas de test
-  09_agent_manifest.json           <- Metadonnees corpus
-  10_documents.json                <- Inventaire documents sources
+  01_decision_engine.md                 <- Moteur decisionnel IF/THEN (10 modules)
+  02_golden_rules_claude_first.md       <- 359 regles curatees
+  03_few_shots.md                       <- 27 exemples calibres
+  04_formules_et_risques.md             <- Formules + risques critiques
+  05_agent_governance.md                <- Playbooks + risk matrix
+  06_golden_checklists.md               <- Checklists par domaine
+  07_rule_source_crosswalk.jsonl        <- Tracabilite regles -> sources PDF
+  08_evaluation_suite.md                <- 28 cas de test
+  09_agent_manifest.json                <- Metadonnees corpus
+  10_documents.json                     <- Inventaire documents sources
+  M_CGI_code_general_impots.jsonl       <- 44 articles CGI (BNC, PV, IFI, DMTG, PER...)
+  M_CGI_code_general_impots.md          <- Meme contenu en Markdown lisible
 scripts/
-  archivage_analyses.gs            <- Script Apps Script (archivage Drive)
+  archivage_analyses.gs                 <- Script Apps Script (archivage Drive)
 ```
 
 ---
@@ -58,14 +61,14 @@ scripts/
 1. Ouvrir [gemini.google.com](https://gemini.google.com) > **Mes Gems** > **Nouveau Gem**
 2. Copier le contenu de `gemini/00_INSTRUCTIONS_GEMINI.md` dans le champ **Instructions**
 3. Remplacer les 2 occurrences de `[VOTRE_FOLDER_ID_DRIVE]` par l'ID de votre dossier Google Drive
-4. Uploader les 10 fichiers du dossier `knowledge/` dans **Connaissances**
+4. Uploader les **12 fichiers** du dossier `knowledge/` dans **Connaissances** (fichiers 01-10 + M_CGI JSONL + MD)
 5. Activer les outils **Google Drive**, **Google Docs**, **Google Sheets**
 
 ### ChatGPT Custom GPT
 
 1. Ouvrir [chatgpt.com](https://chatgpt.com) > **Explorer les GPTs** > **+ Creer** > onglet **Configurer**
 2. Copier le contenu de `chatgpt/00_INSTRUCTIONS_CHATGPT.md` dans le champ **Instructions**
-3. Uploader les fichiers du dossier `knowledge/` dans **Base de connaissances**
+3. Uploader les **12 fichiers** du dossier `knowledge/` dans **Base de connaissances**
 4. Activer **Recherche dans la base de connaissances**
 
 **Guide complet :** ouvrez `GUIDE_INSTALLATION.html` dans votre navigateur.
@@ -86,18 +89,29 @@ L'agent peut sauvegarder les analyses dans un dossier Google Drive sur demande e
 ## Exemples d'utilisation
 
 ```
+-- Fiscalite --
 "Quels sont les seuils du regime micro-BNC en 2025 ?"
-
 "Je suis medecin liberal en BNC, CA 150 000 EUR.
  Comparez micro-BNC et regime reel pour ma situation 2025."
 
-"J'ai un bien loue nu, revenu brut 18 000 EUR/an, charges 6 000 EUR.
- Quel est mon resultat foncier et dans quels cas le meuble serait avantageux ?"
+-- Declarations --
+"Aide-moi a remplir ma declaration 2035 : recettes 120 000 EUR,
+ cotisations CARMF 18 000 EUR, loyer cabinet 12 000 EUR."
+"Quelles cases renseigner sur la 2044 pour mon deficit foncier ?"
+"J'ai vendu un appartement detenu 12 ans, PV brute 80 000 EUR.
+ Calcule ma plus-value imposable apres abattements."
 
+-- Optimisation fiscale --
+"Quel est mon plafond PER pour 2025 si mes revenus 2024 sont 95 000 EUR ?"
+"Quels leviers fiscaux pour reduire mon TMI de 41% en tant que liberal ?"
+"Comparez SEL + SPFPL vs exercice individuel pour un chirurgien a 300 000 EUR de CA."
+
+-- Patrimoine --
 "Quelle strategie de transmission pour 800 000 EUR de patrimoine,
  2 enfants, TMI 41%, horizon 15 ans ?"
 
-"Enregistre cette analyse dans un Google Doc."  (Gemini uniquement)
+-- Archivage (Gemini uniquement) --
+"Enregistre cette analyse dans un Google Doc."
 ```
 
 ---
