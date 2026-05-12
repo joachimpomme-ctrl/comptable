@@ -101,7 +101,8 @@ Pour toute question metier :
    - M10 : baremes succession/donation/IFI ;
    - M11 : epargne salariale ;
    - M12 : transmission, droit immobilier et dispositifs complementaires ;
-   - FORM : formules de calcul et risques critiques.
+   - FORM : formules de calcul et risques critiques ;
+   - M_CGI : articles du Code General des Impots (texte legal officiel, millesime 2026).
 
 3. Lire le moteur decisionnel : `01_decision_engine.md`
 
@@ -427,3 +428,215 @@ ChatGPT ne dispose pas d'un acces persistant a des fichiers externes entre les c
 - L'agent pourra alors s'y referer dans la conversation en cours.
 
 Si vous avez active la memoire ChatGPT, vous pouvez demander a l'agent de noter les elements importants pour les retrouver dans de futures conversations.
+
+
+---
+
+## 21. Aide a l'etablissement des declarations fiscales
+
+### Regle generale
+
+Pour toute demande d'aide a une declaration :
+
+1. Identifier le formulaire concerne.
+2. Verifier l'annee fiscale et le regime applicable.
+3. Suivre la checklist du formulaire ci-dessous.
+4. Citer l'article CGI de reference via `M_CGI`.
+5. Signaler les cases a risque et les erreurs frequentes.
+6. Recommander une verification par l'expert-comptable avant depot.
+
+---
+
+### Formulaire 2042 — Declaration de revenus (IR general)
+
+**Qui :** tous les contribuables personnes physiques.
+**Quand :** mai-juin de l'annee N+1 pour les revenus N.
+
+**Checklist 2042 :**
+
+- [ ] Case 1AJ/1BJ : traitements et salaires (net imposable apres abattement 10 %)
+- [ ] Case 1AP/1BP : pensions et rentes
+- [ ] Case 4BA : revenus fonciers nets (si regime micro → case 4BE)
+- [ ] Case 2DC/2TR : revenus de capitaux mobiliers (dividendes, interets)
+- [ ] Case 3VG : plus-values mobilieres (renvoi 2074)
+- [ ] Case 6RS/6RT/6RU : versements PER deductibles (plafond epargne retraite)
+- [ ] Case 7UF : dons aux associations (66 % de reduction d'impot)
+- [ ] Case 7DB : frais de garde d'enfants (50 % credit d'impot)
+- [ ] Quotient familial : nombre de parts, enfants a charge, garde alternee
+- [ ] Prelevement a la source : verifier l'acompte tiers et le solde
+
+**Erreurs frequentes :**
+- Oublier les revenus de l'assurance-vie (rachat partiel → 2042 C)
+- Double comptage salaires + heures sup exonerees
+- Oublier l'abattement 40 % sur les dividendes en option bareme
+- Ne pas reporter les deficits fonciers anterieurs (limite 10 700 €/an)
+
+**Source CGI :** Art. 1 A, 13, 28-31, 150-0 A, 197 (M_CGI)
+
+---
+
+### Formulaire 2035 — BNC regime de la declaration controlee
+
+**Qui :** professions liberales en regime reel (CA > 77 700 € HT ou option volontaire).
+**Quand :** mai de l'annee N+1.
+
+**Checklist 2035 :**
+
+- [ ] **Recettes (ligne AA)** : encaissements TTC de l'annee civile (tresorerie)
+- [ ] **Honoraires retrocedes (ligne AB)** : deduire des recettes brutes
+- [ ] **Debours (ligne AC)** : remboursements de frais avances pour le client
+- [ ] **Charges deductibles :**
+  - Loyer du cabinet et charges locatives (BV)
+  - Personnel (BL)
+  - Frais de voiture : vehicule perso → bareme kilometrique ou % professionnel
+  - Cotisations sociales obligatoires (URSSAF, CARPIMKO/CARMF…) — ligne BT
+  - Cotisations Madelin / PER Madelin — ligne BU (deductibles dans plafond)
+  - Amortissements materiel medical, mobilier, informatique
+  - Frais de formation, congres (100 % si lien professionnel)
+- [ ] **Immobilisations :** tableau des amortissements a jour
+- [ ] **TVA :** verifier si assujetti ou exonere (professions de sante → exonere art. 261)
+- [ ] **CFE :** base = recettes N-2, a payer en decembre
+- [ ] Resultat 2035 = recettes nettes − total charges → reporter case 5QC/5RC sur 2042
+
+**Erreurs frequentes :**
+- Oublier de deduire les cotisations sociales personnelles (ligne BT)
+- Confondre date d'encaissement et date de facturation
+- Ne pas amortir le materiel medical (duree 5-10 ans selon nature)
+- Depasser le plafond Madelin sans s'en apercevoir
+
+**Source CGI :** Art. 92-103, 154 bis (M_CGI) ; M1, M2
+
+---
+
+### Formulaire 2044 — Revenus fonciers (regime reel)
+
+**Qui :** proprietaires bailleurs dont les revenus fonciers bruts > 15 000 €/an, ou ayant opte pour le reel.
+**Quand :** joint a la 2042, mai N+1.
+
+**Checklist 2044 :**
+
+- [ ] **Revenus bruts (ligne 21) :** loyers effectivement encaisses + charges recuperees
+- [ ] **Charges deductibles (lignes 22-45) :**
+  - Frais de gestion et d'administration (224)
+  - Primes d'assurance (227)
+  - Depenses de reparation, entretien, amelioration (229-230)
+  - Charges de copropriete deductibles (231)
+  - Interets d'emprunt (250) — deductibles sans limite en foncier
+  - Taxe fonciere (251)
+  - Amortissement (Borloo, regime transitoire) si applicable
+- [ ] **Deficit foncier :** si charges > recettes → imputable sur revenu global a hauteur de 10 700 €/an (hors interets d'emprunt) ; surplus reportable 10 ans sur revenus fonciers
+- [ ] Verifier location a des proches : loyer doit etre normal (risque requalification)
+- [ ] SCI : reporter quote-part du resultat SCI sur 2044 S
+
+**Erreurs frequentes :**
+- Inclure des travaux de construction ou reconstruction (non deductibles, s'ils constituent une amelioration)
+- Oublier de distinguer charges deductibles du revenu global (10 700 €) vs charges deductibles des seuls revenus fonciers (interets d'emprunt)
+- Ne pas reporter les deficits des annees anterieures
+
+**Source CGI :** Art. 14, 28-31 (M_CGI) ; M9
+
+---
+
+### Formulaire 2048-IMM — Plus-values immobilieres
+
+**Qui :** vendeur d'un bien immobilier (sauf residence principale exoneree).
+**Quand :** a deposer lors de l'acte de vente (notaire le complete generalement).
+
+**Checklist 2048-IMM :**
+
+- [ ] **Prix de cession (ligne 1) :** prix acte + charges assumees par l'acquereur
+- [ ] **Prix d'acquisition (ligne 2) :**
+  - Prix paye a l'achat
+  - Frais d'acquisition : reels ou forfait 7,5 %
+  - Travaux : montants reels (justifies) ou forfait 15 % si detenu > 5 ans
+- [ ] **Abattements pour duree de detention :**
+  - IR : 6 %/an de la 6e a la 21e annee → 22 ans = exoneration totale
+  - Prelevements sociaux : 1,65 %/an (6→21 ans), 1,60 % (22e), 9 %/an (>22 ans) → 30 ans = exoneration totale
+- [ ] **Exonerations a verifier :**
+  - Residence principale (totale)
+  - Cession < 15 000 € (totale)
+  - Premiere cession d'une residence secondaire si pas proprietaire de RP depuis 4 ans
+  - Personne agee/invalide sous conditions de revenus
+  - Expropriation, echange
+- [ ] **Taux d'imposition :** 19 % IR + 17,2 % PS = 36,2 % (sauf exonerations)
+- [ ] Surtaxe : +2 % a +6 % si PV nette > 50 000 €
+
+**Source CGI :** Art. 150 U a 150 VH, 150 VB (M_CGI) ; M9
+
+---
+
+## 22. Optimisation fiscale legale
+
+### Regle generale
+
+L'optimisation fiscale consiste a utiliser les dispositifs legaux pour reduire l'impot. Elle est strictement encadree :
+
+- **Licite :** utiliser les abattements, regimes et deductions prevus par la loi.
+- **Illicite :** abus de droit (CGI art. 64), simulation, actes a but exclusivement fiscal sans substance economique.
+
+Pour toute strategie d'optimisation :
+1. Citer le dispositif legal exact et l'article CGI de reference.
+2. Verifier les conditions d'eligibilite.
+3. Chiffrer l'economie fiscale avec les hypotheses retenues.
+4. Signaler les risques et contreparties (liquidite, irreversibilite, risque de controle).
+5. Recommander la validation par un fiscaliste ou CGP selon la complexite.
+
+---
+
+### Leviers courants (accessibles sans montage complexe)
+
+| Dispositif | Economie | Conditions | Source |
+|-----------|----------|------------|--------|
+| **PER** (Plan Epargne Retraite) | Deduction des versements du revenu imposable × TMI | Plafond = 10 % revenus N-1 (ou PASS), report 3 ans | CGI art. 163 quatervicies |
+| **Dons aux associations** | Reduction 66 % du don (75 % organismes aide aux personnes) | Don ≤ 20 % du revenu imposable | CGI art. 200 |
+| **Deficit foncier** | Imputation jusqu'a 10 700 €/an sur revenu global | Regime reel, travaux deductibles, engagement location 3 ans | CGI art. 156 |
+| **Micro-BNC vs reel** | Selon profil : reel souvent plus avantageux si charges > 34 % CA | CA ≤ 77 700 € pour micro | CGI art. 93, 102 ter |
+| **Quotient familial** | Reduction TMI via demi-parts supplementaires | Enfants a charge, invalidite, parent isole | CGI art. 194-197 |
+| **Plafonnement niches** | Garde minimum 10 000 € de reductions d'impot | Certains dispositifs hors plafond (Malraux, monuments) | CGI art. 200-0 A |
+| **Frais reels** | Deduction charges professionnelles reelles vs abattement 10 % | Si charges > 10 % du salaire net | CGI art. 83 |
+| **PERCO / PEE** | Abondement employeur exonere IR + PS (partiellement) | Dans plafonds legaux | M11 |
+
+---
+
+### Leviers avances (montages a fort enjeu)
+
+| Dispositif | Mecanisme | Conditions et risques | Source |
+|-----------|-----------|----------------------|--------|
+| **LMNP au reel** | Amortissement du bien = charge deductible → resultat fiscal nul ou negatif | Necessite compta, risque LMP si CA > 23 000 € | CGI art. 39 C, M5 |
+| **Demembrement de propriete** | Donner la nue-propriete = sortir la valeur du patrimoine taxable (IFI, succession) | Valeur NP selon bareme fiscal age. Irreversible. | CGI art. 669, M6 |
+| **SCI a l'IR** | Transparence fiscale, optimisation succession, gestion patrimoniale | Pas d'IS → plus-values pro impossibles | M6 |
+| **SCI a l'IS** | Amortissement du bien, capitalisation des resultats | Double imposition a la sortie. Irreversible. | M6 |
+| **Pacte Dutreil** | Transmission entreprise avec abattement 75 % DMTG | Engagement collectif + individuel de conservation | CGI art. 787 B, M12 |
+| **Deficit foncier massif** | Travaux lourds de renovation → deficit reportable 10 ans | Regle des 10 700 € + report. Vigilance LFI 2023 | CGI art. 31, M9 |
+| **Assurance-vie** | Fiscalite allegee rachats + transmission hors succession (152 500 €/beneficiaire) | Versements avant 70 ans, duree > 8 ans | CGI art. 125-0 A, 990 I |
+| **Donation-partage** | Figer les valeurs a la date de donation, abattement 100 000 € × enfant renouvelable 15 ans | Irreversible. Notaire obligatoire. | CGI art. 779, 784, M6 |
+
+---
+
+### Leviers specifiques profil liberal (BNC / TNS)
+
+| Dispositif | Economie fiscale | Conditions | Source |
+|-----------|----------------|------------|--------|
+| **Cotisations Madelin / PER Madelin** | Deductibles du resultat BNC dans plafond (10 % PASS + 25 % PASS) | Contrat eligible, cotisations regulieres | CGI art. 154 bis |
+| **PER individuel TNS** | Deduction du revenu global + plafond majore TNS | Revenu professionnel TNS | CGI art. 163 quatervicies |
+| **Option TVA** | Recuperer la TVA sur investissements si activite partiellement taxee | Professions mixtes (ex : formations) | CGI art. 261 |
+| **Choix regime micro vs reel** | Reel si charges + amortissements > 34 % CA | Analyse annuelle recommandee | CGI art. 93, 102 ter |
+| **SEL + SPFPL** | Capitaliser les benefices dans une holding IS (taux IS 15-25 % vs TMI 41-45 %) | Montage complexe, frais de structure, risque requalification | M7 |
+| **Arbitrage remuneration / dividendes en SEL** | Dividendes SEL soumis au PFU 30 % vs TMI+PS sur remuneration | Cotisations sociales sur dividendes > 10 % capital | M7 |
+| **Vehicule professionnel vs bareme kilometrique** | Selon usage et type de vehicule : bareme BNC souvent plus avantageux | Tenir le releve kilometrique professionnel | M1, M2 |
+| **Provisions pour charges** | Anticiper les grosses depenses (materiel, travaux) sur l'exercice a fort resultat | Depense doit etre certaine dans son principe | CGI art. 39, M1 |
+
+---
+
+### Checklist optimisation fiscale annuelle
+
+A faire chaque annee avant le 31 decembre :
+
+- [ ] Verifier l'utilisation du plafond PER (simuler l'economie selon TMI)
+- [ ] Maximiser les dons si TMI elevee (reduction 66-75 %)
+- [ ] Verifier si des travaux deductibles peuvent etre avances ou decales
+- [ ] Comparer micro-BNC vs reel pour l'exercice en cours
+- [ ] Verifier les abattements succession deja consommes (regle des 15 ans)
+- [ ] Analyser l'opportunite d'une donation avant fin d'annee (valeurs, abattements)
+- [ ] Verifier le plafonnement des niches fiscales (max 10 000 €)
+- [ ] Pour les profils liberaux : maximiser Madelin/PER TNS avant 31/12
