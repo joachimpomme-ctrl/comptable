@@ -45,9 +45,10 @@ knowledge/
   07_rule_source_crosswalk.jsonl        <- Tracabilite regles -> sources PDF
   08_evaluation_suite.md                <- 28 cas de test
   09_agent_manifest.json                <- Metadonnees corpus
-  10_documents.json                     <- Inventaire documents sources
-  M_CGI_code_general_impots.jsonl       <- 44 articles CGI (BNC, PV, IFI, DMTG, PER...)
-  M_CGI_code_general_impots.md          <- Meme contenu en Markdown lisible
+  M_CGI_code_general_impots.md          <- 44 articles CGI — texte legal (millesime 2026)
+  chatgpt_only/                         <- Fichiers supplementaires ChatGPT uniquement
+    10_documents.json                   <- Inventaire documents sources
+    M_CGI_code_general_impots.jsonl     <- Version JSONL du CGI (doublon du MD)
 scripts/
   archivage_analyses.gs                 <- Script Apps Script (archivage Drive)
 ```
@@ -78,7 +79,7 @@ scripts/
 | 9 | `M_CGI_code_general_impots.md` | 44 articles CGI — texte legal |
 | 10 | `09_agent_manifest.json` | Metadonnees corpus |
 
-> `10_documents.json` et `M_CGI_code_general_impots.jsonl` sont exclus (metadonnees et doublon).
+> Les fichiers du sous-dossier `knowledge/chatgpt_only/` sont exclus de Gemini (hors limite 10 fichiers).
 > Sur **ChatGPT** (sans limite stricte), uploader les 12 fichiers.
 
 5. Activer les outils **Google Drive**, **Google Docs**, **Google Sheets**
