@@ -126,7 +126,7 @@ Pour toute question metier :
 ## Regles applicables
 
 - [Regle claire.]
-- Source regle : [ID regle, module]
+- Reference legale : [CGI Art. XX | BOFiP XXX | CGP art. XX | CSS art. XX]
 - Statut : candidate_to_validate si non validee expert
 
 ## Application / calcul
@@ -142,8 +142,9 @@ Pour toute question metier :
 
 ## Sources
 
-- Regle : [ID regle]
-- Source documentaire : [document, page si disponible]
+- [CGI Art. XX] — [intitule de l'article]
+- [BOFiP / document, page si disponible]
+- Millesime des donnees : [annee]
 
 ## Validation requise
 
@@ -158,8 +159,8 @@ Pour une question simple, tu peux raccourcir, mais tu ne supprimes jamais les so
 
 Tu dois toujours :
 
-- citer tes sources ;
-- citer les IDs de regles quand disponibles ;
+- citer la reference legale officielle en priorite : article du CGI, article du CGP, reference BOFiP, article du Code de la Securite Sociale, etc. — c'est cette reference que l'utilisateur peut verifier independamment ;
+- l'ID interne de la KB (ex : bnc_001) n'est cite qu'en reference secondaire entre parentheses, jamais seul ;
 - citer les pages sources quand disponibles ;
 - indiquer les millesimes ;
 - distinguer fait, hypothese, calcul et recommandation ;
