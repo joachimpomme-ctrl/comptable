@@ -1,51 +1,173 @@
 {
-  "name": "base_knowledge_comptable_financiere_patrimoniale",
-  "generated_at": "2026-05-11T22:35:47",
+  "name": "agent_comptable_fiscal_patrimonial",
+  "version": "2026-06-05",
+  "generated_at": "2026-06-05",
   "language": "fr",
+  "description": "Agent IA expert en comptabilité BNC/BIC, fiscalité des professions libérales, LMNP/LMP, gestion financière et gestion de patrimoine. Conçu pour Gemini Gems et ChatGPT Custom GPT.",
   "scope": [
-    "gestion comptable",
-    "référentiel comptable français",
-    "fiscalité professionnelle BNC/BIC",
-    "location meublée LMNP/LMP",
-    "gestion financière",
-    "gestion de patrimoine",
-    "conformité et déontologie"
+    "comptabilité BNC / BIC",
+    "fiscalité professionnelle (professions libérales, TNS)",
+    "location meublée LMNP / LMP",
+    "revenus fonciers et plus-values immobilières",
+    "gestion financière (trésorerie, rentabilité, BFR, CAF)",
+    "gestion de patrimoine (succession, donation, assurance-vie, PER, IFI, SCI)",
+    "épargne salariale (PEE, PERCOL, intéressement)",
+    "déclarations fiscales (2042, 2035, 2044, 2048-IMM)",
+    "optimisation fiscale légale",
+    "Code Général des Impôts — texte légal officiel millesime 2026"
   ],
-  "files": {
-    "documents": "documents.json",
-    "chunks": "chunks.jsonl",
-    "knowledge_cards_candidates": "knowledge_cards_candidates.jsonl",
-    "lexical_index": "lexical_index.json",
-    "qa_tests": "qa_tests.json"
+  "instructions": {
+    "file": "00_INSTRUCTIONS.md",
+    "sections": 22,
+    "version": "2026-06-05",
+    "description": "System prompt complet — 22 sections couvrant identité, hiérarchie sources, protocoles métier, workflows (comptable, fiscal, LMNP, financier, patrimoine), aide aux déclarations, optimisation fiscale légale et historisation Drive"
   },
-  "counts": {
-    "documents": 33,
-    "chunks": 1716,
-    "knowledge_cards_candidates": 7137,
-    "corpus_documents": 32,
-    "supplements": 1
+  "knowledge_files": [
+    {
+      "id": 1,
+      "file": "01_decision_engine.md",
+      "label": "Moteur décisionnel",
+      "description": "Arbres IF/THEN pour 10 modules métier (M1 à M12, FORM, M_CGI). Logique de qualification et d'orientation des cas.",
+      "module": "all",
+      "priority": "niveau_1"
+    },
+    {
+      "id": 2,
+      "file": "02_golden_rules_claude_first.md",
+      "label": "Règles curatées",
+      "description": "391 règles structurées couvrant tous les modules (M1 BNC, M2 fiscalité libérale, M3 PCG, M5/M5bis LMNP, M6 patrimoine, M7 CGP, M8 bases comptables, M9 foncier/PV, M10 succession/IFI, M11 épargne salariale, M12 transmission). Statut : claude_curated / candidate_to_validate.",
+      "module": "M1 M2 M3 M5 M5bis M6 M7 M8 M9 M10 M11 M12",
+      "priority": "niveau_1",
+      "rule_count": 391
+    },
+    {
+      "id": 3,
+      "file": "03_few_shots.md",
+      "label": "Exemples calibrés",
+      "description": "25 questions-réponses de référence pour calibrer le ton, la structure, le niveau de détail et la façon de citer les sources.",
+      "module": "all",
+      "priority": "niveau_1",
+      "example_count": 25
+    },
+    {
+      "id": 4,
+      "file": "04_formules_et_risques.md",
+      "label": "Formules et risques",
+      "description": "7 formules de calcul (art. 39-C, PV LMNP, IFI, droits donation, nue-propriété, déficit foncier, seuil rentabilité) + 8 risques majeurs + barèmes de référence 2025 : PASS (47 100 €), cotisations URSSAF professions libérales, CARMF, CARPIMKO, barème kilométrique BNC voitures/motos, ACRE, régularisation N-2.",
+      "module": "FORM",
+      "priority": "niveau_1",
+      "formula_count": 7,
+      "risk_count": 8
+    },
+    {
+      "id": 5,
+      "file": "05_agent_governance.md",
+      "label": "Gouvernance agent",
+      "description": "4 playbooks opérationnels, 6 checklists métier et risk matrix. Règles de déontologie, gestion des conflits d'intérêts et limites de compétence.",
+      "module": "all",
+      "priority": "niveau_2",
+      "playbook_count": 4,
+      "checklist_count": 6
+    },
+    {
+      "id": 6,
+      "file": "06_golden_checklists.md",
+      "label": "Checklists par domaine",
+      "description": "Checklists opérationnelles par domaine métier : BNC, LMNP, revenus fonciers, patrimoine, déclarations fiscales.",
+      "module": "M1 M2 M5 M9 M6",
+      "priority": "niveau_2"
+    },
+    {
+      "id": 7,
+      "file": "07_rule_source_crosswalk.jsonl",
+      "label": "Crosswalk règles → sources PDF",
+      "description": "Table de traçabilité reliant chaque règle à son document source et sa page PDF. Format JSONL. Permet de citer la page exacte de chaque règle.",
+      "module": "all",
+      "priority": "niveau_3",
+      "format": "JSONL"
+    },
+    {
+      "id": 8,
+      "file": "08_evaluation_suite.md",
+      "label": "Suite d'évaluation",
+      "description": "45 cas de test de référence avec réponses attendues. Permet de mesurer la qualité et la cohérence des réponses de l'agent.",
+      "module": "all",
+      "priority": "niveau_3",
+      "test_count": 45
+    },
+    {
+      "id": 9,
+      "file": "M_CGI_code_general_impots.md",
+      "label": "Code Général des Impôts",
+      "description": "51 articles du CGI extraits du texte officiel (millesime 2026) : BNC (92-103, 102 ter), revenus fonciers (14, 28-31, 156), BIC/LMNP (35, 39), plus-values (150 U, 150 VB, 150-0 A, 151 septies), assurance-vie (125-0 A, 990 I), retraite (154 bis, 163 quatervicies), barème IR (194, 195, 197), réductions impôt (200, 200-0 A), TVA (261), démembrement (669), niches (200-0 A), DMTG/succession (777, 779, 784, 787 B/C, 790 B/G), IFI (964-979). Salariés : 83.",
+      "module": "M_CGI",
+      "priority": "niveau_4",
+      "millesime": 2026,
+      "article_count": 51,
+      "source": "LEGITEXT000006069577 — Code Général des Impôts"
+    },
+    {
+      "id": 10,
+      "file": "09_agent_manifest.json",
+      "label": "Manifeste du corpus",
+      "description": "Ce fichier. Inventaire structuré de la base de connaissances, des fichiers, des modules couverts et des statistiques du corpus.",
+      "module": "meta",
+      "priority": "niveau_5"
+    }
+  ],
+  "modules": {
+    "M1": "Comptabilité BNC — recettes, charges, immobilisations, amortissements, PCG",
+    "M2": "Fiscalité professions libérales — régimes micro/réel, 2035, TVA, CFE",
+    "M3": "Normes PCG 2025 — plan comptable général",
+    "M5": "Location meublée LMNP / LMP — régimes, amortissements, déficits",
+    "M5bis": "Particularités location meublée — tourisme classé, parahôtellerie, cotisations",
+    "M6": "Gestion patrimoniale — succession, donation, AV, PER, SCI, démembrement",
+    "M7": "Conseil en gestion de patrimoine — MIF2, DDA, diagnostic global",
+    "M8": "Bases comptabilité — BFR, CAF, seuil rentabilité, états financiers",
+    "M9": "Revenus fonciers et plus-values immobilières — 2044, 2048-IMM",
+    "M10": "Barèmes DMTG, IFI — droits de succession/donation, IFI",
+    "M11": "Épargne salariale — PEE, PERCOL, intéressement, abondement",
+    "M12": "Transmission, Pacte Dutreil, DPE, décote IFI",
+    "FORM": "Formules de calcul et risques critiques",
+    "M_CGI": "Texte légal officiel — 51 articles du CGI millesime 2026",
+    "M13": "Intégré dans 04_formules_et_risques.md (section BARÈMES DE RÉFÉRENCE REF-001 à REF-007)"
   },
-  "retrieval_policy": {
-    "default": "hybrid_full_text_plus_embedding_ready_chunks",
-    "mandatory_filters": [
-      "domain_tags",
-      "source_path",
-      "page_start",
-      "page_end"
-    ],
-    "answer_policy": [
-      "Ne jamais répondre sans source issue d'un chunk ou d'une fiche.",
-      "Citer document et page quand disponibles.",
-      "Pour fiscalité, patrimoine et réglementation, afficher le millésime ou signaler qu'il doit être vérifié.",
-      "En cas de conflit ou source insuffisante, refuser de conclure et demander arbitrage expert."
+  "statistics": {
+    "knowledge_files_gemini": 10,
+    "golden_rules": 391,
+    "cgi_articles": 51,
+    "few_shot_examples": 25,
+    "evaluation_test_cases": 45,
+    "governance_playbooks": 4,
+    "formulas": 7,
+    "critical_risks": 8
+  },
+  "rule_status": {
+    "claude_curated": "Règles structurées par Claude — prioritaires pour raisonner, à valider par un expert métier",
+    "sourced": "Règles reliées à une page source PDF via le crosswalk 07",
+    "auto_extracted": "Extractions automatiques — utiles pour exploration, ne pas présenter comme validées",
+    "candidate_to_validate": "Toute règle non encore validée par un expert-comptable, fiscaliste ou notaire"
+  },
+  "citation_policy": {
+    "priority_1": "Référence légale officielle : CGI Art. XX | BOFiP référence | CGP art. XX | CSS art. XX",
+    "priority_2": "ID interne KB (ex: bnc_001) cité entre parenthèses uniquement, jamais seul",
+    "mandatory": "Millésime des données toujours indiqué ou absence signalée"
+  },
+  "scope_exclusions": [
+    "fiscalité crypto-actifs",
+    "TVA intracommunautaire",
+    "fiscalité internationale",
+    "Livre des Procédures Fiscales (LPF) — hors scope délibéré"
+  ],
+  "update_policy": {
+    "frequency": "Annuelle — janvier, après publication de la Loi de Finances",
+    "items_to_update": [
+      "Barème IR (art. 197 CGI)",
+      "PASS (Plafond Annuel Sécurité Sociale)",
+      "Seuils micro-BNC et micro-BIC",
+      "Plafonds PER et Madelin",
+      "Abattements DMTG si évolution LFI",
+      "Articles CGI modifiés par la LFI"
     ]
-  },
-  "completion_status": {
-    "corpus_inventory": "complete_for_local_files",
-    "recovered_url_pdf_available_but_not_integrated_if_corpus_repaired": true,
-    "recovered_url_pdf_integrated": false,
-    "manual_ocr_pages_integrated": true,
-    "embeddings": "not_generated_here",
-    "expert_validation": "required_for_sensitive_rules"
   }
 }

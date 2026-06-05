@@ -217,3 +217,110 @@ RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → re
 
 ---
 
+## BARÈMES DE RÉFÉRENCE (Module M13 — millésime 2025 — mise à jour 2026 en attente de sourcing)
+
+> **Statut :** `sourced` pour les taux URSSAF et barème kilométrique officiels. `candidate_to_validate` pour CARMF/CARPIMKO (forfaits votés annuellement — vérifier sur carmf.fr / carpimko.fr).  
+> **Mise à jour :** janvier de chaque année (PASS, taux URSSAF, barèmes km publiés par arrêté).
+
+### [REF-001] PASS 2025
+
+**PASS annuel 2025 : 47 100 € [referentiel: PASS/2025]**  
+PASS mensuel : 3 925 € | PASS journalier : 204 €
+
+Utilisé pour : plafond PER (10 % PASS = 4 710 €), Madelin, retraite de base, seuil micro-BNC (102 ter), seuils micro-BIC.
+
+*Source : Arrêté ministériel — JO 2025*
+
+---
+
+### [REF-002] Cotisations URSSAF — Professions libérales 2025
+
+| Cotisation | Base | Taux |
+|-----------|------|------|
+| Maladie-maternité | Revenus nets | 1,50 % (< 40 % PASS) → 6,50 % (> 110 % PASS) progressif |
+| Retraite de base | ≤ 1 PASS (47 100 € [referentiel: PASS/2025]) | 17,75 % |
+| Retraite de base | > 1 PASS | 0,60 % |
+| Invalidité-décès | ≤ 1 PASS | 1,30 % |
+| Indemnités journalières | ≤ 3 PASS | 0,85 % |
+| Allocations familiales | Revenus nets | 0 % (< 110 % PASS) → 3,10 % (> 140 % PASS) progressif |
+| CSG déductible IR | 98,25 % revenus nets | 6,80 % |
+| CSG non déductible + CRDS | 98,25 % revenus nets | 2,90 % |
+| Formation professionnelle | 1 PASS | 0,25 % |
+
+**Total charges sociales estimé :** 30–45 % selon niveau de revenus.  
+**Déduction 2035 :** cotisations EFFECTIVEMENT PAYÉES dans l'année (ligne BT) — logique trésorerie BNC.  
+**Cotisations minimales :** dues même en cas de revenu nul ou déficitaire.
+
+*Source : URSSAF.fr — taux 2025 professions libérales*
+
+---
+
+### [REF-003] Cotisations retraite complémentaire — CARMF (Médecins) 2025
+
+Cotisations majoritairement **forfaitaires** (indépendantes du revenu) :
+
+| Poste | Montant indicatif 2025 |
+|-------|----------------------|
+| Retraite de base (ASS) | ~10 056 €/an |
+| Retraite complémentaire (RCV, taux plein) | ~6 004 €/an |
+| Prévoyance (décès/invalidité) | ~926 €/an |
+| ASV secteur 1 (participation CNAM) | ~4 648 €/an |
+
+> **Validation requise :** Vérifier sur carmf.fr — montants votés annuellement.
+
+---
+
+### [REF-004] Cotisations retraite complémentaire — CARPIMKO (Paramédicaux) 2025
+
+Kinésithérapeutes, infirmiers, orthophonistes, pédicures-podologues, orthoptistes.
+
+| Poste | Base / Montant 2025 |
+|-------|-------------------|
+| Retraite de base | 8,23 % (≤ 1 PASS) + 1,87 % (> 1 PASS) |
+| Retraite complémentaire (forfait selon classe A/B/C) | ~2 640 € à ~7 920 €/an |
+| Prévoyance | ~900 €/an |
+| ASA | ~105 €/an |
+
+> **Validation requise :** Vérifier sur carpimko.fr — montants publiés en début d'année.
+
+---
+
+### [REF-005] Barème kilométrique BNC 2025 — Voitures
+
+*Source : Arrêté du 2 février 2025 — applicable aux revenus 2024 déclarés en 2025. Identique au barème salarié (CGI art. 83).*
+
+| Puissance fiscale | ≤ 5 000 km | 5 001–20 000 km | > 20 000 km |
+|------------------|-----------|----------------|------------|
+| 3 CV et moins | 0,529 €/km | (km × 0,316) + 1 065 | 0,370 €/km |
+| 4 CV | 0,606 €/km | (km × 0,340) + 1 330 | 0,407 €/km |
+| 5 CV | 0,636 €/km | (km × 0,357) + 1 395 | 0,427 €/km |
+| 6 CV | 0,665 €/km | (km × 0,374) + 1 457 | 0,447 €/km |
+| 7 CV et plus | 0,697 €/km | (km × 0,394) + 1 515 | 0,470 €/km |
+
+**Exemple :** 5 CV, 9 000 km → (9 000 × 0,357) + 1 395 = **4 608 €** déductibles.
+
+**Règles BNC :**
+- Tenir un relevé kilométrique daté (date, trajet, client, km) — obligatoire en cas de contrôle.
+- Choix annuel : barème **ou** frais réels (non irrévocable).
+- Véhicule inscrit à l'actif du cabinet → frais réels uniquement, pas de barème.
+- Véhicule 100 % électrique → majoration **+20 %** du barème (depuis 2023).
+
+---
+
+### [REF-006] ACRE — Exonération début d'activité libérale
+
+- **Durée :** 12 mois à compter du début d'activité.
+- **Taux :** 25 % des taux normaux (exonération 75 %) si revenus ≤ 2/3 PASS (≈ 30 912 €). Dégressive au-delà.
+- **Attention :** Ne couvre pas la CSG/CRDS. CARMF/CARPIMKO maintiennent leurs cotisations minimales.
+- *Source : Art. L613-7 CSS*
+
+---
+
+### [REF-007] Régularisation N-2 — Point de vigilance 2035
+
+Les cotisations sont appelées sur les revenus **N-2** puis régularisées sur **N-1** après déclaration.  
+Sur la 2035 : déduire les cotisations **effectivement payées** dans l'année civile, pas les cotisations dues.  
+En phase de forte croissance : prévoir 1–2 ans de cotisations en décalage de trésorerie.
+
+---
+

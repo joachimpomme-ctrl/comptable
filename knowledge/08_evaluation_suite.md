@@ -247,3 +247,104 @@
 - Difficulté : advanced
 - Question : Quelle clause bénéficiaire choisir pour une assurance-vie dans une succession familiale complexe ?
 - Critères : hypothèses, notaire/CGP, pas de prescription définitive, sources
+
+---
+
+## Tests ajoutés 2026-05-22 — Sections 21 (déclarations) et 22 (optimisation + CGI)
+
+## EV-029 | declaration_2035_simple
+- Fonction : fiscalite_BNC
+- Difficulté : standard
+- Contexte : Kinésithérapeute libéral, CA 2025 = 85 000 €, cotisations CARPIMKO payées 8 200 €, loyer cabinet 7 200 €.
+- Question : Quelles sont les cases principales à renseigner sur ma 2035 et comment calculer mon résultat fiscal ?
+- Règles attendues : CGI Art. 93, 95, 97 (M_CGI) ; M1, M2
+- Critères de succès : cite CGI Art. 92-97, détaille lignes AA/BT/BV/résultat 2035, mentionne logique trésorerie, signale report case 5QC sur 2042, validation expert-comptable recommandée
+
+## EV-030 | declaration_2042_revenus_fonciers
+- Fonction : fiscalite_revenus_fonciers
+- Difficulté : standard
+- Contexte : Propriétaire bailleur, revenus fonciers bruts 18 000 €, charges 6 500 €, intérêts emprunt 3 200 €.
+- Question : Comment remplir ma déclaration 2044 et quelle case sur la 2042 ?
+- Règles attendues : CGI Art. 14, 28, 31 (M_CGI) ; M9
+- Critères de succès : cite Art. 14 et 28-31, explique lignes 21/250 de la 2044, calcul revenu net 8 300 €, report case 4BA sur 2042, mentionne plafond déficit foncier 10 700 €
+
+## EV-031 | declaration_2048_pv_immo
+- Fonction : fiscalite_plus_values
+- Difficulté : avancé
+- Contexte : Cession d'un appartement détenu 14 ans, prix vente 280 000 €, prix achat 180 000 €, frais achat réels 12 600 €, travaux 15 000 € il y a 3 ans.
+- Question : Calcule ma plus-value nette imposable et le montant d'impôt dû.
+- Règles attendues : CGI Art. 150 U, 150 VB (M_CGI) ; M9
+- Critères de succès : cite Art. 150 U et 150 VB, prix de revient = 207 600 € (180 000 + frais réels 12 600 + travaux 15 000), PV brute = 72 400 €, abattement durée IR (14 ans = 9 ans × 6 % = 54 %), PV nette IR = 33 304 €, abattement durée PS (9 ans × 1,65 % = 14,85 %), PV nette PS = 61 649 €, taux 19 % IR + 17,2 % PS, résultat ~6 328 € IR + ~10 604 € PS, surtaxe non applicable (PV nette IR 33 304 € < 50 000 €)
+
+## EV-032 | declaration_citations_cgi_obligatoires
+- Fonction : conformite
+- Difficulté : standard
+- Contexte : Question fiscale générique.
+- Question : Quel est le taux de l'abattement micro-BNC et qui peut en bénéficier ?
+- Règles attendues : CGI Art. 93, 102 ter (M_CGI)
+- Critères de succès : cite explicitement "CGI Art. 93" et "CGI Art. 102 ter" (pas seulement l'ID KB), donne le taux 34 % et le seuil 77 700 €, mentionne le millésime 2025
+
+## EV-033 | optimisation_per_calcul
+- Fonction : optimisation_fiscale
+- Difficulté : standard
+- Contexte : Libéral BNC, revenus nets 2025 = 95 000 €, TMI = 41 %.
+- Question : Quel est mon plafond PER 2025 et quelle économie fiscale si je verse le maximum ?
+- Règles attendues : CGI Art. 163 quatervicies (M_CGI) ; M6 ; M13 (PASS 2025)
+- Critères de succès : cite Art. 163 quatervicies, calcul plafond = max(10 % × 95 000, 10 % PASS) = 9 500 €, économie = 9 500 × 41 % = 3 895 €, mentionne report 3 ans, alerte sur TMI à la sortie retraite, validation CGP
+
+## EV-034 | optimisation_deficit_foncier
+- Fonction : optimisation_fiscale
+- Difficulté : standard
+- Contexte : Revenus fonciers 12 000 €, travaux de rénovation 25 000 € (déductibles), intérêts emprunt 4 000 €.
+- Question : Comment s'impute mon déficit foncier et quelle économie fiscale si TMI 30 % ?
+- Règles attendues : CGI Art. 156, 31 (M_CGI) ; M9
+- Critères de succès : cite Art. 156, calcul déficit sur charges hors intérêts = 25 000 - 12 000 = 13 000 €, imputation sur revenu global plafonnée à 10 700 €, surplus 2 300 € + intérêts 4 000 € reportables 10 ans sur foncier, économie 10 700 × 30 % = 3 210 € sur revenu global
+
+## EV-035 | optimisation_micro_vs_reel_bnc
+- Fonction : optimisation_fiscale
+- Difficulté : standard
+- Contexte : Infirmier libéral, CA 2025 = 65 000 €, charges réelles estimées = 28 000 € (cotisations 18 000 € + autres 10 000 €).
+- Question : Micro-BNC ou régime réel, lequel est plus avantageux ?
+- Règles attendues : CGI Art. 93, 102 ter (M_CGI) ; M2 ; M13
+- Critères de succès : cite Art. 93 et 102 ter, micro = 65 000 × (1 - 34 %) = 42 900 € imposable, réel = 65 000 - 28 000 = 37 000 € imposable, conclut que le réel est plus avantageux ici (charges 43 % > 34 % abattement), signale que le choix est annuel, validation expert-comptable
+
+## EV-036 | cotisations_tns_calcul
+- Fonction : cotisations_TNS
+- Difficulté : avancé
+- Contexte : Kinésithérapeute libéral, revenus nets BNC 2025 = 70 000 €.
+- Question : Estimez mes principales cotisations sociales URSSAF et CARPIMKO pour 2025.
+- Règles attendues : M13 (PASS 2025, taux URSSAF, CARPIMKO)
+- Critères de succès : utilise PASS 2025 = 47 100 €, calcule maladie ~4 550 € (6,5 %), retraite de base CNAVPL/CARPIMKO ~4 305 € (8,23 % jusqu'au PASS + 1,87 % de 1 à 5 PASS, soit 3 876 € + 428 €), CSG/CRDS ~6 790 € (9,7 %), signale que les cotisations CARPIMKO complémentaire et invalidité-décès sont forfaitaires (par classe) et non estimées ici, alerte sur régularisation N-2, précise que les taux de cotisation ne sont pas dans le référentiel (à confirmer URSSAF/CARPIMKO), validation auprès de la caisse recommandée
+- Note de fiabilité : l'ancien attendu de retraite de base et de CSG/CRDS était FAUX (sur-estimé). Valeurs recalculées indépendamment ; oracle de référence dans scripts/run_evals.py (fonction cotisations_tns_carpimko) et fixture tests/cas_evaluation.json (EV-036).
+
+## EV-037 | bareme_kilometrique_2025
+- Fonction : fiscalite_BNC
+- Difficulté : simple
+- Contexte : Orthophoniste libérale, voiture 6 CV, 9 000 km professionnels en 2025.
+- Question : Quel montant puis-je déduire au titre des frais kilométriques sur ma 2035 ?
+- Règles attendues : M13 (barème kilométrique 2025) ; CGI Art. 83
+- Critères de succès : cite Art. 83, applique le barème 6 CV tranche 5 001–20 000 km → (9 000 × 0,374) + 1 457 = 4 823 €, mentionne obligation relevé kilométrique, cite millésime 2025, signale l'option frais réels comme alternative
+
+## EV-038 | cgi_article_citation_abus_droit
+- Fonction : conformite
+- Difficulté : avancé
+- Contexte : Montage fiscal agressif.
+- Question : Quels sont les risques légaux d'un montage fiscal dont le seul but est d'éviter l'impôt ?
+- Règles attendues : 00_INSTRUCTIONS §22 (Art. L64 LPF, Art. 1729 CGI)
+- Critères de succès : cite correctement "Art. L64 LPF" (pas "CGI art. 64"), mentionne Art. 1729 CGI pour les pénalités (80 % majorations), explique la notion d'acte anormal, recommande validation fiscaliste
+
+## EV-039 | demembrement_bareme_669
+- Fonction : patrimoine
+- Difficulté : avancé
+- Contexte : Donation de la nue-propriété d'un appartement à un enfant, donateur âgé de 62 ans.
+- Question : Quelle est la valeur fiscale de la nue-propriété et de l'usufruit pour le calcul des droits de donation ?
+- Règles attendues : CGI Art. 669 (M_CGI) ; M6
+- Critères de succès : cite Art. 669, barème usufruit âge 62 ans = 40 % (60–70 ans = 40 %), nue-propriété = 60 % de la valeur pleine propriété, calcul des droits sur 60 %, abattement 100 000 € enfant (Art. 779), validation notaire obligatoire
+
+## EV-040 | tva_exoneration_sante_261
+- Fonction : fiscalite_TVA
+- Difficulté : standard
+- Contexte : Médecin généraliste libéral souhaitant récupérer la TVA sur ses investissements.
+- Question : Suis-je assujetti à la TVA en tant que médecin libéral ? Puis-je récupérer la TVA sur mes achats professionnels ?
+- Règles attendues : CGI Art. 261 (M_CGI) ; M2
+- Critères de succès : cite Art. 261, répond non — actes médicaux exonérés de TVA (soins à la personne), donc pas de récupération TVA en amont, exception si activité mixte (formations, expertise), alerte sur les professions ayant une activité partiellement taxée

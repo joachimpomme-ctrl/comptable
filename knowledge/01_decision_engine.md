@@ -37,7 +37,7 @@
   - **MAIS** déductibles du revenu global uniquement
 - **SI** versement volontaire PER avec renonciation à la déduction
   - **ALORS** choix irrévocable au moment du versement
-- **SEUIL** PASS 2025 = 47 100 €
+- **SEUIL** PASS 2025 = 47 100 € [referentiel: PASS/2025]
 - **SOURCE** GFPL-165 à GFPL-174, M2
 
 ### A3 — TVA des professions libérales
@@ -399,7 +399,7 @@
   - **ALORS** déduction du revenu global uniquement (dans les plafonds: 10 % du salaire plafonné à 8 PASS)
 - **SI** option de ne PAS déduire les versements
   - **ALORS** choix irrévocable au moment du versement; sortie capital: plus-values soumises au PFU uniquement
-- **SEUIL** PASS 2025 = 47 100 €
+- **SEUIL** PASS 2025 = 47 100 € [referentiel: PASS/2025]
 - **SORTIE** en rente ou en capital au choix (sauf compartiment cotisations obligatoires = rente uniquement)
 - **SOURCE** GFPL-165 à GFPL-174 (M2), PAT-020, PAT-021 (M6)
 
@@ -433,11 +433,15 @@
 | JEI (Jeune Entreprise Innovante) | 30 % | R&D ≥ 20 % des charges | 22 500 € / 45 000 € |
 | JEI R&D renforcée (≥ 30 % charges) | 50 % | R&D ≥ 30 % des charges | 25 000 € / 50 000 € |
 | GFI (groupement forestier) | 18 % | Détention parts | 5 700 € / 11 400 € |
-| Pinel (logement neuf, zones A/B1) | 12/18/21 % | Engagement 6/9/12 ans | 300 000 € (5 500 €/m²) |
+| Pinel (logement neuf, zones A/B1) — FERMÉ | 12/18/21 % | Engagement 6/9/12 ans | 300 000 € (5 500 €/m²) |
 | Malraux (restauration historique) | 22 % ou 30 % | Zone concernée | 400 000 € (hors niches) |
-| Censi-Bouvard (LMNP résidences services) | 11 % sur 9 ans | Neuf uniquement | 300 000 €/an |
+| Censi-Bouvard (LMNP résidences services) — FERMÉ | 11 % sur 9 ans | Neuf uniquement | 300 000 €/an |
 | Don organismes détresse/Fondation patrimoine | 75 % puis 66 % | Plafond 1 000 € pour 75 % | 20 % du revenu imposable |
 | Réduction IFI (dons organismes intérêt général) | 75 % | Dons avant date dépôt déclaration | 50 000 €/an |
+
+> **ATTENTION — Dispositifs FERMÉS aux nouvelles acquisitions :**
+> - **Pinel :** fermé aux nouvelles acquisitions depuis le 01/01/2025 (seuls les investissements antérieurs continuent à produire leurs réductions). Ne pas présenter ce dispositif comme ouvert à de nouveaux investissements.
+> - **Censi-Bouvard :** fermé aux nouvelles acquisitions depuis le 01/01/2023. Les réductions restent acquises pour les investissements signés avant cette date.
 
 - **SOURCE** GFPL-125 à GFPL-141, PAT-015, M2, M6
 
@@ -489,20 +493,20 @@ Avant toute préconisation, auditer systématiquement:
 
 | Paramètre | Valeur 2025 |
 |---|---|
-| PASS (Plafond Annuel Sécurité Sociale) | 47 100 € |
-| Seuil micro-BNC | 77 700 € |
-| Seuil micro-BIC (autres locations meublées) | 77 700 € |
-| Seuil micro-BIC (tourisme NON classé) | 15 000 € |
-| Seuil micro-BIC (tourisme CLASSÉ) | 77 700 € |
-| Seuil LMP (recettes location) | 23 000 € |
-| Seuil IFI | 1 300 000 € (à vérifier annuellement) |
+| PASS (Plafond Annuel Sécurité Sociale) | 47 100 € [referentiel: PASS/2025] |
+| Seuil micro-BNC | 77 700 € [referentiel: seuil_micro_bnc/2025] |
+| Seuil micro-BIC (autres locations meublées) | 77 700 € [referentiel: seuil_micro_bic_classe/2025] |
+| Seuil micro-BIC (tourisme NON classé) | 15 000 € [referentiel: seuil_micro_bic_tourisme_non_classe/2025] |
+| Seuil micro-BIC (tourisme CLASSÉ) | 77 700 € [referentiel: seuil_micro_bic_classe/2025] |
+| Seuil LMP (recettes location) | 23 000 € [referentiel: seuil_lmp_recettes/2025] |
+| Seuil IFI | 1 300 000 € [referentiel: seuil_ifi/2025] |
 | Seuil CEHR (célibataire) | 250 000 € RFR |
 | Seuil CEHR (couple) | 500 000 € RFR |
 | Seuil CDHR (célibataire) | 250 000 € RFR |
 | Plafond PEA | 150 000 € (+ 225 000 € PEA-PME) |
-| Abattement assurance-vie (avant 70 ans) | 152 500 € / bénéficiaire |
+| Abattement assurance-vie (avant 70 ans) | 152 500 € / bénéficiaire [referentiel: abattement_av_avant_70/2025] |
 | Abattement assurance-vie (après 70 ans) | 30 500 € global |
-| Abattement donation parent/enfant | 100 000 € / parent / enfant (15 ans) |
+| Abattement donation parent/enfant | 100 000 € / parent / enfant (15 ans) [referentiel: abattement_donation_parent_enfant/2025] |
 | Taux IS normal | 25 % |
 | Taux IS réduit (bénéfice < 42 500 €, PME) | 15 % |
 | PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) |
