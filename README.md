@@ -76,11 +76,11 @@ scripts/
 | 6 | `06_golden_checklists.md` | Checklists par domaine |
 | 7 | `07_rule_source_crosswalk.jsonl` | Tracabilite regles -> sources |
 | 8 | `08_evaluation_suite.md` | Cas de test de reference |
-| 9 | `M_CGI_code_general_impots.md` | 44 articles CGI — texte legal |
+| 9 | `M_CGI_code_general_impots.md` | 51 articles CGI — texte legal (v3 2026-05-22) |
 | 10 | `09_agent_manifest.json` | Metadonnees corpus |
 
 > Les fichiers du sous-dossier `knowledge/chatgpt_only/` sont exclus de Gemini (hors limite 10 fichiers).
-> Sur **ChatGPT** (sans limite stricte), uploader les 12 fichiers.
+> Sur **ChatGPT** (sans limite stricte), uploader les 14 fichiers (dont M13 baremes TNS/kilometrique).
 
 5. Activer les outils **Google Drive**, **Google Docs**, **Google Sheets**
 

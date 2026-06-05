@@ -5,6 +5,33 @@ Source : CGI Légifrance — Dernière modification 01 mai 2026
 
 **Statut :** `sourced` — texte légal officiel
 
+**Version :** v3 — 2026-05-22
+
+**Note :** Art. L64 LPF (abus de droit) est dans le Livre des Procédures Fiscales, hors scope CGI.
+
+---
+
+## Article 14 — Revenus Fonciers
+
+**Source :** CGI Art. 14 | **Module :** revenus_fonciers | **Tags :** revenus_fonciers, definition
+
+```
+Article 14
+Sous réserve des dispositions de l'article 15, sont compris dans la catégorie des revenus fonciers, lorsqu'ils ne
+sont pas inclus dans les bénéfices d'une entreprise industrielle, commerciale ou artisanale, d'une exploitation
+agricole ou d'une profession non commerciale :
+1° Les revenus des propriétés bâties, telles que maisons et usines, ainsi que les revenus :
+a De l'outillage des établissements industriels attaché au fonds à perpétuelle demeure, dans les conditions
+indiquées au premier paragraphe de l'article 525 du code civil ou reposant sur des fondations spéciales
+faisant corps avec l'immeuble ;
+b De toutes installations commerciales ou industrielles assimilables à des constructions ;
+c Des bateaux utilisés en un point fixe et aménagés pour l'habitation, le commerce ou l'industrie, même s'ils
+sont seulement retenus par des amarres.
+2° Les revenus des propriétés non bâties de toute nature, y compris ceux des terrains occupés par les
+carrières, mines et tourbières, les étangs, les salines et marais salants.
+Code général des impôts, CGI. - Dernière modification le 01 mai 2026 - Document généré le 11 mai 2026
+```
+
 ---
 
 ## Article 28 — Revenus Fonciers
@@ -130,6 +157,65 @@ et le 31 décembre 1998 et à la demande du contribuable, une déduction au titr
 années suivantes. La période d'amortissement a pour point de départ le premier jour du mois de l'achèvement
 de l'immeuble ou de son acquisition si elle est postérieure.
 L'avantage prévu au premier alinéa est applicable, dans les mêmes condition
+```
+
+---
+
+## Article 156 — Revenus Fonciers
+
+**Source :** CGI Art. 156 | **Module :** revenus_fonciers | **Tags :** deficit_foncier, 10700, imputation_revenu_global, report_10_ans
+
+```
+Article 156
+L'impôt sur le revenu est établi d'après le montant total du revenu net annuel dont dispose chaque foyer
+fiscal. Ce revenu net est déterminé eu égard aux propriétés et aux capitaux que possèdent les membres
+du foyer fiscal désignés aux 1 et 3 de l'article 6, aux professions qu'ils exercent, aux traitements, salaires,
+pensions et rentes viagères dont ils jouissent ainsi qu'aux bénéfices de toutes opérations lucratives auxquelles
+ils se livrent, sous déduction :
+I. – Du déficit constaté pour une année dans une catégorie de revenus ; si le revenu global n'est pas suffisant
+pour que l'imputation puisse être intégralement opérée, l'excédent du déficit est reporté successivement sur le
+revenu global des années suivantes jusqu'à la sixième année inclusivement.
+Toutefois, n'est pas autorisée l'imputation :
+1° des déficits provenant d'exploitations agricoles lorsque le total des revenus nets d'autres sources excède
+127 677 € ; ces déficits peuvent cependant être admis en déduction des bénéfices de même nature des années
+suivantes jusqu'à la sixième inclusivement.
+Le montant mentionné au premier alinéa est révisé chaque année selon les mêmes modalités que la limite
+supérieure de la première tranche du barème de l'impôt sur le revenu.
+1° bis des déficits provenant, directement ou indirectement, des activités relevant des bénéfices industriels
+ou commerciaux lorsque ces activités ne comportent pas la participation personnelle, continue et directe
+de l'un des membres du foyer fiscal à l'accomplissement des actes nécessaires à l'activité. Il en est ainsi,
+notamment, lorsque la gestion de l'activité est confiée en droit ou en fait à une personne qui n'est pas un
+membre du foyer fiscal par l'effet d'un mandat, d'un contrat de travail ou de toute autre convention. Les
+déficits non déductibles pour ces motifs peuvent cependant être imputés sur les bénéfices tirés d'activités
+de même nature exercées dans les mêmes conditions, durant la même année ou les six années suivantes.
+Ces modalités d'imputation ne sont pas applicables aux déficits provenant de l'activité de location directe ou
+indirecte de locaux d'habitation meublés ou destinés à être loués meublés.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Toutefois, lorsque l'un des membres du foyer fiscal fait l'objet d'une procédure de liquidation judiciaire
+prévue par le titre IV du livre VI du code de commerce à raison de l'activité génératrice des déficits
+mentionnés au premier alinéa, les dispositions du premier alinéa du I sont applicables au montant de ces
+déficits restant à reporter à la date d'ouverture de la procédure, à la condition que les éléments d'actif affectés
+à cette activité cessent définitivement d'appartenir, directement ou indirectement, à l'un des membres du
+foyer fiscal.
+Les dispositions du premier alinéa s'appliquent pour la détermination du revenu imposable au titre des
+années 1996 et suivantes aux déficits réalisés par les membres des copropriétés mentionnées à l'article
+8 quinquies. Dans les autres cas, elles sont applicables au déficit ou à la fraction du déficit provenant
+d'activités créées, reprises, étendues ou adjointes à compter du 1er janvier 1996. Cette fraction est déterminée
+au moyen d'une comptabilité séparée retraçant les opérations propres à ces extensions ou adjonctions et
+qui donne lieu à la production des documents prévus à l'article 53 A ; à défaut, les modalités d'imputation
+prévues au premier alinéa s'appliquent à l'ensemble du déficit des activités.
+Les dispositions du premier alinéa s'appliquent également à la fraction du déficit des activités créées ou
+reprises avant le 1er janvier 1996 provenant des investissements réalisés à compter de cette date. Cette
+fraction est déterminée selon le rapport existant entre la somme des valeurs nettes comptables de ces
+investissements et la somme des valeurs nettes comptables de l'ensemble des éléments de l'actif immobilisé,
+y compris ces investissements. Les biens loués ou affectés à l'activité par l'effet de toute autre conventi
 ```
 
 ---
@@ -484,6 +570,75 @@ concernant les indications de leur livre-journal ou de leur comptabilité.
 
 ---
 
+## Article 102 ter — Bnc
+
+**Source :** CGI Art. 102 ter | **Module :** BNC | **Tags :** BNC, micro_BNC, seuils, 77700
+
+```
+Article 102 ter
+1. Le bénéfice imposable des contribuables qui perçoivent des revenus non commerciaux dont le montant
+hors taxes de l'année civile précédente ou de la pénultième année, ajusté s'il y a lieu au prorata du temps
+d'activité au cours de l'année de référence, n'excède pas 77 700 € est égal au montant brut des recettes
+annuelles diminué d'un abattement forfaitaire de 34 %. Cet abattement ne peut être inférieur à 305 €.
+Les plus ou moins-values provenant de la cession des biens affectés à l'exploitation sont prises en compte
+distinctement pour l'assiette de l'impôt sur le revenu dans les conditions prévues à l'article 93 quater, sous
+réserve des dispositions de l'article 151 septies. Pour l'application de la phrase précédente, l'abattement
+mentionné au premier alinéa est réputé tenir compte des amortissements pratiqués selon le mode linéaire.
+Le premier seuil mentionné au premier alinéa est actualisé tous les trois ans dans la même proportion que
+l'évolution triennale de la première tranche du barème de l'impôt sur le revenu et arrondi à la centaine d'euros
+la plus proche.
+Pour l'appréciation de la limite mentionnée au présent 1, il est fait abstraction des opérations portant sur les
+éléments d'actif affectés à l'exercice de la profession ou des indemnités reçues à l'occasion de la cessation
+de l'exercice de la profession ou du transfert d'une clientèle et des honoraires rétrocédés à des confrères
+selon les usages de la profession. En revanche, il est tenu compte des recettes réalisées par les sociétés et
+groupements non soumis à l'impôt sur les sociétés dont le contribuable est membre, à proportion de ses droits
+dans les bénéfices de ces sociétés et groupements. Toutefois, le régime fiscal de ces sociétés et groupements
+demeure déterminé uniquement par le montant global de leurs recettes.
+Au titre de l'année qui suit la sortie du régime d'imposition prévu à l'article 96 et lorsque l'option mentionnée
+à l'article 93 A avait été exercée, les recettes mentionnées au premier alinéa du présent 1 sont diminuées,
+avant application de l'abattement prévu au même premier alinéa, du montant hors taxes des créances
+détenues par le contribuable au 31 décembre de la dernière année imposée selon les modalités prévues à
+l'article 93 A.
+2. Les contribuables visés au 1 portent directement sur la déclaration prévue à l'article 170 le montant des
+recettes annuelles et des plus ou moins-values réalisées ou subies au cours de cette même année.
+3. (Abrogé).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+4. Les contribuables visés au 1 doivent tenir et, sur demande du service des impôts, présenter un document
+donnant le détail journalier de leurs recettes professionnelles.
+Ce document comporte, quelle que soit la profession exercée, l'identité déclarée par le client ainsi que le
+montant, la date et la forme du versement des honoraires.
+5. Les contribuables qui souhaitent renoncer au bénéfice du présent article peuvent opter pour le régime visé
+à l'article 97.
+Cette option doit être exercée dans les délais prévus pour le dépôt de la déclaration visée à l'article 97.
+Elle est valable un an et reconduite tacitement chaque année civile pour un an. Les contribuables peuvent
+renoncer à cette option dans les délais applicables au dépôt de la déclaration souscrite au titre des résultats de
+la période précédant celle au titre de laquelle la renonciation s'applique.
+6. Sont exclus de ce régime :
+a. Les contribuables qui exercent plusieurs activités dont le total des revenus, abstraction faite des recettes
+des offices publics ou ministériels, excède la limite mentionnée au 1 ;
+b. (Abrogé) ;
+c. Les contribuables dont tout ou partie des biens affectés à l'exploitation sont compris dans un patrimoine
+fiduciaire en application d'une opération de fiducie définie à l'article 2011 du code civil ;
+d Les contribuables qui exercent une activité occulte au sens du deuxième alinéa de l'article L. 169 du livre
+des procédures fiscales.
+3 : Dispositions communes
+```
+
+---
+
 ## Article 103 — Bnc
 
 **Source :** CGI Art. 103 | **Module :** BNC | **Tags :** BNC, tenue_registres
@@ -518,6 +673,397 @@ diverses catégories de revenus
 VII : Revenus des capitaux mobiliers
 1 : Produits des actions et parts sociales - Revenus assimilés
 a : Généralités
+```
+
+---
+
+## Article 83 — Revenus Salaries
+
+**Source :** CGI Art. 83 | **Module :** revenus_salaries | **Tags :** frais_reels, charges_deductibles, salaries, abattement_10pc
+
+```
+Article 83
+Le montant net du revenu imposable est déterminé en déduisant du montant brut des sommes payées et des
+avantages en argent ou en nature accordés :
+1° Les cotisations de sécurité sociale, y compris :
+a) Les cotisations d'assurance vieillesse versées en exercice des facultés de rachat prévues aux articles L.
+351-14-1 du code de la sécurité sociale, L. 9 bis du code des pensions civiles et militaires de retraite, ainsi
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+que celles prévues par des dispositions réglementaires ayant le même objet prises sur le fondement de
+l'article L. 711-1 du code de la sécurité sociale ;
+b) Les cotisations versées aux régimes de retraite complémentaire mentionnés au chapitre Ier du titre II du
+livre IX du code de la sécurité sociale ;
+c) Les cotisations au régime public de retraite additionnel obligatoire institué par l'article 76 de la loi n°
+2003-775 du 21 août 2003 portant réforme des retraites ;
+1° 0 bis Les cotisations versées conformément aux dispositions du règlement CEE n° 1408/71 du Conseil du
+14 juin 1971 relatif à l'application des régimes de sécurité sociale aux travailleurs salariés et aux membres
+de leur famille qui se déplacent à l'intérieur de la Communauté ou conformément aux stipulations d'une
+convention ou d'un accord international relatif à l'application des régimes de sécurité sociale ;
+1° bis (Abrogé)
+1° ter (Abrogé à compter de l'entrée en vigueur de la loi n° 2002-73 du 17 janvier 2002).
+1° quater Les cotisations ou primes versées aux régimes de prévoyance complémentaire obligatoires
+et collectifs, au sens du sixième alinéa de l'article L. 242-1 du code de la sécurité sociale, à condition,
+lorsque ces cotisations ou primes financent des garanties portant sur le remboursement ou l'indemnisation
+de frais occasionnés par une maladie, une maternité ou un accident, que ces garanties respectent les
+conditions mentionnées à l'article L. 871-1 du code de la sécurité sociale. Il en va de même des cotisations
+ou primes versées par les employeurs publics et leurs agents aux contrats collectifs de protection sociale
+complémentaire pour lesquels la souscription des agents est rendue obligatoire en application d'un accord
+prévu à l'article L. 827-2 du code général de la fonction publique ou en application de l'arrêté mentionné au
+II de l'article L. 4123-3 du code de la défense.
+Les cotisations ou les primes mentionnées au premier alinéa s'entendent, s'agissant des cotisations à la charge
+de l'employeur, de celles correspondant à des garanties autres que celles portant sur le remboursement ou
+l'indemnisation de frais occasionnés par une maladie, une maternité ou un accident.
+Les cotisations à la charge de l'employeur correspondant à des garanties portant sur le remboursement
+ou l'indemnisation de frais occasionnés par une maladie, une maternité ou un accident sont ajoutées à la
+rémunération prise en compte pour la détermination des bases d'imposition.
+Les cotisations ou les primes déductibles en application des premier et deuxième alinéas le sont dans la
+limite d'un montant égal à la somme de 5 % du montant annuel du plafond mentionné à l'article L. 241-3 du
+code de la sécurité sociale et de 2 % de la rémunération annuelle brute, sans que le total ainsi obtenu puisse
+excéder 2 % de huit fois le montant annuel du plafond précité. En cas d'excédent, celui-ci est ajouté à la
+rémunération.
+2° Les cotisations ou primes versées aux régimes de retraite supplémentaire, y compris ceux gérés par une
+institution mentionnée à l'article L. 370-1 du code des assurances pour les contrats mentionnés à l'article L.
+143-1 dudit code lorsqu'ils ont pour objet l'acquisition et la jouissance de droits viagers, auxquels le salarié
+est affilié à titre obligatoire, les cotisations versées, à compter du 1er janvier 1993, à titre obligatoire au
+régime de prévoyance des joueurs professionnels de football institué par la charte du football professionnel
+ainsi que les cotisations versées, à compter du 1er janvier 2026, par les joueurs pr
+```
+
+---
+
+## Article 194 — Bareme Ir
+
+**Source :** CGI Art. 194 | **Module :** bareme_IR | **Tags :** quotient_familial, parts_fiscales, enfants_a_charge
+
+```
+Article 194
+I. Le nombre de parts à prendre en considération pour la division du revenu imposable prévue à l'article 193
+est déterminé conformément aux dispositions suivantes :
+SITUATION DE FAMILLE
+NOMBRE DE PARTS
+Célibataire, divorcé ou veuf sans enfant à charge
+Marié sans enfant à charge
+Célibataire ou divorcé ayant un enfant à charge
+Marié ou veuf ayant un enfant à charge
+Célibataire ou divorcé ayant deux enfants à charge
+Marié ou veuf ayant deux enfants à charge
+Célibataire ou divorcé ayant trois enfants à charge
+Marié ou veuf ayant trois enfants à charge
+Célibataire ou divorcé ayant quatre enfants à charge
+Marié ou veuf ayant quatre enfants à charge
+Célibataire ou divorcé ayant cinq enfants à charge
+Marié ou veuf ayant cinq enfants à charge
+Célibataire ou divorcé ayant six enfants à charge
+1
+2
+1,5
+2,5
+2
+3
+3
+4
+4
+5
+5
+6
+6
+et ainsi de suite, en augmentant d'une part par enfant à charge du contribuable.
+Lorsque les époux font l'objet d'une imposition séparée en application du 4 de l'article 6, chacun d'eux est
+considéré comme un célibataire ayant à sa charge les enfants dont il assume à titre principal l'entretien. Dans
+cette situation, ainsi qu'en cas de divorce, de rupture du pacte civil de solidarité ou de toute séparation de fait
+de parents non mariés, l'enfant est considéré, jusqu'à preuve du contraire, comme étant à la charge du parent
+chez lequel il réside à titre principal.
+En cas de résidence alternée au domicile de chacun des parents et sauf disposition contraire dans la
+convention de divorce mentionnée à l'article 229-1 du code civil, la convention homologuée par le juge, la
+décision judiciaire ou, le cas échéant, l'accord entre les parents, les enfants mineurs sont réputés être à la
+charge égale de l'un et de l'autre parent. Cette présomption peut être écartée s'il est justifié que l'un d'entre
+eux assume la charge principale des enfants.
+Lorsque les enfants sont réputés être à la charge égale de chacun des parents, ils ouvrent droit à une
+majoration de :
+a) 0,25 part pour chacun des deux premiers et 0,5 part à compter du troisième, lorsque par ailleurs le
+contribuable n'assume la charge exclusive ou principale d'aucun enfant ;
+b) 0,25 part pour le premier et 0,5 part à compter du deuxième, lorsque par ailleurs le contribuable assume la
+charge exclusive ou principale d'un enfant ;
+c) 0,5 part pour chacun des enfants, lorsque par ailleurs le contribuable assume la charge exclusive ou
+principale d'au moins deux enfants.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Pour l'application des dispositions du premier alinéa, sont assimilées à des enfants à charge les personnes
+considérées comme étant à la charge du contribuable en vertu de l'article 196 A bis.
+II. Pour l'imposition des contribuables célibataires ou divorcés qui vivent seuls, le nombre de parts prévu
+au I est augmenté de 0,5 lorsqu'ils supportent à titre exclusif ou principal la charge d'au moins un enfant.
+Lorsqu'ils entretiennent uniquement des enfants dont la charge est réputée également partagée avec l'autre
+parent, la majoration est de 0,25 pour un seul enfant et de 0,5 si les enfants sont au moins deux. Ces
+dispositions s'appliquent nonobstant la perception éventuelle d'une pension alimentaire versée en vertu d'une
+convention de divorce par consentement mutuel déposée au rang des minutes d'un notaire ou d'une décision
+de justice pour l'entretien desdits enfants.
+```
+
+---
+
+## Article 195 — Bareme Ir
+
+**Source :** CGI Art. 195 | **Module :** bareme_IR | **Tags :** quotient_familial, parent_isole, demi_parts_supplementaires
+
+```
+Article 195
+1. Par dérogation aux dispositions qui précèdent, le revenu imposable des contribuables célibataires, divorcés
+ou veufs n'ayant pas d'enfant à leur charge, exclusive, principale ou réputée également partagée entre les
+parents, est divisé par 1,5 lorsque ces contribuables :
+a. Vivent seuls et ont un ou plusieurs enfants majeurs ou faisant l'objet d'une imposition distincte dont ces
+contribuables ont supporté à titre exclusif ou principal la charge pendant au moins cinq années au cours
+desquelles ils vivaient seuls ;
+b. Vivent seuls et ont eu un ou plusieurs enfants qui sont morts, à la condition que l'un d'eux au moins
+ait atteint l'âge de seize ans ou que l'un d'eux au moins soit décédé par suite de faits de guerre et que les
+contribuables aient supporté à titre exclusif ou principal la charge de l'un au moins de ces enfants pendant au
+moins cinq années au cours desquelles ils vivaient seuls ;
+c. Sont titulaires, soit pour une invalidité de 40 % ou au-dessus, soit à titre de veuve, d'une pension prévue
+par les dispositions du code des pensions militaires d'invalidité et des victimes de guerre reproduisant celles
+des lois des 31 mars et 24 juin 1919 ;
+d. Sont titulaires d'une pension d'invalidité pour accident du travail de 40 % ou au-dessus ;
+d bis. Sont titulaires de la carte “ mobilité inclusion ” portant la mention “ invalidité ” prévue à l'article L.
+241-3 du code de l'action sociale et des familles ;
+e. Vivent seuls et ont adopté un enfant, à la condition que, si l'adoption a eu lieu alors que l'enfant était âgé
+de plus de dix ans, cet enfant ait été à la charge de l'adoptant comme enfant recueilli dans les conditions
+prévues à l'article 196 depuis l'âge de dix ans. Cette disposition n'est pas applicable si l'enfant adopté est
+décédé avant d'avoir atteint l'âge de seize ans ou si l'enfant adopté n'a pas été à la charge exclusive ou
+principale des contribuables pendant au moins cinq années au cours desquelles ceux-ci vivaient seuls ;
+f. Sont âgés de plus de 74 ans et titulaires de la carte du combattant ou d'une pension servie en vertu des
+dispositions du code des pensions militaires d'invalidité et des victimes de guerre ; cette disposition est
+également applicable aux conjoints survivants, âgés de plus de 74 ans, des personnes mentionnées ci-dessus
+ainsi que des personnes titulaires de la carte du combattant au moment de leur décès.
+2. Le quotient familial prévu à l'article 194 est augmenté d'une demi-part pour chaque enfant à charge et d'un
+quart de part pour chaque enfant réputé à charge égale de l'un et l'autre de ses parents, titulaire de la carte “
+mobilité inclusion ” portant la mention “ invalidité ” prévue à l'article L. 241-3 du code de l'action sociale et
+des familles.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+3. Le quotient familial prévu à l'article 194 est augmenté d'une demi-part pour les contribuables mariés,
+lorsque l'un ou l'autre des conjoints remplit l'une des conditions fixées aux c, d et d bis du 1.
+4. Le quotient familial prévu à l'article 194 est augmenté d'une part pour les contribuables mariés invalides
+lorsque chacun des conjoints remplit l'une des conditions fixées aux c, d et d bis du 1.
+5. Le quotient familial prévu à l'article 194 est augmenté d'une demi-part pour les contribuables célibataires,
+divorcés ou veufs ayant un ou plusieurs enfants à charge, que celle-ci soit exclusive, principale ou réputée
+également partagée entre les parents, lorsque ces contribuables remplissent l'une des conditions d'invalidité
+fixées aux c, d ou d bis du 1.
+6. Les contribuables mariés, lorsque l'un des conjoints est âgé de plus de 74 ans et titulaire de la carte du
+combattant ou d'une pension servie en vertu des dispositions du code des pensions militaires d'invalidité et
+des victimes de guerre, bénéficient d'une demi-part supplémentaire de quotient familial.
+Les contribuables qui bénéficient des dispositions des 3 ou 4 ne peuvent bénéficier des dispositions du
+premier alinéa.
+```
+
+---
+
+## Article 197 — Bareme Ir
+
+**Source :** CGI Art. 197 | **Module :** bareme_IR | **Tags :** IR, bareme, tranches, TMI, 11pc, 30pc, 41pc, 45pc, quotient_familial
+
+```
+Article 197
+I. – En ce qui concerne les contribuables visés à l'article 4 B, il est fait application des règles suivantes pour
+le calcul de l'impôt sur le revenu :
+1. L'impôt est calculé en appliquant à la fraction de chaque part de revenu qui excède 11 600 € le taux de :
+– 11 % pour la fraction supérieure à 11 600 € et inférieure ou égale à 29 579 € ;
+– 30 % pour la fraction supérieure à 29 579 € et inférieure ou égale à 84 577 € ;
+– 41 % pour la fraction supérieure à 84 577 € et inférieure ou égale à 181 917 € ;
+– 45 % pour la fraction supérieure à 181 917 €.
+2. La réduction d'impôt résultant de l'application du quotient familial ne peut excéder 1 807 € par demi-
+part ou la moitié de cette somme par quart de part s'ajoutant à une part pour les contribuables célibataires,
+divorcés, veufs ou soumis à l'imposition distincte prévue au 4 de l'article 6 et à deux parts pour les
+contribuables mariés soumis à une imposition commune.
+Toutefois, pour les contribuables célibataires, divorcés, ou soumis à l'imposition distincte prévue au 4 de
+l'article 6 qui répondent aux conditions fixées au II de l'article 194, la réduction d'impôt correspondant
+à la part accordée au titre du premier enfant à charge est limitée à 4 262 €. Lorsque les contribuables
+entretiennent uniquement des enfants dont la charge est réputée également partagée entre l'un et l'autre des
+parents, la réduction d'impôt correspondant à la demi-part accordée au titre de chacun des deux premiers
+enfants est limitée à la moitié de cette somme.
+Par dérogation aux dispositions du premier alinéa, la réduction d'impôt résultant de l'application du quotient
+familial, accordée aux contribuables qui bénéficient des dispositions des a, b et e du 1 de l'article 195, ne
+peut excéder 1 079 € ;
+Les contribuables qui bénéficient d'une demi-part au titre des a, b, c, d, d bis, e et f du 1 ainsi que des 2 à
+6 de l'article 195 ont droit à une réduction d'impôt égale à 1 801 € pour chacune de ces demi-parts lorsque
+la réduction de leur cotisation d'impôt est plafonnée en application du premier alinéa. La réduction d'impôt
+est égale à la moitié de cette somme lorsque la majoration visée au 2 de l'article 195 est de un quart de
+part. Cette réduction d'impôt ne peut toutefois excéder l'augmentation de la cotisation d'impôt résultant du
+plafonnement.
+Les contribuables veufs ayant des enfants à charge qui bénéficient d'une part supplémentaire de quotient
+familial en application du I de l'article 194 ont droit à une réduction d'impôt égale à 2 011 € pour cette
+part supplémentaire lorsque la réduction de leur cotisation d'impôt est plafonnée en application du premier
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+alinéa du présent 2. Cette réduction d'impôt ne peut toutefois excéder l'augmentation de la cotisation d'impôt
+résultant du plafonnement.
+3. Le montant de l'impôt résultant de l'application des dispositions précédentes est réduit de 30 %,
+dans la limite de 2 450 €, pour les contribuables domiciliés dans les départements de la Guadeloupe,
+de la Martinique et de la Réunion ; cette réduction est égale à 40 %, dans la limite de 4 050 €, pour les
+contribuables domiciliés dans les départements de la Guyane et de Mayotte ;
+4. a. Le montant de l'impôt résultant de l'application des dispositions précédentes est diminué, dans la limite
+de son montant, de la différence entre 897 € et 45,25 % de son montant pour les contribuables célibataires,
+divorcés ou veufs et de la différence entre 1 483 € et 45,25 % de son montant pour les contribuables soumis à
+imposition commune.
+b. (Abrogé)
+5. Les réductions d'impôt mentionnées aux articles 199 quater F à 200 s'imputent sur l'impôt résultant de
+l'application des dispositions précédentes avant imputation des crédits d'impôt et des prélèvements ou
+retenues non libératoires ; elles ne peuvent pas donner lieu à remboursement.
+II. – (Abrogé)
+```
+
+---
+
+## Article 200 — Reductions Impot
+
+**Source :** CGI Art. 200 | **Module :** reductions_impot | **Tags :** dons_associations, reduction_66pc, reduction_75pc, plafond_20pc
+
+```
+Article 200
+1. Ouvrent droit à une réduction d'impôt sur le revenu égale à 66 % de leur montant les sommes prises dans
+la limite de 20 % du revenu imposable qui correspondent à des dons et versements, y compris l'abandon
+exprès de revenus ou produits, effectués par les contribuables domiciliés en France au sens de l'article 4 B,
+au profit :
+a) De fondations ou associations reconnues d'utilité publique sous réserve du 2 bis, de fondations
+universitaires ou de fondations partenariales mentionnées respectivement aux articles L. 719-12 et L. 719-13
+du code de l'éducation et, pour les seuls salariés, mandataires sociaux, sociétaires, adhérents et actionnaires
+des entreprises fondatrices ou des entreprises du groupe, au sens de l'article 223 A ou de l'article 223 A bis,
+auquel appartient l'entreprise fondatrice, de fondations d'entreprise, lorsque ces organismes répondent aux
+conditions fixées au b. Les dons et versements réalisés par les mandataires sociaux, sociétaires, actionnaires
+et adhérents de ces entreprises auprès de ces fondations d'entreprise sont retenus dans la limite de 1 500
+euros ;
+b) D'oeuvres ou d'organismes d'intérêt général ayant un caractère philanthropique, éducatif, scientifique,
+social, humanitaire, sportif, familial, culturel, ou concourant à l'égalité entre les femmes et les hommes, à la
+mise en valeur du patrimoine artistique, notamment à travers les souscriptions ouvertes pour financer l'achat
+d'objets ou d'oeuvres d'art destinés à rejoindre les collections d'un musée de France accessibles au public,
+à la défense de l'environnement naturel ou à la diffusion de la culture, de la langue et des connaissances
+scientifiques françaises ;
+c) Des établissements d'enseignement supérieur ou d'enseignement artistique publics ou privés, d'intérêt
+général, à but non lucratif et des établissements d'enseignement supérieur consulaire mentionnés à l'article L.
+711-17 du code de commerce pour leurs activités de formation professionnelle initiale et continue ainsi que
+de recherche ;
+d) D'organismes visés au 4 de l'article 238 bis ;
+ 
+ 
+ 
+ 
+ 
+ 
+
+e) D'associations cultuelles et de bienfaisance, ainsi que des établissements publics des cultes reconnus
+d'Alsace-Moselle ;
+f) D'organismes publics ou privés dont la gestion est désintéressée et qui ont pour activité principale la
+présentation au public d'oeuvres dramatiques, lyriques, musicales, chorégraphiques, cinématographiques,
+audiovisuelles et de cirque ou l'organisation d'expositions d'art contemporain, à la condition que les
+versements soient affectés à cette activité. Cette disposition ne s'applique pas aux organismes qui présentent
+des oeuvres à caractère pornographique ou incitant à la violence ;
+f bis) D'associations d'intérêt général exerçant des actions concrètes en faveur du pluralisme de la presse, par
+la prise de participations minoritaires, l'octroi de subventions ou encore de prêts bonifiés à des entreprises de
+presse, au sens du 1 de l'article 39 bis A.
+Les donateurs peuvent affecter leurs dons au financement d'une entreprise de presse ou d'un service de presse
+en ligne en particulier, à condition qu'il n'existe aucun lien économique et financier, direct ou indirect, entre
+le donateur et le bénéficiaire.
+f ter) De communes, de syndicats intercommunaux de gestion forestière, de syndicats mixtes de gestion
+forestière et de groupements syndicaux forestiers pour la réalisation, dans le cadre d'une activité d'intérêt
+général concourant à la défense de l'environnement naturel, d'opérations d'entretien, de renouvellement ou
+de reconstitution de bois et forêts présentant des garanties de gestion durable, au sens de l'article L. 124-1 du
+code forestier, ou pour l'acquisition de bois et forêts destinés à être intégrés dans le périmètre du document
+d'aménagement mentionné à l'article L. 212-1 du même code ;
+g) De fonds de dotation :
+1° Répondant aux caractéristiques mentionnées au b ou au f bis ;
+2° Ou dont la gestion est désintéressée et qui reversent les revenus tirés d
+```
+
+---
+
+## Article 200-0 A — Niches Fiscales
+
+**Source :** CGI Art. 200-0 A | **Module :** niches_fiscales | **Tags :** plafonnement_niches, 10000, reductions_impot
+
+```
+Article 200-0 A
+1. Le total des avantages fiscaux mentionnés au 2, à l'exception de ceux mentionnés aux articles 199
+undecies A, 199 undecies B, 199 undecies C et 199 unvicies et au XII de l'article 199 novovicies, ne peut pas
+procurer une réduction de l'impôt dû supérieure à un montant de 10 000 €.
+Le total des avantages mentionnés au premier alinéa du présent 1, retenu dans la limite de 10 000 €, majoré
+du montant de ceux mentionnés aux articles 199 undecies A, 199 undecies B, 199 undecies C et 199 unvicies
+et au XII de l'article 199 novovicies, ne peut pas procurer une réduction de l'impôt dû supérieure à la somme
+d'un montant de 18 000 €.
+2. Les avantages fiscaux retenus pour l'application du plafonnement mentionné au 1, au titre d'une année
+d'imposition, sont les suivants :
+a) L'avantage en impôt procuré par les déductions au titre de l'amortissement prévues aux h et l du 1° du I de
+l'article 31 et à l'article 31 bis ;
+b) Les réductions, y compris, le cas échéant, pour leur montant acquis au titre d'une année antérieure et
+reporté, et crédits d'impôt sur le revenu, à l'exception de ceux mentionnés aux articles 199 quater C, 199
+quater F, 199 septies, 199 terdecies-0 A bis, 199 terdecies-0 A ter, 199 terdecies-0 B, 199 quindecies, 199
+octodecies, 199 tervicies, 199 tervicies A, 200, 200 bis, 200 quater A, 200 decies A, 200 undecies, 238 bis
+et aux 2 à 4 du I de l'article 197, des crédits d'impôt mentionnés au 1° du II de la section 5 du chapitre Ier
+du présent titre, et du crédit d'impôt correspondant à l'impôt retenu à la source à l'étranger ou à la décote en
+tenant lieu, tel qu'il est prévu par les conventions internationales.
+3. La réduction d'impôt acquise au titre des investissements mentionnés à la première phrase des vingt-
+sixième et vingt-septième alinéas du I de l'article 199 undecies B est retenue pour l'application du
+plafonnement mentionné au second alinéa du 1 pour 34 % de son montant. La réduction d'impôt acquise
+au titre des investissements mentionnés à la deuxième phrase du vingt-sixième alinéa du I de l'article 199
+undecies B est retenue pour l'application du plafonnement mentionné au second alinéa du 1 pour 44 % de son
+montant. La réduction d'impôt acquise au titre des investissements mentionnés à l'article 199 undecies C est
+retenue pour l'application du plafonnement mentionné au second alinéa du 1 pour 30 % de son montant.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+4. Un décret fixe les modalités d'application du présent article.
+
+Livre premier : Assiette et liquidation de l'impôt
+Première Partie : Impôts d'État
+Titre premier : Impôts directs et taxes assimilées
+Chapitre premier : Impôt sur le revenu
+Section V : Calcul de l'impôt
+IV : Imposition des gains nets réalisés à l'occasion de cessions de
+valeurs mobilières et de droits sociaux
 ```
 
 ---
@@ -1009,41 +1555,32 @@ d) Les personnes qui, pour des ra
 
 ---
 
-## Article 197 — Bareme Ir
+## Article 261 — Tva
 
-**Source :** CGI Art. 197 | **Module :** bareme_IR | **Tags :** IR, bareme, tranches, TMI, 11pc, 30pc, 41pc, 45pc, quotient_familial
+**Source :** CGI Art. 261 | **Module :** TVA | **Tags :** TVA, exoneration, professions_sante, medecins, infirmiers, kinesitherapeutes
 
 ```
-Article 197
-I. – En ce qui concerne les contribuables visés à l'article 4 B, il est fait application des règles suivantes pour
-le calcul de l'impôt sur le revenu :
-1. L'impôt est calculé en appliquant à la fraction de chaque part de revenu qui excède 11 600 € le taux de :
-– 11 % pour la fraction supérieure à 11 600 € et inférieure ou égale à 29 579 € ;
-– 30 % pour la fraction supérieure à 29 579 € et inférieure ou égale à 84 577 € ;
-– 41 % pour la fraction supérieure à 84 577 € et inférieure ou égale à 181 917 € ;
-– 45 % pour la fraction supérieure à 181 917 €.
-2. La réduction d'impôt résultant de l'application du quotient familial ne peut excéder 1 807 € par demi-
-part ou la moitié de cette somme par quart de part s'ajoutant à une part pour les contribuables célibataires,
-divorcés, veufs ou soumis à l'imposition distincte prévue au 4 de l'article 6 et à deux parts pour les
-contribuables mariés soumis à une imposition commune.
-Toutefois, pour les contribuables célibataires, divorcés, ou soumis à l'imposition distincte prévue au 4 de
-l'article 6 qui répondent aux conditions fixées au II de l'article 194, la réduction d'impôt correspondant
-à la part accordée au titre du premier enfant à charge est limitée à 4 262 €. Lorsque les contribuables
-entretiennent uniquement des enfants dont la charge est réputée également partagée entre l'un et l'autre des
-parents, la réduction d'impôt correspondant à la demi-part accordée au titre de chacun des deux premiers
-enfants est limitée à la moitié de cette somme.
-Par dérogation aux dispositions du premier alinéa, la réduction d'impôt résultant de l'application du quotient
-familial, accordée aux contribuables qui bénéficient des dispositions des a, b et e du 1 de l'article 195, ne
-peut excéder 1 079 € ;
-Les contribuables qui bénéficient d'une demi-part au titre des a, b, c, d, d bis, e et f du 1 ainsi que des 2 à
-6 de l'article 195 ont droit à une réduction d'impôt égale à 1 801 € pour chacune de ces demi-parts lorsque
-la réduction de leur cotisation d'impôt est plafonnée en application du premier alinéa. La réduction d'impôt
-est égale à la moitié de cette somme lorsque la majoration visée au 2 de l'article 195 est de un quart de
-part. Cette réduction d'impôt ne peut toutefois excéder l'augmentation de la cotisation d'impôt résultant du
-plafonnement.
-Les contribuables veufs ayant des enfants à charge qui bénéficient d'une part supplémentaire de quotient
-familial en application du I de l'article 194 ont droit à une réduction d'impôt égale à 2 011 € pour cette
-part supplémentaire lorsque la réduction de leur cotisation d'impôt est plafonnée en application du premier
+Article 261
+Sont exonérés de la taxe sur la valeur ajoutée :
+1. (Affaires ou opérations soumises à un autre impôt) :
+1° à 3° (Abrogés) ;
+4° les opérations à terme sur marchandises réalisées sur un marché réglementé à l'exclusion de celles qui
+déterminent l'arrêt de la filière ;
+5° (Abrogé).
+2. (Agriculture et pêche) :
+1° (Abrogé) ;
+2° (Abrogé) ;
+3° les prestations réalisées dans le cadre de l'entraide entre agriculteurs définie par les articles L. 325-1 à
+L. 325-3 du code rural et de la pêche maritime. Cette exonération pourra être étendue par décret en Conseil
+d'Etat aux départements d'outre-mer ;
+4° les opérations effectuées par les pêcheurs et armateurs à la pêche, à l'exception des pêcheurs en eau douce,
+en ce qui concerne la vente des produits de leur pêche (poissons, crustacés, coquillages frais ou conservés à
+l'état frais par un procédé frigorifique) ;
+5° (Abrogé).
+3. (Biens usagés) :
+1° a. Sous réserve, le cas échéant, des dispositions des 1° et 2° du III de l'article 257, les ventes de biens
+usagés faites par les personnes qui les ont utilisés pour les besoins de leurs exploitations.
+ 
  
  
  
@@ -1058,73 +1595,92 @@ part supplémentaire lorsque la réduction de leur cotisation d'impôt est plafo
  
  
 
-alinéa du présent 2. Cette réduction d'impôt ne peut toutefois excéder l'augmentation de la cotisation d'impôt
-résultant du plafonnement.
-3. Le montant de l'impôt résultant de l'application des dispositions précédentes est réduit de 30 %,
-dans la limite de 2 450 €, pour les contribuables domiciliés dans les départements de la Guadeloupe,
-de la Martinique et de la Réunion ; cette réduction est égale à 40 %, dans la limite de 4 050 €, pour les
-contribuables domiciliés dans les départements de la Guyane et de Mayotte ;
-4. a. Le montant de l'impôt résultant de l'application des dispositions précédentes est diminué, dans la limite
-de son montant, de la différence entre 897 € et 45,25 % de son montant pour les contribuables célibataires,
-divorcés ou veufs et de la différence entre 1 483 € et 45,25 % de son montant pour les contribuables soumis à
-imposition commune.
-b. (Abrogé)
-5. Les réductions d'impôt mentionnées aux articles 199 quater F à 200 s'imputent sur l'impôt résultant de
-l'application des dispositions précédentes avant imputation des crédits d'impôt et des prélèvements ou
-retenues non libératoires ; elles ne peuvent pas donner lieu à remboursement.
-II. – (Abrogé)
+Toutefois, l'exonération ne s'applique pas aux biens qui ont ouvert droit à déduction complète ou partielle
+de la taxe sur la valeur ajoutée lors de leur achat, acquisition intracommunautaire, importation ou livraison à
+soi-même.
+Les dispositions du deuxième alinéa ne s'appliquent ni aux biens cédés à des personnes qui ont souscrit un
+contrat de crédit-bail ou de location avec option d'achat avant le 8 septembre 1989, ni aux véhicules destinés
+à la location simple, inscrits à l'actif des entreprises de location avant le 8 septembre 1989, si ces véhicules
+sont cédés à des personnes autres que des négociants en biens d'occasion (Loi n° 89-935 du 29 décembre
+1989, art. 31 I 2 et 3) ;
+b. (Disposition périmée) ;
+2° (abrogé)
+4. (Professions libérales et activités diverses) :
+1° Les soins dispensés aux personnes par les membres des professions médicales et paramédicales
+réglementées, par les pharmaciens, par les praticiens autorisés à faire usage légalement du titre d'ostéopathe,
+de chiropracteur, de psychologue ou de psychothérapeute et par les psychanalystes titulaires d'un des
+diplômes requis, à la date de sa délivrance, pour être recruté comme psychologue dans la fonction publique
+hospitalière ainsi que les travaux d'analyse de biologie médicale et les fournitures de prothèses dentaires par
+les dentistes et les prothésistes ;
+1° bis les frais d'hospitalisation et de traitement, y compris les frais de mise à disposition d'une chambre
+individuelle, dans les établissements de santé privés titulaires de l'autorisation mentionnée à l'article L.
+6122-1 du code de la santé publique ;
+1° ter les soins dispensés par les établissements privés d'hébergement pour personnes âgées mentionnés au 6°
+du I de l'article L. 312-1 du code de l'action sociale et des familles, pris en charge par un forfait annuel global
+de soins en application de l'article L. 174-7 du code de la sécurité sociale ;
+2° les livraisons, services d'intermédiation et prestations de travail à façon portant sur les organes, le sang et
+le lait humains ;
+3° le transport de malades ou de blessés à l'aide de véhicules spécialement aménagés à cet effet effectué par
+des personnes visées à l'article L. 6312-2 du code de la santé publique ;
+4° a. les prestations de services et les livraisons de biens qui leur sont étroitement liées, effectuées dans le
+cadre :
+de l'enseignement primaire, secondaire et supérieur dispensé dans les établissements publics et les
+établissements privés régis par les articles L. 151-3, L. 212-2, L. 424-1 à L. 424-4, L. 441-1, L. 443-1 à L.
+443-5 et L. 731-1 à L. 731-17 du code de l'éducation ;
+de l'enseignement universitaire dispensé dans les établissements publics et dans les établissements privés
+visés aux articles L. 613-7, L. 714-2 et L. 718-16 du code de l'éducation ;
+de l'enseignement et de la formation professionnelle agricoles régleme
 ```
 
 ---
 
-## Article 200-0 A — Niches Fiscales
+## Article 669 — Demembrement
 
-**Source :** CGI Art. 200-0 A | **Module :** niches_fiscales | **Tags :** plafonnement_niches, 10000, reductions_impot
+**Source :** CGI Art. 669 | **Module :** demembrement | **Tags :** demembrement, usufruit, nue_propriete, bareme_fiscal_age, donation
 
 ```
-Article 200-0 A
-1. Le total des avantages fiscaux mentionnés au 2, à l'exception de ceux mentionnés aux articles 199
-undecies A, 199 undecies B, 199 undecies C et 199 unvicies et au XII de l'article 199 novovicies, ne peut pas
-procurer une réduction de l'impôt dû supérieure à un montant de 10 000 €.
-Le total des avantages mentionnés au premier alinéa du présent 1, retenu dans la limite de 10 000 €, majoré
-du montant de ceux mentionnés aux articles 199 undecies A, 199 undecies B, 199 undecies C et 199 unvicies
-et au XII de l'article 199 novovicies, ne peut pas procurer une réduction de l'impôt dû supérieure à la somme
-d'un montant de 18 000 €.
-2. Les avantages fiscaux retenus pour l'application du plafonnement mentionné au 1, au titre d'une année
-d'imposition, sont les suivants :
-a) L'avantage en impôt procuré par les déductions au titre de l'amortissement prévues aux h et l du 1° du I de
-l'article 31 et à l'article 31 bis ;
-b) Les réductions, y compris, le cas échéant, pour leur montant acquis au titre d'une année antérieure et
-reporté, et crédits d'impôt sur le revenu, à l'exception de ceux mentionnés aux articles 199 quater C, 199
-quater F, 199 septies, 199 terdecies-0 A bis, 199 terdecies-0 A ter, 199 terdecies-0 B, 199 quindecies, 199
-octodecies, 199 tervicies, 199 tervicies A, 200, 200 bis, 200 quater A, 200 decies A, 200 undecies, 238 bis
-et aux 2 à 4 du I de l'article 197, des crédits d'impôt mentionnés au 1° du II de la section 5 du chapitre Ier
-du présent titre, et du crédit d'impôt correspondant à l'impôt retenu à la source à l'étranger ou à la décote en
-tenant lieu, tel qu'il est prévu par les conventions internationales.
-3. La réduction d'impôt acquise au titre des investissements mentionnés à la première phrase des vingt-
-sixième et vingt-septième alinéas du I de l'article 199 undecies B est retenue pour l'application du
-plafonnement mentionné au second alinéa du 1 pour 34 % de son montant. La réduction d'impôt acquise
-au titre des investissements mentionnés à la deuxième phrase du vingt-sixième alinéa du I de l'article 199
-undecies B est retenue pour l'application du plafonnement mentionné au second alinéa du 1 pour 44 % de son
-montant. La réduction d'impôt acquise au titre des investissements mentionnés à l'article 199 undecies C est
-retenue pour l'application du plafonnement mentionné au second alinéa du 1 pour 30 % de son montant.
- 
- 
- 
- 
- 
- 
- 
-
-4. Un décret fixe les modalités d'application du présent article.
-
-Livre premier : Assiette et liquidation de l'impôt
-Première Partie : Impôts d'État
-Titre premier : Impôts directs et taxes assimilées
-Chapitre premier : Impôt sur le revenu
-Section V : Calcul de l'impôt
-IV : Imposition des gains nets réalisés à l'occasion de cessions de
-valeurs mobilières et de droits sociaux
+Article 669
+I. – Pour la liquidation des droits d'enregistrement et de la taxe de publicité foncière, la valeur de la nue-
+propriété et de l'usufruit est déterminée par une quotité de la valeur de la propriété entière, conformément au
+barème ci-après :
+AGE 
+de l'usufruitier
+de la nue-propriété
+de l'usufruit
+VALEUR
+VALEUR
+Moins de :
+21 ans révolus
+31 ans révolus
+41 ans révolus
+51 ans révolus
+61 ans révolus
+71 ans révolus
+81 ans révolus
+91 ans révolus
+Plus de 91 ans révolus
+90 %
+80 %
+70 %
+60 %
+50 %
+40 %
+30 %
+20 %
+10 %
+10 %
+20 %
+30 %
+40 %
+50 %
+60 %
+70 %
+80 %
+90 %
+Pour déterminer la valeur de la nue-propriété, il n'est tenu compte que des usufruits ouverts au jour de la
+mutation de cette nue-propriété.
+II. – L'usufruit constitué pour une durée fixe est estimé à 23 % de la valeur de la propriété entière pour
+chaque période de dix ans de la durée de l'usufruit, sans fraction et sans égard à l'âge de l'usufruitier.
 ```
 
 ---
