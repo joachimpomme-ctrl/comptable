@@ -884,8 +884,8 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 102 ter (seuil du micro-BNC) ; BOI-BNC-DECLA-20
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-17
-- Règle : Le micro-BNC s’applique si le chiffre d’affaires annuel hors taxe est inférieur à 77 700 €.
-- Seuils : `{"CA_HT": 77700}`
+- Règle : Le micro-BNC s’applique si le chiffre d’affaires annuel hors taxe est inférieur au seuil de l'art. 102 ter : 77 700 € pour les revenus 2023-2025 ; 83 600 € pour les revenus 2026-2028.
+- Seuils : `{"CA_HT_2025": 77700, "CA_HT_2026": 83600}` [referentiel: seuil_micro_bnc]
 
 ### GFPL-051 | règle
 - Module : M2
@@ -907,8 +907,8 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 96 (declaration controlee, seuil et option) ; BOI-BNC-DECLA-10
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-17
-- Règle : La déclaration contrôlée s’applique si le chiffre d’affaires annuel hors taxe dépasse 77 700 € ou sur option du contribuable.
-- Seuils : `{"CA_HT": 77700}`
+- Règle : La déclaration contrôlée s’applique si le chiffre d’affaires annuel hors taxe dépasse le seuil micro-BNC (77 700 € revenus 2023-2025 ; 83 600 € revenus 2026-2028) ou sur option du contribuable.
+- Seuils : `{"CA_HT_2025": 77700, "CA_HT_2026": 83600}` [referentiel: seuil_micro_bnc]
 
 ### GFPL-054 | règle
 - Module : M2
@@ -1755,8 +1755,8 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CSS art. D.242-17 (revalorisation annuelle du PASS) ; arrete du 19/12/2024 (PASS 2025) ; voir referentiel cle PASS
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 4-4
-- Règle : Le PASS 2025 est fixé à 47 100 € ; il sert notamment à la limite de déduction des versements sur les placements d’épargne retraite.
-- Seuils : `{"PASS_2025": 47100}`
+- Règle : Le PASS 2025 est fixé à 47 100 € et le PASS 2026 à 48 060 € (arrêté du 22/12/2025) ; il sert notamment à la limite de déduction des versements sur les placements d’épargne retraite.
+- Seuils : `{"PASS_2025": 47100, "PASS_2026": 48060}` [referentiel: PASS]
 
 ### GFPL-166 | règle
 - Module : M2

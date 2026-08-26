@@ -1,0 +1,607 @@
+{
+  "_doc": "SOURCE DE VERITE UNIQUE des chiffres fiscaux du corpus. Tout chiffre cite ailleurs doit referencer une cle d'ici avec son millesime, ex. [referentiel: PASS/2026]. statut=sourced -> verifie contre source officielle (source_url, verifie_le) ; statut=candidate_to_validate -> a faire valider par un professionnel avant de s'y fier ; a_verifier -> exploration uniquement.",
+  "millesime_courant": 2026,
+  "schema_version": 1,
+  "parametres": {
+    "PASS": {
+      "libelle": "Plafond annuel de la Securite sociale",
+      "alias": [
+        "PASS",
+        "plafond annuel de la securite sociale"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2024": 46368,
+        "2025": 47100,
+        "2026": 48060
+      },
+      "source": "Arrete du 19/12/2024 (JO 29/12/2024) pour 2025 ; arrete du 22/12/2025 (JO 23/12/2025) pour 2026",
+      "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053143451",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "ERREUR CORRIGEE : l'ancien corpus indiquait 46 368 EUR pour 2025 (faux). PASS 2025 = 47 100 EUR (+1,6 %). PASS 2026 = 48 060 EUR (+2 %), arrete du 22/12/2025 (JORFTEXT000053143451). PASS mensuel 2025 = 3 925 EUR, 2026 = 4 005 EUR."
+    },
+    "seuil_micro_bnc": {
+      "libelle": "Seuil de recettes micro-BNC (regime declaratif special, abattement 34 %)",
+      "alias": [
+        "micro-BNC",
+        "seuil micro-BNC"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 77700,
+        "2026": 83600
+      },
+      "source": "CGI art. 102 ter ; BOFiP BOI-BNC-DECLA-20-10. Plafond fixe par triennat : 77 700 EUR pour 2023-2025, 83 600 EUR pour 2026-2028.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047622381",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2028-12-31",
+      "statut": "sourced",
+      "note": "Seuil 2025 = 77 700 EUR (triennat 2023-2025). Revalorise a 83 600 EUR pour le triennat 2026-2028. Abattement forfaitaire 34 %."
+    },
+    "seuil_micro_bic_tourisme_non_classe": {
+      "libelle": "Seuil micro-BIC meuble de tourisme non classe (abattement 30 % depuis 2025, loi Le Meur)",
+      "alias": [
+        "tourisme non classe",
+        "non classe"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 15000,
+        "2026": 15000
+      },
+      "source": "Loi n° 2024-1039 du 19/11/2024 (loi Le Meur) ; CGI art. 50-0 ; service-public.fr F32744. Seuil micro-BIC abaisse a 15 000 EUR et abattement reduit a 30 % pour les meubles de tourisme non classes, applicable aux revenus percus a compter de 2025.",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Reforme loi Le Meur (loi 2024-1039). Seuil 15 000 EUR, abattement 30 %. Applicable revenus 2025 declares en 2026."
+    },
+    "seuil_micro_bic_classe": {
+      "libelle": "Seuil micro-BIC meuble de tourisme classe (abattement 50 % depuis 2025, loi Le Meur)",
+      "alias": [
+        "tourisme classe",
+        "meuble classe"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 77700,
+        "2026": 77700
+      },
+      "source": "Loi n° 2024-1039 du 19/11/2024 (loi Le Meur) ; CGI art. 50-0 ; service-public.fr F32744. Seuil micro-BIC 77 700 EUR et abattement reduit de 71 % a 50 % pour les meubles de tourisme classes, applicable aux revenus percus a compter de 2025.",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Reforme loi Le Meur. Seuil 77 700 EUR, abattement 50 %. ATTENTION : les chambres d'hotes restent a 188 700 EUR / abattement 71 % (parametre distinct ci-dessous)."
+    },
+    "seuil_micro_bic_chambres_hotes": {
+      "libelle": "Seuil micro-BIC chambres d'hotes - DIVERGENCE A ARBITRER (188 700/71 % vs 77 700-83 600/50 %)",
+      "alias": [
+        "chambres d'hotes",
+        "parahotellerie",
+        "188 700"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 188700,
+        "2026": 188700
+      },
+      "source": "DIVERGENCE EN COURS D'ARBITRAGE Valeur historique conservee = CGI art. 50-0 (1° fourniture de logement) : 188 700 EUR, abattement 71 %. MAIS la position officielle 2025 (reponses ministerielles Lemoyne n° 2460, Naegelen n° 2902, Ravier n° 3311, Blin n° 6664 ; confortee par CE 16/09/2025 n° 505228) classe les chambres d'hotes dans le 2° de l'art. 50-0 (categorie residuelle prestations de services) : seuil 77 700 EUR (2025) / 83 600 EUR (2026) et abattement 50 % depuis l'imposition des revenus 2025 (loi Le Meur n° 2024-1039). Le seuil 188 700/71 % ne s'applique qu'a la veritable fourniture de logement / para-hotellerie (1° de l'art. 50-0).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159220/",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "candidate_to_validate",
+      "note": "STATUT REVU EN candidate_to_validate (revue expert 2026-06-05). DIVERGENCE relevee au verrou final. Selon CGI art. 50-0 (LEGIARTI000042159220) : 1° (vente/denrees/fourniture de logement) = 188 700 EUR / abattement 71 % ; 2° (autres prestations de services) = 77 700 EUR (2025) / 83 600 EUR (2026) / abattement 50 %. Question de FOND : ou se classent les 'chambres d'hotes' ? Les reponses ministerielles de mai 2025 et le Conseil d'Etat (CE 16/09/2025 n° 505228, rejet du recours contre la rep. Lemoyne) retiennent le 2° (77 700-83 600 / 50 %), traitant les chambres d'hotes comme une location meublee et non comme une fourniture de logement, MEME si elles offrent accueil/petit-dejeuner/menage/linge. Critere de bascule vers le 1° (188 700/71 %) = veritable para-hotellerie / fourniture de logement (hotel ou assimile avec au moins 3 des 4 services para-hoteliers rendus de maniere similaire a un hotel : petit-dejeuner, nettoyage regulier des locaux, fourniture de linge de maison, reception de la clientele - cf. BOI-TVA-CHAMP-10-10-50-20). La cle existante (188 700/71 %) est CONSERVEE pour ne pas perdre la valeur para-hotellerie ; voir cle nouvelle 'seuil_micro_bic_chambres_hotes_locmeublee' pour la modelisation 77 700-83 600/50 %. ARBITRAGE HUMAIN REQUIS : trancher quelle cle est citee par defaut pour 'chambres d'hotes' dans le contenu."
+    },
+    "seuil_micro_bic_chambres_hotes_locmeublee": {
+      "libelle": "Seuil micro-BIC chambres d'hotes traitees en location meublee (2° art. 50-0, abattement 50 %) - PROPOSITION A ARBITRER",
+      "alias": [
+        "chambres d'hotes location meublee",
+        "chambres d'hotes 77700",
+        "chambres d'hotes 50 pourcent"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 77700,
+        "2026": 83600
+      },
+      "source": "CGI art. 50-0 2° (LEGIARTI000042159220) ; reponses ministerielles Lemoyne n° 2460, Naegelen n° 2902, Ravier n° 3311, Blin n° 6664 (mai 2025) ; CE 16/09/2025 n° 505228 (rejet du recours contre la rep. Lemoyne) ; loi Le Meur n° 2024-1039 du 19/11/2024. Position : les chambres d'hotes relevent du 2° de l'art. 50-0 (prestations de services), seuil 77 700 EUR (2025) / 83 600 EUR (2026, triennat) et abattement 50 % a compter de l'imposition des revenus 2025.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159220/",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2028-12-31",
+      "statut": "candidate_to_validate",
+      "note": "CLE NOUVELLE proposee lors de la revue expert du 2026-06-05 pour modeliser la position officielle 2025 sur les chambres d'hotes SANS supprimer la cle historique 188 700/71 %. Seuil 77 700 EUR (2025) puis 83 600 EUR (triennat 2026-2028, aligne sur le 2° de l'art. 50-0). Abattement 50 % depuis revenus 2025 (etait 71 % avant la loi Le Meur). Fonde sur rep. min. mai 2025 + CE 16/09/2025 n° 505228. ARBITRAGE HUMAIN REQUIS : confirmer cette modelisation et decider si elle remplace la cle 'seuil_micro_bic_chambres_hotes' comme valeur par defaut. NE PAS promouvoir en sourced sans validation experte."
+    },
+    "seuil_lmp_recettes": {
+      "libelle": "Seuil de recettes pour le statut LMP (loueur en meuble professionnel)",
+      "alias": [
+        "seuil LMP",
+        "LMP",
+        "23 000"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 23000,
+        "2026": 23000
+      },
+      "source": "CGI art. 155 IV 2°. Le statut LMP est acquis si les recettes annuelles excedent 23 000 EUR ET depassent les autres revenus d'activite du foyer fiscal.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041468265",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 155 IV = LEGIARTI000041468265 (lien corrige : l'ancien LEGIARTI000041464766 resolvait a tort vers l'art. 1657). Seuil 23 000 EUR cumulatif avec la condition de preponderance des recettes. Confirme par le corpus (Guide Fiscal Location Meublee 2026 p.16)."
+    },
+    "seuil_ifi": {
+      "libelle": "Seuil d'assujettissement IFI (patrimoine immobilier net taxable)",
+      "alias": [
+        "seuil IFI",
+        "IFI",
+        "1 300 000"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 1300000,
+        "2026": 1300000
+      },
+      "source": "CGI art. 964. Sont assujettis a l'IFI les foyers dont le patrimoine immobilier net taxable excede 1 300 000 EUR au 1er janvier de l'annee d'imposition. Seuil inchange en 2026.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036384999",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 964 = LEGIARTI000036384999 (lien corrige ; ancien LEGIARTI000036385087 remplace). 1 300 000 EUR. NB : un projet d'impot sur la fortune improductive a ete debattu (PLF) mais n'a pas remplace l'IFI a ce jour ; a re-verifier au prochain millesime."
+    },
+    "abattement_donation_parent_enfant": {
+      "libelle": "Abattement donation en ligne directe parent->enfant (renouvelable tous les 15 ans)",
+      "alias": [
+        "abattement parent",
+        "100 000",
+        "donation parent"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 100000,
+        "2026": 100000
+      },
+      "source": "CGI art. 779 I. Abattement de 100 000 EUR sur la part de chaque enfant pour les donations et successions en ligne directe, renouvelable tous les 15 ans (art. 784).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026292566",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 779 = LEGIARTI000026292566 (lien corrige : l'ancien LEGIARTI000041464695 etait mort et avait ete partage a tort avec le seuil LMP art. 155). 100 000 EUR par parent et par enfant, par periode de 15 ans. Confirme par le corpus (p.70)."
+    },
+    "abattement_av_avant_70": {
+      "libelle": "Abattement assurance-vie primes versees avant 70 ans (par beneficiaire)",
+      "alias": [
+        "152 500",
+        "avant 70 ans"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 152500,
+        "2026": 152500
+      },
+      "source": "CGI art. 990 I. Prelevement reduit d'un abattement de 152 500 EUR par beneficiaire pour les capitaux issus de primes versees avant les 70 ans de l'assure ; puis 20 % jusqu'a 700 000 EUR et 31,25 % au-dela.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047288653",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 990 I = 152 500 EUR par beneficiaire. A distinguer de l'art. 757 B (primes apres 70 ans, abattement global 30 500 EUR partage)."
+    },
+    "deficit_foncier_plafond_standard": {
+      "libelle": "Plafond d'imputation du deficit foncier sur le revenu global",
+      "alias": [
+        "10 700",
+        "deficit foncier"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 10700,
+        "2026": 10700
+      },
+      "source": "CGI art. 156 I 3°. Le deficit foncier (hors interets d'emprunt) s'impute sur le revenu global dans la limite de 10 700 EUR par an (15 300 EUR dans certains cas particuliers).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051765216",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 156 = LEGIARTI000051765216 (lien corrige ; ancien LEGIARTI000044983075 mort). Plafond standard 10 700 EUR (15 300 EUR cas particuliers). Confirme par le corpus (p.85)."
+    },
+    "bareme_ir_seuil_tranche_11pct": {
+      "libelle": "Bareme IR (CGI art. 197) - limite superieure de la tranche a 0 % / entree de la tranche a 11 %, par part",
+      "alias": [
+        "bareme IR tranche 11",
+        "premiere tranche IR",
+        "entree tranche 11%"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 11497,
+        "2026": 11600
+      },
+      "source": "CGI art. 197 I 1. Millesime = annee d'imposition. 2025 (revenus 2024) : LFI 2025 loi n° 2025-127 du 14/02/2025 art. 2, indexation +1,8 % ; valeur 11 497 EUR confirmee par la brochure officielle IR 2025 (impots.gouv.fr) et BOFiP ACTU-2025-00038. 2026 (revenus 2025) : loi n° 2026-103 du 19/02/2026 art. 4 ; valeur 11 600 EUR confirmee par Legifrance art. 197 version en vigueur (LEGIARTI000053542636).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Seuil superieur de la tranche non imposee (jusqu'a ce montant : 0 %). 2025=11497 (recoupe impots.gouv.fr brochure IR 2025 + BOFiP ACTU-2025-00038). 2026=11600 (recoupe Legifrance art. 197 LEGIARTI000053542636). Verif independante point 2 le 2026-06-05."
+    },
+    "bareme_ir_seuil_tranche_30pct": {
+      "libelle": "Bareme IR (CGI art. 197) - limite superieure de la tranche a 11 % / entree de la tranche a 30 %, par part",
+      "alias": [
+        "bareme IR tranche 30",
+        "entree tranche 30%"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 29315,
+        "2026": 29579
+      },
+      "source": "CGI art. 197 I 1. 2025 (revenus 2024) : LFI 2025 loi n° 2025-127 art. 2 ; 29 315 EUR confirme brochure officielle IR 2025 (impots.gouv.fr) + BOFiP ACTU-2025-00038. 2026 (revenus 2025) : loi n° 2026-103 du 19/02/2026 art. 4 ; 29 579 EUR confirme Legifrance art. 197 version en vigueur (LEGIARTI000053542636).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "2025=29315 (recoupe impots.gouv.fr brochure IR 2025 + BOFiP ACTU-2025-00038). 2026=29579 (recoupe Legifrance art. 197 LEGIARTI000053542636). Verif independante point 2 le 2026-06-05."
+    },
+    "bareme_ir_seuil_tranche_41pct": {
+      "libelle": "Bareme IR (CGI art. 197) - limite superieure de la tranche a 30 % / entree de la tranche a 41 %, par part",
+      "alias": [
+        "bareme IR tranche 41",
+        "entree tranche 41%"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 83823,
+        "2026": 84577
+      },
+      "source": "CGI art. 197 I 1. 2025 (revenus 2024) : LFI 2025 loi n° 2025-127 art. 2 ; 83 823 EUR confirme brochure officielle IR 2025 (impots.gouv.fr) + BOFiP ACTU-2025-00038. 2026 (revenus 2025) : loi n° 2026-103 du 19/02/2026 art. 4 ; 84 577 EUR confirme Legifrance art. 197 version en vigueur (LEGIARTI000053542636).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "2025=83823 (recoupe impots.gouv.fr brochure IR 2025 + BOFiP ACTU-2025-00038). 2026=84577 (recoupe Legifrance art. 197 LEGIARTI000053542636). Verif independante point 2 le 2026-06-05."
+    },
+    "bareme_ir_seuil_tranche_45pct": {
+      "libelle": "Bareme IR (CGI art. 197) - limite superieure de la tranche a 41 % / entree de la tranche a 45 %, par part",
+      "alias": [
+        "bareme IR tranche 45",
+        "entree tranche 45%",
+        "tranche marginale 45%"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 180294,
+        "2026": 181917
+      },
+      "source": "CGI art. 197 I 1. 2025 (revenus 2024) : LFI 2025 loi n° 2025-127 art. 2 ; 180 294 EUR confirme brochure officielle IR 2025 (impots.gouv.fr) + BOFiP ACTU-2025-00038. 2026 (revenus 2025) : loi n° 2026-103 du 19/02/2026 art. 4 ; 181 917 EUR confirme Legifrance art. 197 version en vigueur (LEGIARTI000053542636).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Au-dela de ce montant : taux marginal de 45 %. 2025=180294 (recoupe impots.gouv.fr brochure IR 2025 + BOFiP ACTU-2025-00038). 2026=181917 (recoupe Legifrance art. 197 LEGIARTI000053542636). Verif independante point 2 le 2026-06-05."
+    },
+    "plafond_niches_global": {
+      "libelle": "Plafonnement global des avantages fiscaux (niches) sur l'IR",
+      "alias": [
+        "plafond niches",
+        "10 000",
+        "plafonnement global"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 10000,
+        "2026": 10000
+      },
+      "source": "CGI art. 200-0 A. Plafond global de droit commun = 10 000 EUR par foyer fiscal et par an.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051213369",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 200-0 A = LEGIARTI000051213369 (version en vigueur ; ancien LEGIARTI000047620953 remplace). 10 000 EUR. Voir 'plafond_niches_outremer_sofica' pour le plafond majore 18 000 EUR."
+    },
+    "plafond_niches_outremer_sofica": {
+      "libelle": "Plafonnement global majore des niches (Girardin industriel, SOFICA, investissements outre-mer)",
+      "alias": [
+        "18 000",
+        "plafond majore",
+        "Girardin",
+        "SOFICA"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 18000,
+        "2026": 18000
+      },
+      "source": "CGI art. 200-0 A. Plafond majore = 18 000 EUR lorsque le foyer beneficie de reductions au titre des investissements outre-mer (Girardin) et/ou des SOFICA.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051213369",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 200-0 A = LEGIARTI000051213369 (version en vigueur ; ancien LEGIARTI000047620953 remplace). Plafond majore 18 000 EUR (Girardin industriel, SOFICA, outre-mer)."
+    },
+    "pv_immo_taux_ir": {
+      "libelle": "Taux d'imposition a l'IR de la plus-value immobiliere des particuliers",
+      "alias": [
+        "taux IR plus-value immobiliere",
+        "taux PV immo IR",
+        "19 %"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 19,
+        "2026": 19
+      },
+      "source": "CGI art. 200 B. Les plus-values immobilieres realisees dans les conditions des art. 150 U a 150 UC sont imposees au taux forfaitaire de 19 % a l'impot sur le revenu (avant taxe additionnelle eventuelle de l'art. 1609 nonies G et prelevements sociaux).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006303379",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Taux IR PV immo = 19 % (CGI art. 200 B). Confirme service-public.fr F10864 et BOFiP RFPI-PVI. Valeur exprimee en pourcentage (19 = 19 %)."
+    },
+    "pv_immo_taux_prelevements_sociaux": {
+      "libelle": "Taux global des prelevements sociaux sur la plus-value immobiliere des particuliers",
+      "alias": [
+        "taux prelevements sociaux",
+        "taux PS plus-value",
+        "17,2 %"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 17.2,
+        "2026": 17.2
+      },
+      "source": "CSS art. L136-7 et L136-8 (CSG 9,2 %) + CRDS 0,5 % + prelevement de solidarite 7,5 % = 17,2 %. Applicable a la plus-value immobiliere nette imposable apres abattement pour duree de detention propre aux PS.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041468029",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "candidate_to_validate",
+      "note": "Taux global PS = 17,2 % (CSG 9,2 % art. L136-8 CSS + CRDS 0,5 % + prelevement solidarite 7,5 %). Lien CSS art. L136-8 a re-confirmer (identifiant LEGIARTI a verifier) ; le taux 17,2 % est lui non ambigu et constant 2025-2026. Valeur en pourcentage (17.2 = 17,2 %)."
+    },
+    "pv_immo_abattement_ir_par_an_6e_21e": {
+      "libelle": "Abattement IR pour duree de detention - PV immobiliere - taux annuel de la 6e a la 21e annee",
+      "alias": [
+        "abattement IR detention 6 a 21",
+        "6 % par an"
+      ],
+      "unite": "pourcentage_par_an",
+      "valeurs": {
+        "2025": 6,
+        "2026": 6
+      },
+      "source": "CGI art. 150 VC I. Abattement de 6 % par annee de detention au-dela de la 5e et jusqu'a la 21e annee, pour l'assiette de l'impot sur le revenu.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 150 VC. 6 %/an de la 6e a la 21e annee (assiette IR).abattement_ir_pv_immo. Valeur en pourcentage par an."
+    },
+    "pv_immo_abattement_ir_22e_annee": {
+      "libelle": "Abattement IR pour duree de detention - PV immobiliere - taux de la 22e annee (exoneration IR atteinte)",
+      "alias": [
+        "abattement IR detention 22e",
+        "4 % 22e annee"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 4,
+        "2026": 4
+      },
+      "source": "CGI art. 150 VC I. Abattement de 4 % au titre de la 22e annee de detention, portant l'abattement IR a 100 % : exoneration totale d'impot sur le revenu apres 22 ans.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 150 VC. 4 % la 22e annee => exoneration IR a 22 ans.abattement_ir_pv_immo. Valeur en pourcentage."
+    },
+    "pv_immo_abattement_ps_par_an_6e_21e": {
+      "libelle": "Abattement PS pour duree de detention - PV immobiliere - taux annuel de la 6e a la 21e annee",
+      "alias": [
+        "abattement PS detention 6 a 21",
+        "1,65 % par an"
+      ],
+      "unite": "pourcentage_par_an",
+      "valeurs": {
+        "2025": 1.65,
+        "2026": 1.65
+      },
+      "source": "CGI art. 150 VC I (assiette prelevements sociaux). Abattement de 1,65 % par annee de detention au-dela de la 5e et jusqu'a la 21e annee, pour l'assiette des prelevements sociaux.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 150 VC (assiette PS). 1,65 %/an de la 6e a la 21e annee.abattement_ps_pv_immo. Valeur en pourcentage par an."
+    },
+    "pv_immo_abattement_ps_22e_annee": {
+      "libelle": "Abattement PS pour duree de detention - PV immobiliere - taux de la 22e annee",
+      "alias": [
+        "abattement PS detention 22e",
+        "1,60 % 22e annee"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 1.6,
+        "2026": 1.6
+      },
+      "source": "CGI art. 150 VC I (assiette prelevements sociaux). Abattement de 1,60 % au titre de la 22e annee de detention, pour l'assiette des prelevements sociaux.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 150 VC (assiette PS). 1,60 % la 22e annee.abattement_ps_pv_immo. Valeur en pourcentage."
+    },
+    "pv_immo_abattement_ps_par_an_23e_30e": {
+      "libelle": "Abattement PS pour duree de detention - PV immobiliere - taux annuel de la 23e a la 30e annee (exoneration PS atteinte)",
+      "alias": [
+        "abattement PS detention 23 a 30",
+        "9 % par an"
+      ],
+      "unite": "pourcentage_par_an",
+      "valeurs": {
+        "2025": 9,
+        "2026": 9
+      },
+      "source": "CGI art. 150 VC I (assiette prelevements sociaux). Abattement de 9 % par annee de detention de la 23e a la 30e annee, portant l'abattement PS a 100 % : exoneration totale de prelevements sociaux apres 30 ans.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 150 VC (assiette PS). 9 %/an de la 23e a la 30e annee => exoneration PS a 30 ans.abattement_ps_pv_immo. Valeur en pourcentage par an."
+    },
+    "pv_immo_surtaxe_seuil": {
+      "libelle": "Seuil de declenchement de la taxe additionnelle sur les plus-values immobilieres elevees",
+      "alias": [
+        "surtaxe PV immobiliere seuil",
+        "taxe PV elevee 50 000"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 50000,
+        "2026": 50000
+      },
+      "source": "CGI art. 1609 nonies G. Taxe due lorsque la plus-value nette imposable (apres abattement pour duree de detention) excede 50 000 EUR par cedant. Bareme progressif par paliers de 2 % a 6 % avec lissage aux franchissements de palier : tranche 50 001-60 000 (2 % avec correctif), 60 001-100 000 (2 %), 100 001-110 000 (3 % correctif), 110 001-150 000 (3 %), 150 001-160 000 (4 % correctif), 160 001-200 000 (4 %), 200 001-210 000 (5 % correctif), 210 001-250 000 (5 %), 250 001-260 000 (6 % correctif), au-dela 260 000 (6 %).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806252",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 1609 nonies G = LEGIARTI000048806252. Seuil 50 000 EUR de PV nette imposable. Bareme complet (paliers 2 a 6 %) detaille dans le champ 'source' car non stockable en {annee:montant}. INTEGRATEUR : pour calculer le montant de la taxe, implementer le bareme par paliers avec mecanisme de lissage de l'art. 1609 nonies G (cf. BOFiP BOI-RFPI-TPVIE-20)."
+    },
+    "pv_immo_forfait_frais_acquisition": {
+      "libelle": "Forfait de frais d'acquisition majorant le prix d'acquisition - PV immobiliere des particuliers",
+      "alias": [
+        "forfait frais acquisition",
+        "7,5 % frais acquisition"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 7.5,
+        "2026": 7.5
+      },
+      "source": "CGI art. 150 VB II 3°. A defaut de justificatifs, les frais d'acquisition a titre onereux sont evalues forfaitairement a 7,5 % du prix d'acquisition (immeubles batis).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051202577",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 150 VB = LEGIARTI000051202577. Forfait frais d'acquisition 7,5 %. Confirme BOFiP BOI-RFPI-PVI-20-10-20-20. Valeur en pourcentage."
+    },
+    "pv_immo_forfait_travaux": {
+      "libelle": "Forfait de travaux majorant le prix d'acquisition - PV immobiliere des particuliers (detention > 5 ans)",
+      "alias": [
+        "forfait travaux",
+        "15 % travaux"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 15,
+        "2026": 15
+      },
+      "source": "CGI art. 150 VB II 4°. A defaut de justificatifs et a condition que le bien soit cede plus de 5 ans apres l'acquisition, les depenses de travaux sont evaluees forfaitairement a 15 % du prix d'acquisition (immeubles batis).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051202577",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "CGI art. 150 VB = LEGIARTI000051202577. Forfait travaux 15 % applicable uniquement si detention > 5 ans. Confirme BOFiP BOI-RFPI-PVI-20-10-20-20. Valeur en pourcentage."
+    },
+    "tns_maladie_maternite_taux_max": {
+      "libelle": "Cotisation maladie-maternite TNS (profession liberale / independant) - taux maximal du bareme progressif",
+      "alias": [
+        "cotisation maladie TNS",
+        "maladie maternite independant",
+        "6,5 % maladie"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 6.5,
+        "2026": 6.5
+      },
+      "source": "urssaf.fr (taux et baremes - artisan, commercant et profession liberale non reglementee). La cotisation maladie-maternite des independants suit un bareme PROGRESSIF de 0 % (bas revenus) jusqu'a un taux maximal de 6,5 %, atteint pour la fraction de revenu comprise entre environ 110 % et 500 % du PASS ; une fraction reduite (alignement 2025) s'applique tres au-dela (au-dela de ~3 PASS pour la partie hors indemnites journalieres). Le revenu pris en compte depend de la reforme de l'assiette 2025 (assiette unique, revenu abattu de 26 %).",
+      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "candidate_to_validate",
+      "note": "Revue expert 2026-06-05. Le taux 6,5 % est le PLAFOND du bareme progressif. ATTENTION : bareme reellement progressif (0 % a 6,5 %) ; le 6,5 % en taux unique est une SIMPLIFICATION. La reforme de l'assiette sociale 2025 (assiette unique, abattement 26 % sur revenu brut) modifie la base de calcul a compter de la regularisation des revenus 2025 (avril 2026). NE PAS promouvoir en sourced sans validation experte + capture des tranches exactes sur urssaf.fr."
+    },
+    "tns_retraite_base_cnavpl_t1": {
+      "libelle": "Retraite de base CNAVPL (profession liberale) - taux tranche 1 (revenu <= 1 PASS)",
+      "alias": [
+        "retraite base CNAVPL T1",
+        "8,23 % retraite base",
+        "retraite base liberale tranche 1"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 8.23,
+        "2026": 8.73
+      },
+      "source": "cnavpl.fr ; urssaf.fr. Retraite de base CNAVPL : taux de la 1re tranche (assiette <= 1 PASS) = 8,23 % en 2025. Plusieurs sources (compta-online, advizexperts) indiquent une hausse a 8,73 % en 2026, dans le cadre de la reforme de l'assiette sociale 2025 (compensation entre baisse de CSG-CRDS et hausse de la cotisation retraite). Valeur 2026 a re-confirmer sur source officielle (cnavpl.fr / decret).",
+      "source_url": "https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "candidate_to_validate",
+      "note": "Revue expert 2026-06-05. T1 = 8,23 % sur la part de revenu <= 1 PASS. Valeur 2026 = 8,73 % issue de sources secondaires (reforme assiette) - A RE-CONFIRMER sur cnavpl.fr ou decret avant promotion. Pour les auxiliaires medicaux, la cotisation de base CNAVPL est collectee par la CARPIMKO. NE PAS promouvoir en sourced sans source officielle."
+    },
+    "tns_retraite_base_cnavpl_t2": {
+      "libelle": "Retraite de base CNAVPL (profession liberale) - taux tranche 2 (revenu de 1 a 5 PASS)",
+      "alias": [
+        "retraite base CNAVPL T2",
+        "1,87 % retraite base",
+        "retraite base liberale tranche 2"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 1.87,
+        "2026": 1.87
+      },
+      "source": "cnavpl.fr ; urssaf.fr. Retraite de base CNAVPL : taux de la 2e tranche (fraction de revenu de 1 a 5 PASS) = 1,87 %.",
+      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "candidate_to_validate",
+      "note": "Revue expert 2026-06-05. T2 = 1,87 % sur la fraction de revenu comprise entre 1 PASS et 5 PASS. Valeur 2026 supposee stable - a re-confirmer sur cnavpl.fr. NE PAS promouvoir en sourced sans source officielle."
+    },
+    "tns_csg_crds_taux": {
+      "libelle": "CSG-CRDS sur revenus d'activite des independants (TNS)",
+      "alias": [
+        "CSG CRDS TNS",
+        "9,7 % CSG CRDS",
+        "csg crds independant"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 9.7,
+        "2026": 9.7
+      },
+      "source": "CSS art. L136-1 et s. ; urssaf.fr. CSG-CRDS globale = 9,7 % (CSG 9,2 % dont 6,8 % deductible + CRDS 0,5 %) sur les revenus d'activite des independants. ATTENTION : la reforme de l'assiette sociale 2025 modifie l'ASSIETTE (assiette unique fondee sur le revenu brut abattu de 26 %) tout en conservant le taux global de 9,7 %.",
+      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "candidate_to_validate",
+      "note": "Revue expert 2026-06-05. Taux global 9,7 % (CSG 9,2 % + CRDS 0,5 %). La PART de CSG deductible (6,8 %) et l'ASSIETTE exacte (reforme 2025 : assiette unique = revenu professionnel + cotisations sociales obligatoires, puis abattement 26 %) sont a preciser pour un calcul fin. Le cas de test EV-036 applique 9,7 % sur une assiette simplifiee (= revenu professionnel). NE PAS promouvoir en sourced sans validation experte."
+    },
+    "tns_carpimko_forfaitaires": {
+      "libelle": "Cotisations CARPIMKO complementaire et invalidite-deces (auxiliaires medicaux) - cotisations forfaitaires par classe",
+      "alias": [
+        "CARPIMKO complementaire",
+        "CARPIMKO invalidite deces",
+        "cotisations forfaitaires CARPIMKO"
+      ],
+      "unite": "EUR",
+      "valeurs": {
+        "2025": 0,
+        "2026": 0
+      },
+      "source": "carpimko.com. Les regimes complementaire (retraite complementaire) et invalidite-deces de la CARPIMKO sont des cotisations FORFAITAIRES par classe (et non un simple % du revenu) ; les montants exacts par classe ne sont pas encore captures sur source officielle. Valeur 0 = PLACEHOLDER (montant non sourcé), a ne pas utiliser pour un calcul.",
+      "source_url": "https://www.carpimko.com/",
+      "verifie_le": "2026-06-05",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "candidate_to_validate",
+      "note": "Revue expert 2026-06-05. PLACEHOLDER : la valeur 0 ne represente PAS un montant reel ; elle signale qu'il faut capturer les montants forfaitaires par classe sur carpimko.com avant toute promotion. Le cas de test EV-036 ne chiffre volontairement pas ces cotisations (signalees comme forfaitaires non estimees). A SOURCER : grille des classes (retraite complementaire + invalidite-deces) CARPIMKO 2025 et 2026. NE PAS promouvoir en sourced ni utiliser pour un calcul tant que les montants par classe ne sont pas sources ."
+    }
+  },
+  "comptages_attendus": {
+    "_doc": "Sert au lint pour detecter les comptages perimes dans le manifeste/les en-tetes. A mettre a jour APRES nettoyage du corpus.",
+    "golden_rules": 391,
+    "few_shots": 25,
+    "evaluation_test_cases": 45
+  }
+}

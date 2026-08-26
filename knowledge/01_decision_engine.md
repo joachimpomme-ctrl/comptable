@@ -12,12 +12,13 @@
 
 ### A1 — Choix du régime BNC
 
-- **SI** CA annuel HT ≤ 77 700 €
+- **SEUIL** micro-BNC : 77 700 € pour les revenus 2025 (triennat 2023-2025) ; **83 600 €** pour les revenus 2026-2028 [referentiel: seuil_micro_bnc]
+- **SI** CA annuel HT ≤ seuil micro-BNC du millésime
   - **ALORS** régime micro-BNC possible
   - **EFFET** abattement forfaitaire 34 % sur recettes → revenu imposable = CA × 66 %
   - **DÉCLARATIONS** 2042 C PRO uniquement
   - **MAIS** cotisations PER non déductibles du revenu catégoriel BNC (seulement du revenu global)
-- **SI** CA annuel HT > 77 700 € **OU** option pour le réel exercée
+- **SI** CA annuel HT > seuil micro-BNC **OU** option pour le réel exercée
   - **ALORS** déclaration contrôlée obligatoire
   - **EFFET** déduction des charges réelles + amortissements éventuels
   - **DÉCLARATIONS** 2035 + 2035 A/B + 2042 C PRO
@@ -37,7 +38,7 @@
   - **MAIS** déductibles du revenu global uniquement
 - **SI** versement volontaire PER avec renonciation à la déduction
   - **ALORS** choix irrévocable au moment du versement
-- **SEUIL** PASS 2025 = 47 100 € [referentiel: PASS/2025]
+- **SEUIL** PASS 2025 = 47 100 € ; PASS 2026 = 48 060 € [referentiel: PASS]
 - **SOURCE** GFPL-165 à GFPL-174, M2
 
 ### A3 — TVA des professions libérales
@@ -399,7 +400,7 @@
   - **ALORS** déduction du revenu global uniquement (dans les plafonds: 10 % du salaire plafonné à 8 PASS)
 - **SI** option de ne PAS déduire les versements
   - **ALORS** choix irrévocable au moment du versement; sortie capital: plus-values soumises au PFU uniquement
-- **SEUIL** PASS 2025 = 47 100 € [referentiel: PASS/2025]
+- **SEUIL** PASS 2025 = 47 100 € ; PASS 2026 = 48 060 € [referentiel: PASS]
 - **SORTIE** en rente ou en capital au choix (sauf compartiment cotisations obligatoires = rente uniquement)
 - **SOURCE** GFPL-165 à GFPL-174 (M2), PAT-020, PAT-021 (M6)
 
@@ -489,29 +490,31 @@ Avant toute préconisation, auditer systématiquement:
 
 ---
 
-## MODULE J — SEUILS ET RÉFÉRENCES 2025
+## MODULE J — SEUILS ET RÉFÉRENCES 2025-2026
 
-| Paramètre | Valeur 2025 |
-|---|---|
-| PASS (Plafond Annuel Sécurité Sociale) | 47 100 € [referentiel: PASS/2025] |
-| Seuil micro-BNC | 77 700 € [referentiel: seuil_micro_bnc/2025] |
-| Seuil micro-BIC (autres locations meublées) | 77 700 € [referentiel: seuil_micro_bic_classe/2025] |
-| Seuil micro-BIC (tourisme NON classé) | 15 000 € [referentiel: seuil_micro_bic_tourisme_non_classe/2025] |
-| Seuil micro-BIC (tourisme CLASSÉ) | 77 700 € [referentiel: seuil_micro_bic_classe/2025] |
-| Seuil LMP (recettes location) | 23 000 € [referentiel: seuil_lmp_recettes/2025] |
-| Seuil IFI | 1 300 000 € [referentiel: seuil_ifi/2025] |
-| Seuil CEHR (célibataire) | 250 000 € RFR |
-| Seuil CEHR (couple) | 500 000 € RFR |
-| Seuil CDHR (célibataire) | 250 000 € RFR |
-| Plafond PEA | 150 000 € (+ 225 000 € PEA-PME) |
-| Abattement assurance-vie (avant 70 ans) | 152 500 € / bénéficiaire [referentiel: abattement_av_avant_70/2025] |
-| Abattement assurance-vie (après 70 ans) | 30 500 € global |
-| Abattement donation parent/enfant | 100 000 € / parent / enfant (15 ans) [referentiel: abattement_donation_parent_enfant/2025] |
-| Taux IS normal | 25 % |
-| Taux IS réduit (bénéfice < 42 500 €, PME) | 15 % |
-| PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) |
-| Prélèvements sociaux (revenus patrimoine) | 17,2 % |
+> Source de vérité : `referentiel_parametres.json` (clé + millésime). En cas d'écart avec un texte du corpus, le référentiel prime.
+
+| Paramètre | Valeur 2025 | Valeur 2026 |
+|---|---|---|
+| PASS (Plafond Annuel Sécurité Sociale) | 47 100 € | **48 060 €** [referentiel: PASS] |
+| Seuil micro-BNC | 77 700 € | **83 600 €** (triennat 2026-2028) [referentiel: seuil_micro_bnc] |
+| Seuil micro-BIC (autres locations meublées) | 77 700 € | 77 700 € [referentiel: seuil_micro_bic_classe] |
+| Seuil micro-BIC (tourisme NON classé) | 15 000 € | 15 000 € [referentiel: seuil_micro_bic_tourisme_non_classe] |
+| Seuil micro-BIC (tourisme CLASSÉ) | 77 700 € | 77 700 € [referentiel: seuil_micro_bic_classe] |
+| Seuil LMP (recettes location) | 23 000 € | 23 000 € [referentiel: seuil_lmp_recettes] |
+| Seuil IFI | 1 300 000 € | 1 300 000 € [referentiel: seuil_ifi] |
+| Seuil CEHR (célibataire) | 250 000 € RFR | non vérifié 2026 |
+| Seuil CEHR (couple) | 500 000 € RFR | non vérifié 2026 |
+| Seuil CDHR (célibataire) | 250 000 € RFR | non vérifié 2026 |
+| Plafond PEA | 150 000 € (+ 225 000 € PEA-PME) | non vérifié 2026 |
+| Abattement assurance-vie (avant 70 ans) | 152 500 € / bénéficiaire | 152 500 € [referentiel: abattement_av_avant_70] |
+| Abattement assurance-vie (après 70 ans) | 30 500 € global | non vérifié 2026 |
+| Abattement donation parent/enfant | 100 000 € / parent / enfant (15 ans) | 100 000 € [referentiel: abattement_donation_parent_enfant] |
+| Taux IS normal | 25 % | non vérifié 2026 |
+| Taux IS réduit (bénéfice < 42 500 €, PME) | 15 % | non vérifié 2026 |
+| PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) | non vérifié 2026 |
+| Prélèvements sociaux (revenus patrimoine) | 17,2 % | 17,2 % [referentiel: pv_immo_taux_prelevements_sociaux] |
 
 ---
 
-*Dernière mise à jour : 2026-05-11 — Sources : M1 à M8, éditions 2022-2025*
+*Dernière mise à jour : 2026-08-26 — Sources : M1 à M8, éditions 2022-2025 ; referentiel_parametres.json pour les millésimes 2026*

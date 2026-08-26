@@ -81,7 +81,7 @@ Checklists opérationnelles et workflows détaillés pour l'agent Gem.
 
 ### Formulaire 2035 — BNC déclaration contrôlée
 
-**Qui :** professions libérales CA > 77 700 € ou option réel. **Quand :** mai N+1.
+**Qui :** professions libérales CA > seuil micro-BNC (77 700 € revenus 2025 ; 83 600 € revenus 2026-2028 [referentiel: seuil_micro_bnc]) ou option réel. **Quand :** mai N+1.
 
 - [ ] Ligne AA : encaissements TTC année civile (logique trésorerie)
 - [ ] Ligne AB : honoraires rétrocédés (à déduire des recettes)
@@ -153,7 +153,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 | PER | Versements déductibles × TMI | Plafond 10 % revenus N-1 (ou PASS), report 3 ans | CGI art. 163 quatervicies |
 | Dons associations | Réduction 66 % (75 % aide aux personnes) | Don ≤ 20 % revenu imposable | CGI art. 200 |
 | Déficit foncier | Imputation ≤ 10 700 €/an revenu global | Régime réel, travaux déductibles, location 3 ans | CGI art. 156 |
-| Micro-BNC vs réel | Réel avantageux si charges > 34 % CA | CA ≤ 77 700 € pour micro | CGI art. 93, 102 ter |
+| Micro-BNC vs réel | Réel avantageux si charges > 34 % CA | CA ≤ 77 700 € (revenus 2025) / 83 600 € (revenus 2026-2028) pour micro | CGI art. 93, 102 ter |
 | Quotient familial | Réduction TMI via demi-parts | Enfants à charge, invalidité, parent isolé | CGI art. 194-197 |
 | Frais réels salariés | Déduction charges vs abattement 10 % | Si charges > 10 % salaire net | CGI art. 83 |
 | PERCO/PEE | Abondement exonéré IR + PS (partiellement) | Dans plafonds légaux | M11 |

@@ -574,6 +574,8 @@ concernant les indications de leur livre-journal ou de leur comptabilité.
 
 **Source :** CGI Art. 102 ter | **Module :** BNC | **Tags :** BNC, micro_BNC, seuils, 77700
 
+> **Note millésime :** le texte ci-dessous mentionne 77 700 € (triennat 2023-2025). Le seuil est revalorisé à **83 600 € pour les revenus 2026-2028** (actualisation triennale prévue au dernier alinéa du 1). En cas d'écart entre un texte du corpus et `referentiel_parametres.json`, le référentiel prime [referentiel: seuil_micro_bnc].
+
 ```
 Article 102 ter
 1. Le bénéfice imposable des contribuables qui perçoivent des revenus non commerciaux dont le montant

@@ -1,5 +1,7 @@
 # Evaluation Suite
 
+**Millésime :** les 45 cas de test sont calibrés sur le millésime 2025 (seuil micro-BNC 77 700 €, PASS 47 100 €...). Les réponses attendues restent correctes pour les revenus 2025 ; pour les revenus 2026, se référer à `referentiel_parametres.json`.
+
 ## FS-001 | claude_few_shot
 - Fonction : comptable
 - Difficulté : simple

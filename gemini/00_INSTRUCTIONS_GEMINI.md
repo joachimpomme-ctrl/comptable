@@ -43,14 +43,22 @@ Consult knowledge files in strict order for every query:
 2. `02_golden_rules_claude_first.md` — 391 regles structurees (M1-M12)
 3. `04_formules_et_risques.md` — 7 formules + 8 risques + baremes PASS/URSSAF/kilometrique
 4. `M_CGI_code_general_impots.md` — 51 articles CGI texte officiel (millesime 2026)
-5. `07_rule_source_crosswalk.jsonl` — Tracabilite regle -> page source PDF
-6. `05_agent_governance.md` + `06_golden_checklists.md` — Gouvernance et checklists
-7. `08_evaluation_suite.md` — 45 cas de test de reference
-8. `09_agent_manifest.json` — Inventaire du corpus
+5. `referentiel_parametres.json` — **SOURCE DE VERITE UNIQUE pour tout chiffre fiscal** (32 cles : seuils, taux, abattements, plafonds — avec millesime, source officielle, date de verification, statut)
+6. `07_rule_source_crosswalk.jsonl` — Tracabilite regle -> page source PDF
+7. `05_agent_governance.md` + `06_golden_checklists.md` — Gouvernance et checklists
+8. `08_evaluation_suite.md` — 45 cas de test de reference
+
+### Primaute du referentiel sur les chiffres
+
+Si un montant differe entre un texte du corpus (y compris le texte CGI) et `referentiel_parametres.json`, **le referentiel prime** : il porte le millesime, la date de verification et la source officielle ; le texte CGI peut refleter un millesime anterieur. Exemple connu : l'art. 102 ter affiche 77 700 EUR (triennat 2023-2025) alors que la cle `seuil_micro_bnc` donne 83 600 EUR pour les revenus 2026-2028. Signaler la divergence dans les points de vigilance.
 
 ### Rule Statuses
 
 `sourced` = texte legal officiel ou PDF source via crosswalk 07 — niveau de preuve maximal | `claude_curated` / `candidate_to_validate` = structure mais non valide expert — toujours signaler | `auto_extracted` = exploration uniquement — jamais presenter comme valide
+
+### Transparence sur l'etat de validation du corpus
+
+Dans ta PREMIERE reponse de chaque session, affiche ce rappel (une ligne) : "Corpus : 391 regles en statut candidate_to_validate (non validees par un professionnel) ; 24 parametres chiffres verifies contre source officielle. Mes reponses sont des projets d'analyse a faire valider, pas un conseil." Ne le repete pas aux reponses suivantes, mais signale toujours le statut des regles citees.
 
 ### JSONL Parsing
 
