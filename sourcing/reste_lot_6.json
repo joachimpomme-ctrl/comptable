@@ -1,0 +1,152 @@
+[
+ {
+  "id": "bnc-pcg-007",
+  "module": "M3",
+  "ancre": "C. com. art. L.123-20 (amortissements/provisions meme sans benefice)",
+  "regle": "Même en cas d’absence ou d’insuffisance du bénéfice, il doit être procédé aux amortissements, dépréciations et provisions nécessaires."
+ },
+ {
+  "id": "bnc-pcg-016",
+  "module": "M3",
+  "ancre": "C. com. art. L.123-22 (conservation 10 ans)",
+  "regle": "Les documents comptables et les pièces justificatives sont conservés pendant dix ans."
+ },
+ {
+  "id": "BCG-004",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "Compte de résultat = explique l'enrichissement ou l'appauvrissement sur UN EXERCICE COMPTABLE (période entre 2 bilans ≈ 1 an). Bénéfice = Produits > Charges. Perte = Charges > Produits. Le résultat est AVANT impôt et HORS TAXE."
+ },
+ {
+  "id": "BCG-012",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "Seuil de rentabilité (point mort) = Charges fixes / Taux de marge sur coûts variables. Taux MCV = (CA - Charges variables) / CA × 100. Charges fixes: loyer, assurance, charges sociales fixes. Charges variables: frais de déplacement VRP, commissions sur ventes. Au-delà du point mort: l'entreprise dégage des bénéfices."
+ },
+ {
+  "id": "bnc_008",
+  "module": "M1",
+  "ancre": "CGI art. 93, 1 (recettes encaissees) ; BOI-BNC-BASE-20-10-10",
+  "regle": "Le critère de prise en compte des recettes est l'encaissement. Les recettes doivent être comptabilisées à la date de réception du chèque, du paiement en espèces, de l'inscription au crédit du compte, de l'échéance pour une traite, de la libre disposition des fonds pour un compte courant ou de l'encaissement par le tiers."
+ },
+ {
+  "id": "bnc_017",
+  "module": "M1",
+  "ancre": "BOI-BAREME-000001 (bareme kilometrique) ; CGI art. 93 (frais de vehicule)",
+  "regle": "Les frais de voiture peuvent être évalués au barème kilométrique, sous réserve d'un suivi précis des kilomètres professionnels. Les dépenses réelles couvertes par ce barème et payées par le compte professionnel doivent alors être traitées en prélèvements personnels."
+ },
+ {
+  "id": "bnc_025",
+  "module": "M1",
+  "ancre": "CGI art. 99 ; LPF art. L.47 A I et art. A.47 A-1 (FEC)",
+  "regle": "Une comptabilité tenue informatiquement doit permettre la production d'un FEC conforme. L'usage d'un simple tableur ne permet pas de satisfaire à cette exigence."
+ },
+ {
+  "id": "bnc_033",
+  "module": "M1",
+  "ancre": "CSS art. L.131-6 (assiette des cotisations TNS) ; CGI art. 154 bis",
+  "regle": "Les cotisations sociales comprennent notamment celles dues à l'URSSAF et à la CARCDSF. Elles sont calculées sur la base du revenu professionnel et peuvent être forfaitaires les premières années puis régularisées."
+ },
+ {
+  "id": "GFPL-022",
+  "module": "M2",
+  "ancre": "a_verifier",
+  "regle": "Le coût de la location financière est plus élevé que celui du crédit-bail."
+ },
+ {
+  "id": "ES-006",
+  "module": "M11",
+  "ancre": "C. trav. art. L.3315-2 (interessement affecte a un plan, exoneration IR) ; C. mon. fin. art. L.224-40 (transferts)",
+  "regle": "Stratégies d'optimisation: (1) Placer l'intéressement sur le PEE ou PERCOL dans les 15 jours → exonération IR immédiate; (2) Maximiser l'abondement employeur (chaque euro d'abondement est exonéré d'IR et de cotisations); (3) Utiliser le PEE comme épargne intermédiaire (5 ans) avant le PER (retraite); (4) Transférer les droits PERCO vers PER individuel pour profiter d'une gestion plus large; (5) En cas de déblocage anticipé (acquisition RP), le montant est exonéré d'IR mais soumis aux PS 17,2 % sur les gains."
+ },
+ {
+  "id": "PAT-002",
+  "module": "M6",
+  "ancre": "C. civ. art. 1536 a 1543 (separation de biens)",
+  "regle": "Séparation de biens: chaque époux gère seul ses biens personnels; pour les biens acquis en commun → indivision. Avantage: protection du patrimoine de chaque époux des dettes de l'autre (sauf dettes solidaires dont fiscales). Recommandé pour professions artisanales/commerciales/libérales ou présence d'enfants d'unions précédentes."
+ },
+ {
+  "id": "PAT-010",
+  "module": "M6",
+  "ancre": "C. civ. art. 843 et s. (rapport) ; art. 1075 (donation-partage) ; CGI art. 669 (demembrement)",
+  "regle": "Formes de donation: (1) Donation en avancement de part: pour héritiers réservataires (enfants/petits-enfants), rapportable à la succession; (2) Donation hors part: pour toute personne, pas rapportable; (3) Donation-partage: donne ET partage de son vivant, non rapportable, évaluée au jour de la donation; (4) Démembrement de propriété: donateur garde l'usufruit, enfants reçoivent la nue-propriété → à son décès, usufruit s'éteint, enfants deviennent PP SANS droits de succession."
+ },
+ {
+  "id": "PAT-020",
+  "module": "M6",
+  "ancre": "C. mon. fin. art. L.224-1 a L.224-8 (PER, loi PACTE 2019-486 du 22/05/2019)",
+  "regle": "Plan d'épargne retraite (PER, loi PACTE mai 2019): 3 compartiments: (1) versements volontaires (libres, déductibles ou non du revenu); (2) épargne salariale transférée (intéressement, participation, abondement, CET); (3) cotisations obligatoires (sortie uniquement en rente). Remplace: Perp, Madelin, Perco, art. 83 (impossibles à souscrire depuis oct 2020; transfert possible sur PER). Déblocage anticipé possible: décès conjoint, invalidité, achat résidence principale."
+ },
+ {
+  "id": "PAT-028",
+  "module": "M6",
+  "ancre": "CGI art. 196 B et art. 197 (rattachement enfant majeur, plafond QF) ; art. 81, 36 (job etudiant)",
+  "regle": "Rattachement enfant majeur au foyer fiscal: conditions: < 21 ans (ou < 25 ans si étudiant) au 1er janvier de l'année. Avantage: majoration du quotient familial. Économie d'impôt plafonnée: 1 592 €/enfant (les 2 premiers), 3 184 € à partir du 3ème, 3 756 € pour parent isolé. Réductions supplémentaires: 153 € (lycée) / 183 € (université). Job étudiant: revenus exonérés jusqu'à 3 SMIC mensuels; gratification stage: exonération jusqu'au SMIC annuel. Inconvénient: peut faire perdre bourses/aides sociales calculées sur les revenus des parents."
+ },
+ {
+  "id": "CGP-005",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "5 étapes du cycle de vie familiale et professionnelle avec objectifs patrimoniaux associés: (1) Entrée dans la vie active + constitution famille: choisir mode de conjugalité, devenir propriétaire RP, constituer/valoriser un capital; (2) Développement familial/professionnel: constituer capital, protéger proches (donation conjoint), préparer retraite; (3) Maturité: financer études enfants, sécuriser patrimoine professionnel, optimiser fiscalité (IR/IFI), SCI; (4) Terme vie professionnelle + retraite: revenus complémentaires, liquidité du patrimoine, organiser transmission; (5) Vie longue à la retraite: concilier couverture risques vie longue (santé, dépendance) et transmission."
+ },
+ {
+  "id": "CGP-013",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Risques spécifiques de la vie longue à couvrir: accidents de la vie, dépendance (maladie, perte d'autonomie). Outils de la vie longue: prêt viager hypothécaire, vente en viager, rente viagère à titre onéreux (assurance-vie), mandat de protection future, donations en nue-propriété ou PP. Stratégies de 'dé-accumulation' du patrimoine en cas de vie longue. Espérance de vie à l'âge de la retraite: ~23,2 ans (hommes) et ~27,5 ans (femmes)."
+ },
+ {
+  "id": "RF-002",
+  "module": "M9",
+  "ancre": "CGI art. 28 et art. 31 (regime reel foncier) ; BOI-RFPI-BASE-10",
+  "regle": "Le régime réel foncier s'applique obligatoirement si les revenus fonciers bruts dépassent 15 000 €, ou sur option si ≤ 15 000 € (option irrévocable 3 ans). Revenu net foncier = Loyers bruts encaissés − charges déductibles. Déclaration sur formulaire 2044. Le revenu net foncier est ensuite reporté sur la 2042."
+ },
+ {
+  "id": "DSD-001",
+  "module": "M10",
+  "ancre": "CGI art. 796-0 bis (exoneration conjoint / PACS, loi TEPA 2007) ; CGI art. 790 E (abattement donation entre epoux)",
+  "regle": "Exonération totale de droits de succession pour: (1) le conjoint survivant (depuis loi TEPA du 21/08/2007); (2) le partenaire de PACS survivant. Ces exonérations s'appliquent aux transmissions par décès uniquement. Pour les donations entre époux/partenaires PACS, des droits peuvent s'appliquer selon les barèmes (mais abattement spécifique de 80 724 € entre époux)."
+ },
+ {
+  "id": "IFI-004",
+  "module": "M10",
+  "ancre": "CGI art. 974 (passif deductible IFI) ; BOI-PAT-IFI-20-30-20",
+  "regle": "Passif déductible de l'assiette IFI: (1) Emprunts immobiliers contractés pour l'acquisition, la réparation ou l'amélioration des biens taxables; (2) Travaux à réaliser (engagements pris mais non encore exécutés); (3) Taxe foncière et IFI de l'année courante dus mais non encore payés. Ne sont PAS déductibles: impôts sur le revenu, emprunts contractés pour l'achat de valeurs mobilières, découverts bancaires non liés à l'immobilier."
+ },
+ {
+  "id": "TRM-009",
+  "module": "M12",
+  "ancre": "CGI art. 199 tricies (Loc'Avantages) ; BOI-IR-RICI-235",
+  "regle": "Loc'Avantages: réduction d'impôt pour les bailleurs qui louent NU à usage de résidence principale dans le cadre d'une convention ANAH (avant le 31 décembre 2027) pour une durée de 6 ans. Le loyer et les ressources des locataires ne doivent pas excéder certains plafonds (secteur intermédiaire, social ou très social). Les locataires ne peuvent pas être ascendants ou descendants du propriétaire. Le taux de réduction varie selon le niveau de loyer pratiqué (secteur intermédiaire: ~15 %; secteur social: ~35 %; secteur très social: ~65 % avec intermédiaire de gestion). Non soumis au plafonnement global des niches fiscales."
+ },
+ {
+  "id": "TRM-017",
+  "module": "M12",
+  "ancre": "a_verifier",
+  "regle": "OBO (Owner Buy-Out / vente à soi-même): opération permettant à un dirigeant de dégager du capital à titre personnel en vendant son entreprise (pharmacie, cabinet libéral) à une holding SPFPL qu'il contrôle. Effets: (1) le dirigeant perçoit un prix de vente exonéré ou taxé à 12,8 % (PFU); (2) la holding emprunte pour payer le prix et rembourse le crédit avec les dividendes de l'entreprise (effet de levier); (3) le dirigeant anticipe l'organisation de sa retraite tout en maintenant le contrôle. Utilisé notamment lors de la cession de pharmacies d'officine avant retraite."
+ },
+ {
+  "id": "LMN-007",
+  "module": "M5",
+  "ancre": "CGI art. 53 A et 302 septies A bis (regimes reels) ; BOI-BIC-DECLA-30",
+  "regle": "Au régime réel BIC: comptabilité BIC complète obligatoire (FEC compatible); déclarations 2031 + 2033 pour réel simplifié (CA meublé tourisme classé: 188 700 €-840 000 € en 2024, 77 700 €-840 000 € en 2025; autres: 77 700 €-254 000 €) ou 2031 + 2050 pour réel normal (CA meublé tourisme classé > 840 000 €; autres > 254 000 €). Option exercée avant la date limite de déclaration des revenus de N-1, valable 1 an, tacite reconduction."
+ },
+ {
+  "id": "LMN-015",
+  "module": "M5",
+  "ancre": "CGI art. 156, I-1 ter (deficits LMNP reportables sur BIC LMNP) ; BOI-BIC-DEF-20-20",
+  "regle": "En LMNP: déficits reportables EXCLUSIVEMENT sur les revenus de location meublée non professionnelle des 10 années suivantes. Impossible de les imputer sur d'autres revenus (salaires, BNC, BIC professionnels, etc.). Suivi cases 5GA à 5GJ de la 2042-C PRO."
+ },
+ {
+  "id": "LMN-024",
+  "module": "M5",
+  "ancre": "CGI art. 39 duodecies a 39 quindecies (PV professionnelles LMP) ; BOI-BIC-PVMV",
+  "regle": "En LMP (cession sous statut LMP): régime des PV professionnelles. PV = Prix cession - VNC (VNC = valeur d'origine - amortissements DÉDUITS, les ARD de l'art. 39-C majorent la VNC). Qualification: < 2 ans → PV court terme; > 2 ans → PV CT dans la limite des amortissements déduits + PV LT au-delà. PV CT: imposition au barème progressif IR. PV LT: 12,8% IR + 17,2% PS."
+ },
+ {
+  "id": "LMP-004",
+  "module": "M5bis",
+  "ancre": "CGI art. 35 bis (exoneration location d'une partie de la RP) ; BOI-BIC-CHAMP-40-20",
+  "regle": "La résidence principale peut être louée en meublé sous conditions d'exonération d'impôt: (1) les pièces louées font partie de la RP du bailleur ET constituent la résidence principale du locataire (ou résidence temporaire d'un salarié saisonnier); (2) le prix de location reste dans des limites raisonnables (plafond 2024: 213 €/m²/an en Île-de-France, 157 €/m²/an en province). Si loyer > plafond: totalité du loyer imposable. Limitation: 120 nuits/an maximum pour une location touristique de RP (loi ELAN); communes en zone tendue peuvent réduire à 90 nuits par délibération."
+ }
+]

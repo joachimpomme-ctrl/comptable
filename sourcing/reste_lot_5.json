@@ -1,0 +1,158 @@
+[
+ {
+  "id": "bnc-pcg-006",
+  "module": "M3",
+  "ancre": "PCG art. 121-5 (permanence des methodes) ; C. com. art. L.123-17",
+  "regle": "Sauf cas exceptionnels, les méthodes comptables retenues et la structure du bilan et du compte de résultat ne peuvent être modifiées d’un exercice à l’autre."
+ },
+ {
+  "id": "bnc-pcg-015",
+  "module": "M3",
+  "ancre": "PCG art. 921-3 (enregistrement) ; C. com. art. R.123-174",
+  "regle": "Tout enregistrement comptable précise l’origine, le contenu et l’imputation de chaque donnée ainsi que les références de la pièce justificative qui l’appuie."
+ },
+ {
+  "id": "BCG-003",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "Bilan = photographie du patrimoine à une date donnée. Structure: ACTIF (gauche) = ce que possède l'entreprise; PASSIF (droite) = ce que doit l'entreprise. Le bilan donne une SITUATION à un INSTANT X (différent du compte de résultat qui couvre une période)."
+ },
+ {
+  "id": "BCG-011",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "TVA collectée - TVA déductible = TVA à payer. La TVA est un impôt indirect: seul le consommateur final paie l'ensemble de la TVA. La TVA doit apparaître sur chaque facture. Montant HT (hors taxes) = base de calcul des prix et marges. TTC = HT × (1 + taux TVA)."
+ },
+ {
+  "id": "bnc_007",
+  "module": "M1",
+  "ancre": "CGI art. 99 (livre-journal, mention du mode de reglement) ; BOI-BNC-DECLA-10-20-10",
+  "regle": "Le mode d'encaissement ou de paiement doit être indiqué pour chaque opération : chèque, carte bancaire, espèces ou virement."
+ },
+ {
+  "id": "bnc_016",
+  "module": "M1",
+  "ancre": "CGI art. 93, 1 (frais professionnels) ; BOI-BNC-BASE-40-60 (frais mixtes evalues forfaitairement)",
+  "regle": "Les frais de blanchissage à domicile peuvent être évalués forfaitairement à partir des tarifs des blanchisseurs, à condition de conserver le détail du calcul."
+ },
+ {
+  "id": "bnc_024",
+  "module": "M1",
+  "ancre": "CGI art. 99 (nomenclature et tenue du livre-journal/registre des immobilisations) ; BOI-BNC-DECLA-10-20",
+  "regle": "La nomenclature comptable applicable comprend notamment les comptes financiers, les recettes professionnelles d'exploitation, les honoraires rétrocédés, les dépenses professionnelles d'exploitation, les recettes et dépenses patrimoniales, et les immobilisations/amortissements."
+ },
+ {
+  "id": "bnc_032",
+  "module": "M1",
+  "ancre": "CGI art. 93, 1 (depenses necessitees par l'exercice de la profession) ; BOI-BNC-BASE-40",
+  "regle": "Les charges comprennent notamment le loyer, les charges sociales, les impôts, internet, le téléphone, le logiciel dossier patient, le logiciel de télétransmission, le secrétariat et la gestion des DASRI."
+ },
+ {
+  "id": "bnc_040",
+  "module": "M1",
+  "ancre": "a_verifier",
+  "regle": "Le non-respect des termes du conventionnement peut entraîner un examen par les instances paritaires et des sanctions telles qu'une suspension, une interdiction temporaire ou définitive d'exercer ou une amende administrative pouvant aller jusqu'à 3 000 euros."
+ },
+ {
+  "id": "ES-005",
+  "module": "M11",
+  "ancre": "C. mon. fin. art. L.224-40 (transferts vers le PER, non imposables)",
+  "regle": "Les droits accumulés sur un PERCO, un Article 83 ou un contrat Madelin peuvent être transférés vers un PER individuel. Le transfert n'est pas imposable. Les compartiments conservent leur nature fiscale d'origine (épargne salariale reste dans le 2ème compartiment du PER → sortie capital exonérée d'IR). L'ancien PEE peut être transféré vers un PERCOL mais pas directement vers un PER individuel. Intérêt du transfert: regroupement et simplification, accès au large choix de supports d'investissement du PER individuel."
+ },
+ {
+  "id": "PAT-001",
+  "module": "M6",
+  "ancre": "C. civ. art. 1400 a 1491 (communaute reduite aux acquets) ; art. 757 (droits du conjoint)",
+  "regle": "Communauté réduite aux acquêts (régime légal par défaut): biens propres = acquis avant mariage ou reçus par donation/succession; biens communs = acquis pendant le mariage. Chacun peut gérer seul les biens communs sauf actes importants (vente, hypothèque, donation). En cas de décès: conjoint reçoit 50% du commun + 1/4 en PP ou 100% en usufruit sur la succession (si enfants communs)."
+ },
+ {
+  "id": "PAT-009",
+  "module": "M6",
+  "ancre": "CGI art. 779 (abattement parent/enfant) et art. 790 G (don numeraire) ; art. 784 (delai 15 ans)",
+  "regle": "Abattements fiscaux sur donations (reconstitution tous les 15 ans): parents vers enfants: 100 000 € par parent et par enfant; grands-parents vers petits-enfants: 31 865 €; arrière-grands-parents vers arrière-petits-enfants: 5 310 €. Abattement supplémentaire don en numéraire: 31 865 € (donateur < 80 ans, donataire majeur). Don affecté à création d'entreprise ou construction résidence principale: exonération 100 000 €."
+ },
+ {
+  "id": "PAT-018",
+  "module": "M6",
+  "ancre": "CGI art. 125-0 A (fiscalite de l'assurance-vie) ; CSS art. L.136-7 (PS)",
+  "regle": "Fiscalité des gains (intérêts + PV) à la sortie par rachat: versements avant 27/09/2017: PFL 35%/15%/7,5% selon durée (0-4/4-8/>8 ans) ou barème IR + PS; versements depuis 27/09/2017: PFU 12,8% + PS (encours < 150 000 €) ou 7,5% + PS si contrat > 8 ans et encours < 150 000 € (sinon 12,8%). Après 8 ans: abattement annuel 4 600 € (personne seule) ou 9 200 € (couple). PS: 17,2%."
+ },
+ {
+  "id": "PAT-027",
+  "module": "M6",
+  "ancre": "CGI art. 779, II (abattement personne handicapee) ; art. 199 septies (contrat epargne handicap)",
+  "regle": "Dispositifs fiscaux pour enfants handicapés: abattement fiscal supplémentaire de 159 325 € (en plus des 100 000 € standard = 259 325 € total par parent sans droits de donation/succession). Contrat d'épargne handicap: réduction d'impôt de 25% des primes, plafond annuel 1 525 € + 300 €/enfant à charge. Rente survie: mêmes avantages fiscaux. AAH (2021): 903,60 €/mois maximum."
+ },
+ {
+  "id": "CGP-004",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "5 éléments-clés de situation à auditer pour tout conseil patrimonial: (D1) Situation juridique civile des personnes et des biens (mode de conjugalité, enfants, famille recomposée, modes de détention); (D2) Situation patrimoniale (volume actifs fonciers/immo/financiers/assurantiels, modes de gestion); (D3) Situation assurantielle/sociale (protections risques personnes et biens); (D4) Situation fiscale (impôts et prélèvements); (D5) Situation financière (créances, dettes, niveau d'endettement net)."
+ },
+ {
+  "id": "CGP-012",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Certification CGPC (Conseiller en Gestion de Patrimoine Certifié) enregistrée au RNCP niveau 7 (grade master): 2 paliers — CFC (Conseiller Financier Certifié, palier 1, 1 an expérience) et E-CGPC (Expert-Conseil en Gestion de Patrimoine Certifié, palier 2, 3 ans expérience, cas complexes). Engagement éthique en 8 principes: intérêt du client, intégrité, objectivité, honnêteté, professionnalisme, compétence, confidentialité, diligence. Formation continue: 30h/an validée."
+ },
+ {
+  "id": "RF-001",
+  "module": "M9",
+  "ancre": "CGI art. 32 (micro-foncier, abattement 30 %) ; BOI-RFPI-DECLA-10",
+  "regle": "Le régime micro-foncier s'applique aux propriétaires dont les revenus fonciers bruts annuels n'excèdent pas 15 000 €. L'abattement forfaitaire est de 30 % (représente les charges). Revenu net foncier imposable = revenus bruts × 70 %. Pas de déclaration 2044 nécessaire — report directement sur la 2042."
+ },
+ {
+  "id": "PV-IMM-005",
+  "module": "M9",
+  "ancre": "CGI art. 150 UB (cession de parts de societes a preponderance immobiliere) ; BOI-RFPI-SPI-10",
+  "regle": "Cession de parts de SCI soumise à l'IR: PV imposée selon le régime des PV immobilières des particuliers (abattements durée de détention, taux 19 % + 17,2 % PS). La durée de détention est calculée depuis l'acquisition des parts. Si la SCI a opté pour l'IS: la cession de parts relève du régime des PV mobilières (PFU 30 % ou barème IR, sans abattement durée de détention)."
+ },
+ {
+  "id": "IFI-003",
+  "module": "M10",
+  "ancre": "CGI art. 977 (bareme) et art. 979 (plafonnement IFI+IR) ; BOI-PAT-IFI-40-30-10",
+  "regle": "Exemple de calcul IFI: Patrimoine immobilier net taxable = 2 000 000 €. IFI = (1 300 000 − 800 000) × 0,5 % + (2 000 000 − 1 300 000) × 0,7 % = 2 500 + 4 900 = 7 400 €. Taux effectif = 7 400/2 000 000 = 0,37 %. Rappel: plafonnement — IFI + IR ne peut excéder 75 % des revenus de l'année précédente (excédent en diminution de l'IFI à payer)."
+ },
+ {
+  "id": "TRM-008",
+  "module": "M12",
+  "ancre": "CGI art. 199 novovicies (Pinel, extinction 31/12/2024) ; BOI-IR-RICI-360",
+  "regle": "Les dispositifs Pinel (métropole), Pinel+ et Pinel Outre-Mer ne s'appliquent plus aux acquisitions réalisées depuis le 1er janvier 2025. En revanche, les investissements Pinel réalisés avant cette date bénéficient du dispositif jusqu'à son terme contractuel (engagement de location de 6, 9 ou 12 ans maintenu). Les taux de réduction en cours d'application restent: 9 %/12 %/14 % (Pinel 2023) ou 12 %/18 %/21 % (Pinel+ 2023-2024)."
+ },
+ {
+  "id": "TRM-016",
+  "module": "M12",
+  "ancre": "CGI art. 14 A et 29 (revenus fonciers SCPI) ; art. 150 UB ; BOI-RFPI-CHAMP-30",
+  "regle": "Parts de SCPI: les loyers perçus par la SCPI et redistribués aux porteurs de parts sont soumis à l'impôt sur le revenu dans la catégorie des REVENUS FONCIERS (et non BIC), même si les biens sont des immeubles commerciaux. Ces revenus sont soumis aux prélèvements sociaux de 17,2 %. Les parts de SCPI sont INCLUSES dans l'assiette de l'IFI (contrairement aux SIIC cotées si détention < 5 %). Les plus-values de cession de parts relèvent du régime des plus-values immobilières (abattements pour durée de détention, IR 19 % + PS 17,2 %)."
+ },
+ {
+  "id": "LMN-006",
+  "module": "M5",
+  "ancre": "CGI art. 50-0 (obligations micro-BIC) ; art. 158, 7 ; BOI-BIC-DECLA-10-10",
+  "regle": "En micro-BIC: (1) tenir un livre-journal des recettes; (2) tenir un registre des achats; (3) déclarer les loyers sur 2042-C PRO; (4) pas de liasse fiscale; (5) pas de réduction d'impôt pour frais de comptabilité/OGA (RIOGA supprimée pour revenus 2025, loi de finances 2025 art. 11)."
+ },
+ {
+  "id": "LMN-014",
+  "module": "M5",
+  "ancre": "CGI art. 156, I-1 bis (deficits LMP imputables sur le revenu global) ; BOI-BIC-DEF-20-10",
+  "regle": "En LMP: déficits imputables sur le revenu global du foyer fiscal SANS limitation de montant. Si revenu global insuffisant: déficit global reportable sur les 6 années suivantes."
+ },
+ {
+  "id": "LMN-023",
+  "module": "M5",
+  "ancre": "CGI art. 150 VC (abattements duree de detention) et art. 200 B ; CSS art. L.136-7",
+  "regle": "Abattements IR et PS pour durée de détention (LMNP, régime particuliers): 0-5 ans: 0% IR et PS; 6ème-21ème année: 6%/an IR, 1,65%/an PS; 22ème année: 4% IR, 1,6% PS; au-delà 22 ans: exonération IR (taux de base 19%); 23ème-30ème année: 9%/an PS; au-delà 30 ans: exonération totale IR+PS. Taxe supplémentaire si PV imposable > 50 000 €: de 2 à 6%."
+ },
+ {
+  "id": "LMP-003",
+  "module": "M5bis",
+  "ancre": "C. civ. art. 605 et 606 (repartition des travaux usufruit/nue-propriete) ; BOI-RFPI-BASE-20-30",
+  "regle": "Répartition des travaux en démembrement: JURIDIQUEMENT: nu-propriétaire = grosses réparations (art. 606 Code civil); usufruitier = entretien et améliorations (art. 605). FISCALEMENT: la distinction juridique ne s'applique pas — c'est la personne qui a payé et supporté définitivement les travaux qui peut les déduire, quelle que soit leur nature."
+ },
+ {
+  "id": "RISK-002",
+  "module": "FORM",
+  "ancre": "CGI art. 206, 2 (IS de plein droit si location meublee par SCI) ; art. 239 ; BOI-IS-CHAMP-10-30",
+  "regle": "RISQUE: SCI optant pour la location meublée → soumise à l'IS de plein droit (activité commerciale). Cette option IS est IRRÉVOCABLE. La SCI perd: (1) l'abattement pour durée de détention sur les PV immobilières; (2) la possibilité de retourner à l'IR. Les dividendes distribués sont ensuite imposés au PFU 30 % (double imposition IS + PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI IR."
+ }
+]
