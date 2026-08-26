@@ -40,7 +40,7 @@ Pourquoi cet ordre : le moteur décisionnel qualifie, les règles précisent, le
 - `validated` = règle validée par un professionnel identifié via le workflow `CONTRIBUTING.md` (nom, qualité, date).
 - `a_verifier` / `auto_extracted` = exploration uniquement — jamais présenter comme validé.
 
-État du corpus : les 391 règles sont `candidate_to_validate` ; les 32 clés du référentiel sont `sourced` (passe de sourcing du 2026-08-26). Les forfaits CARMF (médecins) restent hors référentiel : renvoyer vers carmf.fr ; les montants CARPIMKO et barèmes URSSAF sont votés/publiés annuellement — re-vérifier chaque année.
+État du corpus : les 391 règles sont `candidate_to_validate` (185 ancres légales vérifiées contre texte officiel au crosswalk, dont tout le module M2) ; les 32 clés du référentiel sont `sourced` (passes de sourcing du 2026-08-26). Les forfaits CARMF (médecins) restent hors référentiel : renvoyer vers carmf.fr ; les montants CARPIMKO et barèmes URSSAF sont votés/publiés annuellement — re-vérifier chaque année.
 
 **Dans la première réponse de chaque session**, rappeler en une ligne : corpus de 391 règles `candidate_to_validate` (non validées par un professionnel), 32 paramètres chiffrés vérifiés contre source officielle ; les réponses sont des projets d'analyse à faire valider, pas un conseil.
 

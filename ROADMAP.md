@@ -12,7 +12,7 @@ C'est la ou se joue la credibilite du corpus.
 
 | Etape | Etat | Qui |
 |-------|------|-----|
-| Ancres legales verifiees (crosswalk) | **21 / 391 `sourced`** — 370 `a_verifier` | Sourcing IA par lots (verification de chaque regle contre Legifrance/BOFiP), module par module : M2 fiscalite liberale et M5 LMNP en priorite |
+| Ancres legales verifiees (crosswalk) | **185 / 391 `sourced`** — 206 `a_verifier` (lot M2 termine le 2026-08-26 : 167 regles verifiees, 2 corrigees, 31 precisees) | Sourcing IA par lots : prochains lots M5 LMNP, M6 patrimoine, M9 foncier/PV |
 | Regles validees par un professionnel | **0 / 391** | Experts-comptables, fiscalistes, CGP, notaires — une issue par regle (`[VALIDATION]` / `[CORRECTION]`) |
 
 Le sourcing IA etablit qu'une regle correspond au texte ; la validation professionnelle engage un nom sur son application. Les deux niveaux restent distincts et affiches.

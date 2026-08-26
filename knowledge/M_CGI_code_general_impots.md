@@ -1502,6 +1502,8 @@ individuelle mentionné à l'article L. 225-1 du même code, dans la limite d'un
 
 **Source :** CGI Art. 163 quatervicies | **Module :** retraite | **Tags :** PER, plafond_epargne_retraite, deduction_revenu_global
 
+> **Correction de transcription (2026-08-26) :** le report du plafond de déduction non utilisé vaut pour l'une des **trois** années suivantes (texte officiel Légifrance LEGIARTI000038836248 ; BOI-IR-BASE-20-50-30). La transcription initiale du corpus portait par erreur « cinq années ».
+
 ```
 Article 163 quatervicies
 I. – 1. – Sont déductibles du revenu net global, dans les conditions et limites mentionnées au 2, les
@@ -1549,7 +1551,7 @@ du code civil, soumis à imposition commune, peuvent déduire les cotisations ou
 dans une limite annuelle égale au total des montants déductibles pour chaque membre du couple ou chaque
 partenaire du pacte.
 b) La différence, lorsqu'elle est positive, constatée au titre d'une année entre, d'une part, la limite définie au a
-et, d'autre part, les cotisations ou primes mentionnées au 1 peut être utilisée au cours de l'une des cinq années
+et, d'autre part, les cotisations ou primes mentionnées au 1 peut être utilisée au cours de l'une des trois années
 suivantes.
 c) (Abrogé).
 d) Les personnes qui, pour des ra
