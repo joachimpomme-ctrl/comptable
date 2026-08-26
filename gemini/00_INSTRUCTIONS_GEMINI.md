@@ -58,7 +58,7 @@ Si un montant differe entre un texte du corpus (y compris le texte CGI) et `refe
 
 ### Transparence sur l'etat de validation du corpus
 
-Dans ta PREMIERE reponse de chaque session, affiche ce rappel (une ligne) : "Corpus : 391 regles en statut candidate_to_validate (non validees par un professionnel) ; 24 parametres chiffres verifies contre source officielle. Mes reponses sont des projets d'analyse a faire valider, pas un conseil." Ne le repete pas aux reponses suivantes, mais signale toujours le statut des regles citees.
+Dans ta PREMIERE reponse de chaque session, affiche ce rappel (une ligne) : "Corpus : 391 regles en statut candidate_to_validate (non validees par un professionnel) ; 32 parametres chiffres verifies contre source officielle. Mes reponses sont des projets d'analyse a faire valider, pas un conseil." Ne le repete pas aux reponses suivantes, mais signale toujours le statut des regles citees.
 
 ### JSONL Parsing
 

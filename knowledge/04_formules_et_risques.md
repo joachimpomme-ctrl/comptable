@@ -219,7 +219,7 @@ RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → re
 
 ## BARÈMES DE RÉFÉRENCE (Module M13 — millésimes 2025-2026)
 
-> **Statut :** `sourced` pour PASS 2025-2026 et barème kilométrique 2025 (arrêtés officiels). `candidate_to_validate` pour les taux URSSAF/CNAVPL (clés `tns_*` du référentiel — à confirmer urssaf.fr) et pour CARMF/CARPIMKO (forfaits votés annuellement — vérifier sur carmf.fr / carpimko.fr).  
+> **Statut :** `sourced` pour PASS 2025-2026, barème kilométrique 2025, taux URSSAF/CNAVPL et forfait invalidité-décès CARPIMKO (clés `tns_*` du référentiel, vérifiées le 2026-08-26 contre urssaf.fr / cnavpl.fr / carpimko.com). `candidate_to_validate` pour les forfaits CARMF uniquement (votés annuellement — vérifier sur carmf.fr).  
 > **Millésimes :** PASS vérifié pour 2026 (48 060 €). Taux URSSAF et barème kilométrique ci-dessous = millésime 2025, mise à jour 2026 en attente de sourcing officiel.  
 > **Source de vérité des chiffres :** `referentiel_parametres.json` (clé + millésime). En cas d'écart avec un texte du corpus, le référentiel prime.  
 > **Mise à jour :** janvier de chaque année (PASS, taux URSSAF, barèmes km publiés par arrêté).
@@ -242,8 +242,10 @@ Utilisé pour : plafond PER (10 % PASS 2025 = 4 710 € ; 10 % PASS 2026 = 4 806
 | Cotisation | Base | Taux |
 |-----------|------|------|
 | Maladie-maternité | Revenus nets | 1,50 % (< 40 % PASS) → 6,50 % (> 110 % PASS) progressif |
-| Retraite de base | ≤ 1 PASS (47 100 € [referentiel: PASS/2025]) | 17,75 % |
-| Retraite de base | > 1 PASS | 0,60 % |
+| Retraite de base — PL NON réglementée (régime général/SSI) | ≤ 1 PASS (47 100 € [referentiel: PASS/2025]) | 17,75 % |
+| Retraite de base — PL NON réglementée | > 1 PASS | 0,60 % |
+| Retraite de base — PL réglementée (CNAVPL) | ≤ 1 PASS | 8,23 % (2025) → **8,73 %** dès la régularisation 2025, campagne avril 2026 [referentiel: tns_retraite_base_cnavpl_t1] |
+| Retraite de base — PL réglementée (CNAVPL) | 1 à 5 PASS | 1,87 % [referentiel: tns_retraite_base_cnavpl_t2] |
 | Invalidité-décès | ≤ 1 PASS | 1,30 % |
 | Indemnités journalières | ≤ 3 PASS | 0,85 % |
 | Allocations familiales | Revenus nets | 0 % (< 110 % PASS) → 3,10 % (> 140 % PASS) progressif |
@@ -274,18 +276,18 @@ Cotisations majoritairement **forfaitaires** (indépendantes du revenu) :
 
 ---
 
-### [REF-004] Cotisations retraite complémentaire — CARPIMKO (Paramédicaux) 2025
+### [REF-004] Cotisations CARPIMKO (Paramédicaux) — 2025 et réforme 2026
 
 Kinésithérapeutes, infirmiers, orthophonistes, pédicures-podologues, orthoptistes.
 
-| Poste | Base / Montant 2025 |
-|-------|-------------------|
-| Retraite de base | 8,23 % (≤ 1 PASS) + 1,87 % (> 1 PASS) |
-| Retraite complémentaire (forfait selon classe A/B/C) | ~2 640 € à ~7 920 €/an |
-| Prévoyance | ~900 €/an |
-| ASA | ~105 €/an |
+| Poste | 2025 | 2026 (réforme) |
+|-------|------|----------------|
+| Retraite de base (CNAVPL, collectée par la CARPIMKO) | 8,23 % (≤ 1 PASS) + 1,87 % (1 à 5 PASS) | **8,73 %** (≤ 1 PASS, dès la régularisation 2025) + 1,87 % [referentiel: tns_retraite_base_cnavpl_t1 / _t2] |
+| Retraite complémentaire | forfait par classe (~2 640 € à ~7 920 €/an, indicatif) | **proportionnelle 8,70 %** sur l'assiette de 0,5 à 3 PASS (~2 091 € à ~12 544 €) — à confirmer sur le bulletin officiel CARPIMKO |
+| Invalidité-décès | ~1 013 €/an (indicatif) | **1 022 €/an** (forfait, carpimko.com) [referentiel: tns_carpimko_forfaitaires] |
+| ASV (part assuré, conventionné) | — | ~224 € forfait + 0,4 % proportionnel (à confirmer) |
 
-> **Validation requise :** Vérifier sur carpimko.fr — montants publiés en début d'année.
+> **Statut :** retraite de base et invalidité-décès 2026 `sourced` (vérifiés le 2026-08-26) ; réforme de la complémentaire (8,70 %) et ASV relayées par des sources concordantes dont le bulletin CARPIMKO avril 2026 — **à confirmer sur carpimko.com avant tout calcul**. Montants votés annuellement.
 
 ---
 

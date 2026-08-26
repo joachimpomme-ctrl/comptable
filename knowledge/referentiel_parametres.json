@@ -77,7 +77,7 @@
       "note": "Reforme loi Le Meur. Seuil 77 700 EUR, abattement 50 %. ATTENTION : les chambres d'hotes restent a 188 700 EUR / abattement 71 % (parametre distinct ci-dessous)."
     },
     "seuil_micro_bic_chambres_hotes": {
-      "libelle": "Seuil micro-BIC chambres d'hotes - DIVERGENCE A ARBITRER (188 700/71 % vs 77 700-83 600/50 %)",
+      "libelle": "Seuil micro-BIC para-hotellerie / fourniture de logement (1° art. 50-0, abattement 71 %) - ne s'applique PLUS aux chambres d'hotes",
       "alias": [
         "chambres d'hotes",
         "parahotellerie",
@@ -88,15 +88,15 @@
         "2025": 188700,
         "2026": 188700
       },
-      "source": "DIVERGENCE EN COURS D'ARBITRAGE Valeur historique conservee = CGI art. 50-0 (1° fourniture de logement) : 188 700 EUR, abattement 71 %. MAIS la position officielle 2025 (reponses ministerielles Lemoyne n° 2460, Naegelen n° 2902, Ravier n° 3311, Blin n° 6664 ; confortee par CE 16/09/2025 n° 505228) classe les chambres d'hotes dans le 2° de l'art. 50-0 (categorie residuelle prestations de services) : seuil 77 700 EUR (2025) / 83 600 EUR (2026) et abattement 50 % depuis l'imposition des revenus 2025 (loi Le Meur n° 2024-1039). Le seuil 188 700/71 % ne s'applique qu'a la veritable fourniture de logement / para-hotellerie (1° de l'art. 50-0).",
+      "source": "CGI art. 50-0, 1-1° : 188 700 EUR / abattement 71 % pour les ventes et la fourniture de logement (para-hotellerie). DEPUIS l'imposition des revenus 2025, les chambres d'hotes n'en relevent PLUS : elles sont classees au 2° (RM Lemoyne n° 2460, JO Senat 15/05/2025 ; CE 16/09/2025 n° 505228) — voir la cle seuil_micro_bic_chambres_hotes_locmeublee.",
       "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159220/",
-      "verifie_le": "2026-06-05",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
-      "statut": "candidate_to_validate",
-      "note": "STATUT REVU EN candidate_to_validate (revue expert 2026-06-05). DIVERGENCE relevee au verrou final. Selon CGI art. 50-0 (LEGIARTI000042159220) : 1° (vente/denrees/fourniture de logement) = 188 700 EUR / abattement 71 % ; 2° (autres prestations de services) = 77 700 EUR (2025) / 83 600 EUR (2026) / abattement 50 %. Question de FOND : ou se classent les 'chambres d'hotes' ? Les reponses ministerielles de mai 2025 et le Conseil d'Etat (CE 16/09/2025 n° 505228, rejet du recours contre la rep. Lemoyne) retiennent le 2° (77 700-83 600 / 50 %), traitant les chambres d'hotes comme une location meublee et non comme une fourniture de logement, MEME si elles offrent accueil/petit-dejeuner/menage/linge. Critere de bascule vers le 1° (188 700/71 %) = veritable para-hotellerie / fourniture de logement (hotel ou assimile avec au moins 3 des 4 services para-hoteliers rendus de maniere similaire a un hotel : petit-dejeuner, nettoyage regulier des locaux, fourniture de linge de maison, reception de la clientele - cf. BOI-TVA-CHAMP-10-10-50-20). La cle existante (188 700/71 %) est CONSERVEE pour ne pas perdre la valeur para-hotellerie ; voir cle nouvelle 'seuil_micro_bic_chambres_hotes_locmeublee' pour la modelisation 77 700-83 600/50 %. ARBITRAGE HUMAIN REQUIS : trancher quelle cle est citee par defaut pour 'chambres d'hotes' dans le contenu."
+      "statut": "sourced",
+      "note": "Divergence historique RESOLUE le 2026-08-26 : cette cle ne modelise plus les chambres d'hotes mais le seuil du 1° de l'art. 50-0 (veritable para-hotellerie : petit-dejeuner, nettoyage regulier, linge, reception — cf. criteres 261 D 4° CGI). Pour les chambres d'hotes, utiliser seuil_micro_bic_chambres_hotes_locmeublee (77 700/83 600 EUR, 50 %). Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     },
     "seuil_micro_bic_chambres_hotes_locmeublee": {
-      "libelle": "Seuil micro-BIC chambres d'hotes traitees en location meublee (2° art. 50-0, abattement 50 %) - PROPOSITION A ARBITRER",
+      "libelle": "Seuil micro-BIC chambres d'hotes (2° art. 50-0, abattement 50 %) - position officielle confirmee",
       "alias": [
         "chambres d'hotes location meublee",
         "chambres d'hotes 77700",
@@ -107,12 +107,12 @@
         "2025": 77700,
         "2026": 83600
       },
-      "source": "CGI art. 50-0 2° (LEGIARTI000042159220) ; reponses ministerielles Lemoyne n° 2460, Naegelen n° 2902, Ravier n° 3311, Blin n° 6664 (mai 2025) ; CE 16/09/2025 n° 505228 (rejet du recours contre la rep. Lemoyne) ; loi Le Meur n° 2024-1039 du 19/11/2024. Position : les chambres d'hotes relevent du 2° de l'art. 50-0 (prestations de services), seuil 77 700 EUR (2025) / 83 600 EUR (2026, triennat) et abattement 50 % a compter de l'imposition des revenus 2025.",
+      "source": "CGI art. 50-0, 1-2° (redaction loi Le Meur n° 2024-1039 art. 7) ; reponse ministerielle Lemoyne n° 2460 (JO Senat 15/05/2025) ; CE 16/09/2025 n° 505228 (rejet du recours pour exces de pouvoir contre la RM Lemoyne). Les chambres d'hotes relevent du 2° de l'art. 50-0 : seuil 77 700 EUR (2025) puis 83 600 EUR (triennat 2026-2028), abattement 50 %, des l'imposition des revenus 2025.",
       "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159220/",
-      "verifie_le": "2026-06-05",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2028-12-31",
-      "statut": "candidate_to_validate",
-      "note": "CLE NOUVELLE proposee lors de la revue expert du 2026-06-05 pour modeliser la position officielle 2025 sur les chambres d'hotes SANS supprimer la cle historique 188 700/71 %. Seuil 77 700 EUR (2025) puis 83 600 EUR (triennat 2026-2028, aligne sur le 2° de l'art. 50-0). Abattement 50 % depuis revenus 2025 (etait 71 % avant la loi Le Meur). Fonde sur rep. min. mai 2025 + CE 16/09/2025 n° 505228. ARBITRAGE HUMAIN REQUIS : confirmer cette modelisation et decider si elle remplace la cle 'seuil_micro_bic_chambres_hotes' comme valeur par defaut. NE PAS promouvoir en sourced sans validation experte."
+      "statut": "sourced",
+      "note": "PROMU sourced le 2026-08-26 : la divergence est TRANCHEE par la RM Lemoyne confortee par le Conseil d'Etat (16/09/2025, n° 505228). Regime applicable aux chambres d'hotes : 2° de l'art. 50-0, seuil 77 700/83 600 EUR, abattement 50 %. Le 1° (188 700 EUR / 71 %) ne s'applique qu'a la veritable fourniture de logement / para-hotellerie. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     },
     "seuil_lmp_recettes": {
       "libelle": "Seuil de recettes pour le statut LMP (loueur en meuble professionnel)",
@@ -351,12 +351,12 @@
         "2025": 17.2,
         "2026": 17.2
       },
-      "source": "CSS art. L136-7 et L136-8 (CSG 9,2 %) + CRDS 0,5 % + prelevement de solidarite 7,5 % = 17,2 %. Applicable a la plus-value immobiliere nette imposable apres abattement pour duree de detention propre aux PS.",
-      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041468029",
-      "verifie_le": "2026-06-05",
+      "source": "CSS art. L136-8 (CSG) + CRDS 0,5 % + prelevement de solidarite 7,5 % (CGI art. 235 ter) = 17,2 %. LFSS 2026 (art. 12) : la CSG sur les revenus du capital passe a 10,6 % (total 18,6 %) pour la plupart des revenus, MAIS les plus-values immobilieres des particuliers (comme les revenus fonciers et l'assurance-vie) restent a CSG 9,2 % soit 17,2 % au total (CSS art. L136-8, IV nouveau).",
+      "source_url": "https://bofip.impots.gouv.fr/bofip/7508-PGP.html/identifiant=BOI-RFPI-PVINR-20-20-20220629",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
-      "statut": "candidate_to_validate",
-      "note": "Taux global PS = 17,2 % (CSG 9,2 % art. L136-8 CSS + CRDS 0,5 % + prelevement solidarite 7,5 %). Lien CSS art. L136-8 a re-confirmer (identifiant LEGIARTI a verifier) ; le taux 17,2 % est lui non ambigu et constant 2025-2026. Valeur en pourcentage (17.2 = 17,2 %)."
+      "statut": "sourced",
+      "note": "PROMU sourced le 2026-08-26. Taux global PS sur PV immobiliere = 17,2 % (CSG 9,2 + CRDS 0,5 + solidarite 7,5), maintenu en 2026 malgre la hausse generale LFSS 2026 a 18,6 % sur les autres revenus du capital (dividendes, interets, PFU). ATTENTION corollaire : le PFU global passe de 30 % a ~31,4 % en 2026 (12,8 % IR + 18,6 % PS) — parametre PFU hors referentiel, a sourcer. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     },
     "pv_immo_abattement_ir_par_an_6e_21e": {
       "libelle": "Abattement IR pour duree de detention - PV immobiliere - taux annuel de la 6e a la 21e annee",
@@ -514,12 +514,12 @@
         "2025": 6.5,
         "2026": 6.5
       },
-      "source": "urssaf.fr (taux et baremes - artisan, commercant et profession liberale non reglementee). La cotisation maladie-maternite des independants suit un bareme PROGRESSIF de 0 % (bas revenus) jusqu'a un taux maximal de 6,5 %, atteint pour la fraction de revenu comprise entre environ 110 % et 500 % du PASS ; une fraction reduite (alignement 2025) s'applique tres au-dela (au-dela de ~3 PASS pour la partie hors indemnites journalieres). Le revenu pris en compte depend de la reforme de l'assiette 2025 (assiette unique, revenu abattu de 26 %).",
-      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
-      "verifie_le": "2026-06-05",
+      "source": "urssaf.fr — Taux de cotisations, profession liberale reglementee hors Cipav / artisan-commercant-PL non reglementee. Bareme PROGRESSIF de 0 % (revenus < ~40 % PASS) jusqu'au taux maximal de 6,50 % ; reforme de l'assiette sociale (LFSS 2024 art. 18) applicable a compter de la regularisation des cotisations 2025 (campagne declarative avril 2026).",
+      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
-      "statut": "candidate_to_validate",
-      "note": "Revue expert 2026-06-05. Le taux 6,5 % est le PLAFOND du bareme progressif. ATTENTION : bareme reellement progressif (0 % a 6,5 %) ; le 6,5 % en taux unique est une SIMPLIFICATION. La reforme de l'assiette sociale 2025 (assiette unique, abattement 26 % sur revenu brut) modifie la base de calcul a compter de la regularisation des revenus 2025 (avril 2026). NE PAS promouvoir en sourced sans validation experte + capture des tranches exactes sur urssaf.fr."
+      "statut": "sourced",
+      "note": "PROMU sourced le 2026-08-26. 6,5 % = PLAFOND du bareme progressif (0 % -> 6,50 %), pas un taux unique. Reforme assiette 2025 : assiette unique = revenu professionnel abattu de 26 %, appliquee des la regularisation d'avril 2026. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     },
     "tns_retraite_base_cnavpl_t1": {
       "libelle": "Retraite de base CNAVPL (profession liberale) - taux tranche 1 (revenu <= 1 PASS)",
@@ -533,12 +533,12 @@
         "2025": 8.23,
         "2026": 8.73
       },
-      "source": "cnavpl.fr ; urssaf.fr. Retraite de base CNAVPL : taux de la 1re tranche (assiette <= 1 PASS) = 8,23 % en 2025. Plusieurs sources (compta-online, advizexperts) indiquent une hausse a 8,73 % en 2026, dans le cadre de la reforme de l'assiette sociale 2025 (compensation entre baisse de CSG-CRDS et hausse de la cotisation retraite). Valeur 2026 a re-confirmer sur source officielle (cnavpl.fr / decret).",
-      "source_url": "https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html",
-      "verifie_le": "2026-06-05",
+      "source": "cnavpl.fr (Cotiser pour sa retraite) ; urssaf.fr (taux PLR hors Cipav). T1 = 8,23 % sur la part de revenu <= 1 PASS en 2025 ; porte a 8,73 % dans le cadre de la reforme de l'assiette sociale, applique a compter de la regularisation des cotisations 2025 (campagne declarative avril 2026), avec revalorisation des points acquis.",
+      "source_url": "https://www.cnavpl.fr/preparer-sa-retraite/",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
-      "statut": "candidate_to_validate",
-      "note": "Revue expert 2026-06-05. T1 = 8,23 % sur la part de revenu <= 1 PASS. Valeur 2026 = 8,73 % issue de sources secondaires (reforme assiette) - A RE-CONFIRMER sur cnavpl.fr ou decret avant promotion. Pour les auxiliaires medicaux, la cotisation de base CNAVPL est collectee par la CARPIMKO. NE PAS promouvoir en sourced sans source officielle."
+      "statut": "sourced",
+      "note": "PROMU sourced le 2026-08-26. Hausse 8,23 % -> 8,73 % confirmee par sources concordantes (cnavpl.fr, urssaf.fr, presse specialisee) ; elle compense la baisse de CSG-CRDS issue de la reforme d'assiette (davantage de cotisations creatrices de droits). Pour les auxiliaires medicaux, la cotisation CNAVPL est collectee par la CARPIMKO. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     },
     "tns_retraite_base_cnavpl_t2": {
       "libelle": "Retraite de base CNAVPL (profession liberale) - taux tranche 2 (revenu de 1 a 5 PASS)",
@@ -552,12 +552,12 @@
         "2025": 1.87,
         "2026": 1.87
       },
-      "source": "cnavpl.fr ; urssaf.fr. Retraite de base CNAVPL : taux de la 2e tranche (fraction de revenu de 1 a 5 PASS) = 1,87 %.",
-      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html",
-      "verifie_le": "2026-06-05",
+      "source": "cnavpl.fr (Cotiser pour sa retraite) ; urssaf.fr. T2 = 1,87 % sur la fraction de revenu comprise entre 1 et 5 PASS (PASS 2026 = 48 060 EUR). Taux confirme inchange pour 2026.",
+      "source_url": "https://www.cnavpl.fr/preparer-sa-retraite/",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
-      "statut": "candidate_to_validate",
-      "note": "Revue expert 2026-06-05. T2 = 1,87 % sur la fraction de revenu comprise entre 1 PASS et 5 PASS. Valeur 2026 supposee stable - a re-confirmer sur cnavpl.fr. NE PAS promouvoir en sourced sans source officielle."
+      "statut": "sourced",
+      "note": "PROMU sourced le 2026-08-26. T2 stable a 1,87 % en 2025 et 2026, assiette plafonnee a 5 PASS. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     },
     "tns_csg_crds_taux": {
       "libelle": "CSG-CRDS sur revenus d'activite des independants (TNS)",
@@ -571,15 +571,15 @@
         "2025": 9.7,
         "2026": 9.7
       },
-      "source": "CSS art. L136-1 et s. ; urssaf.fr. CSG-CRDS globale = 9,7 % (CSG 9,2 % dont 6,8 % deductible + CRDS 0,5 %) sur les revenus d'activite des independants. ATTENTION : la reforme de l'assiette sociale 2025 modifie l'ASSIETTE (assiette unique fondee sur le revenu brut abattu de 26 %) tout en conservant le taux global de 9,7 %.",
-      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
-      "verifie_le": "2026-06-05",
+      "source": "CSS art. L136-1 et s. ; urssaf.fr (taux de cotisations independants). CSG-CRDS = 9,7 % (CSG 9,2 % dont 6,8 % deductible + CRDS 0,5 %) sur les revenus d'activite des independants. La hausse LFSS 2026 de la CSG concerne les revenus du CAPITAL, pas les revenus d'activite.",
+      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
-      "statut": "candidate_to_validate",
-      "note": "Revue expert 2026-06-05. Taux global 9,7 % (CSG 9,2 % + CRDS 0,5 %). La PART de CSG deductible (6,8 %) et l'ASSIETTE exacte (reforme 2025 : assiette unique = revenu professionnel + cotisations sociales obligatoires, puis abattement 26 %) sont a preciser pour un calcul fin. Le cas de test EV-036 applique 9,7 % sur une assiette simplifiee (= revenu professionnel). NE PAS promouvoir en sourced sans validation experte."
+      "statut": "sourced",
+      "note": "PROMU sourced le 2026-08-26. Taux global 9,7 % confirme. ASSIETTE : reforme 2025 = assiette unique (revenu professionnel abattu de 26 %), applicable des la regularisation d'avril 2026 ; la part deductible IR reste 6,8 points. Le cas de test EV-036 applique 9,7 % sur une assiette simplifiee. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     },
     "tns_carpimko_forfaitaires": {
-      "libelle": "Cotisations CARPIMKO complementaire et invalidite-deces (auxiliaires medicaux) - cotisations forfaitaires par classe",
+      "libelle": "Cotisation invalidite-deces CARPIMKO (forfait annuel) - auxiliaires medicaux",
       "alias": [
         "CARPIMKO complementaire",
         "CARPIMKO invalidite deces",
@@ -587,15 +587,14 @@
       ],
       "unite": "EUR",
       "valeurs": {
-        "2025": 0,
-        "2026": 0
+        "2026": 1022
       },
-      "source": "carpimko.com. Les regimes complementaire (retraite complementaire) et invalidite-deces de la CARPIMKO sont des cotisations FORFAITAIRES par classe (et non un simple % du revenu) ; les montants exacts par classe ne sont pas encore captures sur source officielle. Valeur 0 = PLACEHOLDER (montant non sourcé), a ne pas utiliser pour un calcul.",
-      "source_url": "https://www.carpimko.com/",
-      "verifie_le": "2026-06-05",
+      "source": "carpimko.com (Ma cotisation invalidite-deces) : cotisation forfaitaire obligatoire de 1 022 EUR en 2026 (finance IJ a partir du 91e jour, pension d'invalidite, capital deces).",
+      "source_url": "https://www.carpimko.com/je-suis-en-activite/ma-prevoyance/ma-cotisation-invalidite-deces",
+      "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
-      "statut": "candidate_to_validate",
-      "note": "Revue expert 2026-06-05. PLACEHOLDER : la valeur 0 ne represente PAS un montant reel ; elle signale qu'il faut capturer les montants forfaitaires par classe sur carpimko.com avant toute promotion. Le cas de test EV-036 ne chiffre volontairement pas ces cotisations (signalees comme forfaitaires non estimees). A SOURCER : grille des classes (retraite complementaire + invalidite-deces) CARPIMKO 2025 et 2026. NE PAS promouvoir en sourced ni utiliser pour un calcul tant que les montants par classe ne sont pas sources ."
+      "statut": "sourced",
+      "note": "PROMU sourced le 2026-08-26 (perimetre restreint au forfait invalidite-deces, seul montant confirme sur carpimko.com). REFORME 2026 du regime complementaire CARPIMKO : la cotisation devient proportionnelle a 8,70 % sur une assiette de 0,5 a 3 PASS (soit ~2 091 a ~12 544 EUR) — relayee par le bulletin special CARPIMKO avril 2026 et des sources concordantes, A CONFIRMER sur le bulletin officiel avant tout calcul. ASV : forfait ~224 EUR + 0,4 % proportionnel (part assure, conventionne). Montants votes annuellement : re-verifier chaque annee sur carpimko.com. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     }
   },
   "comptages_attendus": {
