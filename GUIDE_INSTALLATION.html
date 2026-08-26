@@ -211,9 +211,14 @@
 
     <p>Cet agent est un assistant IA spécialisé en <strong>comptabilite, fiscalite des professions libérales, location meublée, gestion financière et gestion de patrimoine</strong>. Il raisonne a partir d'une base de connaissances structurée — 391 règles curatées, 12 modules métier, 25 exemples calibrés — et produit des réponses sourcées, traçables et prudentes.</p>
 
-    <div class="alert alert-warning">
+    <div class="alert alert-danger">
       <strong>Ce n'est pas un substitut à un professionnel.</strong>
-      Toutes les règles sont des "candidats à valider" (<span class="inline-code">candidate_to_validate</span>). Ne prenez jamais de décision fiscale, patrimoniale ou juridique importante sur la seule base de cet agent.
+      Les sorties de l'agent sont des projets de réponse à vérifier — jamais un livrable client, jamais un conseil. La consultation fiscale à titre habituel est une activité réglementée : la responsabilité professionnelle reste celle du praticien. Ne prenez jamais de décision fiscale, patrimoniale ou juridique importante sur la seule base de cet agent.
+    </div>
+
+    <div class="alert alert-warning">
+      <strong>État de validation du corpus : 0 des 391 règles validée par un professionnel.</strong>
+      Toutes les règles métier sont en statut <span class="inline-code">candidate_to_validate</span>. Seuls 24 paramètres chiffrés du référentiel (<span class="inline-code">referentiel_parametres.json</span>) sont vérifiés contre une source officielle (URL + date). Les barèmes URSSAF et kilométrique sont au millésime 2025 ; PASS et seuil micro-BNC sont vérifiés pour 2026 (48 060 € ; 83 600 €). Pour valider ou contester une règle : voir CONTRIBUTING.md sur le dépôt GitHub.
     </div>
 
     <h3>Domaines couverts</h3>
@@ -262,7 +267,7 @@
       <div class="platform-block-body">
         <ul>
           <li>Compte OpenAI avec abonnement <strong>ChatGPT Plus</strong> ou <strong>Team</strong></li>
-          <li>Les 12 fichiers de connaissances de ce package</li>
+          <li>Les 13 fichiers de connaissances de ce package (dont referentiel_parametres.json, source de vérité des chiffres)</li>
           <li>Note : l'archivage Google Drive n'est pas disponible sur ChatGPT</li>
         </ul>
       </div>
@@ -315,6 +320,11 @@
           <td><span class="badge badge-both">Les deux</span></td>
         </tr>
         <tr>
+          <td>knowledge/referentiel_parametres.json</td>
+          <td><strong>Source de vérité des chiffres</strong> — 32 clés (seuils, taux, abattements) avec millésime, source officielle et date de vérification</td>
+          <td><span class="badge badge-both">Les deux</span></td>
+        </tr>
+        <tr>
           <td>knowledge/05_agent_governance.md</td>
           <td>4 playbooks + risk matrix + déontologie professionnelle</td>
           <td><span class="badge badge-both">Les deux</span></td>
@@ -337,7 +347,7 @@
         <tr>
           <td>knowledge/09_agent_manifest.json</td>
           <td>Métadonnées du corpus (scope, counts, statut)</td>
-          <td><span class="badge badge-both">Les deux</span></td>
+          <td><span class="badge badge-chatgpt">ChatGPT</span></td>
         </tr>
         <tr>
           <td>knowledge/M_CGI_code_general_impots.md</td>
@@ -370,12 +380,12 @@
 
     <div class="alert alert-warning">
       <strong>Limite Gemini : 10 fichiers maximum</strong>
-      Uploader exactement ces 10 fichiers pour Gemini : 01, 02, 03, 04, 05, 06, 07, 08, M_CGI_code_general_impots.md, 09_agent_manifest.json.<br>
+      Uploader exactement ces 10 fichiers pour Gemini : 01, 02, 03, 04, referentiel_parametres.json, 05, 06, 07, 08, M_CGI_code_general_impots.md. (09_agent_manifest.json est exclu : le référentiel des chiffres est prioritaire sur les métadonnées.)<br>
       Exclure : 10_documents.json et M_CGI_code_general_impots.jsonl (métadonnées et doublon).
     </div>
     <div class="alert alert-info">
       <strong>ChatGPT : pas de limite stricte</strong>
-      Uploader les 12 fichiers knowledge. Si refus pour taille, priorité : 01, 02, 03, 04, 05, 06, M_CGI.
+      Uploader les 13 fichiers knowledge (dont referentiel_parametres.json et chatgpt_only/). Si refus pour taille, priorité : referentiel_parametres.json, 01, 02, 03, 04, 05, 06, M_CGI.
     </div>
   </section>
 
@@ -412,7 +422,7 @@
         <div class="step-body">
           <h4>Ajouter les fichiers de connaissances (10 fichiers exactement)</h4>
           <p>Dans la section <strong>"Connaissances"</strong>, uploadez ces <strong>10 fichiers</strong> du dossier <span class="inline-code">knowledge/</span> :</p>
-          <p>01, 02, 03, 04, 05, 06, 07, 08 + <span class="inline-code">M_CGI_code_general_impots.md</span> + <span class="inline-code">09_agent_manifest.json</span></p>
+          <p>01, 02, 03, 04, 05, 06, 07, 08 + <span class="inline-code">M_CGI_code_general_impots.md</span> + <span class="inline-code">referentiel_parametres.json</span></p>
           <p style="color:#d97706;font-size:13px">Ne pas uploader : <span class="inline-code">10_documents.json</span> et <span class="inline-code">M_CGI_code_general_impots.jsonl</span> (hors limite).</p>
         </div>
       </div>

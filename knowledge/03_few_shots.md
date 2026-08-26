@@ -3,6 +3,7 @@
 **Usage :** Exemples de calibration pour Gemini. Injecter en contexte ou comme exemples d'entraînement.
 **Format :** Question → Réponse idéale structurée (sourced, actionnables)
 **Distribution :** 6 comptables · 7 financières · 12 patrimoniales · 3 fonctions
+**Millésime :** les chiffres de ces exemples sont calibrés sur le millésime 2025 (ex. seuil micro-BNC 77 700 €, PASS 47 100 €). Pour les revenus 2026, consulter `referentiel_parametres.json` (micro-BNC 83 600 €, PASS 48 060 €).
 
 ---
 

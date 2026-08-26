@@ -217,19 +217,23 @@ RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → re
 
 ---
 
-## BARÈMES DE RÉFÉRENCE (Module M13 — millésime 2025 — mise à jour 2026 en attente de sourcing)
+## BARÈMES DE RÉFÉRENCE (Module M13 — millésimes 2025-2026)
 
-> **Statut :** `sourced` pour les taux URSSAF et barème kilométrique officiels. `candidate_to_validate` pour CARMF/CARPIMKO (forfaits votés annuellement — vérifier sur carmf.fr / carpimko.fr).  
+> **Statut :** `sourced` pour PASS 2025-2026, taux URSSAF 2025 et barème kilométrique 2025 (officiels). `candidate_to_validate` pour CARMF/CARPIMKO (forfaits votés annuellement — vérifier sur carmf.fr / carpimko.fr).  
+> **Millésimes :** PASS vérifié pour 2026 (48 060 €). Taux URSSAF et barème kilométrique ci-dessous = millésime 2025, mise à jour 2026 en attente de sourcing officiel.  
+> **Source de vérité des chiffres :** `referentiel_parametres.json` (clé + millésime). En cas d'écart avec un texte du corpus, le référentiel prime.  
 > **Mise à jour :** janvier de chaque année (PASS, taux URSSAF, barèmes km publiés par arrêté).
 
-### [REF-001] PASS 2025
+### [REF-001] PASS 2025 et 2026
 
-**PASS annuel 2025 : 47 100 € [referentiel: PASS/2025]**  
-PASS mensuel : 3 925 € | PASS journalier : 204 €
+**PASS annuel 2025 : 47 100 € [referentiel: PASS/2025]** — PASS mensuel : 3 925 € | PASS journalier : 204 €  
+**PASS annuel 2026 : 48 060 € [referentiel: PASS/2026]** — PASS mensuel : 4 005 €
 
-Utilisé pour : plafond PER (10 % PASS = 4 710 €), Madelin, retraite de base, seuil micro-BNC (102 ter), seuils micro-BIC.
+Utilisé pour : plafond PER (10 % PASS 2025 = 4 710 € ; 10 % PASS 2026 = 4 806 €), Madelin, retraite de base, seuils micro (102 ter), seuils micro-BIC.
 
-*Source : Arrêté ministériel — JO 2025*
+**Seuil micro-BNC associé (CGI art. 102 ter) : 77 700 € pour les revenus 2023-2025 ; 83 600 € pour les revenus 2026-2028 [referentiel: seuil_micro_bnc].**
+
+*Source : Arrêté du 19/12/2024 (JO 29/12/2024) pour 2025 ; arrêté du 22/12/2025 (JO 23/12/2025) pour 2026*
 
 ---
 

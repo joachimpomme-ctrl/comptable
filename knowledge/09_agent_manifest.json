@@ -1,7 +1,7 @@
 {
   "name": "agent_comptable_fiscal_patrimonial",
-  "version": "2026-06-05",
-  "generated_at": "2026-06-05",
+  "version": "2026-08-26",
+  "generated_at": "2026-08-26",
   "language": "fr",
   "description": "Agent IA expert en comptabilité BNC/BIC, fiscalité des professions libérales, LMNP/LMP, gestion financière et gestion de patrimoine. Conçu pour Gemini Gems et ChatGPT Custom GPT.",
   "scope": [
@@ -17,7 +17,7 @@
     "Code Général des Impôts — texte légal officiel millesime 2026"
   ],
   "instructions": {
-    "file": "00_INSTRUCTIONS.md",
+    "file": "gemini/00_INSTRUCTIONS_GEMINI.md et chatgpt/00_INSTRUCTIONS_CHATGPT.md",
     "sections": 22,
     "version": "2026-06-05",
     "description": "System prompt complet — 22 sections couvrant identité, hiérarchie sources, protocoles métier, workflows (comptable, fiscal, LMNP, financier, patrimoine), aide aux déclarations, optimisation fiscale légale et historisation Drive"
@@ -61,6 +61,15 @@
     },
     {
       "id": 5,
+      "file": "referentiel_parametres.json",
+      "label": "Référentiel de paramètres",
+      "description": "SOURCE DE VÉRITÉ UNIQUE des chiffres fiscaux : 32 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle, URL et date de vérification. 24 clés sourced, 8 candidate_to_validate. En cas d'écart avec un texte du corpus, le référentiel prime.",
+      "module": "all",
+      "priority": "niveau_0",
+      "parameter_count": 32
+    },
+    {
+      "id": 6,
       "file": "05_agent_governance.md",
       "label": "Gouvernance agent",
       "description": "4 playbooks opérationnels, 6 checklists métier et risk matrix. Règles de déontologie, gestion des conflits d'intérêts et limites de compétence.",
@@ -70,7 +79,7 @@
       "checklist_count": 6
     },
     {
-      "id": 6,
+      "id": 7,
       "file": "06_golden_checklists.md",
       "label": "Checklists par domaine",
       "description": "Checklists opérationnelles par domaine métier : BNC, LMNP, revenus fonciers, patrimoine, déclarations fiscales.",
@@ -78,7 +87,7 @@
       "priority": "niveau_2"
     },
     {
-      "id": 7,
+      "id": 8,
       "file": "07_rule_source_crosswalk.jsonl",
       "label": "Crosswalk règles → sources PDF",
       "description": "Table de traçabilité reliant chaque règle à son document source et sa page PDF. Format JSONL. Permet de citer la page exacte de chaque règle.",
@@ -87,7 +96,7 @@
       "format": "JSONL"
     },
     {
-      "id": 8,
+      "id": 9,
       "file": "08_evaluation_suite.md",
       "label": "Suite d'évaluation",
       "description": "45 cas de test de référence avec réponses attendues. Permet de mesurer la qualité et la cohérence des réponses de l'agent.",
@@ -96,7 +105,7 @@
       "test_count": 45
     },
     {
-      "id": 9,
+      "id": 10,
       "file": "M_CGI_code_general_impots.md",
       "label": "Code Général des Impôts",
       "description": "51 articles du CGI extraits du texte officiel (millesime 2026) : BNC (92-103, 102 ter), revenus fonciers (14, 28-31, 156), BIC/LMNP (35, 39), plus-values (150 U, 150 VB, 150-0 A, 151 septies), assurance-vie (125-0 A, 990 I), retraite (154 bis, 163 quatervicies), barème IR (194, 195, 197), réductions impôt (200, 200-0 A), TVA (261), démembrement (669), niches (200-0 A), DMTG/succession (777, 779, 784, 787 B/C, 790 B/G), IFI (964-979). Salariés : 83.",
@@ -107,7 +116,7 @@
       "source": "LEGITEXT000006069577 — Code Général des Impôts"
     },
     {
-      "id": 10,
+      "id": 11,
       "file": "09_agent_manifest.json",
       "label": "Manifeste du corpus",
       "description": "Ce fichier. Inventaire structuré de la base de connaissances, des fichiers, des modules couverts et des statistiques du corpus.",
@@ -140,13 +149,17 @@
     "evaluation_test_cases": 45,
     "governance_playbooks": 4,
     "formulas": 7,
-    "critical_risks": 8
+    "critical_risks": 8,
+    "referentiel_parametres_keys": 32,
+    "referentiel_parametres_sourced": 24,
+    "gemini_note": "Limite Gemini 10 fichiers : referentiel_parametres.json remplace 09_agent_manifest.json dans la liste Gemini"
   },
   "rule_status": {
     "claude_curated": "Règles structurées par Claude — prioritaires pour raisonner, à valider par un expert métier",
     "sourced": "Règles reliées à une page source PDF via le crosswalk 07",
     "auto_extracted": "Extractions automatiques — utiles pour exploration, ne pas présenter comme validées",
-    "candidate_to_validate": "Toute règle non encore validée par un expert-comptable, fiscaliste ou notaire"
+    "candidate_to_validate": "Toute règle non encore validée par un expert-comptable, fiscaliste ou notaire",
+    "validated": "Règle validée par un professionnel identifié (nom, qualité, date) via le workflow CONTRIBUTING.md"
   },
   "citation_policy": {
     "priority_1": "Référence légale officielle : CGI Art. XX | BOFiP référence | CGP art. XX | CSS art. XX",
