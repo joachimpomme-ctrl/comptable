@@ -63,7 +63,7 @@
       "id": 5,
       "file": "referentiel_parametres.json",
       "label": "Référentiel de paramètres",
-      "description": "SOURCE DE VÉRITÉ UNIQUE des chiffres fiscaux : 32 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle, URL et date de vérification. 24 clés sourced, 8 candidate_to_validate. En cas d'écart avec un texte du corpus, le référentiel prime.",
+      "description": "SOURCE DE VÉRITÉ UNIQUE des chiffres fiscaux : 32 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle, URL et date de vérification. 32 clés sourced (passe de sourcing du 2026-08-26). En cas d'écart avec un texte du corpus, le référentiel prime.",
       "module": "all",
       "priority": "niveau_0",
       "parameter_count": 32
@@ -151,7 +151,7 @@
     "formulas": 7,
     "critical_risks": 8,
     "referentiel_parametres_keys": 32,
-    "referentiel_parametres_sourced": 24,
+    "referentiel_parametres_sourced": 32,
     "gemini_note": "Limite Gemini 10 fichiers : referentiel_parametres.json remplace 09_agent_manifest.json dans la liste Gemini"
   },
   "rule_status": {

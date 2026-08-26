@@ -512,8 +512,9 @@ Avant toute préconisation, auditer systématiquement:
 | Abattement donation parent/enfant | 100 000 € / parent / enfant (15 ans) | 100 000 € [referentiel: abattement_donation_parent_enfant] |
 | Taux IS normal | 25 % | non vérifié 2026 |
 | Taux IS réduit (bénéfice < 42 500 €, PME) | 15 % | non vérifié 2026 |
-| PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) | non vérifié 2026 |
-| Prélèvements sociaux (revenus patrimoine) | 17,2 % | 17,2 % [referentiel: pv_immo_taux_prelevements_sociaux] |
+| PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) | **~31,4 % attendu** (12,8 % + PS 18,6 %, LFSS 2026) — hors référentiel, à sourcer avant usage |
+| Prélèvements sociaux — PV immobilières, revenus fonciers, assurance-vie | 17,2 % | **17,2 % maintenu** (CSS art. L136-8, IV) [referentiel: pv_immo_taux_prelevements_sociaux] |
+| Prélèvements sociaux — autres revenus du capital (dividendes, intérêts) | 17,2 % | **18,6 %** (CSG portée à 10,6 %, LFSS 2026 art. 12) — hors référentiel, à sourcer avant usage |
 
 ---
 

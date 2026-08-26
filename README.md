@@ -7,7 +7,7 @@ Agent IA specialise en comptabilite, fiscalite des professions liberales, locati
 > ## ⚠️ A lire avant toute utilisation
 >
 > - **Les sorties de l'agent sont des projets de reponse a verifier — jamais un livrable client, jamais un conseil.** La consultation fiscale a titre habituel est une activite reglementee : cet outil est une aide a la recherche et a la pre-qualification, la responsabilite professionnelle reste celle du praticien.
-> - **Etat de validation : 0 des 391 regles metier a ete validee par un professionnel** (statut `candidate_to_validate`). Seuls 24 parametres chiffres du referentiel sont verifies contre une source officielle. Voir [Etat de validation du corpus](#etat-de-validation-du-corpus).
+> - **Etat de validation : 0 des 391 regles metier a ete validee par un professionnel** (statut `candidate_to_validate`). Les 32 parametres chiffres du referentiel sont verifies contre une source officielle (URL + date). Voir [Etat de validation du corpus](#etat-de-validation-du-corpus).
 > - **Millesimes :** les chiffres verifies couvrent 2025 et partiellement 2026 ; les baremes URSSAF/kilometrique restent au millesime 2025. Voir la [table des millesimes](#table-des-millesimes).
 
 ---
@@ -56,7 +56,7 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 | Composant | Volume | Statut |
 |-----------|--------|--------|
 | Regles metier (`02_golden_rules_claude_first.md`) | 391 | **0 validee** — 391 `candidate_to_validate` |
-| Referentiel de parametres chiffres (`referentiel_parametres.json`) | 32 cles | **24 `sourced`** (verifies contre source officielle, avec URL et date) · 8 `candidate_to_validate` |
+| Referentiel de parametres chiffres (`referentiel_parametres.json`) | 32 cles | **32 `sourced`** — verifies contre source officielle, avec URL et date (passe de sourcing du 2026-08-26) |
 | Articles CGI (`M_CGI_code_general_impots.md`) | 51 | Texte legal officiel (millesime 2026) |
 | Tracabilite regle → source (`07_rule_source_crosswalk.jsonl`) | 391 entrees | Page et document source par regle |
 | Cas de test (`08_evaluation_suite.md`) | 45 | Reponses attendues ecrites |
@@ -74,9 +74,11 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 | Micro-BIC tourisme non classe (loi Le Meur) | 15 000 € / 30 % | 15 000 € / 30 % | `sourced` |
 | Micro-BIC tourisme classe | 77 700 € / 50 % | 77 700 € / 50 % | `sourced` |
 | Seuil LMP / Seuil IFI / Deficit foncier | 23 000 € / 1,3 M€ / 10 700 € | inchanges | `sourced` |
-| PV immobiliere (IR + PS) | 19 % + 17,2 % | 19 % + 17,2 % | IR `sourced` · PS `candidate_to_validate` |
-| Taux URSSAF PL, bareme kilometrique | millesime 2025 | **mise a jour 2026 en attente** | bareme km `sourced` 2025 · taux TNS `candidate_to_validate` |
-| CARMF / CARPIMKO (forfaits) | indicatifs 2025 | a verifier sur carmf.fr / carpimko.fr | `candidate_to_validate` |
+| PV immobiliere (IR + PS) | 19 % + 17,2 % | 19 % + **17,2 % maintenu** (LFSS 2026 : 18,6 % sur la plupart des autres revenus du capital, mais PV immo/fonciers/AV restent a 17,2 %) | `sourced` |
+| Taux URSSAF PL (maladie max 6,5 %, CNAVPL 8,23 % -> **8,73 %** en 2026, CSG-CRDS 9,7 %) | 2025 | 2026 verifie | `sourced` |
+| Bareme kilometrique | millesime 2025 | mise a jour 2026 en attente | `sourced` 2025 |
+| CARPIMKO invalidite-deces (forfait) | — | **1 022 €** (reforme 2026 : complementaire proportionnelle 8,70 %) | `sourced` |
+| CARMF (forfaits medecins) | indicatifs 2025 | a verifier sur carmf.fr | `candidate_to_validate` (hors referentiel) |
 
 Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa source officielle, son URL et sa date de verification). **En cas d'ecart entre un texte du corpus et le referentiel, le referentiel prime.** Prochaine mise a jour attendue : janvier (apres la Loi de Finances).
 

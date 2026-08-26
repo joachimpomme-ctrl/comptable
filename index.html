@@ -96,7 +96,7 @@
     <div class="stats">
       <div><strong>391</strong>règles tracées</div>
       <div><strong>51</strong>articles CGI (2026)</div>
-      <div><strong>32</strong>paramètres chiffrés<br>dont 24 vérifiés</div>
+      <div><strong>32</strong>paramètres chiffrés<br>tous vérifiés (sourced)</div>
       <div><strong>45</strong>cas de test</div>
     </div>
     <div class="cta">
@@ -111,7 +111,7 @@
   <div class="warnbox">
     <h3>⚠️ À lire avant toute utilisation</h3>
     <p><strong>Les sorties de l'agent sont des projets de réponse à vérifier — jamais un livrable client, jamais un conseil.</strong> La consultation fiscale à titre habituel est une activité réglementée : cet outil est une aide à la recherche et à la pré-qualification, la responsabilité professionnelle reste celle du praticien.</p>
-    <p>État de validation : <strong>0 des 391 règles métier n'a encore été validée par un professionnel</strong> (statut <code>candidate_to_validate</code>). Seuls les 24 paramètres <code>sourced</code> du référentiel sont vérifiés contre une source officielle, avec URL et date.</p>
+    <p>État de validation : <strong>0 des 391 règles métier n'a encore été validée par un professionnel</strong> (statut <code>candidate_to_validate</code>). Les 32 paramètres du référentiel sont <code>sourced</code> : vérifiés contre une source officielle, avec URL et date (passe de sourcing du 26/08/2026).</p>
   </div>
 </div>
 
@@ -131,7 +131,7 @@
     <div class="card">
       <span class="tag ok">Source de vérité</span>
       <h3>Référentiel de paramètres</h3>
-      <p>32 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle, URL Légifrance/JO et date de vérification. En cas d'écart avec un texte, <strong>le référentiel prime</strong>.</p>
+      <p>32 clés (seuils, taux, abattements, plafonds), <strong>toutes vérifiées</strong> contre source officielle avec millésime, URL Légifrance/JO/BOFiP et date. En cas d'écart avec un texte, <strong>le référentiel prime</strong>.</p>
     </div>
     <div class="card">
       <span class="tag ok">Traçabilité</span>
@@ -196,9 +196,11 @@
     <tr><td>Seuil micro-BNC (CGI 102 ter)</td><td>77 700 €</td><td><strong>83 600 €</strong> (2026-2028)</td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>Micro-BIC tourisme non classé / classé (loi Le Meur)</td><td>15 000 € / 77 700 €</td><td>inchangés</td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>Seuil LMP · Seuil IFI · Déficit foncier</td><td>23 000 € · 1,3 M€ · 10 700 €</td><td>inchangés</td><td><span class="badge src">sourced</span></td></tr>
-    <tr><td>PV immobilière (IR + PS)</td><td colspan="2">19 % + 17,2 %</td><td><span class="badge src">IR sourced</span> <span class="badge cand">PS à valider</span></td></tr>
-    <tr><td>Taux URSSAF PL · barème kilométrique</td><td>millésime 2025</td><td>mise à jour en attente</td><td><span class="badge cand">à valider</span></td></tr>
-    <tr><td>CARMF / CARPIMKO (forfaits)</td><td>indicatifs</td><td>vérifier caisses</td><td><span class="badge cand">à valider</span></td></tr>
+    <tr><td>PV immobilière (IR + PS)</td><td colspan="2">19 % + 17,2 % (maintenu en 2026 malgré la hausse LFSS 2026 à 18,6 % sur les autres revenus du capital)</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>Taux URSSAF PL (maladie, CNAVPL 8,23 → 8,73 %, CSG-CRDS)</td><td>2025</td><td>2026 vérifié</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>Barème kilométrique</td><td>millésime 2025</td><td>mise à jour en attente</td><td><span class="badge src">sourced 2025</span></td></tr>
+    <tr><td>CARPIMKO invalidité-décès (forfait)</td><td>—</td><td>1 022 €</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>CARMF (forfaits médecins)</td><td>indicatifs</td><td>vérifier carmf.fr</td><td><span class="badge cand">à valider</span></td></tr>
   </table>
   </div>
 </section>
