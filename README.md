@@ -2,6 +2,8 @@
 
 Agent IA specialise en comptabilite, fiscalite des professions liberales, location meublee, gestion financiere et gestion de patrimoine. Fonctionne sur **Claude Code** (skill integre au depot), **Gemini Gems** et **ChatGPT Custom GPT**.
 
+**Page de presentation du projet :** [joachimpomme-ctrl.github.io/comptable](https://joachimpomme-ctrl.github.io/comptable/) — a partager pour presenter le projet en une page.
+
 > ## ⚠️ A lire avant toute utilisation
 >
 > - **Les sorties de l'agent sont des projets de reponse a verifier — jamais un livrable client, jamais un conseil.** La consultation fiscale a titre habituel est une activite reglementee : cet outil est une aide a la recherche et a la pre-qualification, la responsabilite professionnelle reste celle du praticien.
