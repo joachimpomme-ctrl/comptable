@@ -1,0 +1,40 @@
+{
+  "skill_name": "expert-comptable",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Un de mes clients kinésithérapeute libéral a encaissé 80 000 € de recettes en 2026. Peut-il rester au micro-BNC pour ses revenus 2026, ou bascule-t-il en déclaration contrôlée ?",
+      "expected_output": "Oui : seuil micro-BNC 2026 = 83 600 € (triennat 2026-2028, CGI art. 102 ter), 80 000 ≤ 83 600. Réponse sourcée avec millésime, statut de validation, validation expert-comptable.",
+      "assertions": [
+        "Utilise le seuil 2026 de 83 600 € (pas 77 700 €) et conclut que le micro-BNC reste possible",
+        "Cite CGI art. 102 ter",
+        "Indique millésime + statut de validation",
+        "Mentionne la validation requise par un professionnel"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Ma cliente loue un appartement en LMNP au réel depuis 8 ans. Achat 200 000 €, amortissements déduits 40 000 €, elle vend 260 000 € en 2026. Quelle plus-value imposable et quelle imposition ?",
+      "expected_output": "PV brute = 260 000 − (200 000 − 40 000) = 100 000 € (réintégration des amortissements depuis 2025, CGI art. 150 VB II), abattements durée (6 %/an IR, 1,65 %/an PS dès la 6e année), taux 19 % + 17,2 %, validation expert/notaire.",
+      "assertions": [
+        "PV brute 100 000 € par réintégration des amortissements (règle post-2025)",
+        "Cite CGI art. 150 VB",
+        "Applique les abattements pour durée et les taux 19 % + 17,2 %",
+        "Mentionne validation requise + millésime"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "J'ai vendu pour 30 000 € de bitcoin en 2026 avec 12 000 € de plus-value. Comment je déclare ça et combien d'impôt ?",
+      "expected_output": "Refus motivé : fiscalité crypto hors périmètre du corpus ; aucune règle inventée ; orientation vers un professionnel / source officielle.",
+      "assertions": [
+        "Refuse explicitement le fond (hors scope)",
+        "N'invente aucun chiffre présenté comme certain",
+        "Oriente vers un professionnel ou une source officielle"
+      ],
+      "files": []
+    }
+  ]
+}
