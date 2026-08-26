@@ -1,0 +1,158 @@
+[
+ {
+  "id": "bnc-pcg-004",
+  "module": "M3",
+  "ancre": "PCG art. 112-2 ; C. com. art. L.123-13",
+  "regle": "Le compte de résultat récapitule les charges et les produits de l’exercice, sans qu’il soit tenu compte de leur date de paiement ou d’encaissement. Aucune compensation ne peut être opérée entre les postes de charges et de produits."
+ },
+ {
+  "id": "bnc-pcg-013",
+  "module": "M3",
+  "ancre": "C. com. art. L.123-12 (livre-journal, grand-livre)",
+  "regle": "Tout commerçant tient obligatoirement un livre-journal et un grand-livre."
+ },
+ {
+  "id": "BCG-001",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "La comptabilité générale est un système d'information chiffré à triple finalité: (1) moyen de preuve à l'égard des tiers; (2) base de calcul des impôts et taxes; (3) outil d'information pour les dirigeants (décisions) et les tiers (banques, fournisseurs, clients, actionnaires)."
+ },
+ {
+  "id": "BCG-009",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "Besoin en fonds de roulement (BFR) = Stocks + Créances clients - Dettes fournisseurs. Représente le montant de financement nécessaire pour couvrir l'exploitation courante (délais de paiement clients vs fournisseurs + délais de stockage)."
+ },
+ {
+  "id": "bnc_005",
+  "module": "M1",
+  "ancre": "CGI art. 99 ; BOI-BNC-DECLA-10-20-10",
+  "regle": "Le livre-journal doit mentionner pour les recettes le détail des sommes reçues, l'identité du client, le mode de règlement et la nature des prestations fournies."
+ },
+ {
+  "id": "bnc_014",
+  "module": "M1",
+  "ancre": "LPF art. L.102 B (conservation pieces) et L.169 (delai de reprise) ; C. com. art. L.123-22 (10 ans)",
+  "regle": "Les documents fiscaux doivent être conservés 6 ans et les livres, registres et pièces comptables justificatives 10 ans."
+ },
+ {
+  "id": "bnc_022",
+  "module": "M1",
+  "ancre": "a_verifier",
+  "regle": "Lorsqu'un chèque déjà comptabilisé revient impayé, il faut soit annuler la recette en négatif dans le journal des recettes, soit enregistrer l'impayé dans le journal des dépenses."
+ },
+ {
+  "id": "bnc_030",
+  "module": "M1",
+  "ancre": "CGI art. 96 (declaration 2035) et art. 170 (2042) ; BOI-BNC-DECLA-20",
+  "regle": "La sage-femme déclare le BNC issu de son activité via le formulaire 2035. Le revenu est ensuite reporté sur la déclaration du foyer fiscal via le formulaire 2042 C-PRO."
+ },
+ {
+  "id": "bnc_038",
+  "module": "M1",
+  "ancre": "a_verifier",
+  "regle": "Une sage-femme conventionnée peut rompre l'accord tacite avec la CPAM en l'informant par lettre recommandée avec avis de réception. La décision devient définitive un mois après réception du courrier."
+ },
+ {
+  "id": "ES-003",
+  "module": "M11",
+  "ancre": "C. trav. art. L.3332-1 et s. (plan d'epargne entreprise, PEE) ; CGI art. 81, 18 (exoneration)",
+  "regle": "Le PEE est un système collectif d'épargne à moyen terme permettant aux salariés de se constituer un portefeuille de valeurs mobilières avec l'aide de l'entreprise. Alimentation: versements volontaires du salarié (plafond: 25 % de la rémunération annuelle brute), intéressement, participation, abondement employeur. Abondement employeur: exonéré d'IR et de cotisations sociales (hors CSG/CRDS) dans la limite de 3 fois le versement salarié et 8 % du PASS (3 768 € en 2025). Indisponibilité: 5 ans (sauf déblocage anticipé). Fiscalité à la sortie: exonération IR sur les gains; PS 17,2 % dus."
+ },
+ {
+  "id": "RISK-006",
+  "module": "FORM",
+  "ancre": "CGI art. 150 VB, II (reintegration des amortissements LMNP a la PV, LDF 2025 art. 84) ; BOI-RFPI-PVI",
+  "regle": "RISQUE: LMNP au réel depuis de nombreuses années — amortissements déduits depuis 2025 réintégrés dans la base PV à la cession. Un investisseur qui amorti significativement son bien et le revend après plusieurs années de déduction verra sa PV imposable augmenter du montant des amortissements déduits depuis 2025. Impact d'autant plus fort si le bien est vendu peu après la mise en location (pas de bénéfice des abattements de durée de détention)."
+ },
+ {
+  "id": "PAT-007",
+  "module": "M6",
+  "ancre": "CGI art. 641 (declaration de succession) ; art. 746 (droit de partage) ; C. civ. art. 815 et s.",
+  "regle": "Processus: (1) identification héritiers par le notaire; (2) évaluation du patrimoine (actif - passif); (3) dévolution successorale; (4) déclaration de succession à l'administration fiscale dans les 6 mois après le décès; (5) partage des biens (amiable ou judiciaire). Droit de partage: 2,5% de la valeur nette de l'actif partagé."
+ },
+ {
+  "id": "PAT-016",
+  "module": "M6",
+  "ancre": "CGI art. 8 (SCI a l'IR) et art. 206, 2 (IS de plein droit si location meublee) ; C. civ. art. 1832 et s.",
+  "regle": "Intérêts de la SCI: (1) facilite transmission via donation de parts (démembrement possible: parents gardent usufruit+loyers, enfants nue-propriété → PP sans droits de succession au décès); (2) protection des locaux professionnels de la faillite de l'entreprise; (3) responsabilité des associés: indéfinie mais divisible (chacun à hauteur de ses parts). SCI soumise à IS de plein droit si elle fait de la location meublée (activité commerciale → IS obligatoire). Option IS irrévocable: perd l'abattement durée détention PV immobilières."
+ },
+ {
+  "id": "PAT-025",
+  "module": "M6",
+  "ancre": "CSS art. L.353-1 et s. (pension de reversion regime general)",
+  "regle": "Pension de réversion des régimes obligatoires: réservée aux personnes ayant été MARIÉES avec l'assuré décédé (ni concubins ni pacsés). Montant: 54% de la pension de retraite du défunt (minimum et maximum). Partagée au prorata de la durée du mariage si ex-conjoints divorcés. Peut être majorée (charges enfants, ressources faibles, invalidité). Conditions d'attribution: âge, ressources du ménage, situation maritale (variables selon régime de base ou complémentaire)."
+ },
+ {
+  "id": "CGP-002",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Bien-être financier (CFPB, 2015): état dans lequel la personne a le sentiment (i) d'avoir le contrôle de ses finances courantes, (ii) d'avoir la capacité d'absorber un choc financier, (iii) d'être sur la bonne voie pour atteindre ses objectifs financiers/patrimoniaux à moyen et long terme, (iv) d'avoir la liberté financière de profiter de la vie."
+ },
+ {
+  "id": "CGP-010",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "3 types de préférences clés à appréhender chez le client: (iv.1) Aversion au risque (mesurée par perte maximale acceptable, varie selon but de l'investissement et étape du cycle de vie); (iv.2) Préférence pour le temps (taux d'actualisation personnel: préférence forte pour le présent = défavorable à l'épargne long terme); (iv.3) Solidarité intergénérationnelle (propension à transmettre vs dépenser pour soi). Biais comportementaux à corriger: asymétrie gains/pertes (l'effet négatif d'une perte > effet positif d'un gain équivalent), surpondération des probabilités d'événements rares."
+ },
+ {
+  "id": "CGP-018",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Tendances lourdes nécessitant une gestion patrimoniale renforcée: (1) Vie plus longue = risque de survie à son capital + dépendance; (2) Situations matrimoniales moins stables (PACS sans vocation successorale légale, divorces tardifs = précarité); (3) Parcours professionnels moins linéaires = besoin de solidarité familiale accru; (4) Successions volumineuses à venir (patrimoines des baby-boomers); (5) Familles recomposées (1 sur 5); (6) Coexistence 3 générations = solidarité intergénérationnelle; (7) Crise des régimes de retraite = épargne retraite obligatoire."
+ },
+ {
+  "id": "PV-IMM-002",
+  "module": "M9",
+  "ancre": "CGI art. 150 VC (abattement pour duree de detention) ; art. 150 VE ; BOI-RFPI-PVI-20-20",
+  "regle": "Abattements pour durée de détention applicables sur la PV brute (autres biens que RP): Pour l'IR: 0 % jusqu'à 5 ans; 6 %/an de la 6ème à la 21ème année; 4 % pour la 22ème année complète → exonération IR complète après 22 ans de détention. Pour les PS: 0 % jusqu'à 5 ans; 1,65 %/an de la 6ème à la 21ème; 1,6 % la 22ème; 9 %/an de la 23ème à la 30ème → exonération PS complète après 30 ans de détention."
+ },
+ {
+  "id": "DSD-006",
+  "module": "M10",
+  "ancre": "CGI art. 777 et 779 (calcul des droits en ligne directe)",
+  "regle": "Exemple de calcul droits de succession: patrimoine net taxable transmis à un enfant après abattement de 100 000 €. Si part nette taxable = 200 000 €: 8 072 × 5 % = 404 €; (12 109−8 072) × 10 % = 404 €; (15 932−12 109) × 15 % = 573 €; (200 000−15 932) × 20 % = 36 814 €. Total = 38 195 €. Taux effectif = 38 195/200 000 = 19 %. Soit sur un patrimoine brut de 300 000 € transmis à un enfant unique: 38 195 € de droits."
+ },
+ {
+  "id": "TRM-006",
+  "module": "M12",
+  "ancre": "Loi n2021-1104 du 22/08/2021 (Climat et resilience), art. 160 ; Loi n89-462 du 06/07/1989 art. 6 (decence energetique) ; CCH art. L.173-1-1 (seuils DPE)",
+  "regle": "Calendrier d'interdiction de location selon le DPE (loi Climat): depuis 25 août 2022: gel des loyers pour logements G; depuis 1er janvier 2023: interdiction de mise en location des biens dont consommation > 450 kWh/m2 (classe G++); depuis 1er janvier 2025: interdiction location classe G (ensemble des G); depuis 1er janvier 2028: interdiction location classe F; depuis 1er janvier 2034: interdiction location classe E. Le DPE doit être intégré au dossier de diagnostic technique (DDT) remis au locataire ou à l'acheteur."
+ },
+ {
+  "id": "TRM-014",
+  "module": "M12",
+  "ancre": "CGI art. 1418 (declaration d'occupation des locaux d'habitation) ; BOI-IF-AUT",
+  "regle": "Tous les propriétaires de biens immobiliers à usage d'habitation doivent déclarer chaque année, avant le 1er juillet, sur impots.gouv.fr, la nature d'occupation de chaque bien: résidence principale/secondaire du propriétaire, bien mis en location (avec identité du locataire), bien mis à disposition gratuitement, ou bien vacant. Cette déclaration permet à l'administration de calculer la taxe d'habitation, la taxe sur les logements vacants, etc. Nouveauté 2025: les contribuables qui louent ou occupent gratuitement des locaux meublés non utilisés en résidence principale doivent également indiquer l'adresse et les éléments d'identification du bien dans leur déclaration de revenus."
+ },
+ {
+  "id": "LMN-003",
+  "module": "M5",
+  "ancre": "CGI art. 155, IV (statut LMP) ; loi 2019-1479 du 28/12/2019 (suppression RCS) ; BOI-BIC-CHAMP-40-10",
+  "regle": "Le statut LMP (Loueur Meublé Professionnel) requiert DEUX conditions cumulatives: (1) recettes annuelles de location de l'ensemble du foyer fiscal > 23 000 €; (2) ces recettes excèdent les autres revenus professionnels du foyer fiscal (traitements et salaires nets, BIC autres que LM, BNC, BA, rémunérations art. 62 CGI). L'inscription au RCS n'est plus requise depuis le 1er janvier 2020."
+ },
+ {
+  "id": "LMN-012",
+  "module": "M5",
+  "ancre": "CGI art. 39 C, II (limitation des amortissements LMNP) ; BOI-BIC-AMT-20-40-10",
+  "regle": "L'art. 39-C CGI limite la déduction des amortissements: Amortissement déductible ≤ Loyers acquis - Charges hors amortissements liées au bien. Les amortissements excédentaires sont DIFFÉRÉS (non perdus): stockés et déductibles des exercices futurs bénéficiaires dans la même limite. En cas de pluralité de biens: appréciation globale, répartition proportionnelle des ARD."
+ },
+ {
+  "id": "LMN-020",
+  "module": "M5",
+  "ancre": "CSS art. L.611-1 et art. L.613-7 (affiliation SSI loueurs courte duree)",
+  "regle": "Assujettissement aux cotisations sociales (SSI): (1) recettes de location de COURTE DURÉE > 23 000 €/an, OU (2) statut LMP (recettes > 23 000 € ET supérieures aux revenus professionnels du foyer). En dessous de ces seuils: prélèvements sociaux de 17,2% uniquement (pas de droits retraite/assurance maladie). Exception: propriétaires ayant délégué la gestion à un professionnel de l'immobilier → pas d'affiliation même si > 23 000 €."
+ },
+ {
+  "id": "LMP-001",
+  "module": "M5bis",
+  "ancre": "CGI art. 35 et art. 8 (imposition de l'usufruitier en BIC) ; BOI-BIC-CHAMP-40",
+  "regle": "En cas de démembrement de propriété sur un bien loué meublé: L'USUFRUITIER est imposable dans la catégorie des BIC (et non les revenus fonciers) à raison des revenus de la location meublée. Il peut amortir la valeur de l'usufruit (et non la pleine propriété). Il supporte les charges d'entretien et d'amélioration, la taxe foncière, la taxe d'habitation éventuelle. LE NU-PROPRIÉTAIRE ne perçoit aucun revenu, n'est pas imposable et ne peut déduire aucune charge (même s'il inscrit la nue-propriété à l'actif d'une activité BIC)."
+ },
+ {
+  "id": "FORM-002",
+  "module": "FORM",
+  "ancre": "CGI art. 150 VB, II (reintegration amortissements LMNP, LDF 2025) et art. 150 V/VC ; BOI-RFPI-PVI",
+  "regle": "PV brute LMNP (depuis 2025) = Prix cession − (Prix acquisition − Amortissements déduits pendant la détention). Prix acquisition majoré: + frais d'acquisition réels OU + 7,5 % forfait si > 5 ans; + travaux réels OU + 15 % forfait si > 5 ans. PV nette imposable IR = PV brute × (1 − Abattement IR durée détention). PV nette imposable PS = PV brute × (1 − Abattement PS durée détention). IR = PV nette IR × 19 %. PS = PV nette PS × 17,2 %. Taxe supplémentaire = f(PV nette IR) si > 50 000 €."
+ }
+]

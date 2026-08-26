@@ -1,0 +1,158 @@
+[
+ {
+  "id": "bnc-pcg-002",
+  "module": "M3",
+  "ancre": "PCG (Regl. ANC 2014-03) art. 110-2 ; C. com. art. L.123-12",
+  "regle": "Le bilan, le compte de résultat et l’annexe, qui forment un tout indissociable, sont établis à la clôture de l’exercice au vu des enregistrements comptables et de l’inventaire."
+ },
+ {
+  "id": "bnc-pcg-010",
+  "module": "M3",
+  "ancre": "C. com. art. L.123-25 et L.123-28",
+  "regle": "Les personnes mentionnées aux articles L. 123-25 et L. 123-28 peuvent procéder à l’enregistrement comptable des encaissements et des paiements en retenant la date de l’opération figurant sur le relevé bancaire."
+ },
+ {
+  "id": "bnc-pcg-019",
+  "module": "M3",
+  "ancre": "PCG art. 214-1 et s. (plan d'amortissement) ; C. com. art. L.123-18",
+  "regle": "Les éléments de l’actif immobilisé dont la durée d’utilisation est limitée sont amortis sur cette durée selon un plan d’amortissement."
+ },
+ {
+  "id": "BCG-007",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "PCG 2018: chaque écriture doit s'appuyer sur une pièce justificative datée, établie sur support papier ou électronique fiable. Pour les comptabilités informatisées: procédure de validation interdisant toute modification ou suppression; procédure de clôture périodique pour figer la chronologie."
+ },
+ {
+  "id": "bnc_003",
+  "module": "M1",
+  "ancre": "a_verifier",
+  "regle": "Il est recommandé d'utiliser un compte bancaire exclusivement réservé à l'activité professionnelle afin de séparer les opérations privées et professionnelles."
+ },
+ {
+  "id": "bnc_011",
+  "module": "M1",
+  "ancre": "LPF art. L.102 B (pieces justificatives) ; BOI-BNC-DECLA-10-20",
+  "regle": "Tout enregistrement comptable doit être appuyé d'une pièce justificative, soit de base, soit récapitulative."
+ },
+ {
+  "id": "bnc_020",
+  "module": "M1",
+  "ancre": "a_verifier",
+  "regle": "Le compte prélèvements personnels sert à enregistrer les retraits privés sur le compte professionnel, les dépenses privées payées avec ce compte et certaines dépenses couvertes par des forfaits."
+ },
+ {
+  "id": "bnc_028",
+  "module": "M1",
+  "ancre": "LPF art. L.13 G ; BOI-DJC-OA-20-10-20 (examen periodique de sincerite)",
+  "regle": "L'examen périodique de sincérité porte sur la déductibilité des dépenses, les amortissements et les réductions ou crédits d'impôt. Sa périodicité est de 6 ans si la comptabilité est tenue par un expert-comptable, sinon de 3 ans."
+ },
+ {
+  "id": "bnc_036",
+  "module": "M1",
+  "ancre": "CSS art. L.640-1 et art. L.642-1 (affiliation obligatoire au regime des professions liberales / CARCDSF)",
+  "regle": "Toute sage-femme inscrite à l'Ordre et commençant une activité libérale doit se déclarer obligatoirement à la CARCDSF dans un délai d'un mois."
+ },
+ {
+  "id": "ES-001",
+  "module": "M11",
+  "ancre": "C. trav. art. L.3311-1 et L.3314-1 et s. (interessement) ; CSS art. L.137-15 (forfait social)",
+  "regle": "L'intéressement est un dispositif facultatif liant les salariés aux résultats ou performances de leur entreprise. Accord obligatoire (3 ans, renouvelable). Bénéficiaires: tous les salariés (avec éventuelle ancienneté ≤ 3 mois). Plafond individuel: 20 % du total des salaires bruts annuels du bénéficiaire (dans la limite de 75 % du PASS soit 35 325 € en 2025). Fiscalité: exonéré d'impôt sur le revenu si placé sur un plan d'épargne (PEE, PER) dans les 15 jours; soumis à l'IR si versé en espèces. Dans tous les cas: exonération de cotisations sociales (sauf CSG/CRDS)."
+ },
+ {
+  "id": "RISK-003",
+  "module": "FORM",
+  "ancre": "LPF art. A.47 A-1 (FEC) ; CGI art. 1729 D (amende)",
+  "regle": "RISQUE: Utilisation d'un tableur Excel pour la comptabilité informatisée → non-conformité FEC. L'administration peut requalifier la comptabilité comme irrégulière, appliquer une taxation d'office et prononcer une amende de 5 000 € ou 10 % des droits rappelés. Le contribuable perd la protection d'une comptabilité régulière en cas de contrôle."
+ },
+ {
+  "id": "PAT-005",
+  "module": "M6",
+  "ancre": "C. civ. art. 1515 (clause de preciput) ; art. 1094-1 (cantonnement)",
+  "regle": "Clause de préciput: permet au conjoint survivant de prélever un ou plusieurs biens de la communauté AVANT le partage de la succession, sans entamer ses droits successoraux. Cantonnement: le conjoint survivant peut limiter ses droits à une partie des biens qu'il doit recevoir → les biens non pris reviennent aux autres héritiers (sans droits de donation pour eux)."
+ },
+ {
+  "id": "PAT-013",
+  "module": "M6",
+  "ancre": "CGI art. 965 a 976 (assiette IFI) ; art. 976 (bois et forets) ; art. 978 (dons) ; art. 979 (plafonnement)",
+  "regle": "Stratégies de réduction d'IFI: (1) SIIC (sociétés foncières cotées): actifs immobiliers exclus de l'assiette IFI si détention < 5% du capital; (2) Nue-propriété: bien en démembrement → valeur de la pleine propriété n'est pas dans l'assiette IFI du nu-propriétaire jusqu'à l'extinction de l'usufruit; (3) Bois et forêts: exonération 75% si engagement d'exploitation 30 ans + certificat de gestion durable; (4) Dons à organismes d'intérêt général: réduction IFI de 75% dans la limite de 50 000 €/an; (5) Plafonnement IFI: IFI + IR ≤ 75% des revenus de N-1."
+ },
+ {
+  "id": "PAT-023",
+  "module": "M6",
+  "ancre": "CGI art. 150-0 A et 157, 5 bis (fiscalite PEA) ; CSS art. L.136-7",
+  "regle": "PEA fiscalité: retrait avant 5 ans: PFU 12,8% sur les gains (ou barème IR sur option) + PS 17,2%. Retrait après 5 ans: gains exonérés d'IR + PS 17,2%. Sortie en rente viagère après 8 ans: exonération totale d'IR sur la rente; fraction déterminée selon âge soumise aux PS. Compte-titres ordinaire: dividendes et PV soumis au PFU 12,8% + PS 17,2% (ou barème IR option); dividendes avec option barème: abattement 40% sur les dividendes."
+ },
+ {
+  "id": "PAT-031",
+  "module": "M6",
+  "ancre": "CGI art. 199 decies H (reduction GFI) ; art. 793, 2-3 (exoneration DMTG) ; art. 976 (IFI)",
+  "regle": "Parts de GFI (groupements forestiers d'investissement): réduction d'impôt 18% du prix d'acquisition dans la limite de 5 700 € (personne seule) ou 11 400 € (couple). Parts exclues de l'assiette IFI sous conditions. Exonération droits de mutation à titre gratuit sur 75% de la valeur si détention ≥ 2 ans avant transmission par donation/succession. Placement long terme (≥ 12 ans), rendement ~2%/an nets de frais."
+ },
+ {
+  "id": "CGP-008",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Processus de conseil certifié CGPC en 6 étapes: (1) Établir la relation et spécifier le champ; (2) Recueillir les informations pertinentes (questionnaire approfondi); (3) Analyser la situation patrimoniale et tirer un bilan global (D1 juridique + D2 patrimonial + D3 assurantiel + D4 fiscal); (4) Développer et présenter des recommandations personnalisées; (5) Contribuer à la mise en œuvre; (6) Suivre la situation et les recommandations dans le temps. Regroupable en 4 phases: découverte/collecte (front office) → analyse/recommandations (back office) → mise en œuvre (coréalisation) → suivi."
+ },
+ {
+  "id": "CGP-016",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Conseil indépendant (statut CIF): rémunéré uniquement en honoraires client; ne peut percevoir de commissions des producteurs (interdiction des 'inducements'); doit analyser un nombre suffisant de produits sur le marché pour formuler ses recommandations. Conseil non-indépendant (semi-indépendant): peut percevoir rétrocessions de commissions des producteurs, autorisé à vendre les produits conseillés. Déclaration d'adéquation obligatoire dans les deux cas (explique en quoi la recommandation est adaptée au client)."
+ },
+ {
+  "id": "RF-005",
+  "module": "M9",
+  "ancre": "CGI art. 32 (foncier) et art. 35 / 50-0 (BIC) ; art. 39 C (amortissements LMNP)",
+  "regle": "Différences fiscales clés entre location nue (revenus fonciers) et location meublée (BIC): Location nue → revenus fonciers, micro si < 15 000 €, déficit imputable sur RG (plafond 10 700 €), PV régime particuliers avec abattements durée détention. Location meublée → BIC, micro si < 77 700 € (50 % abattement), amortissements déductibles (art. 39-C), mais PV depuis 2025 réintègre les amortissements."
+ },
+ {
+  "id": "DSD-004",
+  "module": "M10",
+  "ancre": "CGI art. 777 (bareme jusqu'au 4e degre / non parents) ; art. 779, IV et art. 788 (abattements)",
+  "regle": "Barèmes de droits de succession/donation selon le degré de parenté: Entre parents jusqu'au 4ème degré (oncles/tantes, neveux/nièces, cousins germains): 55 % (avec abattement de 7 967 €). Entre non-parents ou parents au-delà du 4ème degré: 60 % (avec abattement de 1 594 €). Entre grands-parents et petits-enfants (ligne directe): barème ligne directe avec abattement de 31 865 €."
+ },
+ {
+  "id": "TRM-004",
+  "module": "M12",
+  "ancre": "CGI art. 669 (bareme de l'usufruit) ; BOI-ENR-DMTG-10-40-10-20",
+  "regle": "Barème de l'usufruit (art. 669 CGI) utilisé pour calculer la valeur de la nue-propriété transmise lors d'une donation avec réserve d'usufruit. La valeur de la nue-propriété transmise (soumise aux droits) est déterminée par: Valeur NP = Valeur PP × (100 % − Valeur usufruit). Barème: âge usufruitier < 21 ans: usufruit 90 %, NP 10 %; 21-30 ans: 80 %/20 %; 31-40 ans: 70 %/30 %; 41-50 ans: 60 %/40 %; 51-60 ans: 50 %/50 %; 61-70 ans: 40 %/60 %; 71-80 ans: 30 %/70 %; 81-90 ans: 20 %/80 %; > 90 ans: 10 %/90 %."
+ },
+ {
+  "id": "TRM-012",
+  "module": "M12",
+  "ancre": "CGI art. 968 (usufruit en valeur PP) et art. 974 (prets in fine) ; BOI-PAT-IFI-20-20-30",
+  "regle": "Biens grevés d'un droit d'usufruit: les biens sont compris dans le patrimoine IFI de l'USUFRUITIER pour leur valeur en pleine propriété (pas répartie entre usufruitier et nu-propriétaire). Exception: lorsque l'usufruit résulte d'une succession avec ouverture d'un usufruit légal au profit du conjoint survivant, la valeur peut être répartie entre usufruitier et nu-propriétaire pour l'IFI. Biens affectés à l'activité professionnelle du redevable: EXONÉRÉS de l'IFI sous conditions. Prêts remboursables in fine: déductibles partiellement — annuités théoriques = capital / durée totale; seule la somme des annuités restant à courir est déductible."
+ },
+ {
+  "id": "LMN-001",
+  "module": "M5",
+  "ancre": "CGI art. 35, I-5 bis (location meublee = BIC) ; BOI-BIC-CHAMP-40",
+  "regle": "La location meublée est fiscalement une activité commerciale relevant des BIC (art. 35 CGI), même si juridiquement c'est une activité civile. Elle se distingue de la location nue par le fait que le logement est muni du mobilier nécessaire à la vie quotidienne."
+ },
+ {
+  "id": "LMN-010",
+  "module": "M5",
+  "ancre": "CGI art. 39, 1-2 (le terrain n'est pas amortissable) ; PCG art. 214-9 ; BOI-BIC-AMT-10-30",
+  "regle": "Le terrain est obligatoirement inscrit au bilan comme composant de l'immeuble (même appartement). Il N'EST PAS amortissable. Valorisation par ordre de priorité: (1) comparaison terrains nus voisins récents, (2) coût de reconstruction vétusté déduite, (3) taux moyens comparatifs. La valeur du terrain est celle à la date d'entrée au bilan."
+ },
+ {
+  "id": "LMN-018",
+  "module": "M5",
+  "ancre": "CGI art. 1447 et s. (CFE) et art. 1586 ter (CVAE) ; BOI-IF-CFE",
+  "regle": "CFE: due par tous les loueurs en meublé (LMP et LMNP); exonération la 1ère année; exonération si CA ≤ 5 000 €; base réduite de moitié la 2ème année; déclaration initiale 1447-C-SD avant le 31/12 de l'année de création. CVAE: due uniquement si CA > 500 000 €; taux plafonnement CET: 1,438% VA pour 2025; suppression prévue en 2030."
+ },
+ {
+  "id": "LMN-027",
+  "module": "M5",
+  "ancre": "LPF art. L.47 A, I et art. A.47 A-1 (FEC) ; CGI art. 1729 D (amende)",
+  "regle": "Toute comptabilité informatisée doit permettre la production d'un FEC conforme (art. A47 A-1 LPF). Un tableur Excel ne satisfait pas à cette exigence. Sanction en cas de défaut: amende de 5 000 € par exercice contrôlé ou 10% des droits rappelés si montant supérieur."
+ },
+ {
+  "id": "LMP-008",
+  "module": "M5bis",
+  "ancre": "CGI art. 150 U et s. (PV particuliers, donation LMNP) ; RM Frassa Senat 28/05/2015 n14933 ; art. 39 duodecies (LMP)",
+  "regle": "Donation d'un bien loué en LMNP: La donation d'un bien immobilier faisant l'objet d'une location meublée exercée à titre NON PROFESSIONNEL (LMNP) ne constitue PAS le fait générateur d'une plus-value imposable (seules les mutations à titre onéreux déclenchent la PV en régime particuliers). En revanche, la donation d'un bien LMP constitue le fait générateur d'une PV professionnelle imposable. (RM Frassa, JO Sénat 28/05/2015, question n°14933)."
+ }
+]

@@ -1,0 +1,158 @@
+[
+ {
+  "id": "bnc-pcg-003",
+  "module": "M3",
+  "ancre": "PCG art. 112-2 (non-compensation) ; C. com. art. L.123-19",
+  "regle": "Les éléments d’actif et de passif sont évalués séparément. Aucune compensation ne peut être opérée entre les postes d’actif et de passif."
+ },
+ {
+  "id": "bnc-pcg-012",
+  "module": "M3",
+  "ancre": "PCG art. 911-3 (documentation comptable) ; C. com. art. R.123-172",
+  "regle": "Un document décrivant les procédures et l’organisation comptables est établi dès lors qu’il est nécessaire à la compréhension du système de traitement et à la réalisation des contrôles."
+ },
+ {
+  "id": "bnc-pcg-020",
+  "module": "M3",
+  "ancre": "PCG art. 322-1 et s. (provisions pour risques et charges) ; C. com. art. L.123-20",
+  "regle": "Les risques et charges, nettement précisés quant à leur objet, que des événements survenus ou en cours rendent probables, entraînent la constitution de provisions."
+ },
+ {
+  "id": "BCG-008",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "Plan de trésorerie: tableau présentant tous les décaissements et encaissements prévus sur l'année, décomposé par mois (montants TTC). Solde trésorerie fin de mois = Solde début + Total encaissements TTC - Total décaissements TTC. Permet de prévoir les besoins de financement et de gérer la TVA."
+ },
+ {
+  "id": "bnc_004",
+  "module": "M1",
+  "ancre": "CGI art. 99 ; BOI-BNC-DECLA-10-20",
+  "regle": "Le livre-journal doit être servi au jour le jour, par ordre de date, sans blancs, sans lacunes, sans ratures ni surcharges."
+ },
+ {
+  "id": "bnc_012",
+  "module": "M1",
+  "ancre": "LPF art. L.102 B (justificatifs) ; CGI art. 289, II (mentions des factures) ; BOI-BNC-DECLA-10-20",
+  "regle": "Pour sécuriser la déductibilité, les pièces justificatives doivent comporter la date, l'identité et l'adresse de l'émetteur, l'identité et l'adresse du destinataire, le libellé de l'opération et la ventilation HT/TVA/TTC."
+ },
+ {
+  "id": "bnc_021",
+  "module": "M1",
+  "ancre": "a_verifier",
+  "regle": "Le compte apports personnels sert à enregistrer les mouvements de trésorerie privée vers la trésorerie professionnelle ou l'arrivée de sommes non imposables au titre des BNC sur le compte professionnel."
+ },
+ {
+  "id": "bnc_029",
+  "module": "M1",
+  "ancre": "LPF art. L.13 G ; BOI-DJC-OA-20-10-20 (examen periodique de sincerite, nombre de pieces)",
+  "regle": "Nombre de pièces examinées dans l'EPS"
+ },
+ {
+  "id": "bnc_037",
+  "module": "M1",
+  "ancre": "Loi n78-17 du 06/01/1978 (informatique et libertes) ; RGPD (UE) 2016/679, art. 9 (donnees de sante)",
+  "regle": "Les fichiers patients contiennent des données sensibles. Le document indique qu'une déclaration CNIL n'est pas nécessaire pour des fichiers patients sécurisés, mais qu'une déclaration doit être faite avant la mise en place d'un système informatique destiné à sécuriser ces données."
+ },
+ {
+  "id": "ES-002",
+  "module": "M11",
+  "ancre": "C. trav. art. L.3322-1 et s. (participation, seuil 50 salaries) et art. L.3324-1 (formule legale RSP)",
+  "regle": "La participation est un dispositif légal OBLIGATOIRE pour les entreprises de 50 salariés et plus (effectif dépassé pendant 12 mois consécutifs ou non sur 3 ans). Formule légale: RSP = (1/2) × (Bénéfice net fiscal − 5 % des capitaux propres) × (Salaires / Valeur ajoutée). Les sommes sont BLOQUÉES 5 ans (sauf cas de déblocage anticipé). Fiscalité: exonéré d'IR si maintenu bloqué; soumis à l'IR si déblocage. Cotisations sociales: exonéré (sauf CSG/CRDS)."
+ },
+ {
+  "id": "RISK-005",
+  "module": "FORM",
+  "ancre": "CGI art. 968 (usufruit impose en valeur PP) et art. 964 (foyer fiscal IFI) ; LPF art. L.64 (abus de droit)",
+  "regle": "RISQUE: Donation temporaire d'usufruit à un enfant rattaché au foyer fiscal des parents pour réduire l'IFI → inopposable à l'administration fiscale. Le bien reste dans l'assiette IFI du donateur si les enfants sont rattachés au foyer fiscal (leurs biens/revenus sont agrégés dans le foyer fiscal des parents). Nécessite que les enfants soient DÉTACHÉS du foyer fiscal pour que la donation temporaire d'usufruit sorte le bien de l'assiette IFI."
+ },
+ {
+  "id": "PAT-006",
+  "module": "M6",
+  "ancre": "C. civ. art. 734 a 740 (devolution legale) et art. 757 a 757-3 (conjoint)",
+  "regle": "Ordre de dévolution légale: (1) enfants/petits-enfants (excluent tous les autres); (2) si marié+enfants: conjoint reçoit 1/4 PP ou totalité usufruit (option); si marié sans enfants: conjoint hérite selon présence des parents; (3) si pas d'enfants ni conjoint: parents 50% chacun; frères et sœurs reçoivent la moitié si parents en vie, sinon la totalité. PACS: aucun droit successoral légal → testament obligatoire."
+ },
+ {
+  "id": "PAT-015",
+  "module": "M6",
+  "ancre": "CGI art. 199 novovicies (Pinel/Denormandie), art. 199 sexvicies (Censi-Bouvard) et art. 199 tervicies (Malraux)",
+  "regle": "Dispositifs de défiscalisation immobilière locative: Pinel (logement neuf/assimilé, zones A/A bis/B1): taux 12%/18%/21% selon engagement 6/9/12 ans, plafond 300 000 € et 5 500 €/m², plafonds loyers et ressources locataires; Denormandie (logements anciens réhabilités, communes ciblées): mêmes modalités que Pinel, travaux ≥ 25% coût total; Censi-Bouvard (LMNP résidences services): 11% sur 9 ans, plafond 300 000 €/an; Malraux (restauration patrimoine historique): 22% ou 30% selon zone, plafond 400 000 €, engagement 9 ans."
+ },
+ {
+  "id": "PAT-024",
+  "module": "M6",
+  "ancre": "C. mon. fin. art. L.214-114 a L.214-118 (SCPI) ; CGI art. 965, 2 (parts de SCPI dans l'assiette IFI)",
+  "regle": "SCPI (sociétés civiles de placement immobilier): sociétés qui acquièrent et gèrent des biens immobiliers et redistribuent les loyers aux porteurs de parts. Revenus: loyers trimestriels + PV de cession + produits de trésorerie. Frais: commission de souscription (incluse dans le prix de la part à l'achat), commission de gestion (prélevée sur revenus), commission d'arbitrage (en cas de cession). Accessible à personnes physiques ou morales, résidents ou non."
+ },
+ {
+  "id": "CGP-001",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Patrimoine familial = ensemble des actifs économiques (fonciers, immobiliers, financiers, 'assurantiels') sur lesquels des droits de propriété peuvent être exercés, diminués des dettes. Inclut les droits et obligations appréciables en argent. Attaché aux personnes (spécificité française: transmission aux descendants pour une part minimum fixée par la loi)."
+ },
+ {
+  "id": "CGP-009",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "4 blocs d'activités et compétences du conseil certifié (référentiel RNCP): B1 — Conduire la relation client en conformité avec la réglementation (questionnement, objectifs, mission); B2 — Réaliser un bilan patrimonial global (audit D1 juridique + D2 patrimonial + D3 assurantiel + D4 fiscal); B3 — Concevoir une stratégie patrimoniale globale (actions sur situation juridique, investissement/désinvestissement, assurances, préparation retraite, gestion fiscale); B4 — Assurer la mise en œuvre et l'actualisation (révision selon évolution situation et réglementation)."
+ },
+ {
+  "id": "CGP-017",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Capital humain: valeur actualisée des revenus futurs qu'une personne peut espérer tirer de son travail. Composé de la formation initiale, des formations continues et de l'expérience acquise. Procure l'employabilité. Cycle: constant/croissant en début de carrière, décroissant à l'approche de la retraite (la formation continue ralentit cette décroissance). Objectif fondamental: 'que le capital humain ait été transformé en capital financier', c'est-à-dire avoir constitué un patrimoine pendant la vie active."
+ },
+ {
+  "id": "PV-IMM-001",
+  "module": "M9",
+  "ancre": "CGI art. 150 V a 150 VC (assiette PV immobiliere) ; BOI-RFPI-PVI-20-10",
+  "regle": "Plus-value brute = Prix de cession − Prix d'acquisition. Prix de cession: prix stipulé dans l'acte diminué des frais de cession (diagnostics, honoraires d'agence si à la charge du vendeur). Prix d'acquisition: prix d'achat majoré des frais d'acquisition (droits de mutation, honoraires notaire réels ou forfait 7,5 % si cédé plus de 5 ans après acquisition) et des travaux (frais réels ou forfait 15 % si bien cédé > 5 ans après acquisition)."
+ },
+ {
+  "id": "DSD-005",
+  "module": "M10",
+  "ancre": "CGI art. 784 (rappel fiscal des donations)",
+  "regle": "Rappel fiscal des donations antérieures: pour calculer les droits sur une nouvelle donation ou une succession, les abattements et le barème s'appliquent sur l'ensemble des donations reçues du même donateur/défunt au cours des 15 années précédentes. Si des donations ont été faites il y a moins de 15 ans, les abattements sont réduits du montant déjà utilisé. Au-delà de 15 ans, les abattements sont totalement reconstitués."
+ },
+ {
+  "id": "TRM-005",
+  "module": "M12",
+  "ancre": "CGI art. 641 et 642 (delais de declaration) ; art. 1701 et 1717 ; BOI-ENR-DG-50",
+  "regle": "Délais de paiement des droits de mutation à titre gratuit: DONATION: paiement dans le mois suivant la donation. SUCCESSION: paiement avant la fin du 6ème mois suivant le mois du décès (pour décès en France). Modalités dérogatoires: paiement fractionné en 3 versements égaux à intervalles de 6 mois maximum sur une période maximale d'1 an; paiement différé possible dans certains cas (notamment en présence d'usufruit ou de biens professionnels non liquides)."
+ },
+ {
+  "id": "TRM-013",
+  "module": "M12",
+  "ancre": "CCH art. L.300-1 et s. (MaPrimeRenov', aide ANAH) ; decret n2020-26 du 14/01/2020",
+  "regle": "MaPrimeRénov' est une aide de l'État (ANAH) pour financer les travaux de rénovation énergétique des logements. Trois formes: (1) MaPrimeRénov' individuelle: aide directe au propriétaire pour travaux d'économie d'énergie (isolation, fenêtres, chaudière, etc.); montant variable selon revenus et nature des travaux. (2) MaPrimeRénov' Copropriété: aide collective pour rénovation globale d'une copropriété immatriculée, construite > 15 ans, ≥ 75 % de tantièmes habitations principales. (3) MaPrimeAdapt': aide pour travaux d'adaptation du logement aux personnes âgées ou handicapées à revenus modestes. Service public France Rénov': france-renov.gouv.fr / 0 808 800 700."
+ },
+ {
+  "id": "LMN-002",
+  "module": "M5",
+  "ancre": "Decret 2015-981 du 31/07/2015 (liste du mobilier) ; loi 89-462 art. 25-4",
+  "regle": "Liste des meubles obligatoires en location meublée à usage de résidence principale (décret 2015-981): literie avec couette/couverture, occultation des fenêtres chambre, plaques de cuisson, four/micro-ondes, réfrigérateur+congélateur (ou frigo avec compartiment ≤ -6°), vaisselle, ustensiles cuisine, table et sièges, étagères de rangement, luminaires, matériel d'entretien ménager."
+ },
+ {
+  "id": "LMN-011",
+  "module": "M5",
+  "ancre": "CGI art. 39, 1-2 (amortissements) ; PCG art. 214-9 et BOI-ANNX-000115 (amortissement par composants)",
+  "regle": "Amortissement obligatoire par composants (BOI-ANNX-000115): terrain (non amortissable); gros œuvre (40-50% valeur bien, >50 ans, max 2%/an); étanchéité/façade/toiture/menuiserie ext (5-20%, 20-50 ans, 2-5%/an); installations générales/techniques (20-30%, 15-30 ans, 3-7%/an); agencement (20-25%, 5-15 ans, 7-20%/an). Mobilier: 5 ans linéaire."
+ },
+ {
+  "id": "LMN-019",
+  "module": "M5",
+  "ancre": "CGI art. 1407 et 1414 (taxe d'habitation, suppression RP) ; BOI-IF-TH",
+  "regle": "Taxe d'habitation résidence principale supprimée depuis 1er janvier 2023. En location saisonnière/courte durée: bien considéré résidence secondaire du propriétaire → taxe d'habitation maintenue. En location longue durée résidence principale du locataire: taxe due par le locataire. Obligation déclarative annuelle avant 1er juillet pour tous les propriétaires."
+ },
+ {
+  "id": "LMN-028",
+  "module": "M5",
+  "ancre": "CGI art. 201 (declaration en cas de cessation) ; BOI-BIC-CESS-10",
+  "regle": "Déclaration de cessation dans les 30 jours sur entreprendre.service-public.fr. Au réel: dernière 2031 dans les 60 jours après cessation. Au micro: déclaration des loyers lors de la campagne revenus de l'année suivante. CFE: demande de réduction au prorata possible (avant 31/12 N+1)."
+ },
+ {
+  "id": "FORM-001",
+  "module": "FORM",
+  "ancre": "CGI art. 39 C, II (amortissements differes ARD) ; BOI-BIC-AMT-20-40-10",
+  "regle": "Amortissement déductible (art. 39-C) = MAX(0 ; Loyers acquis − Charges hors amortissements afférentes au bien). Amortissements différés (ARD) = Amortissements comptabilisés − Amortissements déductibles. Accumulation ARD: Solde N = Solde N-1 + ARD N − Imputations N. Imputation possible si exercice bénéficiaire dans la même limite (loyers − charges hors amort ≥ 0)."
+ }
+]

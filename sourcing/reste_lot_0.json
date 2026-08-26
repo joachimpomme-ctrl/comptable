@@ -1,0 +1,158 @@
+[
+ {
+  "id": "bnc-pcg-001",
+  "module": "M3",
+  "ancre": "Regl. ANC n2014-03 (PCG) art. 110-1 ; C. com. art. L.123-12 a L.123-28",
+  "regle": "Les dispositions du règlement s’appliquent à toute personne physique ou morale soumise à l’obligation légale d’établir des comptes annuels comprenant le bilan, le compte de résultat et une annexe, sous réserve des dispositions spécifiques qui leur sont applicables."
+ },
+ {
+  "id": "bnc-pcg-009",
+  "module": "M3",
+  "ancre": "C. com. art. L.123-25",
+  "regle": "Les personnes physiques placées sur option ou de plein droit sous le régime réel simplifié d’imposition peuvent inscrire au compte de résultat, en fonction de leur date de paiement, les charges dont la périodicité n’excède pas un an."
+ },
+ {
+  "id": "bnc-pcg-018",
+  "module": "M3",
+  "ancre": "PCG art. 213-8 (cout d'acquisition = prix d'achat + frais accessoires)",
+  "regle": "Le coût d’acquisition est égal au prix d’achat majoré des frais accessoires nécessaires à la mise en état d’utilisation du bien."
+ },
+ {
+  "id": "BCG-006",
+  "module": "M8",
+  "ancre": "a_verifier",
+  "regle": "Principe de la partie double: chaque écriture comptable est équilibrée → montant débit = montant crédit. Le journal enregistre les opérations chronologiquement par pièce justificative. Le grand livre reprend toutes les écritures par compte. La balance récapitule tous les comptes avec leurs soldes: Total débits = Total crédits."
+ },
+ {
+  "id": "bnc_002",
+  "module": "M1",
+  "ancre": "CGI art. 99 (livre-journal et registre des immobilisations) ; BOI-BNC-DECLA-10-20",
+  "regle": "Le professionnel doit tenir un livre-journal des recettes et des dépenses professionnelles et un registre des immobilisations et des amortissements."
+ },
+ {
+  "id": "bnc_010",
+  "module": "M1",
+  "ancre": "CGI art. 93, 1 ; BOI-BNC-BASE-40-10",
+  "regle": "En cas de carte bancaire à débit différé, la dépense se comptabilise à la date du paiement par carte, et non à la date de l'inscription sur le relevé bancaire."
+ },
+ {
+  "id": "bnc_019",
+  "module": "M1",
+  "ancre": "CGI art. 93 (deductibilite des interets, non du capital) ; BOI-BNC-BASE-40-60",
+  "regle": "Le capital reçu au titre d'un emprunt professionnel constitue un mouvement patrimonial. Lors du remboursement, seule la part intérêts est fiscalement déductible ; la part capital ne l'est pas."
+ },
+ {
+  "id": "bnc_027",
+  "module": "M1",
+  "ancre": "LPF art. A.47 A-1 (FEC) ; CGI art. 1729 D (amende defaut de FEC)",
+  "regle": "Avant la télétransmission de la déclaration 2035, les écritures doivent être validées et le FEC généré et sauvegardé. Les dates de validation doivent être antérieures ou concomitantes à la télétransmission."
+ },
+ {
+  "id": "bnc_035",
+  "module": "M1",
+  "ancre": "a_verifier",
+  "regle": "Si la CPAM du lieu d'exercice n'a pas conclu d'accord avec l'URSSAF, la sage-femme doit aussi accomplir les formalités auprès de l'URSSAF au plus tard dans les 8 jours suivant le début de l'activité. Le CFE centralise ensuite les informations vers les organismes sociaux et fiscaux."
+ },
+ {
+  "id": "GFPL-043",
+  "module": "M2",
+  "ancre": "a_verifier",
+  "regle": "En pratique, l’ouverture d’un compte professionnel peut simplifier la justification des écritures et des charges déduites des BNC."
+ },
+ {
+  "id": "FORM-006",
+  "module": "FORM",
+  "ancre": "CGI art. 156, I-3 (imputation du deficit foncier sur le revenu global, plafond et doublement renovation energetique) ; BOI-RFPI-BASE-30-20",
+  "regle": "Déficit foncier imputable sur le revenu global = MIN(10 700 €, déficit hors intérêts d'emprunt). Si travaux rénovation énergétique E/F/G → A/B/C/D payés entre 2023 et 2025: plafond doublé à 21 400 €. Déficit sur intérêts d'emprunt = reportable sur revenus fonciers uniquement (10 ans). Déficit total année = Revenus locatifs nets bruts − Charges déductibles. Charges déductibles = intérêts emprunt + travaux entretien/réparation + taxe foncière + assurances + frais gestion + provisions copropriété."
+ },
+ {
+  "id": "PAT-004",
+  "module": "M6",
+  "ancre": "C. civ. art. 1397 (changement de regime) ; art. 1094-1 (donation entre epoux) ; CGI art. 990 I",
+  "regle": "Outils de protection du conjoint par ordre d'efficacité: (1) Modification du régime matrimonial (communauté universelle avec clause d'attribution intégrale); (2) Donation entre époux (donation au dernier vivant): augmente les droits du survivant; options: 1/2, 1/3 ou 1/4 en PP selon nb d'enfants, ou totalité en usufruit, ou 1/4 PP + 3/4 usufruit; (3) Assurance-vie avec conjoint bénéficiaire: transmission hors succession, exonération totale de droits de succession."
+ },
+ {
+  "id": "PAT-012",
+  "module": "M6",
+  "ancre": "C. civ. art. 805 (renonciation) ; art. 754 (representation) ; CGI art. 785",
+  "regle": "Un enfant peut renoncer à sa part de succession pour que ses propres enfants (petits-enfants du défunt) héritent à sa place (saut de génération). Délai de renonciation: 4 mois après le décès. Les héritiers venant en représentation se partagent l'abattement fiscal et le tarif du renonçant. Formulaire Cerfa n°15828*05 au greffe du tribunal judiciaire."
+ },
+ {
+  "id": "PAT-022",
+  "module": "M6",
+  "ancre": "C. mon. fin. art. L.221-30 a L.221-32 (PEA) ; CGI art. 157, 5 bis",
+  "regle": "PEA: 1 seul par personne physique majeure domiciliée en France. Plafond de versement: 150 000 € (hors gains). Valeurs éligibles: actions cotées européennes, parts de SARL, OPCVM/Sicav avec ≥75% actions européennes. Exclus: obligations, dérivés, SCI, titres démembrés. Retrait avant 5 ans: clôture automatique du PEA. Service de règlement différé: uniquement sur compte-titres ordinaire."
+ },
+ {
+  "id": "PAT-030",
+  "module": "M6",
+  "ancre": "C. assur. art. L.113-12-2 et L.313-30 (resiliation infra-annuelle, loi Lemoine 2022-270 du 28/02/2022)",
+  "regle": "Loi Lemoine (fév. 2022): possibilité de résilier l'assurance de prêt immobilier à TOUT MOMENT (plus uniquement à date anniversaire). Délégation d'assurance: souscrire auprès d'un autre assureur que la banque permet des économies importantes (jusqu'à plusieurs milliers d'euros pour jeunes emprunteurs en bonne santé). Banque dispose de 10 jours pour accepter ou refuser (uniquement si garanties non équivalentes)."
+ },
+ {
+  "id": "CGP-007",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "4 domaines de stratégies patrimoniales élémentaires: (1) Actions sur la situation juridique des personnes et des biens (mode de conjugalité, protection conjoint, transmission familiale recomposée); (2) Actions sur la situation patrimoniale: investissements/désinvestissements, prises d'assurances; (3) Actions sur la situation financière; (4) Gestion de la contribution fiscale. Ces stratégies combinées dans un plan patrimonial global cohérent constituent le plan de gestion patrimoniale familiale."
+ },
+ {
+  "id": "CGP-015",
+  "module": "M7",
+  "ancre": "a_verifier",
+  "regle": "Actifs patrimoniaux: actifs économiques sur lesquels des droits de propriété peuvent être exercés et qui procurent des avantages économiques (financiers ou non financiers). Actifs réels (métaux précieux, énergie, etc.): peu corrélés aux classes financières classiques, performants en phase d'inflation ou taux réels bas. Actifs réels = diversification patrimoniale. Cryptomonnaies: intrinsèquement spéculatives (valeur déterminée uniquement par le nombre de participants), à éviter pour le CGP professionnel."
+ },
+ {
+  "id": "RF-004",
+  "module": "M9",
+  "ancre": "CGI art. 156, I-3 (deficit foncier, imputation sur le revenu global) ; BOI-RFPI-BASE-30",
+  "regle": "Déficit foncier au régime réel: le déficit résultant de charges autres que les intérêts d'emprunt est imputable sur le revenu global dans la limite de 10 700 € par an. La fraction de déficit excédant 10 700 € est reportable sur les revenus fonciers des 10 années suivantes. Le déficit imputable sur le revenu global est conditionné à la location du bien pendant les 3 années suivant l'imputation (clause de maintien de location)."
+ },
+ {
+  "id": "DSD-003",
+  "module": "M10",
+  "ancre": "CGI art. 777 (bareme freres et soeurs) ; art. 788, I (abattement specifique)",
+  "regle": "Barème entre frères et sœurs: Jusqu'à 24 430 € (après abattement de 15 932 €): 35 %. Au-delà de 24 430 €: 45 %. Abattement spécifique de 15 932 € applicable uniquement si le bénéficiaire est célibataire, veuf, divorcé ou séparé de corps au moment du décès ET âgé de plus de 50 ans ou atteint d'infirmité."
+ },
+ {
+  "id": "TRM-002",
+  "module": "M12",
+  "ancre": "CGI art. 790 G (don de sommes d'argent) ; art. 790 A bis (don creation entreprise/RP, LDF 2025)",
+  "regle": "Don en numéraire exonéré de droits: abattement spécifique de 31 865 € par donateur, cumulable avec l'abattement général (100 000 € parent/enfant). Conditions: donateur < 80 ans ET donataire majeur ou mineur émancipé. Bénéficiaires: enfants, petits-enfants, arrière-petits-enfants, ou à défaut neveux/nièces. LDF 2025: exonération renforcée jusqu'à 100 000 € par donateur ET par donataire pour dons affectés à la création d'entreprise ou construction de la résidence principale du donataire."
+ },
+ {
+  "id": "TRM-011",
+  "module": "M12",
+  "ancre": "CGI art. 977 (decote IFI) ; BOI-PAT-IFI-40-10-20",
+  "regle": "Mécanisme de décote IFI pour atténuer l'effet de seuil: si la valeur nette taxable du patrimoine (P) est comprise entre 1 300 000 € et 1 400 000 €, l'IFI calculé selon le barème est réduit d'une somme égale à: Décote = 17 500 € − 1,25 % × P. Exemple: patrimoine net = 1 350 000 €. IFI brut selon barème = (1 300 000 - 800 000) × 0,5 % + (1 350 000 - 1 300 000) × 0,7 % = 2 500 + 350 = 2 850 €. Décote = 17 500 − 1,25 % × 1 350 000 = 17 500 − 16 875 = 625 €. IFI net = 2 850 − 625 = 2 225 €."
+ },
+ {
+  "id": "RISK-008",
+  "module": "FORM",
+  "ancre": "CGI art. 787 B (engagements de conservation Pacte Dutreil) ; BOI-ENR-DMTG-10-20-40-20",
+  "regle": "RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → remise en cause de l'exonération de 75 % et rappel des droits avec pénalités et intérêts de retard. Les engagements collectifs et individuels de conservation doivent être strictement respectés sur toute leur durée. RISQUE annexe: cession de l'entreprise pendant la période d'engagement → rupture du pacte, sauf exceptions prévues (transmission dans le cadre familial sous conditions)."
+ },
+ {
+  "id": "LMN-009",
+  "module": "M5",
+  "ancre": "CGI art. 38 quinquies (frais d'acquisition des immobilisations, option) ; art. 39, 1 ; BOI-BIC-CHG-20-20-10",
+  "regle": "Les frais d'acquisition (droits de mutation, honoraires notaire, frais actes, commissions) peuvent au choix: (A) être immobilisés en ajout au coût d'acquisition, ou (B) être déduits immédiatement en charges. Option irrévocable dès le 1er bien et s'applique à toutes les immobilisations ultérieures."
+ },
+ {
+  "id": "LMN-017",
+  "module": "M5",
+  "ancre": "CGI art. 293 B (franchise en base de TVA) ; directive UE 2020/285 ; BOI-TVA-DECLA-40-10",
+  "regle": "Franchise en base TVA pour locations meublées soumises à TVA (depuis 1er jan 2025 selon directive UE 2020/285): seuil de base 85 000 €, seuil majoré 93 500 €. Franchise cesse si CA dépasse 93 500 € en cours d'année (dès le 1er jour du mois de dépassement). Mention obligatoire sur factures: 'TVA non applicable - art. 293 B du CGI'. Réforme à 25 000 € suspendue jusqu'au 1er juin 2025."
+ },
+ {
+  "id": "LMN-026",
+  "module": "M5",
+  "ancre": "C. com. art. R.123-32 (immatriculation, guichet unique INPI) ; CGI art. 286 (declaration d'existence) ; art. 1447 (CFE)",
+  "regle": "Déclaration d'activité via guichet unique INPI (inpi.fr) dans les 15 jours suivant le début d'activité. Date de début = date de la 1ère dépense (achat meuble, signature notaire). Résultat: SIRET (code APE 6820-A), ROF fiscal, imprimé 1447-C CFE. Créer aussi un espace professionnel sur impots.gouv."
+ },
+ {
+  "id": "LMP-006",
+  "module": "M5bis",
+  "ancre": "CGI art. 199 sexvicies, II (taux et plafond) ; BOI-IR-RICI-220-30",
+  "regle": "Réduction d'impôt Censi-Bouvard: taux 11 % du prix de revient HT des logements, réparti sur 9 ans (réduction de 1/9ème par an). Plafond d'investissement: 300 000 € (quel que soit le nombre de logements). Réduction d'impôt maximale: 33 000 € sur 9 ans (soit 3 667 €/an). La réduction est reportable sur les 6 années suivantes si elle dépasse l'impôt dû. Cumul avec l'amortissement: si le contribuable a bénéficié de la réduction Censi-Bouvard, il ne peut pas amortir le bien immobilier lui-même (il peut en revanche amortir le mobilier)."
+ }
+]
