@@ -144,6 +144,8 @@ Exemples : "Mon client kine a encaisse 80 000 EUR en 2026, peut-il rester au mic
            "Calcule la PV de cession d'un LMNP au reel, amortissements deduits 40 000 EUR."
 ```
 
+**Sans cloner le depot — paquet pret a l'emploi :** telecharger [`dist/expert-comptable.zip`](dist/expert-comptable.zip) (base de connaissances embarquee) et l'importer dans claude.ai > **Settings** > **Capabilities** > **Upload skill**. Le skill est alors disponible dans toutes vos conversations Claude (claude.ai, Claude Code, app mobile). Le paquet se regenere avec `python3 scripts/build_skill_package.py` apres chaque mise a jour du corpus.
+
 ### Gemini Gems
 
 > Gemini est limite a **10 fichiers** de connaissances. Uploader uniquement les fichiers listes ci-dessous.
