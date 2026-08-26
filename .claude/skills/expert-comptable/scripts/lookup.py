@@ -33,10 +33,11 @@ def _find_knowledge():
         sys.exit(f"COMPTABLE_KNOWLEDGE_DIR pointe sur '{env}' mais referentiel_parametres.json est introuvable.")
     here = Path(__file__).resolve()
     for parent in here.parents:
-        cand = parent / "knowledge"
-        if (cand / "referentiel_parametres.json").exists():
-            return cand
-    sys.exit("Dossier knowledge/ introuvable en remontant depuis le script. "
+        for name in ("references", "knowledge"):
+            cand = parent / name
+            if (cand / "referentiel_parametres.json").exists():
+                return cand
+    sys.exit("Base de connaissances introuvable (ni references/ ni knowledge/ en remontant depuis le script). "
              "Definir COMPTABLE_KNOWLEDGE_DIR ou executer depuis le depot comptable.")
 
 
