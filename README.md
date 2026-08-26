@@ -72,8 +72,8 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 | Micro-BIC tourisme non classe (loi Le Meur) | 15 000 € / 30 % | 15 000 € / 30 % | `sourced` |
 | Micro-BIC tourisme classe | 77 700 € / 50 % | 77 700 € / 50 % | `sourced` |
 | Seuil LMP / Seuil IFI / Deficit foncier | 23 000 € / 1,3 M€ / 10 700 € | inchanges | `sourced` |
-| PV immobiliere (IR + PS) | 19 % + 17,2 % | 19 % + 17,2 % | `sourced` |
-| Taux URSSAF PL, bareme kilometrique | millesime 2025 | **mise a jour 2026 en attente** | `sourced` 2025 |
+| PV immobiliere (IR + PS) | 19 % + 17,2 % | 19 % + 17,2 % | IR `sourced` · PS `candidate_to_validate` |
+| Taux URSSAF PL, bareme kilometrique | millesime 2025 | **mise a jour 2026 en attente** | bareme km `sourced` 2025 · taux TNS `candidate_to_validate` |
 | CARMF / CARPIMKO (forfaits) | indicatifs 2025 | a verifier sur carmf.fr / carpimko.fr | `candidate_to_validate` |
 
 Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa source officielle, son URL et sa date de verification). **En cas d'ecart entre un texte du corpus et le referentiel, le referentiel prime.** Prochaine mise a jour attendue : janvier (apres la Loi de Finances).
