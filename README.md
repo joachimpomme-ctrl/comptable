@@ -63,6 +63,8 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 
 **Vous etes expert-comptable, fiscaliste, CGP, notaire ?** Chaque regle validee (ou corrigee) augmente la valeur du corpus pour tout le monde. Le workflow est simple : une issue GitHub par regle, passage `candidate_to_validate` → `validated` avec votre nom et la date. Voir **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
+**Ce qui reste a faire et ou aider :** voir la **[feuille de route (ROADMAP.md)](ROADMAP.md)** — sourcing des 391 regles par lots, cles de referentiel a ajouter (PFU/PS 2026, CARMF), mise a jour annuelle de janvier, outillage communaute.
+
 ---
 
 ## Table des millesimes
@@ -99,6 +101,7 @@ Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa 
 ```
 README.md                               <- Ce fichier
 CONTRIBUTING.md                         <- Workflow de validation des regles
+ROADMAP.md                              <- Feuille de route : ce qui reste a faire
 GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un navigateur)
 .claude/skills/expert-comptable/
   SKILL.md                              <- Skill Claude Code (auto-charge dans ce depot)
