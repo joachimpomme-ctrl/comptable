@@ -316,8 +316,8 @@
 - Contexte : Kinésithérapeute libéral, revenus nets BNC 2025 = 70 000 €.
 - Question : Estimez mes principales cotisations sociales URSSAF et CARPIMKO pour 2025.
 - Règles attendues : M13 (PASS 2025, taux URSSAF, CARPIMKO)
-- Critères de succès : utilise PASS 2025 = 47 100 €, calcule maladie ~4 550 € (6,5 %), retraite de base CNAVPL/CARPIMKO ~4 305 € (8,23 % jusqu'au PASS + 1,87 % de 1 à 5 PASS, soit 3 876 € + 428 €), CSG/CRDS ~6 790 € (9,7 %), signale que les cotisations CARPIMKO complémentaire et invalidité-décès sont forfaitaires (par classe) et non estimées ici, alerte sur régularisation N-2, précise que les taux de cotisation ne sont pas dans le référentiel (à confirmer URSSAF/CARPIMKO), validation auprès de la caisse recommandée
-- Note de fiabilité : l'ancien attendu de retraite de base et de CSG/CRDS était FAUX (sur-estimé). Valeurs recalculées indépendamment ; oracle de référence dans scripts/run_evals.py (fonction cotisations_tns_carpimko) et fixture tests/cas_evaluation.json (EV-036).
+- Critères de succès : utilise PASS 2025 = 47 100 €, calcule maladie ~4 550 € (6,5 %), retraite de base CNAVPL/CARPIMKO ~4 305 € (8,23 % jusqu'au PASS + 1,87 % de 1 à 5 PASS, soit 3 876 € + 428 €), CSG/CRDS ~6 790 € (9,7 %), signale que les cotisations CARPIMKO complémentaire et invalidité-décès sont forfaitaires (par classe) et non estimées ici, alerte sur régularisation N-2, précise que les taux TNS du référentiel sont en statut candidate_to_validate (à confirmer URSSAF/CARPIMKO), validation auprès de la caisse recommandée
+- Note de fiabilité : l'ancien attendu de retraite de base et de CSG/CRDS était FAUX (sur-estimé). Valeurs recalculées indépendamment contre les taux publiés (urssaf.fr, cnavpl.fr) ; clés `tns_*` du référentiel de paramètres, statut `candidate_to_validate`.
 
 ## EV-037 | bareme_kilometrique_2025
 - Fonction : fiscalite_BNC

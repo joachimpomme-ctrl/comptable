@@ -219,7 +219,7 @@ RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → re
 
 ## BARÈMES DE RÉFÉRENCE (Module M13 — millésimes 2025-2026)
 
-> **Statut :** `sourced` pour PASS 2025-2026, taux URSSAF 2025 et barème kilométrique 2025 (officiels). `candidate_to_validate` pour CARMF/CARPIMKO (forfaits votés annuellement — vérifier sur carmf.fr / carpimko.fr).  
+> **Statut :** `sourced` pour PASS 2025-2026 et barème kilométrique 2025 (arrêtés officiels). `candidate_to_validate` pour les taux URSSAF/CNAVPL (clés `tns_*` du référentiel — à confirmer urssaf.fr) et pour CARMF/CARPIMKO (forfaits votés annuellement — vérifier sur carmf.fr / carpimko.fr).  
 > **Millésimes :** PASS vérifié pour 2026 (48 060 €). Taux URSSAF et barème kilométrique ci-dessous = millésime 2025, mise à jour 2026 en attente de sourcing officiel.  
 > **Source de vérité des chiffres :** `referentiel_parametres.json` (clé + millésime). En cas d'écart avec un texte du corpus, le référentiel prime.  
 > **Mise à jour :** janvier de chaque année (PASS, taux URSSAF, barèmes km publiés par arrêté).
