@@ -58,12 +58,12 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 | Regles metier (`02_golden_rules_claude_first.md`) | 391 | **0 validee** — 391 `candidate_to_validate` |
 | Referentiel de parametres chiffres (`referentiel_parametres.json`) | 32 cles | **32 `sourced`** — verifies contre source officielle, avec URL et date (passe de sourcing du 2026-08-26) |
 | Articles CGI (`M_CGI_code_general_impots.md`) | 51 | Texte legal officiel (millesime 2026) |
-| Tracabilite regle → source (`07_rule_source_crosswalk.jsonl`) | 391 entrees | **185 ancres legales verifiees** contre texte officiel (lot M2 du 2026-08-26) · 206 `a_verifier` |
+| Tracabilite regle → source (`07_rule_source_crosswalk.jsonl`) | 391 entrees | **379 ancres legales verifiees** contre texte officiel (passes des 2026-08-26) · 12 enonces de pratique sans texte officiel restent `a_verifier` |
 | Cas de test (`08_evaluation_suite.md`) | 45 | Reponses attendues ecrites |
 
 **Vous etes expert-comptable, fiscaliste, CGP, notaire ?** Chaque regle validee (ou corrigee) augmente la valeur du corpus pour tout le monde. Le workflow est simple : une issue GitHub par regle, passage `candidate_to_validate` → `validated` avec votre nom et la date. Voir **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
-**Ce qui reste a faire et ou aider :** voir la **[feuille de route (ROADMAP.md)](ROADMAP.md)** — sourcing des 391 regles par lots, cles de referentiel a ajouter (PFU/PS 2026, CARMF), mise a jour annuelle de janvier, outillage communaute.
+**Ce qui reste a faire et ou aider :** voir la **[feuille de route (ROADMAP.md)](ROADMAP.md)** — validation professionnelle des regles (le sourcing IA des ancres est termine : 379/391), cles de referentiel a ajouter (PFU/PS 2026, CARMF), mise a jour annuelle de janvier, outillage communaute.
 
 ---
 
