@@ -1,6 +1,6 @@
 # Agent IA Comptable & Patrimoine
 
-Agent IA specialise en comptabilite, fiscalite des professions liberales, location meublee, gestion financiere et gestion de patrimoine. Fonctionne sur **Gemini Gems** et **ChatGPT Custom GPT**.
+Agent IA specialise en comptabilite, fiscalite des professions liberales, location meublee, gestion financiere et gestion de patrimoine. Fonctionne sur **Claude Code** (skill integre au depot), **Gemini Gems** et **ChatGPT Custom GPT**.
 
 > ## ⚠️ A lire avant toute utilisation
 >
@@ -96,6 +96,10 @@ Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa 
 README.md                               <- Ce fichier
 CONTRIBUTING.md                         <- Workflow de validation des regles
 GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un navigateur)
+.claude/skills/expert-comptable/
+  SKILL.md                              <- Skill Claude Code (auto-charge dans ce depot)
+  scripts/lookup.py                     <- Extraction ciblee : regles, articles CGI, referentiel
+  evals/evals.json                      <- Cas de test du skill
 gemini/
   00_INSTRUCTIONS_GEMINI.md             <- System prompt Gemini (avec archivage Drive)
 chatgpt/
@@ -122,6 +126,23 @@ scripts/
 ---
 
 ## Installation rapide
+
+### Claude Code (zero installation)
+
+Le skill est versionne dans le depot : **il n'y a rien a installer**.
+
+```bash
+git clone https://github.com/joachimpomme-ctrl/comptable.git
+cd comptable
+claude
+```
+
+Ouvrir le depot dans [Claude Code](https://claude.com/claude-code) : le skill `expert-comptable` (`.claude/skills/expert-comptable/`) se declenche automatiquement sur toute question fiscale, comptable ou patrimoniale. Il consulte la base `knowledge/` dans l'ordre prescrit, cite ses sources avec millesime et statut de validation, et utilise un script de lookup pour extraire regles, articles CGI et parametres chiffres sans charger les gros fichiers.
+
+```
+Exemples : "Mon client kine a encaisse 80 000 EUR en 2026, peut-il rester au micro-BNC ?"
+           "Calcule la PV de cession d'un LMNP au reel, amortissements deduits 40 000 EUR."
+```
 
 ### Gemini Gems
 
