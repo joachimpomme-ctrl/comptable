@@ -12,7 +12,7 @@ C'est la ou se joue la credibilite du corpus.
 
 | Etape | Etat | Qui |
 |-------|------|-----|
-| Ancres legales verifiees (crosswalk) | **185 / 391 `sourced`** — 206 `a_verifier` (lot M2 termine le 2026-08-26 : 167 regles verifiees, 2 corrigees, 31 precisees) | Sourcing IA par lots : prochains lots M5 LMNP, M6 patrimoine, M9 foncier/PV |
+| Ancres legales verifiees (crosswalk) | **379 / 391 `sourced`** — CHANTIER TERMINE le 2026-08-26 (373 regles verifiees en 2 passes : 15 corrigees, 90 precisees, 41 ancres precisees). Les 12 restantes sont des enonces de pratique/doctrine sans texte officiel verifiable | Re-verification annuelle lors de la mise a jour de janvier ; validation professionnelle par issues |
 | Regles validees par un professionnel | **0 / 391** | Experts-comptables, fiscalistes, CGP, notaires — une issue par regle (`[VALIDATION]` / `[CORRECTION]`) |
 
 Le sourcing IA etablit qu'une regle correspond au texte ; la validation professionnelle engage un nom sur son application. Les deux niveaux restent distincts et affiches.

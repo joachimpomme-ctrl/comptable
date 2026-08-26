@@ -31,6 +31,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : PCG art. 112-2 ; C. com. art. L.123-13
 - source_ingest : Recueil-NF-Janvier-2025.pdf, p. 26-27
 - Règle : Le compte de résultat récapitule les charges et les produits de l’exercice, sans qu’il soit tenu compte de leur date de paiement ou d’encaissement. Aucune compensation ne peut être opérée entre les postes de charges et de produits.
+- Ancre précisée (2026-08-26) : PCG art. 112-2 ; C. com. art. L.123-13 (compte de résultat) et L.123-19 (non-compensation)
 
 ### bnc-pcg-005 | regle
 - Module : M3
@@ -70,6 +71,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Les personnes physiques placées sur option ou de plein droit sous le régime réel simplifié d’imposition peuvent inscrire au compte de résultat, en fonction de leur date de paiement, les charges dont la périodicité n’excède pas un an.
 - Conditions : personnes physiques | régime réel simplifié d’imposition | périodicité n’excédant pas un an
 - Exceptions : achats
+- Précision (vérif. source officielle 2026-08-26) : Le texte cite est celui de C. com. art. L.123-26 (et non L.123-25, qui vise l'enregistrement des creances/dettes a la cloture et la dispense d'annexe) ; l'enonce omet la restriction finale du texte : « a l'exclusion des achats ».
 
 ### bnc-pcg-010 | derogation
 - Module : M3
@@ -78,6 +80,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : Recueil-NF-Janvier-2025.pdf, p. 25-26
 - Règle : Les personnes mentionnées aux articles L. 123-25 et L. 123-28 peuvent procéder à l’enregistrement comptable des encaissements et des paiements en retenant la date de l’opération figurant sur le relevé bancaire.
 - Conditions : personnes mentionnées aux articles L. 123-25 et L. 123-28
+- Ancre précisée (2026-08-26) : C. com. art. R.123-203 (sur renvoi aux personnes des art. L.123-25 et L.123-28)
 
 ### bnc-pcg-011 | obligation
 - Module : M3
@@ -101,6 +104,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. com. art. L.123-12 (livre-journal, grand-livre)
 - source_ingest : Recueil-NF-Janvier-2025.pdf, p. 20-21
 - Règle : Tout commerçant tient obligatoirement un livre-journal et un grand-livre.
+- Ancre précisée (2026-08-26) : C. com. art. R.123-173 (pris pour l'application de L.123-12)
 
 ### bnc-pcg-014 | obligation
 - Module : M3
@@ -108,6 +112,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. com. art. L.123-12 al. 1
 - source_ingest : Recueil-NF-Janvier-2025.pdf, p. 20-21
 - Règle : Les mouvements affectant le patrimoine de l’entreprise sont enregistrés opération par opération et jour par jour pour le livre-journal.
+- Ancre précisée (2026-08-26) : C. com. art. R.123-174 (et PCG art. 921-2, règl. ANC n° 2014-03) ; C. com. art. L.123-12 al. 1 pour le principe
 
 ### bnc-pcg-015 | obligation
 - Module : M3
@@ -180,6 +185,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : LES BASES DE LA COMPTABILITÉ.pdf, p. 19-26
 - Règle : Compte de résultat = explique l'enrichissement ou l'appauvrissement sur UN EXERCICE COMPTABLE (période entre 2 bilans ≈ 1 an). Bénéfice = Produits > Charges. Perte = Charges > Produits. Le résultat est AVANT impôt et HORS TAXE.
+- Précision (vérif. source officielle 2026-08-26) : C. com. art. L.123-13 : le compte de résultat récapitule les produits et les charges de l'exercice et fait apparaître, par différence, le bénéfice ou la perte ; l'enregistrement HT est exact, mais « résultat AVANT impôt » ne vaut que pour une entreprise imposée à l'IR (à l'IS, le résultat net comptable est après impôt sur les bénéfices, poste 695).
 
 ### BCG-005 | obligation
 - Module : M8
@@ -187,6 +193,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : LES BASES DE LA COMPTABILITÉ.pdf, p. 19-26
 - Règle : Obligations légales comptables: (1) conservation des documents comptables et pièces justificatives; (2) enregistrement périodique des mouvements affectant le patrimoine; (3) contrôle par inventaire au moins une fois par an; (4) établissement des comptes annuels (bilan + compte de résultat + annexe).
+- Ancre précisée (2026-08-26) : C. com. art. L.123-12 et L.123-22
 
 ### BCG-006 | règle
 - Module : M8
@@ -194,6 +201,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : LES BASES DE LA COMPTABILITÉ.pdf, p. 26-35
 - Règle : Principe de la partie double: chaque écriture comptable est équilibrée → montant débit = montant crédit. Le journal enregistre les opérations chronologiquement par pièce justificative. Le grand livre reprend toutes les écritures par compte. La balance récapitule tous les comptes avec leurs soldes: Total débits = Total crédits.
+- Ancre précisée (2026-08-26) : Regl. ANC 2014-03 (PCG) art. 921-2 ; C. com. art. R.123-174
 
 ### BCG-007 | règle
 - Module : M8
@@ -201,6 +209,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : LES BASES DE LA COMPTABILITÉ.pdf, p. 35-40
 - Règle : PCG 2018: chaque écriture doit s'appuyer sur une pièce justificative datée, établie sur support papier ou électronique fiable. Pour les comptabilités informatisées: procédure de validation interdisant toute modification ou suppression; procédure de clôture périodique pour figer la chronologie.
+- Ancre précisée (2026-08-26) : PCG (regl. ANC 2014-03) art. 912-2 et 912-3
 
 ### BCG-008 | définition
 - Module : M8
@@ -222,6 +231,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : LES BASES DE LA COMPTABILITÉ.pdf, p. 46-52
 - Règle : Capacité d'autofinancement (CAF) = Bénéfice net après impôts + Dotations aux amortissements. Représente le surplus monétaire potentiel dégagé par l'activité. Utilisations: renforcement de la structure financière, investissements, remboursement d'emprunts, dividendes, valorisation des salariés.
+- Précision (vérif. source officielle 2026-08-26) : Formule pédagogique simplifiée : la définition normalisée (méthode additive, plan comptable / analyse financière OEC-BDF) est CAF = résultat net + dotations aux amortissements, dépréciations et provisions − reprises − produits de cession d'éléments d'actif + VNC des éléments cédés − quote-part de subventions virée au résultat ; l'énoncé omet les reprises et le résultat de cession. Les utilisations citées sont exactes.
 
 ### BCG-011 | règle
 - Module : M8
@@ -244,6 +254,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : LES BASES DE LA COMPTABILITÉ.pdf, p. 55-59
 - Règle : Seuil de rentabilité (SR) = Charges fixes / Taux de marge sur coûts variables. Taux MCV = (CA − Charges variables) / CA × 100. Point mort en jours = SR / (CA annuel / 365). CAF = Résultat net + Dotations aux amortissements. BFR = Stocks + Créances clients − Dettes fournisseurs. Fonds de roulement net global (FRNG) = Capitaux permanents − Actif immobilisé net. Trésorerie nette = FRNG − BFR.
+- Précision (vérif. source officielle 2026-08-26) : SR = CF/taux de MCV, point mort = SR/(CA/365), FRNG = capitaux permanents − actif immobilisé net et TN = FRNG − BFR : définitions d'analyse financière normalisées exactes. Nuance : CAF = RN + dotations aux amortissements est la formule additive SIMPLIFIÉE (la formule complète ajoute dotations aux provisions − reprises + VNC des éléments cédés − produits de cession − quote-parts de subventions virées) ; de même le BFR complet inclut les autres créances et dettes d'exploitation (dettes fiscales et sociales, avances), pas seulement stocks + clients − fournisseurs.
 
 ## fiscalite_professionnelle_bnc_bic
 
@@ -267,6 +278,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 5-5
 - Règle : Il est recommandé d'utiliser un compte bancaire exclusivement réservé à l'activité professionnelle afin de séparer les opérations privées et professionnelles.
+- Ancre précisée (2026-08-26) : Recommandation de gestion (sans texte) ; cf. a contrario CSS art. L.613-10 (compte dedie micro-entrepreneur > 10 000 EUR)
 
 ### bnc_004 | regle
 - Module : M1
@@ -281,6 +293,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 99 ; BOI-BNC-DECLA-10-20-10
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 9-9
 - Règle : Le livre-journal doit mentionner pour les recettes le détail des sommes reçues, l'identité du client, le mode de règlement et la nature des prestations fournies.
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 99 al.2 : le livre-journal comporte « l'identité déclarée par le client ainsi que le montant, la date et la forme du versement des honoraires » — la « nature des prestations fournies » n'est pas exigée par le texte (et pour les professions soumises au secret professionnel, cette mention est écartée) ; le reste de l'énoncé est exact.
 
 ### bnc_006 | regle
 - Module : M1
@@ -386,6 +399,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 5-5
 - Règle : Le compte prélèvements personnels sert à enregistrer les retraits privés sur le compte professionnel, les dépenses privées payées avec ce compte et certaines dépenses couvertes par des forfaits.
+- Ancre précisée (2026-08-26) : Nomenclature comptable BNC (arrete du 30 janvier 1978) ; guides nationaux OG BNC
 
 ### bnc_021 | regle
 - Module : M1
@@ -435,6 +449,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : LPF art. A.47 A-1 (FEC) ; CGI art. 1729 D (amende defaut de FEC)
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 6-8
 - Règle : Avant la télétransmission de la déclaration 2035, les écritures doivent être validées et le FEC généré et sauvegardé. Les dates de validation doivent être antérieures ou concomitantes à la télétransmission.
+- Précision (vérif. source officielle 2026-08-26) : La validation des ecritures avant le depot de la declaration releve des exigences sur les comptabilites informatisees (caractere intangible/definitif des enregistrements, BOI-CF-COM-10-80-10) et le FEC est defini par LPF art. A.47 A-1 avec amende de l'art. 1729 D CGI ; mais le FEC n'a legalement a etre remis qu'en cas de verification de comptabilite (LPF art. L.47 A, I) — le generer et le sauvegarder avant la teletransmission de la 2035 est une bonne pratique, pas une obligation textuelle.
 
 ### bnc_028 | regle
 - Module : M1
@@ -442,6 +457,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : LPF art. L.13 G ; BOI-DJC-OA-20-10-20 (examen periodique de sincerite)
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 5-6
 - Règle : L'examen périodique de sincérité porte sur la déductibilité des dépenses, les amortissements et les réductions ou crédits d'impôt. Sa périodicité est de 6 ans si la comptabilité est tenue par un expert-comptable, sinon de 3 ans.
+- Ancre précisée (2026-08-26) : CGI art. 1649 quater E et 1649 quater H ; decret n. 2016-1356 du 11/10/2016 ; BOI-DJC-OA-20-10-20
 
 ### bnc_029 | table
 - Module : M1
@@ -463,6 +479,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 158, 7 (majoration absence d'OGA, supprimee a compter de l'IR 2023) ; BOI-DJC-OA
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 8-9
 - Règle : L'adhésion à une association de gestion agréée n'est pas obligatoire, mais le document indique qu'elle permet d'éviter une majoration de 25 % de l'impôt sur le revenu.
+- Précision (vérif. source officielle 2026-08-26) : Exact historiquement (CGI art. 158, 7-1° : majoration de 25 % des BIC/BNC/BA des non-adhérents), mais la LF 2021 (art. 34) l'a réduite progressivement (20 % revenus 2020, 15 % 2021, 10 % 2022) et supprimée à compter de l'imposition des revenus 2023 : l'adhésion OGA ne procure plus cet avantage (la CEDH a en outre condamné la majoration le 7/12/2023).
 
 ### bnc_032 | regle
 - Module : M1
@@ -484,6 +501,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 240 (declaration des honoraires DAS 2) ; CSS art. L.133-5-3 (DSN)
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 14-15
 - Règle : La DADS doit être remplie avant le 1er mai si le cabinet emploie des salariés. La DAS 2 doit être remplie en l'absence de salarié mais en présence d'honoraires versés, par exemple à une AGA ou au titre de rétrocessions. Le document mentionne ensuite la DSN.
+- Précision (vérif. source officielle 2026-08-26) : Le fond est exact (déclaration des honoraires obligatoire, CGI art. 240 ; DAS 2 en l'absence de salarié, dépôt admis avec la déclaration de résultats début mai — tolérance art. 344 I-0 bis, ann. III CGI), mais la référence à la « DADS » est datée : la DADS a été supprimée et remplacée par la DSN ; les employeurs déclarent désormais les honoraires via la DSN (celle d'avril N+1 au plus tard), non via une DADS « avant le 1er mai ».
 
 ### bnc_035 | regle
 - Module : M1
@@ -491,6 +509,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 9-9
 - Règle : Si la CPAM du lieu d'exercice n'a pas conclu d'accord avec l'URSSAF, la sage-femme doit aussi accomplir les formalités auprès de l'URSSAF au plus tard dans les 8 jours suivant le début de l'activité. Le CFE centralise ensuite les informations vers les organismes sociaux et fiscaux.
+- Précision (vérif. source officielle 2026-08-26) : Le delai de 8 jours suivant le debut d'activite pour la declaration est confirme (urssaf.fr, praticiens et auxiliaires medicaux), mais le circuit decrit est date : depuis le 1er janvier 2023 les CFE ont disparu, la declaration se fait via le guichet unique des formalites d'entreprises (procedure INPI relayee par l'Urssaf), apres enregistrement aupres de la CPAM ; la clause « si la CPAM n'a pas conclu d'accord avec l'URSSAF » ne correspond plus au dispositif en vigueur.
 
 ### bnc_036 | regle
 - Module : M1
@@ -504,7 +523,8 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : Loi n78-17 du 06/01/1978 (informatique et libertes) ; RGPD (UE) 2016/679, art. 9 (donnees de sante)
 - source_ingest : Le_Plus-La_comptabilite_du_professionnel_liberal.pdf, p. 12-14
-- Règle : Les fichiers patients contiennent des données sensibles. Le document indique qu'une déclaration CNIL n'est pas nécessaire pour des fichiers patients sécurisés, mais qu'une déclaration doit être faite avant la mise en place d'un système informatique destiné à sécuriser ces données.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Les fichiers patients contiennent des données sensibles. Le document indique qu'une déclaration CNIL n'est pas nécessaire pour des fichiers patients sécurisés, mais qu'une déclaration doit être faite avant la mise en place d'un système informatique destiné à sécuriser ces données.
+- Correction (vérif. source officielle 2026-08-26) : CNIL (fiche « Professionnels de santé : avec le RGPD, faut-il encore déclarer vos fichiers ? ») : depuis le 25 mai 2018, plus AUCUNE déclaration préalable des fichiers patients à la CNIL ; le régime déclaratif de la loi de 1978 est remplacé par l'accountability (registre des traitements, information des patients, sécurité, AIPD le cas échéant). L'affirmation qu'une déclaration doit être faite avant la mise en place du système est contraire au droit en vigueur.
 
 ### bnc_038 | regle
 - Module : M1
@@ -1886,6 +1906,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : L'intéressement est un dispositif facultatif liant les salariés aux résultats ou performances de leur entreprise. Accord obligatoire (3 ans, renouvelable). Bénéficiaires: tous les salariés (avec éventuelle ancienneté ≤ 3 mois). Plafond individuel: 20 % du total des salaires bruts annuels du bénéficiaire (dans la limite de 75 % du PASS soit 35 325 € en 2025). Fiscalité: exonéré d'impôt sur le revenu si placé sur un plan d'épargne (PEE, PER) dans les 15 jours; soumis à l'IR si versé en espèces. Dans tous les cas: exonération de cotisations sociales (sauf CSG/CRDS).
 - Seuils : `{"plafond_pct_salaires": 20, "plafond_pct_PASS": 75, "plafond_euros_2025": 35325}`
 - Exceptions : Soumis à CSG/CRDS quelle que soit l'utilisation
+- Précision (vérif. source officielle 2026-08-26) : Deux imprecisions : (1) depuis la loi ASAP du 7/12/2020, l'accord d'interessement est conclu pour une duree comprise entre UN et TROIS ans (C. trav. art. L.3312-5), et non plus 3 ans fixes ; (2) le plafond de 20 % du total des salaires bruts est un plafond GLOBAL de l'enveloppe (L.3314-8, al. 1), le plafond INDIVIDUEL etant les trois quarts du PASS (L.3314-8, al. 2), soit 35 325 EUR en 2025 et 36 045 EUR en 2026 (PASS 48 060). Le reste (facultatif, anciennete max 3 mois, exoneration IR si placement sous 15 jours, exoneration de cotisations sauf CSG/CRDS) est exact.
 
 ### ES-002 | définition
 - Module : M11
@@ -1896,6 +1917,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : entreprise ≥ 50 salariés
 - Seuils : `{"seuil_salaries": 50, "blocage_ans": 5, "formule_taux_capitaux_propres_pct": 5}`
 - Exceptions : Cas de déblocage anticipé: mariage, PACS, naissance 3ème enfant, divorce, invalidité, décès, cessation contrat, création d'entreprise, acquisition RP
+- Précision (vérif. source officielle 2026-08-26) : La condition d'effectif « 12 mois consécutifs ou non sur 3 ans » est la règle antérieure à la loi PACTE : depuis la loi n° 2019-486 (art. L.3322-1 C. trav. modifié), l'obligation s'applique à compter du premier exercice ouvert après une période de CINQ années civiles consécutives d'atteinte du seuil de 50 salariés (décompte CSS art. L.130-1). Le reste (formule légale RSP de l'art. L.3324-1, blocage 5 ans, exonérations IR et cotisations sauf CSG/CRDS) est exact.
 
 ### ES-003 | définition
 - Module : M11
@@ -1906,6 +1928,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"versement_max_pct_salaire": 25, "abondement_max_pct_versement": 300, "abondement_max_pct_PASS": 8, "abondement_max_euros_2025": 3768, "indisponibilite_ans": 5}`
 - Taux : `{"PS_sortie_pct": 17.2}`
 - Exceptions : Cas de déblocage anticipé similaires à la participation | Abondement majoré possible pour les PEE investis en titres de l'entreprise
+- Précision (vérif. source officielle 2026-08-26) : Énoncé exact millésime 2025 (C. trav. L.3332-10 : versements ≤ 25 % de la rémunération annuelle brute ; L.3332-11 et R.3332-8 : abondement ≤ 300 % du versement et 8 % du PASS, soit 3 768 € en 2025 ; L.3332-25 : blocage 5 ans ; CGI 81, 18° a : exonération IR ; PS 17,2 % à la sortie) — mais en 2026 le plafond d'abondement passe à 8 % × 48 060 = 3 844,80 € (PASS 2026 = 48 060 €, référentiel sourcé).
 
 ### ES-004 | définition
 - Module : M11
@@ -1916,6 +1939,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"abondement_max_pct_PASS": 16, "abondement_max_euros_2025": 7536}`
 - Taux : `{"PS_sortie_pct": 17.2}`
 - Exceptions : Déblocage anticipé pour achat RP possible (contrairement au PERCO classique) | PERCO existants: non souscription de nouveaux depuis oct 2020 mais alimentation possible
+- Précision (vérif. source officielle 2026-08-26) : Tout est exact millésime 2025 (C. mon. fin. art. L.224-13 s. issus de la loi PACTE ; abondement plafonné à 16 % du PASS = 7 536 € en 2025, ≤ 3× les versements ; sortie en capital : versements d'épargne salariale exonérés d'IR, gains soumis aux seuls PS 17,2 % ; anciens PERCO toujours alimentables), mais le PASS 2026 est de 48 060 € (référentiel local), soit un plafond d'abondement porté à 7 689,60 € en 2026.
 
 ### ES-005 | règle
 - Module : M11
@@ -1931,6 +1955,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. trav. art. L.3315-2 (interessement affecte a un plan, exoneration IR) ; C. mon. fin. art. L.224-40 (transferts)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 46-48
 - Règle : Stratégies d'optimisation: (1) Placer l'intéressement sur le PEE ou PERCOL dans les 15 jours → exonération IR immédiate; (2) Maximiser l'abondement employeur (chaque euro d'abondement est exonéré d'IR et de cotisations); (3) Utiliser le PEE comme épargne intermédiaire (5 ans) avant le PER (retraite); (4) Transférer les droits PERCO vers PER individuel pour profiter d'une gestion plus large; (5) En cas de déblocage anticipé (acquisition RP), le montant est exonéré d'IR mais soumis aux PS 17,2 % sur les gains.
+- Précision (vérif. source officielle 2026-08-26) : C. trav. art. L.3315-2 : l'exonération d'IR de l'intéressement affecté à un plan d'épargne dans les 15 jours n'est acquise que DANS LA LIMITE de 75 % du PASS (limite omise) ; de même l'abondement n'est exonéré que dans les plafonds de l'art. L.3332-11 (300 % du versement, 8 % PASS) et reste soumis à CSG-CRDS — « chaque euro » est excessif. Les points 3, 4 et 5 (blocage 5 ans, transfert L.224-40 CMF, déblocage RP exonéré d'IR avec PS 17,2 % sur les gains) sont exacts.
 
 ### FORM-003 | formule
 - Module : FORM
@@ -1970,6 +1995,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : régime réel foncier
 - Seuils : `{"plafond_standard": 10700, "plafond_renovation_energetique": 21400, "report_interets_annees": 10}`
 - Exceptions : La fraction au-delà de 10 700 € (ou 21 400 €) est reportable sur revenus fonciers des 10 ans suivants | La clause de location 3 ans obligatoire pour imputation sur revenu global
+- Précision (vérif. source officielle 2026-08-26) : Conforme a CGI art. 156, I-3 (plafond 10 700 EUR hors interets, report de l'excedent et des interets sur les revenus fonciers de 10 ans, plafond double 21 400 EUR pour travaux de renovation energetique faisant passer le bien d'une classe E/F/G a A/B/C/D) ; mais la fenetre « payes entre 2023 et 2025 » est datee : le dispositif exige un devis accepte a compter du 5/11/2022 et a ete prolonge aux depenses payees jusqu'au 31/12/2027.
 
 ### RISK-003 | risque
 - Module : FORM
@@ -1985,15 +2011,17 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 968 (usufruit impose en valeur PP) et art. 964 (foyer fiscal IFI) ; LPF art. L.64 (abus de droit)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 16-16
-- Règle : RISQUE: Donation temporaire d'usufruit à un enfant rattaché au foyer fiscal des parents pour réduire l'IFI → inopposable à l'administration fiscale. Le bien reste dans l'assiette IFI du donateur si les enfants sont rattachés au foyer fiscal (leurs biens/revenus sont agrégés dans le foyer fiscal des parents). Nécessite que les enfants soient DÉTACHÉS du foyer fiscal pour que la donation temporaire d'usufruit sorte le bien de l'assiette IFI.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : RISQUE: Donation temporaire d'usufruit à un enfant rattaché au foyer fiscal des parents pour réduire l'IFI → inopposable à l'administration fiscale. Le bien reste dans l'assiette IFI du donateur si les enfants sont rattachés au foyer fiscal (leurs biens/revenus sont agrégés dans le foyer fiscal des parents). Nécessite que les enfants soient DÉTACHÉS du foyer fiscal pour que la donation temporaire d'usufruit sorte le bien de l'assiette IFI.
+- Correction (vérif. source officielle 2026-08-26) : CGI art. 965 (corpus local) : l'assiette IFI comprend les actifs des redevables « ainsi qu'à leurs enfants mineurs, lorsqu'elles ont l'administration légale des biens de ceux-ci » — le critère est la MINORITÉ (administration légale), pas le rattachement au foyer fiscal IR. Un enfant majeur rattaché à l'IR n'appartient pas au foyer IFI : la donation temporaire d'usufruit à son profit sort le bien de l'assiette du donateur (sous réserve d'abus de droit, LPF L.64) sans « détachement » nécessaire ; à l'inverse, pour un enfant mineur, le détachement IR ne changerait rien.
 
 ### RISK-006 | risque
 - Module : FORM
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 150 VB, II (reintegration des amortissements LMNP a la PV, LDF 2025 art. 84) ; BOI-RFPI-PVI
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 69-70
-- Règle : RISQUE: LMNP au réel depuis de nombreuses années — amortissements déduits depuis 2025 réintégrés dans la base PV à la cession. Un investisseur qui amorti significativement son bien et le revend après plusieurs années de déduction verra sa PV imposable augmenter du montant des amortissements déduits depuis 2025. Impact d'autant plus fort si le bien est vendu peu après la mise en location (pas de bénéfice des abattements de durée de détention).
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : RISQUE: LMNP au réel depuis de nombreuses années — amortissements déduits depuis 2025 réintégrés dans la base PV à la cession. Un investisseur qui amorti significativement son bien et le revend après plusieurs années de déduction verra sa PV imposable augmenter du montant des amortissements déduits depuis 2025. Impact d'autant plus fort si le bien est vendu peu après la mise en location (pas de bénéfice des abattements de durée de détention).
 - Exceptions : Résidences étudiantes/apprentissage: exception | Plus de 22 ans de détention: exonération IR (les amortissements réintégrés restent soumis aux PS)
+- Correction (vérif. source officielle 2026-08-26) : CGI art. 150 VB, III (créé par LF 2025, art. 84) : pour les cessions intervenues à compter du 15 février 2025, le prix d'acquisition est minoré du montant TOTAL des amortissements admis en déduction pendant la période de location (y compris ceux déduits avant 2025) — et non des seuls « amortissements déduits depuis 2025 » comme l'énonce la règle ; correction : réintégration de l'ensemble des amortissements déduits, quelle que soit leur date.
 
 ### RISK-007 | risque
 - Module : FORM
@@ -2027,6 +2055,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. civ. art. 1569 a 1581 (participation aux acquets)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 6-6
 - Règle : Participation aux acquêts: fonctionne comme séparation de biens pendant le mariage; à la dissolution → fonctionne comme communauté (enrichissement de chacun partagé en valeur). Calcul: créance de participation = (patrimoine final - patrimoine originaire)/2. Seul l'enrichissement est partagé, pas les dettes.
+- Précision (vérif. source officielle 2026-08-26) : Principe exact (C. civ. art. 1569 : fonctionnement en séparation de biens pendant le mariage, participation en valeur à l'enrichissement à la dissolution ; art. 1575, al. 2 : le déficit est supporté entièrement par l'époux, les dettes ne se partagent pas). Nuance sur la formule : la créance de participation n'est pas (patrimoine final − patrimoine originaire)/2 de chaque époux, mais, après compensation des acquêts nets des DEUX époux, la moitié de l'EXCÉDENT — l'époux le moins enrichi est créancier de la moitié de la différence entre les deux enrichissements (C. civ. art. 1575, al. 1).
 
 ### PAT-004 | règle
 - Module : M6
@@ -2050,6 +2079,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 17-18
 - Règle : Ordre de dévolution légale: (1) enfants/petits-enfants (excluent tous les autres); (2) si marié+enfants: conjoint reçoit 1/4 PP ou totalité usufruit (option); si marié sans enfants: conjoint hérite selon présence des parents; (3) si pas d'enfants ni conjoint: parents 50% chacun; frères et sœurs reçoivent la moitié si parents en vie, sinon la totalité. PACS: aucun droit successoral légal → testament obligatoire.
 - Exceptions : Enfants non communs: conjoint reçoit seulement 1/4 en PP (pas de choix)
+- Précision (vérif. source officielle 2026-08-26) : C. civ. art. 757 : l'option du conjoint entre usufruit de la totalité et 1/4 en pleine propriété n'existe que « lorsque tous les enfants sont issus des deux époux » ; en présence d'un enfant non commun, le conjoint ne reçoit que 1/4 en propriété — condition omise par la règle. Le reste (ordre des héritiers art. 734 et s., art. 738 pour parents/frères et sœurs, absence de vocation légale du partenaire pacsé) est conforme.
 
 ### PAT-007 | obligation
 - Module : M6
@@ -2059,6 +2089,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Processus: (1) identification héritiers par le notaire; (2) évaluation du patrimoine (actif - passif); (3) dévolution successorale; (4) déclaration de succession à l'administration fiscale dans les 6 mois après le décès; (5) partage des biens (amiable ou judiciaire). Droit de partage: 2,5% de la valeur nette de l'actif partagé.
 - Seuils : `{"delai_declaration_mois": 6}`
 - Taux : `{"droit_partage_pct": 2.5}`
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 746 confirmé : droit de partage de 2,50 % (1,1 % seulement pour les partages consécutifs à divorce/rupture de PACS) ; mais le délai de 6 mois de l'art. 641 ne vaut que si le décès est survenu en France métropolitaine — il est d'un an dans tous les autres cas, condition manquante dans l'énoncé.
 
 ### PAT-008 | règle
 - Module : M6
@@ -2077,6 +2108,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Abattements fiscaux sur donations (reconstitution tous les 15 ans): parents vers enfants: 100 000 € par parent et par enfant; grands-parents vers petits-enfants: 31 865 €; arrière-grands-parents vers arrière-petits-enfants: 5 310 €. Abattement supplémentaire don en numéraire: 31 865 € (donateur < 80 ans, donataire majeur). Don affecté à création d'entreprise ou construction résidence principale: exonération 100 000 €.
 - Seuils : `{"abattement_parent_enfant": 100000, "abattement_grands_parents": 31865, "abattement_arriere_grands_parents": 5310, "abattement_don_numeraire": 31865, "exoneration_creation_entreprise": 100000, "delai_reconstitution_ans": 15}`
 - Exceptions : Enfant handicapé: abattement supplémentaire de 159 325 € (soit 259 325 € total par parent)
+- Précision (vérif. source officielle 2026-08-26) : Confirmé par CGI art. 779 I (100 000 €), 790 B (31 865 € petits-enfants), 790 G (31 865 €, donateur < 80 ans, donataire majeur), 784 (rappel 15 ans) ; NUANCE : l'exonération de 100 000 € « création d'entreprise ou résidence principale » était le dispositif temporaire 790 A bis version 2020 (éteint le 30/06/2021) ; le 790 A bis issu de la LF 2025 (15/02/2025-31/12/2026) vise l'achat d'un logement NEUF ou la rénovation énergétique de la résidence principale (100 000 €/donateur, 300 000 €/donataire), pas la création d'entreprise.
 
 ### PAT-010 | définition
 - Module : M6
@@ -2084,6 +2116,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. civ. art. 843 et s. (rapport) ; art. 1075 (donation-partage) ; CGI art. 669 (demembrement)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 24-24
 - Règle : Formes de donation: (1) Donation en avancement de part: pour héritiers réservataires (enfants/petits-enfants), rapportable à la succession; (2) Donation hors part: pour toute personne, pas rapportable; (3) Donation-partage: donne ET partage de son vivant, non rapportable, évaluée au jour de la donation; (4) Démembrement de propriété: donateur garde l'usufruit, enfants reçoivent la nue-propriété → à son décès, usufruit s'éteint, enfants deviennent PP SANS droits de succession.
+- Précision (vérif. source officielle 2026-08-26) : Exact pour le rapport (C. civ. 843 ; les biens compris dans une donation-partage ne sont pas rapportables) et pour l'extinction de l'usufruit au décès sans imposition (CGI art. 1133) ; MAIS l'évaluation des biens au jour de la donation-partage (et non au décès) suppose les conditions de l'art. 1078 C. civ. : tous les héritiers réservataires allotis et acceptants, pas de réserve d'usufruit sur une somme d'argent — condition manquante.
 
 ### PAT-011 | règle
 - Module : M6
@@ -2098,9 +2131,10 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : C. civ. art. 805 (renonciation) ; art. 754 (representation) ; CGI art. 785
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 22-22
-- Règle : Un enfant peut renoncer à sa part de succession pour que ses propres enfants (petits-enfants du défunt) héritent à sa place (saut de génération). Délai de renonciation: 4 mois après le décès. Les héritiers venant en représentation se partagent l'abattement fiscal et le tarif du renonçant. Formulaire Cerfa n°15828*05 au greffe du tribunal judiciaire.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Un enfant peut renoncer à sa part de succession pour que ses propres enfants (petits-enfants du défunt) héritent à sa place (saut de génération). Délai de renonciation: 4 mois après le décès. Les héritiers venant en représentation se partagent l'abattement fiscal et le tarif du renonçant. Formulaire Cerfa n°15828*05 au greffe du tribunal judiciaire.
 - Seuils : `{"delai_renonciation_mois": 4}`
 - Exceptions : Renonciation est un acte irrévocable et total (pas possible de renoncer partiellement)
+- Correction (vérif. source officielle 2026-08-26) : Il n'existe pas de « delai de renonciation de 4 mois apres le deces » : l'heritier ne peut etre contraint d'opter pendant les 4 premiers mois (C. civ. art. 771) et peut renoncer tant que l'option n'est pas prescrite (10 ans, art. 780) ; le reste (representation du renoncant art. 754, partage de l'abattement entre representants CGI art. 779, formulaire Cerfa 15828 au greffe du tribunal judiciaire ou devant notaire) est exact.
 
 ### PAT-013 | règle
 - Module : M6
@@ -2131,6 +2165,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"Pinel_plafond_prix": 300000, "Pinel_plafond_m2": 5500, "CensiBourvard_plafond": 300000, "Malraux_plafond": 400000}`
 - Taux : `{"Pinel_6ans": 12, "Pinel_9ans": 18, "Pinel_12ans": 21, "CensiBouvard": 11, "Malraux_zone_1": 22, "Malraux_zone_2": 30}`
 - Exceptions : Malraux hors plafonnement niches fiscales
+- Précision (vérif. source officielle 2026-08-26) : Énoncé daté : le Pinel est fermé aux investissements réalisés après le 31/12/2024 et les taux 12/18/21 % sont ceux d'avant la réduction 2023-2024 (9/12/14 % en 2024 pour le Pinel classique, 12/18/21 % réservés au Pinel+) ; le Censi-Bouvard (art. 199 sexvicies) est abrogé pour les acquisitions depuis le 31/12/2022. Denormandie (prorogé) et Malraux (22/30 %, plafond 400 000 € sur 4 ans) restent en vigueur.
 
 ### PAT-016 | règle
 - Module : M6
@@ -2140,6 +2175,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Intérêts de la SCI: (1) facilite transmission via donation de parts (démembrement possible: parents gardent usufruit+loyers, enfants nue-propriété → PP sans droits de succession au décès); (2) protection des locaux professionnels de la faillite de l'entreprise; (3) responsabilité des associés: indéfinie mais divisible (chacun à hauteur de ses parts). SCI soumise à IS de plein droit si elle fait de la location meublée (activité commerciale → IS obligatoire). Option IS irrévocable: perd l'abattement durée détention PV immobilières.
 - Seuils : `{"obligation_comptabilite_bilan": 1550000, "obligation_comptabilite_CA": 3100000, "obligation_comptabilite_salaries": 50}`
 - Exceptions : SCI résidence principale: perd abattement IFI 30% et droit au logement du conjoint survivant
+- Précision (vérif. source officielle 2026-08-26) : IS de plein droit en cas de location meublée habituelle confirmé (CGI art. 206, 2 ; activité commerciale art. 35), mais avec tolérance administrative : pas d'assujettissement si les recettes commerciales n'excèdent pas 10 % des recettes totales (BOI-IS-CHAMP-10-30) ; en outre « option IS irrévocable » est datée : depuis 2019, la renonciation est possible jusqu'au 5e exercice suivant l'option (CGI art. 239, 1), l'irrévocabilité ne devenant définitive qu'ensuite.
 
 ### PAT-017 | obligation
 - Module : M6
@@ -2148,6 +2184,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 48-48
 - Règle : Comptabilité obligatoire pour SCI: assujettie à TVA; soumise à IS; construction-vente ou placement collectif; taille importante (≥ 2 des 3 seuils: 1 550 000 € bilan, 3 100 000 € CA, 50 salariés); statuts imposant cette formalité. Pour les autres SCI (IR): pas d'obligation légale mais comptabilité de trésorerie fortement recommandée. Une SCI sans vie sociale (pas d'AG annuelle, pas de comptes) risque d'être requalifiée en société fictive.
 - Seuils : `{"bilan_seuil": 1550000, "CA_seuil": 3100000, "salaries_seuil": 50}`
+- Ancre précisée (2026-08-26) : C. com. art. L.612-1 et R.612-1 (seuils) ; CGI art. 206 ; BOI-BIC-DECLA
 
 ### PAT-018 | règle
 - Module : M6
@@ -2158,6 +2195,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"abattement_personne_seule": 4600, "abattement_couple": 9200, "seuil_taux_7_5": 150000}`
 - Taux : `{"PFU_standard": 12.8, "PFU_plus8ans_moins150k": 7.5, "PS": 17.2}`
 - Exceptions : Option pour le barème progressif IR possible lors de la déclaration de revenus
+- Précision (vérif. source officielle 2026-08-26) : Structure et taux exacts (PFL 35 %/15 %/7,5 % avant 27/09/2017 ; 12,8 % ou 7,5 % après ; abattements 4 600/9 200 € après 8 ans confirmés par CGI art. 125-0 A, al. 4 ; PS 17,2 % maintenus sur l'assurance-vie en 2026) ; NUANCE : le seuil de 150 000 € s'apprécie sur les PRIMES VERSÉES nettes de remboursements au 31/12 N-1 (CGI art. 200 A, 1-B-2°), non sur l'« encours » du contrat, et avant 8 ans le 12,8 % s'applique quel que soit le montant des primes.
 
 ### PAT-019 | règle
 - Module : M6
@@ -2182,6 +2220,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 58-59
 - Règle : Compartiment versements volontaires: OPTION A (déduction à l'entrée) → sortie en rente: IR régime rentes viagères à titre gratuit (abattement 10%) + PS; sortie en capital: partie capital au barème IR + PV au PFU 30%. OPTION B (pas de déduction) → sortie en rente: IR régime rentes à titre onéreux (fraction imposable selon âge: 70%/<50 ans, 50%/50-59 ans, 40%/60-69 ans, 30%/>69 ans) + PS; sortie en capital: PV uniquement au PFU. Compartiment épargne salariale: exonération IR sur le capital en sortie; PV soumises aux PS 17,2%.
 - Taux : `{"PFU": 30, "PS": 17.2}`
+- Précision (vérif. source officielle 2026-08-26) : Architecture exacte (versements déduits : rente imposée comme pension avec abattement 10 % + PS, capital au barème IR et gains au PFU ; versements non déduits : rente à titre onéreux avec fractions imposables 70 %/<50 ans, 50 %/50-59, 40 %/60-69, 30 %/>69 — CGI art. 158, 6 — et gains seuls au PFU ; épargne salariale : capital exonéré d'IR, gains aux seuls PS). Nuance millésime : depuis la LFSS 2026 (art. 12), les prélèvements sociaux sur les revenus du capital passent de 17,2 % à 18,6 %, soit un PFU global d'environ 31,4 % au lieu de 30 % (valeurs 2025 citées par la règle).
 
 ### PAT-022 | règle
 - Module : M6
@@ -2192,6 +2231,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : personne physique majeure | domicile fiscal France
 - Seuils : `{"plafond_versement": 150000}`
 - Exceptions : PEA-PME: plafond complémentaire de 225 000 € | PEA jeunes: pour 18-25 ans encore rattachés
+- Précision (vérif. source officielle 2026-08-26) : Plafond 150 000 EUR (C. mon. fin. art. L.221-30) et regles d'eligibilite exactes, mais « retrait avant 5 ans = cloture automatique » est incomplet : l'art. L.221-32, II prevoit des exceptions sans cloture (licenciement, invalidite, mise a la retraite anticipee du titulaire ou de son conjoint/partenaire, affectation a une creation ou reprise d'entreprise).
 
 ### PAT-023 | règle
 - Module : M6
@@ -2200,6 +2240,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 63-64
 - Règle : PEA fiscalité: retrait avant 5 ans: PFU 12,8% sur les gains (ou barème IR sur option) + PS 17,2%. Retrait après 5 ans: gains exonérés d'IR + PS 17,2%. Sortie en rente viagère après 8 ans: exonération totale d'IR sur la rente; fraction déterminée selon âge soumise aux PS. Compte-titres ordinaire: dividendes et PV soumis au PFU 12,8% + PS 17,2% (ou barème IR option); dividendes avec option barème: abattement 40% sur les dividendes.
 - Taux : `{"PFU": 12.8, "PS": 17.2, "abattement_dividendes_bareme": 40}`
+- Précision (vérif. source officielle 2026-08-26) : Tout est exact (retrait < 5 ans : 12,8 % + PS 17,2 % ; > 5 ans : exoneration IR + PS ; CTO : PFU ou bareme avec abattement de 40 % sur dividendes) SAUF la condition de la rente viagere : depuis la loi PACTE, la rente est exoneree d'IR des lors que le PEA se denoue APRES 5 ANS (CGI art. 157, 5. ter ; BOI-RPPM-RCM-40-50-30), et non 8 ans ; la fraction de la rente imposable aux PS selon l'age reste exacte.
 
 ### PAT-024 | définition
 - Module : M6
@@ -2217,6 +2258,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Pension de réversion des régimes obligatoires: réservée aux personnes ayant été MARIÉES avec l'assuré décédé (ni concubins ni pacsés). Montant: 54% de la pension de retraite du défunt (minimum et maximum). Partagée au prorata de la durée du mariage si ex-conjoints divorcés. Peut être majorée (charges enfants, ressources faibles, invalidité). Conditions d'attribution: âge, ressources du ménage, situation maritale (variables selon régime de base ou complémentaire).
 - Conditions : mariage obligatoire | conditions de ressources pour certains régimes
 - Seuils : `{"taux_reversion_pct": 54}`
+- Précision (vérif. source officielle 2026-08-26) : Confirmé pour le régime général : réversion réservée aux conjoints mariés (ni concubins ni pacsés), 54 % de la pension du défunt (avec minimum et maximum), partage entre conjoints/ex-conjoints au prorata de la durée de mariage, conditions d'âge et de ressources (CSS L.353-1 s. ; service-public F13104) ; nuance : le taux de 54 % ne vaut pas pour tous les régimes obligatoires — la réversion Agirc-Arrco est de 60 % (sans condition de ressources).
 
 ### PAT-026 | règle
 - Module : M6
@@ -2226,6 +2268,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Pension alimentaire entre parents et enfants (et gendres/belles-filles ↔ beaux-parents si mariés): déductible intégralement des revenus imposables si hors foyer fiscal; si enfant majeur au domicile: déduction forfaitaire 3 592 € (logement + nourriture), autres dépenses réelles justifiées dans la limite de 6 042 € par enfant (12 084 € si marié/pacsé). Abandon de famille > 2 mois: peine d'emprisonnement jusqu'à 2 ans et 15 000 € d'amende.
 - Conditions : enfant hors foyer fiscal
 - Seuils : `{"deduction_forfaitaire_domicile": 3592, "plafond_deduction": 6042, "plafond_marie": 12084}`
+- Précision (vérif. source officielle 2026-08-26) : Principe exact (CGI art. 156, II-2° ; art. 205 s. C. civ. pour l'obligation alimentaire, y compris gendres/belles-filles ; C. pén. art. 227-3 : abandon de famille = 2 ans d'emprisonnement et 15 000 € d'amende), mais les montants cités sont millésimés revenus 2021 : pour les revenus 2024 (déclaration 2025) le forfait logement-nourriture est de 4 039 € et le plafond de déduction de 6 794 € par enfant majeur (13 588 € si marié/pacsé) ; revenus 2025 : 4 075 € / 6 855 €.
 
 ### PAT-027 | règle
 - Module : M6
@@ -2236,6 +2279,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : infirmité empêchant une activité professionnelle normale
 - Seuils : `{"abattement_specifique": 159325, "abattement_total_par_parent": 259325, "plafond_reduction_contrat": 1525, "majoration_par_enfant": 300}`
 - Taux : `{"reduction_impot_pct": 25}`
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 779, II confirmé : abattement de 159 325 € pour l'héritier ou donataire incapable de travailler (cumulable avec les 100 000 €, soit 259 325 €) ; contrat épargne handicap : réduction de 25 % des primes, plafond 1 525 € + 300 €/enfant (CGI art. 199 septies) ; NUANCE : le montant AAH cité (903,60 €/mois) est le taux plein 2021 — depuis le 1er avril 2026 il est de 1 041,59 €/mois (décret n° 2026-229 du 30/03/2026).
 
 ### PAT-028 | règle
 - Module : M6
@@ -2244,6 +2288,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 17-17
 - Règle : Rattachement enfant majeur au foyer fiscal: conditions: < 21 ans (ou < 25 ans si étudiant) au 1er janvier de l'année. Avantage: majoration du quotient familial. Économie d'impôt plafonnée: 1 592 €/enfant (les 2 premiers), 3 184 € à partir du 3ème, 3 756 € pour parent isolé. Réductions supplémentaires: 153 € (lycée) / 183 € (université). Job étudiant: revenus exonérés jusqu'à 3 SMIC mensuels; gratification stage: exonération jusqu'au SMIC annuel. Inconvénient: peut faire perdre bourses/aides sociales calculées sur les revenus des parents.
 - Seuils : `{"age_max_sans_etudes": 21, "age_max_etudes": 25, "plafond_qf_par_enfant": 1592, "plafond_3eme_enfant": 3184, "plafond_parent_isole": 3756, "reduction_lycee": 153, "reduction_universite": 183}`
+- Précision (vérif. source officielle 2026-08-26) : Structure exacte (rattachement < 21 ans ou < 25 ans étudiant, CGI 6-3 ; réductions frais de scolarité 153 €/183 €, CGI 199 quater F ; jobs étudiants < 26 ans exonérés à hauteur de 3 SMIC mensuels, CGI 81, 36° ; gratifications de stage exonérées jusqu'au SMIC annuel), MAIS les plafonds cités sont datés : CGI art. 197, I-2 (corpus millésime 2026) fixe l'avantage maximal de quotient familial à 1 807 € par demi-part (1 592 € = valeur revenus 2022) ; les montants dérivés (3 184 €, 3 756 €) sont à actualiser en conséquence.
 
 ### PAT-029 | règle
 - Module : M6
@@ -2254,6 +2299,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"preavis_nu_mois": 6, "preavis_meuble_mois": 3, "depot_restitution_mois_max": 2, "depot_restitution_etdl_conformes_mois": 1}`
 - Taux : `{"penalite_retard_pct_loyer": 10}`
 - Exceptions : Locataire > 65 ans avec ressources faibles: protection spéciale, bailleur doit proposer relogement
+- Ancre précisée (2026-08-26) : Loi 89-462 du 06/07/1989, art. 15 (congé, location nue), art. 25-8 (congé, meublé) et art. 22 (dépôt de garantie)
 
 ### PAT-030 | règle
 - Module : M6
@@ -2261,15 +2307,17 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. assur. art. L.113-12-2 et L.313-30 (resiliation infra-annuelle, loi Lemoine 2022-270 du 28/02/2022)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 48-48
 - Règle : Loi Lemoine (fév. 2022): possibilité de résilier l'assurance de prêt immobilier à TOUT MOMENT (plus uniquement à date anniversaire). Délégation d'assurance: souscrire auprès d'un autre assureur que la banque permet des économies importantes (jusqu'à plusieurs milliers d'euros pour jeunes emprunteurs en bonne santé). Banque dispose de 10 jours pour accepter ou refuser (uniquement si garanties non équivalentes).
+- Précision (vérif. source officielle 2026-08-26) : Resiliation a tout moment exacte (loi n 2022-270 du 28/02/2022 ; C. assur. art. L.113-12-2 ; prets nouveaux au 1/6/2022, stock au 1/9/2022) ; mais le delai de reponse du preteur est de 10 jours OUVRES (C. conso. art. L.313-31) et l'ancre L.313-30 releve du code de la consommation, non du code des assurances.
 
 ### PAT-031 | règle
 - Module : M6
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 199 decies H (reduction GFI) ; art. 793, 2-3 (exoneration DMTG) ; art. 976 (IFI)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 60-60
-- Règle : Parts de GFI (groupements forestiers d'investissement): réduction d'impôt 18% du prix d'acquisition dans la limite de 5 700 € (personne seule) ou 11 400 € (couple). Parts exclues de l'assiette IFI sous conditions. Exonération droits de mutation à titre gratuit sur 75% de la valeur si détention ≥ 2 ans avant transmission par donation/succession. Placement long terme (≥ 12 ans), rendement ~2%/an nets de frais.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Parts de GFI (groupements forestiers d'investissement): réduction d'impôt 18% du prix d'acquisition dans la limite de 5 700 € (personne seule) ou 11 400 € (couple). Parts exclues de l'assiette IFI sous conditions. Exonération droits de mutation à titre gratuit sur 75% de la valeur si détention ≥ 2 ans avant transmission par donation/succession. Placement long terme (≥ 12 ans), rendement ~2%/an nets de frais.
 - Seuils : `{"plafond_personne_seule": 5700, "plafond_couple": 11400, "duree_min_transmission_ans": 2}`
 - Taux : `{"reduction_impot_pct": 18, "exoneration_mutation_pct": 75}`
+- Correction (vérif. source officielle 2026-08-26) : La reduction d'impot de 18 % plafonnee a 5 700/11 400 EUR (CGI art. 199 decies H) a pris fin au 31/12/2022 : depuis le 1/1/2023 (LF 2023), la souscription de parts de GFI ouvre droit a un CREDIT d'impot de 25 % dans la limite de 6 250 EUR (personne seule) / 12 500 EUR (couple) - CGI art. 200 quindecies (DEFI foret unifie, proroge). Les autres elements (exoneration DMTG de 75 % pour parts detenues plus de 2 ans, CGI art. 793, 1-3. ; traitement IFI favorable art. 976 II) restent exacts.
 
 ### CGP-001 | définition
 - Module : M7
@@ -2357,6 +2405,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : Livret-daccueil-2-Optimiser-un-patrimoine-familial-et_conseiller-sur-sa-gestion-en-professionnel-certifie.pdf, p. 74-77
 - Règle : Certification CGPC (Conseiller en Gestion de Patrimoine Certifié) enregistrée au RNCP niveau 7 (grade master): 2 paliers — CFC (Conseiller Financier Certifié, palier 1, 1 an expérience) et E-CGPC (Expert-Conseil en Gestion de Patrimoine Certifié, palier 2, 3 ans expérience, cas complexes). Engagement éthique en 8 principes: intérêt du client, intégrité, objectivité, honnêteté, professionnalisme, compétence, confidentialité, diligence. Formation continue: 30h/an validée.
 - Seuils : `{"experience_CFC_ans": 1, "experience_ECGPC_ans": 3, "formation_continue_heures_an": 30}`
+- Précision (vérif. source officielle 2026-08-26) : Le cœur est confirmé : certification « Expert conseil en gestion de patrimoine » délivrée par l'association CGPC, enregistrée au RNCP niveau 7 (fiche RNCP36074, France Compétences, équivalence master), avec parcours en deux paliers (conseiller financier certifié junior puis expert certifié CFP/ISO 22222) et obligation de formation continue pour le renouvellement annuel ; NUANCE : niveau 7 = « équivalence » master, non un « grade », et les détails (sigles CFC/E-CGPC, 8 principes, 30 h/an, 1 an/3 ans d'expérience) relèvent des règlements internes CGPC, non vérifiés sur source institutionnelle.
 
 ### CGP-013 | définition
 - Module : M7
@@ -2365,6 +2414,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : Livret-daccueil-2-Optimiser-un-patrimoine-familial-et_conseiller-sur-sa-gestion-en-professionnel-certifie.pdf, p. 57-60
 - Règle : Risques spécifiques de la vie longue à couvrir: accidents de la vie, dépendance (maladie, perte d'autonomie). Outils de la vie longue: prêt viager hypothécaire, vente en viager, rente viagère à titre onéreux (assurance-vie), mandat de protection future, donations en nue-propriété ou PP. Stratégies de 'dé-accumulation' du patrimoine en cas de vie longue. Espérance de vie à l'âge de la retraite: ~23,2 ans (hommes) et ~27,5 ans (femmes).
 - Seuils : `{"esperance_vie_retraite_hommes_ans": 23.2, "esperance_vie_retraite_femmes_ans": 27.5}`
+- Précision (vérif. source officielle 2026-08-26) : Les chiffres cités correspondent à l'espérance de vie À 60 ANS publiée par l'INSEE (~23 ans hommes, ~27,9 ans femmes en 2025), cohérente avec les ~23,2/27,5 énoncés, mais l'« âge de la retraite » effectif (63-64 ans) donnerait des durées plus courtes ; le reste (mandat de protection future C. civ. 477 s., prêt viager hypothécaire C. conso. L.315-1, viager, donations démembrées) est une liste doctrinale d'outils réels sans texte unique de référence.
 
 ### CGP-014 | définition
 - Module : M7
@@ -2372,6 +2422,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : Livret-daccueil-2-Optimiser-un-patrimoine-familial-et_conseiller-sur-sa-gestion-en-professionnel-certifie.pdf, p. 91-91
 - Règle : Types d'actes juridiques (décret 2008-1484): Conservatoires (urgents, nécessaires, faible dépense, ne modifient pas le patrimoine); D'administration (gestion courante: entretien, bail < 9 ans, conservent et font fructifier le patrimoine); De disposition (modifications graves et irrévocables: vente, bail > 9 ans, hypothèque); De la vie courante (faible valeur, réalisables par mineurs ou majeurs sous tutelle). La capacité juridique d'une personne = aptitude à acquérir et exercer des droits, à accomplir les actes conservatoires, d'administration et de disposition.
+- Ancre précisée (2026-08-26) : Décret n° 2008-1484 du 22/12/2008 (art. 1 et 2, annexes 1 et 2) ; C. civ. art. 452, 496 et 502
 
 ### CGP-015 | définition
 - Module : M7
@@ -2386,6 +2437,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : Livret-daccueil-2-Optimiser-un-patrimoine-familial-et_conseiller-sur-sa-gestion-en-professionnel-certifie.pdf, p. 70-72
 - Règle : Conseil indépendant (statut CIF): rémunéré uniquement en honoraires client; ne peut percevoir de commissions des producteurs (interdiction des 'inducements'); doit analyser un nombre suffisant de produits sur le marché pour formuler ses recommandations. Conseil non-indépendant (semi-indépendant): peut percevoir rétrocessions de commissions des producteurs, autorisé à vendre les produits conseillés. Déclaration d'adéquation obligatoire dans les deux cas (explique en quoi la recommandation est adaptée au client).
+- Ancre précisée (2026-08-26) : C. mon. fin. art. L.541-8-1 ; RG AMF art. 325-16 et s. (MIF 2)
 
 ### CGP-017 | définition
 - Module : M7
@@ -2400,6 +2452,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : Livret-daccueil-2-Optimiser-un-patrimoine-familial-et_conseiller-sur-sa-gestion-en-professionnel-certifie.pdf, p. 77-78
 - Règle : Tendances lourdes nécessitant une gestion patrimoniale renforcée: (1) Vie plus longue = risque de survie à son capital + dépendance; (2) Situations matrimoniales moins stables (PACS sans vocation successorale légale, divorces tardifs = précarité); (3) Parcours professionnels moins linéaires = besoin de solidarité familiale accru; (4) Successions volumineuses à venir (patrimoines des baby-boomers); (5) Familles recomposées (1 sur 5); (6) Coexistence 3 générations = solidarité intergénérationnelle; (7) Crise des régimes de retraite = épargne retraite obligatoire.
+- Précision (vérif. source officielle 2026-08-26) : Constats sociodémographiques globalement admis, mais le chiffre « familles recomposées (1 sur 5) » ne correspond pas aux données INSEE : environ 9 % des familles avec au moins un enfant mineur sont recomposées (≈ 720 000 familles ; 11 % des enfants mineurs vivent en famille recomposée), soit ~1 sur 11, pas 1 sur 5.
 
 ### CGP-019 | obligation
 - Module : M7
@@ -2427,6 +2480,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Le régime réel foncier s'applique obligatoirement si les revenus fonciers bruts dépassent 15 000 €, ou sur option si ≤ 15 000 € (option irrévocable 3 ans). Revenu net foncier = Loyers bruts encaissés − charges déductibles. Déclaration sur formulaire 2044. Le revenu net foncier est ensuite reporté sur la 2042.
 - Conditions : revenus fonciers > 15 000 € OU option pour le réel
 - Seuils : `{"seuil_regime_reel": 15000}`
+- Ancre précisée (2026-08-26) : CGI art. 28, 31 et 32 ; BOI-RFPI-DECLA-10
 
 ### RF-003 | règle
 - Module : M9
@@ -2453,6 +2507,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 32 (foncier) et art. 35 / 50-0 (BIC) ; art. 39 C (amortissements LMNP)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 65-66
 - Règle : Différences fiscales clés entre location nue (revenus fonciers) et location meublée (BIC): Location nue → revenus fonciers, micro si < 15 000 €, déficit imputable sur RG (plafond 10 700 €), PV régime particuliers avec abattements durée détention. Location meublée → BIC, micro si < 77 700 € (50 % abattement), amortissements déductibles (art. 39-C), mais PV depuis 2025 réintègre les amortissements.
+- Précision (vérif. source officielle 2026-08-26) : Fond exact : location meublee = BIC (art. 35, I-5. bis, corpus local), micro-foncier < 15 000 EUR (art. 32), deficit foncier imputable sur le revenu global dans la limite de 10 700 EUR (art. 156, I-3.), amortissements deductibles avec plafonnement art. 39 C, et depuis 2025 les amortissements deduits sont reintegres dans le calcul de la PV LMNP (LF 2025, art. 84, modif. CGI 150 VB). Nuance millesime : le seuil micro-BIC de 77 700 EUR (50 %) vaut pour le triennat 2023-2025 ; il est porte a 83 600 EUR pour 2026-2028 (referentiel local, meme revalorisation que le micro-BNC).
 
 ### PV-RP-001 | règle
 - Module : M9
@@ -2468,9 +2523,10 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 150 V a 150 VC (assiette PV immobiliere) ; BOI-RFPI-PVI-20-10
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 70-71
-- Règle : Plus-value brute = Prix de cession − Prix d'acquisition. Prix de cession: prix stipulé dans l'acte diminué des frais de cession (diagnostics, honoraires d'agence si à la charge du vendeur). Prix d'acquisition: prix d'achat majoré des frais d'acquisition (droits de mutation, honoraires notaire réels ou forfait 7,5 % si cédé plus de 5 ans après acquisition) et des travaux (frais réels ou forfait 15 % si bien cédé > 5 ans après acquisition).
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Plus-value brute = Prix de cession − Prix d'acquisition. Prix de cession: prix stipulé dans l'acte diminué des frais de cession (diagnostics, honoraires d'agence si à la charge du vendeur). Prix d'acquisition: prix d'achat majoré des frais d'acquisition (droits de mutation, honoraires notaire réels ou forfait 7,5 % si cédé plus de 5 ans après acquisition) et des travaux (frais réels ou forfait 15 % si bien cédé > 5 ans après acquisition).
 - Seuils : `{"forfait_frais_acquisition_pct": 7.5, "forfait_travaux_pct": 15, "duree_min_forfait_ans": 5}`
 - Exceptions : Bien reçu par donation ou succession: prix d'acquisition = valeur retenue pour le calcul des droits de mutation
+- Correction (vérif. source officielle 2026-08-26) : CGI art. 150 VB, II-3° (corpus local) : le forfait de 7,5 % pour frais d'acquisition à titre onéreux est ouvert SANS condition de durée de détention (« que le cédant peut fixer forfaitairement à 7,5 % du prix d'acquisition ») ; seule la majoration forfaitaire de 15 % pour travaux (II-4°) exige une cession « plus de cinq ans après son acquisition ». La règle conditionne à tort le forfait 7,5 % à une détention > 5 ans ; le reste (PV brute, frais de cession, art. 150 VA-VB) est exact.
 
 ### PV-IMM-002 | seuil
 - Module : M9
@@ -2489,6 +2545,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Taux d'imposition des PV immobilières nettes (après abattements): IR = 19 %; Prélèvements sociaux = 17,2 %. Taxe supplémentaire si PV imposable (pour l'IR, après abattement) > 50 000 €: de 2 % à 6 % selon le montant (barème progressif: 2 % pour PV entre 50 001 € et 100 000 €; 3 % entre 100 001 € et 150 000 €; 4 % entre 150 001 € et 200 000 €; 5 % entre 200 001 € et 250 000 €; 6 % au-delà de 250 000 €). C'est le notaire qui calcule et acquitte l'impôt lors de la vente.
 - Seuils : `{"seuil_taxe_supplementaire": 50000}`
 - Taux : `{"IR_pct": 19, "PS_pct": 17.2}`
+- Précision (vérif. source officielle 2026-08-26) : Taux exacts (IR 19 % art. 200 B, PS 17,2 %, surtaxe art. 1609 nonies G dès que la PV imposable à l'IR excède 50 000 €, de 2 % à 6 % ; impôt établi et versé par le notaire, art. 150 VG), mais le barème légal de la surtaxe comporte 10 tranches avec un lissage à l'entrée de chaque tranche (ex. de 50 001 à 60 000 € : 2 % PV − (60 000 − PV) × 1/20) que la présentation simplifiée en 5 tranches omet.
 
 ### PV-IMM-004 | règle
 - Module : M9
@@ -2505,6 +2562,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-20
 - Règle : Cession de parts de SCI soumise à l'IR: PV imposée selon le régime des PV immobilières des particuliers (abattements durée de détention, taux 19 % + 17,2 % PS). La durée de détention est calculée depuis l'acquisition des parts. Si la SCI a opté pour l'IS: la cession de parts relève du régime des PV mobilières (PFU 30 % ou barème IR, sans abattement durée de détention).
 - Exceptions : SCI à l'IS: perte de l'abattement pour durée de détention → PV imposée à 12,8 % + 17,2 % PS = PFU 30 %
+- Précision (vérif. source officielle 2026-08-26) : Confirmé : cession de parts de SCI à l'IR = régime des PV immobilières des particuliers (CGI art. 150 UB), 19 % + PS, abattements pour durée de détention décomptés depuis l'acquisition des PARTS ; SCI à l'IS : PV mobilières (CGI art. 150-0 A) sans abattement de durée ; NUANCE : depuis le 01/01/2026 (LFSS 2026) les PS sur les PV mobilières passent à 18,6 %, soit un PFU global de 31,4 % (le « 30 % » est le chiffre millésime 2025).
 
 ### DSD-001 | règle
 - Module : M10
@@ -2531,10 +2589,11 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 777 (bareme freres et soeurs) ; art. 788, I (abattement specifique)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 79-81
-- Règle : Barème entre frères et sœurs: Jusqu'à 24 430 € (après abattement de 15 932 €): 35 %. Au-delà de 24 430 €: 45 %. Abattement spécifique de 15 932 € applicable uniquement si le bénéficiaire est célibataire, veuf, divorcé ou séparé de corps au moment du décès ET âgé de plus de 50 ans ou atteint d'infirmité.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Barème entre frères et sœurs: Jusqu'à 24 430 € (après abattement de 15 932 €): 35 %. Au-delà de 24 430 €: 45 %. Abattement spécifique de 15 932 € applicable uniquement si le bénéficiaire est célibataire, veuf, divorcé ou séparé de corps au moment du décès ET âgé de plus de 50 ans ou atteint d'infirmité.
 - Seuils : `{"tranche_1_max": 24430, "abattement_specifique": 15932}`
 - Taux : `{"tranche_1_pct": 35, "tranche_2_pct": 45}`
 - Exceptions : Abattement de 15 932 € uniquement si bénéficiaire: célibataire/veuf/divorcé/séparé ET > 50 ans ou infirmité
+- Correction (vérif. source officielle 2026-08-26) : Bareme exact (CGI art. 777, tableau III : 35 % jusqu'a 24 430 EUR, 45 % au-dela), mais l'abattement de 15 932 EUR entre freres et soeurs est de droit commun et SANS condition (CGI art. 779, IV : « lorsque les dispositions de l'article 796-0 ter ne sont pas applicables ... abattement de 15 932 EUR sur la part de chacun des freres ou soeurs ») ; les conditions citees (celibataire/veuf/divorce/separe ET plus de 50 ans ou infirme, plus une condition omise de domicile commun avec le defunt pendant les 5 ans precedant le deces) sont celles de l'EXONERATION TOTALE de l'art. 796-0 ter, pas de l'abattement.
 
 ### DSD-004 | seuil
 - Module : M10
@@ -2544,6 +2603,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Barèmes de droits de succession/donation selon le degré de parenté: Entre parents jusqu'au 4ème degré (oncles/tantes, neveux/nièces, cousins germains): 55 % (avec abattement de 7 967 €). Entre non-parents ou parents au-delà du 4ème degré: 60 % (avec abattement de 1 594 €). Entre grands-parents et petits-enfants (ligne directe): barème ligne directe avec abattement de 31 865 €.
 - Seuils : `{"abattement_neveux": 7967, "abattement_non_parents": 1594, "abattement_petits_enfants": 31865}`
 - Taux : `{"oncles_neveux_pct": 55, "non_parents_pct": 60}`
+- Précision (vérif. source officielle 2026-08-26) : Taux conformes a l'art. 777, tableau III (corpus local) : 55 % entre parents jusqu'au 4e degre, 60 % au-dela et entre non-parents. Mais les abattements sont imprecis : l'abattement de 7 967 EUR est reserve aux seuls neveux et nieces (art. 779, V, local) - oncles, tantes et cousins n'ont que l'abattement par defaut de 1 594 EUR, applicable en SUCCESSION seulement (art. 788, IV) ; de meme, l'abattement de 31 865 EUR des petits-enfants ne vaut qu'en DONATION (art. 790 B), en succession ils n'ont que 1 594 EUR (hors representation).
 
 ### DSD-005 | règle
 - Module : M10
@@ -2597,6 +2657,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 75-75
 - Règle : Passif déductible de l'assiette IFI: (1) Emprunts immobiliers contractés pour l'acquisition, la réparation ou l'amélioration des biens taxables; (2) Travaux à réaliser (engagements pris mais non encore exécutés); (3) Taxe foncière et IFI de l'année courante dus mais non encore payés. Ne sont PAS déductibles: impôts sur le revenu, emprunts contractés pour l'achat de valeurs mobilières, découverts bancaires non liés à l'immobilier.
 - Exceptions : Règle anti-abus: emprunt in fine auprès d'un associé ou souscription d'emprunt auprès d'une société familiale → sous conditions restrictives
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 974, I : seules les dettes « existantes au 1er janvier de l'année d'imposition » et effectivement supportées, afférentes aux dépenses d'acquisition, de réparation/entretien, d'amélioration-construction-reconstruction-agrandissement et aux impositions dues à raison des propriétés (hors impositions sur les revenus, donc TF et IFI oui, IR non) sont déductibles — de simples « travaux à réaliser » (engagements non exécutés) ne constituent pas une dette née et déductible ; le reste de l'énoncé est conforme.
 
 ### TRM-001 | seuil
 - Module : M12
@@ -2607,16 +2668,18 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : 15 ans de rappel fiscal
 - Seuils : `{"succession_conjoint": "exonération totale", "succession_enfant": 100000, "succession_petit_enfant": 1594, "donation_conjoint_PACS": 80724, "donation_enfant": 100000, "donation_petit_enfant": 31865, "donation_arriere_petit_enfant": 5310, "donation_frere_soeur": 15932, "don_numeraire_supp": 31865, "abattement_handicape": 159325}`
 - Exceptions : Exonération succession frères/sœurs sous triple condition (célibataire + âge + cohabitation) | Abattement handicapé de 159 325 € CUMULABLE avec les abattements par lien de parenté
+- Ancre précisée (2026-08-26) : CGI art. 777, 779, 784, 788, 790 B à 790 F, 796-0 bis et 796-0 ter ; BOI-ENR-DMTG-10-50
 
 ### TRM-002 | condition
 - Module : M12
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 790 G (don de sommes d'argent) ; art. 790 A bis (don creation entreprise/RP, LDF 2025)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 81-81
-- Règle : Don en numéraire exonéré de droits: abattement spécifique de 31 865 € par donateur, cumulable avec l'abattement général (100 000 € parent/enfant). Conditions: donateur < 80 ans ET donataire majeur ou mineur émancipé. Bénéficiaires: enfants, petits-enfants, arrière-petits-enfants, ou à défaut neveux/nièces. LDF 2025: exonération renforcée jusqu'à 100 000 € par donateur ET par donataire pour dons affectés à la création d'entreprise ou construction de la résidence principale du donataire.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Don en numéraire exonéré de droits: abattement spécifique de 31 865 € par donateur, cumulable avec l'abattement général (100 000 € parent/enfant). Conditions: donateur < 80 ans ET donataire majeur ou mineur émancipé. Bénéficiaires: enfants, petits-enfants, arrière-petits-enfants, ou à défaut neveux/nièces. LDF 2025: exonération renforcée jusqu'à 100 000 € par donateur ET par donataire pour dons affectés à la création d'entreprise ou construction de la résidence principale du donataire.
 - Conditions : donateur < 80 ans | donataire majeur ou mineur émancipé
 - Seuils : `{"abattement_numeraire": 31865, "exoneration_renforcee_LDF2025": 100000}`
 - Exceptions : Exonération renforcée LDF 2025 (100 000 €) limitée à certains usages: création entreprise ou construction RP
+- Correction (vérif. source officielle 2026-08-26) : Volet 790 G exact (31 865 EUR, donateur < 80 ans, donataire majeur ou emancipe, enfants/petits-enfants/arriere-petits-enfants ou a defaut neveux/nieces, cumul avec l'abattement de l'art. 779 — texte local CGI art. 790 G verifie) ; mais le volet LDF 2025 est errone : le nouvel art. 790 A bis (LF 2025, art. 71, dons du 15/2/2025 au 31/12/2026) exonere dans la DOUBLE limite de 100 000 EUR par donateur et 300 000 EUR par donataire, pour des sommes affectees dans les 6 mois a l'acquisition d'un logement NEUF ou en VEFA ou a des travaux de renovation energetique de la residence principale — ni creation d'entreprise ni construction en general.
 
 ### TRM-003 | condition
 - Module : M12
@@ -2656,6 +2719,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : applicable à la location à usage de résidence principale
 - Seuils : `{"interdiction_G_plus_plus_annee": 2023, "interdiction_G_annee": 2025, "interdiction_F_annee": 2028, "interdiction_E_annee": 2034}`
 - Exceptions : Ces interdictions concernent la résidence principale du locataire | Monopropriété: calendrier potentiellement aménagé
+- Précision (vérif. source officielle 2026-08-26) : Calendrier loi Climat (art. 160) exact pour l'essentiel (>450 kWh/m²/an interdit au 1/1/2023 ; G au 1/1/2025 ; F au 1/1/2028 ; E au 1/1/2034 ; DPE au DDT), mais le gel des loyers s'applique aux logements classés F ET G (pas seulement G) et depuis le 24 août 2022 (pas le 25) — ecologie.gouv.fr/INC.
 
 ### TRM-007 | règle
 - Module : M12
@@ -2666,6 +2730,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : dépenses de rénovation énergétique payées entre 01/01/2023 et 31/12/2025 | bien passant de classe E/F/G vers A/B/C/D | travaux réalisés par professionnel certifié RGE
 - Seuils : `{"plafond_standard": 10700, "plafond_renovation_energetique": 21400}`
 - Exceptions : Applicable seulement aux dépenses payées avant le 31/12/2025 | Exige un changement de classe énergétique attesté (pas uniquement des travaux d'entretien)
+- Précision (vérif. source officielle 2026-08-26) : Dispositif exact (CGI art. 156, I-3° mod. LFR 2022 art. 12 : plafond porté de 10 700 € à 21 400 € pour les dépenses de rénovation énergétique payées du 1/1/2023 au 31/12/2025 faisant passer le bien d'une classe E, F ou G à une classe A, B, C ou D, devis accepté à compter du 5/11/2022), mais la justification exigée est la production de deux DPE (avant travaux et après, au plus tard le 31/12/2025) — pas une attestation par un professionnel certifié RGE, condition qui ne figure pas dans le texte.
 
 ### TRM-008 | règle
 - Module : M12
@@ -2677,15 +2742,17 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : acquisitions avant 01/01/2025 uniquement
 - Taux : `{"pinel_plus_6ans": 12, "pinel_plus_9ans": 18, "pinel_plus_12ans": 21}`
 - Exceptions : VEFA signée avant 01/01/2025 mais livraison postérieure: vérifier date prise en compte | Pinel Outre-Mer: règles spécifiques à vérifier
+- Précision (vérif. source officielle 2026-08-26) : Confirmé : extinction du Pinel pour les acquisitions depuis le 01/01/2025 (CGI art. 199 novovicies) avec maintien des engagements en cours, et taux Pinel+ 12 %/18 %/21 % ; NUANCE : les taux 9 %/12 %/14 % sont ceux des acquisitions 2024 (le Pinel « classique » 2023 était à 10,5 %/15 %/17,5 %), l'étiquette « Pinel 2023 » est erronée.
 
 ### TRM-009 | règle
 - Module : M12
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 199 tricies (Loc'Avantages) ; BOI-IR-RICI-235
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 62-63
-- Règle : Loc'Avantages: réduction d'impôt pour les bailleurs qui louent NU à usage de résidence principale dans le cadre d'une convention ANAH (avant le 31 décembre 2027) pour une durée de 6 ans. Le loyer et les ressources des locataires ne doivent pas excéder certains plafonds (secteur intermédiaire, social ou très social). Les locataires ne peuvent pas être ascendants ou descendants du propriétaire. Le taux de réduction varie selon le niveau de loyer pratiqué (secteur intermédiaire: ~15 %; secteur social: ~35 %; secteur très social: ~65 % avec intermédiaire de gestion). Non soumis au plafonnement global des niches fiscales.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Loc'Avantages: réduction d'impôt pour les bailleurs qui louent NU à usage de résidence principale dans le cadre d'une convention ANAH (avant le 31 décembre 2027) pour une durée de 6 ans. Le loyer et les ressources des locataires ne doivent pas excéder certains plafonds (secteur intermédiaire, social ou très social). Les locataires ne peuvent pas être ascendants ou descendants du propriétaire. Le taux de réduction varie selon le niveau de loyer pratiqué (secteur intermédiaire: ~15 %; secteur social: ~35 %; secteur très social: ~65 % avec intermédiaire de gestion). Non soumis au plafonnement global des niches fiscales.
 - Conditions : convention ANAH signée avant 31/12/2027 | durée 6 ans minimum | location nue résidence principale | locataire non ascendant/descendant | loyer ≤ plafonds selon zone
 - Taux : `{"intermediaire_pct": 15, "social_pct": 35, "tres_social_pct": 65}`
+- Correction (vérif. source officielle 2026-08-26) : L'affirmation « non soumis au plafonnement global des niches fiscales » est fausse : la réduction Loc'Avantages (CGI 199 tricies) ne figure PAS parmi les exceptions limitativement énumérées à l'art. 200-0 A, 2-b (199 quater C, 199 quater F, 199 septies, 199 tervicies, 200...) — elle entre donc dans le plafond global de 10 000 €. Le reste est exact : location nue en RP sous convention ANAH enregistrée jusqu'au 31/12/2027 (prorogation LF 2025, art. 88), taux 15 %/35 %/65 % selon le secteur (BOI-IR-RICI-400).
 
 ### TRM-010 | règle
 - Module : M12
@@ -2696,6 +2763,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : immeuble classé MH ou ISMH ou labellisé Fondation du patrimoine | travaux autorisés par l'État
 - Taux : `{"subvention_etat_min_pct": 20, "subvention_etat_max_pct": 80}`
 - Exceptions : Si le bien est ouvert au public: charges déductibles à 100 %; si non ouvert: à 50 % si revenus locatifs
+- Précision (vérif. source officielle 2026-08-26) : Principe exact pour les immeubles classés ou inscrits (charges/travaux déductibles du revenu global sans plafond, hors plafonnement des niches — CGI art. 156, I-3° et II-1° ter ; BOI-RFPI-SPEC-30). Nuances : (1) engagement de conservation de l'immeuble pendant 15 ans obligatoire depuis 2009 (CGI art. 156 bis), non mentionné ; (2) pour les immeubles LABELLISÉS Fondation du patrimoine, la déduction des travaux est limitée à 50 % (100 % seulement si subvention ≥ 20 %), pas intégrale ; (3) les subventions perçues diminuent les charges déductibles et la fourchette « 20 à 80 % » n'est pas un droit garanti.
 
 ### TRM-011 | règle
 - Module : M12
@@ -2723,6 +2791,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 59-59
 - Règle : MaPrimeRénov' est une aide de l'État (ANAH) pour financer les travaux de rénovation énergétique des logements. Trois formes: (1) MaPrimeRénov' individuelle: aide directe au propriétaire pour travaux d'économie d'énergie (isolation, fenêtres, chaudière, etc.); montant variable selon revenus et nature des travaux. (2) MaPrimeRénov' Copropriété: aide collective pour rénovation globale d'une copropriété immatriculée, construite > 15 ans, ≥ 75 % de tantièmes habitations principales. (3) MaPrimeAdapt': aide pour travaux d'adaptation du logement aux personnes âgées ou handicapées à revenus modestes. Service public France Rénov': france-renov.gouv.fr / 0 808 800 700.
 - Conditions : selon les revenus du ménage pour MPR individuelle | copropriété immatriculée + > 15 ans + 75 % habitations principales pour MPR Copropriété
+- Précision (vérif. source officielle 2026-08-26) : Dispositif et trois volets exacts (MaPrimeRénov', MaPrimeRénov' Copropriété, MaPrimeAdapt' ; France Rénov' 0 808 800 700), mais la condition copropriété est imprécise : au moins 65 % de résidences principales pour les copropriétés de 20 lots ou moins, 75 % au-delà de 20 lots (et non 75 % uniforme) ; par ailleurs l'ancre CCH L.300-1 est inadaptée — base : art. 15 de la loi n° 2019-1479 de finances pour 2020 et décret n° 2020-26 du 14/01/2020.
 
 ### TRM-014 | obligation
 - Module : M12
@@ -2731,6 +2800,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 54-55
 - Règle : Tous les propriétaires de biens immobiliers à usage d'habitation doivent déclarer chaque année, avant le 1er juillet, sur impots.gouv.fr, la nature d'occupation de chaque bien: résidence principale/secondaire du propriétaire, bien mis en location (avec identité du locataire), bien mis à disposition gratuitement, ou bien vacant. Cette déclaration permet à l'administration de calculer la taxe d'habitation, la taxe sur les logements vacants, etc. Nouveauté 2025: les contribuables qui louent ou occupent gratuitement des locaux meublés non utilisés en résidence principale doivent également indiquer l'adresse et les éléments d'identification du bien dans leur déclaration de revenus.
 - Seuils : `{"delai_declaration_avant_juillet": 1}`
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 1418 : la déclaration d'occupation est due avant le 1er juillet « sauf si aucun changement dans les informations transmises n'est intervenu » — il n'y a donc pas de redéclaration annuelle systématique, seulement en cas de changement depuis la dernière déclaration ; le contenu et la finalité (TH résidences secondaires, TLV) sont exacts.
 
 ### TRM-015 | condition
 - Module : M12
@@ -2740,6 +2810,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Les plus-values immobilières résultant d'une vente de biens immobiliers en vue de la réalisation de logements sociaux sont exonérées d'impôt sur le revenu (et de prélèvements sociaux). Condition temporelle: la vente doit être réalisée avant le 31 décembre 2025 et être consentie à un organisme en charge du logement social ou à des tiers privés s'engageant à construire du logement social.
 - Conditions : vente avant 31 décembre 2025 | acheteur: organisme logement social ou tiers privé s'engageant à construire du logement social
 - Seuils : `{"date_limite_2025": "31/12/2025"}`
+- Précision (vérif. source officielle 2026-08-26) : Exact au millésime : les 7° et 8° du II de l'art. 150 U exonèrent (IR et PS) les cessions au profit d'organismes de logement social ou de cessionnaires s'engageant à construire des logements sociaux, prorogées jusqu'au 31/12/2025 par la LF 2024 ; mais l'exonération du 8° est proportionnelle à la surface de logements sociaux construits, et le rescrit BOI-RES-RFPI-000243 (31/12/2025) admet le maintien du bénéfice pour les cessions entre le 1/1/2026 et la promulgation de la LF 2026 — la date butoir est donc dépassée/prorogée.
 
 ### TRM-016 | règle
 - Module : M12
@@ -2757,6 +2828,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 2019-11-REVUE-PHARMA-GUIDE-PATRIMOINE.pdf, p. 1-1
 - Règle : OBO (Owner Buy-Out / vente à soi-même): opération permettant à un dirigeant de dégager du capital à titre personnel en vendant son entreprise (pharmacie, cabinet libéral) à une holding SPFPL qu'il contrôle. Effets: (1) le dirigeant perçoit un prix de vente exonéré ou taxé à 12,8 % (PFU); (2) la holding emprunte pour payer le prix et rembourse le crédit avec les dividendes de l'entreprise (effet de levier); (3) le dirigeant anticipe l'organisation de sa retraite tout en maintenant le contrôle. Utilisé notamment lors de la cession de pharmacies d'officine avant retraite.
 - Exceptions : Risque de requalification en abus de droit si opération sans substance économique | Frais importants: notaire, avocat, banque
+- Précision (vérif. source officielle 2026-08-26) : Mécanisme conforme à la pratique (cession des titres à une SPFPL contrôlée, holding endettée remboursée par les dividendes, préparation de la retraite du titulaire), MAIS la plus-value de cession est en principe taxée au PFU GLOBAL de 30 % (12,8 % IR, CGI 200 A + 17,2 % PS) et non « à 12,8 % » seul ; exonérations/abattements éventuels (art. 150-0 D ter : abattement 500 000 € dirigeant partant à la retraite, ou option barème).
 
 ### RISK-004 | risque
 - Module : FORM
@@ -2764,6 +2836,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 206, 2 et art. 219 (IS) ; art. 150 VC a contrario (perte abattement) ; BOI-IS-BASE-20-10
 - source_ingest : M6_gestion_patrimoniale.jsonl
 - Règle : RISQUE: Option IS irrévocable d'une SCI puis cession des parts → perte de l'abattement pour durée de détention sur PV immobilières (abattement qui exonère après 22 ans d'IR et 30 ans de PS). En IS, la PV de cession est imposée à l'IS 25 % quel que soit le nombre d'années de détention. Erreur fréquente lors d'une structuration patrimoniale à long terme.
+- Précision (vérif. source officielle 2026-08-26) : Le fond du risque est exact (à l'IS, la PV de cession est imposée sans l'abattement pour durée de détention de l'art. 150 VC, qui exonère l'IR après 22 ans et les PS après 30 ans à l'IR des particuliers). Nuances : depuis la LF 2019, l'option IS n'est plus immédiatement irrévocable — CGI art. 239, 1 : renonciation possible jusqu'au 5e exercice suivant celui de l'option, l'option ne devenant irrévocable qu'à défaut ; et le taux d'IS est de 25 % avec taux réduit de 15 % jusqu'à 42 500 € de bénéfice sous conditions.
 
 ### RISK-008 | risque
 - Module : FORM
@@ -2831,6 +2904,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 29-31
 - Règle : Au régime réel BIC: comptabilité BIC complète obligatoire (FEC compatible); déclarations 2031 + 2033 pour réel simplifié (CA meublé tourisme classé: 188 700 €-840 000 € en 2024, 77 700 €-840 000 € en 2025; autres: 77 700 €-254 000 €) ou 2031 + 2050 pour réel normal (CA meublé tourisme classé > 840 000 €; autres > 254 000 €). Option exercée avant la date limite de déclaration des revenus de N-1, valable 1 an, tacite reconduction.
 - Seuils : `{"reel_simplifie_max_tourisme_classe_2025": 840000, "reel_normal_min_tourisme_classe_2025": 840000, "reel_simplifie_max_autres": 254000, "reel_normal_min_autres": 254000}`
+- Précision (vérif. source officielle 2026-08-26) : Exact millésime 2025 : obligations comptables BIC et FEC, 2031 + 2033 au réel simplifié, 2031 + liasse 2050 s. au réel normal, seuils CGI 302 septies A bis (840 000 € ventes/fourniture de logement dont meublés de tourisme, 254 000 € autres locations meublées), micro classé 188 700 € en 2024 puis 77 700 € en 2025 (loi Le Meur), option valable 1 an tacitement reconduite ; NUANCE : les seuils du réel simplifié ont été revalorisés (actualisation triennale) au 1er janvier 2026 (~945 000 € / ~286 000 €).
 
 ### LMN-008 | règle
 - Module : M5
@@ -2840,6 +2914,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Seuil de comptabilisation: montant unitaire ≤ 500 € HT → charge déductible immédiatement; > 500 € HT → immobilisation obligatoire. Exception: le premier achat de mobilier meublant est TOUJOURS immobilisé quel que soit le montant. Les factures d'achat de meubles ou travaux antérieures à la date de début d'activité ne peuvent pas être comptabilisées.
 - Seuils : `{"seuil_immobilisation_HT": 500}`
 - Exceptions : Premier mobilier meublant: toujours immobilisation | Erreur de comptabilisation: un amortissement non déduit à la date limite est définitivement perdu
+- Précision (vérif. source officielle 2026-08-26) : La tolérance de 500 € HT et l'immobilisation obligatoire du premier équipement en mobilier sont conformes à BOI-BIC-CHG-20-30-10 (« la mesure n'est notamment pas applicable à l'équipement initial en mobilier... ni au renouvellement complet de ce mobilier » ; seule est admise en charges l'acquisition résultant du renouvellement courant). Nuances : (1) la tolérance vise limitativement les matériels et outillages, matériels et mobiliers de bureau et logiciels — ce n'est pas un seuil général de comptabilisation ; (2) les biens (meubles, immeuble, travaux) acquis AVANT le début d'activité peuvent être inscrits à l'actif à leur valeur réelle au jour de l'inscription et amortis — c'est leur déduction en charges qui est exclue, non toute comptabilisation.
 
 ### LMN-009 | option
 - Module : M5
@@ -2847,6 +2922,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 38 quinquies (frais d'acquisition des immobilisations, option) ; art. 39, 1 ; BOI-BIC-CHG-20-20-10
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 32-33
 - Règle : Les frais d'acquisition (droits de mutation, honoraires notaire, frais actes, commissions) peuvent au choix: (A) être immobilisés en ajout au coût d'acquisition, ou (B) être déduits immédiatement en charges. Option irrévocable dès le 1er bien et s'applique à toutes les immobilisations ultérieures.
+- Ancre précisée (2026-08-26) : PCG (regl. ANC 2014-03) art. 213-8 ; ann. III CGI, art. 38 quinquies ; CGI art. 39, 1 ; BOI-BIC-CHG-20-20-10
 
 ### LMN-010 | règle
 - Module : M5
@@ -2914,6 +2990,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Franchise en base TVA pour locations meublées soumises à TVA (depuis 1er jan 2025 selon directive UE 2020/285): seuil de base 85 000 €, seuil majoré 93 500 €. Franchise cesse si CA dépasse 93 500 € en cours d'année (dès le 1er jour du mois de dépassement). Mention obligatoire sur factures: 'TVA non applicable - art. 293 B du CGI'. Réforme à 25 000 € suspendue jusqu'au 1er juin 2025.
 - Seuils : `{"franchise_base": 85000, "franchise_majoree": 93500}`
 - Exceptions : Option pour le paiement de la TVA: valable 2 ans, renouvelable tacitement; option par écrit au SIE; effet au 1er jour du mois de l'option
+- Précision (vérif. source officielle 2026-08-26) : Seuils 2025 exacts pour l'hebergement (85 000 EUR, seuil majore 93 500 EUR, CGI art. 293 B version au 1/1/2025) et mention de facturation exacte ; mais depuis le 1/1/2025 la franchise cesse pour les operations intervenant A COMPTER DE LA DATE du depassement du seuil majore (et non plus au 1er jour du mois de depassement, regle anterieure) ; et l'information sur le seuil unique de 25 000 EUR est datee : suspendu puis definitivement abandonne (suppression votee en 2025, seuils maintenus).
 
 ### LMN-018 | obligation
 - Module : M5
@@ -2930,17 +3007,19 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 1407 et 1414 (taxe d'habitation, suppression RP) ; BOI-IF-TH
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 57-57
-- Règle : Taxe d'habitation résidence principale supprimée depuis 1er janvier 2023. En location saisonnière/courte durée: bien considéré résidence secondaire du propriétaire → taxe d'habitation maintenue. En location longue durée résidence principale du locataire: taxe due par le locataire. Obligation déclarative annuelle avant 1er juillet pour tous les propriétaires.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Taxe d'habitation résidence principale supprimée depuis 1er janvier 2023. En location saisonnière/courte durée: bien considéré résidence secondaire du propriétaire → taxe d'habitation maintenue. En location longue durée résidence principale du locataire: taxe due par le locataire. Obligation déclarative annuelle avant 1er juillet pour tous les propriétaires.
+- Correction (vérif. source officielle 2026-08-26) : Deux erreurs : (1) depuis le 1/1/2023 la taxe d'habitation sur la résidence principale est supprimée pour TOUS les occupants — en location longue durée résidence principale du locataire, aucune TH n'est due par le locataire (seule subsiste la THRS, due par le propriétaire d'un meublé à sa disposition ou d'un local occupé en résidence secondaire) ; (2) la déclaration d'occupation (CGI art. 1418) n'est pas annuelle : déclaration initiale avant le 1/7/2023 puis uniquement en cas de changement de situation d'occupation.
 
 ### LMN-020 | condition
 - Module : M5
 - Statut : `candidate_to_validate`
 - Ancre : CSS art. L.611-1 et art. L.613-7 (affiliation SSI loueurs courte duree)
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 60-62
-- Règle : Assujettissement aux cotisations sociales (SSI): (1) recettes de location de COURTE DURÉE > 23 000 €/an, OU (2) statut LMP (recettes > 23 000 € ET supérieures aux revenus professionnels du foyer). En dessous de ces seuils: prélèvements sociaux de 17,2% uniquement (pas de droits retraite/assurance maladie). Exception: propriétaires ayant délégué la gestion à un professionnel de l'immobilier → pas d'affiliation même si > 23 000 €.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Assujettissement aux cotisations sociales (SSI): (1) recettes de location de COURTE DURÉE > 23 000 €/an, OU (2) statut LMP (recettes > 23 000 € ET supérieures aux revenus professionnels du foyer). En dessous de ces seuils: prélèvements sociaux de 17,2% uniquement (pas de droits retraite/assurance maladie). Exception: propriétaires ayant délégué la gestion à un professionnel de l'immobilier → pas d'affiliation même si > 23 000 €.
 - Seuils : `{"cotisations_sociales_seuil_courte_duree": 23000}`
 - Taux : `{"prelevements_sociaux_sous_seuil": 17.2}`
 - Exceptions : Gestion déléguée à un professionnel: prélèvements sociaux uniquement (RM Pellois, JO 10/07/2018)
+- Correction (vérif. source officielle 2026-08-26) : Les cas d'affiliation énoncés (courte durée > 23 000 € ; statut LMP ; PS 17,2 % en dessous) sont exacts, MAIS l'exception « gestion déléguée à un professionnel de l'immobilier → pas d'affiliation » ne figure pas dans CSS art. L.611-1, 6° : la seule alternative prévue par le texte est l'option, lors de l'affiliation, pour le régime général (CSS L.311-3, 35°) — confier la gestion à une agence ne dispense pas d'affiliation au-delà du seuil.
 
 ### LMN-021 | règle
 - Module : M5
@@ -2950,6 +3029,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Abattements sur recettes pour calcul des cotisations sociales: 60% pour location courte durée standard; 87% pour meublé de tourisme classé. 1ère année d'affiliation: assiette = (recettes - 23 000 €) × (1 - abattement%). Années suivantes: assiette = recettes × (1 - abattement%). Statuts possibles: régime général (salariés, si CA ≤ 77 700 €), auto-entrepreneur (CA ≤ 77 700 € / 188 700 €), travailleur indépendant.
 - Seuils : `{"auto_entrepreneur_max_non_classe": 77700, "auto_entrepreneur_max_classe": 188700}`
 - Taux : `{"abattement_courte_duree": 60, "abattement_tourisme_classe": 87}`
+- Précision (vérif. source officielle 2026-08-26) : Abattements sociaux confirmés par l'Urssaf (60 % courte durée, 87 % meublé de tourisme classé ; 1re année d'affiliation : assiette calculée sur les recettes excédant 23 000 €), mais les seuils micro cités sont datés : depuis la loi « Le Meur » n° 2024-1039 (applicable aux revenus 2025), le micro-BIC est de 77 700 € (abattement 50 %) pour le meublé de tourisme classé et 15 000 € (30 %) pour le non classé — la référence au 188 700 € n'est plus à jour.
 
 ### LMN-022 | règle
 - Module : M5
@@ -2984,11 +3064,12 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 151 septies, 151 septies A, 151 septies B et 238 quindecies (exonerations PV pro) ; BOI-BIC-PVMV-40
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 73-73
-- Règle : Exonérations PV professionnelles LMP (activité ≥ 5 ans): Art. 151 septies: totale si recettes moy. N-1/N-2 < 90 000 € (250 000 € tourisme classé), partielle entre 90 000 € et 126 000 € (250 000-300 000 € classé). Art. 151 septies B: abattement 10%/an sur PV LT immobilière au-delà de 5 ans (exonération totale à 15 ans). Art. 238 quindecies: cession < 500 000 € → totale, entre 500 000 € et 1 000 000 € → partielle (exclusion: immeubles). Art. 151 septies A: départ retraite dans 2 ans avant/après cession → totale (exclusion: immeubles).
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Exonérations PV professionnelles LMP (activité ≥ 5 ans): Art. 151 septies: totale si recettes moy. N-1/N-2 < 90 000 € (250 000 € tourisme classé), partielle entre 90 000 € et 126 000 € (250 000-300 000 € classé). Art. 151 septies B: abattement 10%/an sur PV LT immobilière au-delà de 5 ans (exonération totale à 15 ans). Art. 238 quindecies: cession < 500 000 € → totale, entre 500 000 € et 1 000 000 € → partielle (exclusion: immeubles). Art. 151 septies A: départ retraite dans 2 ans avant/après cession → totale (exclusion: immeubles).
 - Conditions : activité exercée ≥ 5 ans | exercice à titre professionnel l'année de cession
 - Seuils : `{"art151septies_totale": 90000, "art151septies_partielle_max": 126000, "art151septies_tourisme_totale": 250000, "art151septies_tourisme_partielle_max": 300000, "art238quindecies_totale": 500000, "art238quindecies_partielle_max": 1000000}`
 - Taux : `{"art151septiesB_abattement_pct_an": 10}`
 - Exceptions : PV CT exonérées par 151 septies: restent soumises aux cotisations sociales | PV LT exonérées: pas de cotisations sociales
+- Correction (vérif. source officielle 2026-08-26) : Deux contradictions avec le texte de l'art. 151 septies (corpus local, millésime 2026) : (1) l'exonération partielle de la catégorie « ventes/fourniture de logement » s'applique entre 250 000 € et 350 000 € (II-2° : taux = (350 000 − recettes)/100 000), pas « 250 000-300 000 € » ; (2) le a du II-1° exclut expressément « la location directe ou indirecte de locaux d'habitation meublés ou destinés à être loués meublés » de la catégorie à 250 000 € — le seuil de 250 000 € pour le « tourisme classé » ne correspond pas au texte : la location meublée relève des seuils 90 000 €/126 000 €. Le reste est exact (151 septies B : abattement 10 %/an au-delà de la 5e année, exonération à 15 ans ; 238 quindecies : 500 000 €/1 000 000 €, hors immeubles ; 151 septies A : départ à la retraite dans les 2 ans, hors immeubles).
 
 ### LMN-026 | obligation
 - Module : M5
@@ -2998,6 +3079,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Déclaration d'activité via guichet unique INPI (inpi.fr) dans les 15 jours suivant le début d'activité. Date de début = date de la 1ère dépense (achat meuble, signature notaire). Résultat: SIRET (code APE 6820-A), ROF fiscal, imprimé 1447-C CFE. Créer aussi un espace professionnel sur impots.gouv.
 - Seuils : `{"delai_declaration_jours": 15}`
 - Exceptions : Pas de sanction si immatriculation tardive mais démarche indispensable
+- Ancre précisée (2026-08-26) : C. com. art. L.123-33 (guichet unique INPI) ; CGI art. 286, I-1 ; art. 1447
 
 ### LMN-027 | obligation
 - Module : M5
@@ -3022,6 +3104,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 35 et art. 8 (imposition de l'usufruitier en BIC) ; BOI-BIC-CHAMP-40
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 80-82
 - Règle : En cas de démembrement de propriété sur un bien loué meublé: L'USUFRUITIER est imposable dans la catégorie des BIC (et non les revenus fonciers) à raison des revenus de la location meublée. Il peut amortir la valeur de l'usufruit (et non la pleine propriété). Il supporte les charges d'entretien et d'amélioration, la taxe foncière, la taxe d'habitation éventuelle. LE NU-PROPRIÉTAIRE ne perçoit aucun revenu, n'est pas imposable et ne peut déduire aucune charge (même s'il inscrit la nue-propriété à l'actif d'une activité BIC).
+- Précision (vérif. source officielle 2026-08-26) : Exact sur l'imposition : l'usufruitier qui loue en meublé est imposable en BIC et le nu-propriétaire, sans revenu, ne déclare ni ne déduit rien ; MAIS « il peut amortir la valeur de l'usufruit » est contraire à la doctrine administrative (BOFiP : les éléments dont l'exploitant n'a que l'usufruit ne font pas partie de son actif et ne peuvent être amortis), position seulement contestée par une jurisprudence admettant l'amortissement du droit d'usufruit — point non acquis.
 
 ### LMP-002 | règle
 - Module : M5bis
@@ -3031,6 +3114,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : L'usufruitier qui loue le bien meublé peut amortir la valeur de l'usufruit (et non la pleine propriété). La valeur de l'usufruit est déterminée selon le barème de l'article 669 du CGI (fonction de l'âge de l'usufruitier). La durée d'amortissement = durée du démembrement (si temporaire) ou espérance de vie résiduelle selon données INSEE (si viager). En usufruit, il n'y a pas de décomposition par composants: toute la valeur de l'usufruit est amortie en une seule ligne. La valeur retenue est celle à la date de début de la location (âge actuel de l'usufruitier, pas l'âge au jour de la donation si antérieure).
 - Conditions : usufruitier = locateur du bien meublé
 - Exceptions : CE, Arrêt n°419912 du 24 avril 2019: amortissement de l'usufruit viager confirmé | Compte comptable: compte 207 (valeur de l'usufruit)
+- Précision (vérif. source officielle 2026-08-26) : Le cœur est confirmé : CE 24/4/2019 n° 419912 admet l'amortissement de l'usufruit (même viager) loué en meublé, sur sa durée prévisible d'effets (durée du démembrement si temporaire, espérance de vie de l'usufruitier si viager) ; en revanche, l'évaluation par le barème de l'art. 669 du CGI — conçu « pour la liquidation des droits d'enregistrement » (corpus local) — l'absence de décomposition par composants et la date de valorisation retenues sont des positions de praticiens sans fondement dans un texte officiel.
 
 ### LMP-003 | règle
 - Module : M5bis
@@ -3038,6 +3122,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. civ. art. 605 et 606 (repartition des travaux usufruit/nue-propriete) ; BOI-RFPI-BASE-20-30
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 80-82
 - Règle : Répartition des travaux en démembrement: JURIDIQUEMENT: nu-propriétaire = grosses réparations (art. 606 Code civil); usufruitier = entretien et améliorations (art. 605). FISCALEMENT: la distinction juridique ne s'applique pas — c'est la personne qui a payé et supporté définitivement les travaux qui peut les déduire, quelle que soit leur nature.
+- Précision (vérif. source officielle 2026-08-26) : C. civ. art. 605/606 confirmés (usufruitier : réparations d'entretien ; nu-propriétaire : grosses réparations — gros murs, voûtes, poutres, couvertures entières...) ; NUANCE : fiscalement le PRINCIPE posé par BOI-RFPI-BASE-20-30 reste la répartition selon les art. 605 s. (« chacun ne peut en principe déduire que les dépenses dont le paiement lui incombe »), et c'est par TOLÉRANCE qu'« il est admis » que chacun déduise les dépenses dont il supporte effectivement la charge même si elles ne lui incombent pas — la distinction juridique n'est donc pas « écartée », elle est le principe assorti d'un tempérament aboutissant au même résultat pratique.
 
 ### LMP-004 | règle
 - Module : M5bis
@@ -3048,6 +3133,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : pièces louées = RP du bailleur | locataire = sa RP (ou résidence temporaire salarié saisonnier) | loyer ≤ plafond annuel
 - Seuils : `{"plafond_IDF_2024_m2_an": 213, "plafond_province_2024_m2_an": 157, "limite_nuits_an": 120}`
 - Exceptions : Exonération applicable jusqu'au 31/12/2026 (art. 38 LDF 2024) | Location touristique hors RP: plafond 120 nuits sans exonération de loyers | Revenus < 760 €/an pour location occasionnelle de pièces isolées: exonération spécifique
+- Précision (vérif. source officielle 2026-08-26) : Conditions exactes (CGI art. 35 bis, I : pièces louées faisant partie de la RP du bailleur et constituant la résidence principale — ou temporaire pour un saisonnier — du locataire, loyer « raisonnable », exonération applicable jusqu'au 31/12/2026), MAIS les plafonds cités 213 €/157 € par m²/an sont les valeurs 2025 et non 2024 (2024 : 206 € IdF / 152 € province, BOI-BIC-CHAMP-40-20) ; par ailleurs la limite de 120 nuits vient de la loi ELAN mais la faculté communale de réduire à 90 jours résulte de la loi Le Meur du 19/11/2024.
 
 ### LMP-005 | règle
 - Module : M5bis
@@ -3055,9 +3141,10 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Péremption : Pinel : fermé aux nouvelles acquisitions depuis le 01/01/2025 (seuls les investissements antérieurs continuent à produire leurs réductions). Censi-Bouvard : fermé aux nouvelles acquisitions depuis le 01/01/2023.
 - Ancre : CGI art. 199 sexvicies (Censi-Bouvard, extinction 31/12/2022) ; BOI-IR-RICI-220
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 83-84
-- Règle : Le dispositif Censi-Bouvard permettait une réduction d'impôt pour les LMNP ayant acquis un logement neuf ou en VEFA entre le 1er janvier 2013 et le 31 décembre 2022 dans certaines résidences de services. Certains contribuables peuvent donc encore en bénéficier (sur les investissements encore en cours d'application). Logements éligibles: résidences avec services pour étudiants; résidences avec services agréées pour personnes âgées ou handicapées; résidences d'accueil et de soins agréées (EHPAD). Résidences de tourisme classées: éligibles uniquement jusqu'au 31/12/2016.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Le dispositif Censi-Bouvard permettait une réduction d'impôt pour les LMNP ayant acquis un logement neuf ou en VEFA entre le 1er janvier 2013 et le 31 décembre 2022 dans certaines résidences de services. Certains contribuables peuvent donc encore en bénéficier (sur les investissements encore en cours d'application). Logements éligibles: résidences avec services pour étudiants; résidences avec services agréées pour personnes âgées ou handicapées; résidences d'accueil et de soins agréées (EHPAD). Résidences de tourisme classées: éligibles uniquement jusqu'au 31/12/2016.
 - Conditions : acquisition neuf ou VEFA entre 01/01/2013 et 31/12/2022 | résidences de services éligibles
 - Exceptions : Résidences de tourisme classées: éligibilité terminée au 31/12/2016 | Dispositif terminé pour les nouvelles acquisitions depuis 01/01/2023
+- Correction (vérif. source officielle 2026-08-26) : CGI art. 199 sexvicies : la réduction Censi-Bouvard s'applique aux acquisitions réalisées du 1er JANVIER 2009 au 31 décembre 2022 — la période « 1er janvier 2013 - 31 décembre 2022 » de l'énoncé contredit le texte (2013 correspond seulement à la baisse du taux à 11 %). Le reste est exact : résidences étudiantes, résidences agréées pour personnes âgées ou handicapées, EHPAD ; résidences de tourisme classées exclues pour les acquisitions à compter du 1er janvier 2017 (LF 2017, art. 69) ; la réduction continue de s'imputer pour les investissements passés.
 
 ### LMP-006 | règle
 - Module : M5bis
@@ -3069,6 +3156,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"plafond_investissement": 300000, "reduction_totale_max": 33000, "reduction_annuelle_max": 3667}`
 - Taux : `{"taux_reduction_pct": 11, "duree_ans": 9}`
 - Exceptions : L'amortissement du mobilier reste possible même en cas de réduction Censi-Bouvard
+- Précision (vérif. source officielle 2026-08-26) : Parametres exacts (CGI art. 199 sexvicies : taux 11 % du prix de revient, etale sur 9 ans, plafond annuel d'investissement 300 000 EUR, report de l'excedent de reduction sur les 6 annees suivantes ; BOI-IR-RICI-220) ; deux precisions : le dispositif est eteint (acquisitions jusqu'au 31/12/2022, bornage LF 2024) et l'amortissement de l'immeuble reste admis pour la fraction du prix de revient excedant le montant retenu pour la reduction (CGI art. 39 G), le mobilier restant amortissable.
 
 ### LMP-007 | règle
 - Module : M5bis
@@ -3105,6 +3193,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"seuil_taxe_supplementaire": 50000}`
 - Taux : `{"IR_pct": 19, "PS_pct": 17.2}`
 - Exceptions : Avant 2025: PV brute = Prix cession − Prix acquisition (amortissements non réintégrés) | Résidences étudiantes/apprentissage: exception au régime de réintégration des amortissements
+- Précision (vérif. source officielle 2026-08-26) : Formule conforme à CGI art. 150 VB, III (LF 2025, art. 84 ; cessions dès le 15/2/2025 : prix d'acquisition minoré des amortissements déduits) et aux taux 19 %/17,2 %, surtaxe si PV nette IR > 50 000 € ; MAIS le forfait de frais d'acquisition de 7,5 % n'est PAS conditionné à une détention > 5 ans (150 VB, II, 3°, texte local : aucune condition de durée) — la condition « > 5 ans » ne vaut que pour le forfait travaux de 15 % (II, 4°).
 
 ### RISK-001 | risque
 - Module : FORM
@@ -3112,6 +3201,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 39 C ; BOI-BIC-AMT-20-40-10 (amortissement non deduit perdu)
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 26-26
 - Règle : RISQUE: Oubli de comptabiliser un amortissement dans la déclaration 2031 avant la date limite → amortissement définitivement perdu fiscalement (art. 39-C). Ne peut pas être rattrapé ultérieurement, même si l'amortissement est régularisé comptablement. L'amortissement non déduit à temps ne peut pas être inscrit dans le stock d'ARD.
+- Ancre précisée (2026-08-26) : CGI art. 39 B ; BOI-BIC-AMT-10-50-30
 
 ### RISK-002 | risque
 - Module : FORM
@@ -3119,3 +3209,5 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 206, 2 (IS de plein droit si location meublee par SCI) ; art. 239 ; BOI-IS-CHAMP-10-30
 - source_ingest : M6_gestion_patrimoniale.jsonl
 - Règle : RISQUE: SCI optant pour la location meublée → soumise à l'IS de plein droit (activité commerciale). Cette option IS est IRRÉVOCABLE. La SCI perd: (1) l'abattement pour durée de détention sur les PV immobilières; (2) la possibilité de retourner à l'IR. Les dividendes distribués sont ensuite imposés au PFU 30 % (double imposition IS + PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI IR.
+
+- Précision (vérif. source officielle 2026-08-26) : Confirmé : la location meublée habituelle est commerciale et rend la SCI passible de l'IS de plein droit (CGI art. 206, 2 ; BOI-IS-CHAMP-10-30), avec perte des abattements de durée sur les PV et imposition des dividendes au PFU ; NUANCES : (1) tolérance administrative si les recettes commerciales n'excèdent pas 10 % des recettes totales HT ; (2) il s'agit d'un assujettissement de plein droit et non d'une « option » ; l'option volontaire pour l'IS (CGI art. 239) n'est d'ailleurs plus irrévocable depuis 2019 (renonciation possible pendant 5 exercices) — l'impossibilité de revenir à l'IR ne vaut que tant que l'activité meublée se poursuit.
