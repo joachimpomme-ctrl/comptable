@@ -533,6 +533,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 9-11
 - Règle : Les professions libérales exercent une activité indépendante de prestations intellectuelles, techniques ou de soins.
+- Ancre précisée (2026-08-26) : Loi n°2012-387 du 22/03/2012, art. 29 (définition légale des professions libérales)
 
 ### GFPL-002 | règle
 - Module : M2
@@ -540,6 +541,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : Loi n2022-1158 du 19/08/2022 (definition des professions liberales reglementees) ; CGI art. 92 (BNC)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 9-11
 - Règle : Une profession libérale réglementée est régie par des règles de fonctionnement et d’organisation fixées par la loi ou un texte réglementaire.
+- Ancre précisée (2026-08-26) : Ordonnance n° 2023-77 du 08/02/2023, art. 1er (ex-art. 29, loi n° 2012-387) ; CGI art. 92
 
 ### GFPL-003 | règle
 - Module : M2
@@ -555,6 +557,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 9-11
 - Règle : L’usage du titre est protégé.
+- Ancre précisée (2026-08-26) : C. pénal art. 433-17 (usurpation de titre) ; fiche DGE « Les professions libérales réglementées »
 
 ### GFPL-005 | classification
 - Module : M2
@@ -562,6 +565,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 9-11
 - Règle : Les professions libérales réglementées sont organisées en trois familles : santé, juridique, technique/cadre de vie.
+- Ancre précisée (2026-08-26) : Ordonnance n 2023-77 du 08/02/2023 relative a l'exercice en societe des professions liberales reglementees
 
 ### GFPL-006 | règle
 - Module : M2
@@ -604,6 +608,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 286 (declaration d'activite) ; C. com. art. R.123-1 et s. (guichet unique)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 11-11
 - Règle : Pour créer une entreprise individuelle en profession libérale, il convient de procéder à l’immatriculation en ligne puis de déclarer l’activité à l’URSSAF.
+- Précision (vérif. source officielle 2026-08-26) : Depuis le 01/01/2023, la formalite est unique : declaration de creation sur le guichet unique gere par l'INPI (C. com. art. L.123-33 et R.123-1 s.), qui transmet aux organismes dont l'URSSAF ; l'affiliation URSSAF est automatique, il n'y a plus de declaration separee a l'URSSAF ('Vous ne pouvez plus creer votre entreprise sur le site de l'Urssaf' - urssaf.fr).
 
 ### GFPL-012 | règle
 - Module : M2
@@ -611,6 +616,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. com. art. L.526-22 et s. (statut unique entrepreneur individuel, loi 2022-172 du 14/02/2022)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 9-11
 - Règle : Les entreprises individuelles créées depuis le 15 mai 2022 bénéficient du statut unique d’entreprise individuelle avec responsabilité limitée aux biens utiles à l’activité professionnelle.
+- Précision (vérif. source officielle 2026-08-26) : Le statut unique (C. com. art. L.526-22 et s., loi 2022-172, en vigueur le 15/05/2022) ne bénéficie pas qu'aux EI « créées depuis le 15 mai 2022 » : il s'applique à tous les entrepreneurs individuels, la séparation des patrimoines ne jouant, pour les EI préexistantes, que pour les créances nées à compter du 15/05/2022.
 
 ### GFPL-013 | règle
 - Module : M2
@@ -675,6 +681,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 11-13
 - Règle : La location financière ne permet pas d’acquérir le matériel en fin de location, contrairement au crédit-bail.
+- Ancre précisée (2026-08-26) : C. mon. fin. art. L.313-7 (crédit-bail : location avec possibilité d'acquisition)
 
 ### GFPL-022 | règle
 - Module : M2
@@ -689,6 +696,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 13-14
 - Règle : Le professionnel peut financer son matériel par un crédit, un crédit-bail ou une location financière.
+- Ancre précisée (2026-08-26) : C. mon. fin. art. L.313-7 (credit-bail) ; location financiere : location sans option d'achat
 
 ### GFPL-024 | règle
 - Module : M2
@@ -697,6 +705,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 13-14
 - Règle : Les déductions fiscales du crédit classique et celles du crédit-bail ou de la location financière sont identiques sur la durée du financement.
 - Conditions : déduction des intérêts et amortissements pour le crédit ; déduction des loyers puis amortissement de la valeur résiduelle éventuelle pour crédit-bail/location
+- Précision (vérif. source officielle 2026-08-26) : Équivalence seulement globale, pas identité : les loyers de crédit-bail sont intégralement déductibles « sous réserve de la limitation prévue à l'article 39-4 du CGI » (BOI-BIC-BASE-60-20) et, en crédit-bail immobilier, la quote-part de loyer correspondant au terrain n'est pas déductible (CGI art. 239 sexies et s.) ; en crédit classique on déduit intérêts + amortissements, totaux proches mais non « identiques » dans tous les cas.
 
 ### GFPL-025 | règle
 - Module : M2
@@ -711,6 +720,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 13-14
 - Règle : Le crédit-bail et la location financière alignent le montant des déductions sur le montant des loyers annuels.
+- Précision (vérif. source officielle 2026-08-26) : Les loyers de credit-bail et de location financiere sont en principe integralement deductibles (BOI-BIC-BASE-60-20 ; CGI art. 93, 1 pour les BNC), MAIS sous exceptions notables : plafonnement pour les vehicules de tourisme (CGI art. 39, 4 et 93, 1-2°) et quote-part du loyer se rapportant au terrain en credit-bail immobilier ; l'alignement pur sur les loyers annuels n'est donc pas systematique.
 
 ### GFPL-027 | règle
 - Module : M2
@@ -718,6 +728,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 13-14
 - Règle : Lorsque le bien financé est intégralement lié à l’activité professionnelle, il est possible de majorer le premier loyer du crédit-bail pour maximiser les charges déductibles.
+- Précision (vérif. source officielle 2026-08-26) : Le premier loyer majoré d'un crédit-bail d'un bien affecté à l'activité est déductible l'année du paiement (BNC, comptabilité de caisse), mais la doctrine et la jurisprudence n'admettent la majoration que dans certaines limites (tolérance de l'ordre de 25-30 % de la valeur du bien, risque de remise en cause au-delà) — condition absente de l'énoncé.
 
 ### GFPL-028 | règle
 - Module : M2
@@ -746,6 +757,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 206, 1 (SEL soumise a l'IS de plein droit) ; ordonnance n2023-77 du 08/02/2023
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 14-15
 - Règle : La SEL est soumise de plein droit à l’IS dans les conditions de droit commun.
+- Précision (vérif. source officielle 2026-08-26) : Exact pour les SELAFA, SELAS, SELCA et SELARL pluripersonnelles (CGI art. 206, 1 — sociétés de capitaux), mais la SELARL unipersonnelle dont l'associé unique est une personne physique relève de plein droit du régime des sociétés de personnes (IR, régime EURL, BOI-BNC-SECT-70-40), sauf option pour l'IS.
 
 ### GFPL-032 | exception
 - Module : M2
@@ -753,6 +765,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 8 (EURL/SELARL unipersonnelle a l'IR) et art. 206, 3 (option IS)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 14-15
 - Règle : La SELARL unipersonnelle dont l’associé unique est une personne physique est soumise de plein droit à l’IR avec possibilité d’option irrévocable pour l’IS sous conditions.
+- Précision (vérif. source officielle 2026-08-26) : IR de plein droit exact (CGI art. 8) et option IS possible (CGI art. 239 ; art. 206, 3), mais depuis la LF 2019 (loi n° 2018-1317, art. 50) l'option n'est plus d'emblee irrevocable : renonciation possible jusqu'au 5e exercice suivant celui de l'option ; elle ne devient irrevocable qu'a defaut de renonciation dans ce delai (BOI-IS-CHAMP-20-20-30).
 
 ### GFPL-033 | exception
 - Module : M2
@@ -776,6 +789,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 14-15
 - Règle : Le taux normal de l’IS est de 25 % pour les exercices ouverts à compter du 1er janvier 2023.
 - Taux : `"25 %"`
+- Précision (vérif. source officielle 2026-08-26) : Le taux normal de 25 % (CGI art. 219, I) s'applique aux exercices ouverts a compter du 1er janvier 2022 (LF 2018 art. 84, trajectoire 28 % en 2020, 26,5 % en 2021, 25 % en 2022) - la date du 1er janvier 2023 citee est inexacte, meme si le taux de 25 % vaut bien pour 2023.
 
 ### GFPL-036 | taux réduit
 - Module : M2
@@ -814,6 +828,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 62 (regime SEL revenus 2022, regime transitoire)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 15-16
 - Règle : Pour les revenus perçus en 2022 et déclarés au printemps 2023, l’associé de SEL déclarait sa rémunération d’activité libérale en traitements et salaires ou en rémunération de gérance article 62.
+- Ancre précisée (2026-08-26) : BOFiP ACTU-2022-00159 (tolérance doctrinale, 05/01/2023) ; BOI-RES-BNC-000136 ; CGI art. 62
 
 ### GFPL-041 | règle
 - Module : M2
@@ -828,6 +843,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 16-17
 - Règle : L’assujettissement aux BNC n’oblige pas à l’ouverture d’un compte bancaire professionnel.
+- Ancre précisée (2026-08-26) : CSS art. L.613-10 (compte dédié du micro-entrepreneur, CA > 10 000 € deux années consécutives)
 
 ### GFPL-043 | pratique
 - Module : M2
@@ -843,6 +859,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-19
 - Règle : Afin de pouvoir déclarer en mai-juin 2025 les revenus perçus en 2024, les associés de SEL doivent au préalable créer leur dossier professionnel en remplissant un questionnaire à déposer auprès du SIE dont dépend la SEL.
+- Ancre précisée (2026-08-26) : Actualite impots.gouv.fr (communication DGFiP, demarche SIE des associes de SEL) ; BOI-RES-BNC-000136
 
 ### GFPL-045 | pratique
 - Module : M2
@@ -850,6 +867,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-19
 - Règle : Aucune date limite de dépôt du questionnaire SIE n’est précisée ; il est recommandé de le déposer le plus tôt possible.
+- Précision (vérif. source officielle 2026-08-26) : Aucun délai légal codifié, mais le courrier accompagnant le questionnaire relatif à l'activité professionnelle (formulaire 751-SD) adressé par le SIE indique en pratique un délai de retour de 30 jours ; l'affirmation « aucune date limite n'est précisée » est donc trop absolue.
 
 ### GFPL-046 | règle
 - Module : M2
@@ -901,6 +919,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 102 ter et art. 170 (declaration micro-BNC sur 2042 C PRO) ; BOI-BNC-DECLA-20
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-17
 - Règle : En micro-BNC, la déclaration fiscale est portée sur la 2042 C PRO rubrique « régime spécial BNC » et sur la 2042 ; une 2035 peut être éventuellement déposée.
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 102 ter, 2 : les contribuables au micro-BNC « portent directement sur la déclaration prévue à l'article 170 » (2042 / 2042 C PRO) le montant de leurs recettes — exact ; en revanche aucune 2035 n'est déposée en micro-BNC : le dépôt d'une 2035 vaut option pour la déclaration contrôlée (art. 102 ter, 5 renvoyant à l'art. 97) et donc sortie du régime spécial.
 
 ### GFPL-053 | condition
 - Module : M2
@@ -923,6 +942,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 96, I (option pour la declaration controlee) ; BOI-BNC-DECLA-10-10
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-17
 - Règle : L’option pour la déclaration contrôlée peut être prise jusqu’à la date limite de déclaration des revenus en mai-juin de chaque année ; elle est valable un an et reconduite tacitement.
+- Ancre précisée (2026-08-26) : CGI art. 102 ter, 5 (et art. 96, I pour le principe)
 
 ### GFPL-056 | obligation
 - Module : M2
@@ -944,6 +964,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-17
 - Règle : Il ne faut pas confondre micro-BNC et micro-entreprise.
+- Ancre précisée (2026-08-26) : CGI art. 102 ter ; CSS art. L.613-7 (régime micro-social)
 
 ### GFPL-059 | règle
 - Module : M2
@@ -959,6 +980,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-17
 - Règle : La micro-entreprise est accessible aux entrepreneurs individuels dont le CA annuel HT ne dépasse pas 77 700 €.
 - Seuils : `{"CA_HT": 77700}`
+- Précision (vérif. source officielle 2026-08-26) : Le seuil de 77 700 EUR (CGI art. 102 ter, 1 et art. 50-0, 1-2) ne vaut que pour les prestations de services et les BNC ; il est de 188 700 EUR pour les ventes et la fourniture de logement (art. 50-0, 1-1), et il est porte a 83 600 EUR pour les revenus 2026-2028 - l'enonce generalise un seuil qui n'est exact que pour les activites liberales et millesime 2023-2025.
 
 ### GFPL-061 | règle
 - Module : M2
@@ -981,6 +1003,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-19
 - Règle : Sont citées comme professions libérales soumises à TVA : architectes, conseil, experts-comptables, activités artistiques, professions juridiques et sportives.
+- Ancre précisée (2026-08-26) : CGI art. 256 et 256 A ; BOI-TVA-CHAMP-10-10-60-50
 
 ### GFPL-064 | exemple
 - Module : M2
@@ -988,6 +1011,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-19
 - Règle : Sont citées comme professions libérales non soumises à TVA : activités médicales ou paramédicales et autres activités de santé, assurance/courtage, certaines activités d’enseignement/formation continue agréées, transports sanitaires.
+- Ancre précisée (2026-08-26) : CGI art. 261, 4 (santé, transports sanitaires, enseignement/formation continue) ; CGI art. 261 C, 2° (assurance et courtage)
 
 ### GFPL-065 | règle
 - Module : M2
@@ -1003,6 +1027,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-19
 - Règle : Pour l’activité libérale hors avocat et artiste-auteur, les anciens seuils jusqu’au 28 février 2025 étaient de 37 500 € l’année civile précédente et 41 250 € l’année en cours.
 - Seuils : `{"annee_precedente": 37500, "annee_en_cours": 41250}`
+- Précision (vérif. source officielle 2026-08-26) : Les seuils 37 500 EUR (annee precedente) / 41 250 EUR (annee en cours) pour les prestations de services sont exacts (CGI art. 293 B issu de la LF 2024), mais le seuil unique de 25 000 EUR prevu au 1er mars 2025 (LF 2025 art. 32) a ete suspendu puis supprime par la loi n 2025-1044 du 3 novembre 2025 : ces seuils ne sont donc pas 'anciens', ils sont restes en vigueur toute l'annee 2025.
 
 ### GFPL-067 | seuil
 - Module : M2
@@ -1011,6 +1036,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-19
 - Règle : Pour les avocats et artistes-auteurs, les anciens seuils jusqu’au 28 février 2025 étaient de 50 000 € l’année civile précédente et 55 000 € l’année en cours.
 - Seuils : `{"annee_precedente": 50000, "annee_en_cours": 55000}`
+- Précision (vérif. source officielle 2026-08-26) : Les montants sont exacts (CGI art. 293 B, I bis-A : plafond de 50 000 € de CA de l'année précédente, sortie en cours d'année au-delà de 55 000 €) mais les présenter comme « anciens seuils jusqu'au 28 février 2025 » est daté : l'abaissement à 25 000 € prévu par la LF 2025 au 1er mars 2025 a été suspendu, et le BOFiP consolidé au 01/07/2026 (BOI-TVA-DECLA-40-20) applique toujours 50 000/55 000 € aux avocats et auteurs.
 
 ### GFPL-068 | réforme
 - Module : M2
@@ -1019,6 +1045,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 17-19
 - Règle : La loi de finances 2025 a prévu un abaissement uniforme des limites de franchise en base à 25 000 € l’année civile précédente et 27 500 € l’année en cours à compter du 1er mars 2025.
 - Seuils : `{"annee_precedente": 25000, "annee_en_cours": 27500}`
+- Précision (vérif. source officielle 2026-08-26) : La LF 2025 (art. 32) a bien prévu le seuil unique 25 000 € / 27 500 € au 1er mars 2025, mais son application a été suspendue (reports successifs, renvoi au PLF 2026) : la mesure n'a pas été appliquée et les seuils antérieurs (85 000 € / 37 500 €) sont restés en vigueur.
 
 ### GFPL-069 | suspension
 - Module : M2
@@ -1026,6 +1053,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 19-20
 - Règle : La réforme d’abaissement des seuils de franchise a été suspendue jusqu’au 1er juin 2025 le temps d’une concertation.
+- Précision (vérif. source officielle 2026-08-26) : Exact au printemps 2025 : la reforme du seuil unique de franchise a 25 000 € (LF 2025) a bien ete suspendue jusqu'au 1er juin 2025 le temps d'une concertation, MAIS la suspension a ensuite ete prorogee jusqu'au 31 decembre 2025 (communique du 30/04/2025) et la reforme n'est finalement pas entree en vigueur (retour aux plafonds anterieurs).
 
 ### GFPL-070 | suspension
 - Module : M2
@@ -1040,6 +1068,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 19-20
 - Règle : Les professions libérales sont soumises aux mêmes obligations que les autres redevables, notamment en matière de facturation et de tenue de comptabilité pour justifier le détail des opérations réalisées.
+- Ancre précisée (2026-08-26) : CGI art. 286 et 289 ; BOI-TVA-DECLA-30
 
 ### GFPL-072 | règle
 - Module : M2
@@ -1047,6 +1076,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : a_verifier
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 19-20
 - Règle : Il existe également une obligation déclarative d’existence et d’identification.
+- Ancre précisée (2026-08-26) : CGI art. 286, I-1 (declaration d'existence et d'identification dans les 15 jours)
 
 ### GFPL-073 | règle
 - Module : M2
@@ -1077,6 +1107,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 19-20
 - Règle : Le régime réel simplifié s’applique aux professionnels libéraux dont le CA annuel est compris entre 25 000 € et 254 000 € et dont la TVA exigible annuelle est inférieure à 15 000 €.
 - Seuils : `{"CA_min": 25000, "CA_max": 254000, "TVA_exigible_max": 15000}`
+- Précision (vérif. source officielle 2026-08-26) : Bornes hautes exactes (CA ≤ 254 000 € pour les prestations de services et TVA exigible N-1 < 15 000 €, CGI art. 302 septies A renvoyant au CIBS), mais la borne basse de 25 000 € correspond au seuil unique de franchise issu de la LF 2025, suspendu puis supprimé : la franchise en base applicable aux prestations de services reste 37 500 €, et le réel simplifié peut aussi s'appliquer sur option en dessous.
 
 ### GFPL-077 | obligation
 - Module : M2
@@ -1106,6 +1137,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 287, 2 (declaration mensuelle CA3 au reel normal) ; BOI-TVA-DECLA-20-20-10
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-20
 - Règle : Les professionnels au régime réel normal doivent déclarer chaque mois la TVA devenue exigible au cours du mois précédent ; le paiement est effectué en ligne.
+- Précision (vérif. source officielle 2026-08-26) : Principe exact (CGI art. 287, 2 : dépôt mensuel de la CA3 au réel normal, télédéclaration et télépaiement), mais tolérance omise : dépôt par trimestre civil admis lorsque la taxe exigible annuellement est inférieure à 4 000 €.
 
 ### GFPL-081 | exception
 - Module : M2
@@ -1135,6 +1167,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 38 sexies (valeur nette comptable = valeur d'acquisition - amortissements) ; BOI-BIC-PVMV-10
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-20
 - Règle : La valeur nette comptable correspond à la valeur d’acquisition diminuée du montant des amortissements déjà constatés.
+- Ancre précisée (2026-08-26) : CGI art. 39 duodecies ; BOI-BIC-PVMV-20-10
 
 ### GFPL-085 | règle
 - Module : M2
@@ -1142,6 +1175,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 151 nonies (cession de parts de societe de personnes a l'IR : PV professionnelle)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-20
 - Règle : La cession de titres d’une société soumise à l’IR relève des plus-values professionnelles.
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 151 nonies, I : les parts ne sont des actifs professionnels (PV professionnelle des art. 39 duodecies à 39 quindecies) que si l'associé « exerce son activité professionnelle » dans la société de personnes relevant des art. 8 et 8 ter ; pour l'associé non exerçant, la cession relève des PV des particuliers (art. 150-0 A) — condition manquante dans l'énoncé.
 
 ### GFPL-086 | règle
 - Module : M2
@@ -1213,6 +1247,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 151 septies (exoneration PV pro selon recettes, activite >= 5 ans) ; BOI-BIC-PVMV-40-10
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-21
 - Règle : L’exonération de l’article 151 septies CGI suppose une activité libérale exercée pendant 5 ans consécutivement et concerne les entreprises individuelles ou sociétés de personnes soumises à l’IR.
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 151 septies, I et II (corpus local) : exonération applicable aux activités « exercées à titre professionnel » (contribuables relevant de l'IR : EI et associés de sociétés de personnes) « à condition que l'activité ait été exercée pendant au moins cinq ans » — le texte n'exige pas 5 ans « consécutivement » : la doctrine admet le cumul des périodes d'exercice d'une même activité.
 
 ### GFPL-096 | règle
 - Module : M2
@@ -1257,6 +1292,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 238 quindecies (exoneration PV en fonction de la valeur de cession) ; BOI-BIC-PVMV-40-20-20
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-21
 - Règle : L’exonération de l’article 238 quindecies CGI suppose une activité exercée pendant 5 ans et concerne les entreprises individuelles ou sociétés de personnes soumises à l’IR.
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 238 quindecies et BOI-BIC-PVMV-40-20-50 : la condition d'activité exercée pendant au moins 5 ans est exacte, mais le champ est plus large que l'énoncé — le dispositif bénéficie aussi aux sociétés soumises à l'IS répondant à la définition de PME (moins de 250 salariés, CA < 50 M€ ou bilan < 43 M€).
 
 ### GFPL-102 | règle
 - Module : M2
@@ -1341,6 +1377,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 22-23
 - Règle : Le plafond de l’avantage lié au rattachement d’un enfant majeur est de 6 794 €.
 - Seuils : `{"plafond": 6794}`
+- Précision (vérif. source officielle 2026-08-26) : 6 794 € est le montant exact de l'abattement de l'art. 196 B pour l'imposition des revenus 2024 (BOI-IR-BASE-40), porte a 6 855 € pour les revenus 2025 ; en outre l'abattement ne vise que le rattachement d'enfants maries, pacses ou charges de famille (le rattachement d'un enfant majeur celibataire sans charge ouvre droit a une majoration de quotient familial, pas a l'abattement).
 
 ### GFPL-112 | règle
 - Module : M2
@@ -1350,6 +1387,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : La déduction forfaitaire de 10 % pour frais professionnels des salariés est plafonnée à 14 426 € par déclarant avec un plancher de 504 €.
 - Seuils : `{"plafond": 14426, "plancher": 504}`
 - Taux : `"10 %"`
+- Précision (vérif. source officielle 2026-08-26) : Valeurs exactes pour les revenus 2024 déclarés en 2025 (plafond 14 426 €, minimum 504 €) ; pour les revenus 2025 déclarés en 2026, le plafond est porté à 14 555 € et le minimum à 509 €.
 
 ### GFPL-113 | règle
 - Module : M2
@@ -1359,6 +1397,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Le plafond de l’abattement de 10 % sur les pensions est de 4 399 € par foyer fiscal avec un plancher de 450 €.
 - Seuils : `{"plafond": 4399, "plancher": 450}`
 - Taux : `"10 %"`
+- Précision (vérif. source officielle 2026-08-26) : Valeurs exactes pour les revenus 2024 déclarés en 2025 (plafond 4 399 € par foyer, minimum 450 €) ; pour les revenus 2025 déclarés en 2026, le plafond est porté à 4 439 € et le minimum à 454 € (impots.gouv.fr, pensions de retraite).
 
 ### GFPL-114 | règle
 - Module : M2
@@ -1438,6 +1477,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 204 H, III (credits et reductions hors calcul du taux de PAS)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 23-24
 - Règle : Le prélèvement à la source ne remet pas en cause les crédits et réductions d’impôt ; ils continuent d’être pris en compte dans le calcul de l’IR mais pas dans le calcul du taux de PAS.
+- Ancre précisée (2026-08-26) : CGI art. 204 H, I (calcul du taux de droit commun)
 
 ### GFPL-125 | règle
 - Module : M2
@@ -1447,13 +1487,15 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Les dons aux organismes d’aide aux personnes en difficulté et d’aide aux victimes de violences domestiques ouvrent droit à une réduction d’impôt de 75 % dans la limite de 1 000 € par an ; au-delà, le taux est de 66 % dans la limite globale de 20 % du revenu imposable.
 - Seuils : `{"limite_75": 1000, "limite_globale_revenu_imposable": 20}`
 - Taux : `"75 % puis 66 %"`
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 200, 1 ter : taux de 75 % pour les dons aux organismes d'aide aux personnes en difficulté et aux victimes de violence domestique, au-delà 66 % dans la limite de 20 % du revenu imposable — exact ; mais le plafond de 1 000 € (millésime 2025) a été porté à 2 000 € par la LF 2026 (promulguée le 19/02/2026) pour les dons effectués à compter du 14/10/2025.
 
 ### GFPL-126 | règle
 - Module : M2
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 200, 1 (dons Fondation du patrimoine) ; LF 2025 art. 16 (taux temporaire 75 %)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 4-4
-- Règle : Les dons en faveur de la Fondation du patrimoine réalisés entre le 15 février 2025 et le 31 décembre 2025 ouvrent droit à une réduction d’impôt de 75 % dans la limite de 1 000 € par an ; avant le 15 février 2025 et à compter du 1er janvier 2026, le taux est de 66 % dans la limite globale de 20 % du revenu imposable.
+- Règle : Les dons affectés à la collecte nationale pour le patrimoine religieux des petites communes (Fondation du patrimoine ; communes < 10 000 habitants, < 20 000 outre-mer) versés du 15 septembre 2023 au 31 décembre 2025 ouvrent droit à une réduction d'impôt de 75 % dans la limite de 1 000 € par an (LF 2024, art. 30) ; la LF 2025 (art. 16) a étendu le taux de 75 % aux dons aux fondations RUP œuvrant à la sauvegarde du patrimoine à compter du 15 février 2025. Au-delà du plafond, et hors dispositifs temporaires, régime de droit commun : 66 % dans la limite de 20 % du revenu imposable (CGI art. 200, 1).
+- Vérification (2026-08-26) : énoncé antérieur ERRONÉ (il datait le 75 % du 15/02/2025 alors que la collecte patrimoine religieux en bénéficie depuis le 15/09/2023) — corrigé contre LF 2024 art. 30 et culture.gouv.fr.
 
 ### GFPL-127 | règle
 - Module : M2
@@ -1462,6 +1504,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 4-7
 - Règle : Le taux de la réduction d’impôt pour la souscription de parts de FCPI est augmenté à 25 % à compter d’une date fixée par décret.
 - Taux : `"25 %"`
+- Précision (vérif. source officielle 2026-08-26) : Énoncé exact au millésime 2025 (LF 2025, art. 12 et 14 : taux porté à 25 % pour les FCPI, applicable aux versements effectués à compter d'une date fixée par décret) mais daté : le décret n°2025-973 du 01/10/2025 a fixé cette date — le taux de 25 % s'applique aux versements effectués à compter du 28/09/2025.
 
 ### GFPL-128 | règle
 - Module : M2
@@ -1469,6 +1512,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 199 terdecies-0 A, VI ter (reduction FIP recentree Corse et outre-mer)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 4-7
 - Règle : La réduction d’impôt pour la souscription de parts de FIP est recentrée sur la Corse et l’outre-mer ; les investissements en métropole n’ouvrent plus droit à l’avantage fiscal.
+- Ancre précisée (2026-08-26) : CGI art. 199 terdecies-0 A, VI ter (FIP Corse) et VI ter A (FIP outre-mer)
 
 ### GFPL-129 | règle
 - Module : M2
@@ -1487,6 +1531,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Le crédit d’impôt DEFI forêt-acquisition est de 25 % du prix d’acquisition des parts, retenu dans la limite de 6 250 € pour une personne seule ou 12 500 € pour un couple.
 - Seuils : `{"personne_seule": 6250, "couple": 12500}`
 - Taux : `"25 %"`
+- Ancre précisée (2026-08-26) : CGI art. 200 quindecies ; BOI-IR-RICI-60-20-20
 
 ### GFPL-131 | effet
 - Module : M2
@@ -1495,6 +1540,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 25-26
 - Règle : Le crédit d’impôt maximal DEFI forêt est de 1 563 € à 3 125 € selon la situation familiale.
 - Seuils : `{"credit_min": 1563, "credit_max": 3125}`
+- Ancre précisée (2026-08-26) : CGI art. 200 quindecies ; BOI-IR-RICI-60
 
 ### GFPL-132 | règle
 - Module : M2
@@ -1526,8 +1572,9 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 199 terdecies-0 AB (ESUS logement social, taux 25 %)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 26-27
-- Règle : Pour les ESUS ayant pour ambition de développer un parc d’immeubles dans le logement social, le taux de réduction est de 25 % avec une réduction maximale de 9 000 € ou 18 000 € selon la situation familiale.
-- Seuils : `{"max_celibataire": 9000, "max_couple": 18000}`
+- Règle : Pour les foncières solidaires agréées ESUS (dont logement social), la réduction d'impôt est de 25 % des versements retenus dans la limite annuelle de 50 000 € (personne seule) ou 100 000 € (imposition commune), soit une réduction maximale de 12 500 € ou 25 000 € (CGI art. 199 terdecies-0 AB).
+- Seuils : `{"plafond_versements_celibataire": 50000, "plafond_versements_couple": 100000, "reduction_max_celibataire": 12500, "reduction_max_couple": 25000}`
+- Vérification (2026-08-26) : énoncé antérieur ERRONÉ (réduction max 9 000/18 000 €) — corrigé contre le texte de l'art. 199 terdecies-0 AB.
 - Taux : `"25 %"`
 
 ### GFPL-136 | taux
@@ -1547,6 +1594,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Pour les JEI réalisant des dépenses de recherche et développement représentant au moins 30 % de leurs charges, le taux de réduction est de 50 % avec une réduction maximale de 25 000 € ou 50 000 € selon la situation familiale.
 - Seuils : `{"max_celibataire": 25000, "max_couple": 50000}`
 - Taux : `"50 %"`
+- Ancre précisée (2026-08-26) : CGI art. 199 terdecies-0 A ter (JEIR, taux 50 %)
 
 ### GFPL-138 | condition
 - Module : M2
@@ -1562,6 +1610,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 28-29
 - Règle : Depuis 2009, le total de certains avantages fiscaux ne peut pas procurer une diminution d’impôt supérieure à 10 000 € par an et par foyer fiscal.
 - Seuils : `{"plafond_general": 10000}`
+- Précision (vérif. source officielle 2026-08-26) : CGI art. 200-0 A, 1 confirme le plafond de 10 000 € (18 000 € pour certains avantages outre-mer/Sofica), mais « depuis 2009 » est inexact : le plafonnement global institué par la LF 2009 s'appliquait initialement à 25 000 € + 10 % du revenu, puis a été abaissé par étapes ; le montant de 10 000 € ne s'applique que depuis l'imposition des revenus de 2013.
 
 ### GFPL-140 | règle
 - Module : M2
@@ -1614,6 +1663,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : Loi n2025-127 du 14/02/2025 (LF 2025) art. 10 (contribution differentielle sur les hauts revenus, CDHR, revenus 2025)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 29-30
 - Règle : La CDHR s’applique temporairement, uniquement au titre des revenus de l’année 2025.
+- Précision (vérif. source officielle 2026-08-26) : Exact au regard de la LF 2025 (art. 10 : CDHR au titre des seuls revenus 2025), mais énoncé daté : la loi de finances pour 2026 a prorogé la CDHR au-delà des revenus 2025 (imposition des revenus 2026).
 
 ### GFPL-147 | condition
 - Module : M2
@@ -1683,6 +1733,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 30-32
 - Règle : Pour les revenus du patrimoine et les produits de placement, la CSG est de 9,2 %, la CRDS de 0,5 % et le prélèvement de solidarité de 7,5 %, soit un taux global de 17,2 %.
 - Taux : `"17,2 %"`
+- Précision (vérif. source officielle 2026-08-26) : Taux exacts millésime 2025 : CSG 9,2 % + CRDS 0,5 % + prélèvement de solidarité 7,5 % = 17,2 % (service-public.gouv.fr F2329) ; mais la LFSS pour 2026 porte la CSG sur les revenus du capital à 10,6 %, soit un taux global de 18,6 % applicable à compter de 2026 (placements dès le 01/01/2026).
 
 ### GFPL-156 | règle
 - Module : M2
@@ -1690,6 +1741,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CSS art. L.136-8 (taux de CSG revenus d'activite et de remplacement)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 30-32
 - Règle : Concernant les revenus d’activité et de remplacement, la CSG est de 9,2 % ; pour les pensions de retraite ou d’invalidité, elle est de 8,3 % avec des taux réduits possibles de 6,6 % ou 3,8 % selon le RFR.
+- Précision (vérif. source officielle 2026-08-26) : CSS art. L.136-8 : le taux de 9,2 % ne concerne que les revenus d'activite ; les revenus de remplacement autres que les pensions (allocations chomage, IJSS) sont a 6,2 %, les pensions de retraite et d'invalidite a 8,3 % avec taux reduits de 6,6 % ou 3,8 % (voire exoneration) selon le RFR - la premiere partie de l'enonce assimile a tort les revenus de remplacement au taux de 9,2 %.
 
 ### GFPL-157 | règle
 - Module : M2
@@ -1706,6 +1758,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 30-32
 - Règle : La CASA est prélevée au taux de 0,3 % sur les pensions de retraite et d’invalidité.
 - Taux : `"0,3 %"`
+- Ancre précisée (2026-08-26) : CSS art. L.137-40 et L.137-41 (CASA)
 
 ### GFPL-159 | règle
 - Module : M2
@@ -1714,6 +1767,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 30-32
 - Règle : La cotisation d’assurance maladie est prélevée au taux de 1 % sur les pensions de retraite et d’invalidité.
 - Taux : `"1 %"`
+- Précision (vérif. source officielle 2026-08-26) : La cotisation maladie de 1 % ne frappe pas toutes les pensions : elle s'applique, pour les pensionnes assujettis a la CSG au taux plein, aux seules pensions servies par un regime autre que le regime de base et ayant beneficie d'un financement de l'employeur (retraites complementaires type Agirc-Arrco) — urssaf.fr, revenus de remplacement ; les pensions de base des residents n'y sont pas soumises.
 
 ### GFPL-160 | règle
 - Module : M2
@@ -1742,6 +1796,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : LPF art. L.169 (delai de reprise porte a 10 ans : activites occultes, fraude)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 32-34
 - Règle : Le délai de reprise / prescription est porté à 10 ans dans certains cas, notamment dissimulations volontaires, fraudes fiscales ou fausse domiciliation à l’étranger.
+- Précision (vérif. source officielle 2026-08-26) : LPF art. L.169 : le délai de reprise est bien porté à la fin de la dixième année en cas d'activité occulte (ou illicite), de manquement aux obligations déclaratives sur les avoirs détenus à l'étranger et de fausse domiciliation fiscale à l'étranger ; en revanche la « fraude fiscale » en général n'emporte pas à elle seule le délai décennal — l'énumération de la règle est trop large sur ce point.
 
 ### GFPL-164 | effet
 - Module : M2
