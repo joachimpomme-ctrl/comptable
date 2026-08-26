@@ -1,11 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=GUIDE_INSTALLATION.html">
-  <title>Agent IA Comptable &amp; Patrimoine</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent IA Comptable &amp; Patrimoine</title>
+<meta name="description" content="Agent IA open source pour la fiscalité française : 391 règles tracées, 51 articles CGI, référentiel de paramètres vérifiés. Pour Claude, Gemini Gems et ChatGPT.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📒</text></svg>">
+<style>
+  :root {
+    --ink: #1a2332; --muted: #5b6779; --faint: #8b95a5;
+    --bg: #f7f8fa; --card: #ffffff; --line: #e3e7ed;
+    --accent: #1e4d8c; --accent-soft: #eaf1fa;
+    --warn-bg: #fdf6ec; --warn-line: #e8c987; --warn-ink: #7a5410;
+    --ok: #1a7a4a; --ok-soft: #e8f5ee;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+         background: var(--bg); color: var(--ink); line-height: 1.65; font-size: 16.5px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 22px; }
+  a { color: var(--accent); }
+
+  header { background: linear-gradient(160deg, #16365f 0%, #1e4d8c 70%, #2a62ad 100%); color: #fff; padding: 64px 0 56px; }
+  header .kicker { font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; opacity: .75; margin-bottom: 14px; }
+  header h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.15; letter-spacing: -.01em; margin-bottom: 16px; }
+  header .lead { font-size: 1.12rem; max-width: 640px; opacity: .92; margin-bottom: 30px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-bottom: 34px; }
+  .stats div { font-size: .95rem; opacity: .88; }
+  .stats strong { display: block; font-size: 1.5rem; letter-spacing: -.01em; opacity: 1; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; padding: 11px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: .97rem; }
+  .btn-light { background: #fff; color: var(--accent); }
+  .btn-ghost { border: 1.5px solid rgba(255,255,255,.55); color: #fff; }
+  .btn:hover { filter: brightness(.96); }
+
+  section { padding: 46px 0 6px; }
+  h2 { font-size: 1.45rem; letter-spacing: -.01em; margin-bottom: 8px; }
+  .sub { color: var(--muted); margin-bottom: 26px; max-width: 640px; }
+
+  .warnbox { background: var(--warn-bg); border: 1px solid var(--warn-line); border-left: 5px solid var(--warn-line);
+             border-radius: 10px; padding: 20px 22px; margin: 34px auto 0; }
+  .warnbox h3 { color: var(--warn-ink); font-size: 1.02rem; margin-bottom: 8px; }
+  .warnbox p { color: #6a4d14; font-size: .95rem; }
+  .warnbox p + p { margin-top: 8px; }
+
+  .grid { display: grid; gap: 16px; }
+  .grid-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: .93rem; }
+  .card .tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+               background: var(--accent-soft); color: var(--accent); border-radius: 20px; padding: 3px 10px; margin-bottom: 12px; }
+  .card .tag.ok { background: var(--ok-soft); color: var(--ok); }
+  .card a.more { font-size: .9rem; font-weight: 600; text-decoration: none; }
+  .card p + p, .card p + a.more { margin-top: 10px; display: inline-block; }
+
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: .92rem; }
+  .tablewrap { overflow-x: auto; border-radius: 12px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: #f0f3f7; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  tr:last-child td { border-bottom: none; }
+  td strong { color: var(--accent); }
+  .badge { display: inline-block; font-size: .74rem; font-weight: 600; border-radius: 20px; padding: 2px 9px; white-space: nowrap; }
+  .badge.src { background: var(--ok-soft); color: var(--ok); }
+  .badge.cand { background: var(--warn-bg); color: var(--warn-ink); }
+
+  .steps { counter-reset: n; display: grid; gap: 12px; }
+  .steps li { list-style: none; background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+              padding: 14px 18px 14px 54px; position: relative; color: var(--muted); font-size: .95rem; }
+  .steps li::before { counter-increment: n; content: counter(n); position: absolute; left: 16px; top: 13px;
+                      width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff;
+                      font-weight: 700; font-size: .85rem; display: flex; align-items: center; justify-content: center; }
+  .steps li strong { color: var(--ink); }
+  code { background: #eef1f5; border-radius: 5px; padding: 1px 6px; font-size: .87em; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  pre { background: #10243e; color: #dbe7f5; border-radius: 10px; padding: 16px 18px; overflow-x: auto;
+        font-size: .86rem; line-height: 1.6; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+  .modules { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modules span { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; font-size: .87rem; color: var(--muted); }
+
+  .callout { background: var(--accent-soft); border: 1px solid #c9dcf2; border-radius: 12px; padding: 22px 24px; }
+  .callout h3 { color: var(--accent); margin-bottom: 8px; font-size: 1.05rem; }
+  .callout p { font-size: .95rem; color: #2c4468; }
+
+  footer { margin-top: 56px; padding: 30px 0 44px; border-top: 1px solid var(--line); color: var(--faint); font-size: .88rem; }
+  footer a { color: var(--muted); }
+</style>
 </head>
 <body>
-  <p>Redirection vers le <a href="GUIDE_INSTALLATION.html">guide d'installation</a>...</p>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">Projet open source · CC BY-NC 4.0</div>
+    <h1>Agent IA Comptable &amp; Patrimoine</h1>
+    <p class="lead">Un agent IA spécialisé en fiscalité française, comptabilité BNC/BIC, location meublée et gestion de patrimoine — dont chaque chiffre est tracé jusqu'à sa source officielle. Pour <strong>Claude</strong>, <strong>Gemini Gems</strong> et <strong>ChatGPT</strong>.</p>
+    <div class="stats">
+      <div><strong>391</strong>règles tracées</div>
+      <div><strong>51</strong>articles CGI (2026)</div>
+      <div><strong>32</strong>paramètres chiffrés<br>dont 24 vérifiés</div>
+      <div><strong>45</strong>cas de test</div>
+    </div>
+    <div class="cta">
+      <a class="btn btn-light" href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/expert-comptable.zip">⬇ Skill Claude prêt à l'emploi</a>
+      <a class="btn btn-ghost" href="GUIDE_INSTALLATION.html">Guide d'installation</a>
+      <a class="btn btn-ghost" href="https://github.com/joachimpomme-ctrl/comptable">Dépôt GitHub</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="warnbox">
+    <h3>⚠️ À lire avant toute utilisation</h3>
+    <p><strong>Les sorties de l'agent sont des projets de réponse à vérifier — jamais un livrable client, jamais un conseil.</strong> La consultation fiscale à titre habituel est une activité réglementée : cet outil est une aide à la recherche et à la pré-qualification, la responsabilité professionnelle reste celle du praticien.</p>
+    <p>État de validation : <strong>0 des 391 règles métier n'a encore été validée par un professionnel</strong> (statut <code>candidate_to_validate</code>). Seuls les 24 paramètres <code>sourced</code> du référentiel sont vérifiés contre une source officielle, avec URL et date.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<section>
+  <h2>À quoi ça sert</h2>
+  <p class="sub">Pensé pour les professionnels du chiffre comme pour les indépendants avertis : pré-qualifier un dossier (régime, seuils, options), produire un brouillon de réponse sourcée à vérifier, dérouler les checklists déclaratives (2035, 2042, 2044, 2048-IMM), rappeler les pièges (ARD en LMNP, réintégration des amortissements depuis 2025, bascules micro/réel).</p>
+  <pre>« Mon client kiné a encaissé 80 000 € en 2026, peut-il rester au micro-BNC ? »
+« Calcule la PV de cession d'un LMNP au réel, amortissements déduits 40 000 €. »
+« Quelles cases sur la 2044 pour mon déficit foncier ? »</pre>
+</section>
+
+<section>
+  <h2>Ce qui le rend fiable</h2>
+  <p class="sub">La différence avec « demander à une IA » : chaque affirmation est traçable, chaque limite est affichée.</p>
+  <div class="grid grid-3">
+    <div class="card">
+      <span class="tag ok">Source de vérité</span>
+      <h3>Référentiel de paramètres</h3>
+      <p>32 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle, URL Légifrance/JO et date de vérification. En cas d'écart avec un texte, <strong>le référentiel prime</strong>.</p>
+    </div>
+    <div class="card">
+      <span class="tag ok">Traçabilité</span>
+      <h3>Chaque règle a sa source</h3>
+      <p>391 règles reliées une à une à leur document et page d'origine, ancrées sur le CGI et le BOFiP. Le texte officiel de 51 articles du CGI (millésime 2026) est embarqué.</p>
+    </div>
+    <div class="card">
+      <span class="tag ok">Testé</span>
+      <h3>45 cas de test écrits</h3>
+      <p>Une suite d'évaluation avec réponses attendues, le moyen le plus rapide de juger la qualité des sorties. Le skill Claude a été benchmarké avec/sans : <strong>11/11 critères réussis</strong> avec le skill.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Transparence</span>
+      <h3>Statuts affichés</h3>
+      <p>Chaque règle porte son statut (<code>sourced</code>, <code>candidate_to_validate</code>, <code>validated</code>) et l'agent le rappelle dans ses réponses, avec le millésime.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Garde-fous</span>
+      <h3>Refus hors périmètre</h3>
+      <p>Crypto, TVA intracommunautaire, fiscalité internationale, contentieux LPF : refus explicite plutôt qu'une réponse inventée. Aucun chiffre sans source (<code>DATA_NOT_FOUND</code> sinon).</p>
+    </div>
+    <div class="card">
+      <span class="tag">Format imposé</span>
+      <h3>Réponses structurées</h3>
+      <p>Situation identifiée, règles avec ancre légale, calcul, points de vigilance, sources, et toujours : quel professionnel doit valider.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Trois façons de l'installer</h2>
+  <p class="sub">Le même corpus de connaissances, décliné pour trois plateformes. Détails pas à pas dans le <a href="GUIDE_INSTALLATION.html">guide d'installation</a>.</p>
+  <div class="grid grid-3">
+    <div class="card">
+      <span class="tag ok">Recommandé</span>
+      <h3>Claude — skill prêt à l'emploi</h3>
+      <p>Télécharger <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/expert-comptable.zip">expert-comptable.zip</a> (198 Ko, base embarquée) puis l'importer dans claude.ai → Settings → Capabilities → Upload skill. Actif ensuite partout : claude.ai, Claude Code, mobile.</p>
+      <p>Qui clone le dépôt et l'ouvre dans Claude Code a le skill automatiquement, sans rien installer.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Google</span>
+      <h3>Gemini Gems</h3>
+      <p>Créer un Gem avec les instructions fournies et les 10 fichiers de connaissances (limite Gemini). Bonus : archivage des analyses dans Google Drive sur demande.</p>
+      <a class="more" href="GUIDE_INSTALLATION.html">Suivre le guide →</a>
+    </div>
+    <div class="card">
+      <span class="tag">OpenAI</span>
+      <h3>ChatGPT Custom GPT</h3>
+      <p>Créer un GPT avec les instructions dédiées et les 13 fichiers de connaissances. Pas d'intégration Drive (archivage manuel).</p>
+      <a class="more" href="GUIDE_INSTALLATION.html">Suivre le guide →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Millésimes couverts</h2>
+  <p class="sub">Les barèmes changent à chaque Loi de Finances ; la base est mise à jour en janvier. État actuel :</p>
+  <div class="tablewrap">
+  <table>
+    <tr><th>Paramètre</th><th>2025</th><th>2026</th><th>Statut</th></tr>
+    <tr><td>PASS</td><td>47 100 €</td><td><strong>48 060 €</strong></td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>Seuil micro-BNC (CGI 102 ter)</td><td>77 700 €</td><td><strong>83 600 €</strong> (2026-2028)</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>Micro-BIC tourisme non classé / classé (loi Le Meur)</td><td>15 000 € / 77 700 €</td><td>inchangés</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>Seuil LMP · Seuil IFI · Déficit foncier</td><td>23 000 € · 1,3 M€ · 10 700 €</td><td>inchangés</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>PV immobilière (IR + PS)</td><td colspan="2">19 % + 17,2 %</td><td><span class="badge src">IR sourced</span> <span class="badge cand">PS à valider</span></td></tr>
+    <tr><td>Taux URSSAF PL · barème kilométrique</td><td>millésime 2025</td><td>mise à jour en attente</td><td><span class="badge cand">à valider</span></td></tr>
+    <tr><td>CARMF / CARPIMKO (forfaits)</td><td>indicatifs</td><td>vérifier caisses</td><td><span class="badge cand">à valider</span></td></tr>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>Vous êtes expert-comptable, fiscaliste, CGP, notaire ?</h2>
+  <div class="callout">
+    <h3>C'est ici qu'on a besoin de vous : 0 / 391 règles validées</h3>
+    <p>Le corpus est structuré et tracé, mais n'a pas encore été relu par des professionnels. Le workflow de validation ne demande aucune connaissance de Git : <strong>une issue GitHub par règle</strong> (verdict, source d'appui, nom et qualité), et la règle passe au statut <code>validated</code> avec votre crédit. Chaque validation augmente la valeur du corpus pour tout le monde.</p>
+    <p style="margin-top:10px"><a href="https://github.com/joachimpomme-ctrl/comptable/blob/main/CONTRIBUTING.md"><strong>Lire le guide de contribution →</strong></a></p>
+  </div>
+</section>
+
+<section>
+  <h2>Domaines couverts</h2>
+  <div class="modules">
+    <span>Comptabilité BNC</span><span>Fiscalité professions libérales</span><span>Normes PCG</span>
+    <span>LMNP / LMP</span><span>Revenus fonciers &amp; PV immobilières</span><span>Succession &amp; donation</span>
+    <span>Assurance-vie &amp; PER</span><span>SCI &amp; démembrement</span><span>IFI &amp; DMTG</span>
+    <span>Épargne salariale (PEE, PERCOL)</span><span>Pacte Dutreil &amp; transmission</span>
+    <span>Déclarations 2042 · 2035 · 2044 · 2048-IMM</span><span>BFR, CAF, trésorerie</span><span>Optimisation fiscale légale</span>
+  </div>
+  <p class="sub" style="margin-top:18px">Hors périmètre (refus explicite) : fiscalité crypto-actifs, TVA intracommunautaire, fiscalité internationale, contentieux LPF.</p>
+</section>
+
+<section>
+  <h2>Démarrer en 3 minutes</h2>
+  <ol class="steps">
+    <li><strong>Installer</strong> — le <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/expert-comptable.zip">skill Claude</a> (recommandé), ou un Gem / Custom GPT via le <a href="GUIDE_INSTALLATION.html">guide</a>.</li>
+    <li><strong>Tester</strong> — poser une des questions d'exemple, ou dérouler un des 45 cas de la suite d'évaluation dont la réponse attendue est écrite.</li>
+    <li><strong>Garder le réflexe</strong> — chaque réponse est un projet d'analyse : vérifier les sources citées, faire valider par le bon professionnel avant toute décision.</li>
+  </ol>
+</section>
+
+<footer>
+  <div>Agent IA Comptable &amp; Patrimoine — <a href="https://github.com/joachimpomme-ctrl/comptable">github.com/joachimpomme-ctrl/comptable</a></div>
+  <div style="margin-top:6px">Licence <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> · Règles dérivées de sources publiques (CGI, BOFiP, guides officiels) · Ne constitue pas un conseil professionnel · Base mise à jour en janvier de chaque année</div>
+</footer>
+</div>
+
 </body>
 </html>
