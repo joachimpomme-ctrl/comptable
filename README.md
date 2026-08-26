@@ -22,7 +22,7 @@ Agent IA specialise en comptabilite, fiscalite des professions liberales, locati
 | M11 | Epargne salariale (PEE, PERCOL, interessement) |
 | M12 | Transmission, Pacte Dutreil, DPE, decote IFI |
 | FORM | 7 formules de calcul + 8 risques critiques |
-| M_CGI | 44 articles du Code General des Impots (texte legal, millesime 2026) |
+| M_CGI | 51 articles du Code General des Impots (texte legal, millesime 2026) |
 
 ---
 
@@ -37,15 +37,15 @@ chatgpt/
   00_INSTRUCTIONS_CHATGPT.md            <- System prompt ChatGPT (sans Drive)
 knowledge/
   01_decision_engine.md                 <- Moteur decisionnel IF/THEN (10 modules)
-  02_golden_rules_claude_first.md       <- 359 regles curatees
-  03_few_shots.md                       <- 27 exemples calibres
+  02_golden_rules_claude_first.md       <- 391 regles curatees
+  03_few_shots.md                       <- 25 exemples calibres
   04_formules_et_risques.md             <- Formules + risques critiques
   05_agent_governance.md                <- Playbooks + risk matrix
   06_golden_checklists.md               <- Checklists par domaine
   07_rule_source_crosswalk.jsonl        <- Tracabilite regles -> sources PDF
-  08_evaluation_suite.md                <- 28 cas de test
+  08_evaluation_suite.md                <- 45 cas de test
   09_agent_manifest.json                <- Metadonnees corpus
-  M_CGI_code_general_impots.md          <- 44 articles CGI — texte legal (millesime 2026)
+  M_CGI_code_general_impots.md          <- 51 articles CGI — texte legal (millesime 2026)
   chatgpt_only/                         <- Fichiers supplementaires ChatGPT uniquement
     10_documents.json                   <- Inventaire documents sources
     M_CGI_code_general_impots.jsonl     <- Version JSONL du CGI (doublon du MD)
@@ -69,7 +69,7 @@ scripts/
 | # | Fichier | Pourquoi |
 |---|---------|----------|
 | 1 | `01_decision_engine.md` | Moteur IF/THEN — coeur du raisonnement |
-| 2 | `02_golden_rules_claude_first.md` | 359 regles curatees |
+| 2 | `02_golden_rules_claude_first.md` | 391 regles curatees |
 | 3 | `03_few_shots.md` | Calibrage du style de reponse |
 | 4 | `04_formules_et_risques.md` | Formules de calcul + risques |
 | 5 | `05_agent_governance.md` | Playbooks + deontologie |
@@ -80,7 +80,7 @@ scripts/
 | 10 | `09_agent_manifest.json` | Metadonnees corpus |
 
 > Les fichiers du sous-dossier `knowledge/chatgpt_only/` sont exclus de Gemini (hors limite 10 fichiers).
-> Sur **ChatGPT** (sans limite stricte), uploader les 14 fichiers (dont M13 baremes TNS/kilometrique).
+> Sur **ChatGPT** (sans limite stricte), uploader les 12 fichiers du dossier `knowledge/` (les baremes M13 TNS/kilometrique sont integres a `04_formules_et_risques.md`).
 
 5. Activer les outils **Google Drive**, **Google Docs**, **Google Sheets**
 
