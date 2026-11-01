@@ -3,7 +3,7 @@
 
 Deux skills sont versionnes dans .claude/skills/ :
 
-- expert-comptable : lit la base knowledge/ a la racine du depot. Le paquet
+- assistant-fiscal-comptable (anciennement expert-comptable) : lit la base knowledge/ a la racine du depot. Le paquet
   autonome embarque cette base dans references/ et adapte les chemins du
   SKILL.md.
 - conseiller-patrimoine : deja autonome (SKILL.md, references/, scripts/).
@@ -11,7 +11,7 @@ Deux skills sont versionnes dans .claude/skills/ :
 
 Usage :
     python3 scripts/build_skill_package.py                        # les deux
-    python3 scripts/build_skill_package.py expert-comptable       # un seul
+    python3 scripts/build_skill_package.py assistant-fiscal-comptable  # un seul
     python3 scripts/build_skill_package.py conseiller-patrimoine
 
 Produit, pour chaque skill :
@@ -49,9 +49,9 @@ def _zipper(build_dir, nom):
         print(f"OK {out.relative_to(REPO)} ({out.stat().st_size / 1024:.0f} Ko)")
 
 
-def build_expert_comptable():
-    src = SKILLS / "expert-comptable"
-    build = BUILD_ROOT / "expert-comptable"
+def build_assistant_fiscal_comptable():
+    src = SKILLS / "assistant-fiscal-comptable"
+    build = BUILD_ROOT / "assistant-fiscal-comptable"
     if not (src / "SKILL.md").exists():
         sys.exit(f"SKILL.md introuvable dans {src}")
     (build / "scripts").mkdir(parents=True)
@@ -64,7 +64,7 @@ def build_expert_comptable():
     # SKILL.md : les chemins knowledge/ deviennent references/ (embarques),
     # et le script de lookup s'appelle depuis le dossier du skill.
     text = (src / "SKILL.md").read_text(encoding="utf-8")
-    text = text.replace(".claude/skills/expert-comptable/scripts/lookup.py", "scripts/lookup.py")
+    text = text.replace(".claude/skills/assistant-fiscal-comptable/scripts/lookup.py", "scripts/lookup.py")
     text = text.replace("knowledge/", "references/")
     text = text.replace("adossé à la base de connaissances references/ de ce dépôt",
                         "adossé à sa base de connaissances embarquée (references/)")
@@ -82,7 +82,7 @@ def build_expert_comptable():
     for f in knowledge_files:
         shutil.copy2(f, build / "references" / f.name)
 
-    _zipper(build, "expert-comptable")
+    _zipper(build, "assistant-fiscal-comptable")
     print(f"Contenu : SKILL.md + scripts/lookup.py + {len(knowledge_files)} fichiers references/")
 
 
@@ -99,7 +99,7 @@ def build_conseiller_patrimoine():
 
 
 CIBLES = {
-    "expert-comptable": build_expert_comptable,
+    "assistant-fiscal-comptable": build_assistant_fiscal_comptable,
     "conseiller-patrimoine": build_conseiller_patrimoine,
 }
 

@@ -8,7 +8,7 @@ Avant tout engagement : vérifier l'intermédiaire (AMF, ORIAS, REGAFI, listes n
 
 - **Ce que dit la recherche** : performances très dispersées, frais élevés, mesures de rendement (TRI) flatteuses et difficiles à comparer. Kaplan et Schoar (*Journal of Finance*, 2005) ; Harris, Jenkinson et Kaplan (*Journal of Finance*, 2014) trouvent une surperformance moyenne des fonds de buyout américains par rapport aux actions cotées, contestée et dépendante des périodes ; Phalippou (*Private Equity Laid Bare*) insiste sur les frais et les biais de mesure. Statut : débattu.
 - **Investissement direct dans des startups** (business angels, plateformes) : la plupart des participations perdent tout ou presque, le résultat dépend de quelques gagnants. Répartir sur de nombreux dossiers (au moins une dizaine à une vingtaine, heuristique) sur plusieurs années.
-- **Fonds** (FCPR, FCPI, FIP, ELTIF) : durée de blocage de 7 à 10 ans ou plus, frais annuels souvent de plusieurs points, avantage fiscal éventuel (`expert-comptable`) à ne pas confondre avec le rendement.
+- **Fonds** (FCPR, FCPI, FIP, ELTIF) : durée de blocage de 7 à 10 ans ou plus, frais annuels souvent de plusieurs points, avantage fiscal éventuel (`assistant-fiscal-comptable`) à ne pas confondre avec le rendement.
 - **Liquidité** : nulle avant la sortie de l'entreprise ou du fonds. Ne jamais y mettre l'argent d'un projet.
 - **Questions à poser** : qui sélectionne, avec quel historique vérifiable ; frais totaux par an ; durée ; ce qui se passe si la société a besoin d'un nouveau tour de table (dilution) ; information reçue ensuite.
 
@@ -17,7 +17,7 @@ Avant tout engagement : vérifier l'intermédiaire (AMF, ORIAS, REGAFI, listes n
 - Parts de sociétés qui détiennent de l'immobilier loué (bureaux, commerces, santé, logistique, résidentiel).
 - **Frais** : frais de souscription souvent de 8 à 12 % (lire le DIC), frais de gestion annuels prélevés sur les loyers. Le taux de distribution affiché n'est pas le rendement total : il ignore les frais d'entrée et la variation du prix de part.
 - **Liquidité** : la revente dépend de nouveaux acheteurs. Depuis 2023, plusieurs SCPI ont baissé leur prix de part et accumulé des parts en attente de retrait (sources : ASPIM, IEIF, bulletins des SCPI). Un placement à horizon de 8 à 10 ans au moins.
-- **Fiscalité** : revenus fonciers imposés au barème plus prélèvements sociaux en direct, plus doux dans une assurance-vie ou via certaines SCPI européennes (`expert-comptable`).
+- **Fiscalité** : revenus fonciers imposés au barème plus prélèvements sociaux en direct, plus doux dans une assurance-vie ou via certaines SCPI européennes (`assistant-fiscal-comptable`).
 - **Alternatives** : SIIC et foncières cotées (liquides, volatiles), immobilier détenu en direct.
 
 ## 3. Financement participatif (crowdfunding)
@@ -32,7 +32,7 @@ Avant tout engagement : vérifier l'intermédiaire (AMF, ORIAS, REGAFI, listes n
 - Prestataire : uniquement un prestataire agréé MiCA (liste blanche de l'AMF, ou registre ESMA pour un prestataire passeporté) depuis la fin de la période transitoire le 01/07/2026.
 - Conservation : comprendre qui détient les clés ; un compte chez un prestataire n'est pas un dépôt bancaire garanti.
 - Usage raisonnable : une petite poche, dans la limite de la poche « plaisir » de la charte, avec une somme dont la perte totale ne change rien aux objectifs.
-- Fiscalité des cessions : `expert-comptable`.
+- Fiscalité des cessions : `assistant-fiscal-comptable`.
 
 ## 5. Or
 
@@ -48,7 +48,7 @@ Avant tout engagement : vérifier l'intermédiaire (AMF, ORIAS, REGAFI, listes n
 
 ## 7. Défiscalisation
 
-- Girardin, FIP et FCPI, Malraux, monuments historiques, Denormandie, groupements forestiers, statut du bailleur privé dit Jeanbrun (loi de finances 2026, `01-fraicheur.md`) : chaque dispositif a des conditions, des plafonds, une durée d'engagement et des risques propres (`expert-comptable`).
+- Girardin, FIP et FCPI, Malraux, monuments historiques, Denormandie, groupements forestiers, statut du bailleur privé dit Jeanbrun (loi de finances 2026, `01-fraicheur.md`) : chaque dispositif a des conditions, des plafonds, une durée d'engagement et des risques propres (`assistant-fiscal-comptable`).
 - Pinel : fermé depuis le 01/01/2025.
 - Règle : on achète un actif, pas une réduction d'impôt. Calculer le rendement de l'opération sans l'avantage fiscal, puis avec. Si l'actif est mauvais sans l'avantage, l'avantage ne le sauve pas.
 - Les commercialisateurs sont souvent rémunérés par des commissions élevées sur ces produits : le demander par écrit.

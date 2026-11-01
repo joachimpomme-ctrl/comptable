@@ -1,6 +1,6 @@
 # Immobilier et crédit
 
-Règles en vigueur et dates : `01-fraicheur.md`. Fiscalité (plus-values, LMNP, revenus fonciers, droits de mutation au détail) : `expert-comptable`.
+Règles en vigueur et dates : `01-fraicheur.md`. Fiscalité (plus-values, LMNP, revenus fonciers, droits de mutation au détail) : `assistant-fiscal-comptable`.
 
 ## 1. Budget d'un achat de résidence principale
 
@@ -30,7 +30,7 @@ Coût total = prix + frais d'acquisition + travaux + frais de garantie et de dos
 - Tester le scénario défavorable avec `capacite.py achat-revente` : vente 10 % sous le prix espéré (le script vérifie que la vente couvre relais et capital restant dû) et 6 mois de portage de plus que prévu (coût affiché par durée).
 - Règle HCSF depuis décembre 2023 (probable) : les intérêts d'un relais adossé à un crédit d'acquisition peuvent sortir du taux d'effort si le relais ne dépasse pas 80 % de la valeur du bien vendu. Faire confirmer par la banque le calcul retenu pendant la période de portage.
 
-**Apport issu d'une vente** = prix net vendeur − capital restant dû − indemnités de remboursement anticipé (dues en principe en cas de simple vente ; exclues par la loi si la vente suit un changement de lieu d'activité professionnelle, le décès ou la cessation forcée d'activité de l'emprunteur ou de son conjoint, C. consom. art. L313-48 ; l'offre peut prévoir mieux) − frais de mainlevée et diagnostics. La plus-value sur la résidence principale est exonérée sous conditions (CGI art. 150 U, II, 1°, via `expert-comptable`).
+**Apport issu d'une vente** = prix net vendeur − capital restant dû − indemnités de remboursement anticipé (dues en principe en cas de simple vente ; exclues par la loi si la vente suit un changement de lieu d'activité professionnelle, le décès ou la cessation forcée d'activité de l'emprunteur ou de son conjoint, C. consom. art. L313-48 ; l'offre peut prévoir mieux) − frais de mainlevée et diagnostics. La plus-value sur la résidence principale est exonérée sous conditions (CGI art. 150 U, II, 1°, via `assistant-fiscal-comptable`).
 
 **Prêt en cours à taux bas** : avant de le solder, lire l'offre de prêt pour une clause de transférabilité. Transférer un prêt ancien à taux bas sur le nouveau bien peut valoir plusieurs milliers d'euros quand les taux de marché sont plus hauts (`02-doctrine.md` 9.2). Clause rare et négociée, mais à vérifier.
 
@@ -61,10 +61,10 @@ Coût total = prix + frais d'acquisition + travaux + frais de garantie et de dos
 
 ## 7. Investissement locatif
 
-- **Rendements** : brut = loyers annuels hors charges / prix d'achat (préciser si les frais d'acquisition sont inclus, les conventions varient) ; net = après charges non récupérables, taxe foncière, assurance PNO, gestion, entretien, vacance ; net-net = après impôt (`expert-comptable`). Le rendement net est souvent inférieur de 1,5 à 2,5 points au brut (heuristique, à calculer).
+- **Rendements** : brut = loyers annuels hors charges / prix d'achat (préciser si les frais d'acquisition sont inclus, les conventions varient) ; net = après charges non récupérables, taxe foncière, assurance PNO, gestion, entretien, vacance ; net-net = après impôt (`assistant-fiscal-comptable`). Le rendement net est souvent inférieur de 1,5 à 2,5 points au brut (heuristique, à calculer).
 - **Cash-flow** : loyers − mensualité − charges − impôt. Un cash-flow négatif est un effort d'épargne forcé, à comparer à un placement financier de même effort.
 - **Risques** : vacance, impayés, travaux de copropriété, règles énergétiques (calendrier DPE, `01-fraicheur.md`), encadrement des loyers, concentration et illiquidité.
-- **Régimes** : location nue (micro-foncier ou réel, déficit foncier) ; meublée LMNP (micro-BIC ou réel avec amortissements, réintégration de tous les amortissements déduits à la revente, pour les cessions depuis le 15/02/2025, sauf résidences exclues par l'art. 150 VB, III) ; SCI. Tout chiffrage fiscal passe par `expert-comptable`.
+- **Régimes** : location nue (micro-foncier ou réel, déficit foncier) ; meublée LMNP (micro-BIC ou réel avec amortissements, réintégration de tous les amortissements déduits à la revente, pour les cessions depuis le 15/02/2025, sauf résidences exclues par l'art. 150 VB, III) ; SCI. Tout chiffrage fiscal passe par `assistant-fiscal-comptable`.
 - **Décence et DPE** : un logement G ne peut plus faire l'objet d'un nouveau bail ou d'un renouvellement depuis 2025, F en 2028, E en 2034, sous réserve de la réforme en cours. Le DPE se lit sur l'observatoire de l'ADEME ; depuis 2026, le nouveau coefficient de l'électricité peut faire gagner une classe à un logement chauffé à l'électricité (attestation gratuite).
 - **Encadrement** : dans les zones concernées, le loyer de base ne dépasse pas le loyer de référence majoré de l'arrêté préfectoral, sauf complément de loyer justifié. Expérimentation à durée limitée, vérifier qu'elle est en vigueur.
 - **Revendre un bien loué** : un logement occupé se vend en général moins cher qu'un logement libre ; congé pour vente aux dates et conditions de la loi de 1989 (location nue) ou du bail meublé.

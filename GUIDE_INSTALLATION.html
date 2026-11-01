@@ -172,7 +172,7 @@
 
 <header>
   <h1>Agent IA Comptable &amp; Patrimoine</h1>
-  <p class="subtitle">Guide d'installation et de configuration &mdash; Version 2026-05-12</p>
+  <p class="subtitle">Guide d'installation et de configuration &mdash; Version 2026.11.3 (01/11/2026)</p>
   <div class="badges">
     <span class="badge badge-gemini">Gemini Gems</span>
     <span class="badge badge-chatgpt">ChatGPT Custom GPT</span>
@@ -212,8 +212,8 @@
     <p>Cet agent est un assistant IA spécialisé en <strong>comptabilite, fiscalite des professions libérales, location meublée, gestion financière et gestion de patrimoine</strong>. Il raisonne a partir d'une base de connaissances structurée — 391 règles curatées, 12 modules métier, 25 exemples calibrés — et produit des réponses sourcées, traçables et prudentes.</p>
 
     <div class="alert alert-danger">
-      <strong>Ce n'est pas un substitut à un professionnel.</strong>
-      Les sorties de l'agent sont des projets de réponse à vérifier — jamais un livrable client, jamais un conseil. La consultation fiscale à titre habituel est une activité réglementée : la responsabilité professionnelle reste celle du praticien. Ne prenez jamais de décision fiscale, patrimoniale ou juridique importante sur la seule base de cet agent.
+      <strong>À lire avant toute utilisation.</strong>
+      Outil d'aide à la recherche fondé sur des modèles d'IA (Claude, Gemini, ChatGPT) : ses réponses peuvent être fausses, incomplètes ou périmées, même quand elles citent une source. Ce n'est ni une consultation juridique ou fiscale, ni une mission d'expertise comptable, ni un conseil en investissement, en crédit ou en assurance ; exercées pour autrui de façon habituelle, et selon les cas rémunérée, ces activités sont réservées à des professionnels habilités. Particuliers : vérifiez sur une source officielle ou auprès d'un professionnel avant toute déclaration ou décision. Professionnels : les sorties sont des brouillons qui engagent votre responsabilité ; ne saisissez aucune donnée identifiant un client, et dites à vos clients qu'ils échangent avec une IA si vous leur ouvrez l'agent.
     </div>
 
     <div class="alert alert-warning">
@@ -243,8 +243,11 @@
       <li>Fiscalité crypto-actifs</li>
       <li>TVA intracommunautaire</li>
       <li>Fiscalité internationale</li>
-      <li>Crédit-bail (comptabilisation preneur)</li>
+      <li>Contentieux fiscal (LPF)</li>
     </ul>
+
+    <h3>Claude (skill)</h3>
+    <p>Télécharger <span class="inline-code">dist/assistant-fiscal-comptable.zip</span> sur le dépôt GitHub, activer l'exécution de code dans claude.ai, puis importer le zip dans Settings &gt; Capabilities &gt; Skills &gt; Upload skill (offre Pro, Max, Team ou Enterprise). Dans Claude Code, cloner le dépôt suffit. Ancien nom du skill : expert-comptable (supprimer l'ancien avant d'importer).</p>
   </section>
 
   <!-- PREREQUIS -->
@@ -255,7 +258,7 @@
       <div class="platform-block-header gemini">Gemini Gems</div>
       <div class="platform-block-body">
         <ul>
-          <li>Compte Google avec abonnement <strong>Google One AI Premium</strong> ou <strong>Google Workspace</strong> (nécessaire pour créer des Gems personnalisés)</li>
+          <li>Compte Google (les Gems sont accessibles en offre gratuite depuis mars 2025 selon la presse spécialisée ; vérifier les limites en vigueur)</li>
           <li>Accès Google Drive, Google Docs et Google Sheets (pour l'archivage)</li>
           <li><strong>10 fichiers maximum</strong> (limite Gemini) — voir tableau ci-dessous pour la sélection recommandée</li>
         </ul>
@@ -341,7 +344,7 @@
         </tr>
         <tr>
           <td>knowledge/08_evaluation_suite.md</td>
-          <td>45 cas de test de référence pour valider le comportement de l'agent</td>
+          <td>45 questions de test : 12 détaillées et chiffrées (EV-029 à EV-040), 8 qualitatives, 25 reprises des exemples de calibrage</td>
           <td><span class="badge badge-both">Les deux</span></td>
         </tr>
         <tr>
@@ -356,7 +359,7 @@
         </tr>
         <tr>
           <td>knowledge/chatgpt_only/10_documents.json</td>
-          <td>Inventaire des 33 documents sources — supplémentaire ChatGPT</td>
+          <td>Inventaire des 11 documents d'origine des règles (non redistribués, sans autorité) : supplémentaire ChatGPT</td>
           <td><span class="badge badge-chatgpt">ChatGPT</span></td>
         </tr>
         <tr>
@@ -483,7 +486,7 @@
         <div class="step-body">
           <h4>Uploader les fichiers de connaissances</h4>
           <p>Dans <strong>"Base de connaissances"</strong>, uploadez les fichiers du dossier <span class="inline-code">knowledge/</span>.<br>
-          Si vous rencontrez une limite de taille, uploadez en priorité les fichiers 01 à 06.</p>
+          Si vous rencontrez une limite de taille, uploadez en priorité referentiel_parametres.json, puis les fichiers 01 à 06.</p>
         </div>
       </div>
       <div class="step">
@@ -619,7 +622,7 @@ Exemples :
 
     <div class="important-box">
       <h4>Avertissement important</h4>
-      <p>Toutes les règles de la base de connaissances sont des <strong>"candidats à valider"</strong> (<span class="inline-code">candidate_to_validate</span>). Elles n'ont pas été validées formellement par un expert-comptable, fiscaliste, notaire ou conseiller en gestion de patrimoine.</p>
+      <p>Toutes les règles de la base de connaissances sont des <strong>"candidats à valider"</strong> (<span class="inline-code">candidate_to_validate</span>). Elles n'ont pas été relues par un expert-comptable, un avocat fiscaliste, un notaire ou un conseiller en gestion de patrimoine ; les contrôles de sources ont été faits par des agents d'IA.</p>
       <p style="margin-top:10px"><strong>Ne prenez jamais une décision fiscale, patrimoniale ou juridique importante sur la seule base des reponses de cet agent.</strong></p>
     </div>
 
@@ -641,7 +644,7 @@ Exemples :
     <h3>Différences entre les plateformes</h3>
     <ul>
       <li><strong>Gemini :</strong> version complète avec archivage Google Drive et consultation de l'historique.</li>
-      <li><strong>ChatGPT :</strong> mêmes capacités métier, mais sans intégration Google Drive. L'archivage est manuel.</li>
+      <li><strong>ChatGPT :</strong> instructions plus détaillées que Gemini (aide aux déclarations, leviers d'optimisation), sans intégration Google Drive. L'archivage est manuel.</li>
       <li>Les deux plateformes utilisent les mêmes fichiers de connaissances.</li>
     </ul>
   </section>
@@ -649,7 +652,7 @@ Exemples :
 </main>
 
 <footer>
-  <p>Agent IA Comptable &amp; Patrimoine &mdash; Base de connaissances 2025 &mdash; 391 règles structurées &mdash; 12 modules métier</p>
+  <p>Agent IA Comptable &amp; Patrimoine &mdash; version 2026.11.3 &mdash; 391 règles &mdash; 63 articles du CGI &mdash; 38 paramètres sourcés</p>
   <p style="margin-top:8px">
     <a href="https://github.com/joachimpomme-ctrl/comptable" target="_blank"
        style="color:#94a3b8;text-decoration:none">

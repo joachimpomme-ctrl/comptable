@@ -2,18 +2,19 @@
 
 Etat des lieux honnete de ce qui reste a faire, par ordre de valeur. Les contributions sont bienvenues sur chaque point — voir [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Derniere mise a jour : 2026-08-26.
+Derniere mise a jour : 2026-11-01 (version 2026.11.3, voir [CHANGELOG.md](CHANGELOG.md)).
 
 ---
 
-## 1. Le chantier principal : sourcer puis faire valider les 391 regles
+## 1. Le chantier principal : sourcer puis faire relire les 391 regles
 
 C'est la ou se joue la credibilite du corpus.
 
 | Etape | Etat | Qui |
 |-------|------|-----|
-| Ancres legales verifiees (crosswalk) | **379 / 391 `sourced`** — CHANTIER TERMINE le 2026-08-26 (373 regles verifiees en 2 passes : 15 corrigees, 90 precisees, 41 ancres precisees). Les 12 restantes sont des enonces de pratique/doctrine sans texte officiel verifiable | Re-verification annuelle lors de la mise a jour de janvier ; validation professionnelle par issues |
-| Regles validees par un professionnel | **0 / 391** | Experts-comptables, fiscalistes, CGP, notaires — une issue par regle (`[VALIDATION]` / `[CORRECTION]`) |
+| Ancres legales controlees par des agents d'IA (crosswalk) | **358 / 391 `sourced`** (passes du 05/06, du 26/08 et du 01/11/2026) : 195 confirmees, 46 ancres rectifiees, 74 enonces nuances, 32 enonces corriges, 11 sans trace de verdict. 33 enonces de pratique ou de doctrine sans ancre legale (`a_verifier`) | Controler les 11 sans verdict ; reecrire les enonces corriges au lieu d'empiler les Corrections ; re-verification annuelle |
+| Regles relues par des professionnels | **0 / 391** | Experts-comptables, avocats fiscalistes, CGP, notaires : relecture par lots (`[RELECTURE]`), deux relecteurs verifies pour `validated` |
+| Origine des regles | 10 documents tiers, dont un guide bancaire pour environ la moitie des regles (voir `NOTICE.md`) | Reformuler avec nos propres mots les regles reprises d'un support de formation (M7) ; envisager une autorisation de l'editeur du guide principal |
 
 Le sourcing IA etablit qu'une regle correspond au texte ; la validation professionnelle engage un nom sur son application. Les deux niveaux restent distincts et affiches.
 
@@ -43,10 +44,11 @@ A chaque Loi de Finances / LFSS (checklist a derouler, idealement en fevrier apr
 
 ## 5. Outillage communaute
 
-- **Modeles d'issues GitHub** (`.github/ISSUE_TEMPLATE/`) pre-remplis pour `[VALIDATION]`, `[CORRECTION]`, `[REFERENTIEL]`, `[CAS DE TEST]`, `[BUG REPONSE]` — abaisse encore la barriere pour les non-techniciens.
+- **Fait le 2026-11-01** : modeles d'issues (`[RELECTURE]`, `[CORRECTION]`, `[CAS DE TEST]`) ; controle en CI des renvois au referentiel, des comptes et de la validite des parametres ; `CHANGELOG.md`.
+- **Discussions GitHub** a ouvrir pour les questions ; etiquettes d'issues a creer.
 - **Controles automatiques a chaque push** (GitHub Action) : JSON valides, comptes coherents (391/63/45/38), aucun article CGI coupe, tests du script de lookup entre README, manifest et fichiers reels, absence de donnees personnelles, paquet `dist/` a jour.
 - **Compteur de validation auto-genere** : script qui lit les statuts des regles et met a jour le tableau « Etat de validation » du README.
-- **Releases GitHub versionnees** (ex. `v2026-08`) avec changelog, pour que les utilisateurs sachent quelle version de la base ils ont installee.
+- **Releases GitHub** par version (`2026.11.3`...) avec les deux zips en pieces jointes : le changelog existe, la creation des releases reste a faire depuis l'interface GitHub.
 
 ## 6. Diffusion
 
@@ -62,12 +64,12 @@ Premiere version publiee le 2026-11-01 (guide : [docs/conseiller-patrimoine.md](
 | Chantier | Etat |
 |----------|------|
 | Regles volatiles verifiees et datees (`references/01-fraicheur.md`) | Fait au 2026-11-01 ; reverifier en janvier et juillet |
-| Relecture independante par un agent | Faite le 2026-11-01 : 13 erreurs corrigees |
+| Relecture par un second agent d'IA | Faite le 2026-11-01 : 13 erreurs corrigees (pas une relecture humaine) |
 | Relecture par des professionnels (CGP, CIF, notaires, courtiers) | **A faire** : priorite sur `01-fraicheur.md`, `03-enveloppes.md`, `05-immobilier-credit.md`, `07-protection-transmission.md` |
 | Executer les 7 cas d'evaluation avec et sans skill (`claude plugin eval`) | **A faire** |
 | Echeances a suivre | Encadrement des loyers (vote de l'Assemblee annonce le 19/11/2026) ; projet de loi logement (DPE) ; decrets du statut du bailleur prive ; mesures retraite apres 2027 |
 | Lignes « probables » a confirmer sur le texte officiel | Prelevements sociaux 2026 (location meublee), assouplissements HCSF de decembre 2023, PER 2026, frais du PEA |
-| Enrichissements possibles | Module investissement locatif detaille (rentabilite, fiscalite via expert-comptable), suivi de performance du portefeuille, gabarit de charte en document partageable |
+| Enrichissements possibles | Module investissement locatif detaille (rentabilite, fiscalite via assistant-fiscal-comptable), suivi de performance du portefeuille, gabarit de charte en document partageable |
 
 ---
 

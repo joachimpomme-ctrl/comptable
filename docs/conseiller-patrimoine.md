@@ -2,7 +2,7 @@
 
 Un skill Claude qui joue le rôle d'un conseiller en gestion de patrimoine et en investissement pour un particulier ou un foyer en France. Il aide à décider : où placer une somme, comment répartir un PEA, acheter ou louer, combien emprunter, rembourser un prêt par anticipation, préparer la retraite ou les études des enfants. Il ne vend rien, il cite ses sources et il dit quand une idée est mauvaise.
 
-Version : 2026-11-01 (1). Règles volatiles vérifiées le 01/11/2026. Relu par un agent indépendant le même jour. Aucune validation par un professionnel à ce stade.
+Version : 2026-11-01 (1). Règles volatiles vérifiées le 01/11/2026. Relu par un second agent d'IA le même jour. Aucune relecture par un professionnel à ce stade.
 
 Paquet prêt à installer : [`dist/conseiller-patrimoine.zip`](../dist/conseiller-patrimoine.zip). Sources du skill : [`.claude/skills/conseiller-patrimoine/`](../.claude/skills/conseiller-patrimoine/).
 
@@ -67,7 +67,7 @@ Paquet prêt à installer : [`dist/conseiller-patrimoine.zip`](../dist/conseille
 
 - Pas de prévision de marché à court terme, pas de pari sur l'actualité.
 - Pas de recommandation d'un produit sans l'avoir comparé à une alternative simple et sans avoir lu sa documentation officielle.
-- Pas de calcul fiscal détaillé : il délègue au skill `expert-comptable` de ce dépôt.
+- Pas de calcul fiscal détaillé : il délègue au skill `assistant-fiscal-comptable` de ce dépôt.
 - Pas d'accès aux comptes bancaires, pas d'ordre de bourse, pas de souscription.
 
 ---
@@ -78,7 +78,7 @@ Paquet prêt à installer : [`dist/conseiller-patrimoine.zip`](../dist/conseille
 
 1. Télécharger [`dist/conseiller-patrimoine.zip`](../dist/conseiller-patrimoine.zip).
 2. Dans claude.ai : **Settings** > **Capabilities** > **Upload skill**, choisir le zip.
-3. Installer aussi [`dist/expert-comptable.zip`](../dist/expert-comptable.zip) : le conseiller lui délègue toute la fiscalité. Sans lui, il le dit et cherche la règle fiscale sur les sites officiels, avec la mention « hors corpus ».
+3. Installer aussi [`dist/assistant-fiscal-comptable.zip`](../dist/assistant-fiscal-comptable.zip) : le conseiller lui délègue toute la fiscalité. Sans lui, il le dit et cherche la règle fiscale sur les sites officiels, avec la mention « hors corpus ».
 4. Vérifier que la recherche web est activée : le skill en a besoin pour lire les sources officielles.
 
 Le skill se déclenche seul dès qu'une question demande un avis ou un arbitrage sur l'argent du foyer. On peut aussi le nommer : « avec le skill conseiller-patrimoine, … ».
@@ -91,7 +91,7 @@ cd comptable
 claude
 ```
 
-Les deux skills du dépôt (`.claude/skills/expert-comptable/` et `.claude/skills/conseiller-patrimoine/`) sont chargés automatiquement.
+Les deux skills du dépôt (`.claude/skills/assistant-fiscal-comptable/` et `.claude/skills/conseiller-patrimoine/`) sont chargés automatiquement.
 
 ### Mettre à jour
 
@@ -107,7 +107,7 @@ Il n'y a pas de mise à jour automatique d'un skill importé. Quand une nouvelle
 |---|---|
 | Situation du foyer (revenus, prêts, épargne, biens) | Le skill privé `comptable-foyer` s'il existe, sinon un profil en dix questions au plus |
 | Objectifs et règles du foyer | La charte d'investissement du foyer |
-| Règles et chiffres fiscaux | Le skill `expert-comptable` (référentiel millésimé et sourcé) |
+| Règles et chiffres fiscaux | Le skill `assistant-fiscal-comptable` (référentiel millésimé et sourcé) |
 | Règles non fiscales, taux, données de marché, caractéristiques d'un produit | Les sources de première main, lues pendant la session, avec date et lien |
 
 ### Déroulé d'une décision
@@ -186,7 +186,7 @@ La carte complète, sujet par sujet (droit, taux, produits, autorisations anti-a
 ```mermaid
 flowchart LR
     U[Question de l'utilisateur] --> C[conseiller-patrimoine<br/>avis, options, arbitrages]
-    C -->|règles et chiffres fiscaux| E[expert-comptable<br/>référentiel fiscal millésimé]
+    C -->|règles et chiffres fiscaux| E[assistant-fiscal-comptable<br/>référentiel fiscal millésimé]
     C -->|situation du foyer| F[comptable-foyer<br/>privé, hors de ce dépôt]
     C -->|sans comptable-foyer| P[Profil en dix questions]
     C -->|taux, règles, produits| S[Sources officielles en ligne]
@@ -194,11 +194,11 @@ flowchart LR
 
 | Skill | Rôle | Où |
 |---|---|---|
-| `expert-comptable` | Règles fiscales et comptables, référentiel de paramètres sourcés | Ce dépôt, public |
+| `assistant-fiscal-comptable` | Règles fiscales et comptables, référentiel de paramètres sourcés | Ce dépôt, public |
 | `conseiller-patrimoine` | Conseil, arbitrages, méthode, calculs, sources de première main | Ce dépôt, public |
 | `comptable-foyer` | Données et opérations d'un foyer précis (fiche patrimoniale, registre des flux) | Privé, propre à chaque foyer, jamais dans ce dépôt |
 
-Un ami qui installe seulement `conseiller-patrimoine` et `expert-comptable` répond à dix questions de profil (gabarit dans [`references/10-methode-gabarits.md`](../.claude/skills/conseiller-patrimoine/references/10-methode-gabarits.md)). Le skill propose de garder ce profil dans un document qui lui appartient, daté, à mettre à jour une fois par an.
+Un ami qui installe seulement `conseiller-patrimoine` et `assistant-fiscal-comptable` répond à dix questions de profil (gabarit dans [`references/10-methode-gabarits.md`](../.claude/skills/conseiller-patrimoine/references/10-methode-gabarits.md)). Le skill propose de garder ce profil dans un document qui lui appartient, daté, à mettre à jour une fois par an.
 
 ---
 
@@ -362,7 +362,7 @@ claude plugin eval . --allow-tools Bash,WebSearch,WebFetch
 
 Les règles volatiles ont été vérifiées en ligne le 01/11/2026 : normes HCSF (maintenues à la séance du 15/09/2026), calendrier DPE et projet de loi logement (adopté au Sénat le 08/07/2026, en cours), encadrement des loyers (expérimentation qui finit vers le 24/11/2026, prolongation votée au Sénat le 21/10/2026, deuxième lecture à l'Assemblée annoncée le 19/11/2026), suspension de la réforme des retraites, prélèvements sociaux 2026, fin du régime PSAN, coefficient électrique du DPE, droits de mutation, frais du PEA. Chaque ligne de `01-fraicheur.md` porte sa source, sa date et son statut.
 
-### Relecture indépendante
+### Relecture par un second agent d'IA
 
 Un agent séparé, sans accès au raisonnement de rédaction, a relu tout le skill le 01/11/2026 avec vérification en ligne. Il a relevé 13 erreurs, toutes corrigées :
 
@@ -414,7 +414,7 @@ Ajouts issus de la relecture : garantie des dépôts et des contrats, délai de 
 - Aucun chiffre volatil sans source, date et statut.
 - Aucune donnée personnelle.
 - Une heuristique se dit heuristique.
-- Le fiscal reste dans `expert-comptable`.
+- Le fiscal reste dans `assistant-fiscal-comptable`.
 
 ---
 
@@ -434,4 +434,4 @@ Les professionnels (CGP, CIF, notaires, courtiers, experts-comptables) sont part
 
 | Version | Date | Changements |
 |---|---|---|
-| 2026-11-01 (1) | 01/11/2026 | Première version publique. Protocole de décision, carte des sources de première main, 11 références, 6 scripts et 32 tests, 7 cas d'évaluation. Règles volatiles vérifiées le jour même. Relecture indépendante : 13 erreurs corrigées et compléments ajoutés (section 11). |
+| 2026-11-01 (1) | 01/11/2026 | Première version publique. Protocole de décision, carte des sources de première main, 11 références, 6 scripts et 32 tests, 7 cas d'évaluation. Règles volatiles vérifiées le jour même. Relecture par un second agent d'IA : 13 erreurs corrigées et compléments ajoutés (section 11). |

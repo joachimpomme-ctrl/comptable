@@ -138,7 +138,7 @@ def main(argv=None):
     a.add_argument("--autres-revenus", type=float, default=0.0)
     a.add_argument("--taux-retrait", required=True, help="liste en %%, ex. 3,3.5,4")
     a.add_argument("--taux-prelevement-retraits", type=float, default=0.0,
-                   help="impôt et prélèvements sociaux moyens sur les retraits, en %% (via expert-comptable)")
+                   help="impôt et prélèvements sociaux moyens sur les retraits, en %% (via assistant-fiscal-comptable)")
 
     a = sp.add_parser("retrait-mc")
     a.add_argument("--capital", type=float, required=True)

@@ -1,6 +1,6 @@
 # Enveloppes françaises : règles de fonctionnement
 
-Ce fichier donne les règles de fonctionnement (blocage, retrait, transfert, plafonds de versement). La fiscalité (taux, abattements, durée de détention fiscale) vient du skill `expert-comptable`. Plafonds et taux : voir `01-fraicheur.md`.
+Ce fichier donne les règles de fonctionnement (blocage, retrait, transfert, plafonds de versement). La fiscalité (taux, abattements, durée de détention fiscale) vient du skill `assistant-fiscal-comptable`. Plafonds et taux : voir `01-fraicheur.md`.
 
 Principe : choisir d'abord l'actif selon l'horizon, ensuite l'enveloppe qui le loge le mieux.
 
@@ -57,7 +57,7 @@ Principe : choisir d'abord l'actif selon l'horizon, ensuite l'enveloppe qui le l
 - Sortie à la retraite : capital ou rente pour les versements volontaires et l'épargne salariale ; rente pour les versements obligatoires.
 - Transfert entre PER possible ; frais plafonnés les premières années, gratuits ensuite (vérifier le plafond en vigueur).
 - Loi de finances 2026 (probable, `01-fraicheur.md`) : versements non déductibles à partir de 70 ans, report des plafonds non utilisés sur 5 ans.
-- Logique économique : on déduit à son taux marginal d'aujourd'hui, on est imposé à son taux marginal de la sortie. Intéressant quand le taux marginal au versement dépasse nettement celui de la sortie et que l'argent n'est pas nécessaire avant la retraite (ou un achat de résidence principale). Le chiffrage fiscal vient d'`expert-comptable`.
+- Logique économique : on déduit à son taux marginal d'aujourd'hui, on est imposé à son taux marginal de la sortie. Intéressant quand le taux marginal au versement dépasse nettement celui de la sortie et que l'argent n'est pas nécessaire avant la retraite (ou un achat de résidence principale). Le chiffrage fiscal vient d'`assistant-fiscal-comptable`.
 - Points d'attention : sortie en capital imposée, illiquidité, frais des PER bancaires ou assurantiels très variables, gestion pilotée par défaut souvent prudente à l'approche de la retraite.
 
 ## 6. Épargne salariale (Code du travail, art. L3331-1 et suivants)
@@ -73,7 +73,7 @@ Principe : choisir d'abord l'actif selon l'horizon, ensuite l'enveloppe qui le l
 ## 7. Compte-titres ordinaire
 
 - Aucun plafond, tous les titres cotés, obligations, ETF non éligibles au PEA.
-- Fiscalité de droit commun sur dividendes, intérêts et plus-values (`expert-comptable`). Les moins-values s'imputent sur les plus-values selon les règles en vigueur.
+- Fiscalité de droit commun sur dividendes, intérêts et plus-values (`assistant-fiscal-comptable`). Les moins-values s'imputent sur les plus-values selon les règles en vigueur.
 - Rôle : compléter le PEA plein, loger des obligations ou des ETF domiciliés hors UE, détenir des titres non éligibles.
 
 ## 8. Épargne pour les enfants
@@ -90,7 +90,7 @@ Principe : choisir d'abord l'actif selon l'horizon, ensuite l'enveloppe qui le l
 2. La somme sert-elle un projet daté à moins de 5 ans ? Oui : livrets, fonds en euros, fonds monétaire, compte à terme, obligations à échéance proche. Pas d'actions.
 3. Horizon de 5 à 8 ans ? Part d'actions limitée et décroissante, fixée dans la charte, le reste en supports sans risque actions ; l'assurance-vie se prête bien à ce mélange.
 4. Horizon de plus de 8 ans ? Actions diversifiées à bas coût : PEA d'abord (si les 5 ans de blocage ne gênent pas), puis assurance-vie à bas frais ou compte-titres.
-5. Taux marginal élevé, moins de 70 ans, et argent non utile avant la retraite ou un achat de résidence principale ? Étudier le PER avec `expert-comptable`.
+5. Taux marginal élevé, moins de 70 ans, et argent non utile avant la retraite ou un achat de résidence principale ? Étudier le PER avec `assistant-fiscal-comptable`.
 6. Abondement disponible ? Le capter, puis diversifier.
 7. Grosse somme : répartir entre établissements au-delà des plafonds de garantie (`01-fraicheur.md`).
 8. Vérifier la charte (poches, plafonds, règle de décision).

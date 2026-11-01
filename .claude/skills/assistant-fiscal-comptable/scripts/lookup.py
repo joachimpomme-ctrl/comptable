@@ -2,14 +2,14 @@
 """Lookup dans la base de connaissances knowledge/ du depot.
 
 Usage (depuis n'importe quel dossier du depot) :
-  python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel PASS
-  python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel --list
-  python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel --search micro bic
-  python3 .claude/skills/expert-comptable/scripts/lookup.py crosswalk bnc_001
-  python3 .claude/skills/expert-comptable/scripts/lookup.py cgi "102 ter"
-  python3 .claude/skills/expert-comptable/scripts/lookup.py regles LMN-025          (regle complete par identifiant)
-  python3 .claude/skills/expert-comptable/scripts/lookup.py regles plus value       (recherche, 5 regles par page)
-  python3 .claude/skills/expert-comptable/scripts/lookup.py regles plus value --page 2
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py referentiel PASS
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py referentiel --list
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py referentiel --search micro bic
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py crosswalk bnc_001
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py cgi "102 ter"
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py regles LMN-025          (regle complete par identifiant)
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py regles plus value       (recherche, 5 regles par page)
+  python3 .claude/skills/assistant-fiscal-comptable/scripts/lookup.py regles plus value --page 2
 
 Pourquoi ce script : 07_rule_source_crosswalk.jsonl (~820 Ko) et
 02_golden_rules_claude_first.md (~290 Ko) ne doivent jamais etre charges
@@ -123,6 +123,8 @@ def crosswalk(args):
             print(f"module           : {e.get('claude_module')}")
             print(f"ancre legale     : {e.get('legal_anchor')}")
             print(f"statut ancre     : {e.get('anchor_status')}")
+            if e.get("anchor_note"):
+                print(f"note ancre       : {e.get('anchor_note')}")
             print(f"verifiee le      : {e.get('anchor_verified_le') or e.get('anchor_verified_on') or 'non renseigne'}")
             # Passes de verification, de la plus recente a la plus ancienne : la premiere fait foi.
             for cle in reversed(passes):

@@ -64,7 +64,7 @@ Une ligne par décision au-delà du seuil de la charte, ou irréversible.
 3. Allocation : écart à la cible, rééquilibrage (par les flux d'abord).
 4. Frais : contrats, fonds, courtier ; y a-t-il moins cher à l'identique ?
 5. Règles qui ont changé : loi de finances, LFSS, taux réglementés, règles immobilières (`01-fraicheur.md`).
-6. Enveloppes : dates anniversaires (PEA à 5 ans, assurance-vie à 8 ans, fins d'indisponibilité de l'épargne salariale), plafonds de versement restants, plafond PER disponible (`expert-comptable`).
+6. Enveloppes : dates anniversaires (PEA à 5 ans, assurance-vie à 8 ans, fins d'indisponibilité de l'épargne salariale), plafonds de versement restants, plafond PER disponible (`assistant-fiscal-comptable`).
 7. Protection : clauses bénéficiaires, quotités d'assurance, prévoyance, testament, après tout événement de vie.
 8. Journal : relire les décisions de l'année, remplir la colonne résultat.
 9. Charte : la confirmer ou la modifier, à deux, avec une nouvelle date de version.

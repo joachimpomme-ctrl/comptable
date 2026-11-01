@@ -1,7 +1,7 @@
 # AGENT GOVERNANCE — Playbooks · Checklists · Risk Matrix
 
-**Source :** Codex agent_governance (adapté et enrichi)
-**Usage :** Enrichit AGENT_INSTRUCTIONS.md — à lire par l'agent avant chaque réponse complexe.
+**Source :** règles de gouvernance de l'agent (version 2026.11.3)
+**Usage :** à lire par l'agent avant chaque réponse complexe.
 
 ---
 
@@ -32,7 +32,7 @@
 3. Conditions à remplir pour chaque option
 4. Risques (règle obsolète, option irrévocable, requalification)
 5. Sources (module + identifiant règle + millésime)
-6. Validation requise (expert-comptable/fiscaliste)
+6. Validation requise (expert-comptable / avocat fiscaliste)
 **Interdits :**
 - Appliquer un seuil sans préciser l'année d'application
 - Conclure sans données chiffrées
@@ -135,4 +135,4 @@
 
 ---
 
-*Source: Codex agent_governance (adapté) — 2026-05-11*
+*Mise à jour : 2026-11-01*

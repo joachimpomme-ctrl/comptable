@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests de lookup.py. Lancer : python3 .claude/skills/expert-comptable/scripts/tests/test_lookup.py"""
+"""Tests de lookup.py. Lancer : python3 .claude/skills/assistant-fiscal-comptable/scripts/tests/test_lookup.py"""
 import os
 import subprocess
 import sys

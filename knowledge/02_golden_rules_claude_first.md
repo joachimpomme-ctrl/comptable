@@ -1,6 +1,6 @@
 # Golden Rules Claude-First
 
-Règles curated issues du dossier Claude, normalisées par Codex et reliées aux chunks/sources Codex quand possible.
+391 règles métier reformulées à partir de documents tiers (voir `NOTICE.md`), rattachées à leur ancre légale et contrôlées par des agents d'IA ; aucune n'a encore été relue par un professionnel. Une règle marquée « ÉNONCÉ INVALIDÉ » se lit avec sa Correction, qui prime.
 
 ## comptabilite_generale_pcg
 

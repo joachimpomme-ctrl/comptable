@@ -1,45 +1,36 @@
-# Contribuer — Validation des regles par des professionnels
+# Contribuer : relecture des regles par des professionnels
 
-Ce depot a besoin de relecteurs du chiffre : **experts-comptables, fiscalistes, CGP, notaires, avocats fiscalistes**. Les 391 regles metier sont en statut `candidate_to_validate` : structurees et tracees, mais non validees. Chaque validation (ou correction) augmente la fiabilite du corpus pour tout le monde.
+Ce depot a besoin de relecteurs : **experts-comptables, avocats fiscalistes, CGP, notaires**. Les 391 regles metier sont en statut `candidate_to_validate` : rattachees a leurs sources et controlees par des agents d'IA, mais relues par aucun professionnel.
 
-Aucune connaissance de Git n'est necessaire pour contribuer : **une issue GitHub suffit.**
+Aucune connaissance de Git n'est necessaire : **une issue GitHub suffit** (modeles proposes a l'ouverture d'une issue).
 
 ---
 
-## Valider ou contester une regle (le coeur du besoin)
+## Relire un lot de regles (le coeur du besoin)
 
-1. Ouvrir une **issue GitHub** ([Issues > New issue](../../issues/new)) — **une issue par regle**.
-2. Titre : `[VALIDATION] <id de la regle>` ou `[CORRECTION] <id de la regle>` — ex. `[VALIDATION] GFPL-050`, `[CORRECTION] LMN-011`.
-3. Corps de l'issue (modele a copier) :
+1. Choisir un lot d'une vingtaine de regles d'un meme theme. Par ou commencer : micro et reel (GFPL-049 a GFPL-060), LMNP (LMN-001 a LMN-025), plus-values immobilieres (PV-IMM-*), PER (GFPL-165 a GFPL-174). Les cas EV-029 a EV-040 de `knowledge/08_evaluation_suite.md` montrent ce que l'agent doit savoir faire.
+2. Ouvrir une issue avec le modele **Relecture d'un lot** : titre `[RELECTURE] <theme ou identifiants>`.
+3. Pour chaque regle : verdict (exacte / exacte avec reserve / erronee), correction proposee, source d'appui (CGI, BOFiP, jurisprudence), millesime verifie.
+4. Indiquer votre qualite (profession) ; votre nom est facultatif. Tout ce qui est ecrit dans une issue reste public dans l'historique du depot.
 
-```
-Regle : <id> (fichier knowledge/02_golden_rules_claude_first.md)
-Verdict : VALIDE / VALIDE AVEC RESERVE / ERRONEE
-Motif / correction proposee :
-  <texte corrige de la regle si erronee, ou reserve precisee>
-Source d'appui : <CGI art. X / BOFiP BOI-XXX / jurisprudence / doctrine>
-Millesime verifie : <ex. revenus 2025>
-Valideur : <Nom, qualite — ex. Jean D., expert-comptable> 
-Date : <AAAA-MM-JJ>
-```
+### Ce qui se passe ensuite
 
-4. Ce qui se passe ensuite (par le mainteneur, ou par vous en pull request si vous etes a l'aise avec Git) :
-   - **VALIDE** → la regle passe `candidate_to_validate` → `validated` dans `02_golden_rules_claude_first.md`, avec ajout de deux lignes :
-     `- Valide par : <Nom, qualite>` et `- Valide le : <date>` ;
-   - **ERRONEE** → le texte de la regle est corrige, la source d'appui est ajoutee a l'ancre, puis la regle passe `validated` ;
-   - le tableau « Etat de validation du corpus » du README est mis a jour (compteur X/391).
+- Le mainteneur verifie la qualite declaree dans un annuaire public (Ordre des experts-comptables, Conseil national des barreaux, notaires, ORIAS) et note « qualite verifiee le JJ/MM/AAAA ».
+- Une regle passe `validated` apres **deux relectures concordantes** de relecteurs verifies. Elle recoit `validated_until` (fin du millesime relu) : une regle validee redevient a relire a chaque nouvelle loi de finances.
+- Une regle jugee erronee est reecrite, avec la source d'appui ajoutee a l'ancre.
+- En cas de desaccord, le mainteneur tranche sur la source la plus haute (texte, puis BOFiP, puis jurisprudence) et consigne la decision dans l'issue.
 
 ### Regles du jeu
 
-- Une validation engage son auteur sur **le fond de la regle a la date et au millesime indiques** — pas sur les millesimes futurs.
-- Toute validation **doit citer une source d'appui verifiable** (CGI, BOFiP, jurisprudence, doctrine administrative). « De memoire » ne suffit pas — c'est la meme exigence que celle imposee a l'agent.
-- En cas de desaccord entre deux professionnels sur une meme regle, la regle reste `candidate_to_validate` avec un lien vers la discussion, jusqu'a arbitrage source.
+- **La relecture est benevole, porte sur l'enonce a la date et au millesime indiques, et n'engage pas la responsabilite professionnelle du relecteur.**
+- Toute relecture **cite une source d'appui verifiable**. « De memoire » ne suffit pas : c'est l'exigence imposee a l'agent.
+- Les questions generales se posent dans une issue `[QUESTION]`.
 
 ---
 
 ## Autres contributions bienvenues
 
-- **Chiffres du referentiel** (`knowledge/referentiel_parametres.json`) : signaler une valeur perimee ou proposer le sourcing d'une cle `candidate_to_validate` (CARMF, CARPIMKO, taux TNS...) — issue `[REFERENTIEL] <cle>` avec la source officielle (URL Legifrance, JO, urssaf.fr...).
+- **Chiffres du referentiel** (`knowledge/referentiel_parametres.json`) : signaler une valeur perimee ou proposer une cle manquante (CARMF, plafonds PER...) — issue `[REFERENTIEL] <cle>` avec la source officielle (URL Legifrance, JO, urssaf.fr...).
 - **Mise a jour annuelle** (janvier, apres la Loi de Finances) : PASS, baremes IR, taux URSSAF, bareme kilometrique — issue `[MILLESIME AAAA]`.
 - **Cas de test** (`knowledge/08_evaluation_suite.md`) : proposer un cas reel anonymise avec la reponse attendue sourcee — issue `[CAS DE TEST]`.
 - **Erreur constatee en utilisant l'agent** : issue `[BUG REPONSE]` avec la question posee, la reponse obtenue et ce qui est faux (et la source qui le montre).
@@ -63,4 +54,4 @@ Date : <AAAA-MM-JJ>
 
 ## Licence des contributions
 
-En contribuant, vous acceptez que votre contribution soit diffusee sous la licence du depot (CC BY-NC 4.0). Les validations sont creditees nominativement (nom + qualite) dans les regles validees.
+En contribuant, vous acceptez que votre contribution soit diffusee sous la licence du depot (CC BY-NC 4.0, voir `NOTICE.md`). Les relectures sont creditees par la qualite du relecteur, et par son nom s'il le souhaite.

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agent IA Comptable &amp; Patrimoine</title>
-<meta name="description" content="Agent IA open source pour la fiscalité française : 391 règles tracées, 63 articles CGI, référentiel de paramètres vérifiés. Pour Claude, Gemini Gems et ChatGPT.">
+<meta name="description" content="Assistant IA en accès libre pour la recherche en fiscalité française : 391 règles rattachées à leurs sources, 63 articles du CGI, 38 paramètres chiffrés sourcés. Pour Claude, Gemini Gems et ChatGPT.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📒</text></svg>">
 <style>
   :root {
@@ -90,17 +90,17 @@
 
 <header>
   <div class="wrap">
-    <div class="kicker">Projet open source · CC BY-NC 4.0</div>
+    <div class="kicker">Projet en accès libre · contenu CC BY-NC 4.0</div>
     <h1>Agent IA Comptable &amp; Patrimoine</h1>
-    <p class="lead">Un agent IA spécialisé en fiscalité française, comptabilité BNC/BIC, location meublée et gestion de patrimoine — dont chaque chiffre est tracé jusqu'à sa source officielle. Pour <strong>Claude</strong>, <strong>Gemini Gems</strong> et <strong>ChatGPT</strong>.</p>
+    <p class="lead">Un assistant IA de recherche en fiscalité française, comptabilité BNC/BIC, location meublée et gestion de patrimoine. Ses 38 paramètres chiffrés de référence sont reliés à leur source officielle (URL et date) ; les autres chiffres du corpus restent à vérifier. Pour <strong>Claude</strong>, <strong>Gemini Gems</strong> et <strong>ChatGPT</strong>.</p>
     <div class="stats">
-      <div><strong>391</strong>règles tracées<br>379 ancres vérifiées</div>
+      <div><strong>391</strong>règles<br>358 ancres contrôlées par IA</div>
       <div><strong>63</strong>articles CGI (2026)</div>
       <div><strong>38</strong>paramètres chiffrés<br>sourcés et datés</div>
-      <div><strong>45</strong>cas de test</div>
+      <div><strong>45</strong>questions de test<br>12 détaillées</div>
     </div>
     <div class="cta">
-      <a class="btn btn-light" href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/expert-comptable.zip">⬇ Skill Claude prêt à l'emploi</a>
+      <a class="btn btn-light" href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/assistant-fiscal-comptable.zip">⬇ Skill Claude prêt à l'emploi</a>
       <a class="btn btn-light" href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/conseiller-patrimoine.zip">⬇ Skill conseiller-patrimoine</a>
       <a class="btn btn-ghost" href="GUIDE_INSTALLATION.html">Guide d'installation</a>
       <a class="btn btn-ghost" href="https://github.com/joachimpomme-ctrl/comptable">Dépôt GitHub</a>
@@ -111,8 +111,10 @@
 <div class="wrap">
   <div class="warnbox">
     <h3>⚠️ À lire avant toute utilisation</h3>
-    <p><strong>Les sorties de l'agent sont des projets de réponse à vérifier — jamais un livrable client, jamais un conseil.</strong> La consultation fiscale à titre habituel est une activité réglementée : cet outil est une aide à la recherche et à la pré-qualification, la responsabilité professionnelle reste celle du praticien.</p>
-    <p>État de validation : <strong>0 des 391 règles métier n'a encore été validée par un professionnel</strong> (statut <code>candidate_to_validate</code>). Les 38 paramètres du référentiel sont <code>sourced</code> : chacun cite sa source officielle, son URL et sa date de vérification (passe du 26/08/2026, corrections et ajouts du 01/11/2026).</p>
+    <p><strong>Outil d'aide à la recherche fondé sur des modèles d'IA</strong> (Claude, Gemini, ChatGPT). Ses réponses peuvent être fausses, incomplètes ou périmées, même quand elles citent une source.</p>
+    <p><strong>Ce n'est ni une consultation juridique ou fiscale, ni une mission d'expertise comptable, ni un conseil en investissement, en crédit ou en assurance.</strong> Exercées pour autrui de façon habituelle, et selon les cas rémunérée, ces activités sont réservées à des professionnels habilités (avocats, experts-comptables, notaires, conseillers en investissements financiers, courtiers inscrits à l'ORIAS).</p>
+    <p><strong>Particuliers :</strong> vérifiez sur une source officielle (impots.gouv.fr, Légifrance, BOFiP) ou auprès d'un professionnel avant toute déclaration ou décision. <strong>Professionnels :</strong> les sorties sont des brouillons ; les utiliser auprès de vos clients engage votre responsabilité (secret professionnel, devoir de conseil, RGPD). Ne saisissez aucune donnée qui identifie un client ; si vous mettez l'agent à disposition de vos clients, dites-leur qu'ils échangent avec une IA (règlement (UE) 2024/1689, art. 50).</p>
+    <p>État : <strong>0 des 391 règles métier relue par un professionnel</strong> ; les contrôles de sources ont été faits par des agents d'IA. Les 38 paramètres du référentiel citent chacun leur source officielle, leur URL et leur date de vérification.</p>
   </div>
 </div>
 
@@ -127,7 +129,7 @@
 
 <section>
   <h2>Nouveau : le skill conseiller-patrimoine</h2>
-  <p class="sub">Un second skill Claude, complémentaire d'expert-comptable : un conseiller en gestion de patrimoine et en investissement qui aide à décider, cite ses sources officielles et dit quand une idée est mauvaise. Aide à la décision, pas un conseil réglementé.</p>
+  <p class="sub">Un second skill Claude, complémentaire d'assistant-fiscal-comptable : un assistant d'aide à la décision patrimoniale. Il compare des options, chiffre le pire cas, cite ses sources officielles et dit quand une idée est mauvaise. Ce n'est pas un conseil en investissement, en crédit ou en assurance : la décision et sa responsabilité restent à l'utilisateur, pour un usage personnel.</p>
   <pre>« J'ai 60 000 € disponibles sur mon PEE, on achète un appartement dans deux ans : je mets tout sur mon PEA ? »
 « Combien peut-on emprunter sur 25 ans avec 7 000 € de revenus et un crédit locatif ? »
 « Mon PEA est 100 % monde : comment ajouter Europe et émergents sans rien vendre ? »</pre>
@@ -148,7 +150,7 @@
       <p>Crédit et remboursement anticipé, capacité d'emprunt et prêt relais, projections Monte-Carlo, TRI, rééquilibrage par les versements, louer ou acheter. 32 tests, aucune hypothèse de rendement par défaut.</p>
     </div>
   </div>
-  <p class="sub" style="margin-top:14px">Règles volatiles vérifiées le 01/11/2026, relecture indépendante (13 erreurs corrigées avant publication). <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/conseiller-patrimoine.zip">Télécharger le skill</a> · <a href="https://github.com/joachimpomme-ctrl/comptable/blob/main/docs/conseiller-patrimoine.md">Lire le guide complet</a></p>
+  <p class="sub" style="margin-top:14px">Règles volatiles vérifiées le 01/11/2026, relecture par un second agent d'IA (13 erreurs corrigées), pas encore par un professionnel. <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/conseiller-patrimoine.zip">Télécharger le skill</a> · <a href="https://github.com/joachimpomme-ctrl/comptable/blob/main/docs/conseiller-patrimoine.md">Lire le guide complet</a></p>
 </section>
 
 <section>
@@ -162,13 +164,13 @@
     </div>
     <div class="card">
       <span class="tag ok">Traçabilité</span>
-      <h3>Chaque règle a sa source</h3>
-      <p>391 règles reliées une à une à leur document et page d'origine — dont <strong>379 ancres vérifiées</strong> contre le texte officiel (Légifrance, BOFiP), avec verdict et preuve tracés. Les 63 articles du CGI (millésime 2026) sont embarqués.</p>
+      <h3>Chaque règle est rattachée à ses sources</h3>
+      <p>391 règles rattachées automatiquement à un document et une page d'origine (page probable). Des agents d'IA ont contrôlé <strong>358 ancres légales</strong> : 195 confirmées, 46 ancres rectifiées, 74 énoncés nuancés, 32 énoncés corrigés, 11 sans trace de verdict ; 33 énoncés de pratique n'ont pas d'ancre légale. Les 63 articles du CGI cités sont embarqués en texte intégral (export Légifrance du 30/10/2026).</p>
     </div>
     <div class="card">
-      <span class="tag ok">Testé</span>
-      <h3>45 cas de test écrits</h3>
-      <p>Une suite d'évaluation avec réponses attendues, le moyen le plus rapide de juger la qualité des sorties. Le skill Claude a été benchmarké avec/sans : <strong>11/11 critères réussis</strong> avec le skill.</p>
+      <span class="tag">À tester</span>
+      <h3>45 questions de test</h3>
+      <p>12 cas détaillés et chiffrés (EV-029 à EV-040), 8 à critères qualitatifs, 25 repris des exemples de calibrage (utiles pour le format, pas pour mesurer la qualité). Aucun résultat de banc d'essai n'est publié à ce jour.</p>
     </div>
     <div class="card">
       <span class="tag">Transparence</span>
@@ -178,7 +180,7 @@
     <div class="card">
       <span class="tag">Garde-fous</span>
       <h3>Refus hors périmètre</h3>
-      <p>Crypto, TVA intracommunautaire, fiscalité internationale, contentieux LPF : refus explicite plutôt qu'une réponse inventée. Aucun chiffre sans source (<code>DATA_NOT_FOUND</code> sinon).</p>
+      <p>Fiscalité des crypto-actifs, TVA intracommunautaire, fiscalité internationale, contentieux LPF : refus explicite du skill fiscal plutôt qu'une réponse inventée. Aucun chiffre sans source (<code>DATA_NOT_FOUND</code> sinon).</p>
     </div>
     <div class="card">
       <span class="tag">Format imposé</span>
@@ -195,7 +197,7 @@
     <div class="card">
       <span class="tag ok">Recommandé</span>
       <h3>Claude — skill prêt à l'emploi</h3>
-      <p>Télécharger <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/expert-comptable.zip">expert-comptable.zip</a> (198 Ko, base embarquée) puis l'importer dans claude.ai → Settings → Capabilities → Upload skill. Actif ensuite partout : claude.ai, Claude Code, mobile.</p>
+      <p>Télécharger <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/assistant-fiscal-comptable.zip">assistant-fiscal-comptable.zip</a> (environ 360 Ko, base embarquée), activer l'exécution de code puis l'importer dans claude.ai → Settings → Capabilities → Skills → Upload skill. Offre Pro, Max, Team ou Enterprise requise. Ancien nom : expert-comptable (supprimer l'ancien skill avant d'importer).</p>
       <p>Qui clone le dépôt et l'ouvre dans Claude Code a le skill automatiquement, sans rien installer.</p>
     </div>
     <div class="card">
@@ -236,10 +238,10 @@
 </section>
 
 <section>
-  <h2>Vous êtes expert-comptable, fiscaliste, CGP, notaire ?</h2>
+  <h2>Vous êtes expert-comptable, avocat fiscaliste, CGP, notaire ?</h2>
   <div class="callout">
-    <h3>C'est ici qu'on a besoin de vous : 0 / 391 règles validées</h3>
-    <p>Le corpus est structuré et tracé, mais n'a pas encore été relu par des professionnels. Le workflow de validation ne demande aucune connaissance de Git : <strong>une issue GitHub par règle</strong> (verdict, source d'appui, nom et qualité), et la règle passe au statut <code>validated</code> avec votre crédit. Chaque validation augmente la valeur du corpus pour tout le monde.</p>
+    <h3>C'est ici qu'on a besoin de vous : 0 / 391 règles relues</h3>
+    <p>Le corpus est structuré et rattaché à ses sources, mais n'a pas encore été relu par des professionnels. La relecture est bénévole, se fait <strong>par lots d'une vingtaine de règles</strong> dans une issue GitHub, sans connaissance de Git, et n'engage pas votre responsabilité professionnelle. Une règle passe au statut <code>validated</code> après deux relectures dont la qualité a été vérifiée dans un annuaire public.</p>
     <p style="margin-top:10px"><a href="https://github.com/joachimpomme-ctrl/comptable/blob/main/CONTRIBUTING.md"><strong>Lire le guide de contribution →</strong></a></p>
   </div>
 </section>
@@ -259,15 +261,16 @@
 <section>
   <h2>Démarrer en 3 minutes</h2>
   <ol class="steps">
-    <li><strong>Installer</strong> — le <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/expert-comptable.zip">skill Claude</a> (recommandé), ou un Gem / Custom GPT via le <a href="GUIDE_INSTALLATION.html">guide</a>.</li>
-    <li><strong>Tester</strong> — poser une des questions d'exemple, ou dérouler un des 45 cas de la suite d'évaluation dont la réponse attendue est écrite.</li>
+    <li><strong>Installer</strong> — le <a href="https://github.com/joachimpomme-ctrl/comptable/raw/main/dist/assistant-fiscal-comptable.zip">skill Claude</a> (recommandé), ou un Gem / Custom GPT via le <a href="GUIDE_INSTALLATION.html">guide</a>.</li>
+    <li><strong>Tester</strong> — poser une des questions d'exemple, ou dérouler un des 12 cas détaillés de la suite d'évaluation (EV-029 à EV-040).</li>
     <li><strong>Garder le réflexe</strong> — chaque réponse est un projet d'analyse : vérifier les sources citées, faire valider par le bon professionnel avant toute décision.</li>
   </ol>
 </section>
 
 <footer>
-  <div>Agent IA Comptable &amp; Patrimoine — <a href="https://github.com/joachimpomme-ctrl/comptable">github.com/joachimpomme-ctrl/comptable</a></div>
-  <div style="margin-top:6px">Licence <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> · Règles dérivées de sources publiques (CGI, BOFiP, guides officiels) · Ne constitue pas un conseil professionnel · Base mise à jour en janvier de chaque année</div>
+  <div>Agent IA Comptable &amp; Patrimoine, version 2026.11.3 — <a href="https://github.com/joachimpomme-ctrl/comptable">github.com/joachimpomme-ctrl/comptable</a></div>
+  <div style="margin-top:6px">Contenu <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> · Textes du CGI : Légifrance (DILA), Licence Ouverte · Règles reformulées à partir de guides professionnels tiers ; seule l'ancre légale fait foi · Corpus constitué et contrôlé avec des outils d'IA · Ne constitue pas un conseil professionnel</div>
+  <div style="margin-top:6px">Éditeur : titulaire du compte GitHub joachimpomme-ctrl, à titre non professionnel · Hébergement : GitHub, Inc. (coordonnées dans ses conditions d'utilisation) · Contact : issues du dépôt ou signalement privé (SECURITY.md)</div>
 </footer>
 </div>
 

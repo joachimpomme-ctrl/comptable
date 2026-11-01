@@ -2,14 +2,17 @@
 
 Agent IA specialise en comptabilite, fiscalite des professions liberales, location meublee, gestion financiere et gestion de patrimoine. Fonctionne sur **Claude Code** (skill integre au depot), **Gemini Gems** et **ChatGPT Custom GPT**.
 
-Le depot contient **deux skills Claude complementaires** : `expert-comptable` (regles fiscales et comptables, referentiel source) et `conseiller-patrimoine` (conseil patrimonial et investissement, sources de premiere main, calculs). Voir [Deux skills Claude](#deux-skills-claude).
+Le depot contient **deux skills Claude complementaires** : `assistant-fiscal-comptable` (regles fiscales et comptables, referentiel source) et `conseiller-patrimoine` (aide a la decision patrimoniale pour un usage personnel, sources de premiere main, calculs). Voir [Deux skills Claude](#deux-skills-claude).
 
 **Page de presentation du projet :** [joachimpomme-ctrl.github.io/comptable](https://joachimpomme-ctrl.github.io/comptable/) — a partager pour presenter le projet en une page.
 
 > ## ⚠️ A lire avant toute utilisation
 >
-> - **Les sorties de l'agent sont des projets de reponse a verifier — jamais un livrable client, jamais un conseil.** La consultation fiscale a titre habituel est une activite reglementee : cet outil est une aide a la recherche et a la pre-qualification, la responsabilite professionnelle reste celle du praticien.
-> - **Etat de validation : 0 des 391 regles metier a ete validee par un professionnel** (statut `candidate_to_validate`). Les 38 parametres chiffres du referentiel citent chacun leur source officielle, leur URL et leur date de verification ; l'audit du 01/11/2026 a corrige la valeur, le libelle ou la source de 12 cles et en a ajoute 6 (prelevements sociaux, PFU, CARPIMKO, deficit foncier majore). Voir [Etat de validation du corpus](#etat-de-validation-du-corpus).
+> - **Outil d'aide a la recherche fonde sur des modeles d'IA** (Claude, Gemini, ChatGPT). Ses reponses peuvent etre fausses, incompletes ou perimees, meme quand elles citent une source.
+> - **Ce n'est ni une consultation juridique ou fiscale, ni une mission d'expertise comptable, ni un conseil en investissement, en credit ou en assurance.** Exercees pour autrui de facon habituelle, et selon les cas remuneree, ces activites sont reservees a des professionnels habilites (avocats, experts-comptables, notaires, conseillers en investissements financiers, courtiers inscrits a l'ORIAS).
+> - **Particuliers :** verifiez sur une source officielle (impots.gouv.fr, Legifrance, BOFiP) ou aupres d'un professionnel avant toute declaration ou decision.
+> - **Professionnels :** les sorties sont des brouillons ; les utiliser aupres de vos clients engage votre responsabilite et vos obligations (secret professionnel, devoir de conseil, RGPD). Ne saisissez aucune donnee qui identifie un client. Si vous mettez l'agent a disposition de vos clients, dites-leur qu'ils echangent avec une IA (reglement (UE) 2024/1689, art. 50).
+> - **Etat : 0 des 391 regles metier relue par un professionnel** ; les controles de sources ont ete faits par des agents d'IA. Les 38 parametres chiffres du referentiel citent chacun leur source officielle, leur URL et leur date de verification. Voir [Etat de validation du corpus](#etat-de-validation-du-corpus).
 > - **Millesimes :** les chiffres verifies couvrent 2025 et 2026 (impot sur les revenus 2025) ; les baremes des revenus 2026 dependent de la LF 2027, non promulguee au 01/11/2026. Voir la [table des millesimes](#table-des-millesimes).
 
 ---
@@ -18,19 +21,19 @@ Le depot contient **deux skills Claude complementaires** : `expert-comptable` (r
 
 | Skill | Role | Paquet | Documentation |
 |-------|------|--------|---------------|
-| `expert-comptable` | Fiscalite, comptabilite BNC/BIC, LMNP, revenus fonciers, transmission : regles tracees, referentiel de 38 parametres sources, 63 articles CGI | [`dist/expert-comptable.zip`](dist/expert-comptable.zip) | Ce README |
-| `conseiller-patrimoine` | Conseil patrimonial et investissement : ou placer, PEA, assurance-vie, PER, ETF et allocation, credit et capacite d'emprunt, achat-revente, louer ou acheter, retraite, protection du conjoint, charte d'investissement. Va chercher chaque chiffre volatil a sa source officielle et le date, calcule avec ses scripts | [`dist/conseiller-patrimoine.zip`](dist/conseiller-patrimoine.zip) | **[Guide complet : docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md)** |
+| `assistant-fiscal-comptable` | Fiscalite, comptabilite BNC/BIC, LMNP, revenus fonciers, transmission : regles tracees, referentiel de 38 parametres sources, 63 articles CGI | [`dist/assistant-fiscal-comptable.zip`](dist/assistant-fiscal-comptable.zip) | Ce README |
+| `conseiller-patrimoine` | Aide a la decision patrimoniale, usage personnel (pas un conseil en investissement) : ou placer, PEA, assurance-vie, PER, ETF et allocation, credit et capacite d'emprunt, achat-revente, louer ou acheter, retraite, protection du conjoint, charte d'investissement. Va chercher chaque chiffre volatil a sa source officielle et le date, calcule avec ses scripts | [`dist/conseiller-patrimoine.zip`](dist/conseiller-patrimoine.zip) | **[Guide complet : docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md)** |
 
-Les deux se completent : le conseiller delegue toute question fiscale a `expert-comptable`. Installer les deux pour un usage patrimonial.
+Les deux se completent : le conseiller delegue toute question fiscale a `assistant-fiscal-comptable`. Installer les deux pour un usage patrimonial.
 
 ### En bref : le skill conseiller-patrimoine
 
 - **Contradicteur, pas vendeur.** Pour chaque decision : au moins deux options plus le statu quo, pire cas chiffre, liquidite, reversibilite, cout complet, contre-argument ecrit, avis conditionnel avec niveau de confiance (sur / probable / hypothese).
 - **Information de premiere main.** Carte des sources officielles par sujet (Legifrance, BOFiP, Banque de France, INSEE, HCSF, AMF, ACPR, ORIAS, REGAFI, DIC des emetteurs, fiches d'indices, DVF, info-retraite...). Aucun taux, plafond ou donnee de marche de memoire : valeur, date d'effet, date de consultation et lien.
 - **Regles volatiles datees.** `references/01-fraicheur.md` liste l'etat verifie au 01/11/2026 (normes HCSF, calendrier DPE, encadrement des loyers, retraite, prelevements sociaux 2026, MiCA...) avec source, statut et date de reverification.
-- **Doctrine sourcee.** Une trentaine de resultats de recherche (diversification, couts, gestion active, facteurs, taux de retrait, comportement), chacun marque consensus, debattu ou heuristique.
+- **Doctrine referencee.** Une trentaine de resultats de recherche (diversification, couts, gestion active, facteurs, taux de retrait, comportement), chacun marque consensus, debattu ou heuristique ; references controlees par un agent d'IA, sans relecture humaine.
 - **Six scripts de calcul testes** (32 tests) : credit et remboursement anticipe, capacite d'emprunt et pret relais, projections et Monte-Carlo, TRI, exposition et reequilibrage, louer ou acheter. Aucun rendement par defaut.
-- **Relu par un agent independant** le 01/11/2026 : 13 erreurs corrigees avant publication.
+- **Relu par un second agent d'IA** le 01/11/2026 (13 erreurs corrigees avant publication), pas encore par un professionnel.
 - **Partageable.** Aucune donnee personnelle. Sans fiche patrimoniale privee, il part d'un profil en dix questions.
 - **Pas un conseil reglemente** (ni CIF, ni notaire) : une aide a la decision, a faire valider par le bon professionnel quand l'enjeu le justifie.
 
@@ -48,7 +51,7 @@ Trois questions de demonstration a copier-coller :
 "Quels sont les seuils micro-BIC pour un meuble de tourisme non classe, revenus 2025 declares 2026 ?"
 ```
 
-Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient **45 cas de test avec la reponse attendue ecrite** — le moyen le plus rapide pour un expert-comptable de juger la qualite des sorties.
+Pour tester l'agent : `knowledge/08_evaluation_suite.md` contient 45 questions : 12 avec un resultat attendu detaille et chiffre (EV-029 a EV-040), 8 a criteres qualitatifs, 25 qui reprennent les exemples de calibrage fournis a l'agent (11 avec des chiffres attendus) : utiles pour le format, pas pour mesurer la qualite. Les cas EV-029 a EV-040 sont le meilleur point de depart pour un relecteur.
 
 ---
 
@@ -81,13 +84,13 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 |-----------|--------|--------|
 | Regles metier (`02_golden_rules_claude_first.md`) | 391 | **0 validee** — 391 `candidate_to_validate` |
 | Referentiel de parametres chiffres (`referentiel_parametres.json`) | 38 cles | **38 `sourced`** : source officielle, URL et date pour chacune (passe du 2026-08-26, corrections et ajouts du 2026-11-01) |
-| Articles CGI (`M_CGI_code_general_impots.md`) | 51 | Texte legal officiel integral (export Legifrance du 30/10/2026 pour les 30 articles reextraits le 2026-11-01) |
-| Tracabilite regle → source (`07_rule_source_crosswalk.jsonl`) | 391 entrees | **379 ancres legales verifiees** contre texte officiel (passes des 2026-08-26) · 12 enonces de pratique sans texte officiel restent `a_verifier` |
-| Cas de test (`08_evaluation_suite.md`) | 45 | Reponses attendues ecrites |
+| Articles CGI (`M_CGI_code_general_impots.md`) | 63 | Texte legal officiel integral (export Legifrance du 30/10/2026 pour les 30 articles reextraits le 2026-11-01) |
+| Tracabilite regle → source (`07_rule_source_crosswalk.jsonl`) | 391 entrees | 358 ancres legales controlees par des agents d'IA (195 confirmees, 46 ancres rectifiees, 74 enonces nuances, 32 enonces corriges, 11 sans trace de verdict) ; 33 enonces de pratique ou de doctrine sans ancre legale (`a_verifier`). Passes du 05/06, du 26/08 et du 01/11/2026. Page du document d'origine : rapprochement automatique, probable |
+| Cas de test (`08_evaluation_suite.md`) | 45 | 12 detailles et chiffres, 8 qualitatifs, 25 repris des exemples de calibrage |
 
-**Vous etes expert-comptable, fiscaliste, CGP, notaire ?** Chaque regle validee (ou corrigee) augmente la valeur du corpus pour tout le monde. Le workflow est simple : une issue GitHub par regle, passage `candidate_to_validate` → `validated` avec votre nom et la date. Voir **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+**Vous etes expert-comptable, avocat fiscaliste, CGP, notaire ?** Une relecture benevole, par lots d'une vingtaine de regles, fait progresser le corpus pour tout le monde. Elle porte sur l'enonce au millesime indique et n'engage pas votre responsabilite professionnelle. Voir **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
-**Ce qui reste a faire et ou aider :** voir la **[feuille de route (ROADMAP.md)](ROADMAP.md)** — validation professionnelle des regles (le sourcing IA des ancres est termine : 379/391), cles de referentiel a ajouter (CARMF, plafonds PER, deficit foncier majore), mise a jour annuelle de janvier, outillage communaute.
+**Ce qui reste a faire et ou aider :** voir la **[feuille de route (ROADMAP.md)](ROADMAP.md)** — relecture professionnelle des regles (le controle des ancres par IA couvre 358 regles sur 391), cles de referentiel a ajouter (CARMF, plafonds PER, deficit foncier majore), mise a jour annuelle de janvier, outillage communaute.
 
 ---
 
@@ -132,8 +135,10 @@ Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa 
 README.md                               <- Ce fichier
 CONTRIBUTING.md                         <- Workflow de validation des regles
 ROADMAP.md                              <- Feuille de route : ce qui reste a faire
+CHANGELOG.md                            <- Journal des versions (2026.11.3)
+NOTICE.md                               <- Origine des contenus, licences, editeur
 GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un navigateur)
-.claude/skills/expert-comptable/
+.claude/skills/assistant-fiscal-comptable/
   SKILL.md                              <- Skill Claude Code (auto-charge dans ce depot)
   scripts/lookup.py                     <- Extraction ciblee : regles, articles CGI, referentiel
   evals/evals.json                      <- Cas de test du skill
@@ -147,7 +152,7 @@ GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un naviga
 docs/
   conseiller-patrimoine.md              <- Guide complet du skill conseiller-patrimoine
 dist/
-  expert-comptable.zip / .skill         <- Paquet autonome expert-comptable
+  assistant-fiscal-comptable.zip / .skill         <- Paquet autonome assistant-fiscal-comptable
   conseiller-patrimoine.zip / .skill    <- Paquet autonome conseiller-patrimoine
 .github/workflows/tests.yml             <- Tests automatiques a chaque push
 gemini/
@@ -188,16 +193,16 @@ cd comptable
 claude
 ```
 
-Ouvrir le depot dans [Claude Code](https://claude.com/claude-code) : les deux skills sont charges. Le skill `conseiller-patrimoine` (`.claude/skills/conseiller-patrimoine/`) se declenche sur toute demande d'avis ou d'arbitrage patrimonial. Le skill `expert-comptable` (`.claude/skills/expert-comptable/`) se declenche automatiquement sur toute question fiscale, comptable ou patrimoniale. Il consulte la base `knowledge/` dans l'ordre prescrit, cite ses sources avec millesime et statut de validation, et utilise un script de lookup pour extraire regles, articles CGI et parametres chiffres sans charger les gros fichiers.
+Ouvrir le depot dans [Claude Code](https://claude.com/claude-code) : les deux skills sont charges. Le skill `conseiller-patrimoine` (`.claude/skills/conseiller-patrimoine/`) se declenche sur toute demande d'avis ou d'arbitrage patrimonial. Le skill `assistant-fiscal-comptable` (`.claude/skills/assistant-fiscal-comptable/`) se declenche automatiquement sur toute question fiscale, comptable ou patrimoniale. Il consulte la base `knowledge/` dans l'ordre prescrit, cite ses sources avec millesime et statut de validation, et utilise un script de lookup pour extraire regles, articles CGI et parametres chiffres sans charger les gros fichiers.
 
 ```
 Exemples : "Mon client kine a encaisse 80 000 EUR en 2026, peut-il rester au micro-BNC ?"
            "Calcule la PV de cession d'un LMNP au reel, amortissements deduits 40 000 EUR."
 ```
 
-**Sans cloner le depot — paquet pret a l'emploi :** telecharger [`dist/expert-comptable.zip`](dist/expert-comptable.zip) (base de connaissances embarquee) et l'importer dans claude.ai > **Settings** > **Capabilities** > **Upload skill**. Le skill est alors disponible dans toutes vos conversations Claude (claude.ai, Claude Code, app mobile). Le paquet se regenere avec `python3 scripts/build_skill_package.py` apres chaque mise a jour du corpus.
+**Sans cloner le depot — paquet pret a l'emploi :** telecharger [`dist/assistant-fiscal-comptable.zip`](dist/assistant-fiscal-comptable.zip) (environ 360 Ko, base de connaissances embarquee), activer l'execution de code dans claude.ai puis importer le zip dans **Settings** > **Capabilities** > **Skills** > **Upload skill**. Les skills demandent une offre Pro, Max, Team ou Enterprise (aide Claude, « Using Skills in Claude »). Un skill importe est prive a votre compte ; dans Claude Code, cloner le depot suffit. **Ancien nom : `expert-comptable`** : si vous aviez importe `expert-comptable.zip`, supprimez ce skill avant d'importer le nouveau. Le paquet se regenere avec `python3 scripts/build_skill_package.py` apres chaque mise a jour du corpus.
 
-**Skill conseiller-patrimoine :** meme procedure avec [`dist/conseiller-patrimoine.zip`](dist/conseiller-patrimoine.zip), en plus d'`expert-comptable`. Activer la recherche web dans Claude : le skill lit les sources officielles en ligne. Mode d'emploi detaille, exemples et maintenance : [docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md). Les deux paquets se regenerent ensemble avec `python3 scripts/build_skill_package.py` (ou un seul : `python3 scripts/build_skill_package.py conseiller-patrimoine`). Pas de mise a jour automatique : reimporter le zip a chaque nouvelle version.
+**Skill conseiller-patrimoine :** meme procedure avec [`dist/conseiller-patrimoine.zip`](dist/conseiller-patrimoine.zip), en plus d'`assistant-fiscal-comptable`. Activer la recherche web dans Claude : le skill lit les sources officielles en ligne. Mode d'emploi detaille, exemples et maintenance : [docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md). Les deux paquets se regenerent ensemble avec `python3 scripts/build_skill_package.py` (ou un seul : `python3 scripts/build_skill_package.py conseiller-patrimoine`). Pas de mise a jour automatique : reimporter le zip a chaque nouvelle version.
 
 ### Gemini Gems
 
@@ -304,8 +309,9 @@ En debut de session, l'agent rappelle l'etat de validation du corpus (regles non
 ## Sources et tracabilite
 
 - **Textes legaux** : 63 articles CGI (texte officiel, millesime 2026), references BOFiP et Legifrance dans le referentiel de parametres (`source_url` par cle).
-- **Regles metier** : extraites de guides fiscaux professionnels et de sources publiques ; chaque regle est reliee a son document et sa page source via `07_rule_source_crosswalk.jsonl`. Les PDF sources ne sont pas redistribues dans ce depot (droits d'auteur) — l'inventaire complet est dans `knowledge/chatgpt_only/10_documents.json`.
-- **Chiffres** : chaque valeur du referentiel porte sa source officielle, son URL et sa date de verification.
+- **Regles metier** : reformulees a partir de 10 documents, dont un guide fiscal des professions liberales diffuse par Banque Populaire (edition 04/2025, 217 regles sur 391 ; identification probable d'apres le nom du fichier), des guides prives sur la location meublee, la comptabilite liberale et la gestion de patrimoine, un support de formation en gestion de patrimoine et le recueil des normes comptables de l'ANC. **Ces documents ne font pas autorite : seule l'ancre legale citee (CGI, BOFiP, PCG) fait foi.** Ils ne sont pas redistribues ; inventaire dans `knowledge/chatgpt_only/10_documents.json`, details dans [NOTICE.md](NOTICE.md). La page citee au crosswalk vient d'un rapprochement automatique (page probable).
+- **Chiffres** : chaque valeur du referentiel porte sa source officielle, son URL et sa date de verification. Les autres chiffres du corpus (exemples, baremes de cotisations) n'ont pas tous ce niveau de tracabilite.
+- **Outils** : corpus constitue et controle avec des outils d'IA (Claude, Codex).
 
 ---
 
@@ -322,6 +328,4 @@ En debut de session, l'agent rappelle l'etat de validation du corpus (regles non
 
 ## Licence
 
-Ce projet est partage a des fins pedagogiques et d'usage personnel (CC BY-NC 4.0).
-Les regles metier sont extraites de sources publiques (guides fiscaux, BOFiP, CGI).
-Elles ne constituent pas un conseil professionnel.
+Contenu propre au depot : Creative Commons Attribution - Pas d'utilisation commerciale 4.0 International (texte integral dans [LICENSE](LICENSE)). Ce n'est pas une licence « open source » au sens de l'OSI. Les textes du CGI sont reutilises sous Licence Ouverte (Legifrance, DILA) et ne sont pas soumis a la clause non commerciale ; les documents d'origine des regles restent la propriete de leurs auteurs. Details, editeur et contact : [NOTICE.md](NOTICE.md). Rien dans ce depot ne constitue un conseil professionnel.

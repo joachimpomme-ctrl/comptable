@@ -1,6 +1,6 @@
 # Protection du foyer et transmission
 
-Ce fichier repère les sujets et les questions à poser. Les actes (contrat de mariage, donation, testament) se font chez le notaire. La fiscalité de la transmission vient d'`expert-comptable`.
+Ce fichier repère les sujets et les questions à poser. Les actes (contrat de mariage, donation, testament) se font chez le notaire. La fiscalité de la transmission vient d'`assistant-fiscal-comptable`.
 
 ## 1. Prévoyance : ce qui arrive si un revenu disparaît
 
@@ -25,7 +25,7 @@ Repères :
 
 - Marié : le conjoint hérite en partie sans testament ; une donation entre époux (dite au dernier vivant, C. civ. art. 1094-1) élargit ses options.
 - PACS ou concubinage : sans testament, le partenaire n'hérite pas. Testament et assurance-vie sont alors centraux.
-- Assurance-vie : la clause bénéficiaire désigne qui reçoit le capital, hors succession dans les limites prévues par la loi. Une clause standard (« mon conjoint, à défaut mes enfants nés ou à naître, à défaut mes héritiers ») convient souvent pour un couple marié ; la relire à chaque mariage, naissance, divorce, décès. « Mon conjoint » ne vise que l'époux : un partenaire de PACS ou un concubin se désigne nommément. Un legs à un concubin est lourdement taxé (fiscalité via `expert-comptable`) : l'assurance-vie et le PACS changent beaucoup la situation.
+- Assurance-vie : la clause bénéficiaire désigne qui reçoit le capital, hors succession dans les limites prévues par la loi. Une clause standard (« mon conjoint, à défaut mes enfants nés ou à naître, à défaut mes héritiers ») convient souvent pour un couple marié ; la relire à chaque mariage, naissance, divorce, décès. « Mon conjoint » ne vise que l'époux : un partenaire de PACS ou un concubin se désigne nommément. Un legs à un concubin est lourdement taxé (fiscalité via `assistant-fiscal-comptable`) : l'assurance-vie et le PACS changent beaucoup la situation.
 - Logement : droit au logement du conjoint survivant, à vérifier avec le notaire selon la situation.
 
 ## 4. Enfants mineurs
@@ -36,7 +36,7 @@ Repères :
 
 ## 5. Transmission : repères
 
-- Donation, donation-partage, démembrement de propriété, assurance-vie, sociétés civiles : chaque outil a des règles civiles (réserve héréditaire, rapport des donations) et fiscales (`expert-comptable`).
+- Donation, donation-partage, démembrement de propriété, assurance-vie, sociétés civiles : chaque outil a des règles civiles (réserve héréditaire, rapport des donations) et fiscales (`assistant-fiscal-comptable`).
 - Ordre des questions : qu'est-ce qu'on veut transmettre, à qui, quand, en gardant quel contrôle et quels revenus ? Les outils viennent après.
 - Ne pas donner ce dont on peut avoir besoin : un patrimoine donné ne revient pas.
 - Toujours chez un notaire. Le rôle de ce skill est de préparer les questions et les chiffres, pas de rédiger.

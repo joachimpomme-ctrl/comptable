@@ -22,7 +22,7 @@ Un chiffre de rang 3 sert à localiser le rang 1. Un comparateur peut avoir un T
 | Barèmes, simulateurs, formulaires | impots.gouv.fr | Simulateur officiel de l'impôt sur le revenu. |
 | Lois en discussion | senat.fr (dossiers législatifs, « la loi en clair »), assemblee-nationale.fr | Adopté par une chambre ne veut pas dire en vigueur : attendre la promulgation au Journal officiel. |
 | Fiche pratique | service-public.gouv.fr (ancien service-public.fr) | Mention « Vérifié le » en bas de fiche. |
-| Fiscalité appliquée au foyer | Skill `expert-comptable` | Son référentiel porte millésime et source. |
+| Fiscalité appliquée au foyer | Skill `assistant-fiscal-comptable` | Son référentiel porte millésime et source. |
 
 ## 3. Taux, crédit, épargne réglementée, macroéconomie
 

@@ -1,6 +1,6 @@
 {
   "name": "agent_comptable_fiscal_patrimonial",
-  "version": "2026-08-26",
+  "version": "2026.11.3",
   "generated_at": "2026-08-26",
   "language": "fr",
   "description": "Agent IA expert en comptabilité BNC/BIC, fiscalité des professions libérales, LMNP/LMP, gestion financière et gestion de patrimoine. Conçu pour Gemini Gems et ChatGPT Custom GPT.",
@@ -18,9 +18,12 @@
   ],
   "instructions": {
     "file": "gemini/00_INSTRUCTIONS_GEMINI.md et chatgpt/00_INSTRUCTIONS_CHATGPT.md",
-    "sections": 22,
-    "version": "2026-06-05",
-    "description": "System prompt complet — 22 sections couvrant identité, hiérarchie sources, protocoles métier, workflows (comptable, fiscal, LMNP, financier, patrimoine), aide aux déclarations, optimisation fiscale légale et historisation Drive"
+    "sections": {
+      "chatgpt": 22,
+      "gemini": "sections 0 a 3 plus checklists (perimetre plus court que ChatGPT)"
+    },
+    "version": "2026.11.3",
+    "description": "System prompt complet — sections couvrant (ChatGPT : 22 ; Gemini : version plus courte) identité, hiérarchie sources, protocoles métier, workflows (comptable, fiscal, LMNP, financier, patrimoine), aide aux déclarations, optimisation fiscale légale et historisation Drive"
   },
   "knowledge_files": [
     {
@@ -90,7 +93,7 @@
       "id": 8,
       "file": "07_rule_source_crosswalk.jsonl",
       "label": "Crosswalk règles → sources PDF",
-      "description": "Table de traçabilité reliant chaque règle à son document source et sa page PDF. Format JSONL. Permet de citer la page exacte de chaque règle.",
+      "description": "Table de traçabilité : pour chaque règle, ancre légale, statut de l'ancre, verdicts datés des contrôles faits par des agents d'IA et page probable du document d'origine (rapprochement automatique par similarité de texte, à confirmer). 358 ancres légales contrôlées, 33 énoncés sans ancre légale (a_verifier).",
       "module": "all",
       "priority": "niveau_3",
       "format": "JSONL"
@@ -99,7 +102,7 @@
       "id": 9,
       "file": "08_evaluation_suite.md",
       "label": "Suite d'évaluation",
-      "description": "45 cas de test de référence avec réponses attendues. Permet de mesurer la qualité et la cohérence des réponses de l'agent.",
+      "description": "45 questions de test : 12 avec un résultat attendu détaillé et chiffré (EV-029 à EV-040), 8 à critères qualitatifs, 25 reprises des exemples de calibrage (utiles pour le format, pas pour mesurer la qualité).",
       "module": "all",
       "priority": "niveau_3",
       "test_count": 45
@@ -152,14 +155,15 @@
     "critical_risks": 8,
     "referentiel_parametres_keys": 38,
     "referentiel_parametres_sourced": 38,
-    "gemini_note": "Limite Gemini 10 fichiers : referentiel_parametres.json remplace 09_agent_manifest.json dans la liste Gemini"
+    "gemini_note": "Limite Gemini 10 fichiers : referentiel_parametres.json remplace 09_agent_manifest.json dans la liste Gemini",
+    "crosswalk_anchors_sourced": 358
   },
   "rule_status": {
     "claude_curated": "Règles structurées par Claude — prioritaires pour raisonner, à valider par un expert métier",
-    "sourced": "Règles reliées à une page source PDF via le crosswalk 07",
+    "sourced": "Ancre légale contrôlée contre un texte officiel par un agent d'IA (statut de l'ancre au crosswalk 07) ; la page d'un guide privé n'est jamais une preuve",
     "auto_extracted": "Extractions automatiques — utiles pour exploration, ne pas présenter comme validées",
-    "candidate_to_validate": "Toute règle non encore validée par un expert-comptable, fiscaliste ou notaire",
-    "validated": "Règle validée par un professionnel identifié (nom, qualité, date) via le workflow CONTRIBUTING.md"
+    "candidate_to_validate": "Toute règle non encore relue par un professionnel (expert-comptable, avocat fiscaliste, notaire)",
+    "validated": "Règle relue par deux professionnels dont la qualité a été vérifiée, avec validated_until (workflow CONTRIBUTING.md)"
   },
   "citation_policy": {
     "priority_1": "Référence légale officielle : CGI Art. XX | BOFiP référence | CGP art. XX | CSS art. XX",
