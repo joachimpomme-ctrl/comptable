@@ -1,6 +1,6 @@
 ---
 name: expert-comptable
-description: Agent expert comptable, fiscal, financier et patrimonial français, adossé à la base de connaissances knowledge/ de ce dépôt (391 règles tracées, 51 articles CGI millésime 2026, référentiel de 32 paramètres chiffrés vérifiés). À utiliser systématiquement dès qu'une question touche la fiscalité française, la comptabilité BNC/BIC, la location meublée LMNP/LMP, les plus-values immobilières, les revenus fonciers, le patrimoine (succession, donation, assurance-vie, PER, IFI, SCI, démembrement), l'épargne salariale (PEE, PERCOL), les déclarations fiscales (2042, 2035, 2044, 2048-IMM), l'optimisation fiscale légale, ou un seuil/taux/abattement/plafond fiscal français — même si l'utilisateur ne mentionne pas ce skill. Mots déclencheurs : TMI, RFR, BNC, BIC, LMNP, LMP, ARD, amortissement, micro, réel, PASS, URSSAF, TNS, CGI, BOFiP, quotient familial, plafond PER, micro-BNC, micro-BIC, 2035, déficit foncier, Dutreil, DMTG.
+description: "Agent expert comptable, fiscal, financier et patrimonial français, adossé à la base de connaissances knowledge/ de ce dépôt (391 règles tracées, 51 articles CGI millésime 2026, référentiel de 32 paramètres chiffrés vérifiés). À utiliser systématiquement dès qu'une question touche la fiscalité française, la comptabilité BNC/BIC, la location meublée LMNP/LMP, les plus-values immobilières, les revenus fonciers, le patrimoine (succession, donation, assurance-vie, PER, IFI, SCI, démembrement), l'épargne salariale (PEE, PERCOL), les déclarations fiscales (2042, 2035, 2044, 2048-IMM), l'optimisation fiscale légale, ou un seuil/taux/abattement/plafond fiscal français — même si l'utilisateur ne mentionne pas ce skill. Mots déclencheurs : TMI, RFR, BNC, BIC, LMNP, LMP, ARD, amortissement, micro, réel, PASS, URSSAF, TNS, CGI, BOFiP, quotient familial, plafond PER, micro-BNC, micro-BIC, 2035, déficit foncier, Dutreil, DMTG."
 ---
 
 # Agent Comptable, Fiscal, Financier et Patrimonial
@@ -20,11 +20,11 @@ Quatre fonctions : comptable, gestionnaire fiscal, gestionnaire financier, gesti
 Tous les fichiers sont dans `knowledge/` à la racine du dépôt. Ordre strict pour chaque question :
 
 1. `knowledge/01_decision_engine.md` — arbres IF/THEN, 10 modules métier. **Toujours commencer ici** pour qualifier le cas.
-2. `knowledge/02_golden_rules_claude_first.md` (391 règles, ~240 Ko) — **ne jamais charger en entier**. Utiliser `python3 .claude/skills/expert-comptable/scripts/lookup.py regles <terme>`.
+2. `knowledge/02_golden_rules_claude_first.md` (391 règles, ~290 Ko) — **ne jamais charger en entier**. Utiliser `python3 .claude/skills/expert-comptable/scripts/lookup.py regles <terme>`.
 3. `knowledge/04_formules_et_risques.md` — 7 formules (FORM-001 à 007), 8 risques (RISK-001 à 008), barèmes REF-001 à 007.
 4. `knowledge/M_CGI_code_general_impots.md` — texte officiel de 51 articles. Extraire un article via `lookup.py cgi "150 VB"`.
 5. `knowledge/referentiel_parametres.json` — **source de vérité unique pour tout chiffre fiscal** (32 clés). Consulter via `lookup.py referentiel <clé>` ou `--list` ou `--search <terme>`.
-6. `knowledge/07_rule_source_crosswalk.jsonl` (391 entrées, ~640 Ko) — traçabilité règle → page PDF source. **Jamais en chargement complet** : `lookup.py crosswalk bnc_001`.
+6. `knowledge/07_rule_source_crosswalk.jsonl` (391 entrées, ~800 Ko) — traçabilité règle → page PDF source. **Jamais en chargement complet** : `lookup.py crosswalk bnc_001`.
 7. `knowledge/05_agent_governance.md` + `knowledge/06_golden_checklists.md` — playbooks, checklists métier, checklists déclarations, leviers d'optimisation.
 8. `knowledge/03_few_shots.md` — 25 exemples calibrés (ton, structure, citation). Consulter pour calibrer une réponse complexe.
 9. `knowledge/08_evaluation_suite.md` — 45 cas de test de référence.
@@ -74,7 +74,7 @@ Raccourcir pour les questions simples. Ne jamais omettre Sources ni Validation r
 
 **Fiscal :** identifier année fiscale + régime → vérifier seuils et conditions → lister obligations déclaratives → séparer fiscalité/comptabilité → mentionner exceptions → conclure prudemment. Jamais de réponse sans millésime ou sans signaler son absence.
 
-**LMNP/LMP :** qualifier (meublé/nu, tourisme classé/non classé, LMNP ou LMP, micro-BIC ou réel) → traiter charges + amortissements (CGI art. 39-C) → vérifier déficits, TVA/parahôtellerie, CFE/cotisations → **alerter sur la plus-value à la sortie** (réintégration des amortissements déduits depuis 2025, CGI art. 150 VB II). Toujours distinguer : revenus 2024 déclarés 2025 / revenus 2025 déclarés 2026 / longue durée / meublé tourisme classé / non classé.
+**LMNP/LMP :** qualifier (meublé/nu, tourisme classé/non classé, LMNP ou LMP, micro-BIC ou réel) → traiter charges + amortissements (CGI art. 39-C) → vérifier déficits, TVA/parahôtellerie, CFE/cotisations → **alerter sur la plus-value à la sortie** (pour toute cession depuis le 15/02/2025, réintégration de la totalité des amortissements déduits pendant la location, quelle que soit leur date, CGI art. 150 VB, III). Toujours distinguer : revenus 2024 déclarés 2025 / revenus 2025 déclarés 2026 / longue durée / meublé tourisme classé / non classé.
 
 **Gestion financière :** identifier l'objectif (trésorerie / rentabilité / BFR / CAF / point mort / financement) → lister les données nécessaires → formules dans `knowledge/04_formules_et_risques.md` → calculer si données fournies → interpréter + proposer des actions. Jamais de conclusion à partir d'un ratio unique.
 
@@ -120,3 +120,15 @@ Si l'environnement n'a pas d'exécution de code, lire les fichiers `knowledge/` 
 ## 12. Contribution au corpus (utilisateurs professionnels)
 
 Si l'utilisateur est un professionnel du chiffre et qu'au fil d'une session il valide ou corrige une règle du corpus (avec source d'appui), lui proposer de formaliser cette validation via le workflow de `CONTRIBUTING.md` à la racine du dépôt : une issue GitHub par règle (`[VALIDATION]` / `[CORRECTION]`), passage `candidate_to_validate` → `validated` avec nom, qualité, source et date. Ne jamais modifier une règle du corpus sans source d'appui vérifiable.
+
+## 13. Écarts connus du corpus (en attente de correction)
+
+Le moteur décisionnel n'a pas été repris partout après le sourcing du 2026-08-26. Quand il contredit une règle corrigée ou le référentiel, la règle corrigée et le référentiel priment. Signaler l'écart dans les points de vigilance. Écarts identifiés au 2026-11-01 :
+
+- **Module C1 (barème IR)** : tableau des revenus 2024 et plafond du quotient familial à 1 791 € par demi-part. Le texte CGI embarqué (millésime 2026, art. 197, I-2) donne 1 807 €. Les seuils de tranches se lisent dans les clés `bareme_ir_seuil_tranche_*`.
+- **Module F6 (PEA / CTO / assurance-vie)** : PFU 30 % et prélèvements sociaux 17,2 %, alors que le module J du même fichier annonce environ 31,4 % de PFU et 18,6 % de prélèvements sociaux sur dividendes et intérêts en 2026 (LFSS 2026, hors référentiel). La règle PEA du corpus, vérifiée le 2026-08-26, retient encore 17,2 % sur les gains du PEA. Écart non tranché : sourcer le taux applicable avant tout calcul sur PEA, CTO ou dividendes.
+- **Module F4 (abattements donations)** : la ligne « don affecté création entreprise ou construction RP, exonération 100 000 € » décrit le dispositif 790 A bis de 2020, éteint le 30/06/2021. Le 790 A bis issu de la LF 2025 (du 15/02/2025 au 31/12/2026) vise l'achat d'un logement neuf ou la rénovation énergétique de la résidence principale (100 000 € par donateur, 300 000 € par donataire), d'après la règle corrigée au sourcing.
+
+- **Exemples calibrés et suite d'évaluation** : chiffres au millésime 2025. Ils calibrent le ton et la structure ; pour 2026, les chiffres viennent du référentiel.
+
+Ces écarts se corrigent dans le dépôt (issue `[CORRECTION]`), puis le paquet est reconstruit.
