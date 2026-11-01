@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
-"""Construit le paquet autonome du skill Claude « expert-comptable ».
+"""Construit les paquets autonomes des skills Claude du depot.
 
-Le skill du depot (.claude/skills/expert-comptable/) lit la base knowledge/
-a la racine du depot : il fonctionne pour qui a clone le repo. Ce script
-fabrique la variante AUTONOME, installable dans un profil Claude sans cloner
-le depot : la base de connaissances y est embarquee dans references/.
+Deux skills sont versionnes dans .claude/skills/ :
+
+- expert-comptable : lit la base knowledge/ a la racine du depot. Le paquet
+  autonome embarque cette base dans references/ et adapte les chemins du
+  SKILL.md.
+- conseiller-patrimoine : deja autonome (SKILL.md, references/, scripts/).
+  Le paquet reprend le dossier tel quel, sans evals/ ni caches Python.
 
 Usage :
-    python3 scripts/build_skill_package.py
+    python3 scripts/build_skill_package.py                        # les deux
+    python3 scripts/build_skill_package.py expert-comptable       # un seul
+    python3 scripts/build_skill_package.py conseiller-patrimoine
 
-Produit :
-    dist/expert-comptable.skill   (archive zip — carte « Save skill » dans Claude Code)
-    dist/expert-comptable.zip     (meme contenu — upload claude.ai > Settings > Capabilities)
+Produit, pour chaque skill :
+    dist/<skill>.skill   (archive zip : carte « Save skill » dans Claude Code)
+    dist/<skill>.zip     (meme contenu : upload claude.ai > Settings > Capabilities)
 
-A relancer apres toute mise a jour de knowledge/ ou du SKILL.md (mise a jour
+A relancer apres toute mise a jour d'un skill ou de knowledge/ (mise a jour
 annuelle de janvier notamment), puis committer dist/.
 """
 import shutil
@@ -22,28 +27,43 @@ import zipfile
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-SKILL_SRC = REPO / ".claude" / "skills" / "expert-comptable"
+SKILLS = REPO / ".claude" / "skills"
 KNOWLEDGE = REPO / "knowledge"
-BUILD = REPO / "dist" / "_build" / "expert-comptable"
 DIST = REPO / "dist"
+BUILD_ROOT = DIST / "_build"
 
-# knowledge/chatgpt_only/ est exclu : doublon JSONL du CGI et inventaire de
-# pipeline, inutiles dans le paquet et couteux en taille.
-KNOWLEDGE_FILES = sorted(p for p in KNOWLEDGE.iterdir() if p.is_file())
+# Exclus de tout paquet : tests d'evaluation (servent au developpement) et caches.
+EXCLUS = {"evals", "__pycache__", ".pytest_cache", ".DS_Store"}
 
 
-def main():
-    if not (SKILL_SRC / "SKILL.md").exists():
-        sys.exit(f"SKILL.md introuvable dans {SKILL_SRC}")
+def _zipper(build_dir, nom):
+    DIST.mkdir(exist_ok=True)
+    for out_name in (f"{nom}.skill", f"{nom}.zip"):
+        out = DIST / out_name
+        if out.exists():
+            out.unlink()
+        with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+            for p in sorted(build_dir.rglob("*")):
+                if p.is_file():
+                    z.write(p, p.relative_to(build_dir.parent))
+        print(f"OK {out.relative_to(REPO)} ({out.stat().st_size / 1024:.0f} Ko)")
 
-    if BUILD.parent.exists():
-        shutil.rmtree(BUILD.parent)
-    (BUILD / "scripts").mkdir(parents=True)
-    (BUILD / "references").mkdir()
+
+def build_expert_comptable():
+    src = SKILLS / "expert-comptable"
+    build = BUILD_ROOT / "expert-comptable"
+    if not (src / "SKILL.md").exists():
+        sys.exit(f"SKILL.md introuvable dans {src}")
+    (build / "scripts").mkdir(parents=True)
+    (build / "references").mkdir()
+
+    # knowledge/chatgpt_only/ est exclu : doublon JSONL du CGI et inventaire de
+    # pipeline, inutiles dans le paquet et couteux en taille.
+    knowledge_files = sorted(p for p in KNOWLEDGE.iterdir() if p.is_file())
 
     # SKILL.md : les chemins knowledge/ deviennent references/ (embarques),
     # et le script de lookup s'appelle depuis le dossier du skill.
-    text = (SKILL_SRC / "SKILL.md").read_text(encoding="utf-8")
+    text = (src / "SKILL.md").read_text(encoding="utf-8")
     text = text.replace(".claude/skills/expert-comptable/scripts/lookup.py", "scripts/lookup.py")
     text = text.replace("knowledge/", "references/")
     text = text.replace("adossé à la base de connaissances references/ de ce dépôt",
@@ -55,28 +75,49 @@ def main():
     text = text.replace(
         "Tous les fichiers sont dans `references/` à la racine du dépôt.",
         "Tous les fichiers sont dans `references/` de ce skill.")
-    (BUILD / "SKILL.md").write_text(text, encoding="utf-8")
+    (build / "SKILL.md").write_text(text, encoding="utf-8")
 
     # lookup.py est identique : il cherche references/ puis knowledge/.
-    shutil.copy2(SKILL_SRC / "scripts" / "lookup.py", BUILD / "scripts" / "lookup.py")
+    shutil.copy2(src / "scripts" / "lookup.py", build / "scripts" / "lookup.py")
+    for f in knowledge_files:
+        shutil.copy2(f, build / "references" / f.name)
 
-    for f in KNOWLEDGE_FILES:
-        shutil.copy2(f, BUILD / "references" / f.name)
+    _zipper(build, "expert-comptable")
+    print(f"Contenu : SKILL.md + scripts/lookup.py + {len(knowledge_files)} fichiers references/")
 
-    DIST.mkdir(exist_ok=True)
-    for out_name in ("expert-comptable.skill", "expert-comptable.zip"):
-        out = DIST / out_name
-        if out.exists():
-            out.unlink()
-        with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
-            for p in sorted(BUILD.rglob("*")):
-                if p.is_file():
-                    z.write(p, p.relative_to(BUILD.parent))
-        print(f"OK {out.relative_to(REPO)} ({out.stat().st_size / 1024:.0f} Ko)")
 
-    shutil.rmtree(BUILD.parent)
-    print(f"Contenu : SKILL.md + scripts/lookup.py + {len(KNOWLEDGE_FILES)} fichiers references/")
+def build_conseiller_patrimoine():
+    src = SKILLS / "conseiller-patrimoine"
+    build = BUILD_ROOT / "conseiller-patrimoine"
+    if not (src / "SKILL.md").exists():
+        sys.exit(f"SKILL.md introuvable dans {src}")
+    shutil.copytree(src, build, ignore=lambda d, noms: [n for n in noms if n in EXCLUS or n.endswith(".pyc")])
+    n_ref = len(list((build / "references").glob("*.md")))
+    n_scripts = len(list((build / "scripts").glob("*.py")))
+    _zipper(build, "conseiller-patrimoine")
+    print(f"Contenu : SKILL.md + {n_ref} fichiers references/ + {n_scripts} scripts (+ tests)")
+
+
+CIBLES = {
+    "expert-comptable": build_expert_comptable,
+    "conseiller-patrimoine": build_conseiller_patrimoine,
+}
+
+
+def main(argv):
+    noms = argv or list(CIBLES)
+    inconnus = [n for n in noms if n not in CIBLES]
+    if inconnus:
+        sys.exit(f"Skill inconnu : {', '.join(inconnus)} (choix : {', '.join(CIBLES)})")
+    if BUILD_ROOT.exists():
+        shutil.rmtree(BUILD_ROOT)
+    try:
+        for n in noms:
+            CIBLES[n]()
+    finally:
+        if BUILD_ROOT.exists():
+            shutil.rmtree(BUILD_ROOT)
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

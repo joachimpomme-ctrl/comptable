@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: capacite-emprunt-calcul
+expected_outcome: |
+  Calcul fait avec scripts/capacite.py, règle HCSF vérifiée et datée (35 %, 25 ans), taux du jour non
+  inventé : demandé ou cherché et daté, part des loyers retenue signalée comme pratique bancaire à
+  confirmer, hypothèses affichées, fourchette selon le taux.

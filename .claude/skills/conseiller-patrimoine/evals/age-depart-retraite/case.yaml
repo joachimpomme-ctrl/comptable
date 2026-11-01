@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: age-depart-retraite
+expected_outcome: |
+  Réponse qui vérifie l'état de la réforme (suspension par la LFSS 2026, statut daté), donne l'âge
+  légal de la génération et la durée d'assurance requise lus à la source, rappelle le taux plein
+  automatique à 67 ans, renvoie à info-retraite.fr pour le relevé et le simulateur, signale
+  l'incertitude réglementaire.

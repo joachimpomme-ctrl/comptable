@@ -2,6 +2,8 @@
 
 Agent IA specialise en comptabilite, fiscalite des professions liberales, location meublee, gestion financiere et gestion de patrimoine. Fonctionne sur **Claude Code** (skill integre au depot), **Gemini Gems** et **ChatGPT Custom GPT**.
 
+Le depot contient **deux skills Claude complementaires** : `expert-comptable` (regles fiscales et comptables, referentiel source) et `conseiller-patrimoine` (conseil patrimonial et investissement, sources de premiere main, calculs). Voir [Deux skills Claude](#deux-skills-claude).
+
 **Page de presentation du projet :** [joachimpomme-ctrl.github.io/comptable](https://joachimpomme-ctrl.github.io/comptable/) — a partager pour presenter le projet en une page.
 
 > ## ⚠️ A lire avant toute utilisation
@@ -9,6 +11,28 @@ Agent IA specialise en comptabilite, fiscalite des professions liberales, locati
 > - **Les sorties de l'agent sont des projets de reponse a verifier — jamais un livrable client, jamais un conseil.** La consultation fiscale a titre habituel est une activite reglementee : cet outil est une aide a la recherche et a la pre-qualification, la responsabilite professionnelle reste celle du praticien.
 > - **Etat de validation : 0 des 391 regles metier a ete validee par un professionnel** (statut `candidate_to_validate`). Les 32 parametres chiffres du referentiel sont verifies contre une source officielle (URL + date). Voir [Etat de validation du corpus](#etat-de-validation-du-corpus).
 > - **Millesimes :** les chiffres verifies couvrent 2025 et partiellement 2026 ; les baremes URSSAF/kilometrique restent au millesime 2025. Voir la [table des millesimes](#table-des-millesimes).
+
+---
+
+## Deux skills Claude
+
+| Skill | Role | Paquet | Documentation |
+|-------|------|--------|---------------|
+| `expert-comptable` | Fiscalite, comptabilite BNC/BIC, LMNP, revenus fonciers, transmission : regles tracees, referentiel de 32 parametres sources, 51 articles CGI | [`dist/expert-comptable.zip`](dist/expert-comptable.zip) | Ce README |
+| `conseiller-patrimoine` | Conseil patrimonial et investissement : ou placer, PEA, assurance-vie, PER, ETF et allocation, credit et capacite d'emprunt, achat-revente, louer ou acheter, retraite, protection du conjoint, charte d'investissement. Va chercher chaque chiffre volatil a sa source officielle et le date, calcule avec ses scripts | [`dist/conseiller-patrimoine.zip`](dist/conseiller-patrimoine.zip) | **[Guide complet : docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md)** |
+
+Les deux se completent : le conseiller delegue toute question fiscale a `expert-comptable`. Installer les deux pour un usage patrimonial.
+
+### En bref : le skill conseiller-patrimoine
+
+- **Contradicteur, pas vendeur.** Pour chaque decision : au moins deux options plus le statu quo, pire cas chiffre, liquidite, reversibilite, cout complet, contre-argument ecrit, avis conditionnel avec niveau de confiance (sur / probable / hypothese).
+- **Information de premiere main.** Carte des sources officielles par sujet (Legifrance, BOFiP, Banque de France, INSEE, HCSF, AMF, ACPR, ORIAS, REGAFI, DIC des emetteurs, fiches d'indices, DVF, info-retraite...). Aucun taux, plafond ou donnee de marche de memoire : valeur, date d'effet, date de consultation et lien.
+- **Regles volatiles datees.** `references/01-fraicheur.md` liste l'etat verifie au 01/11/2026 (normes HCSF, calendrier DPE, encadrement des loyers, retraite, prelevements sociaux 2026, MiCA...) avec source, statut et date de reverification.
+- **Doctrine sourcee.** Une trentaine de resultats de recherche (diversification, couts, gestion active, facteurs, taux de retrait, comportement), chacun marque consensus, debattu ou heuristique.
+- **Six scripts de calcul testes** (32 tests) : credit et remboursement anticipe, capacite d'emprunt et pret relais, projections et Monte-Carlo, TRI, exposition et reequilibrage, louer ou acheter. Aucun rendement par defaut.
+- **Relu par un agent independant** le 01/11/2026 : 13 erreurs corrigees avant publication.
+- **Partageable.** Aucune donnee personnelle. Sans fiche patrimoniale privee, il part d'un profil en dix questions.
+- **Pas un conseil reglemente** (ni CIF, ni notaire) : une aide a la decision, a faire valider par le bon professionnel quand l'enjeu le justifie.
 
 ---
 
@@ -107,6 +131,19 @@ GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un naviga
   SKILL.md                              <- Skill Claude Code (auto-charge dans ce depot)
   scripts/lookup.py                     <- Extraction ciblee : regles, articles CGI, referentiel
   evals/evals.json                      <- Cas de test du skill
+.claude/skills/conseiller-patrimoine/
+  SKILL.md                              <- Skill conseil patrimonial (auto-charge dans ce depot)
+  references/                           <- 11 fichiers : sources, fraicheur, doctrine, enveloppes, ETF,
+                                           immobilier et credit, retraite, protection, alternatifs,
+                                           garde-fous, methode et gabarits
+  scripts/                              <- 6 scripts de calcul + tests/test_calculs.py (32 tests)
+  evals/                                <- 7 cas d'evaluation (format claude plugin eval)
+docs/
+  conseiller-patrimoine.md              <- Guide complet du skill conseiller-patrimoine
+dist/
+  expert-comptable.zip / .skill         <- Paquet autonome expert-comptable
+  conseiller-patrimoine.zip / .skill    <- Paquet autonome conseiller-patrimoine
+.github/workflows/tests.yml             <- Tests automatiques a chaque push
 gemini/
   00_INSTRUCTIONS_GEMINI.md             <- System prompt Gemini (avec archivage Drive)
 chatgpt/
@@ -128,6 +165,7 @@ knowledge/
     M_CGI_code_general_impots.jsonl     <- Version JSONL du CGI (doublon du MD)
 scripts/
   archivage_analyses.gs                 <- Script Apps Script (archivage Drive)
+  build_skill_package.py                <- Fabrique les paquets dist/ des deux skills
 ```
 
 ---
@@ -144,7 +182,7 @@ cd comptable
 claude
 ```
 
-Ouvrir le depot dans [Claude Code](https://claude.com/claude-code) : le skill `expert-comptable` (`.claude/skills/expert-comptable/`) se declenche automatiquement sur toute question fiscale, comptable ou patrimoniale. Il consulte la base `knowledge/` dans l'ordre prescrit, cite ses sources avec millesime et statut de validation, et utilise un script de lookup pour extraire regles, articles CGI et parametres chiffres sans charger les gros fichiers.
+Ouvrir le depot dans [Claude Code](https://claude.com/claude-code) : les deux skills sont charges. Le skill `conseiller-patrimoine` (`.claude/skills/conseiller-patrimoine/`) se declenche sur toute demande d'avis ou d'arbitrage patrimonial. Le skill `expert-comptable` (`.claude/skills/expert-comptable/`) se declenche automatiquement sur toute question fiscale, comptable ou patrimoniale. Il consulte la base `knowledge/` dans l'ordre prescrit, cite ses sources avec millesime et statut de validation, et utilise un script de lookup pour extraire regles, articles CGI et parametres chiffres sans charger les gros fichiers.
 
 ```
 Exemples : "Mon client kine a encaisse 80 000 EUR en 2026, peut-il rester au micro-BNC ?"
@@ -152,6 +190,8 @@ Exemples : "Mon client kine a encaisse 80 000 EUR en 2026, peut-il rester au mic
 ```
 
 **Sans cloner le depot — paquet pret a l'emploi :** telecharger [`dist/expert-comptable.zip`](dist/expert-comptable.zip) (base de connaissances embarquee) et l'importer dans claude.ai > **Settings** > **Capabilities** > **Upload skill**. Le skill est alors disponible dans toutes vos conversations Claude (claude.ai, Claude Code, app mobile). Le paquet se regenere avec `python3 scripts/build_skill_package.py` apres chaque mise a jour du corpus.
+
+**Skill conseiller-patrimoine :** meme procedure avec [`dist/conseiller-patrimoine.zip`](dist/conseiller-patrimoine.zip), en plus d'`expert-comptable`. Activer la recherche web dans Claude : le skill lit les sources officielles en ligne. Mode d'emploi detaille, exemples et maintenance : [docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md). Les deux paquets se regenerent ensemble avec `python3 scripts/build_skill_package.py` (ou un seul : `python3 scripts/build_skill_package.py conseiller-patrimoine`). Pas de mise a jour automatique : reimporter le zip a chaque nouvelle version.
 
 ### Gemini Gems
 
@@ -225,6 +265,15 @@ L'agent peut sauvegarder les analyses dans un dossier Google Drive sur demande e
 "Quelle strategie de transmission pour 800 000 EUR de patrimoine,
  2 enfants, TMI 41%, horizon 15 ans ?"
 
+-- Conseil patrimonial (skill conseiller-patrimoine) --
+"J'ai 60 000 EUR disponibles sur mon PEE. On veut acheter
+ un appartement d'ici deux ans. Je mets tout sur mon PEA ?"
+"Combien peut-on emprunter sur 25 ans avec 7 000 EUR de revenus nets,
+ 650 EUR de credit locatif et 800 EUR de loyers ?"
+"Mon PEA est a 100 % sur un ETF monde. Comment ajouter de l'Europe et
+ des emergents sans rien vendre ?"
+"Un proche me conseille une SCPI a 6 %. J'y mets 30 000 EUR ?"
+
 -- Archivage (Gemini uniquement) --
 "Enregistre cette analyse dans un Google Doc."
 ```
@@ -260,6 +309,7 @@ En debut de session, l'agent rappelle l'etat de validation du corpus (regles non
 - Aucune regle metier n'est encore validee par un professionnel — voir [Etat de validation](#etat-de-validation-du-corpus).
 - Hors scope : fiscalite crypto, TVA intracommunautaire, fiscalite internationale, contentieux LPF.
 - La base doit etre mise a jour en janvier de chaque annee.
+- `conseiller-patrimoine` : aide a la decision, pas un conseil en investissement reglemente (CIF). Ses regles volatiles sont datees du 01/11/2026 et se reverifient avant toute decision ; ses projections dependent d'hypotheses fournies par l'utilisateur. Revue prevue en janvier et en juillet.
 - Sur ChatGPT : pas d'integration Google Drive, archivage manuel uniquement.
 
 ---
