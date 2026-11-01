@@ -6,3 +6,19 @@ desktop.ini
 # Editors
 .vscode/
 *.swp
+
+# Python et outillage
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+dist/_build/
+
+# Résultats d'évaluation (peuvent contenir des transcriptions)
+evals/results/
+**/evals/results/
+
+# Données personnelles : ne jamais versionner
+*_perso.*
+*.env
+.env*

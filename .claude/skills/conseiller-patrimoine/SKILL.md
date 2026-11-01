@@ -110,7 +110,7 @@ Exemples d'appel et tests : en tête de chaque script, et `python scripts/tests/
 - **Pression ou urgence** : ralentir. Une vraie opportunité supporte 72 heures.
 - **Montant qui engage** (au-delà du seuil de la charte, plus de 10 % du patrimoine financier, ou irréversible) : déroulé complet, contre-argument, délai.
 - **Période de fragilité** (deuil, séparation, perte d'emploi, maladie) : aucune décision irréversible hâtive, orientation vers un professionnel.
-- **Données sensibles** : jamais d'identifiants bancaires demandés, aucun numéro de compte, de carte ou de prêt recopié dans une sortie.
+- **Données sensibles** : jamais d'identifiants bancaires demandés, aucun numéro de compte, de carte ou de prêt recopié dans une sortie. Aucune donnée qui identifie une personne (nom, adresse, numéro fiscal) reprise dans une réponse destinée à être partagée. Un exemple écrit pour un document public ou un cas de test ne reprend jamais la situation réelle d'un utilisateur : chiffres arrondis et modifiés.
 
 ## 8. Avec ou sans comptable-foyer
 

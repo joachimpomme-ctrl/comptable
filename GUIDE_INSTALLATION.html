@@ -537,7 +537,7 @@
     </div>
 
     <h3>2. Déployer le script d'archivage automatique (optionnel)</h3>
-    <p>Si l'agent crée un document à la racine du Drive plutôt que dans le bon dossier, ce script le déplace automatiquement chaque nuit.</p>
+    <p>Si l'agent crée un document à la racine du Drive plutôt que dans le bon dossier, ce script le range chaque nuit vers 2 h dans votre dossier d'archive. Par sécurité, il ne touche qu'aux Google Docs et Sheets placés à la racine, dont vous êtes propriétaire, créés depuis moins de 2 jours et nommés selon la convention de l'agent (date, type et sujet). Ne publiez jamais l'ID de votre dossier.</p>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
@@ -557,14 +557,14 @@
         <div class="step-num">3</div>
         <div class="step-body">
           <h4>Autoriser et tester</h4>
-          <p>Exécutez <span class="inline-code">moveAnalysesToArchive()</span>. Google demande une autorisation OAuth : acceptez. Vérifiez les logs (menu "Journaux d'execution").</p>
+          <p>Exécutez d'abord <span class="inline-code">simulerArchivage()</span> : il liste dans les journaux ce qui serait déplacé, sans rien déplacer. Puis exécutez <span class="inline-code">moveAnalysesToArchive()</span>. Google demande une autorisation OAuth : acceptez. Vérifiez les logs (menu "Journaux d'execution").</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">4</div>
         <div class="step-body">
           <h4>Activer le déclencheur quotidien</h4>
-          <p>Exécutez <span class="inline-code">installDailyTrigger()</span> pour activer un archivage automatique a 2h du matin. À faire une seule fois.</p>
+          <p>Exécutez <span class="inline-code">installDailyTrigger()</span> pour activer un archivage automatique chaque nuit vers 2 h. À faire une seule fois.</p>
         </div>
       </div>
     </div>

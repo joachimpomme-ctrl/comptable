@@ -113,7 +113,7 @@ Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa 
 ## Ce que l'agent ne fait pas
 
 - **Pas de conseil** au sens reglementaire — uniquement des projets d'analyse a faire valider par un professionnel.
-- **Pas de teledeclaration** ni d'acces aux comptes, logiciels ou donnees reelles d'un client.
+- **Pas de teledeclaration.** La version Gemini peut lire et ecrire dans votre Google Drive si vous activez ces outils ; le skill conseiller-patrimoine peut lire un connecteur bancaire si vous en avez un. Ne saisissez aucune donnee qui identifie un client (nom, adresse, numero fiscal, IBAN) : travaillez sur des cas anonymises. Securite et signalement : [SECURITY.md](SECURITY.md).
 - **Pas de veille automatique** : la base fige a sa date de mise a jour ; les baremes changent a chaque Loi de Finances.
 - **Hors scope** (refus explicite) : fiscalite crypto-actifs, TVA intracommunautaire, fiscalite internationale, contentieux LPF.
 - Sur ChatGPT : pas d'integration Google Drive (archivage manuel uniquement).
