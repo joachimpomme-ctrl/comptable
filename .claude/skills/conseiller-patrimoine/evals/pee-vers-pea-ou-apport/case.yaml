@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: pee-vers-pea-ou-apport
+expected_outcome: |
+  Déroulé de décision complet : rappel que l'aide n'est pas un conseil réglementé, règle du PEA
+  (retrait avant 5 ans = clôture en principe), horizon de l'apport incompatible avec des actions, au
+  moins deux options plus le statu quo, contre-argument écrit, avis conditionnel avec niveau de
+  confiance, rappel qu'à l'échéance la sortie du PEE n'est pas forcément obligatoire (règlement du
+  plan à lire), question sur la charte ou les données manquantes.
