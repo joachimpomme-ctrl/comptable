@@ -66,9 +66,10 @@ Premiere version publiee le 2026-11-01 (guide : [docs/conseiller-patrimoine.md](
 | Regles volatiles verifiees et datees (`references/01-fraicheur.md`) | Fait au 2026-11-01 ; reverifier en janvier et juillet |
 | Relecture par un second agent d'IA | Faite le 2026-11-01 : 13 erreurs corrigees (pas une relecture humaine) |
 | Relecture par des professionnels (CGP, CIF, notaires, courtiers) | **A faire** : priorite sur `01-fraicheur.md`, `03-enveloppes.md`, `05-immobilier-credit.md`, `07-protection-transmission.md` |
-| Executer les 7 cas d'evaluation avec et sans skill (`claude plugin eval`) | **A faire** |
-| Echeances a suivre | Encadrement des loyers (vote de l'Assemblee annonce le 19/11/2026) ; projet de loi logement (DPE) ; decrets du statut du bailleur prive ; mesures retraite apres 2027 |
-| Lignes « probables » a confirmer sur le texte officiel | Prelevements sociaux 2026 (location meublee), assouplissements HCSF de decembre 2023, PER 2026, frais du PEA |
+| Audit independant du skill (agent d'IA) | Fait le 2026-11-01 ; lot 4 : 7 corrections de calcul, regles reverifiees, 12 cas d'evaluation avec criteres chiffres |
+| Executer les 12 cas d'evaluation avec et sans skill (`claude plugin eval`) | **A faire** |
+| Echeances a suivre | Don familial exonere (fin le 31/12/2026, prorogation eventuelle en LF 2027) ; projet de loi logement (seance a l'Assemblee le 17/11/2026) ; encadrement des loyers (vote annonce le 19/11/2026) ; proposition de loi Letard ; decrets du statut du bailleur prive ; mesures retraite apres 2027 |
+| Lignes « probables » a confirmer sur le texte officiel | Frais du PEA, droits de mutation, calcul du DPE, FGAP, emploi et remploi (C. civ. art. 1436) ; regles du meuble de tourisme a detailler |
 | Enrichissements possibles | Module investissement locatif detaille (rentabilite, fiscalite via assistant-fiscal-comptable), suivi de performance du portefeuille, gabarit de charte en document partageable |
 
 ---

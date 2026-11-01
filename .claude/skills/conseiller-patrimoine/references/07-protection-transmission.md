@@ -16,10 +16,11 @@ Repères :
 ## 2. Régime matrimonial
 
 - **Communauté réduite aux acquêts** (régime légal sans contrat, C. civ. art. 1400 et suivants) : les biens acquis pendant le mariage sont communs ; restent propres ceux possédés avant le mariage et ceux reçus par donation ou succession (art. 1405).
-- **Emploi et remploi** (art. 1434 et 1436) : avec une déclaration dans l'acte d'achat, le bien est propre si la part payée par des fonds propres dépasse celle payée par la communauté (récompense due à la communauté pour sa part) ; sinon il est commun en totalité, avec récompense due à l'époux. Le bien est propre ou commun en totalité, jamais en partie. Sans déclaration, le bien est commun ; l'époux qui a apporté des fonds propres peut réclamer une récompense à la liquidation s'il prouve que la communauté en a profité (art. 1433 et 1469).
+- **Emploi et remploi** (art. 1434 et 1436) : avec une déclaration dans l'acte d'achat, le bien est propre si la part payée par la communauté ne dépasse pas celle payée par des fonds propres (récompense due à la communauté pour sa part) ; si la contribution de la communauté est supérieure, il est commun en totalité, avec récompense due à l'époux (art. 1436 ; probable, texte non relu le 01/11/2026). Le bien est propre ou commun en totalité, jamais en partie. Sans déclaration, le bien est commun ; l'époux qui a apporté des fonds propres peut réclamer une récompense à la liquidation s'il prouve que la communauté en a profité (art. 1433 et 1469).
 - Conséquence pratique : un héritage ou une donation reçue par l'un des époux et investi dans la maison du couple se traite consciemment chez le notaire (remploi, ou choix assumé de le rendre commun).
 - Séparation de biens, participation aux acquêts, communauté universelle : choix à faire avec un notaire, qui change aussi la transmission.
 - PACS : régime de séparation par défaut, pas de vocation successorale sans testament.
+- Séparation ou divorce : désolidariser ou racheter le prêt, rachat de soulte, sortie de l'indivision, clauses bénéficiaires et quotités d'assurance emprunteur à revoir. Notaire et avocat ; aucune décision patrimoniale irréversible hâtive (`SKILL.md` section 7).
 
 ## 3. Protéger le conjoint survivant
 
@@ -39,6 +40,7 @@ Repères :
 - Donation, donation-partage, démembrement de propriété, assurance-vie, sociétés civiles : chaque outil a des règles civiles (réserve héréditaire, rapport des donations) et fiscales (`assistant-fiscal-comptable`).
 - Ordre des questions : qu'est-ce qu'on veut transmettre, à qui, quand, en gardant quel contrôle et quels revenus ? Les outils viennent après.
 - Ne pas donner ce dont on peut avoir besoin : un patrimoine donné ne revient pas.
+- Fenêtre qui se ferme le 31/12/2026 : don familial de sommes d'argent exonéré pour un logement neuf ou une rénovation énergétique (CGI art. 790 A bis, conditions et limites dans `01-fraicheur.md`). Chiffrage et conditions via `assistant-fiscal-comptable`.
 - Toujours chez un notaire. Le rôle de ce skill est de préparer les questions et les chiffres, pas de rédiger.
 
 ## 6. Mandat de protection future, directives

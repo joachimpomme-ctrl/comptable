@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: question-fiscale-pure
+expected_outcome: |
+  Question purement fiscale : réponse courte, sans le format de décision (pas de tableau d'options,
+  pas de contre-argument), règle prise dans assistant-fiscal-comptable ou à une source officielle
+  datée, sans chiffre de mémoire, avec les changements de la loi de finances 2026 (report sur 5 ans
+  pour les plafonds de 2026 et suivants, sans effet rétroactif ; pas de déduction des versements
+  après 70 ans).

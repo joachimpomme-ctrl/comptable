@@ -221,8 +221,9 @@ Un ami qui installe seulement `conseiller-patrimoine` et `assistant-fiscal-compt
     10-methode-gabarits.md         <- profil, bilan, charte, journal, revue
   scripts/                         <- calculs, Python 3 standard, sans dépendance
     credit.py  capacite.py  projection.py  tri.py  allocation.py  louer_acheter.py
-    tests/test_calculs.py          <- 32 tests unitaires
-  evals/                           <- 7 cas d'évaluation (non inclus dans le paquet)
+    entrees.py                     <- contrôle des saisies, commun aux scripts
+    tests/test_calculs.py          <- 58 tests unitaires
+  evals/                           <- 12 cas d'évaluation (non inclus dans le paquet)
 ```
 
 ---
@@ -247,79 +248,80 @@ Un ami qui installe seulement `conseiller-patrimoine` et `assistant-fiscal-compt
 
 ## 9. Les scripts de calcul
 
-Python 3.8 ou plus, bibliothèque standard uniquement. Chaque commande accepte `--help`. Montants en euros, taux en % annuel. Exemples lancés depuis le dossier du skill.
+Python 3.8 ou plus, bibliothèque standard uniquement. Chaque commande accepte `--help`. Montants en euros, taux en % annuel (3.5 pour 3,5 %), parts et quotités en fraction (0.70 pour 70 %). Une saisie hors plage (70 au lieu de 0.70, durée nulle, rendement de -150 %) s'arrête avec un message en français au lieu de produire un résultat faux. Exemples lancés depuis le dossier du skill.
 
 ### `credit.py` : crédit à taux fixe
 
 ```bash
-python scripts/credit.py mensualite --capital 300000 --taux 3.5 --duree-mois 300 --assurance-mensuelle 75
-python scripts/credit.py empruntable --mensualite 1800 --taux 3.5 --duree-mois 300
-python scripts/credit.py crd --capital 300000 --taux 3.5 --duree-mois 300 --apres 24
-python scripts/credit.py tableau --capital 300000 --taux 3.5 --duree-mois 300 --csv tableau.csv
-python scripts/credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.5
-python scripts/credit.py anticipation --crd 200000 --taux 1.2 --mois-restants 216 \
+python3 scripts/credit.py mensualite --capital 300000 --taux 3.5 --duree-mois 300 --assurance-mensuelle 75
+python3 scripts/credit.py empruntable --mensualite 1800 --taux 3.5 --duree-mois 300
+python3 scripts/credit.py crd --capital 300000 --taux 3.5 --duree-mois 300 --apres 24
+python3 scripts/credit.py tableau --capital 300000 --taux 3.5 --duree-mois 300 --csv tableau.csv
+python3 scripts/credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.5
+python3 scripts/credit.py anticipation --crd 200000 --taux 1.2 --mois-restants 216 \
     --montant 50000 --rendement-net 2.0 --mode duree --assurance-mensuelle 62.5
 ```
 
 - `ira` applique le plafond légal (C. consom. art. R313-25) : le plus faible de six mois d'intérêts sur le capital remboursé et de 3 % du capital restant dû.
-- `anticipation` compare, à la date de fin initiale du prêt, le patrimoine obtenu en remboursant (mensualités libérées placées) et en plaçant la somme. Mode `duree` (mensualité gardée, prêt raccourci) ou `mensualite` (durée gardée). En mode `duree`, l'assurance cesse avec le prêt : la renseigner.
+- `anticipation` compare, à la date de fin initiale du prêt, le patrimoine obtenu en remboursant (mensualités libérées placées) et en plaçant la somme. Mode `duree` (mensualité gardée, prêt raccourci) ou `mensualite` (durée gardée). L'assurance cesse avec le prêt (mode `duree`, ou remboursement total dans les deux modes) : la renseigner.
 
 ### `capacite.py` : capacité d'emprunt et achat-revente
 
 ```bash
-python scripts/capacite.py simple --revenus 7000 --taux 3.5 --duree-mois 300 \
+python3 scripts/capacite.py simple --revenus 7000 --taux 3.5 --duree-mois 300 \
     --assurance-taux 0.30 --apport 150000 --frais-acquisition-pct 7.5 --impot-mensuel 900 --charges-fixes 2500
-python scripts/capacite.py achat-revente --revenus 7000 --charges-credit 650 --loyers 800 \
+python3 scripts/capacite.py achat-revente --revenus 7000 --charges-credit 650 --loyers 800 \
     --taux 3.5 --duree-mois 300 --assurance-taux 0.30 --frais-acquisition-pct 7.5 \
     --valeur-vente 400000 --crd-a-solder 250000 --frais-vente 5000 --epargne-apport 50000 \
     --quotite-relais 0.7 --taux-relais 4.0 --mensualite-actuelle 1500 --decote-scenario 10
 ```
 
 - Taux d'effort maximal (35 % par défaut), part des loyers retenue (70 % par défaut, pratique bancaire à confirmer) : paramètres modifiables.
-- `achat-revente` chiffre un scénario central et un scénario de vente décotée, vérifie que la vente couvre relais et capital restant dû, et donne le coût du portage à 6, 12 et 24 mois. La charge de trésorerie pendant le portage n'est pas le taux d'effort HCSF.
+- `achat-revente` chiffre trois cas. Vendre d'abord : le produit net de la vente s'ajoute à l'apport (scénario central et scénario de vente décotée). Acheter d'abord, relais simple (B1) : le prêt en cours continue jusqu'à la vente et compte en principe dans le taux d'effort. Acheter d'abord, achat-revente (B2) : le relais rachète le prêt en cours. Dans les deux derniers cas, le budget à la signature vaut nouveau prêt + part du relais disponible + épargne, car le reste du produit de la vente n'arrive qu'à la vente. Dans l'exemple ci-dessus : 534 641 € si l'on vend d'abord, 162 199 € en relais simple, 427 665 € en achat-revente.
+- `--mensualite-actuelle` est obligatoire avec un relais et un capital restant dû. Le script alerte quand la quotité du relais dépasse 80 % (intérêts non exclus du taux d'effort, HCSF) ou quand la vente ne couvre pas relais et capital restant dû, et donne la charge mensuelle et le coût du portage à 6, 12 et 24 mois pour chaque montage.
 
 ### `projection.py` : épargne et retraite
 
 ```bash
-python scripts/projection.py epargne --capital 20000 --versement 1500 --annees 15 --rendements 1,3,5 --indexation 2 --inflation 2
-python scripts/projection.py montecarlo --capital 20000 --versement 1500 --annees 15 \
+python3 scripts/projection.py epargne --capital 20000 --versement 1500 --annees 15 --rendements 1,3,5 --indexation 2 --inflation 2
+python3 scripts/projection.py montecarlo --capital 20000 --versement 1500 --annees 15 \
     --rendement-moyen 5 --volatilite 15 --objectif 400000 --simulations 20000 --graine 1
-python scripts/projection.py retraite --revenu-cible 5500 --pensions 3800 --taux-retrait 3,3.5,4 --taux-prelevement-retraits 10
-python scripts/projection.py retrait-mc --capital 600000 --retrait-annuel 21000 --annees 30 --rendement-moyen 3 --volatilite 12
+python3 scripts/projection.py retraite --revenu-cible 5500 --pensions 3800 --taux-retrait 3,3.5,4 --taux-prelevement-retraits 10
+python3 scripts/projection.py retrait-mc --capital 600000 --retrait-annuel 21000 --annees 30 --rendement-moyen 3 --volatilite 12
 ```
 
-- Aucune hypothèse par défaut. `montecarlo` attend une moyenne arithmétique, `epargne` un taux composé : ne pas saisir le même chiffre (moyenne arithmétique ≈ taux composé + volatilité²/2).
+- Aucune hypothèse par défaut. `montecarlo` et `retrait-mc` attendent une moyenne arithmétique, `epargne` un taux composé : ne pas saisir le même chiffre (moyenne arithmétique ≈ taux composé + volatilité²/2).
 - En rendement réel, les résultats sont en euros d'aujourd'hui.
 
 ### `tri.py` : rendement réel d'un placement
 
 ```bash
-python scripts/tri.py xirr --flux "2021-01-15:-10000,2022-03-01:-5000,2026-11-01:19500"
-python scripts/tri.py xirr --csv flux.csv
-python scripts/tri.py annualise --initial 10000 --final 16000 --annees 6.5
+python3 scripts/tri.py xirr --flux "2021-01-15:-10000;2022-03-01:-5000,50;2026-11-01:19500"
+python3 scripts/tri.py xirr --csv flux.csv
+python3 scripts/tri.py annualise --initial 10000 --final 16000 --annees 6.5
 ```
 
-Versements en négatif, retraits et valeur finale en positif. Le CSV (`date;montant`) accepte les formats français (espaces insécables, `1.234,56`).
+Versements en négatif, retraits et valeur finale en positif. Dans `--flux`, séparer les flux par des points-virgules pour écrire des décimales à la française. Le CSV (`date;montant`) accepte les formats français (espaces insécables, `1.234,56`) et les exports Excel (marque d'ordre des octets). Un TRI hors de -99,99 % à +1 000 % par an (durée de quelques jours) est signalé comme tel.
 
 ### `allocation.py` : exposition et rééquilibrage
 
 ```bash
-python scripts/allocation.py portefeuille.json
-python scripts/allocation.py portefeuille.json --arbitrage --versement 2000
+python3 scripts/allocation.py portefeuille.json
+python3 scripts/allocation.py portefeuille.json --arbitrage --versement 2000
 ```
 
-Le fichier JSON liste les positions (valeur, ventilation par zone tirée de la fiche de l'ETF, avec source et date), la cible et le versement du mois. Le script donne l'exposition réelle par zone, l'écart à la cible, la répartition du versement qui rapproche de la cible sans rien vendre, et les arbitrages complets si on veut revenir exactement à la cible. Modèle de fichier en tête du script.
+Le fichier JSON liste les positions (valeur, ventilation par zone tirée de la fiche de l'ETF, avec source et date), la cible en fractions qui somment à 1 (0.80, pas 80) et le versement du mois. Un même ETF détenu dans deux enveloppes (PEA et compte-titres) peut figurer sur deux lignes de même nom : elles sont regroupées, et versement et arbitrages sont donnés par fonds. Le script donne l'exposition réelle par zone, l'écart à la cible, la répartition du versement qui rapproche de la cible sans rien vendre, et les arbitrages complets si on veut revenir exactement à la cible. Modèle de fichier en tête du script.
 
 ### `louer_acheter.py` : louer ou acheter
 
 ```bash
-python scripts/louer_acheter.py --prix 450000 --frais-acquisition-pct 7.5 --apport 120000 \
+python3 scripts/louer_acheter.py --prix 450000 --frais-acquisition-pct 7.5 --apport 120000 \
     --taux 3.5 --duree-mois 300 --assurance-mensuelle 60 --taxe-fonciere 1500 \
     --entretien-pct 1.0 --valorisation-pct 1.5 --frais-revente-pct 5 \
     --loyer 1500 --hausse-loyer-pct 1.5 --rendement-placement-pct 4 --horizon 15
 ```
 
-Compare année par année le patrimoine net de l'acheteur (revente nette moins capital restant dû, plus son épargne) et celui du locataire (apport et différences de budget placés), et donne l'année de bascule.
+Compare année par année le patrimoine net de l'acheteur (revente nette moins capital restant dû, plus son épargne) et celui du locataire (apport et différences de budget placés), et donne chaque année de bascule. Le rendement du placement est supposé net d'impôt chaque année, alors que la plus-value de résidence principale est exonérée : saisir un rendement brut favorise la location.
 
 ---
 
@@ -328,24 +330,29 @@ Compare année par année le patrimoine net de l'acheteur (revente nette moins c
 ### Tests unitaires
 
 ```bash
-python .claude/skills/conseiller-patrimoine/scripts/tests/test_calculs.py
+python3 .claude/skills/conseiller-patrimoine/scripts/tests/test_calculs.py
 ```
 
-32 tests sur des valeurs de référence : mensualité publiée par les simulateurs bancaires (200 000 € à 3 % sur 20 ans = 1 109,20 €), formule de rente, équivalence remboursement et placement au même taux, plafond des IRA, TRI sur années normales et bissextiles, répartition d'un versement, apport excédentaire, lecture des montants au format français. Ils tournent à chaque push via GitHub Actions (`.github/workflows/tests.yml`).
+58 tests sur des valeurs de référence : mensualité publiée par les simulateurs bancaires (200 000 € à 3 % sur 20 ans = 1 109,20 €), formule de rente, équivalence remboursement et placement au même taux, égalité des deux modes en remboursement total, plafond des IRA, budget à la signature avec relais, alerte de quotité, TRI sur années normales et bissextiles, répartition d'un versement, même fonds dans deux enveloppes, apport excédentaire, lecture des montants au format français, refus des saisies hors plage. Ils tournent à chaque push via GitHub Actions (`.github/workflows/tests.yml`).
 
 ### Cas d'évaluation
 
-Sept cas dans [`evals/`](../.claude/skills/conseiller-patrimoine/evals/), au format lu par `claude plugin eval` : une question, la description du résultat attendu et des critères vérifiables.
+Douze cas dans [`evals/`](../.claude/skills/conseiller-patrimoine/evals/), au format lu par `claude plugin eval` : une question, la description du résultat attendu et des critères vérifiables. Une partie des critères contrôle une valeur (âge légal et trimestres, capital empruntable à 1 % près, part du relais disponible, poids d'un ETF), pas seulement la méthode.
 
 | Cas | Ce qu'il vérifie |
 |---|---|
-| `taux-livret-a-source` | Un taux donné avec sa source officielle et sa date, sans gabarit superflu |
-| `pee-vers-pea-ou-apport` | Règle des 5 ans du PEA, horizon de l'apport, concentration sur l'employeur, options, contre-argument, confiance |
-| `capacite-emprunt-calcul` | Usage de `capacite.py`, règle HCSF datée, taux non inventé |
+| `taux-livret-a-source` | Le taux fixé par le ministre (pas la seule proposition de la Banque de France) avec sa source officielle et sa date, sans gabarit superflu |
+| `pee-vers-pea-ou-apport` | Règle des 5 ans du PEA, horizon de l'apport, concentration sur l'employeur, arbitrage interne au PEE, options, contre-argument, confiance |
+| `capacite-emprunt-calcul` | Usage de `capacite.py`, capital conforme au script à 1 % près, reste à vivre, règle HCSF datée, taux non inventé |
 | `scpi-recommandee-par-proche` | Vérification AMF, distribution contre rendement global, liquidité, alternative simple |
-| `rembourser-pret-bas-taux` | Usage de `credit.py`, comparaison au sans-risque, liquidité, IRA |
-| `age-depart-retraite` | info-retraite.fr, taux plein à 67 ans, incertitude réglementaire datée |
+| `rembourser-pret-bas-taux` | Usage de `credit.py`, comparaison au sans-risque et au Livret A du jour, assurance emprunteur, liquidité, IRA |
+| `age-depart-retraite` | 64 ans et 172 trimestres pour la génération 1979, sourcés et datés ; info-retraite.fr, taux plein à 67 ans, incertitude réglementaire |
 | `crypto-poche-plaisir` | Part du patrimoine calculée, prestataire agréé MiCA, plafond de poche |
+| `achat-revente-relais` | Part du relais disponible chiffrée, budget à la signature distinct du budget après la vente, relais simple ou achat-revente |
+| `reequilibrage-allocation` | Même ETF sur deux enveloppes regroupé, versement vers la ligne en retard, arbitrage dans le PEA |
+| `demarchage-placement-urgent` | Listes noires, rendement garanti comme signal d'alerte, pas de signature sous pression |
+| `deuil-vente-maison` | Aucune décision irréversible hâtive, notaire d'abord, attente sur supports sans risque |
+| `question-fiscale-pure` | Pas de format de décision pour une question fiscale, règle sourcée, nouveautés PER 2026 |
 
 Lancer avec Claude Code (exécutions facturées) depuis le dossier du skill :
 
@@ -382,6 +389,15 @@ Un agent séparé, sans accès au raisonnement de rédaction, a relu tout le ski
 
 Ajouts issus de la relecture : garantie des dépôts et des contrats, délai de six mois pour un déblocage anticipé du PEE, clause bénéficiaire hors mariage, achat en indivision, nouveautés PER 2026, remboursement partiel minimal, garde-fous de calendrier d'un achat, lecture des montants au format français.
 
+### Audit du 01/11/2026 (lot 4)
+
+Un audit indépendant du skill, fait par un agent d'IA, a relevé 4 constats majeurs, 14 mineurs et 11 suggestions. Le lot 4 les traite :
+
+- **Calculs** : le budget d'achat-revente avec relais supposait la vente encaissée (budget à la signature ajouté, en relais simple et en achat-revente) ; l'alerte des 80 % du HCSF testait la mauvaise grandeur ; le remboursement total en mode `mensualite` oubliait les primes d'assurance ; un même ETF sur deux enveloppes inversait les arbitrages ; une part saisie en pourcentage (70 au lieu de 0.70) multipliait les loyers par 100 ; plusieurs saisies nulles ou négatives plantaient le script.
+- **Règles** : prélèvements sociaux 2026 (renvoi circulaire supprimé), PER 2026 et cas de déblocage, délais de déblocage du PEE, exceptions du PEA, règles HCSF (réponse ministérielle de janvier 2024), âges de retraite par génération, retraite progressive à 60 ans, garantie des dépôts exceptionnels, don familial exonéré jusqu'au 31/12/2026, fiscalité des crypto-actifs (hors périmètre du skill fiscal), emploi et remploi, séparation, meublé de tourisme, réserve sur l'étude de Jordà et coauteurs.
+- **Évaluations** : critères chiffrés et cinq cas ajoutés (achat-revente avec relais, rééquilibrage, démarchage, deuil, question purement fiscale).
+- **Choix de forme** : une réponse de décision tient en un écran ; un seul rappel « assistant IA » par session quand le skill fiscal est aussi chargé.
+
 ### Ce qui reste incertain
 
 - Aucune règle n'a été validée par un professionnel.
@@ -404,7 +420,7 @@ Ajouts issus de la relecture : garantie des dépôts et des contrats, délai de 
 ### Procédure de mise à jour
 
 1. Modifier les fichiers dans `.claude/skills/conseiller-patrimoine/` (en priorité `references/01-fraicheur.md`, avec source, date et statut).
-2. Lancer les tests : `python .claude/skills/conseiller-patrimoine/scripts/tests/test_calculs.py`.
+2. Lancer les tests : `python3 .claude/skills/conseiller-patrimoine/scripts/tests/test_calculs.py`.
 3. Mettre à jour la version et le résumé des changements à la fin du `SKILL.md` et dans la section 14 de ce guide.
 4. Reconstruire le paquet : `python3 scripts/build_skill_package.py conseiller-patrimoine`.
 5. Committer le skill et `dist/`, puis prévenir les utilisateurs : ils doivent réimporter le zip.
@@ -434,4 +450,5 @@ Les professionnels (CGP, CIF, notaires, courtiers, experts-comptables) sont part
 
 | Version | Date | Changements |
 |---|---|---|
+| 2026-11-01 (2) | 01/11/2026 | Lot 4 de l'audit (section 11) : 7 corrections de calcul, contrôle des saisies, 58 tests ; règles revérifiées sur les sources officielles ; 12 cas d'évaluation avec critères chiffrés. |
 | 2026-11-01 (1) | 01/11/2026 | Première version publique. Protocole de décision, carte des sources de première main, 11 références, 6 scripts et 32 tests, 7 cas d'évaluation. Règles volatiles vérifiées le jour même. Relecture par un second agent d'IA : 13 erreurs corrigées et compléments ajoutés (section 11). |

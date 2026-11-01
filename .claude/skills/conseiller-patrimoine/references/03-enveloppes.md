@@ -24,14 +24,14 @@ Principe : choisir d'abord l'actif selon l'horizon, ensuite l'enveloppe qui le l
 
 - Un Livret A et un LDDS par personne, un LEP par personne sous condition de revenus (au plus deux par foyer fiscal).
 - Les intérêts courent par quinzaine : un versement compte à partir du 1er ou du 16 suivant, un retrait cesse de compter à la fin de la quinzaine précédente.
-- Taux révisés normalement au 1er février et au 1er août, selon une formule liée à l'inflation et aux taux courts, avec possibilité de dérogation par le gouvernement. Lire le taux en vigueur sur banque-france.fr ou service-public.gouv.fr.
+- Taux révisés normalement au 1er février et au 1er août, selon une formule liée à l'inflation et aux taux courts, avec possibilité de dérogation par le gouvernement. Lire le taux fixé par le ministre : arrêté au Journal officiel, service-public.gouv.fr (fiche F2365), economie.gouv.fr ou page de la Banque de France publiée après la décision. Le communiqué de mi-janvier ou de mi-juillet de la Banque de France n'est qu'une proposition.
 - Rôle : matelas de sécurité et argent des projets à moins de deux ans. Au-delà des plafonds, comparer aux fonds monétaires, comptes à terme et fonds en euros.
 
 ## 3. PEA (CMF art. L221-30 et suivants)
 
 - Un PEA par personne, donc deux par couple. La date fiscale est celle du premier versement : ouvrir tôt avec un petit montant pour faire courir le délai de 5 ans.
 - Plafond de versement (pas de valeur) : les gains ne consomment pas le plafond. Les retraits après 5 ans ne le reconstituent pas : les sommes retirées restent comptées dans les versements.
-- Avant 5 ans : un retrait entraîne en principe la clôture. Des exceptions existent (création ou reprise d'entreprise, et certains cas comme licenciement, invalidité, mise à la retraite anticipée) : lire CMF art. L221-32 avant de s'y fier.
+- Avant 5 ans : un retrait entraîne en principe la clôture. Exceptions sans clôture : licenciement, invalidité ou mise à la retraite anticipée du titulaire, de son époux ou de son partenaire de PACS ; retrait des titres d'une société en liquidation ; retrait réinvesti dans les 3 mois dans la création ou la reprise d'une entreprise (le plan continue, mais n'accepte plus de versements). Source : service-public.gouv.fr F2385 (vérifiée le 22/05/2026, lue le 01/11/2026) ; texte : CMF art. L221-32.
 - Après 5 ans : retraits partiels sans clôture, versements toujours possibles (loi PACTE, 2019).
 - Éligibilité : actions de sociétés ayant leur siège dans l'UE ou l'EEE et soumises à l'impôt sur les sociétés, OPC investis à au moins 75 % en titres éligibles. Un ETF « monde » éligible réplique l'indice par un contrat d'échange (swap) en détenant un panier d'actions européennes. Le risque de contrepartie est encadré par la réglementation des OPCVM (exposition limitée par contrepartie).
 - Transfert vers un autre établissement : possible, titres conservés, sans perte d'antériorité ; frais plafonnés (`01-fraicheur.md`).
@@ -53,17 +53,17 @@ Principe : choisir d'abord l'actif selon l'horizon, ensuite l'enveloppe qui le l
 ## 5. PER (CMF art. L224-1 et suivants)
 
 - Trois compartiments : versements volontaires, épargne salariale (participation, intéressement, abondement), versements obligatoires d'entreprise.
-- Déblocage anticipé (CMF art. L224-4) : décès du conjoint ou du partenaire de PACS, invalidité (titulaire, enfants, conjoint), surendettement, fin des droits au chômage, cessation d'activité non salariée après liquidation judiciaire, et acquisition de la résidence principale (pas pour le compartiment des versements obligatoires).
+- Déblocage anticipé (CMF art. L224-4) : décès du conjoint ou du partenaire de PACS ; invalidité de 2e ou 3e catégorie du titulaire, de ses enfants, de son conjoint ou partenaire de PACS ; affection grave, handicap ou accident d'une particulière gravité d'un enfant à charge ; surendettement ; expiration des droits à l'assurance chômage, ou mandat social cessé depuis au moins 2 ans sans contrat de travail ni pension liquidée ; cessation d'activité non salariée après liquidation judiciaire ; acquisition de la résidence principale (les droits issus de versements obligatoires restent bloqués). Source : service-public.gouv.fr F34982 (vérifiée le 12/10/2026, lue le 01/11/2026).
 - Sortie à la retraite : capital ou rente pour les versements volontaires et l'épargne salariale ; rente pour les versements obligatoires.
 - Transfert entre PER possible ; frais plafonnés les premières années, gratuits ensuite (vérifier le plafond en vigueur).
-- Loi de finances 2026 (probable, `01-fraicheur.md`) : versements non déductibles à partir de 70 ans, report des plafonds non utilisés sur 5 ans.
+- Loi de finances 2026 (sûr, loi n° 2026-103 du 19/02/2026, `01-fraicheur.md`) : versements effectués depuis le 01/01/2026 non déductibles à partir de 70 ans ; report sur 5 ans pour les plafonds non utilisés de 2026 et suivants, 3 ans pour ceux de 2024 et 2025 (pas d'effet rétroactif).
 - Logique économique : on déduit à son taux marginal d'aujourd'hui, on est imposé à son taux marginal de la sortie. Intéressant quand le taux marginal au versement dépasse nettement celui de la sortie et que l'argent n'est pas nécessaire avant la retraite (ou un achat de résidence principale). Le chiffrage fiscal vient d'`assistant-fiscal-comptable`.
 - Points d'attention : sortie en capital imposée, illiquidité, frais des PER bancaires ou assurantiels très variables, gestion pilotée par défaut souvent prudente à l'approche de la retraite.
 
 ## 6. Épargne salariale (Code du travail, art. L3331-1 et suivants)
 
-- PEE : sommes indisponibles 5 ans (art. L3332-25), sauf cas de déblocage anticipé listés à l'art. R3324-22 (liste modifiée à plusieurs reprises : mariage ou PACS, naissance ou adoption d'un troisième enfant, divorce, invalidité, décès, rupture du contrat de travail, création ou reprise d'entreprise, acquisition ou agrandissement de la résidence principale, surendettement, violences conjugales, et d'autres : lire la version en vigueur).
-- Délai : une demande de déblocage anticipé se fait dans les 6 mois qui suivent le fait générateur (par exemple la signature de l'acte d'achat de la résidence principale), et un même fait ne permet qu'un déblocage (médiateur de l'AMF). Piège classique pour un apport : anticiper la demande.
+- PEE : sommes indisponibles 5 ans (art. L3332-25), sauf cas de déblocage anticipé (art. R3324-22). Liste en vigueur (service-public.gouv.fr F2142, vérifiée le 01/01/2026, lue le 01/11/2026) : mariage ou PACS ; naissance ou adoption d'un 3e enfant ; divorce, séparation ou dissolution du PACS avec au moins un enfant résidant chez le salarié (décision de justice) ; violences conjugales ; invalidité du salarié, de son époux ou partenaire de PACS ou de ses enfants ; décès du salarié, de son époux ou partenaire de PACS ; rupture du contrat de travail ; fin d'activité d'entrepreneur individuel ou de mandat social ; création ou reprise d'entreprise ; acquisition ou agrandissement de la résidence principale ; remise en état après catastrophe naturelle ; rénovation énergétique de la résidence principale ; surendettement ; activité de proche aidant ; achat d'un véhicule propre ou d'un vélo neuf à assistance électrique.
+- Délai : la demande se fait dans les 6 mois qui suivent le fait générateur (par exemple la signature de l'acte d'achat de la résidence principale), sauf violences conjugales, invalidité, décès, rupture du contrat de travail, surendettement et activité de proche aidant, où elle est possible à tout moment. Selon le médiateur de l'AMF, un même fait ne permet qu'un déblocage (non revérifié le 01/11/2026). Piège classique pour un apport : anticiper la demande.
 - À la fin de l'indisponibilité, les sommes deviennent disponibles. Le retrait n'est en général pas obligatoire : elles peuvent rester investies. Vérifier le règlement du plan, en particulier pour un fonds d'actionnariat salarié qui peut avoir ses propres règles de sortie et de prix.
 - Abondement de l'employeur : rendement immédiat souvent élevé ; capter l'abondement maximal est presque toujours rationnel, puis diversifier dès que possible.
 - Actionnariat salarié : risque de concentration (`02-doctrine.md` 2.2). Action non cotée : prix fixé périodiquement par expertise, liquidité dépendante du mécanisme de rachat prévu.
@@ -82,7 +82,7 @@ Principe : choisir d'abord l'actif selon l'horizon, ensuite l'enveloppe qui le l
 - PEA : réservé aux majeurs ; PEA « jeune » pour un enfant majeur de moins de 25 ans rattaché au foyer fiscal (plafond réduit).
 - Plan d'épargne avenir climat (PEAC), créé par la loi Industrie verte (2023) pour les jeunes : conditions d'âge, plafond, blocage et supports à vérifier sur service-public.gouv.fr avant usage.
 - Argent placé au nom de l'enfant : il lui appartient. À sa majorité, il en dispose librement. Garder l'épargne au nom des parents laisse la main sur l'usage (études, permis, logement).
-- Allocation selon l'horizon de chaque enfant (règle d'horizon de `SKILL.md` section 5) : plus de 8 ans avant l'échéance, une part importante en actions est défendable ; réduire les actions entre 8 et 5 ans avant l'échéance ; plus d'actions à 5 ans de l'échéance.
+- Allocation selon l'horizon de chaque enfant (règle d'horizon de `SKILL.md` section 5) : plus de 8 ans avant l'échéance, une part importante en actions est défendable ; réduire les actions entre 8 et 5 ans avant l'échéance ; aucune action à moins de 5 ans de l'échéance.
 
 ## 9. Arbre de décision rapide pour une somme à placer
 

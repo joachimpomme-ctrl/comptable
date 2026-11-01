@@ -5,21 +5,30 @@ Aucun rendement, volatilité ou inflation par défaut : chaque hypothèse est
 fournie par l'appelant, sourcée (references/00-sources.md section 8), et dite
 nominale ou réelle. En rendement réel, les résultats sont en euros d'aujourd'hui.
 
+`montecarlo` et `retrait-mc` attendent une moyenne arithmétique annuelle,
+`epargne` un taux composé : ne pas saisir le même chiffre dans les deux
+(moyenne arithmétique ≈ taux composé + volatilité²/2).
+
 Exemples :
-  python projection.py epargne --capital 20000 --versement 1500 --annees 15 \
+  python3 projection.py epargne --capital 20000 --versement 1500 --annees 15 \
       --rendements 1,3,5 [--indexation 2] [--inflation 2]
-  python projection.py montecarlo --capital 20000 --versement 1500 --annees 15 \
+  python3 projection.py montecarlo --capital 20000 --versement 1500 --annees 15 \
       --rendement-moyen 5 --volatilite 15 --objectif 400000 [--simulations 20000 --graine 1]
-  python projection.py retraite --revenu-cible 5500 --pensions 3800 --autres-revenus 0 \
+  python3 projection.py retraite --revenu-cible 5500 --pensions 3800 --autres-revenus 0 \
       --taux-retrait 3,3.5,4
-  python projection.py retrait-mc --capital 600000 --retrait-annuel 21000 --annees 30 \
+  python3 projection.py retrait-mc --capital 600000 --retrait-annuel 21000 --annees 30 \
       --rendement-moyen 3 --volatilite 12 [--simulations 20000 --graine 1]
 """
 
 import argparse
 import math
+import os
 import random
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from entrees import (duree_annees, entier_min, liste, montant, montant_positif,  # noqa: E402
+                     pct_borne, rendement)
 
 
 def valeur_future(capital, versement_mensuel, annees, rendement_annuel_pct, indexation_pct=0.0):
@@ -104,49 +113,51 @@ def _eur(x):
     return f"{x:,.0f} €".replace(",", " ")
 
 
-def _liste(txt):
-    return [float(x) for x in txt.split(",") if x.strip()]
-
-
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = p.add_subparsers(dest="cmd", required=True)
 
+    duree = duree_annees(1 / 12, 100)
+    volatilite = pct_borne(0, 100, "volatilité")
+
     a = sp.add_parser("epargne")
-    a.add_argument("--capital", type=float, default=0.0)
-    a.add_argument("--versement", type=float, default=0.0, help="versement mensuel")
-    a.add_argument("--annees", type=float, required=True)
-    a.add_argument("--rendements", required=True, help="liste de rendements annuels en %%, ex. 1,3,5")
-    a.add_argument("--indexation", type=float, default=0.0, help="hausse annuelle des versements, en %%")
-    a.add_argument("--inflation", type=float, default=None,
+    a.add_argument("--capital", type=montant, default=0.0)
+    a.add_argument("--versement", type=montant, default=0.0, help="versement mensuel")
+    a.add_argument("--annees", type=duree, required=True)
+    a.add_argument("--rendements", type=liste(rendement), required=True,
+                   help="rendements annuels composés en %%, ex. 1;3;5 ou 1,3,5")
+    a.add_argument("--indexation", type=rendement, default=0.0, help="hausse annuelle des versements, en %%")
+    a.add_argument("--inflation", type=rendement, default=None,
                    help="si les rendements sont nominaux : inflation pour convertir en euros d'aujourd'hui")
 
     a = sp.add_parser("montecarlo")
-    a.add_argument("--capital", type=float, default=0.0)
-    a.add_argument("--versement", type=float, default=0.0)
-    a.add_argument("--annees", type=float, required=True)
-    a.add_argument("--rendement-moyen", type=float, required=True, help="moyenne arithmétique annuelle, en %%")
-    a.add_argument("--volatilite", type=float, required=True, help="écart-type annuel, en %%")
-    a.add_argument("--indexation", type=float, default=0.0)
-    a.add_argument("--objectif", type=float, default=None)
-    a.add_argument("--simulations", type=int, default=10000)
+    a.add_argument("--capital", type=montant, default=0.0)
+    a.add_argument("--versement", type=montant, default=0.0)
+    a.add_argument("--annees", type=duree, required=True)
+    a.add_argument("--rendement-moyen", type=rendement, required=True, help="moyenne arithmétique annuelle, en %%")
+    a.add_argument("--volatilite", type=volatilite, required=True, help="écart-type annuel, en %%")
+    a.add_argument("--indexation", type=rendement, default=0.0)
+    a.add_argument("--objectif", type=montant, default=None)
+    a.add_argument("--simulations", type=entier_min(1), default=10000)
     a.add_argument("--graine", type=int, default=None)
 
     a = sp.add_parser("retraite")
-    a.add_argument("--revenu-cible", type=float, required=True, help="mensuel, euros d'aujourd'hui")
-    a.add_argument("--pensions", type=float, required=True, help="mensuelles nettes estimées, euros d'aujourd'hui")
-    a.add_argument("--autres-revenus", type=float, default=0.0)
-    a.add_argument("--taux-retrait", required=True, help="liste en %%, ex. 3,3.5,4")
-    a.add_argument("--taux-prelevement-retraits", type=float, default=0.0,
+    a.add_argument("--revenu-cible", type=montant, required=True, help="mensuel, euros d'aujourd'hui")
+    a.add_argument("--pensions", type=montant, required=True, help="mensuelles nettes estimées, euros d'aujourd'hui")
+    a.add_argument("--autres-revenus", type=montant, default=0.0)
+    a.add_argument("--taux-retrait", type=liste(pct_borne(0.1, 20, "taux de retrait")), required=True,
+                   help="liste en %%, ex. 3;3,5;4 ou 3,3.5,4")
+    a.add_argument("--taux-prelevement-retraits", type=pct_borne(0, 90, "taux de prélèvement"), default=0.0,
                    help="impôt et prélèvements sociaux moyens sur les retraits, en %% (via assistant-fiscal-comptable)")
 
     a = sp.add_parser("retrait-mc")
-    a.add_argument("--capital", type=float, required=True)
-    a.add_argument("--retrait-annuel", type=float, required=True)
-    a.add_argument("--annees", type=float, required=True)
-    a.add_argument("--rendement-moyen", type=float, required=True, help="réel de préférence, en %%")
-    a.add_argument("--volatilite", type=float, required=True)
-    a.add_argument("--simulations", type=int, default=10000)
+    a.add_argument("--capital", type=montant_positif, required=True)
+    a.add_argument("--retrait-annuel", type=montant, required=True)
+    a.add_argument("--annees", type=duree, required=True)
+    a.add_argument("--rendement-moyen", type=rendement, required=True,
+                   help="moyenne arithmétique annuelle, réelle de préférence, en %%")
+    a.add_argument("--volatilite", type=volatilite, required=True, help="écart-type annuel, en %%")
+    a.add_argument("--simulations", type=entier_min(1), default=10000)
     a.add_argument("--graine", type=int, default=None)
 
     args = p.parse_args(argv)
@@ -154,7 +165,7 @@ def main(argv=None):
     if args.cmd == "epargne":
         print(f"Hypothèses : capital {_eur(args.capital)}, versement {_eur(args.versement)}/mois "
               f"indexé de {args.indexation} %/an, {args.annees} ans")
-        for r in _liste(args.rendements):
+        for r in args.rendements:
             v = valeur_future(args.capital, args.versement, args.annees, r, args.indexation)
             ligne = f"Rendement {r} %/an : {_eur(v)}"
             if args.inflation is not None:
@@ -185,7 +196,7 @@ def main(argv=None):
                   f"(prélèvements {args.taux_prelevement_retraits} %)")
         else:
             print("Attention : aucun impôt ni prélèvement sur les retraits n'est compté (--taux-prelevement-retraits).")
-        for t in _liste(args.taux_retrait):
+        for t in args.taux_retrait:
             print(f"Taux de retrait {t} % : capital nécessaire {_eur(brut * 12 / (t / 100))}")
         print("Hypothèse réglementaire : pensions selon les règles vérifiées à la date du calcul.")
     elif args.cmd == "retrait-mc":

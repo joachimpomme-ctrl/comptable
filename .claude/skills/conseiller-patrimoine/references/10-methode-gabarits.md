@@ -74,7 +74,7 @@ Une ligne par décision au-delà du seuil de la charte, ou irréversible.
 ### Question d'information
 
 > Question : quel est le taux du Livret A ?
-> Réponse attendue : le taux lu sur banque-france.fr ou service-public.gouv.fr dans la session, sa date d'effet, la date de la prochaine révision normale (1er février ou 1er août), le lien. Pas de taux de mémoire.
+> Réponse attendue : le taux fixé par le ministre, lu dans la session sur une source officielle (arrêté au Journal officiel, service-public.gouv.fr, economie.gouv.fr ou Banque de France après la décision, pas le seul communiqué de proposition), sa date d'effet, la date de la prochaine révision normale (1er février ou 1er août), le lien. Pas de taux de mémoire.
 
 ### Décision (extrait)
 

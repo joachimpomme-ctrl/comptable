@@ -32,7 +32,7 @@ Les deux se completent : le conseiller delegue toute question fiscale a `assista
 - **Information de premiere main.** Carte des sources officielles par sujet (Legifrance, BOFiP, Banque de France, INSEE, HCSF, AMF, ACPR, ORIAS, REGAFI, DIC des emetteurs, fiches d'indices, DVF, info-retraite...). Aucun taux, plafond ou donnee de marche de memoire : valeur, date d'effet, date de consultation et lien.
 - **Regles volatiles datees.** `references/01-fraicheur.md` liste l'etat verifie au 01/11/2026 (normes HCSF, calendrier DPE, encadrement des loyers, retraite, prelevements sociaux 2026, MiCA...) avec source, statut et date de reverification.
 - **Doctrine referencee.** Une trentaine de resultats de recherche (diversification, couts, gestion active, facteurs, taux de retrait, comportement), chacun marque consensus, debattu ou heuristique ; references controlees par un agent d'IA, sans relecture humaine.
-- **Six scripts de calcul testes** (32 tests) : credit et remboursement anticipe, capacite d'emprunt et pret relais, projections et Monte-Carlo, TRI, exposition et reequilibrage, louer ou acheter. Aucun rendement par defaut.
+- **Six scripts de calcul testes** (58 tests) : credit et remboursement anticipe, capacite d'emprunt et pret relais, projections et Monte-Carlo, TRI, exposition et reequilibrage, louer ou acheter. Aucun rendement par defaut.
 - **Relu par un second agent d'IA** le 01/11/2026 (13 erreurs corrigees avant publication), pas encore par un professionnel.
 - **Partageable.** Aucune donnee personnelle. Sans fiche patrimoniale privee, il part d'un profil en dix questions.
 - **Pas un conseil reglemente** (ni CIF, ni notaire) : une aide a la decision, a faire valider par le bon professionnel quand l'enjeu le justifie.
@@ -135,7 +135,7 @@ Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa 
 README.md                               <- Ce fichier
 CONTRIBUTING.md                         <- Workflow de validation des regles
 ROADMAP.md                              <- Feuille de route : ce qui reste a faire
-CHANGELOG.md                            <- Journal des versions (2026.11.3)
+CHANGELOG.md                            <- Journal des versions (2026.11.4)
 NOTICE.md                               <- Origine des contenus, licences, editeur
 GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un navigateur)
 .claude/skills/assistant-fiscal-comptable/
@@ -147,8 +147,8 @@ GUIDE_INSTALLATION.html                 <- Guide detaille (ouvrir dans un naviga
   references/                           <- 11 fichiers : sources, fraicheur, doctrine, enveloppes, ETF,
                                            immobilier et credit, retraite, protection, alternatifs,
                                            garde-fous, methode et gabarits
-  scripts/                              <- 6 scripts de calcul + tests/test_calculs.py (32 tests)
-  evals/                                <- 7 cas d'evaluation (format claude plugin eval)
+  scripts/                              <- 6 scripts de calcul + controle des saisies + tests/test_calculs.py (58 tests)
+  evals/                                <- 12 cas d'evaluation (format claude plugin eval)
 docs/
   conseiller-patrimoine.md              <- Guide complet du skill conseiller-patrimoine
 dist/

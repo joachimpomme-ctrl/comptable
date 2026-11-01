@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: achat-revente-relais
+expected_outcome: |
+  Calcul avec scripts/capacite.py achat-revente. Part du relais disponible pour l'achat : 85 000 €
+  (70 % de 550 000 € moins 300 000 €). Distinction nette entre le budget à la signature (nouveau prêt
+  + part du relais disponible + épargne) et le budget une fois la vente encaissée : c'est le premier
+  qui limite une offre signée avant la vente. Deux montages distingués : relais simple (le prêt en
+  cours de 1 400 € continue et compte en principe dans le taux d'effort, ce qui réduit fortement le
+  nouveau prêt) et achat-revente (le relais rachète le prêt en cours). Scénario de vente plus basse
+  ou plus lente, taux non inventé, avis conditionnel.

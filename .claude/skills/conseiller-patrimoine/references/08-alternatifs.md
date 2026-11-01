@@ -32,7 +32,7 @@ Avant tout engagement : vérifier l'intermédiaire (AMF, ORIAS, REGAFI, listes n
 - Prestataire : uniquement un prestataire agréé MiCA (liste blanche de l'AMF, ou registre ESMA pour un prestataire passeporté) depuis la fin de la période transitoire le 01/07/2026.
 - Conservation : comprendre qui détient les clés ; un compte chez un prestataire n'est pas un dépôt bancaire garanti.
 - Usage raisonnable : une petite poche, dans la limite de la poche « plaisir » de la charte, avec une somme dont la perte totale ne change rien aux objectifs.
-- Fiscalité des cessions : `assistant-fiscal-comptable`.
+- Fiscalité des cessions : hors périmètre d'`assistant-fiscal-comptable`, qui refuse ce sujet. Repères lus dans le CGI (export Légifrance du 30/10/2026) : plus-values de cession de crypto-actifs imposées selon l'art. 150 VH bis (exonération si le total des cessions de l'année ne dépasse pas 305 €, échanges entre crypto-actifs sans soulte non imposés l'année de l'échange), au taux de 12,8 % ou sur option au barème (art. 200 C), plus les prélèvements sociaux. Obligation de déclarer chaque année les portefeuilles ouverts auprès d'une plateforme établie à l'étranger (art. 1649 bis C). Taux des prélèvements sociaux et formulaires : à lire sur impots.gouv.fr, à dater et à marquer « hors corpus » ; expert-comptable pour un montant significatif.
 
 ## 5. Or
 

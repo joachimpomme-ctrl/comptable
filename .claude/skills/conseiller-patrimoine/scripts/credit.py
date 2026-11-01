@@ -4,12 +4,12 @@
 Taux en % annuel nominal (ex. 3.5). Mensualités hors assurance, sauf mention.
 
 Exemples :
-  python credit.py mensualite --capital 300000 --taux 3.5 --duree-mois 300
-  python credit.py empruntable --mensualite 1800 --taux 3.5 --duree-mois 300
-  python credit.py crd --capital 300000 --taux 3.5 --duree-mois 300 --apres 24
-  python credit.py tableau --capital 300000 --taux 3.5 --duree-mois 300 --csv tableau.csv
-  python credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.5
-  python credit.py anticipation --crd 200000 --taux 2.5 --mois-restants 280 \
+  python3 credit.py mensualite --capital 300000 --taux 3.5 --duree-mois 300
+  python3 credit.py empruntable --mensualite 1800 --taux 3.5 --duree-mois 300
+  python3 credit.py crd --capital 300000 --taux 3.5 --duree-mois 300 --apres 24
+  python3 credit.py tableau --capital 300000 --taux 3.5 --duree-mois 300 --csv tableau.csv
+  python3 credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.5
+  python3 credit.py anticipation --crd 200000 --taux 2.5 --mois-restants 280 \
       --montant 50000 --rendement-net 2.0 --mode duree
 
 Plafond des indemnités de remboursement anticipé (C. consom. art. R313-25) :
@@ -22,7 +22,12 @@ d'activité). L'offre de prêt peut prévoir mieux pour l'emprunteur.
 import argparse
 import csv
 import math
+import os
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from entrees import (entier_min, montant, montant_positif, rendement,  # noqa: E402
+                     taux_pret)
 
 
 def _r(taux_annuel_pct):
@@ -122,6 +127,9 @@ def anticipation(crd, taux_annuel_pct, mois_restants, montant, rendement_net_pct
     """
     if montant > crd:
         raise ValueError("montant supérieur au CRD")
+    # Prime qui cesse quand le prêt est soldé : la plus élevée des deux saisies (l'utilisateur
+    # peut n'avoir renseigné que la baisse de prime).
+    prime_totale = max(assurance_mensuelle, assurance_economisee)
     m0 = capital_empruntable(1.0, taux_annuel_pct, mois_restants)
     m_init = crd / m0  # mensualité actuelle sur la durée restante
     rp = (1 + rendement_net_pct / 100.0) ** (1 / 12.0) - 1
@@ -144,12 +152,14 @@ def anticipation(crd, taux_annuel_pct, mois_restants, montant, rendement_net_pct
                 derniere = crd_av * (1 + _r(taux_annuel_pct))
                 eco = m_init - derniere + assurance_economisee
             else:
-                eco = m_init + assurance_mensuelle
+                eco = m_init + prime_totale
             economies.append(eco)
         detail = {"duree_restante_mois_A": n_a, "mensualite": m_init}
     elif mode == "mensualite":
         m_a = mensualite(crd_a, taux_annuel_pct, mois_restants) if crd_a > 0 else 0.0
-        economies = [m_init - m_a + assurance_economisee] * mois_restants
+        # Prêt soldé : toute la prime cesse, comme en mode "duree".
+        eco_ass = prime_totale if crd_a <= 0 else assurance_economisee
+        economies = [m_init - m_a + eco_ass] * mois_restants
         detail = {"mensualite_avant": m_init, "mensualite_apres": m_a}
     else:
         raise ValueError("mode inconnu")
@@ -199,49 +209,60 @@ def main(argv=None):
     sp = p.add_subparsers(dest="cmd", required=True)
 
     a = sp.add_parser("mensualite")
-    a.add_argument("--capital", type=float, required=True)
-    a.add_argument("--taux", type=float, required=True)
-    a.add_argument("--duree-mois", type=int, required=True)
-    a.add_argument("--assurance-mensuelle", type=float, default=0.0)
+    a.add_argument("--capital", type=montant_positif, required=True)
+    a.add_argument("--taux", type=taux_pret, required=True, help="taux nominal annuel, en %%")
+    a.add_argument("--duree-mois", type=entier_min(1), required=True)
+    a.add_argument("--assurance-mensuelle", type=montant, default=0.0)
 
     a = sp.add_parser("empruntable")
-    a.add_argument("--mensualite", type=float, required=True, help="hors assurance")
-    a.add_argument("--taux", type=float, required=True)
-    a.add_argument("--duree-mois", type=int, required=True)
+    a.add_argument("--mensualite", type=montant_positif, required=True, help="hors assurance")
+    a.add_argument("--taux", type=taux_pret, required=True)
+    a.add_argument("--duree-mois", type=entier_min(1), required=True)
 
     a = sp.add_parser("crd")
-    a.add_argument("--capital", type=float, required=True)
-    a.add_argument("--taux", type=float, required=True)
-    a.add_argument("--duree-mois", type=int, required=True)
-    a.add_argument("--apres", type=int, required=True, help="nombre d'échéances payées")
+    a.add_argument("--capital", type=montant_positif, required=True)
+    a.add_argument("--taux", type=taux_pret, required=True)
+    a.add_argument("--duree-mois", type=entier_min(1), required=True)
+    a.add_argument("--apres", type=entier_min(0), required=True, help="nombre d'échéances payées")
 
     a = sp.add_parser("tableau")
-    a.add_argument("--capital", type=float, required=True)
-    a.add_argument("--taux", type=float, required=True)
-    a.add_argument("--duree-mois", type=int, required=True)
-    a.add_argument("--assurance-mensuelle", type=float, default=0.0)
+    a.add_argument("--capital", type=montant_positif, required=True)
+    a.add_argument("--taux", type=taux_pret, required=True)
+    a.add_argument("--duree-mois", type=entier_min(1), required=True)
+    a.add_argument("--assurance-mensuelle", type=montant, default=0.0)
     a.add_argument("--csv", help="fichier de sortie (sinon résumé annuel à l'écran)")
 
     a = sp.add_parser("ira")
-    a.add_argument("--rembourse", type=float, required=True)
-    a.add_argument("--crd-avant", type=float, required=True)
-    a.add_argument("--taux", type=float, required=True)
+    a.add_argument("--rembourse", type=montant_positif, required=True)
+    a.add_argument("--crd-avant", type=montant_positif, required=True)
+    a.add_argument("--taux", type=taux_pret, required=True)
 
     a = sp.add_parser("anticipation")
-    a.add_argument("--crd", type=float, required=True)
-    a.add_argument("--taux", type=float, required=True)
-    a.add_argument("--mois-restants", type=int, required=True)
-    a.add_argument("--montant", type=float, required=True)
-    a.add_argument("--rendement-net", type=float, required=True,
+    a.add_argument("--crd", type=montant_positif, required=True)
+    a.add_argument("--taux", type=taux_pret, required=True)
+    a.add_argument("--mois-restants", type=entier_min(1), required=True)
+    a.add_argument("--montant", type=montant_positif, required=True)
+    a.add_argument("--rendement-net", type=rendement, required=True,
                    help="rendement annuel net d'impôt et de frais du placement alternatif, en %%")
     a.add_argument("--mode", choices=["duree", "mensualite"], default="duree")
-    a.add_argument("--ira", type=float, default=0.0)
-    a.add_argument("--assurance-mensuelle", type=float, default=0.0,
-                   help="prime mensuelle actuelle ; en mode duree elle cesse plus tôt si l'on rembourse")
-    a.add_argument("--assurance-economisee", type=float, default=0.0,
+    a.add_argument("--ira", type=montant, default=0.0)
+    a.add_argument("--assurance-mensuelle", type=montant, default=0.0,
+                   help="prime mensuelle actuelle ; elle cesse plus tôt si l'on rembourse (mode duree, ou prêt soldé)")
+    a.add_argument("--assurance-economisee", type=montant, default=0.0,
                    help="baisse mensuelle de prime pendant le prêt (0 si assise sur le capital initial)")
 
     args = p.parse_args(argv)
+    if args.cmd == "crd" and args.apres > args.duree_mois:
+        p.error(f"--apres {args.apres} dépasse la durée du prêt ({args.duree_mois} mois)")
+    if args.cmd == "ira" and args.rembourse > args.crd_avant:
+        p.error("le capital remboursé dépasse le capital restant dû avant remboursement")
+    if getattr(args, "taux", 1) and 0 < args.taux < 0.5:
+        print(f"Attention : taux de {args.taux} % ; vérifier l'unité (3.5 pour 3,5 %).")
+    if args.cmd == "anticipation":
+        if args.montant > args.crd:
+            p.error("le montant remboursé dépasse le capital restant dû")
+        if args.assurance_economisee > args.assurance_mensuelle > 0:
+            p.error("--assurance-economisee dépasse la prime mensuelle actuelle")
 
     if args.cmd == "mensualite":
         m = mensualite(args.capital, args.taux, args.duree_mois)

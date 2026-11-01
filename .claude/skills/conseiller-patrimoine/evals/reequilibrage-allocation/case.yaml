@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: reequilibrage-allocation
+expected_outcome: |
+  Calcul avec scripts/allocation.py, lignes du même ETF regroupées : l'ETF monde pèse 92,3 % pour une
+  cible de 90 %. Le versement de 1 000 € va entièrement sur l'ETF émergents. Si un arbitrage est
+  proposé (vendre 1 500 € d'ETF monde, acheter 1 500 € d'émergents), il se fait dans le PEA, sans
+  impôt, plutôt que sur le compte-titres.

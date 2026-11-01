@@ -7,20 +7,27 @@ mensuelle est la plus faible place la différence au rendement du placement,
 pour comparer deux budgets identiques.
 
 Exemple :
-  python louer_acheter.py --prix 450000 --frais-acquisition-pct 7.5 --apport 120000 \
+  python3 louer_acheter.py --prix 450000 --frais-acquisition-pct 7.5 --apport 120000 \
       --taux 3.5 --duree-mois 300 --assurance-mensuelle 60 --taxe-fonciere 1500 \
       --entretien-pct 1.0 --charges-proprio 0 --valorisation-pct 1.5 --frais-revente-pct 5 \
       --loyer 1500 --hausse-loyer-pct 1.5 --rendement-placement-pct 4 --horizon 15
 
 Toutes les hypothèses de marché (valorisation, hausse des loyers, rendement)
 sont à sourcer et à tester en plusieurs valeurs.
+
+Lecture : le placement du locataire est supposé net d'impôt chaque année, alors
+que la plus-value de la résidence principale est exonérée. Saisir le rendement
+brut d'un PEA ou d'un compte-titres favorise donc la location.
 """
 
 import argparse
+import os
 import sys
 
-sys.path.insert(0, __import__("os").path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from credit import mensualite, crd_apres  # noqa: E402
+from entrees import (duree_annees, entier_min, montant, montant_positif, pct_borne, pct_frais,  # noqa: E402
+                     rendement, taux_pret)
 
 
 def simuler(prix, frais_acquisition_pct, apport, taux, duree_mois, assurance_mensuelle,
@@ -66,32 +73,62 @@ def _eur(x):
     return f"{x:,.0f} €".replace(",", " ")
 
 
+LIBELLES = {"achat": "l'achat", "location": "la location"}
+
+
+def bascules(resultats):
+    """Années où l'écart acheteur moins locataire change de signe (positif = l'achat passe devant)."""
+    annees = []
+    signe_prec = None
+    for annee, acheteur, locataire in resultats:
+        signe = acheteur > locataire
+        if signe_prec is not None and signe != signe_prec:
+            annees.append((annee, "achat" if signe else "location"))
+        signe_prec = signe
+    return annees
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    for nom, req in (("prix", True), ("frais-acquisition-pct", True), ("apport", True), ("taux", True),
-                     ("duree-mois", True), ("assurance-mensuelle", False), ("taxe-fonciere", False),
-                     ("entretien-pct", True), ("charges-proprio", False), ("valorisation-pct", True),
-                     ("frais-revente-pct", True), ("loyer", True), ("hausse-loyer-pct", True),
-                     ("rendement-placement-pct", True), ("horizon", True)):
-        p.add_argument(f"--{nom}", type=float, required=req, default=0.0)
+    for nom, typ, req in (("prix", montant_positif, True), ("frais-acquisition-pct", pct_frais, True),
+                          ("apport", montant, True), ("taux", taux_pret, True),
+                          ("duree-mois", entier_min(1), True), ("assurance-mensuelle", montant, False),
+                          ("taxe-fonciere", montant, False), ("entretien-pct", pct_borne(0, 10, "entretien"), True),
+                          ("charges-proprio", montant, False), ("valorisation-pct", rendement, True),
+                          ("frais-revente-pct", pct_frais, True), ("loyer", montant_positif, True),
+                          ("hausse-loyer-pct", rendement, True), ("rendement-placement-pct", rendement, True),
+                          ("horizon", duree_annees(1, 60), True)):
+        p.add_argument(f"--{nom}", type=typ, required=req, default=0.0)
     a = p.parse_args(argv)
-    res, emprunt, m = simuler(a.prix, a.frais_acquisition_pct, a.apport, a.taux, int(a.duree_mois),
+    if a.horizon != int(a.horizon):
+        print(f"Horizon ramené à {int(a.horizon)} ans : les résultats sont annuels.")
+    a.horizon = int(a.horizon)
+    if 0 < a.taux < 0.5:
+        print(f"Attention : taux de {a.taux} % ; vérifier l'unité (3.5 pour 3,5 %).")
+    res, emprunt, m = simuler(a.prix, a.frais_acquisition_pct, a.apport, a.taux, a.duree_mois,
                               a.assurance_mensuelle, a.taxe_fonciere, a.entretien_pct, a.charges_proprio,
                               a.valorisation_pct, a.frais_revente_pct, a.loyer, a.hausse_loyer_pct,
                               a.rendement_placement_pct, a.horizon)
     print(f"Hypothèses : prix {_eur(a.prix)}, frais {a.frais_acquisition_pct} %, apport {_eur(a.apport)}, "
-          f"emprunt {_eur(emprunt)} à {a.taux} % sur {int(a.duree_mois)} mois (mensualité {_eur(m)}), "
+          f"emprunt {_eur(emprunt)} à {a.taux} % sur {a.duree_mois} mois (mensualité {_eur(m)}), "
           f"valorisation {a.valorisation_pct} %/an, loyer {_eur(a.loyer)} +{a.hausse_loyer_pct} %/an, "
           f"placement {a.rendement_placement_pct} % net, entretien {a.entretien_pct} % de la valeur/an, "
           f"frais de revente {a.frais_revente_pct} %")
     print("Année ; patrimoine acheteur (revente nette, CRD déduit) ; patrimoine locataire ; écart")
-    bascule = None
     for annee, acheteur, locataire in res:
-        if bascule is None and acheteur > locataire:
-            bascule = annee
         print(f"{annee} ; {_eur(acheteur)} ; {_eur(locataire)} ; {_eur(acheteur - locataire)}")
-    texte_bascule = str(bascule) if bascule else "aucune sur l'horizon"
-    print(f"Année de bascule en faveur de l'achat : {texte_bascule}")
+    changements = bascules(res)
+    if not changements:
+        devant = "l'achat" if res[0][1] > res[0][2] else "la location"
+        print(f"Aucune bascule sur l'horizon : {devant} reste devant chaque année.")
+    elif len(changements) == 1:
+        annee, sens = changements[0]
+        print(f"Bascule en faveur de {LIBELLES[sens]} en année {annee}.")
+    else:
+        print("Plusieurs bascules : " + ", ".join(f"année {an} vers {LIBELLES[s]}" for an, s in changements)
+              + ". Résultat sensible aux hypothèses : le tester avec d'autres valeurs.")
+    print("Lecture : placement du locataire supposé net d'impôt chaque année ; la plus-value de résidence "
+          "principale est exonérée. Un rendement brut saisi favorise la location.")
     return 0
 
 

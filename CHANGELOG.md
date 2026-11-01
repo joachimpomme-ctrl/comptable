@@ -2,6 +2,12 @@
 
 Versions calendaires : année.mois.numéro. Chaque version reconstruit les paquets `dist/` : réimporter les zips après une mise à jour.
 
+## 2026.11.4 (01/11/2026)
+
+- Skill `conseiller-patrimoine`, version 2026-11-01 (2) : lot 4 de l'audit. Budget à la signature quand on achète avant de vendre avec un relais, alerte de quotité HCSF corrigée, assurance en remboursement total, même fonds dans deux enveloppes, contrôle des saisies (`scripts/entrees.py`) ; 58 tests.
+- Règles du conseiller revérifiées sur les sources officielles : prélèvements sociaux, PER, PEE, PEA, HCSF, retraite, garantie des dépôts, don familial (fin le 31/12/2026), crypto-actifs, séparation, meublé de tourisme.
+- 12 cas d'évaluation, dont une partie contrôle des valeurs. Corpus fiscal inchangé (2026.11.3) : réimporter seulement `conseiller-patrimoine.zip`.
+
 ## 2026.11.3 (01/11/2026)
 
 - Skill `expert-comptable` renommé `assistant-fiscal-comptable` (le titre d'expert-comptable est réservé aux inscrits à l'Ordre). Supprimer l'ancien skill avant d'importer le nouveau zip.

@@ -28,7 +28,7 @@ Un chiffre de rang 3 sert à localiser le rang 1. Un comparateur peut avoir un T
 
 | Besoin | Source | Remarque |
 |---|---|---|
-| Taux des livrets réglementés (Livret A, LDDS, LEP) et du CEL | banque-france.fr (communiqué de proposition), arrêté au Journal officiel, service-public.gouv.fr | Révision normale au 1er février et au 1er août. |
+| Taux des livrets réglementés (Livret A, LDDS, LEP) et du CEL | Taux fixé par le ministre : arrêté au Journal officiel, service-public.gouv.fr (fiche F2365), economie.gouv.fr, banque-france.fr après la décision | Révision normale au 1er février et au 1er août. Le communiqué de mi-janvier ou de mi-juillet de la Banque de France est une proposition, pas le taux fixé. |
 | Taux du PEL | banque-france.fr, arrêté au Journal officiel | Taux des nouveaux plans calculé une fois par an par formule (Banque de France, début décembre), en vigueur en principe au 1er janvier ; figé à l'ouverture pour un plan donné. |
 | Taux d'usure | banque-france.fr, avis au Journal officiel | Vérifier la date de l'avis et la catégorie (durée, montant). |
 | Taux moyens des crédits à l'habitat | webstat.banque-france.fr (séries officielles), Observatoire Crédit Logement/CSA (rang 3, mensuel) | Le taux d'une offre réelle prime sur toute moyenne. |

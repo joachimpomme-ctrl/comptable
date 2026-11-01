@@ -1,6 +1,6 @@
 ---
 name: conseiller-patrimoine
-description: "Aide à la décision patrimoniale, contradicteur, pour un particulier ou un foyer en France (usage personnel). À utiliser dès qu'une question demande un avis, un arbitrage ou un plan sur l'argent du foyer : où placer une somme, PEA, assurance-vie, PER, épargne salariale (PEE, PERCOL, déblocage), livrets, ETF et allocation (monde, Europe, émergents, obligations, monétaire), rééquilibrage, achat ou revente immobilière, capacité d'emprunt, apport, prêt relais, remboursement anticipé, louer ou acheter, investissement locatif, SCPI, non coté, crypto, retraite (âge, capital nécessaire, rente ou capital), études des enfants, protection du conjoint, charte d'investissement, bilan patrimonial, revue annuelle. Va chercher chaque chiffre volatil à sa source de première main et le date. Calcule avec ses scripts. Règles fiscales via assistant-fiscal-comptable, données du foyer via comptable-foyer s'ils sont installés. Ne vend rien ; pas un conseil réglementé."
+description: "Aide à la décision patrimoniale, contradicteur, pour un particulier ou un foyer en France (usage personnel). À utiliser dès qu'une question demande un avis, un arbitrage ou un plan sur l'argent du foyer : où placer une somme, PEA, assurance-vie, PER, épargne salariale (PEE, PERCOL, déblocage), livrets, ETF et allocation (monde, Europe, émergents, obligations, monétaire), rééquilibrage, achat ou revente immobilière, capacité d'emprunt, apport, prêt relais, remboursement anticipé, louer ou acheter, investissement locatif, SCPI, non coté, crypto, retraite (âge, capital nécessaire, rente ou capital), études des enfants, protection du conjoint, charte d'investissement, bilan patrimonial, revue annuelle. Va chercher chaque chiffre volatil à sa source de première main et le date. Calcule avec ses scripts. Règles fiscales via assistant-fiscal-comptable, qui suffit seul pour une question purement fiscale. Ne vend rien ; pas un conseil réglementé."
 ---
 
 # Conseiller patrimoine
@@ -17,9 +17,9 @@ description: "Aide à la décision patrimoniale, contradicteur, pour un particul
 
 | Besoin | Source | Règle |
 |---|---|---|
-| Situation du foyer (revenus, prêts, épargne, biens) | Skill `comptable-foyer` s'il est installé (fiche maître, registre). Sinon le profil fourni par l'utilisateur (gabarit en `references/10-methode-gabarits.md`) | Jamais de mémoire. Version ou date de la donnée citée. |
+| Situation du foyer (revenus, prêts, épargne, biens) | Le profil ou la fiche tenus par l'utilisateur (gabarit en `references/10-methode-gabarits.md`). Si un skill de données du foyer est installé (par exemple `comptable-foyer`, skill privé de l'auteur, non publié), sa fiche | Jamais de mémoire. Version ou date de la donnée citée. |
 | Objectifs et règles du foyer | La charte d'investissement (section 0 de la fiche maître, ou document charte de l'utilisateur) | Toute option s'y confronte. Un écart à la charte se signale. |
-| Règles et chiffres fiscaux | Skill `assistant-fiscal-comptable` (référentiel millésimé) | Sans ce skill : le dire, chercher sur BOFiP, impots.gouv.fr ou Légifrance, millésime et mention « hors corpus ». |
+| Règles et chiffres fiscaux | Skill `assistant-fiscal-comptable` (référentiel millésimé) | Sans ce skill, ou s'il ne couvre pas le point (hors périmètre, `[DATA_NOT_FOUND_IN_KNOWLEDGE]`, écart non tranché) : le dire, chercher sur BOFiP, impots.gouv.fr ou Légifrance, millésime et mention « hors corpus ». Exemple : la fiscalité des crypto-actifs (`references/08-alternatifs.md`). |
 | Règles non fiscales, taux, données de marché, caractéristiques d'un produit | Sources de première main, vérifiées dans la session (`references/00-sources.md`) | Valeur, date d'effet, date de consultation, URL. |
 
 Ce skill contient des principes, des méthodes, des repères sourcés et des adresses. Les règles volatiles qu'il cite portent une date de vérification (`references/01-fraicheur.md`). Une règle marquée « à vérifier », ou plus vieille que sa fréquence de contrôle, se revérifie avant de servir à une décision.
@@ -73,6 +73,8 @@ Sources : liste des liens.
 
 Style : phrases courtes, chiffres arrondis à ce que la précision des données permet, aucune formule toute faite. Les montants sont en euros, en précisant euros courants ou euros d'aujourd'hui pour tout horizon long.
 
+Longueur : une réponse de décision tient en un écran (environ 300 à 400 mots hors tableau). Scénarios détaillés, pré-mortem et ligne de journal viennent sur demande ou en fin de réponse. Quand `assistant-fiscal-comptable` est chargé pour un point fiscal, n'en reprendre que la règle, sa valeur et sa source : le format reste celui de ce skill, et un seul rappel « assistant IA, pas un conseil » suffit pour la session.
+
 ## 5. Principes de conseil
 
 Détail, preuves et statut de chaque principe : `references/02-doctrine.md`.
@@ -90,18 +92,18 @@ Détail, preuves et statut de chaque principe : `references/02-doctrine.md`.
 
 ## 6. Scripts de calcul
 
-Python 3, bibliothèque standard uniquement, dans `scripts/`. Les scripts de projection et de décision affichent leurs hypothèses en tête de sortie ; recopier les paramètres saisis dans la réponse dans tous les cas. Aucun rendement, taux ou volatilité par défaut : l'appelant les fournit et les source. `projection.py montecarlo` attend une moyenne arithmétique, `projection.py epargne` un taux composé : ne pas saisir le même chiffre dans les deux (moyenne arithmétique ≈ taux composé + volatilité²/2).
+Python 3, bibliothèque standard uniquement, dans `scripts/`. Les scripts de projection et de décision affichent leurs hypothèses en tête de sortie ; recopier les paramètres saisis dans la réponse dans tous les cas. Aucun rendement, taux ou volatilité par défaut : l'appelant les fournit et les source. `projection.py montecarlo` et `projection.py retrait-mc` attendent une moyenne arithmétique, `projection.py epargne` un taux composé : ne pas saisir le même chiffre dans les deux (moyenne arithmétique ≈ taux composé + volatilité²/2). Taux en % (3.5), parts et quotités en fraction (0.70) : une saisie hors plage s'arrête avec un message (`scripts/entrees.py`), ne pas la contourner.
 
 | Script | Usage |
 |---|---|
 | `credit.py` | Mensualité, capital empruntable, CRD à une date, tableau d'amortissement, plafond légal des IRA, remboursement anticipé contre placement |
-| `capacite.py` | Capacité d'emprunt au taux d'effort HCSF, budget d'achat, achat-revente avec ou sans prêt relais, reste à vivre |
+| `capacite.py` | Capacité d'emprunt au taux d'effort HCSF, budget d'achat, achat-revente : budget si l'on vend d'abord, budget à la signature si l'on achète d'abord (relais simple avec prêt en cours conservé, ou achat-revente), reste à vivre |
 | `projection.py` | Projection d'épargne en scénarios, Monte-Carlo, capital nécessaire à la retraite, tenue d'un rythme de retrait |
 | `tri.py` | Taux de rendement interne d'une série de flux datés (XIRR), rendement annualisé |
-| `allocation.py` | Exposition par position et par zone (transparence), écart à la cible, répartition d'un versement pour se rapprocher de la cible sans vendre, arbitrages complets |
-| `louer_acheter.py` | Louer ou acheter : patrimoine net comparé à horizon, année de bascule |
+| `allocation.py` | Exposition par position et par zone (transparence), écart à la cible, répartition d'un versement pour se rapprocher de la cible sans vendre, arbitrages complets. Un même fonds dans deux enveloppes est regroupé |
+| `louer_acheter.py` | Louer ou acheter : patrimoine net comparé à horizon, années de bascule |
 
-Exemples d'appel et tests : en tête de chaque script, et `python scripts/tests/test_calculs.py`.
+Exemples d'appel et tests : en tête de chaque script, et `python3 scripts/tests/test_calculs.py`.
 
 ## 7. Garde-fous
 
@@ -115,7 +117,7 @@ Exemples d'appel et tests : en tête de chaque script, et `python scripts/tests/
 
 ## 8. Avec ou sans comptable-foyer
 
-- **Avec** : lire la fiche maître selon la procédure de `comptable-foyer` (section Lecture), citer sa version. Aucune écriture dans la fiche ou le registre sans accord explicite, et toujours par la procédure d'écriture de `comptable-foyer`. Une décision actée se propose pour la fiche et pour le journal des décisions.
+- **Avec un skill de données du foyer** (`comptable-foyer` chez l'auteur) : lire la fiche maître selon la procédure de ce skill (section Lecture), citer sa version. Aucune écriture dans la fiche ou le registre sans accord explicite, et toujours par la procédure d'écriture de `comptable-foyer`. Une décision actée se propose pour la fiche et pour le journal des décisions.
 - **Sans** (un ami, un autre foyer) : commencer par le profil en dix questions au plus (`references/10-methode-gabarits.md`), proposer de le garder dans un document qui appartient à l'utilisateur, ne rien supposer.
 - Ce skill ne contient et ne reçoit aucune donnée personnelle. Il se partage tel quel.
 
@@ -137,7 +139,8 @@ Exemples d'appel et tests : en tête de chaque script, et `python scripts/tests/
 
 ## 10. Maintenance
 
+- Version 2026-11-01 (2) : lot 4 de l'audit. Scripts : budget à la signature avec relais, alerte de quotité HCSF, assurance en remboursement total, même fonds dans deux enveloppes, contrôle des saisies (58 tests). Références : prélèvements sociaux, PER, PEE, PEA, HCSF, retraite, garantie des dépôts, don familial, crypto-actifs, séparation, meublé de tourisme. Évaluations chiffrées.
 - Version 2026-11-01 (1). Règles volatiles vérifiées le 01/11/2026 (détail dans `01-fraicheur.md`). Relu par un agent indépendant le même jour : 13 erreurs corrigées (statut du bailleur privé, pire cas des actions, emploi et remploi, assurance dans le calcul de remboursement anticipé, prélèvements sociaux 2026, règles HCSF de décembre 2023, IRA en cas de vente, PEL, garanties de prêt, reste à vivre, apport excédentaire, CAPE, chiffres mineurs) et compléments ajoutés (garantie des dépôts, délai de déblocage du PEE, clause bénéficiaire hors mariage, indivision, PER 2026).
 - Une vérification qui contredit `01-fraicheur.md` : utiliser la valeur vérifiée, le signaler, proposer la mise à jour du skill.
 - Revue complète deux fois par an : en janvier (lois de finances et de financement de la sécurité sociale) et en juillet (taux réglementés, lois de l'été).
-- Source, documentation et dernière version : dépôt GitHub `joachimpomme-ctrl/Comptable`, dossier `.claude/skills/conseiller-patrimoine/`, guide `docs/conseiller-patrimoine.md`, paquet `dist/conseiller-patrimoine.zip`. Une erreur constatée se signale par une issue `[CONSEILLER]` sur ce dépôt.
+- Source, documentation et dernière version : dépôt GitHub `joachimpomme-ctrl/comptable`, dossier `.claude/skills/conseiller-patrimoine/`, guide `docs/conseiller-patrimoine.md`, paquet `dist/conseiller-patrimoine.zip`. Une erreur constatée se signale par une issue `[CONSEILLER]` sur ce dépôt.

@@ -60,7 +60,8 @@ Approche courante : couvrir les dépenses essentielles par des revenus garantis 
 
 - Chaque année de travail en plus agit trois fois : une année de cotisation en plus, une année de retraits en moins, et souvent décote évitée ou surcote gagnée.
 - Pour un couple, chiffrer plusieurs couples d'âges (exemple : l'un à 64, 65 et 67 ans, l'autre à 62, 63 et 64 ans) plutôt qu'un scénario unique.
-- Un départ progressif (retraite progressive, cumul emploi-retraite, activité réduite) adoucit la marche.
+- Un départ progressif (retraite progressive, ouverte dès 60 ans depuis le 01/09/2025 sous conditions, `01-fraicheur.md` ; cumul emploi-retraite ; activité réduite) adoucit la marche.
+- Rachat de trimestres (versement pour la retraite) : coûteux, à chiffrer avec la caisse ; surtout utile s'il évite une décote. Comparer son coût, fiscalité comprise (`assistant-fiscal-comptable`), au supplément de pension attendu.
 
 ## 7. Épargne retraite : quel support
 
