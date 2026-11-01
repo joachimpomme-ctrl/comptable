@@ -15,9 +15,8 @@ Pourquoi ce script : 07_rule_source_crosswalk.jsonl (~820 Ko) et
 02_golden_rules_claude_first.md (~290 Ko) ne doivent jamais etre charges
 integralement en contexte. Ce script extrait uniquement l'entree demandee.
 
-Les regles sont toujours affichees EN ENTIER : une Correction ou une
-Precision n'est jamais coupee. Quand une regle porte la mention
-"ENONCE INVALIDE", sa Correction prime sur l'enonce.
+Les regles sont toujours affichees EN ENTIER : une ligne Precision ou
+Revision n'est jamais coupee.
 
 Le dossier knowledge/ est localise automatiquement en remontant depuis ce
 script jusqu'a la racine du depot ; la variable d'environnement
@@ -198,8 +197,6 @@ def regles(args):
     if not exact:
         print(f"{len(hits)} regle(s) pour '{term}', page {page} sur {(len(hits) - 1) // PAR_PAGE + 1} :\n")
     for b in selection:
-        if "INVALID" in b.upper():
-            print("[ATTENTION : ENONCE INVALIDE. La Correction ci-dessous prime sur l'enonce.]")
         print(b.strip())
         print("-" * 60)
     if not exact and debut + PAR_PAGE < len(hits):
@@ -215,6 +212,9 @@ def _usage():
 COMMANDES = {"referentiel": referentiel, "crosswalk": crosswalk, "cgi": cgi, "regles": regles}
 
 if __name__ == "__main__":
+    if len(sys.argv) >= 2 and sys.argv[1] in ("-h", "--help", "aide"):
+        print(__doc__)
+        sys.exit(0)
     if len(sys.argv) < 3 or sys.argv[1] not in COMMANDES:
         if len(sys.argv) >= 2 and sys.argv[1] not in COMMANDES:
             print(f"Commande inconnue : {sys.argv[1]}")

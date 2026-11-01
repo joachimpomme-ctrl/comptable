@@ -150,9 +150,13 @@ RISQUE: Oubli de comptabiliser un amortissement dans la déclaration 2031 avant 
 ### [RISK-002] ⚠️ Risques LMNP/LMP
 
 **Risque :**
-RISQUE: SCI optant pour la location meublée → soumise à l'IS de plein droit (activité commerciale). Cette option IS est IRRÉVOCABLE. La SCI perd: (1) l'abattement pour durée de détention sur les PV immobilières; (2) la possibilité de retourner à l'IR. Les dividendes distribués sont ensuite imposés au PFU (double imposition IS + PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI IR.
+RISQUE : une SCI qui donne un bien en location meublée exerce une activité commerciale. Elle devient passible de l'IS de plein droit (CGI art. 206, 2). Ce n'est pas une option : il n'y a donc rien à révoquer. Tolérance administrative : la société civile reste hors IS tant que ses recettes commerciales hors taxes ne dépassent pas 10 % de ses recettes totales hors taxes (BOFiP BOI-IS-CHAMP-10-30, § 320 et 330, version du 04/07/2018 lue le 01/11/2026 ; la location meublée y est traitée comme une activité commerciale, § 240 à 250).
 
-*Corrigé le 2026-11-01 (audit) : il s'agit d'un assujettissement de plein droit, pas d'une option (tolérance si les recettes commerciales ne dépassent pas 10 % des recettes) ; l'option volontaire pour l'IS (art. 239) est révocable jusqu'au 5e exercice qui la suit.*
+À distinguer de l'option volontaire pour l'IS (CGI art. 239, 1). Elle n'est pas irrévocable d'emblée. La société peut y renoncer jusqu'au 5e exercice qui suit celui de l'option. La renonciation est notifiée avant la fin du mois qui précède la date limite de versement du premier acompte d'IS de l'exercice visé. Sans renonciation dans ce délai, l'option devient irrévocable. Après une renonciation, la société ne peut plus opter à nouveau pour l'IS.
+
+Dans les deux cas, tant que la SCI est à l'IS : la cession de l'immeuble par la société ne bénéficie pas de l'abattement pour durée de détention ; les dividendes sont imposés au PFU (double imposition IS puis PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI à l'IR.
+
+*Corrigé le 2026-11-01 (audit) : le corps présentait l'IS comme une option « IRRÉVOCABLE ». Texte des art. 206 et 239 du CGI vérifié au 30/10/2026.*
 
 **Conséquence :** Double imposition : IS (15 % jusqu'à 42 500 € de bénéfice, 25 % au-delà) puis PFU sur les dividendes (31,4 % s'ils sont perçus depuis le 01/01/2026, 30 % en 2025) [referentiel: pfu_taux_global] ; perte de l'abattement pour durée de détention
 
@@ -222,11 +226,24 @@ RISQUE: Modulation du taux PAS à la baisse sans atteindre le seuil minimum de 5
 ### [RISK-008] ⚠️ Risques Pacte Dutreil
 
 **Risque :**
-RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → remise en cause de l'exonération de 75 % et rappel des droits avec pénalités et intérêts de retard. Les engagements collectifs et individuels de conservation doivent être strictement respectés sur toute leur durée. RISQUE annexe: cession de l'entreprise pendant la période d'engagement → rupture du pacte, sauf exceptions prévues (transmission dans le cadre familial sous conditions).
+RISQUE : non-respect d'un engagement de conservation du Pacte Dutreil (CGI art. 787 B). L'exonération de 75 % est remise en cause. Les droits exonérés deviennent exigibles, majorés de l'intérêt de retard (art. 1727), dans le mois qui suit la rupture (CGI art. 1840 G ter, I).
 
-**Conséquence :** Rappel de 75 % des droits initialement exonérés + pénalités + intérêts de retard
+Règles du texte en vigueur au 30/10/2026 (art. 787 B) :
+- **Engagement collectif (a, b) :** au moins 2 ans, en cours au jour de la transmission. Il porte sur au moins 17 % des droits financiers et 34 % des droits de vote (10 % et 20 % si les titres sont cotés). Ces seuils sont à respecter pendant toute sa durée. Il est réputé acquis si une personne, seule ou avec son conjoint, partenaire de PACS ou concubin, détient depuis 2 ans des titres qui atteignent ces seuils, et si l'un d'eux exerce depuis 2 ans dans la société son activité principale ou, si la société est à l'IS, une fonction de direction. Après un décès sans engagement, les héritiers peuvent le conclure dans les 6 mois.
+- **Engagement individuel (c) :** chaque héritier, donataire ou légataire conserve les titres **6 ans** à compter de la fin de l'engagement collectif. Durée de 6 ans pour les transmissions depuis le 21/02/2026, 4 ans auparavant (loi n° 2026-103, art. 8 ; BOFiP ACTU-2026-00114 du 10/08/2026).
+- **Direction (d) :** un signataire ou un bénéficiaire exerce son activité principale (société de personnes) ou une fonction de direction (société à l'IS) pendant l'engagement collectif et les 3 ans qui suivent la transmission.
+- **Biens exclus (3e alinéa) :** l'exonération ne porte pas sur la fraction de valeur des titres qui représente certains actifs non affectés exclusivement à l'activité, pendant au moins 3 ans avant la transmission (ou depuis leur acquisition) et jusqu'à la fin de l'engagement individuel : biens affectés à la chasse ou à la pêche ; véhicules de tourisme, yachts, bateaux de plaisance, aéronefs ; bijoux, métaux précieux, objets d'art, de collection ou d'antiquité (sauf régime de l'art. 238 bis AB) ; chevaux de course ou de concours ; vins et alcools ; logements et résidences. Même règle pour ces actifs détenus par une société contrôlée. Transmissions depuis le 21/02/2026 (même BOFiP).
+- **Activité :** la société doit avoir une activité industrielle, commerciale, artisanale, agricole ou libérale. La gestion de son propre patrimoine mobilier ou immobilier en est exclue. Les titres ne doivent pas être inscrits sur un compte PME innovation (d bis).
+- **Aucune condition de parenté** pour bénéficier de l'exonération.
+- **Exceptions qui préservent l'exonération :** cession ou donation entre signataires pendant l'engagement collectif (b, 1) ; maintien pour les autres signataires si l'un d'eux cède, sous conditions (e bis) ; remise en cause limitée aux seuls titres cédés ou donnés par un bénéficiaire à un autre signataire (e ter) ; donation des titres par le bénéficiaire à ses descendants qui poursuivent l'engagement individuel (i) ; apport à une holding sous conditions (f) ; fusion, scission ou augmentation de capital (g, h) ; annulation des titres pour pertes ou liquidation judiciaire (g, h).
+- **Entreprise individuelle (art. 787 C) :** conservation de l'ensemble des biens affectés à l'exploitation pendant 6 ans à compter de la transmission (texte au 30/10/2026 ; durée antérieure de 4 ans probable, date d'application à vérifier : voir TRM-003) ; un bénéficiaire poursuit l'exploitation pendant 3 ans.
+- **Cumul :** réduction de 50 % des droits pour une donation en pleine propriété par un donateur de moins de 70 ans (art. 790).
 
-*Source: Guide fiscal PL 2025 Banque Populaire, VI Transmission*
+**Conséquence :** Paiement des droits sur la part exonérée (75 % de la valeur), majorés de l'intérêt de retard (art. 1840 G ter et 1727)
+
+*Corrigé le 2026-11-01 (audit) : durées, biens exclus et conséquence lus dans les art. 787 B, 787 C, 790 et 1840 G ter du CGI (texte du 30/10/2026). L'ancienne version annonçait des « pénalités » que le texte ne prévoit pas.*
+
+*Source: Guide fiscal PL 2025 Banque Populaire, VI Transmission ; CGI art. 787 B, 787 C, 790, 1840 G ter (texte du 30/10/2026) ; BOFiP ACTU-2026-00114 et BOI-ENR-DMTG-10-20-40-10 (10/08/2026)*
 
 ---
 
@@ -241,7 +258,7 @@ RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → re
 **PASS annuel 2025 : 47 100 € [referentiel: PASS/2025]** — PASS mensuel : 3 925 € | PASS journalier : 216 € (220 € en 2026)  
 **PASS annuel 2026 : 48 060 € [referentiel: PASS/2026]** — PASS mensuel : 4 005 €
 
-Utilisé pour : plafond PER (10 % PASS 2025 = 4 710 € ; 10 % PASS 2026 = 4 806 €), Madelin, cotisations sociales des indépendants. Les seuils micro ne dépendent pas du PASS : ils sont actualisés tous les trois ans comme la première tranche du barème de l'IR (CGI art. 50-0 et 102 ter).
+Utilisé pour : plafond PER (plancher de 10 % du PASS de l'année précédente : 4 710 € pour les versements de 2026 [referentiel: per_plafond_salarie_plancher/2026], 4 806 € pour ceux de 2027), Madelin, cotisations sociales des indépendants. Les seuils micro ne dépendent pas du PASS : ils sont actualisés tous les trois ans comme la première tranche du barème de l'IR (CGI art. 50-0 et 102 ter).
 
 **Seuil micro-BNC associé (CGI art. 102 ter) : 77 700 € pour les revenus 2023-2025 ; 83 600 € pour les revenus 2026-2028 [referentiel: seuil_micro_bnc].**
 

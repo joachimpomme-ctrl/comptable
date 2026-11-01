@@ -1,5 +1,5 @@
 {
-  "_doc": "Inventaire des documents d'origine des regles metier (mis a jour le 2026-11-01). Ces documents ne sont pas redistribues et ne font pas autorite : seule l'ancre legale citee par la regle (CGI, BOFiP, PCG) fait foi. 5 regles sont rattachees a des extractions intermediaires de ces documents. Les fichiers intermediaires du pipeline ne figurent plus dans cet inventaire.",
+  "_doc": "Inventaire des documents d'origine des regles metier (mis a jour le 2026-11-01). Les documents prives ne sont pas redistribues et ne font pas autorite : seule l'ancre legale citee par la regle (CGI, BOFiP, PCG) fait foi. 5 regles sont rattachees a des extractions intermediaires de ces documents. Les fichiers intermediaires du pipeline ne figurent plus dans cet inventaire.",
   "documents": [
     {
       "document_id": "doc_1c3ea96dbacf54af",
@@ -30,9 +30,10 @@
       "nature": "Support de formation en gestion de patrimoine",
       "edition": "non indiquee",
       "pages": 100,
-      "regles_rattachees": 19,
+      "regles_rattachees": 5,
       "redistribue": false,
-      "sha256": "e177b3845d641f644df26eba18e755b4612c0a8357ca956860b13b4562ebf8fe"
+      "sha256": "e177b3845d641f644df26eba18e755b4612c0a8357ca956860b13b4562ebf8fe",
+      "note": "14 regles pedagogiques sans ancre legale (methode, grilles, cycle de vie, processus de certification) retirees le 2026-11-01 : elles reprenaient la structure d'un support de formation."
     },
     {
       "document_id": "doc_b5eba9954bca180b",
@@ -121,6 +122,18 @@
       "regles_rattachees": null,
       "redistribue": false,
       "sha256": "7c55ea647a6d91d00f0192b22e692d998328d67299aa469f4de40acce95f16d3"
+    },
+    {
+      "document_id": "doc_cgi_legifrance_20261030",
+      "fichier": "LEGITEXT000006069577 (export PDF du Code general des impots)",
+      "editeur": "Legifrance (DILA)",
+      "nature": "Texte officiel",
+      "edition": "export du 30/10/2026",
+      "pages": null,
+      "regles_rattachees": 1,
+      "redistribue": true,
+      "sha256": null,
+      "note": "Source du texte des 73 articles embarques (M_CGI, Licence Ouverte) et de la regle RF-006. Les ancres BOFiP citees par les regles renvoient a bofip.impots.gouv.fr, consulte en ligne."
     }
   ]
 }

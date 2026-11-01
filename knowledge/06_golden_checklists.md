@@ -69,11 +69,11 @@ Checklists opérationnelles et workflows détaillés pour l'agent Gem.
 - [ ] Case 3VG : plus-values mobilières (renvoi 2074)
 - [ ] Case 6RS/6RT/6RU : versements PER déductibles
 - [ ] Case 7UF : dons associations (66 % réduction / 75 % aide aux personnes)
-- [ ] Case 7DB : frais garde enfants (50 % crédit d'impôt)
+- [ ] Frais de garde des enfants de moins de 6 ans : crédit d'impôt de 50 % (CGI art. 200 quater B) ; numéro de case à vérifier sur la notice de l'année
 - [ ] Quotient familial : parts, enfants à charge, garde alternée
 - [ ] PAS : vérifier acompte tiers et solde
 
-**Erreurs fréquentes :** oublier rachat AV partiel (→ 2042 C) — double comptage salaires + heures sup exonérées — oublier abattement 40 % dividendes option barème — ne pas reporter déficits fonciers antérieurs (10 700 €/an).
+**Erreurs fréquentes :** oublier rachat AV partiel (→ 2042 C) — double comptage salaires + heures sup exonérées — oublier abattement 40 % dividendes option barème — ne pas reporter les déficits fonciers antérieurs sur les revenus fonciers des 10 années suivantes (CGI art. 156, I-3°).
 
 **Source CGI :** Art. 1 A, 13, 28-31, 150-0 A, 197 (M_CGI)
 
@@ -92,7 +92,7 @@ Checklists opérationnelles et workflows détaillés pour l'agent Gem.
 - [ ] Frais voiture : barème kilométrique (04_formules_et_risques.md REF-005) ou frais réels
 - [ ] Amortissements : matériel médical 5-10 ans, mobilier 5-10 ans, informatique 3 ans
 - [ ] TVA : exonéré si soins à la personne (CGI Art. 261) — sinon vérifier assujettissement
-- [ ] CFE : base = recettes N-2, paiement décembre
+- [ ] CFE : vérifier l'avis d'imposition (échéance au 15 décembre) ; règles d'assiette absentes du corpus : `[DATA_NOT_FOUND_IN_KNOWLEDGE]`
 - [ ] Résultat 2035 = recettes nettes − charges → reporter case 5QC/5RC sur 2042
 
 **Erreurs fréquentes :** oublier cotisations sociales ligne BT — confondre date encaissement/facturation — ne pas amortir le matériel — dépasser plafond Madelin.
@@ -115,10 +115,11 @@ Checklists opérationnelles et workflows détaillés pour l'agent Gem.
 - [ ] Déficit foncier : imputer les recettes d'abord sur les intérêts ; le déficit provenant des autres charges s'impute sur le revenu global dans la limite de 10 700 €/an (jusqu'à 21 400 € avec des travaux de rénovation énergétique E/F/G vers A-D, reclassement au plus tard le 31/12/2027) ; excédent et intérêts reportables 10 ans sur foncier
 - [ ] Location à des proches : vérifier loyer normal (risque requalification)
 - [ ] SCI : reporter quote-part résultat sur 2044 S
+- [ ] Statut du bailleur privé (CGI art. 31, I, 1°, i et j) : vérifier l'option exercée l'année d'achèvement ou d'acquisition, la base (prix net de frais moins 20 % de foncier forfaitaire), le taux et le plafond annuel de 8 000 € par foyer (voir le levier ci-dessous et la branche B9 du moteur). Le micro-foncier est exclu dès qu'un logement du foyer bénéficie de cet amortissement (CGI art. 32, 2, c).
 
 **Erreurs fréquentes :** inclure travaux de construction (non déductibles) — confondre 10 700 € (revenu global) vs intérêts (foncier uniquement) — ne pas reporter déficits antérieurs.
 
-**Source CGI :** Art. 14, 28-31, 156 (M_CGI) ; M9
+**Source CGI :** Art. 14, 28-31, 156 (M_CGI) ; art. 32 (texte du CGI au 30/10/2026, hors M_CGI) ; M9
 
 ---
 
@@ -150,7 +151,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 
 | Dispositif | Économie | Conditions | Source |
 |-----------|----------|------------|--------|
-| PER | Versements déductibles × TMI | Plafond 10 % des revenus d'activité N-1 (minimum 10 % du PASS N-1) ; report de la fraction non utilisée sur 3 ans, puis 5 ans à compter de l'imposition des revenus 2026 ; versements à 70 ans ou plus non déductibles depuis 2026 | CGI art. 163 quatervicies ; LF 2026 art. 9 et 10 |
+| PER | Versements déductibles × TMI | Plafond 10 % des revenus d'activité N-1 (minimum 10 % du PASS N-1) ; report de la fraction non utilisée sur 5 ans pour les plafonds de 2026 et suivants, sur 3 ans pour les plafonds antérieurs ; versements à 70 ans ou plus non déductibles depuis 2026 | CGI art. 163 quatervicies ; LF 2026 art. 9 et 10 |
 | Dons associations | Réduction 66 % (75 % aide aux personnes) | Don ≤ 20 % revenu imposable | CGI art. 200 |
 | Déficit foncier | Imputation ≤ 10 700 €/an revenu global (jusqu'à 21 400 € avec rénovation énergétique, jusqu'au 31/12/2027) | Régime réel, travaux déductibles, location 3 ans | CGI art. 156 |
 | Micro-BNC vs réel | Réel avantageux si charges > 34 % CA | CA ≤ 77 700 € (revenus 2025) / 83 600 € (revenus 2026-2028) pour micro | CGI art. 93, 102 ter |
@@ -163,10 +164,11 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 | Dispositif | Mécanisme | Conditions et risques | Source |
 |-----------|-----------|----------------------|--------|
 | LMNP au réel | Amortissement bien → résultat fiscal nul/négatif | Nécessite compta, risque LMP si CA > 23 000 € | CGI art. 39 C, M5 |
-| Démembrement | NP sortie du patrimoine taxable (IFI, succession) | Barème âge art. 669. Irréversible. | CGI art. 669, M6 |
+| Démembrement | Donation de la nue-propriété taxée sur la seule valeur de la NP (barème de l'âge, art. 669) ; à l'extinction de l'usufruit, pas de nouveaux droits (art. 1133, non embarqué) | IFI : l'usufruitier reste imposé sur la pleine propriété (art. 968) ; irréversible | CGI art. 669, 968, M6 |
 | SCI à l'IR | Transparence fiscale, optimisation succession | Pas d'IS → PV pro impossibles | M6 |
 | SCI à l'IS | Amortissement bien, capitalisation résultats | Double imposition à la sortie (IS puis PFU 31,4 % sur les dividendes perçus depuis 2026). Option révocable jusqu'au 5e exercice qui la suit, définitive ensuite (art. 239) ; IS de plein droit en cas de location meublée. | M6 |
-| Pacte Dutreil | Exonération de 75 % des DMTG sur les titres transmis | Engagement collectif (2 ans minimum) + individuel (6 ans depuis la LF 2026) ; aucune condition de parenté ; biens non affectés à l'activité exclus | CGI art. 787 B, M12 |
+| Pacte Dutreil | Exonération de 75 % des DMTG sur les titres transmis | Engagement collectif (2 ans minimum) + individuel (6 ans pour les transmissions depuis le 21/02/2026, 4 ans avant) ; direction pendant l'engagement collectif et 3 ans après la transmission ; aucune condition de parenté ; biens somptuaires non affectés à l'activité exclus (logements, véhicules de tourisme, bijoux, vins, etc.) ; détail et risques : 04 RISK-008 | CGI art. 787 B, M12 ; BOFiP ACTU-2026-00114 (10/08/2026) |
+| Statut du bailleur privé (location nue) | Amortissement déductible des revenus fonciers sur 80 % du prix net de frais (foncier forfaitaire de 20 %) | Logement dans un immeuble collectif, loué nu en résidence principale, à une personne hors foyer fiscal et hors parents ou alliés jusqu'au 2e degré. Neuf ou VEFA (i) : 3,5 % en location intermédiaire, 4,5 % sociale, 5,5 % très sociale. Ancien avec travaux d'au moins 30 % du prix et réhabilitation lourde (j) : 3 %, 3,5 %, 4 %. Plafond de 8 000 € par an et par foyer pour i et j réunis, porté à 10 000 € ou 12 000 € si au moins 50 % des revenus bruts de ces logements viennent de la location sociale ou très sociale. Engagement de location de 9 ans minimum, plafonds de loyer et de ressources. Option irrévocable. Acquisitions du 21/02/2026 au 31/12/2028. Rupture : amortissements réintégrés. Revente : prix d'acquisition minoré des amortissements (art. 150 VB, III). Moteur : branche B9 | CGI art. 31, I, 1°, i et j (texte du 30/10/2026) ; service-public F39735 (vérifiée le 21/07/2026) |
 | Assurance-vie | Rachats allégés + transmission 152 500 €/bénéficiaire | Versements avant 70 ans, durée > 8 ans | CGI art. 125-0 A, 990 I |
 | Donation-partage | Figer valeurs, abattement 100 000 € × enfant/15 ans | Irréversible. Notaire obligatoire. | CGI art. 779, 784 |
 
@@ -178,7 +180,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 | PER individuel TNS | Déduction revenu global + plafond majoré TNS | Revenu professionnel TNS | CGI art. 163 quatervicies |
 | Option TVA | Récupérer TVA si activité partiellement taxée | Professions mixtes (ex. formations) | CGI art. 261 |
 | Micro vs réel | Réel si charges + amortissements > 34 % CA | Analyse annuelle | CGI art. 93, 102 ter |
-| SEL + SPFPL | Capitaliser bénéfices holding IS (15-25 % vs TMI 41-45 %) | Montage complexe, risque requalification | M7 |
+| SEL + SPFPL | Laisser les bénéfices dans une société à l'IS (taux de l'art. 219 : 15 % puis 25 %) plutôt que les distribuer au barème | Montage complexe, distribution ultérieure taxée (PFU ou barème), risque d'abus de droit (LPF art. L.64) ; taxe sur les holdings patrimoniales si les conditions de l'art. 235 ter C sont réunies | CGI art. 219, 235 ter C |
 | Véhicule / barème km | Barème BNC souvent plus avantageux | Tenir relevé kilométrique pro | M1, M2, REF-005 |
 
 ### Checklist optimisation annuelle (avant 31 décembre)

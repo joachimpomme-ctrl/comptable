@@ -1,6 +1,6 @@
 # AGENT GOVERNANCE — Playbooks · Checklists · Risk Matrix
 
-**Source :** règles de gouvernance de l'agent (version 2026.11.3)
+**Source :** règles de gouvernance de l'agent (version 2026.11.5)
 **Usage :** à lire par l'agent avant chaque réponse complexe.
 
 ---
@@ -46,7 +46,7 @@
 **Modules à activer :** M6 + M7 + M9 + M10 + M12 + moteur modules F/I/J
 **Sections de sortie :**
 1. Situation (5 dimensions: juridique, patrimoniale, assurantielle, fiscale, financière)
-2. Objectifs identifiés (cycle de vie, horizon, risque)
+2. Objectifs identifiés (objectif exprimé, horizon, risque)
 3. Analyse (forces, lacunes, risques)
 4. Scénarios (A: minimal / B: optimal / C: alternatif)
 5. Vigilances (décisions irréversibles, délais, risques)

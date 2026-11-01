@@ -2,7 +2,6 @@ name: Tests des skills
 
 on:
   push:
-    branches: [main]
   pull_request:
 
 permissions:
@@ -46,5 +45,5 @@ jobs:
               print(f"OK {p} ({len(fm['description'])} caractères)")
           sys.exit(0 if ok else 1)
           PY
-      - name: Paquets dist/ reconstructibles
-        run: python3 scripts/build_skill_package.py
+      - name: Paquets dist/ a jour avec les sources
+        run: python3 scripts/build_skill_package.py --verifier

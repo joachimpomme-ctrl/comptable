@@ -2,19 +2,19 @@
 
 Etat des lieux honnete de ce qui reste a faire, par ordre de valeur. Les contributions sont bienvenues sur chaque point — voir [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Derniere mise a jour : 2026-11-01 (version 2026.11.3, voir [CHANGELOG.md](CHANGELOG.md)).
+Derniere mise a jour : 2026-11-01 (version 2026.11.5, voir [CHANGELOG.md](CHANGELOG.md)).
 
 ---
 
-## 1. Le chantier principal : sourcer puis faire relire les 391 regles
+## 1. Le chantier principal : sourcer puis faire relire les 378 regles
 
 C'est la ou se joue la credibilite du corpus.
 
 | Etape | Etat | Qui |
 |-------|------|-----|
-| Ancres legales controlees par des agents d'IA (crosswalk) | **358 / 391 `sourced`** (passes du 05/06, du 26/08 et du 01/11/2026) : 195 confirmees, 46 ancres rectifiees, 74 enonces nuances, 32 enonces corriges, 11 sans trace de verdict. 33 enonces de pratique ou de doctrine sans ancre legale (`a_verifier`) | Controler les 11 sans verdict ; reecrire les enonces corriges au lieu d'empiler les Corrections ; re-verification annuelle |
-| Regles relues par des professionnels | **0 / 391** | Experts-comptables, avocats fiscalistes, CGP, notaires : relecture par lots (`[RELECTURE]`), deux relecteurs verifies pour `validated` |
-| Origine des regles | 10 documents tiers, dont un guide bancaire pour environ la moitie des regles (voir `NOTICE.md`) | Reformuler avec nos propres mots les regles reprises d'un support de formation (M7) ; envisager une autorisation de l'editeur du guide principal |
+| Ancres legales controlees par des agents d'IA (crosswalk) | **358 / 378 `sourced`**, toutes avec un verdict (passes du 05/06, du 26/08 et du 01/11/2026) : 198 confirmees, 43 ancres rectifiees, 66 enonces nuances, 50 enonces reecrits ou corriges, 1 probable. 20 enonces de pratique ou de doctrine sans ancre legale (`a_verifier`). Les enonces reconnus faux sont reecrits : 50 regles portent une ligne « Revision » (44 enonces faux, 6 baremes mis a jour) | Re-verification annuelle ; completer les 5 entrees sans page issues des documents (RF-006 vient directement du CGI) |
+| Regles relues par des professionnels | **0 / 378** | Experts-comptables, avocats fiscalistes, CGP, notaires : relecture par lots (`[RELECTURE]`), deux relecteurs verifies pour `validated` |
+| Origine des regles | 10 documents tiers, dont un guide bancaire pour environ la moitie des regles (voir `NOTICE.md`) | Fait le 2026-11-01 : 14 regles pedagogiques reprises d'un support de formation (M7) retirees. Reste : envisager une autorisation de l'editeur du guide principal |
 
 Le sourcing IA etablit qu'une regle correspond au texte ; la validation professionnelle engage un nom sur son application. Les deux niveaux restent distincts et affiches.
 
@@ -24,12 +24,13 @@ Le sourcing IA etablit qu'une regle correspond au texte ; la validation professi
 - **Fait le 2026-11-01 (lot 2)** : CARPIMKO (`carpimko_invalidite_deces_forfait`, `carpimko_complementaire_taux`, bulletin d'avril 2026), `deficit_foncier_plafond_renovation_energetique` ; baremes REF-002 a REF-006 refaits.
 - **CARMF (medecins)** : taux 2026 repris de Weblex (probable) dans REF-003, a confirmer sur carmf.fr puis a passer en cles.
 - **Bareme kilometrique 2026** et **taux URSSAF 2026 detailles** : publies par arrete en debut d'annee — voir §4.
-- Candidats suivants : plafonds PER (calcul complet), CEHR/CDHR, PEA, taux IS, abattement AV apres 70 ans (30 500 €) — cites dans le corpus sans cle de referentiel.
+- **Fait le 2026-11-01 (lot 3)** : `per_plafond_salarie_plancher` et `per_plafond_salarie_max` (versements 2026) ; base du millesime renseignee pour toutes les cles ; sources et identifiants de version mis a jour.
+- Candidats suivants : seuils du regime reel simplifie (renvoi du CGI au CIBS), CEHR/CDHR, PEA, taux IS, abattement AV apres 70 ans (30 500 €), don a 75 % : cites dans le corpus sans cle de referentiel.
 
 ## 3. Corpus et tests
 
-- **Etoffer la suite d'evaluation** (45 cas) : ajouter des cas sur les nouveautes 2026 (seuil micro-BNC 83 600 €, PS 17,2 % vs 18,6 %, CNAVPL 8,73 %, chambres d'hotes 2°) et des cas pieges proposes par les relecteurs (`[CAS DE TEST]`).
-- **Corpus CGI** : 12 articles ajoutes le 2026-11-01 (50-0, 150 VC, 200 A, 219, 223 sexies, 224, 293 B, 757 B, 790 A bis, 968, 977, 1609 nonies G). Suivants possibles : 790 E et 790 F (donations entre epoux et partenaires), 199 sexdecies, 244 bis A. Outil : `scripts/extraire_articles_cgi.py` sur un export PDF Legifrance.
+- **Etoffer la suite d'evaluation** (47 cas, dont EV-041 Pacte Dutreil et EV-042 bailleur prive ajoutes le 2026-11-01) : ajouter des cas sur les nouveautes 2026 (seuil micro-BNC 83 600 €, PS 17,2 % vs 18,6 %, CNAVPL 8,73 %, chambres d'hotes 2°) et des cas pieges proposes par les relecteurs (`[CAS DE TEST]`).
+- **Corpus CGI** : 73 articles. Ajoutes le 2026-11-01 : 50-0, 150 VC, 200 A, 219, 223 sexies, 224, 293 B, 757 B, 790 A bis, 968, 977, 1609 nonies G (lot 2), puis 32, 39 C, 39 duodecies, 150 V, 238 quindecies, 239, 302 septies A bis, 790 E, 796-0 bis, 978 (lot 3). Suivants possibles : 790 F, 199 sexdecies, 200 quater B, 235 ter C, 244 bis A. Outil : `scripts/extraire_articles_cgi.py` sur un export PDF Legifrance.
 - **Few-shots** : ajouter 2-3 exemples calibres sur le millesime 2026.
 
 ## 4. Processus recurrent : la mise a jour de janvier
@@ -46,9 +47,9 @@ A chaque Loi de Finances / LFSS (checklist a derouler, idealement en fevrier apr
 
 - **Fait le 2026-11-01** : modeles d'issues (`[RELECTURE]`, `[CORRECTION]`, `[CAS DE TEST]`) ; controle en CI des renvois au referentiel, des comptes et de la validite des parametres ; `CHANGELOG.md`.
 - **Discussions GitHub** a ouvrir pour les questions ; etiquettes d'issues a creer.
-- **Controles automatiques a chaque push** (GitHub Action) : JSON valides, comptes coherents (391/63/45/38), aucun article CGI coupe, tests du script de lookup entre README, manifest et fichiers reels, absence de donnees personnelles, paquet `dist/` a jour.
+- **Controles automatiques a chaque push** (GitHub Action), en place : comptes du manifeste (378/73/47/40), montant ecrit juste avant un renvoi au referentiel compare a la cle, concordance regles et tracabilite, rappels de premiere reponse coherents, tests du script de lookup (CGI identique entre Markdown et JSONL, aucun article coupe), calculs du conseiller, absence de donnees personnelles, paquets `dist/` a jour. Reste : controler aussi les comptes cites dans README, index, guide et SKILL.
 - **Compteur de validation auto-genere** : script qui lit les statuts des regles et met a jour le tableau « Etat de validation » du README.
-- **Releases GitHub** par version (`2026.11.3`...) avec les deux zips en pieces jointes : le changelog existe, la creation des releases reste a faire depuis l'interface GitHub.
+- **Releases GitHub** par version (`2026.11.5`...) avec les deux zips en pieces jointes : le changelog existe, la creation des releases reste a faire depuis l'interface GitHub.
 
 ## 6. Diffusion
 

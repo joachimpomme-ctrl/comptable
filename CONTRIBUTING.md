@@ -1,6 +1,6 @@
 # Contribuer : relecture des regles par des professionnels
 
-Ce depot a besoin de relecteurs : **experts-comptables, avocats fiscalistes, CGP, notaires**. Les 391 regles metier sont en statut `candidate_to_validate` : rattachees a leurs sources et controlees par des agents d'IA, mais relues par aucun professionnel.
+Ce depot a besoin de relecteurs : **experts-comptables, avocats fiscalistes, CGP, notaires**. Les 378 regles metier sont en statut `candidate_to_validate` : rattachees a leurs sources et controlees par des agents d'IA, mais relues par aucun professionnel.
 
 Aucune connaissance de Git n'est necessaire : **une issue GitHub suffit** (modeles proposes a l'ouverture d'une issue).
 

@@ -2,7 +2,7 @@
 
 **Usage :** Exemples de calibration pour Gemini. Injecter en contexte ou comme exemples d'entraînement.
 **Format :** Question → Réponse idéale structurée (sourced, actionnables)
-**Distribution :** 6 comptables · 7 financières · 12 patrimoniales · 3 fonctions
+**Distribution :** 25 exemples : 6 comptables, 5 financiers, 14 patrimoniaux
 **Millésime :** les chiffres de ces exemples sont calibrés sur le millésime 2025 (ex. seuil micro-BNC 77 700 €, PASS 47 100 €). Pour les revenus 2026, consulter `referentiel_parametres.json` (micro-BNC 83 600 €, PASS 48 060 €).
 
 ---
@@ -207,7 +207,7 @@ Source : GFPL-086 (PFU), M2 — Module C2
 
 **Stratégie :**
 - Utiliser d'abord le **plafond professionnel** (154 bis).
-- Plafonds du revenu global non utilisés : report sur 3 ans jusqu'à l'imposition des revenus 2025, sur 5 ans à compter de l'imposition des revenus 2026 (LF 2026, art. 10).
+- Plafonds du revenu global non utilisés : report sur 5 ans pour les plafonds de 2026 et suivants, sur 3 ans pour les plafonds antérieurs (LF 2026, art. 10, mesure non rétroactive).
 - Versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9).
 
 Source : GFPL-165 à GFPL-170 — M2, Module G1

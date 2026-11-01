@@ -1,6 +1,6 @@
 # Evaluation Suite
 
-**Millésime :** les 45 cas de test sont calibrés sur le millésime 2025 (seuil micro-BNC 77 700 €, PASS 47 100 €...). Les réponses attendues restent correctes pour les revenus 2025 ; pour les revenus 2026, se référer à `referentiel_parametres.json`.
+**Millésime :** les 45 premiers cas de test sont calibrés sur le millésime 2025 (seuil micro-BNC 77 700 €, PASS 47 100 €...). Leurs réponses attendues restent correctes pour les revenus 2025 ; pour les revenus 2026, se référer à `referentiel_parametres.json`. EV-041 et EV-042, ajoutés le 2026-11-01, s'appuient sur les textes en vigueur au 30/10/2026.
 
 ## FS-001 | claude_few_shot
 - Fonction : comptable
@@ -350,3 +350,19 @@
 - Question : Suis-je assujetti à la TVA en tant que médecin libéral ? Puis-je récupérer la TVA sur mes achats professionnels ?
 - Règles attendues : CGI Art. 261 (M_CGI) ; M2
 - Critères de succès : cite Art. 261, répond non — actes médicaux exonérés de TVA (soins à la personne), donc pas de récupération TVA en amont, exception si activité mixte (formations, expertise), alerte sur les professions ayant une activité partiellement taxée
+
+## EV-041 | dutreil_engagements_exoneration_2026
+- Fonction : patrimoine_transmission
+- Difficulté : avancé
+- Contexte : Donation en pleine propriété le 15/03/2026, par un père de 65 ans à son fils, des titres d'une SAS industrielle (non cotée) valant 2 000 000 €. Engagement collectif de conservation de 2 ans signé le 01/06/2025, enregistré, portant sur 60 % des droits financiers et des droits de vote. Le père préside la SAS et la présidera jusqu'en 2030. La SAS détient depuis 2020 un appartement, non affecté à l'activité, qui représente 200 000 € de la valeur des titres. Aucune donation antérieure.
+- Question : Combien de temps mon fils devra-t-il conserver les titres et quels droits de donation paiera-t-il ?
+- Règles attendues : CGI Art. 787 B, 777, 779 (M_CGI) ; CGI art. 790, I (texte du 30/10/2026) ; RISK-008 ; moteur F9
+- Critères de succès : cite Art. 787 B ; engagement collectif en cours au jour de la donation (jusqu'au 01/06/2027) ; engagement individuel de **6 ans** à compter de la fin de l'engagement collectif, soit jusqu'au 01/06/2033, car la donation est postérieure au 21/02/2026 (4 ans pour une transmission antérieure) ; direction exercée pendant l'engagement collectif et jusqu'au 15/03/2029 (3 ans après la transmission) ; exclut de l'exonération la fraction représentative du logement (bien exclu depuis le 21/02/2026) ; base taxable = (2 000 000 − 200 000) × 25 % + 200 000 = 650 000 € ; après abattement de 100 000 € (Art. 779) : 550 000 € ; barème ligne directe (Art. 777) : 403,60 + 403,70 + 573,45 + (550 000 − 15 932) × 20 % = 108 194 € ; réduction de 50 % (Art. 790, donateur de moins de 70 ans, pleine propriété) : droits ≈ 54 097 € ; aucune condition de parenté ; en cas de rupture, droits exonérés exigibles avec intérêt de retard (Art. 1840 G ter) ; validation notaire ou avocat fiscaliste. Ajouté le 2026-11-01 (audit, S3) : sources CGI au 30/10/2026 et BOFiP ACTU-2026-00114 du 10/08/2026.
+
+## EV-042 | bailleur_prive_amortissement_location_nue
+- Fonction : fiscalite_revenus_fonciers
+- Difficulté : avancé
+- Contexte : Acquisition le 15/04/2026 d'un appartement neuf, achevé, dans un immeuble collectif, prix net de frais 300 000 €. Loué nu à titre de résidence principale, en location intermédiaire (plafonds de loyer et de ressources respectés), à un locataire sans lien familial. Aucun autre logement amorti dans le foyer.
+- Question : Quel amortissement puis-je déduire de mes revenus fonciers pour une année pleine, et à quelles conditions ?
+- Règles attendues : CGI Art. 31, I, 1°, i et 150 VB, III (M_CGI) ; CGI art. 32, 2, c (texte du 30/10/2026) ; moteur B9
+- Critères de succès : cite Art. 31, I, 1°, i ; base amortissable = 300 000 × 80 % = 240 000 € (foncier forfaitaire de 20 %) ; amortissement théorique = 240 000 × 3,5 % = 8 400 € ; déduction plafonnée à **8 000 €** par an et par foyer ; signale qu'en location sociale le taux serait de 4,5 % (10 800 €) et le plafond de 10 000 € si au moins 50 % des revenus bruts des logements amortis en viennent ; engagement de location nue de 9 ans minimum, prenant effet dans les 12 mois ; option irrévocable sur la déclaration des revenus 2026 ; acquisition dans la fenêtre du 21/02/2026 au 31/12/2028 ; micro-foncier exclu (Art. 32, 2, c) ; rupture d'engagement : amortissements réintégrés au revenu foncier de l'année ; revente : prix d'acquisition minoré des amortissements déduits (Art. 150 VB, III) ; la première année, l'amortissement court à compter du premier jour du mois d'acquisition (prorata probable) ; ne présente pas comme certaine l'imputation sur le revenu global d'un déficit créé par l'amortissement ; validation expert-comptable. Ajouté le 2026-11-01 (audit, S3) : sources CGI au 30/10/2026 et service-public F39735 vérifiée le 21/07/2026.

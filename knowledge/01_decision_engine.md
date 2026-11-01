@@ -38,7 +38,7 @@
   - **MAIS** déductibles du revenu global uniquement
 - **SI** versement volontaire PER avec renonciation à la déduction
   - **ALORS** choix irrévocable au moment du versement
-- **ATTENTION LF 2026** versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9) ; fraction non utilisée du plafond du revenu global reportable sur les cinq années suivantes à compter de l'imposition des revenus 2026, trois ans auparavant (LF 2026, art. 10 ; BOFiP ACTU-2026-00106 du 10/08/2026)
+- **ATTENTION LF 2026** versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9) ; fraction non utilisée du plafond du revenu global reportable sur les cinq années suivantes pour les plafonds de 2026 et suivants, sur trois ans pour les plafonds antérieurs (LF 2026, art. 10, non rétroactif ; BOFiP ACTU-2026-00106 du 10/08/2026) : en 2026, seuls les reliquats de 2023 à 2025 s'ajoutent au plafond de l'année ; voir GFPL-168
 - **SEUIL** PASS 2025 = 47 100 € ; PASS 2026 = 48 060 € [referentiel: PASS]
 - **SOURCE** GFPL-165 à GFPL-174, M2
 
@@ -143,7 +143,7 @@
   - **SI** bien détenu < 2 ans → PV court terme (IR barème progressif)
   - **SI** bien détenu > 2 ans → PV CT dans la limite des amortissements déduits + PV LT au-delà (12,8 % IR + PS : 17,2 % jusqu'aux revenus 2024 ; pour les revenus 2025 et suivants, taux à vérifier, 18,6 % probable [referentiel: ps_revenus_patrimoine])
   - **EXONÉRATIONS possibles** (activité ≥ 5 ans):
-    - Art. 151 septies: totale si recettes moy. < 90 000 € ; partielle jusqu'à 126 000 € (la catégorie à 250 000 € exclut expressément la location de locaux d'habitation meublés, art. 151 septies, II, 1° a ; Correction de LMN-025)
+    - Art. 151 septies: totale si recettes moy. < 90 000 € ; partielle jusqu'à 126 000 € (la catégorie à 250 000 € exclut expressément la location de locaux d'habitation meublés, art. 151 septies, II, 1° a ; voir LMN-025)
     - Art. 151 septies B: abattement 10 %/an sur PV LT immo au-delà de 5 ans (exo totale à 15 ans)
     - Art. 238 quindecies: totale si cession < 500 000 € (hors immeubles); partielle jusqu'à 1 000 000 €
     - Art. 151 septies A: exonération totale si départ retraite dans 2 ans avant/après (hors immeubles)
@@ -170,18 +170,20 @@
 - **SI** recettes courte durée > 23 000 € OU statut LMP
   - **ALORS** affiliation SSI obligatoire
   - **ABATTEMENTS** 60 % (courte durée standard) ou 87 % (tourisme classé) sur les recettes
-  - **ATTENTION** confier la gestion à une agence ne dispense pas d'affiliation au-delà du seuil (Correction de LMN-020) ; seule alternative prévue : l'option pour le régime général lors de l'affiliation (CSS L311-3, 35°)
+  - **ATTENTION** confier la gestion à une agence ne dispense pas d'affiliation au-delà du seuil (voir LMN-020) ; seule alternative prévue : l'option pour le régime général lors de l'affiliation (CSS L311-3, 35°)
 - **SOURCE** LMN-020, LMN-021, M5
 
 ### B9 - Location NUE : statut du bailleur privé (LF 2026, CGI art. 31, I, 1°, i et j)
 
-- **SI** logement situé dans un immeuble collectif, loué nu en résidence principale, acquis neuf ou en VEFA (i) ou ancien avec travaux d'au moins 30 % du prix et réhabilitation lourde (j)
+- **SI** logement situé dans un immeuble collectif, loué nu en résidence principale, acquis neuf ou en VEFA (i), ou acquis avec des travaux concourant à la production d'un immeuble neuf (art. 257, I, 2, 2°) ou des travaux d'amélioration d'au moins 30 % du prix répondant aux critères d'une réhabilitation lourde (j)
   - **ALORS** option pour un amortissement déductible des revenus fonciers, sur le prix hors foncier (foncier forfaitaire de 20 %)
   - **TAUX** neuf : 3,5 % (location intermédiaire), 4,5 % (sociale), 5,5 % (très sociale) ; ancien : 3 %, 3,5 %, 4 %
-  - **PLAFOND** 8 000 € par an et par foyer pour l'ensemble des amortissements i et j, majoré de 2 000 € ou 4 000 € si au moins 50 % des loyers viennent de logements en location sociale ou très sociale
-  - **CONDITIONS** engagement de location de 9 ans, plafonds de loyer et de ressources, option irrévocable exercée avec la déclaration de l'année d'achèvement ou d'acquisition
-  - **ATTENTION** à la revente, le prix d'acquisition est minoré des amortissements déduits (CGI art. 150 VB, III) ; acquisitions visées du 21/02/2026 au 31/12/2028 (probable, source secondaire)
-- **SOURCE** CGI art. 31, texte du 30/10/2026 ; pas encore de règle dédiée dans le corpus
+  - **PLAFOND** 8 000 € par an et par foyer pour l'ensemble des amortissements i et j, majoré de 2 000 € ou 4 000 € si au moins 50 % des revenus bruts des logements amortis viennent de la location sociale ou très sociale
+  - **CONDITIONS** engagement de location de 9 ans minimum, plafonds de loyer et de ressources, option irrévocable exercée avec la déclaration de l'année d'achèvement ou d'acquisition ; locataire hors foyer fiscal et hors parents ou alliés jusqu'au 2e degré ; pas de déduction si la propriété est démembrée ; en société non soumise à l'IS, conservation des parts pendant la période de location
+  - **DATES** acquisitions (ou dépôts de permis de construire pour un logement que le contribuable fait construire, i) réalisées entre le lendemain de la publication de la loi n° 2026-103 du 19/02/2026 et le 31/12/2028 (texte de l'art. 31), soit du 21/02/2026 au 31/12/2028, la date retenue étant celle de la signature de l'acte notarié (service-public F39735, vérifiée le 21/07/2026)
+  - **RUPTURE** d'un engagement : le revenu foncier de l'année est majoré des amortissements déduits, imposés selon un système de quotient (sauf invalidité, licenciement ou décès)
+  - **ATTENTION** à la revente, le prix d'acquisition est minoré des amortissements déduits (CGI art. 150 VB, III) ; micro-foncier exclu pour tout le foyer (CGI art. 32, 2, c) ; imputation sur le revenu global d'un déficit créé par l'amortissement : à vérifier (rien dans l'art. 156 au 30/10/2026)
+- **SOURCE** RF-006 ; CGI art. 31, I, 1°, i et j, art. 32 et 150 VB, texte du 30/10/2026 ; cas de test EV-042
 
 ---
 
@@ -207,11 +209,15 @@
 ### C2 — PFU (Flat Tax) vs barème progressif sur revenus financiers
 
 - **SI** dividendes, intérêts, PV mobilières, gains assurance-vie
-  - **ALORS** PFU par défaut : 12,8 % IR + PS, soit **31,4 %** pour les revenus perçus depuis le 01/01/2026 (PS 18,6 %) et 30 % pour ceux perçus en 2025 (PS 17,2 %) [referentiel: pfu_taux_global] ; assurance-vie, PEL et CEL : PS maintenus à 17,2 %
+  - **ALORS** PFU par défaut : 12,8 % IR + PS. Dividendes et intérêts, selon l'année de perception : **31,4 %** depuis le 01/01/2026 (PS 18,6 %), 30 % en 2025 (PS 17,2 %) [referentiel: pfu_taux_global]. Plus-values mobilières, selon l'année de réalisation : 31,4 % dès celles de 2025 (PS 18,6 %, probable) [referentiel: ps_revenus_patrimoine/2025]. Assurance-vie, PEL et CEL : PS maintenus à 17,2 %
   - **OPTION** barème progressif possible (option globale sur tous les revenus financiers de l'année)
+  - **FORME** option expresse, exercée lors du dépôt de la déclaration et au plus tard à la date limite de déclaration (CGI art. 200 A, 2, texte du 30/10/2026 : le mot « irrévocable » n'y figure plus)
+  - **RÉVOCABILITÉ** pour les revenus 2026 (déclarés en 2027) et suivants, le contribuable peut renoncer à l'option dans le délai de réclamation ou en cours de contrôle (service-public F34913, vérifiée le 15/04/2026 ; impots.gouv.fr « Les revenus mobiliers », modifiée le 08/04/2026 : « À compter de 2026, le caractère irrévocable de cette option a été supprimé ») ; changement issu de la LF 2026 (probable : les pages officielles lues ne citent pas l'article de loi) ; revenus 2025 et antérieurs : renonciation non prévue par ces sources (à vérifier)
+  - **ATTENTION** l'option distincte pour les plus-values sur actifs numériques reste « expresse et irrévocable » (CGI art. 200 C, texte du 30/10/2026)
   - **SI** option barème + dividendes → abattement 40 % sur les dividendes
   - **SI** TMI ≤ 11 % → option barème avantageuse
   - **SI** TMI ≥ 30 % → PFU généralement plus avantageux
+- **SOURCE** CGI art. 200 A, 1 et 2, et art. 200 C (texte du 30/10/2026) ; service-public F34913
 
 ### C3 — Prélèvements sociaux (2025 et 2026)
 
@@ -235,7 +241,7 @@
 
 ### C5 — CDHR (Contribution Différentielle sur les Hauts Revenus, CGI art. 224)
 
-- **DURÉE** créée pour les revenus 2025 (LF 2025), prorogée par la LF 2026 jusqu'à l'année où le déficit public passe sous 3 % du PIB (probable : sources secondaires ; le texte de l'art. 224 en vigueur ne fixe pas d'année de fin)
+- **DURÉE** créée pour les revenus 2025 (LF 2025), prorogée par la LF 2026 jusqu'à l'imposition des revenus de l'année au titre de laquelle le déficit du budget général passe sous 3 % du PIB (BOFiP BOI-IR-CDHR, § 10, publié le 30/06/2026 ; voir GFPL-146)
 
 - **SI** RFR retraité > 250 000 € (célibataire) OU > 500 000 € (couple)
   **ET** IR + CEHR < 20 % du RFR retraité
@@ -412,16 +418,31 @@
 - **DÉCOTE** patrimoine net taxable P entre 1 300 000 € et 1 400 000 € : IFI réduit de 17 500 € − 1,25 % × P (CGI art. 977, 2). Exemple : P = 1 350 000 € → barème 2 850 €, décote 625 €, IFI 2 225 €
 - **DÉMEMBREMENT** l'usufruitier déclare la pleine propriété (CGI art. 968), sauf exceptions de cet article
 - **PLAFONNEMENT** IFI + IR ≤ 75 % des revenus de l'année précédente
-- **SOURCE** PAT-013, PAT-014, IFI-002 (Correction), M6
+- **SOURCE** PAT-013, PAT-014, IFI-002, M6
 
 ### F9 - Pacte Dutreil (CGI art. 787 B)
 
 - **EFFET** exonération de droits de mutation à titre gratuit à hauteur de 75 % de la valeur des titres transmis (donation ou succession)
-- **CONDITIONS** engagement collectif de conservation d'au moins 2 ans en cours au jour de la transmission (ou réputé acquis) ; engagement individuel de chaque héritier ou donataire de **6 ans** (texte en vigueur depuis la LF 2026 ; 4 ans auparavant) ; fonction de direction exercée par l'un des signataires ou bénéficiaires
+- **CONDITIONS** engagement collectif de conservation d'au moins 2 ans en cours au jour de la transmission (ou réputé acquis) ; engagement individuel de chaque héritier ou donataire de **6 ans** à compter de la fin de l'engagement collectif ; activité principale ou fonction de direction exercée par l'un des signataires ou bénéficiaires pendant l'engagement collectif et les 3 ans qui suivent la transmission
+- **DATES** 6 ans pour les transmissions (donations ou décès) depuis le 21/02/2026, 4 ans pour les transmissions antérieures (loi n° 2026-103, art. 8 ; BOFiP ACTU-2026-00114 du 10/08/2026)
 - **AUCUNE CONDITION DE PARENTÉ** : le bénéficiaire n'a pas à être un descendant
-- **EXCLUSIONS (LF 2026)** la fraction de valeur correspondant aux biens non affectés à l'activité : chasse, pêche, véhicules de tourisme, yachts, bateaux de plaisance, aéronefs, bijoux, métaux précieux, objets d'art, chevaux de course, vins et alcools, logements
-- **ATTENTION** date d'application de ces changements aux transmissions et sort des pactes déjà signés : à vérifier avant tout conseil ; montage à faire valider par un notaire ou un avocat fiscaliste
-- **SOURCE** TRM-003 (Correction), RISK-008 ; CGI art. 787 B, texte du 30/10/2026
+- **EXCLUSIONS (LF 2026, transmissions depuis le 21/02/2026)** la fraction de valeur des titres qui représente des biens non affectés exclusivement à l'activité pendant au moins 3 ans avant la transmission et jusqu'à la fin de l'engagement individuel : chasse, pêche, véhicules de tourisme, yachts, bateaux de plaisance, aéronefs, bijoux, métaux précieux, objets d'art, de collection ou d'antiquité, chevaux de course ou de concours, vins et alcools, logements et résidences
+- **CUMUL** donation en pleine propriété par un donateur de moins de 70 ans : réduction de 50 % des droits (CGI art. 790, I)
+- **RUPTURE** droits exonérés exigibles avec intérêt de retard (CGI art. 1840 G ter, I) ; exceptions et détail : 04 RISK-008
+- **ATTENTION** montage à faire valider par un notaire ou un avocat fiscaliste
+- **SOURCE** TRM-003, RISK-008 ; CGI art. 787 B, 790 et 1840 G ter, texte du 30/10/2026 ; cas de test EV-041
+
+### F10 - Taxe sur les holdings patrimoniales (CGI art. 235 ter C)
+
+- **SI** société soumise à l'IS (de plein droit ou sur option), ou société étrangère équivalente, qui remplit à la clôture de l'exercice les trois conditions suivantes :
+  - valeur vénale de l'ensemble de ses actifs ≥ 5 000 000 € ;
+  - une personne physique détient au moins 50 % des droits de vote ou des droits financiers, ou y exerce en fait le pouvoir de décision (le conjoint, le partenaire de PACS, le concubin, les ascendants, les descendants et les frères et sœurs comptent comme une seule personne) ;
+  - revenus passifs (dividendes, intérêts, redevances, droits d'auteur, loyers, produits de cession des biens qui les génèrent) > 50 % des produits d'exploitation et financiers de l'exercice
+  - **ALORS** taxe de **20 %** sur la valeur vénale, à la clôture, des actifs suivants : biens affectés à la chasse ou à la pêche ; véhicules non affectés à une activité professionnelle, véhicules de tourisme, yachts, bateaux de plaisance, aéronefs ; bijoux et métaux précieux ; chevaux de course ou de concours ; vins et alcools ; logements dont la personne physique se réserve la jouissance (occupés gratuitement ou pour un loyer inférieur au prix du marché, ou loués fictivement), diminués de certaines dettes d'acquisition
+  - **SAUF** la part de ces actifs affectée à une activité industrielle, commerciale, artisanale, agricole ou libérale (de la société, d'une société liée ou de la personne physique, dans les conditions de l'art. 975)
+  - **EFFETS** taxe non déductible de l'IS ; société étrangère : taxe due par les personnes physiques domiciliées en France, sur leur déclaration de revenus, sauf si elles justifient que le choix du siège n'a pas pour but principal de contourner la loi fiscale française
+- **ATTENTION** taxe créée par la LF 2026 (rapport d'information du Sénat n° 760 du 17/06/2026) ; premiers exercices concernés : à vérifier, aucune source officielle lue sur la date d'application ; ne pas confondre avec les exclusions du Pacte Dutreil (F9), dont la liste est proche ; à faire valider par un avocat fiscaliste
+- **SOURCE** CGI art. 235 ter C, texte du 30/10/2026 ; pas de règle dédiée dans le corpus
 
 ---
 
@@ -437,8 +458,9 @@
 - **SI** option de ne PAS déduire les versements
   - **ALORS** choix irrévocable au moment du versement; sortie capital: plus-values soumises au PFU uniquement
 - **SEUIL** PASS 2025 = 47 100 € ; PASS 2026 = 48 060 € [referentiel: PASS]
+- **PLAFOND SALARIÉ (versements 2026)** au minimum 4 710 € [referentiel: per_plafond_salarie_plancher/2026], au maximum 37 680 € [referentiel: per_plafond_salarie_max/2026], diminué de l'épargne retraite professionnelle déjà déduite ; le plafond personnel figure sur l'avis d'impôt
 - **PLAFOND TNS (art. 154 bis, II, 1°)** 10 % du bénéfice imposable dans la limite de 8 PASS, plus 15 % de la fraction comprise entre 1 et 8 PASS ; minimum 10 % du PASS. Exemple revenus 2025 : bénéfice 95 000 € → 9 500 + 15 % × (95 000 − 47 100) = 16 685 €
-- **ATTENTION LF 2026** versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9) ; fraction non utilisée du plafond du revenu global reportable sur les cinq années suivantes à compter de l'imposition des revenus 2026, trois ans auparavant (LF 2026, art. 10 ; BOFiP ACTU-2026-00106 du 10/08/2026)
+- **ATTENTION LF 2026** versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9) ; fraction non utilisée du plafond du revenu global reportable sur les cinq années suivantes pour les plafonds de 2026 et suivants, sur trois ans pour les plafonds antérieurs (LF 2026, art. 10, non rétroactif ; BOFiP ACTU-2026-00106 du 10/08/2026) : en 2026, seuls les reliquats de 2023 à 2025 s'ajoutent au plafond de l'année ; voir GFPL-168
 - **SORTIE** en rente ou en capital au choix (sauf compartiment cotisations obligatoires = rente uniquement)
 - **SOURCE** GFPL-165 à GFPL-174 (M2), PAT-020, PAT-021 (M6)
 
@@ -504,29 +526,32 @@
 
 ## MODULE I — CONSEIL EN GESTION DE PATRIMOINE (Méthode)
 
-### I1 — Audit patrimonial: 5 dimensions obligatoires
+> Méthode générale de collecte des faits. Elle ne repose sur aucune règle du corpus et ne fixe aucun chiffre. Les règles applicables se trouvent dans les branches citées, qui reposent sur des textes.
 
-Avant toute préconisation, auditer systématiquement:
+### I1 - Faits à réunir avant une préconisation patrimoniale
 
-1. **D1 Situation juridique** Mode de conjugalité, composition familiale, modes de détention des biens (PP, démembrement, indivision, SCI)
-2. **D2 Situation patrimoniale** Inventaire des actifs (immo, financiers, assurantiels, professionnels) et passifs (dettes)
-3. **D3 Situation assurantielle/sociale** Couverture risques vie (décès, invalidité, dépendance), prévoyance, retraite attendue
-4. **D4 Situation fiscale** IR (tranches effectives), IFI, prélèvements sociaux, niches fiscales utilisées
-5. **D5 Situation financière** Capacité d'épargne = Revenus − Dépenses consommation − Impôts − Frais financiers − Primes assurance
+1. **Situation juridique** mode de conjugalité, enfants (communs ou non), modes de détention des biens (pleine propriété, démembrement, indivision, SCI) : branches F1, F2, F3, F7
+2. **Situation patrimoniale** actifs (immobilier, financiers, assurance-vie, professionnels) et dettes : branches B, F6, F8, F10
+3. **Retraite et prévoyance** épargne retraite en cours, âge des versements, contrats d'assurance-vie et âge des primes : branches F5, G1, G2
+4. **Situation fiscale** année des revenus, TMI, RFR, IFI, prélèvements sociaux, niches déjà utilisées : branches C1 à C5, F8, H1
+5. **Situation financière** capacité d'épargne = revenus − dépenses courantes − impôts − frais financiers − primes d'assurance (identité comptable, sans source normative)
 
-- **SOURCE** CGP-004, CGP-006, M7
+- **SI** un de ces faits manque et change la règle applicable
+  - **ALORS** le demander ou poser l'hypothèse explicitement avant de répondre
+- **SOURCE** aucune règle source : méthode générale
 
-### I2 — Objectifs par étape du cycle de vie
+### I2 - Objectif exprimé : branches à parcourir
 
-| Étape | Priorités patrimoniales |
+| Objectif | Branches |
 |---|---|
-| Entrée dans la vie active | Choisir mode de conjugalité; premier achat RP; constitution capital |
-| Développement familial | Capital + assurance-vie; protection conjoint (donation entre époux); début épargne retraite |
-| Maturité professionnelle | Optimisation fiscale (IR, IFI); SCI; financement études enfants; fortifier retraite |
-| Terme vie active / Retraite | Revenus complémentaires; liquidité du patrimoine; organiser transmission |
-| Vie longue à la retraite | Couverture dépendance/santé; concilier revenus et transmission |
+| Protéger le conjoint ou le partenaire | F1, F2, F3, F5 |
+| Transmettre aux enfants de son vivant | F4, H3, F9 si entreprise |
+| Préparer la retraite | G1, G2 |
+| Réduire l'IR ou l'IFI | C1 à C5, F8, H1, H2 |
+| Investir en immobilier locatif | B1 à B9, F7 |
+| Détenir des actifs via une société | F7, F10 |
 
-- **SOURCE** CGP-005, M7
+- **SOURCE** aucune règle source : table d'orientation vers les branches du moteur
 
 ---
 
@@ -546,7 +571,7 @@ Avant toute préconisation, auditer systématiquement:
 | Seuil IFI | 1 300 000 € | 1 300 000 € [referentiel: seuil_ifi] |
 | Seuil CEHR (célibataire) | 250 000 € RFR | 250 000 € (CGI art. 223 sexies, texte du CGI au 30/10/2026) |
 | Seuil CEHR (couple) | 500 000 € RFR | 500 000 € (CGI art. 223 sexies, texte du CGI au 30/10/2026) |
-| Seuil CDHR (célibataire / couple) | 250 000 € / 500 000 € RFR retraité | 250 000 € / 500 000 € (CGI art. 224, texte du CGI au 30/10/2026) ; CDHR prorogée par la LF 2026 (probable) |
+| Seuil CDHR (célibataire / couple) | 250 000 € / 500 000 € RFR retraité | 250 000 € / 500 000 € (CGI art. 224, texte du CGI au 30/10/2026) ; CDHR prorogée par la LF 2026 (BOFiP BOI-IR-CDHR, § 10) |
 | Plafond PEA | 150 000 € ; plafond commun PEA + PEA-PME de 225 000 € (probable : à lire comme un total, pas comme 150 000 + 225 000) | à vérifier (Code monétaire et financier, hors corpus) |
 | Abattement assurance-vie (avant 70 ans) | 152 500 € / bénéficiaire | 152 500 € [referentiel: abattement_av_avant_70] |
 | Abattement assurance-vie (après 70 ans) | 30 500 € global | 30 500 € (CGI art. 757 B, texte du CGI au 30/10/2026) |
@@ -562,4 +587,4 @@ Avant toute préconisation, auditer systématiquement:
 
 ---
 
-*Dernière mise à jour : 2026-11-01 (lot 1 de l'audit : prélèvements sociaux et PFU 2026, micro-BIC 2026, LMNP, PER). Sources : M1 à M8, éditions 2022-2025 ; referentiel_parametres.json pour les millésimes 2026*
+*Dernière mise à jour : 2026-11-01 (lot 1 de l'audit : prélèvements sociaux et PFU 2026, micro-BIC 2026, LMNP, PER ; lot 2 : statut du bailleur privé (B9), Pacte Dutreil (F9) ; lot 3 : option pour le barème (C2), taxe sur les holdings patrimoniales (F10), module I réécrit sans renvoi aux règles CGP retirées). Sources : M1 à M8, éditions 2022-2025 ; referentiel_parametres.json pour les millésimes 2026 ; texte du CGI au 30/10/2026*

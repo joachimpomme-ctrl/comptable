@@ -9,9 +9,16 @@ Etapes :
                                                                         -> remplace le texte de ces articles
      (dans le MD et dans le JSONL ChatGPT ; mettre a jour ensuite l'en-tete de source du MD)
 
-Etats : IDENTIQUE (texte inchange), COUPE (le corpus n'a que le debut du texte), DIFFERENT (a relire :
-modification du texte ou tableau mis en page autrement). Les tableaux (art. 194, 669, 777) sont mal
-restitues par pdftotext : ne pas les remplacer sans relecture.
+Etats : IDENTIQUE (memes mots et chiffres, dans le meme ordre), IDENTIQUE HORS ESPACES (seuls des espaces
+different, par exemple un mot accole a la cellule voisine dans l'export), COUPE (le corpus n'a que le debut
+du texte), DIFFERENT (a relire : modification du texte), ABSENT DE L'EXPORT. La comparaison ignore les retours
+a la ligne, les espaces multiples et la mise en tableau Markdown du corpus (caracteres | et lignes |---|).
+La colonne jsonl verifie que le JSONL ChatGPT porte exactement le meme texte que le MD.
+
+Les tableaux (art. 194, 293 B, 669, 777, 977, 1609 nonies G) sont mal restitues par pdftotext et ont ete
+mis en tableau a la main dans le corpus : --remplacer refuse ces articles (les refaire a la main, puis
+relancer la comparaison). Chaque article porte la ligne « **Version du texte :** » et le JSONL le champ
+version_texte : les mettre a jour avec la date du nouvel export.
 """
 import json
 import re
@@ -63,8 +70,12 @@ def parse(raw):
     return arts
 
 
+SEPARATEUR = re.compile(r"^\|(?:\s*:?-{3,}:?\s*\|)+\s*$", re.M)
+
+
 def _norm(s):
-    return re.sub(r"\s+", " ", s).strip()
+    """Espaces et retours a la ligne reduits ; mise en tableau Markdown (| et lignes |---|) ignoree."""
+    return re.sub(r"\s+", " ", SEPARATEUR.sub("", s).replace("|", " ")).strip()
 
 
 def blocs_corpus(md):
@@ -78,18 +89,31 @@ def main():
     arts = parse(open(sys.argv[1], encoding="utf-8").read())
     md = MD.read_text(encoding="utf-8")
     if "--remplacer" not in sys.argv:
-        for num, ancien in blocs_corpus(md):
+        jsonl = {}
+        for ligne in JSONL.read_text(encoding="utf-8").splitlines():
+            if ligne.strip():
+                e = json.loads(ligne)
+                jsonl[e["article"].replace("CGI Art. ", "").strip()] = e.get("texte_complet")
+        blocs = blocs_corpus(md)
+        for num, ancien in blocs:
             num = num.strip()
             neuf = arts.get(num)
             if neuf is None:
                 etat = "ABSENT DE L'EXPORT"
             elif _norm(ancien) == _norm(neuf):
                 etat = "IDENTIQUE"
+            elif _norm(ancien).replace(" ", "") == _norm(neuf).replace(" ", ""):
+                etat = "IDENTIQUE HORS ESPACES"
             elif _norm(neuf).startswith(_norm(ancien)[:-40]):
                 etat = "COUPE"
             else:
                 etat = "DIFFERENT"
-            print(f"{num:18} {etat:18} corpus={len(ancien):6} export={len(neuf or ''):6}")
+            j = "ok" if jsonl.get(num) == ancien else ("ABSENT" if num not in jsonl else "ECART")
+            print(f"{num:18} {etat:22} corpus={len(ancien):6} export={len(neuf or ''):6} jsonl={j}")
+        orphelins = sorted(set(jsonl) - {n.strip() for n, _ in blocs})
+        if orphelins:
+            print("Articles du JSONL absents du MD : " + ", ".join(orphelins))
+        print(f"{len(blocs)} articles dans le MD, {len(jsonl)} dans le JSONL.")
         return 0
     cibles = [a.replace("-", " ") if not re.match(r"^\d+-\d", a) else a for a in sys.argv[sys.argv.index("--remplacer") + 1:]]
     for num in cibles:
@@ -97,6 +121,8 @@ def main():
         m = pat.search(md)
         if not m or num not in arts:
             sys.exit(f"Article {num} introuvable dans le corpus ou dans l'export.")
+        if SEPARATEUR.search(m.group(2)):
+            sys.exit(f"Article {num} : tableau mis en forme dans le corpus, a remplacer a la main.")
         md = md[:m.start(2)] + arts[num] + md[m.end(2):]
     MD.write_text(md, encoding="utf-8")
     lignes = []

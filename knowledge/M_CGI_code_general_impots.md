@@ -1,19 +1,22 @@
 # Module M_CGI — Code Général des Impôts
 
 Extraction ciblée des articles pertinents pour comptabilité, fiscalité, patrimoine.
-Source : CGI Légifrance. Export du 30/10/2026 (dernière modification du code le 31/10/2026) pour 30 articles réextraits le 2026-11-01 (22 qui étaient coupés à 4 000 caractères, 92 et 102 ter modifiés depuis mai, 6 nettoyés de titres parasites) ; export du 01/05/2026 pour les 21 autres, dont le texte est identique au 30/10/2026 (seuls les tableaux des art. 194, 669 et 777 sont mis en page différemment). 12 articles ajoutés le 2026-11-01 depuis l'export du 30/10/2026 : 50-0, 150 VC, 200 A, 219, 223 sexies, 224, 293 B, 757 B, 790 A bis, 968, 977, 1609 nonies G.
+Source : CGI, Légifrance. Texte de chaque article : export Légifrance du CGI du 30/10/2026 (document généré le 30/10/2026, dernière modification du code le 31/10/2026) ; la version du texte est rappelée sous chaque article. Historique : 51 articles d'origine réextraits ou contrôlés sur cet export le 2026-11-01 ; 12 ajoutés au lot 2 (50-0, 150 VC, 200 A, 219, 223 sexies, 224, 293 B, 757 B, 790 A bis, 968, 977, 1609 nonies G) ; 10 ajoutés le 2026-11-01 (32, 39 C, 39 duodecies, 150 V, 238 quindecies, 239, 302 septies A bis, 790 E, 796-0 bis, 978). Mise en forme du 2026-11-01 : tableaux des art. 194, 293 B, 669, 777, 977 et 1609 nonies G présentés ligne à ligne, lignes vides de saut de page retirées ; mots et chiffres inchangés.
 
 **Statut :** `sourced` — texte légal officiel
 
-**Version :** v5, 2026-11-01 (63 articles, texte intégral)
+**Version :** v6, 2026-11-01 (73 articles, texte intégral)
 
 **Note :** Art. L64 LPF (abus de droit) est dans le Livre des Procédures Fiscales, hors scope CGI.
 
 ---
 
+
 ## Article 14 — Revenus Fonciers
 
 **Source :** CGI Art. 14 | **Module :** revenus_fonciers | **Tags :** revenus_fonciers, definition
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 14
@@ -37,6 +40,8 @@ carrières, mines et tourbières, les étangs, les salines et marais salants.
 
 **Source :** CGI Art. 28 | **Module :** revenus_fonciers | **Tags :** revenus_fonciers, revenu_net, regime_reel
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 28
 Le revenu net foncier est égal à la différence entre le montant du revenu brut et le total des charges de la
@@ -48,6 +53,8 @@ propriété.
 ## Article 29 — Revenus Fonciers
 
 **Source :** CGI Art. 29 | **Module :** revenus_fonciers | **Tags :** revenus_fonciers, revenu_brut
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 29
@@ -68,17 +75,10 @@ tréfoncières ou autres redevances analogues ayant leur origine dans le droit d
 
 **Source :** CGI Art. 30 | **Module :** revenus_fonciers | **Tags :** revenus_fonciers, charges
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 30
- 
- 
- 
- 
- 
- 
- 
- 
-
 Sous réserve des dispositions de l'article 15-II, le revenu brut des immeubles ou parties d'immeubles dont
 le propriétaire se réserve la jouissance est constitué par le montant du loyer qu'ils pourraient produire
 s'ils étaient donnés en location. Il est évalué par comparaison avec les immeubles ou parties d'immeubles
@@ -92,6 +92,8 @@ chasse.
 ## Article 31 — Revenus Fonciers
 
 **Source :** CGI Art. 31 | **Module :** revenus_fonciers | **Tags :** revenus_fonciers, charges_deductibles, interets_emprunt
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 31
@@ -647,9 +649,64 @@ II. – (Transféré sous l'article 156 II 1° ter).
 
 ---
 
+## Article 32 — Revenus Fonciers
+
+**Source :** CGI Art. 32 | **Module :** revenus_fonciers | **Tags :** revenus_fonciers, micro_foncier, 15000, abattement_30pc, option_regime_reel
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 32
+1. Par dérogation aux dispositions de l'article 31, lorsque le montant du revenu brut annuel défini aux articles
+29 et 30 n'excède pas 15 000 €, le revenu imposable correspondant est fixé à une somme égale au montant de
+ce revenu brut diminué d'un abattement de 30 %.
+Dans le cas où le contribuable détient des parts de fonds de placement immobilier mentionnés à l'article
+239 nonies ou des parts de sociétés, autres que celles visées à l'article 1655 ter, qui donnent en location
+des immeubles nus et dont les résultats sont imposés dans les conditions prévues à l'article 8, la limite de
+15 000 € est appréciée en tenant compte du montant du revenu brut annuel défini aux articles 29 et 30 à
+proportion de ses droits dans les bénéfices comptables de ces sociétés ou de ces fonds. Le revenu imposable
+est déterminé en tenant compte de cette quote-part.
+2. Les dispositions du 1 s'appliquent à l'ensemble des revenus fonciers perçus par le foyer fiscal. Les
+contribuables concernés portent directement le montant du revenu brut annuel sur la déclaration prévue à
+l'article 170.
+Les dispositions du 1 ne sont pas applicables lorsque le contribuable ou l'un des membres du foyer fiscal est
+propriétaire d'un ou plusieurs biens appartenant aux catégories suivantes :
+a) Monuments historiques et assimilés ou immeubles en nue-propriété, donnés en location et visés au 3° du I
+de l'article 156 ;
+b) (Abrogé) ;
+c) Logements au titre desquels est demandé le bénéfice de la déduction prévue au k du 1° du I de l'article 31
+ou de l'une des déductions au titre de l'amortissement prévues aux f, g, h, i et j du 1° du I de l'article 31 ;
+d) Parts de sociétés, autres que celles visées à l'article 1655 ter, qui donnent en location des immeubles nus
+et dont les résultats sont imposés dans les conditions prévues à l'article 8 lorsque leur détenteur n'est pas
+propriétaire d'un immeuble donné en location nue ;
+e) Parts de sociétés, autres que celles visées à l'article 1655 ter, et parts de fonds de placement immobilier
+mentionnés à l'article 239 nonies, qui donnent en location un immeuble visé aux a et c ou qui font l'objet de
+la déduction au titre de l'amortissement prévue à l'article 31 bis et dont les résultats sont imposés dans les
+conditions prévues à l'article 8 ;
+f) Logements au titre desquels est demandé le bénéfice de la déduction prévue au m ou au o du 1° du I de
+l'article 31 ;
+g) Parts de fonds de placement immobilier mentionnés à l'article 239 nonies lorsque leur détenteur n'est pas
+propriétaire d'un immeuble donné en location nue ;
+h) Logements au titre desquels est demandé le bénéfice de la réduction d'impôt prévue à l'article 199 tricies.
+3. L'année au cours de laquelle le seuil prévu au 1 est dépassé ou celle au titre de laquelle l'une des
+exclusions mentionnées au 2 est applicable, le revenu net foncier est déterminé dans les conditions prévues
+aux articles 28 et 31 ;
+4. Les contribuables qui souhaitent renoncer au bénéfice des dispositions du 1 peuvent opter pour la
+détermination de leur revenu net foncier dans les conditions prévues aux articles 28 et 31.
+L'option est exercée pour une période de trois ans dans le délai prévu pour le dépôt de la déclaration
+mentionnée à l'article 170 de la première année au titre de laquelle elle s'applique. Irrévocable durant cette
+période, elle est valable tant que le contribuable reste de manière continue dans le champ d'application du 1.
+```
+
+---
+
 ## Article 156 — Revenus Fonciers
 
 **Source :** CGI Art. 156 | **Module :** revenus_fonciers | **Tags :** deficit_foncier, 10700, imputation_revenu_global, report_10_ans
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 156
@@ -831,7 +888,9 @@ par l'article 154 bis-0 A.
 
 ## Article 35 — Bic Location Meublee
 
-**Source :** CGI Art. 35 | **Module :** BIC_location_meublee | **Tags :** BIC, location_meublee, LMNP, LMP, regime_micro
+**Source :** CGI Art. 35 | **Module :** BIC_location_meublee | **Tags :** BIC, location_meublee, LMNP, LMP, marchands_de_biens
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 35
@@ -840,14 +899,6 @@ sur le revenu, les bénéfices réalisés par les personnes physiques désignée
 1° Personnes qui, habituellement, achètent en leur nom, en vue de les revendre, des immeubles, des fonds de
 commerce, des actions ou parts de sociétés immobilières ou qui, habituellement, souscrivent, en vue de les
 revendre, des actions ou parts créées ou émises par les mêmes sociétés.
- 
- 
- 
- 
- 
- 
- 
-
 1° bis Personnes qui, à titre habituel, achètent des biens immeubles, en vue d'édifier un ou plusieurs
 bâtiments et de les vendre, en bloc ou par locaux ;
 2° Personnes se livrant à des opérations d'intermédiaire pour l'achat, la souscription ou la vente des biens
@@ -880,7 +931,9 @@ III. - Pour l'application du présent article, les donations entre vifs ne sont 
 
 ## Article 39 — Bic Amortissements
 
-**Source :** CGI Art. 39 | **Module :** BIC_amortissements | **Tags :** BIC, charges_deductibles, amortissements, plafonnement_39C, LMNP
+**Source :** CGI Art. 39 | **Module :** BIC_amortissements | **Tags :** BIC, charges_deductibles, amortissements, provisions, LMNP
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 39
@@ -1331,9 +1384,203 @@ consent les aides.
 
 ---
 
+## Article 39 C — Bic Amortissements
+
+**Source :** CGI Art. 39 C | **Module :** BIC_amortissements | **Tags :** BIC, amortissements, biens_donnes_en_location, plafonnement_amortissement, LMNP
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 39 C
+I. L'amortissement des biens donnés en location ou mis à disposition sous toute autre forme est réparti sur la
+durée normale d'utilisation suivant des modalités fixées par décret en conseil d'Etat.
+Par dérogation aux dispositions du premier alinéa, les entreprises donnant en location des biens dans
+les conditions prévues aux 1 et 2 de l'article L. 313-7 du code monétaire et financier et celles pratiquant
+des opérations de location avec option d'achat peuvent, sur option, répartir l'amortissement de ces biens
+sur la durée des contrats de crédit-bail ou de location avec option d'achat correspondants. La dotation à
+l'amortissement de chaque exercice est alors égale à la fraction du loyer acquise au titre de cet exercice, qui
+correspond à l'amortissement du capital engagé pour l'acquisition des biens donnés à bail.
+Si l'option mentionnée au deuxième alinéa est exercée, elle s'applique à l'ensemble des biens affectés à
+des opérations de crédit-bail ou de location avec option d'achat. Toutefois, les sociétés mentionnées au I
+de l'article 30 de la loi n° 80-531 du 15 juillet 1980 relative aux économies d'énergie et à l'utilisation de la
+chaleur pourront exercer cette option contrat par contrat.
+II.-1. En cas de location ou de mise à disposition sous toute autre forme de biens situés ou exploités ou
+immatriculés en France ou dans un autre Etat partie à l'accord sur l'Espace économique européen qui a
+conclu avec la France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion
+fiscales, consentie par une société soumise au régime prévu à l'article 8, par une copropriété visée à l'article
+8 quater ou 8 quinquies ou par un groupement au sens des articles 239 quater, 239 quater B, 239 quater C ou
+239 quater D, le montant de l'amortissement de ces biens ou des parts de copropriété est admis en déduction
+du résultat imposable. Pendant une période de trente-six mois décomptée à partir du début de la mise en
+location ou de la mise à disposition, cet amortissement est admis en déduction, au titre d'un même exercice,
+dans la limite de trois fois le montant des loyers acquis ou de la quote-part du résultat de la copropriété.
+La fraction des déficits des sociétés, copropriétés ou groupements mentionnés au premier alinéa
+correspondant au montant des dotations aux amortissements déduites, dans les conditions définies au même
+alinéa, au titre des douze premiers mois d'amortissement du bien est déductible à hauteur du quart des
+bénéfices imposables au taux d'impôt sur les sociétés de droit commun que chaque associé, copropriétaire,
+membre ou, le cas échéant, groupe au sens de l'article 223 A ou de l'article 223 A bis auquel il appartient
+retire du reste de ses activités.
+En cas de location ou de mise à disposition sous toute autre forme de biens situés ou exploités ou
+immatriculés dans un Etat qui n'est pas partie à l'accord sur l'Espace économique européen ou qui n'a pas
+conclu avec la France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion
+fiscales, consentie par les sociétés, copropriétés ou groupements mentionnés au premier alinéa, le montant
+de l'amortissement de ces biens ou parts de copropriété est admis en déduction du résultat imposable, au
+titre d'un même exercice, dans la limite du montant du loyer acquis, ou de la quote-part du résultat de la
+copropriété, diminué du montant des autres charges afférentes à ces biens ou parts.
+La limitation de l'amortissement prévue aux premier et troisième alinéas et du montant des déficits prévue au
+deuxième alinéa ne s'applique pas à la part de résultat revenant aux entreprises utilisatrices des biens, lorsque
+la location ou la mise à disposition n'est pas consentie indirectement par une personne physique.
+2. En cas de location ou de mise à disposition sous toute autre forme de biens consentie directement ou
+indirectement par une personne physique, le montant de l'amortissement de ces biens ou parts de copropriété
+est admis en déduction du résultat imposable, au titre d'un même exercice, dans la limite du montant du loyer
+acquis, ou de la quote-part du résultat de la copropriété, diminué du montant des autres charges afférentes à
+ces biens ou parts.
+3. L'amortissement régulièrement comptabilisé au titre d'un exercice et non déductible du résultat de cet
+exercice en application des 1 ou 2 peut être déduit du résultat des exercices suivants, dans les conditions et
+limites prévues par ces 1 ou 2.
+Lorsque le bien cesse d'être donné en location ou mis à disposition pendant un exercice, l'amortissement non
+déductible en application des 1 ou 2 et qui n'a pu être déduit selon les modalités prévues au premier alinéa
+est déduit du bénéfice de cet exercice. Si ce bénéfice n'est pas suffisant pour que la déduction puisse être
+intégralement opérée, l'excédent d'amortissement est reporté et déduit des bénéfices des exercices suivants.
+En cas de cession de ce bien, l'amortissement non déduit en application des 1 ou 2 majore la valeur nette
+comptable prise en compte pour le calcul de la plus-value ou de la moins-value de cession.
+La fraction des déficits non admise en déduction en application du deuxième alinéa du 1 peut être déduite du
+bénéfice des exercices suivants sous réserve de la limite prévue au même alinéa au titre des douze premiers
+mois d'amortissement du bien.
+```
+
+---
+
+## Article 39 duodecies — Plus Values Professionnelles
+
+**Source :** CGI Art. 39 duodecies | **Module :** plus_values_professionnelles | **Tags :** PV_professionnelles, court_terme, long_terme, actif_immobilise, BIC
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 39 duodecies
+1. Par dérogation aux dispositions de l'article 38, les plus-values provenant de la cession d'éléments de l'actif
+immobilisé sont soumises à des régimes distincts suivant qu'elles sont réalisées à court ou à long terme.
+2. Le régime des plus-values à court terme est applicable :
+a. Aux plus-values provenant de la cession d'éléments acquis ou créés depuis moins de deux ans. Le cas
+échéant, ces plus-values sont majorées du montant des amortissements expressément exclus des charges
+déductibles ainsi que de ceux qui ont été différés en méconnaissance des dispositions de l'article 39 B ;
+b. Aux plus-values réalisées à l'occasion de la cession d'éléments détenus depuis deux ans au moins, dans la
+mesure où elles correspondent à des amortissements déduits pour l'assiette de l'impôt. Le cas échéant, ces
+plus-values sont majorées du montant des amortissements expressément exclus des charges déductibles ainsi
+que de ceux qui ont été différés en contravention aux dispositions de l'article 39 B ;
+c. Aux plus-values réalisées à l'occasion de la cession de titres de sociétés établies dans un Etat ou territoire
+non coopératif au sens de l'article 238-0 A autre que ceux mentionnés au 2° du 2 bis du même article
+238-0 A détenus depuis deux ans au moins, sauf si la société détentrice de ces titres apporte la preuve que
+les opérations de la société établie hors de France dans laquelle est prise la participation correspondent à
+des opérations réelles qui n'ont ni pour objet ni pour effet de permettre, dans un but de fraude fiscale, la
+localisation de bénéfices dans un tel Etat ou territoire.
+3. Le régime des plus-values à long terme est applicable aux plus-values autres que celles définies au 2.
+4. Le régime des moins-values à court terme s'applique :
+a. aux moins-values subies lors de la cession de biens non amortissables détenus depuis moins de deux ans ;
+b. aux moins-values subies lors de la cession de biens amortissables, quelle que soit la durée de leur
+détention. Le cas échéant, ces moins-values sont diminuées du montant des amortissements expressément
+exclus des charges déductibles ainsi que de ceux qui ont été différés en contravention aux dispositions de
+l'article 39 B.
+5. Le régime des moins-values à long terme s'applique aux moins-values autres que celles définies au 4.
+6. Pour l'application du présent article, les cessions de titres compris dans le portefeuille sont réputées porter
+par priorité sur les titres de même nature acquis ou souscrits à la date la plus ancienne.
+Pour l'application de ces dispositions, les titres inscrits dans une comptabilité auxiliaire d'affectation qui sont
+soumis aux règles de l'article L. 134-4, de l'article L. 142-5, de l'article L. 143-7, du VII de l'article L. 144-2,
+de l'article L. 381-2 ou de l'article L. 441-8 du code des assurances, constituent un portefeuille distinct.
+Pour l'application des dispositions du premier alinéa, les titres reçus en rémunération d'un apport partiel
+d'actif ou d'une scission soumis au régime prévu à l'article 210 B et ceux qui sont acquis ou souscrits
+indépendamment de l'opération d'apport ou de scission constituent deux catégories distinctes de titres jusqu'à
+la fin du délai de trois ans prévu à l'article 210 B. Les cessions de titres intervenues dans ce délai sont
+réputées porter en priorité sur les titres acquis ou souscrits indépendamment de l'opération d'apport ou de
+scission.
+6 bis. Le régime fiscal des plus et moins-values à long terme prévu par le présent article et les articles
+suivants n'est pas applicable à la quote-part des profits distribués par un fonds de placement immobilier
+mentionné à l'article 239 nonies.
+6 ter. Le régime fiscal des plus et moins-values prévu au présent article s'applique aux cessions de parts d'un
+fonds de placement immobilier mentionné à l'article 239 nonies lorsque l'actif du fonds est, au moment de
+la cession des parts, constitué, pour plus de 50 % de sa valeur, par des immeubles auxquels sont affectés, en
+vue de leur location, des meubles meublants, biens d'équipement ou biens meubles affectés à ces immeubles
+et nécessaires au fonctionnement, à l'usage ou à l'exploitation de ces derniers par un tiers, mentionnés à
+l'article L. 214-34 du code monétaire et financier et si le porteur de parts est considéré comme exerçant à titre
+professionnel, au sens du IV de l'article 155 du présent code. Le montant de la plus-value est alors majoré
+des fractions d'amortissement théorique des immeubles déduites dans les conditions mentionnées au 2 du II
+de l'article 239 nonies et qui n'ont pas fait l'objet d'une réintégration en application du f du 1 du même II.
+7.
+DISPOSITIONS APPLICABLES AUX CONTRATS CONCLUS JUSQU'AU 31 DECEMBRE 1995.
+Le régime fiscal des plus-values prévu par le présent article et les articles suivants n'est pas applicable aux
+plus-values réalisées par les sociétés de crédit-bail ou plus généralement les sociétés qui ont pour objet social
+la location d'équipements, sur la vente des éléments de l'actif immobilisé faisant l'objet d'une location dans le
+cadre de leur activité.
+DISPOSITIONS APPLICABLES AUX CONTRATS CONCLUS A COMPTER DU 1er JANVIER 1996.
+Le régime fiscal des plus-values prévu par le présent article et les articles suivants n'est pas applicable aux
+plus-values réalisées :
+a. par les entreprises effectuant des opérations visées aux 1 et 2 de l'article L. 313-7 du code monétaire et
+financier lors de la cession des éléments de leur actif immobilisé faisant l'objet d'un contrat de crédit-bail ;
+b. par les sociétés qui ont pour objet social la location d'équipements lors de la cession des éléments de l'actif
+immobilisé faisant l'objet d'une location dans le cadre de leur activité.
+Ces dispositions ne s'appliquent que lorsque l'élément cédé a été préalablement loué avant d'être vendu et
+que l'acheteur est le locataire lui-même.
+8. En cas de cession par le prêteur ou le constituant initial de titres restitués à l'issue d'un prêt mentionné à
+l'article L. 211-22 du code monétaire et financier ou d'une remise en garantie réalisée dans les conditions
+prévues à l'article 38 bis-0 A bis, le délai de deux ans prévu aux 2 et 4 s'apprécie à compter de la date de la
+première inscription à son bilan des titres restitués.
+9. Lorsque la vente d'un élément de l'actif immobilisé est annulée ou résolue pendant un exercice postérieur
+à celui au cours duquel la vente est intervenue, le cédant inscrit à son bilan cet élément ainsi que les
+amortissements et provisions de toute nature y afférents tels qu'ils figuraient dans ses comptes annuels à la
+date de la cession.
+La somme correspondant au montant de la plus-value à long terme réalisée au titre de la vente de l'élément
+en cause est admise en déduction directement ou sous forme de provisions, selon le régime applicable aux
+moins-values à long terme.
+Il en est de même en cas de réduction du prix de cession postérieurement à la clôture de l'exercice au cours
+duquel la cession est réalisée. Dans ce cas, la perte correspondante est soumise au régime des moins-values
+à long terme dans la limite de la plus-value de cession qui a été considérée comme une plus-value à long
+terme.
+Lorsque la vente ayant donné lieu à la constatation d'une moins-value à long terme est annulée ou résolue, le
+profit qui en résulte est imposable selon le régime des plus-values à long terme.
+Ces dispositions sont applicables pour la détermination des résultats des exercices clos à compter du 31
+décembre 1992.
+10. Lorsqu'une société ou un organisme qui cesse d'être soumis à l'un des régimes mentionnés au premier
+alinéa du II de l'article 202 ter cède des éléments de l'actif immobilisé inscrits au bilan d'ouverture du
+premier exercice ou de la première période d'imposition dont les résultats sont soumis à l'impôt sur les
+sociétés, le délai de deux ans prévu aux 2 et 4 est apprécié à compter de la date d'ouverture de cet exercice
+ou de cette période d'imposition. La fraction de la plus-value correspondant aux amortissements visés au
+deuxième alinéa du II du même article est considérée comme à court terme pour l'application du b du 2.
+11. Les plus-values mentionnées au 1 sont minorées du montant résultant de l'engagement de partage dû en
+application des articles L. 23-11-1 à L. 23-11-4 du code de commerce.
+12. Le régime fiscal des plus ou moins-values prévu au présent article s'applique aux cessions de titres d'une
+société issue d'une opération de fusion ou de scission sans échange de titres au sens des 3° ou 4° du II de
+l'article L. 236-3 du code de commerce.
+Lorsque la plus ou moins-value mentionnée au premier alinéa du présent 12 relève du régime des plus ou
+moins-values à long terme, mais que les titres de la société absorbée ou scindée ont été acquis depuis moins
+de deux ans à la date de la cession, la plus ou moins-value correspondant à la quote-part de valeur de ces
+titres ajoutée à celle des titres de la société bénéficiaire des apports réalisés lors de l'opération de fusion ou
+de scission, est calculée distinctement. La plus ou moins-value ainsi calculée est considérée comme une plus
+ou moins-value à court terme.
+Lorsque la plus ou moins-value mentionnée au premier alinéa du présent 12 relève du régime des plus ou
+moins-values à court terme, mais que les titres de la société absorbée ou scindée, éligibles au régime des
+plus ou moins-values à long terme, ont été acquis depuis plus de deux ans à la date de la cession, la plus
+ou moins-value correspondant à la quote-part de valeur de ces titres ajoutée à celle des titres de la société
+bénéficiaire des apports réalisés lors de l'opération de fusion ou de scission est calculée distinctement. La
+plus ou moins-value ainsi calculée est considérée comme une plus ou moins-value à long terme.
+La plus ou moins-value correspondant à la quote-part de valeur des titres de la société absorbée ou scindée
+mentionnée aux deuxième et troisième alinéas du présent 12 est égale à la différence entre, d'une part, la
+fraction du prix de cession des titres mentionnés au premier alinéa du présent 12 obtenue après application
+du rapport entre la valeur vénale des titres de la société absorbée ou scindée et la somme de cette même
+valeur et de la valeur vénale des titres de la société absorbante ou bénéficiaire au jour de la fusion ou de la
+scission et, d'autre part, le prix de revient des titres de la société absorbée ou scindée.
+```
+
+---
+
 ## Article 92 — Bnc
 
 **Source :** CGI Art. 92 | **Module :** BNC | **Tags :** BNC, professions_liberales, definition, recettes
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 92
@@ -1371,7 +1618,9 @@ au V de la présente sous-section.
 
 ## Article 93 — Bnc
 
-**Source :** CGI Art. 93 | **Module :** BNC | **Tags :** BNC, micro_BNC, abattement_34pc
+**Source :** CGI Art. 93 | **Module :** BNC | **Tags :** BNC, regime_declaration_controlee, benefice_imposable, depenses_deductibles
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 93
@@ -1466,6 +1715,8 @@ L. 241-3 du même code, ces sommes et indemnités sont exonérées.
 
 **Source :** CGI Art. 95 | **Module :** BNC | **Tags :** BNC, charges_deductibles
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 95
 En ce qui concerne le mode de détermination du bénéfice à retenir dans les bases de l'impôt sur le revenu, les
@@ -1479,6 +1730,8 @@ le régime de la déclaration contrôlée du bénéfice net, soit sous le régim
 
 **Source :** CGI Art. 96 | **Module :** BNC | **Tags :** BNC, regime_declaration_controlee
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 96
 I. Les contribuables qui réalisent ou perçoivent des bénéfices ou revenus visés à l'article 92 sont
@@ -1487,18 +1740,6 @@ défini à l'article 102 ter.
 Peuvent également se placer sous ce régime les contribuables relevant du régime défini à l'article 102 ter
 lorsqu'ils sont en mesure de déclarer exactement le montant de leur bénéfice net et de fournir à l'appui de
 cette déclaration toutes les justifications nécessaires.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 II. (Abrogé).
 III. (Disposition devenue sans objet).
 ```
@@ -1508,6 +1749,8 @@ III. (Disposition devenue sans objet).
 ## Article 97 — Bnc
 
 **Source :** CGI Art. 97 | **Module :** BNC | **Tags :** BNC, declaration_2035
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 97
@@ -1521,6 +1764,8 @@ contenu est fixé par décret (1).
 ## Article 98 — Bnc
 
 **Source :** CGI Art. 98 | **Module :** BNC | **Tags :** BNC, comptabilite_recettes_depenses
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 98
@@ -1538,6 +1783,8 @@ procédures fiscales.
 ## Article 99 — Bnc
 
 **Source :** CGI Art. 99 | **Module :** BNC | **Tags :** BNC, recettes_tier_payant
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 99
@@ -1566,6 +1813,8 @@ dépenses de l'année au plus tard le dernier jour de celle-ci.
 
 **Source :** CGI Art. 100 | **Module :** BNC | **Tags :** BNC, SCP_associes
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 100
 Les officiers publics ou ministériels sont obligatoirement soumis au régime de la déclaration contrôlée en
@@ -1582,7 +1831,9 @@ concernant les indications de leur livre-journal ou de leur comptabilité.
 
 ## Article 102 ter — Bnc
 
-**Source :** CGI Art. 102 ter | **Module :** BNC | **Tags :** BNC, micro_BNC, seuils, 77700
+**Source :** CGI Art. 102 ter | **Module :** BNC | **Tags :** BNC, micro_BNC, seuils, 83600, abattement_34pc
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > **Note millésime :** texte en vigueur depuis le 01/07/2026 (décret n° 2026-562) : **83 600 € pour les revenus 2026-2028** ; le seuil était de 77 700 € pour les revenus 2023-2025. En cas d'écart entre un texte du corpus et `referentiel_parametres.json`, le référentiel prime [referentiel: seuil_micro_bnc].
 
@@ -1640,6 +1891,8 @@ des procédures fiscales.
 
 **Source :** CGI Art. 103 | **Module :** BNC | **Tags :** BNC, tenue_registres
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 103
 Sous réserve des dispositions de l'article 218 bis, le bénéfice imposable des associés en nom, des
@@ -1655,6 +1908,8 @@ des procédures fiscales.
 ## Article 83 — Revenus Salaries
 
 **Source :** CGI Art. 83 | **Module :** revenus_salaries | **Tags :** frais_reels, charges_deductibles, salaries, abattement_10pc
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 83
@@ -1783,38 +2038,29 @@ code du travail, ne peuvent donner lieu à aucune déduction d'intérêts d'empr
 
 **Source :** CGI Art. 194 | **Module :** bareme_IR | **Tags :** quotient_familial, parts_fiscales, enfants_a_charge
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Mise en forme du 2026-11-01 : le tableau du I est présenté ligne à ligne, chaque situation de famille avec son nombre de parts ; mots et chiffres identiques à l'export Légifrance du 30/10/2026.
+
 ```
 Article 194
 I. Le nombre de parts à prendre en considération pour la division du revenu imposable prévue à l'article 193
 est déterminé conformément aux dispositions suivantes :
-SITUATION DE FAMILLE
-NOMBRE DE PARTS
-Célibataire, divorcé ou veuf sans enfant à charge
-Marié sans enfant à charge
-Célibataire ou divorcé ayant un enfant à charge
-Marié ou veuf ayant un enfant à charge
-Célibataire ou divorcé ayant deux enfants à charge
-Marié ou veuf ayant deux enfants à charge
-Célibataire ou divorcé ayant trois enfants à charge
-Marié ou veuf ayant trois enfants à charge
-Célibataire ou divorcé ayant quatre enfants à charge
-Marié ou veuf ayant quatre enfants à charge
-Célibataire ou divorcé ayant cinq enfants à charge
-Marié ou veuf ayant cinq enfants à charge
-Célibataire ou divorcé ayant six enfants à charge
-1
-2
-1,5
-2,5
-2
-3
-3
-4
-4
-5
-5
-6
-6
+| SITUATION DE FAMILLE                                 | NOMBRE DE PARTS |
+|------------------------------------------------------|-----------------|
+| Célibataire, divorcé ou veuf sans enfant à charge    | 1               |
+| Marié sans enfant à charge                           | 2               |
+| Célibataire ou divorcé ayant un enfant à charge      | 1,5             |
+| Marié ou veuf ayant un enfant à charge               | 2,5             |
+| Célibataire ou divorcé ayant deux enfants à charge   | 2               |
+| Marié ou veuf ayant deux enfants à charge            | 3               |
+| Célibataire ou divorcé ayant trois enfants à charge  | 3               |
+| Marié ou veuf ayant trois enfants à charge           | 4               |
+| Célibataire ou divorcé ayant quatre enfants à charge | 4               |
+| Marié ou veuf ayant quatre enfants à charge          | 5               |
+| Célibataire ou divorcé ayant cinq enfants à charge   | 5               |
+| Marié ou veuf ayant cinq enfants à charge            | 6               |
+| Célibataire ou divorcé ayant six enfants à charge    | 6               |
 et ainsi de suite, en augmentant d'une part par enfant à charge du contribuable.
 Lorsque les époux font l'objet d'une imposition séparée en application du 4 de l'article 6, chacun d'eux est
 considéré comme un célibataire ayant à sa charge les enfants dont il assume à titre principal l'entretien. Dans
@@ -1834,19 +2080,6 @@ b) 0,25 part pour le premier et 0,5 part à compter du deuxième, lorsque par ai
 charge exclusive ou principale d'un enfant ;
 c) 0,5 part pour chacun des enfants, lorsque par ailleurs le contribuable assume la charge exclusive ou
 principale d'au moins deux enfants.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 Pour l'application des dispositions du premier alinéa, sont assimilées à des enfants à charge les personnes
 considérées comme étant à la charge du contribuable en vertu de l'article 196 A bis.
 II. Pour l'imposition des contribuables célibataires ou divorcés qui vivent seuls, le nombre de parts prévu
@@ -1863,6 +2096,8 @@ de justice pour l'entretien desdits enfants.
 ## Article 195 — Bareme Ir
 
 **Source :** CGI Art. 195 | **Module :** bareme_IR | **Tags :** quotient_familial, parent_isole, demi_parts_supplementaires
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 195
@@ -1895,19 +2130,6 @@ ainsi que des personnes titulaires de la carte du combattant au moment de leur d
 quart de part pour chaque enfant réputé à charge égale de l'un et l'autre de ses parents, titulaire de la carte “
 mobilité inclusion ” portant la mention “ invalidité ” prévue à l'article L. 241-3 du code de l'action sociale et
 des familles.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 3. Le quotient familial prévu à l'article 194 est augmenté d'une demi-part pour les contribuables mariés,
 lorsque l'un ou l'autre des conjoints remplit l'une des conditions fixées aux c, d et d bis du 1.
 4. Le quotient familial prévu à l'article 194 est augmenté d'une part pour les contribuables mariés invalides
@@ -1928,6 +2150,8 @@ premier alinéa.
 ## Article 197 — Bareme Ir
 
 **Source :** CGI Art. 197 | **Module :** bareme_IR | **Tags :** IR, bareme, tranches, TMI, 11pc, 30pc, 41pc, 45pc, quotient_familial
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 197
@@ -1960,20 +2184,6 @@ plafonnement.
 Les contribuables veufs ayant des enfants à charge qui bénéficient d'une part supplémentaire de quotient
 familial en application du I de l'article 194 ont droit à une réduction d'impôt égale à 2 011 € pour cette
 part supplémentaire lorsque la réduction de leur cotisation d'impôt est plafonnée en application du premier
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 alinéa du présent 2. Cette réduction d'impôt ne peut toutefois excéder l'augmentation de la cotisation d'impôt
 résultant du plafonnement.
 3. Le montant de l'impôt résultant de l'application des dispositions précédentes est réduit de 30 %,
@@ -1996,6 +2206,8 @@ II. – (Abrogé)
 ## Article 200 — Reductions Impot
 
 **Source :** CGI Art. 200 | **Module :** reductions_impot | **Tags :** dons_associations, reduction_66pc, reduction_75pc, plafond_20pc
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 200
@@ -2148,6 +2360,8 @@ l'Etat français soit représenté au sein des instances dirigeantes avec voix d
 
 **Source :** CGI Art. 200-0 A | **Module :** niches_fiscales | **Tags :** plafonnement_niches, 10000, reductions_impot
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 200-0 A
 1. Le total des avantages fiscaux mentionnés au 2, à l'exception de ceux mentionnés aux articles 199
@@ -2182,7 +2396,9 @@ retenue pour l'application du plafonnement mentionné au second alinéa du 1 pou
 
 ## Article 150-0 A — Plus Values Mobilieres
 
-**Source :** CGI Art. 150-0 A | **Module :** plus_values_mobilieres | **Tags :** PV_mobilier, cession_titres, PFU, 30pc, TMI
+**Source :** CGI Art. 150-0 A | **Module :** plus_values_mobilieres | **Tags :** PV_mobilier, cession_titres, gains_nets, PEA
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 150-0 A
@@ -2394,6 +2610,8 @@ partages ne sont pas considérés comme translatifs de propriété dans la mesur
 ## Article 125-0 A — Assurance Vie
 
 **Source :** CGI Art. 125-0 A | **Module :** assurance_vie | **Tags :** assurance_vie, rachat, PFU, abattement_4600, abattement_9200
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 125-0 A
@@ -2660,6 +2878,8 @@ conditions prévues à l'article 242 ter.
 
 **Source :** CGI Art. 150 U | **Module :** plus_values_immobilieres | **Tags :** PV_immo, cession, exoneration_RP, abattements_duree
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 150 U
 I. – Sous réserve des dispositions propres aux bénéfices industriels et commerciaux, aux bénéfices agricoles
@@ -2812,9 +3032,27 @@ comme translatifs de propriété dans la mesure des soultes ou plus-values.
 
 ---
 
+## Article 150 V — Plus Values Immobilieres
+
+**Source :** CGI Art. 150 V | **Module :** plus_values_immobilieres | **Tags :** PV_immo, plus_value_brute, prix_cession, prix_acquisition
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 150 V
+La plus ou moins-value brute réalisée lors de la cession de biens ou droits mentionnés aux articles 150 U à
+150 UC est égale à la différence entre le prix de cession et le prix d'acquisition par le cédant.
+```
+
+---
+
 ## Article 150 VB — Plus Values Immobilieres
 
 **Source :** CGI Art. 150 VB | **Module :** plus_values_immobilieres | **Tags :** PV_immo, prix_acquisition, frais_acquisition
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 150 VB
@@ -2886,6 +3124,8 @@ autonomie de vie et dont l'état nécessite une surveillance médicale constante
 ## Article 151 septies — Plus Values Immobilieres
 
 **Source :** CGI Art. 151 septies | **Module :** plus_values_immobilieres | **Tags :** PV_immo, exoneration_petites_entreprises, BNC, BIC, 250000
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 151 septies
@@ -2975,9 +3215,11 @@ patrimoine fiduciaire effectués dans le cadre d'une opération de fiducie défi
 
 ---
 
-## Article 151 septies A — Plus Values Immobilieres
+## Article 151 septies A — Plus Values Professionnelles
 
-**Source :** CGI Art. 151 septies A | **Module :** plus_values_immobilieres | **Tags :** PV_immo, depart_retraite, exoneration, 500000
+**Source :** CGI Art. 151 septies A | **Module :** plus_values_professionnelles | **Tags :** PV_professionnelles, depart_retraite, exoneration, entreprise_individuelle
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 151 septies A
@@ -3129,9 +3371,141 @@ au I ter de l'article 93 quater et aux articles 151 octies et 151 octies A.
 
 ---
 
+## Article 238 quindecies — Plus Values Professionnelles
+
+**Source :** CGI Art. 238 quindecies | **Module :** plus_values_professionnelles | **Tags :** PV_professionnelles, transmission_entreprise, exoneration, 500000, 1000000
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 238 quindecies
+I. – Les plus-values soumises au régime des articles 39 duodecies à 39 quindecies et réalisées dans le cadre
+d'une activité commerciale, industrielle, artisanale, libérale ou agricole à l'occasion de la transmission
+d'une entreprise individuelle ou d'une branche complète d'activité autres que celles mentionnées au V sont
+exonérées pour :
+1° La totalité de leur montant lorsque le prix stipulé des éléments transmis ou leur valeur vénale, auxquels
+sont ajoutées les charges en capital et les indemnités stipulées au profit du cédant, à quelque titre et pour
+quelque cause que ce soit, est inférieur ou égal à 500 000 € ;
+2° Une partie de leur montant lorsque le prix stipulé des éléments transmis ou leur valeur vénale, auxquels
+sont ajoutées les charges en capital et les indemnités stipulées au profit du cédant, à quelque titre et pour
+quelque cause que ce soit, est supérieur à 500 000 € et inférieur à 1 000 000 €.
+Pour l'application du 2°, le montant exonéré des plus-values est déterminé en leur appliquant un taux égal au
+rapport entre, au numérateur, la différence entre le montant de 1 000 000 € et la valeur des éléments transmis
+et, au dénominateur, le montant de 500 000 €.
+II. – L'exonération prévue au I est subordonnée aux conditions suivantes :
+1 L'activité doit avoir été exercée pendant au moins cinq ans ;
+2 La personne à l'origine de la transmission est :
+a) Une entreprise dont les résultats sont soumis à l'impôt sur le revenu ou un contribuable qui exerce son
+activité professionnelle dans le cadre d'une société dont les bénéfices sont, en application des articles 8 et 8
+ter, soumis en son nom à l'impôt sur le revenu ;
+b) Un organisme sans but lucratif ;
+c) Une collectivité territoriale, un établissement public de coopération intercommunale ou l'un de leurs
+établissements publics ;
+d) Une société soumise à l'impôt sur les sociétés qui répond cumulativement aux conditions suivantes :
+1° elle emploie moins de deux cent cinquante salariés et soit a réalisé un chiffre d'affaires annuel inférieur à
+50 millions d'euros au cours de l'exercice, soit a un total de bilan inférieur à 43 millions d'euros ;
+2° son capital ou ses droits de vote ne sont pas détenus à hauteur de 25 % ou plus par une entreprise ou par
+plusieurs entreprises ne répondant pas aux conditions du précédent alinéa de manière continue au cours de
+l'exercice. Pour la détermination de ce pourcentage, les participations de sociétés de capital-risque, des fonds
+communs de placement à risques, des fonds professionnels spécialisés relevant de l'article L. 214-37 du code
+monétaire et financier dans sa rédaction antérieure à l'ordonnance n° 2013-676 du 25 juillet 2013 modifiant
+le cadre juridique de la gestion d'actifs, des fonds professionnels de capital investissement, des sociétés de
+libre partenariat, des sociétés de développement régional, des sociétés financières d'innovation et des sociétés
+unipersonnelles d'investissement à risque ne sont pas prises en compte à la condition qu'il n'existe pas de lien
+de dépendance au sens du 12 de l'article 39 entre la société en cause et ces dernières sociétés ou ces fonds.
+Cette condition s'apprécie de manière continue au cours de l'exercice ;
+Pour l'application du présent d, le bénéfice des dispositions du I est subordonné au respect du règlement
+(UE) 2023/2831 de la Commission du 13 décembre 2023 relatif à l'application des articles 107 et 108 du
+traité sur le fonctionnement de l'Union européenne aux aides de minimis, du règlement (UE) n° 1408/2013
+de la Commission du 18 décembre 2013 relatif à l'application des articles 107 et 108 du traité sur le
+fonctionnement de l'Union européenne aux aides de minimis dans le secteur de l'agriculture ou du règlement
+(UE) n° 717/2014 de la Commission du 27 juin 2014 concernant l'application des articles 107 et 108 du
+traité sur le fonctionnement de l'Union européenne aux aides de minimis dans le secteur de la pêche et de
+l'aquaculture ;
+3 En cas de transmission à titre onéreux, le cédant ou, s'il s'agit d'une société, l'un de ses associés qui détient
+directement ou indirectement au moins 50 % des droits de vote ou des droits dans les bénéfices sociaux ou y
+exerce la direction effective n'exerce pas, en droit ou en fait, la direction effective de l'entreprise cessionnaire
+ou ne détient pas, directement ou indirectement, plus de 50 % des droits de vote ou des droits dans les
+bénéfices sociaux de cette entreprise.
+III. – Est assimilée à une branche complète d'activité l'intégralité des droits ou parts détenus par un
+contribuable qui exerce son activité professionnelle dans le cadre d'une société dont les bénéfices sont, en
+application des articles 8 et 8 ter, soumis en son nom à l'impôt sur le revenu et qui sont considérés comme
+des éléments d'actif affectés à l'exercice de la profession au sens du I de l'article 151 nonies.
+Lorsqu'il est satisfait aux conditions prévues aux 1 à 3 du II, les plus-values réalisées à l'occasion de la
+transmission de droits ou parts mentionnés au premier alinéa du présent III sont exonérées pour :
+1° La totalité de leur montant lorsque la valeur vénale des droits ou parts transmis est inférieure ou égale à
+500 000 € ;
+2° Une partie de leur montant lorsque la valeur vénale des droits ou parts transmis est supérieure à 500 000 €
+et inférieure à 1 000 000 €.
+Pour l'application du 2°, le montant exonéré des plus-values est déterminé en leur appliquant un taux égal au
+rapport entre, au numérateur, la différence entre le montant de 1 000 000 € et la valeur des titres transmis et,
+au dénominateur, le montant de 500 000 €.
+Pour la détermination des seuils mentionnés aux 1° et 2°, il est tenu compte de la transmission de l'intégralité
+des droits ou parts définis au premier alinéa ainsi que des transmissions réalisées au cours des cinq années
+précédentes.
+Par dérogation au V, les dispositions du présent III s'appliquent aux plus-values réalisées sur les droits ou
+parts de sociétés dont l'actif est principalement constitué de biens immobiliers bâtis ou non bâtis affectés par
+la société à sa propre exploitation ou de droits ou parts de sociétés dont l'actif est principalement constitué
+des mêmes biens, droits ou parts.
+En cas de transmission à titre onéreux de droits ou de parts ouvrant droit à l'exonération prévue au deuxième
+alinéa, le cédant ne doit pas détenir directement ou indirectement de droits de vote ou de droits dans les
+bénéfices sociaux de l'entreprise cessionnaire.
+IV. – L'exonération prévue aux I et III est remise en cause si le cédant relève de l'une des situations
+mentionnées au 3 du II et au dernier alinéa du III à un moment quelconque au cours des trois années qui
+suivent la réalisation de l'opération ayant bénéficié du régime prévu au présent article.
+V. – Sont imposées dans les conditions de droit commun les plus-values réalisées à l'occasion de la
+transmission de l'entreprise individuelle ou de la branche complète d'activité portant sur :
+1° Des biens immobiliers bâtis ou non bâtis ;
+2° Des droits ou parts de sociétés dont l'actif est principalement constitué de biens immobiliers bâtis ou non
+bâtis ou de droits ou parts de sociétés dont l'actif est principalement constitué des mêmes biens, droits ou
+parts.
+VI. – Pour l'application des dispositions prévues aux III et V, les droits afférents à un contrat de crédit-bail
+conclu dans les conditions prévues au 2 de l'article L. 313-7 du code monétaire et financier sont assimilés à
+des éléments de l'actif.
+Pour l'application des dispositions prévues au III, les biens mentionnés au I du A de l'article 1594-0 G ne
+sont pas considérés comme affectés à l'exploitation de l'activité.
+VII. – La transmission d'une activité qui fait l'objet d'un contrat de location-gérance ou d'un contrat
+comparable peut bénéficier du régime défini au I si les conditions suivantes sont simultanément satisfaites :
+1° L'activité est exercée depuis au moins cinq ans au moment de la mise en location ;
+2° La transmission est réalisée au profit du locataire ou, dans le respect du contrat, de toute autre personne,
+sous réserve que cette transmission porte sur l'intégralité des éléments concourant à l'exploitation de l'activité
+qui a fait l'objet du contrat de location-gérance ou d'un contrat comparable.
+Pour l'appréciation des seuils mentionnés aux 1° et 2° du I, il est tenu compte du prix stipulé des éléments
+de l'activité donnée en location ou de leur valeur vénale, auxquels sont ajoutées les charges en capital et les
+indemnités stipulées au profit du cédant, à quelque titre et pour quelque cause que ce soit.
+VII bis.-Les montants de 500 000 € et de 1 000 000 € mentionnés aux I et III du présent article sont portés
+respectivement à 700 000 € et 1 200 000 € lorsque la transmission mentionnée aux mêmes I et III et
+respectant les conditions prévues aux 1 et 2 du II est réalisée au profit :
+1° D'une ou de plusieurs personnes physiques justifiant de l'octroi des aides à l'installation des jeunes
+agriculteurs mentionnées au I de l'article 73 B au titre de cette même transmission ;
+2° Ou d'une société ou d'un groupement dont chacun des associés ou des membres justifie de l'octroi des
+aides mentionnées au 1° du présent VII bis au titre de cette même transmission.
+L'exonération résultant de la majoration des seuils mentionnée au premier alinéa du présent VII bis est
+remise en cause au titre de l'année qui suit celle de la cession si le cédant n'est pas en mesure de justifier, au
+plus tard à la date du dépôt de la déclaration de revenus relative à cette année, de l'octroi, aux cessionnaires
+mentionnés aux 1° et 2°, des aides mentionnées au I de l'article 73 B.
+VIII. – L'option pour le bénéfice du régime défini au présent article est exclusive de celui des régimes prévus
+au I de l'article 41, au I ter de l'article 93 quater, aux articles 151 septies, 151 octies et 151 octies A, au II de
+l'article 151 nonies et aux articles 210 A à 210 C.
+VIII bis.-L'indemnité compensatrice versée à un agent général d'assurances exerçant à titre individuel
+par la compagnie d'assurances qu'il représente à l'occasion de la cessation du mandat bénéficie du régime
+mentionné au I du présent article si les conditions suivantes sont réunies :
+1° Le contrat dont la cessation est indemnisée a été conclu depuis au moins cinq ans au moment de la
+cessation ;
+2° L'agent général d'assurances cède son entreprise individuelle ou une branche complète d'activité.
+IX. – Les dispositions du présent article s'appliquent aux transmissions réalisées à compter du 1er janvier
+2006.
+```
+
+---
+
 ## Article 154 bis — Retraite
 
 **Source :** CGI Art. 154 bis | **Module :** retraite | **Tags :** PER, Madelin, cotisations_TNS, deductibilite
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 154 bis
@@ -3197,6 +3571,8 @@ III. – (Périmé).
 ## Article 163 quatervicies — Retraite
 
 **Source :** CGI Art. 163 quatervicies | **Module :** retraite | **Tags :** PER, plafond_epargne_retraite, deduction_revenu_global
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > **Version en vigueur depuis le 21/02/2026 (LF 2026, art. 10) :** le report de la fraction non utilisée du plafond vaut pour l'une des **cinq** années suivantes, à compter de l'imposition des revenus 2026 (trois années auparavant). Rétabli le 2026-11-01 : la « correction » du 2026-08-26, qui remettait « trois », s'appuyait sur une version abrogée (BOFiP ACTU-2026-00106 du 10/08/2026). La LF 2026 (art. 9) supprime aussi, depuis le 01/01/2026, la déduction des versements effectués à 70 ans ou plus.
 
@@ -3267,6 +3643,8 @@ l'article 102 ter. Il n'est pas tenu compte des plus-values et moins-values prof
 ## Article 261 — Tva
 
 **Source :** CGI Art. 261 | **Module :** TVA | **Tags :** TVA, exoneration, professions_sante, medecins, infirmiers, kinesitherapeutes
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 261
@@ -3472,45 +3850,27 @@ partir de la date à laquelle l'autorisation mentionnée au 2° bis du II de l'a
 
 **Source :** CGI Art. 669 | **Module :** demembrement | **Tags :** demembrement, usufruit, nue_propriete, bareme_fiscal_age, donation
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Mise en forme du 2026-11-01 : le barème du I est présenté ligne à ligne, chaque âge avec ses deux valeurs ; mots et chiffres identiques à l'export Légifrance du 30/10/2026.
+
 ```
 Article 669
 I. – Pour la liquidation des droits d'enregistrement et de la taxe de publicité foncière, la valeur de la nue-
 propriété et de l'usufruit est déterminée par une quotité de la valeur de la propriété entière, conformément au
 barème ci-après :
-AGE 
-de l'usufruitier
-de la nue-propriété
-de l'usufruit
-VALEUR
-VALEUR
-Moins de :
-21 ans révolus
-31 ans révolus
-41 ans révolus
-51 ans révolus
-61 ans révolus
-71 ans révolus
-81 ans révolus
-91 ans révolus
-Plus de 91 ans révolus
-90 %
-80 %
-70 %
-60 %
-50 %
-40 %
-30 %
-20 %
-10 %
-10 %
-20 %
-30 %
-40 %
-50 %
-60 %
-70 %
-80 %
-90 %
+| AGE de l'usufruitier   | VALEUR de l'usufruit | VALEUR de la nue-propriété |
+|------------------------|----------------------|----------------------------|
+| Moins de :             |                      |                            |
+| 21 ans révolus         | 90 %                 | 10 %                       |
+| 31 ans révolus         | 80 %                 | 20 %                       |
+| 41 ans révolus         | 70 %                 | 30 %                       |
+| 51 ans révolus         | 60 %                 | 40 %                       |
+| 61 ans révolus         | 50 %                 | 50 %                       |
+| 71 ans révolus         | 40 %                 | 60 %                       |
+| 81 ans révolus         | 30 %                 | 70 %                       |
+| 91 ans révolus         | 20 %                 | 80 %                       |
+| Plus de 91 ans révolus | 10 %                 | 90 %                       |
 Pour déterminer la valeur de la nue-propriété, il n'est tenu compte que des usufruits ouverts au jour de la
 mutation de cette nue-propriété.
 II. – L'usufruit constitué pour une durée fixe est estimé à 23 % de la valeur de la propriété entière pour
@@ -3522,6 +3882,8 @@ chaque période de dix ans de la durée de l'usufruit, sans fraction et sans ég
 ## Article 784 — Succession Donation
 
 **Source :** CGI Art. 784 | **Module :** succession_donation | **Tags :** rappel_fiscal, 15_ans, donations_anterieures
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 784
@@ -3535,7 +3897,7 @@ succession celle des biens qui ont fait l'objet de donations antérieures, à l'
 plus de quinze ans, et, lorsqu'il y a lieu à application d'un tarif progressif, en considérant ceux de ces biens
 dont la transmission n'a pas encore été assujettie au droit de mutation à titre gratuit comme inclus dans les
 tranches les plus élevées de l'actif imposable.
-Pour le calcul des abattements et réductions édictés par les articles 779, 790 B, 790 D, 790 E et 790 F il est
+Pour le calcul des abattements et réductions édictés par les articles 779,790 B, 790 D, 790 E et 790 F il est
 tenu compte des abattements et des réductions effectués sur les donations antérieures visées au deuxième
 alinéa consenties par la même personne.
 ```
@@ -3546,74 +3908,45 @@ alinéa consenties par la même personne.
 
 **Source :** CGI Art. 777 | **Module :** succession_donation | **Tags :** bareme_DMTG, taux_succession, ligne_directe, 5pc_45pc
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Mise en forme du 2026-11-01 : les tableaux I, II et III sont présentés ligne à ligne, chacun sous son intitulé et chaque tranche avec son tarif ; mots et chiffres identiques à l'export Légifrance du 30/10/2026.
+
 ```
 Article 777
 Les droits de mutation à titre gratuit sont fixés aux taux indiqués dans les tableaux ci-après, pour la part nette
 revenant à chaque ayant droit :
 Tableau I
 Tarif des droits applicables en ligne directe :
-FRACTION DE PART NETTE TAXABLE
-TARIF applicable (%)
-N'excédant pas 8 072 €
-Comprise entre 8 072 € et 12 109 €
-Comprise entre 12 109 € et 15 932 €
-Comprise entre 15 932 € et 552 324 €
-Comprise entre 552 324 € et 902 838 €
-Comprise entre 902 838 € et 1 805 677 €
-Au-delà de 1 805 677 €
+| FRACTION DE PART NETTE TAXABLE          | TARIF applicable (%) |
+|-----------------------------------------|----------------------|
+| N'excédant pas 8 072 €                  | 5                    |
+| Comprise entre 8 072 € et 12 109 €      | 10                   |
+| Comprise entre 12 109 € et 15 932 €     | 15                   |
+| Comprise entre 15 932 € et 552 324 €    | 20                   |
+| Comprise entre 552 324 € et 902 838 €   | 30                   |
+| Comprise entre 902 838 € et 1 805 677 € | 40                   |
+| Au-delà de 1 805 677 €                  | 45                   |
 Tableau II
-5 
-10 
-15 
-20 
-30 
-40 
-45 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 Tarif des droits applicables entre époux et entre partenaires liés par un pacte civil de solidarité :
-FRACTION DE PART NETTE TAXABLE
-TARIF applicable (%)
-N'excédant pas 8 072 €
-Comprise entre 8 072 € et 15 932 €
-Comprise entre 15 932 € et 31 865 €
-Comprise entre 31 865 € et 552 324 €
-Comprise entre 552 324 € et 902 838 €
-Comprise entre 902 838 € et 1 805 677 €
-Au-delà de 1 805 677 €
+| FRACTION DE PART NETTE TAXABLE          | TARIF applicable (%) |
+|-----------------------------------------|----------------------|
+| N'excédant pas 8 072 €                  | 5                    |
+| Comprise entre 8 072 € et 15 932 €      | 10                   |
+| Comprise entre 15 932 € et 31 865 €     | 15                   |
+| Comprise entre 31 865 € et 552 324 €    | 20                   |
+| Comprise entre 552 324 € et 902 838 €   | 30                   |
+| Comprise entre 902 838 € et 1 805 677 € | 40                   |
+| Au-delà de 1 805 677 €                  | 45                   |
 Tableau III
-5 
-10 
-15 
-20 
-30 
-40 
-45 
 Tarif des droits applicables en ligne collatérale et entre non-parents :
-FRACTION DE PART NETTE TAXABLE
-TARIF applicable (%)
-Entre frères et sœurs vivants ou représentés :
-N'excédant pas 24 430 €
-Supérieure à 24 430 €
-Entre parents jusqu'au 4e degré inclusivement
-Entre parents au-delà du 4e degré et entre personnes non-parentes
-35 
-45 
-55 
-60 
+| FRACTION DE PART NETTE TAXABLE                                    | TARIF applicable (%) |
+|-------------------------------------------------------------------|----------------------|
+| Entre frères et sœurs vivants ou représentés :                    |                      |
+| N'excédant pas 24 430 €                                           | 35                   |
+| Supérieure à 24 430 €                                             | 45                   |
+| Entre parents jusqu'au 4e degré inclusivement                     | 55                   |
+| Entre parents au-delà du 4e degré et entre personnes non-parentes | 60                   |
 Sous réserve des exceptions prévues au I de l'article 794 et aux articles 795 et 795-0 A, les dons et legs faits
 aux établissements publics ou d'utilité publique sont soumis aux tarifs fixés pour les successions entre frères
 et soeurs.
@@ -3623,7 +3956,9 @@ et soeurs.
 
 ## Article 779 — Succession Donation
 
-**Source :** CGI Art. 779 | **Module :** succession_donation | **Tags :** abattements_succession, 100000_enfants, 80724_conjoint, 15932_freres_soeurs
+**Source :** CGI Art. 779 | **Module :** succession_donation | **Tags :** abattements_succession, 100000_enfants, 159325_handicap, 15932_freres_soeurs, 7967_neveux_nieces
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 779
@@ -3640,14 +3975,6 @@ sur la part de tout héritier, légataire ou donataire, incapable de travailler 
 rentabilité, en raison d'une infirmité physique ou mentale, congénitale ou acquise.
 Un décret en Conseil d'Etat détermine les modalités d'application du premier alinéa.
 III. – (Abrogé).
- 
- 
- 
- 
- 
- 
- 
-
 IV. – Pour la perception des droits de mutation à titre gratuit, il est effectué en cas de donation ou, lorsque les
 dispositions de l'article 796-0 ter ne sont pas applicables, en cas de succession, un abattement de 15 932 € sur
 la part de chacun des frères ou sœurs vivants ou représentés par suite de prédécès ou de renonciation.
@@ -3663,6 +3990,8 @@ VI – (Abrogé).
 ## Article 787 B — Transmission Entreprise
 
 **Source :** CGI Art. 787 B | **Module :** transmission_entreprise | **Tags :** Pacte_Dutreil, abattement_75pc, titres_societe, engagement_conservation
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 787 B
@@ -3845,6 +4174,8 @@ obligations déclaratives incombant aux redevables et aux sociétés.
 
 **Source :** CGI Art. 787 C | **Module :** transmission_entreprise | **Tags :** Pacte_Dutreil, entreprise_individuelle, abattement_75pc
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 787 C
 Sont exonérés de droits de mutation à titre gratuit, à concurrence de 75 % de leur valeur, la totalité ou
@@ -3871,6 +4202,8 @@ terme.
 
 **Source :** CGI Art. 790 B | **Module :** succession_donation | **Tags :** abattement_petits_enfants, 31865, donation
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 790 B
 Pour la perception des droits de mutation à titre gratuit entre vifs, il est effectué un abattement de 31 865 €
@@ -3882,9 +4215,27 @@ successorale.
 
 ---
 
+## Article 790 E — Succession Donation
+
+**Source :** CGI Art. 790 E | **Module :** succession_donation | **Tags :** abattement_conjoint, 80724, donation
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 790 E
+Pour la perception des droits de mutation à titre gratuit entre vifs, il est effectué un abattement de 80 724 €
+sur la part du conjoint du donateur.
+```
+
+---
+
 ## Article 790 G — Succession Donation
 
 **Source :** CGI Art. 790 G | **Module :** succession_donation | **Tags :** dons_familiaux_liquidites, 31865, exoneration
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 790 G
@@ -3907,9 +4258,27 @@ V. – (Abrogé)
 
 ---
 
+## Article 796-0 bis — Succession Donation
+
+**Source :** CGI Art. 796-0 bis | **Module :** succession_donation | **Tags :** exoneration_succession, conjoint_survivant, partenaire_PACS
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 796-0 bis
+Sont exonérés de droits de mutation par décès le conjoint survivant et le partenaire lié au défunt par un pacte
+civil de solidarité.
+```
+
+---
+
 ## Article 990 I — Assurance Vie
 
 **Source :** CGI Art. 990 I | **Module :** assurance_vie | **Tags :** assurance_vie_deces, clause_beneficiaire, 152500, prelevement_20pc_31_25pc
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 990 I
@@ -4039,6 +4408,8 @@ III. – (Abrogé)
 
 **Source :** CGI Art. 964 | **Module :** IFI | **Tags :** IFI, seuil_1300000, actif_net_imposable
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 964
 Il est institué un impôt annuel sur les actifs immobiliers désigné sous le nom d'impôt sur la fortune
@@ -4069,6 +4440,8 @@ Les conditions d'assujettissement sont appréciées au 1er janvier de chaque ann
 ## Article 965 — Ifi
 
 **Source :** CGI Art. 965 | **Module :** IFI | **Tags :** IFI, actifs_imposables, immobilier, parts_SCI
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 965
@@ -4131,6 +4504,8 @@ imposables.
 
 **Source :** CGI Art. 966 | **Module :** IFI | **Tags :** IFI, exonerations, biens_professionnels
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 966
 I.-Pour l'application de l'article 965, n'est pas considérée comme une activité industrielle, commerciale,
@@ -4148,7 +4523,9 @@ administratifs, juridiques, comptables, financiers et immobiliers.
 
 ## Article 972 — Ifi
 
-**Source :** CGI Art. 972 | **Module :** IFI | **Tags :** IFI, base_imposable, dettes_deductibles
+**Source :** CGI Art. 972 | **Module :** IFI | **Tags :** IFI, base_imposable, contrats_rachetables, unites_de_compte
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 972
@@ -4163,7 +4540,9 @@ constituées des actifs mentionnés à l'article 965 appréciée dans les condit
 
 ## Article 973 — Ifi
 
-**Source :** CGI Art. 973 | **Module :** IFI | **Tags :** IFI, dettes_deductibles, emprunts_immobiliers
+**Source :** CGI Art. 973 | **Module :** IFI | **Tags :** IFI, evaluation, abattement_30pc_residence_principale, dettes_des_societes
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 973
@@ -4219,6 +4598,8 @@ redevable.
 
 **Source :** CGI Art. 974 | **Module :** IFI | **Tags :** IFI, dettes_non_deductibles, impots
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 974
 I.-Sont déductibles de la valeur des biens ou droits immobiliers et des parts ou actions taxables les dettes,
@@ -4272,6 +4653,8 @@ qu'elles n'ont pas été contractées dans un objectif principalement fiscal.
 ## Article 975 — Ifi
 
 **Source :** CGI Art. 975 | **Module :** IFI | **Tags :** IFI, biens_professionnels, exoneration_totale
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 975
@@ -4370,7 +4753,9 @@ l'article 235 ter C au titre de l'exercice de la société mentionnée au premie
 
 ## Article 976 — Ifi
 
-**Source :** CGI Art. 976 | **Module :** IFI | **Tags :** IFI, exonerations, bois_forets, biens_ruraux (barème : art. 977)
+**Source :** CGI Art. 976 | **Module :** IFI | **Tags :** IFI, exonerations, bois_forets, biens_ruraux
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 ```
 Article 976
@@ -4420,24 +4805,10 @@ les mêmes proportions et sous les mêmes conditions que celles définies au pre
 
 **Source :** CGI Art. 979 | **Module :** IFI | **Tags :** IFI, plafonnement_IFI_IR_75pc
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 ```
 Article 979
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 I.-L'impôt sur la fortune immobilière du redevable ayant son domicile fiscal en France est réduit de la
 différence entre, d'une part, le total de cet impôt et des impôts dus en France et à l'étranger au titre des
 revenus et produits de l'année précédente, calculés avant imputation des seuls crédits d'impôt représentatifs
@@ -4466,6 +4837,8 @@ au revenu total.
 ## Article 50-0 — Micro Bic
 
 **Source :** CGI Art. 50-0 | **Module :** location_meublee | **Tags :** micro_BIC, seuils, 203100, 83600, 15000, abattements_71_50_30
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -4541,9 +4914,50 @@ année, présentant le détail de leurs achats.
 
 ---
 
+## Article 302 septies A bis — Bic Reel Simplifie
+
+**Source :** CGI Art. 302 septies A bis | **Module :** BIC | **Tags :** BIC, regime_reel_simplifie, option, seuils, dispense_bilan
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 302 septies A bis
+I. - En ce qui concerne l'imposition des bénéfices industriels et commerciaux, il est institué un régime du
+bénéfice réel pour les petites et moyennes entreprises qui comporte des obligations allégées.
+II. - (Abrogé).
+III. - Le bénéfice du régime prévu au I est réservé :
+a. Sur option, aux entreprises normalement placées sous le régime défini à l'article 50-0 ;
+b. Aux autres entreprises dont le chiffre d'affaires de l'année civile précédente n'excède pas les seuils prévus
+aux 1° et 2° de l'article L. 162-4 du code des impositions sur les biens et services ainsi qu'aux sociétés civiles
+de moyens définies à l'article 38 de l'ordonnance n° 2023-77 du 8 février 2023 relative à l'exercice en société
+des professions libérales réglementées.
+Les entreprises conservent le bénéfice de ces dispositions pour la première année suivant celle au cours de
+laquelle le chiffre d'affaires limite fixé au premier alinéa est dépassé, sauf en cas de changement d'activité.
+IV. - Les personnes morales passibles de l'impôt sur les sociétés dont le chiffre d'affaires n'excède pas les
+limites définies au b du III sont admises au bénéfice du régime prévu au I.
+V. - Un décret en Conseil d'Etat fixe les conditions dans lesquelles les entreprises mentionnées au b du III et
+au IV peuvent renoncer au bénéfice du présent article, ainsi que les conditions d'exercice de l'option prévue
+au a du III.
+VI. - Il n'est pas exigé de bilan des exploitants individuels et des sociétés visées à l'article 239 quater
+A soumis à l'impôt sur le revenu selon le régime d'imposition prévu au I, lorsque leur chiffre d'affaires
+de l'année civile précédente n'excède pas 189 000 € hors taxes s'il s'agit d'entreprises dont le commerce
+principal est de vendre des marchandises, objets, fournitures et denrées à emporter ou à consommer sur
+place, ou de fournir le logement, ou 66 000 € hors taxes s'il s'agit d'autres entreprises.
+Ces seuils sont calculés dans les conditions prévues au 1 de l'article 50-0. Ils sont actualisés tous les trois ans
+dans la même proportion que l'évolution triennale de la limite supérieure de la première tranche du barème
+de l'impôt sur le revenu et arrondis au millier d'euros le plus proche.
+Ces entreprises sont dispensées de présenter leur bilan lors des vérifications de comptabilité.
+```
+
+---
+
 ## Article 150 VC — Plus Values Immobilieres
 
 **Source :** CGI Art. 150 VC | **Module :** plus_values_immobilieres | **Tags :** PV_immo, abattements_duree_detention, IR
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -4579,6 +4993,8 @@ II. - (Abrogé).
 ## Article 200 A — Prelevement Forfaitaire Unique
 
 **Source :** CGI Art. 200 A | **Module :** plus_values_mobilieres | **Tags :** PFU, 12_8pc, assurance_vie_7_5pc, seuil_150000_primes
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -4691,6 +5107,8 @@ présent article.
 ## Article 219 — Impot Sur Les Societes
 
 **Source :** CGI Art. 219 | **Module :** IS | **Tags :** IS, taux_25pc, taux_reduit_15pc, 42500
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -5027,9 +5445,53 @@ capital variable mentionnée au 3° nonies de l'article 208.
 
 ---
 
+## Article 239 — Impot Sur Les Societes
+
+**Source :** CGI Art. 239 | **Module :** IS | **Tags :** IS, option_IS, renonciation, societes_de_personnes
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 239
+1. Les sociétés et groupements mentionnés au 3 de l'article 206 peuvent opter, dans des conditions qui sont
+fixées par arrêté ministériel, pour le régime applicable aux sociétés de capitaux. Dans ce cas, l'impôt sur le
+revenu dû par les associés en nom, commandités, coparticipants, l'associé unique de société à responsabilité
+limitée et les associés d'exploitations agricoles est établi suivant les règles prévues aux articles 62 et 162.
+L'option doit être notifiée avant la fin du troisième mois de l'exercice au titre duquel l'entreprise souhaite être
+soumise pour la première fois à l'impôt sur les sociétés. Toutefois, en cas de transformation d'une société de
+capitaux en une des formes de société mentionnées au 3 de l'article 206 ou en cas de réunion de toutes les
+parts d'une société à responsabilité limitée entre les mains d'une personne physique, l'option peut être notifiée
+avant la fin du troisième mois qui suit cette transformation ou cette réunion pour prendre effet à la même
+date que celle-ci.
+Les sociétés et groupements mentionnés au premier alinéa du présent 1 qui désirent renoncer à leur option
+pour le régime des sociétés de capitaux notifient leur choix à l'administration avant la fin du mois précédant
+la date limite de versement du premier acompte d'impôt sur les sociétés de l'exercice au titre duquel
+s'applique la renonciation à l'option. En cas de renonciation à l'option, les sociétés et groupements ne peuvent
+plus opter à nouveau pour le régime des sociétés de capitaux. En l'absence de renonciation avant la fin
+du mois précédant la date limite de versement du premier acompte d'impôt sur les sociétés du cinquième
+exercice suivant celui au titre duquel l'option a été exercée, l'option devient irrévocable.
+Les dispositions du présent 1 ne sont pas applicables :
+a. aux sociétés immobilières de copropriété visées à l'article 1655 ter ;
+b. aux sociétés de personnes issues de la transformation de sociétés de capitaux intervenue depuis moins
+de quinze ans lorsqu'elles n'ont pas exercé l'option lors de cette transformation, dans le délai mentionné au
+deuxième alinéa ;
+c. aux sociétés civiles mentionnées aux articles 238 ter, 239 ter, 239 quater A et 239 septies.
+2. (Disposition périmée).
+3. Les sociétés de personnes qui ont opté avant le 1er janvier 1981 pour l'imposition selon le régime fiscal
+des sociétés de capitaux mentionné au 1 et exerçant une activité industrielle, commerciale ou artisanale
+peuvent renoncer à leur option si elles sont formées entre personnes parentes en ligne directe ou entre frères
+et soeurs, ainsi que les conjoints. La renonciation ne peut être effectuée qu'avec l'accord de tous les associés.
+```
+
+---
+
 ## Article 223 sexies — Hauts Revenus
 
 **Source :** CGI Art. 223 sexies | **Module :** hauts_revenus | **Tags :** CEHR, 250000, 500000, 3pc_4pc
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -5084,6 +5546,8 @@ du présent article pour les revenus fiscaux de référence déterminés à comp
 ## Article 224 — Hauts Revenus
 
 **Source :** CGI Art. 224 | **Module :** hauts_revenus | **Tags :** CDHR, 20pc, 250000, 500000
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -5172,7 +5636,11 @@ et sanctions qu'en matière d'impôt sur le revenu.
 
 **Source :** CGI Art. 293 B | **Module :** TVA | **Tags :** franchise_en_base, 85000, 37500, date_depassement
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+> Mise en forme du 2026-11-01 : les tableaux des plafonds du I et du I bis sont présentés ligne à ligne ; mots et chiffres identiques à l'export Légifrance du 30/10/2026.
 
 ```
 Article 293 B
@@ -5181,22 +5649,19 @@ d'une franchise qui les dispense du paiement de la taxe sur la valeur ajoutée l
 France un chiffre d'affaires, évalué dans les conditions prévues à l'article 293 D, excédant les plafonds
 suivants :
 (En euros.)
-Année d'évaluation Chiffre d'affaires national total Chiffre d'affaires national afférent aux prestations de
-services autres que les ventes à consommer sur place et
-les prestations d'hébergement
-Année civile précédente 85 000 37 500
-Année en cours 93 500 41 250
+| Année d'évaluation      | Chiffre d'affaires national total | Chiffre d'affaires national afférent aux prestations de services autres que les ventes à consommer sur place et les prestations d'hébergement |
+|-------------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Année civile précédente | 85 000                            | 37 500                                                                                                                                        |
+| Année en cours          | 93 500                            | 41 250                                                                                                                                        |
 I bis. - A. - Les avocats, les avocats au Conseil d'Etat et à la Cour de cassation, les auteurs d'œuvres de
 l'esprit et les artistes-interprètes assujettis et établis en France bénéficient d'une franchise qui les dispense
 du paiement de la taxe sur la valeur ajoutée lorsqu'ils n'ont pas réalisé en France un chiffre d'affaires, évalué
 dans les conditions prévues à l'article 293 D, excédant les plafonds suivants :
 (En euros.)
-Année d'évaluation Chiffre d'affaires national afférent aux opérations
-mentionnées au B du présent I bis
-Chiffre d'affaires national afférent aux opérations autres
-que celles mentionnées au B du présent I bis
-Année civile précédente 50 000 35 000
-Année en cours 55 000 38 500
+| Année d'évaluation      | Chiffre d'affaires national afférent aux opérations mentionnées au B du présent I bis | Chiffre d'affaires national afférent aux opérations autres que celles mentionnées au B du présent I bis |
+|-------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Année civile précédente | 50 000                                                                                | 35 000                                                                                                  |
+| Année en cours          | 55 000                                                                                | 38 500                                                                                                  |
 B. - Les opérations prises en compte pour les besoins des plafonds mentionnés à la deuxième colonne du
 tableau du second alinéa du A du présent I bis sont les suivantes :
 1° Les opérations réalisées par les avocats et les avocats au Conseil d'Etat et à la Cour de cassation, dans le
@@ -5216,6 +5681,8 @@ la date du dépassement.
 ## Article 757 B — Assurance Vie
 
 **Source :** CGI Art. 757 B | **Module :** assurance_vie | **Tags :** primes_apres_70_ans, abattement_30500
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -5243,6 +5710,8 @@ fournir par les contribuables et les assureurs sont déterminées par décret en
 ## Article 790 A bis — Donations
 
 **Source :** CGI Art. 790 A bis | **Module :** transmission | **Tags :** don_somme_argent, logement_neuf, renovation_energetique, 100000, 31_12_2026
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
 
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
@@ -5278,6 +5747,8 @@ février 2025 de finances pour 2025 et le 31 décembre 2026.
 
 **Source :** CGI Art. 968 | **Module :** IFI | **Tags :** IFI, usufruit, pleine_propriete
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
 
 ```
@@ -5310,22 +5781,89 @@ reconnue d'utilité publique.
 
 **Source :** CGI Art. 977 | **Module :** IFI | **Tags :** IFI, bareme, decote_17500
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+> Mise en forme du 2026-11-01 : le tarif du 1 est présenté ligne à ligne, chaque tranche avec son taux ; mots et chiffres identiques à l'export Légifrance du 30/10/2026.
 
 ```
 Article 977
 1. Le tarif de l'impôt est fixé à :
-Fraction de la valeur nette taxable du patrimoine Tarif applicable
-(en pourcentage)
-N'excédant pas 800 000 € 0
-Supérieure à 800 000 € et inférieure ou égale à 1 300 000 € 0,50
-Supérieure à 1 300 000 € et inférieure ou égale à 2 570 000 € 0,70
-Supérieure à 2 570 000 € et inférieure ou égale à 5 000 000 € 1
-Supérieure à 5 000 000 € et inférieure ou égale à 10 000 000 € 1,25
-Supérieure à 10 000 000 € 1,50
+| Fraction de la valeur nette taxable du patrimoine              | Tarif applicable (en pourcentage) |
+|----------------------------------------------------------------|-----------------------------------|
+| N'excédant pas 800 000 €                                       | 0                                 |
+| Supérieure à 800 000 € et inférieure ou égale à 1 300 000 €    | 0,50                              |
+| Supérieure à 1 300 000 € et inférieure ou égale à 2 570 000 €  | 0,70                              |
+| Supérieure à 2 570 000 € et inférieure ou égale à 5 000 000 €  | 1                                 |
+| Supérieure à 5 000 000 € et inférieure ou égale à 10 000 000 € | 1,25                              |
+| Supérieure à 10 000 000 €                                      | 1,50                              |
 2. Pour les redevables dont le patrimoine imposable a une valeur nette taxable égale ou supérieure à 1 300
 000 € et inférieure à 1 400 000 €, le montant de l'impôt calculé selon le tarif prévu au tableau du 1 est réduit
 d'une somme égale à 17 500 €-1,25 % P, où P est la valeur nette taxable du patrimoine.
+```
+
+---
+
+## Article 978 — Ifi
+
+**Source :** CGI Art. 978 | **Module :** IFI | **Tags :** IFI, reduction_dons, 75pc, plafond_50000
+
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
+> Ajouté le 2026-11-01 depuis l'export Légifrance du 30/10/2026 : article cité par les règles ou le moteur (audit du 01/11/2026, constat T16).
+
+```
+Article 978
+I.-Le redevable peut imputer sur l'impôt sur la fortune immobilière, dans la limite de 50 000 €, 75 % du
+montant des dons en numéraire et dons en pleine propriété de titres de sociétés admis aux négociations sur un
+marché réglementé français ou étranger effectués au profit :
+1° Des établissements de recherche, d'enseignement supérieur ou d'enseignement artistique publics ou privés,
+d'intérêt général, à but non lucratif et des établissements d'enseignement supérieur consulaire mentionnés à
+l'article L. 711-17 du code de commerce ;
+2° Des fondations reconnues d'utilité publique répondant aux conditions fixées au a du 1 de l'article 200 ;
+3° Des entreprises d'insertion et des entreprises de travail temporaire d'insertion mentionnées,
+respectivement, aux articles L. 5132-5 et L. 5132-6 du code du travail ;
+4° Des associations intermédiaires mentionnées à l'article L. 5132-7 du même code ;
+5° Des ateliers et chantiers d'insertion mentionnés à l'article L. 5132-15 dudit code ;
+6° Des entreprises adaptées mentionnées à l'article L. 5213-13 du même code ;
+7° Des groupements d'employeurs régis par les articles L. 1253-1 à L. 1253-24 du code du travail qui
+bénéficient de la reconnaissance de la qualité de groupement d'employeurs pour l'insertion et la qualification
+mentionnée à l'article L. 1253-1 du même code et qui organisent des parcours d'insertion et de qualification
+dans les conditions mentionnées à l'article L. 6325-17 du même code ;
+8° De l'Agence nationale de la recherche ;
+9° Des fondations universitaires et des fondations partenariales mentionnées, respectivement, aux articles L.
+719-12 et L. 719-13 du code de l'éducation, lorsqu'elles répondent aux conditions fixées au b du 1 de l'article
+200 du présent code ;
+10° Des associations reconnues d'utilité publique de financement et d'accompagnement de la création et de
+la reprise d'entreprises dont la liste est fixée par arrêté conjoint des ministres chargés de l'économie et du
+budget.
+Ouvrent également droit à la réduction d'impôt les dons et versements effectués au profit d'organismes agréés
+dans les conditions prévues à l'article 1649 nonies dont le siège est situé dans un Etat membre de l'Union
+européenne ou dans un autre Etat partie à l'accord sur l'Espace économique européen ayant conclu avec
+la France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion fiscales.
+L'agrément est accordé aux organismes poursuivant des objectifs et présentant des caractéristiques similaires
+à ceux des organismes dont le siège est situé en France entrant dans le champ d'application du présent I.
+Lorsque les dons et versements ont été effectués au profit d'un organisme non agréé dont le siège est situé
+dans un Etat membre de l'Union européenne ou dans un autre Etat partie à l'accord sur l'Espace économique
+européen ayant conclu avec la France une convention d'assistance administrative en vue de lutter contre la
+fraude et l'évasion fiscales, la réduction d'impôt obtenue fait l'objet d'une reprise, sauf lorsque le contribuable
+a produit dans le délai de dépôt de déclaration les pièces justificatives attestant que cet organisme poursuit
+des objectifs et présente des caractéristiques similaires à ceux des organismes dont le siège est situé en
+France répondant aux conditions fixées par le présent article.
+Un décret fixe les conditions d'application des douzième et treizième alinéas du présent I, notamment la
+durée de validité ainsi que les modalités de délivrance, de publicité et de retrait de l'agrément.
+II.-Les dons ouvrant droit à l'avantage fiscal mentionné au I sont ceux effectués à compter du jour suivant
+la date limite de dépôt de la déclaration mentionnée à l'article 982 au titre de l'année précédant celle de
+l'imposition et jusqu'à la date limite de dépôt de cette même déclaration au titre de l'année d'imposition.
+III.-La fraction du versement ayant donné lieu à l'avantage fiscal mentionné au I ne peut donner lieu à un
+autre avantage fiscal au titre d'un autre impôt.
+IV.-Le bénéfice de l'avantage fiscal prévu au I est subordonné au respect du règlement (UE) 2023/2831
+de la Commission du 13 décembre 2023 relatif à l'application des articles 107 et 108 du traité sur le
+fonctionnement de l'Union européenne aux aides de minimis et à la condition que le redevable présente, à
+la demande de l'administration fiscale, des pièces justificatives attestant le total du montant et la date des
+versements ainsi que l'identité des bénéficiaires.
+V.-Un décret fixe les obligations déclaratives incombant aux redevables et aux personnes mentionnées au I.
 ```
 
 ---
@@ -5334,7 +5872,11 @@ d'une somme égale à 17 500 €-1,25 % P, où P est la valeur nette taxable du 
 
 **Source :** CGI Art. 1609 nonies G | **Module :** plus_values_immobilieres | **Tags :** PV_immo, taxe_supplementaire, 50000, 2pc_6pc
 
+**Version du texte :** texte de l'export Légifrance du 30/10/2026
+
 > Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+> Mise en forme du 2026-11-01 : le barème du III est présenté ligne à ligne en tableau. Dans l'export Légifrance du 30/10/2026, le premier mot de chaque tranche (« De », « Supérieur ») est accolé à la cellule précédente ; il est ici replacé en tête de sa tranche, sans autre changement des mots et des chiffres.
 
 ```
 Article 1609 nonies G
@@ -5350,27 +5892,18 @@ Elle est due par le cédant et exigible lors de la cession.
 III. – La taxe est due à raison des plus-values imposables d'un montant supérieur à 50 000 €, selon le barème
 suivant appliqué au montant total de la plus-value imposable :
 (En euros)
-MONTANT DE LA PLUS-VALUE IMPOSABLE MONTANT DE LA TAXE
-De 50 001 à 60 000
-2 % PV-(60 000-PV) × 1/ 20
-De 60 001 à 100 000
-2 % PV
-De 100 001 à 110 000
-3 % PV-(110 000-PV) × 1/ 10
-De 110 001 à 150 000
-3 % PV
-De 150 001 à 160 000
-4 % PV-(160 000-PV) × 15/ 100
-De 160 001 à 200 000
-4 % PV
-De 200 001 à 210 000
-5 % PV-(210 000-PV) × 20/ 100
-De 210 001 à 250 000
-5 % PV
-De 250 001 à 260 000
-6 % PV-(260 000-PV) × 25/ 100
-Supérieur à 260 000
-6 % PV
+| MONTANT DE LA PLUS-VALUE IMPOSABLE | MONTANT DE LA TAXE            |
+|------------------------------------|-------------------------------|
+| De 50 001 à 60 000                 | 2 % PV-(60 000-PV) × 1/ 20    |
+| De 60 001 à 100 000                | 2 % PV                        |
+| De 100 001 à 110 000               | 3 % PV-(110 000-PV) × 1/ 10   |
+| De 110 001 à 150 000               | 3 % PV                        |
+| De 150 001 à 160 000               | 4 % PV-(160 000-PV) × 15/ 100 |
+| De 160 001 à 200 000               | 4 % PV                        |
+| De 200 001 à 210 000               | 5 % PV-(210 000-PV) × 20/ 100 |
+| De 210 001 à 250 000               | 5 % PV                        |
+| De 250 001 à 260 000               | 6 % PV-(260 000-PV) × 25/ 100 |
+| Supérieur à 260 000                | 6 % PV                        |
 (PV = montant de la plus-value imposable)
 IV. – Une déclaration, conforme à un modèle établi par l'administration, retrace les éléments servant à la
 liquidation de la taxe. Elle est déposée dans les conditions prévues aux 1°, 2° et 4° du I et au II de l'article

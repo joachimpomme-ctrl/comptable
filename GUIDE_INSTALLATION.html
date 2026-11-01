@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agent IA Comptable &amp; Patrimoine — Guide d'installation</title>
+  <meta name="description" content="Installer l'assistant IA de recherche en fiscalité française sur Claude, Gemini ou ChatGPT : fichiers à charger, instructions, limites.">
   <style>
     :root {
       --primary: #2563eb;
@@ -135,7 +136,11 @@
     .file-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
     .file-table tr:last-child td { border-bottom: none; }
     .file-table tr:hover td { background: #f8fafc; }
-    .file-table td:first-child { font-family: monospace; color: var(--primary); font-size: 12.5px; white-space: nowrap; }
+    .file-table td:first-child { font-family: monospace; color: var(--primary); font-size: 12.5px; overflow-wrap: anywhere; }
+    .table-scroll { overflow-x: auto; }
+    .step-body { min-width: 0; }
+    .inline-code { overflow-wrap: anywhere; }
+    @media (max-width: 600px) { .file-table { font-size: 12.5px; } .file-table th, .file-table td { padding: 8px; } }
 
     /* ── Prompts ── */
     .prompt {
@@ -172,7 +177,7 @@
 
 <header>
   <h1>Agent IA Comptable &amp; Patrimoine</h1>
-  <p class="subtitle">Guide d'installation et de configuration &mdash; Version 2026.11.3 (01/11/2026)</p>
+  <p class="subtitle">Guide d'installation et de configuration &mdash; Version 2026.11.5 (01/11/2026)</p>
   <div class="badges">
     <span class="badge badge-gemini">Gemini Gems</span>
     <span class="badge badge-chatgpt">ChatGPT Custom GPT</span>
@@ -209,7 +214,7 @@
   <section id="presentation">
     <h2>Présentation</h2>
 
-    <p>Cet agent est un assistant IA spécialisé en <strong>comptabilite, fiscalite des professions libérales, location meublée, gestion financière et gestion de patrimoine</strong>. Il raisonne a partir d'une base de connaissances structurée — 391 règles curatées, 12 modules métier, 25 exemples calibrés — et produit des réponses sourcées, traçables et prudentes.</p>
+    <p>Cet agent est un assistant IA spécialisé en <strong>comptabilite, fiscalite des professions libérales, location meublée, gestion financière et gestion de patrimoine</strong>. Il raisonne a partir d'une base de connaissances structurée (378 règles, 10 modules de décision, 73 articles du CGI, 25 exemples calibrés) et produit des réponses sourcées, traçables et prudentes.</p>
 
     <div class="alert alert-danger">
       <strong>À lire avant toute utilisation.</strong>
@@ -217,8 +222,8 @@
     </div>
 
     <div class="alert alert-warning">
-      <strong>État de validation du corpus : 0 des 391 règles validée par un professionnel.</strong>
-      Toutes les règles métier sont en statut <span class="inline-code">candidate_to_validate</span>. Les 38 paramètres chiffrés du référentiel (<span class="inline-code">referentiel_parametres.json</span>) citent chacun leur source officielle, leur URL et leur date de vérification (passe du 26/08/2026, corrections du 01/11/2026). Les barèmes URSSAF et kilométrique sont au millésime 2025 ; PASS et seuil micro-BNC sont vérifiés pour 2026 (48 060 € ; 83 600 €). Pour valider ou contester une règle : voir CONTRIBUTING.md sur le dépôt GitHub.
+      <strong>État de validation du corpus : 0 des 378 règles validée par un professionnel.</strong>
+      Toutes les règles métier sont en statut <span class="inline-code">candidate_to_validate</span>. Les 40 paramètres chiffrés du référentiel (<span class="inline-code">referentiel_parametres.json</span>) citent chacun leur source officielle, leur URL et leur date de vérification (05/06/2026 ou 01/11/2026 selon la clé). Les barèmes de cotisations des indépendants sont vérifiés pour 2025 et 2026, en partie sur des sources secondaires (probable) ; le barème kilométrique reste au millésime 2025 ; PASS et seuil micro-BNC sont vérifiés pour 2026 (48 060 € ; 83 600 €). Pour valider ou contester une règle : voir CONTRIBUTING.md sur le dépôt GitHub.
     </div>
 
     <h3>Domaines couverts</h3>
@@ -246,8 +251,9 @@
       <li>Contentieux fiscal (LPF)</li>
     </ul>
 
-    <h3>Claude (skill)</h3>
-    <p>Télécharger <span class="inline-code">dist/assistant-fiscal-comptable.zip</span> sur le dépôt GitHub, activer l'exécution de code dans claude.ai, puis importer le zip dans Settings &gt; Capabilities &gt; Skills &gt; Upload skill (offre Pro, Max, Team ou Enterprise). Dans Claude Code, cloner le dépôt suffit. Ancien nom du skill : expert-comptable (supprimer l'ancien avant d'importer).</p>
+    <h3>Claude (skills)</h3>
+    <p><strong>Assistant fiscal :</strong> télécharger <span class="inline-code">dist/assistant-fiscal-comptable.zip</span> sur le dépôt GitHub, activer l'exécution de code dans claude.ai, puis importer le zip dans Settings &gt; Capabilities &gt; Skills &gt; Upload skill (offre Pro, Max, Team ou Enterprise). Dans Claude Code, cloner le dépôt suffit. Ancien nom du skill : expert-comptable (supprimer l'ancien avant d'importer).</p>
+    <p><strong>Conseiller patrimoine :</strong> aide à la décision patrimoniale pour un usage personnel (pas un conseil en investissement) : où placer, crédit et capacité d'emprunt, achat-revente, retraite, allocation. Il va chercher chaque chiffre volatil à sa source officielle et calcule avec ses scripts. Importer <span class="inline-code">dist/conseiller-patrimoine.zip</span> de la même façon ; guide complet : <span class="inline-code">docs/conseiller-patrimoine.md</span>. Ce skill n'existe que pour Claude.</p>
   </section>
 
   <!-- PREREQUIS -->
@@ -270,7 +276,7 @@
       <div class="platform-block-body">
         <ul>
           <li>Compte OpenAI avec abonnement <strong>ChatGPT Plus</strong> ou <strong>Team</strong></li>
-          <li>Les 13 fichiers de connaissances de ce package (dont referentiel_parametres.json, source de vérité des chiffres)</li>
+          <li>Les 14 fichiers de connaissances de ce package : les consignes complètes et 13 fichiers de <span class="inline-code">knowledge/</span>, dont referentiel_parametres.json, source de vérité des chiffres</li>
           <li>Note : l'archivage Google Drive n'est pas disponible sur ChatGPT</li>
         </ul>
       </div>
@@ -283,7 +289,7 @@
 
     <p>Le package contient les fichiers suivants. Veillez à tous les inclure.</p>
 
-    <table class="file-table">
+    <div class="table-scroll"><table class="file-table">
       <thead>
         <tr>
           <th>Fichier</th>
@@ -298,8 +304,13 @@
           <td><span class="badge badge-gemini">Gemini</span></td>
         </tr>
         <tr>
+          <td>chatgpt/00_INSTRUCTIONS_CHATGPT_COURT.md</td>
+          <td>Instructions à coller dans le champ « Instructions » du GPT (moins de 8 000 caractères, la limite du champ).</td>
+          <td><span class="badge badge-chatgpt">ChatGPT</span></td>
+        </tr>
+        <tr>
           <td>chatgpt/00_INSTRUCTIONS_CHATGPT.md</td>
-          <td>System prompt adapté — sans Drive, avec instructions d'export manuel.</td>
+          <td>Consignes complètes, sans Drive, avec export manuel. À charger comme fichier de connaissances.</td>
           <td><span class="badge badge-chatgpt">ChatGPT</span></td>
         </tr>
         <tr>
@@ -309,7 +320,7 @@
         </tr>
         <tr>
           <td>knowledge/02_golden_rules_claude_first.md</td>
-          <td>391 règles curatées structurées — cœur du raisonnement métier</td>
+          <td>378 règles structurées, cœur du raisonnement métier</td>
           <td><span class="badge badge-both">Les deux</span></td>
         </tr>
         <tr>
@@ -324,7 +335,7 @@
         </tr>
         <tr>
           <td>knowledge/referentiel_parametres.json</td>
-          <td><strong>Source de vérité des chiffres</strong> — 38 clés (seuils, taux, abattements) avec millésime, source officielle et date de vérification</td>
+          <td><strong>Source de vérité des chiffres</strong> — 40 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle et date de vérification</td>
           <td><span class="badge badge-both">Les deux</span></td>
         </tr>
         <tr>
@@ -344,7 +355,7 @@
         </tr>
         <tr>
           <td>knowledge/08_evaluation_suite.md</td>
-          <td>45 questions de test : 12 détaillées et chiffrées (EV-029 à EV-040), 8 qualitatives, 25 reprises des exemples de calibrage</td>
+          <td>47 questions de test : 14 détaillées et chiffrées (EV-029 à EV-042), 8 qualitatives, 25 reprises des exemples de calibrage</td>
           <td><span class="badge badge-both">Les deux</span></td>
         </tr>
         <tr>
@@ -354,12 +365,12 @@
         </tr>
         <tr>
           <td>knowledge/M_CGI_code_general_impots.md</td>
-          <td>63 articles du Code Général des Impôts — texte légal officiel (millésime 2026)</td>
+          <td>73 articles du Code général des impôts, texte légal officiel (export Légifrance du 30/10/2026)</td>
           <td><span class="badge badge-both">Les deux</span></td>
         </tr>
         <tr>
           <td>knowledge/chatgpt_only/10_documents.json</td>
-          <td>Inventaire des 11 documents d'origine des règles (non redistribués, sans autorité) : supplémentaire ChatGPT</td>
+          <td>Inventaire des documents d'origine des règles (11 documents privés, non redistribués et sans autorité, plus l'export officiel du CGI) : supplémentaire ChatGPT</td>
           <td><span class="badge badge-chatgpt">ChatGPT</span></td>
         </tr>
         <tr>
@@ -373,7 +384,7 @@
           <td><span class="badge badge-gemini">Gemini</span></td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <div class="alert alert-info">
       <strong>Tous les fichiers sont disponibles sur GitHub</strong>
@@ -387,8 +398,8 @@
       Exclure : 10_documents.json et M_CGI_code_general_impots.jsonl (métadonnées et doublon).
     </div>
     <div class="alert alert-info">
-      <strong>ChatGPT : pas de limite stricte</strong>
-      Uploader les 13 fichiers knowledge (dont referentiel_parametres.json et chatgpt_only/). Si refus pour taille, priorité : referentiel_parametres.json, 01, 02, 03, 04, 05, 06, M_CGI.
+      <strong>ChatGPT : 14 fichiers, sous la limite de 20 par GPT</strong>
+      Uploader les consignes complètes (chatgpt/00_INSTRUCTIONS_CHATGPT.md) et les 13 fichiers knowledge (dont referentiel_parametres.json et chatgpt_only/). Si refus pour taille, priorité : consignes complètes, referentiel_parametres.json, 01, 02, 03, 04, 05, 06, M_CGI.
     </div>
   </section>
 
@@ -478,14 +489,14 @@
         <div class="step-num">3</div>
         <div class="step-body">
           <h4>Coller les instructions</h4>
-          <p>Ouvrez <span class="inline-code">chatgpt/00_INSTRUCTIONS_CHATGPT.md</span>, copiez son contenu et collez-le dans le champ <strong>"Instructions"</strong>.</p>
+          <p>Ouvrez <span class="inline-code">chatgpt/00_INSTRUCTIONS_CHATGPT_COURT.md</span>, copiez son contenu et collez-le dans le champ <strong>"Instructions"</strong>. Ce champ est limité à 8 000 caractères : le fichier complet n'y tient pas, il se charge à l'étape suivante.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">4</div>
         <div class="step-body">
           <h4>Uploader les fichiers de connaissances</h4>
-          <p>Dans <strong>"Base de connaissances"</strong>, uploadez les fichiers du dossier <span class="inline-code">knowledge/</span>.<br>
+          <p>Dans <strong>"Base de connaissances"</strong>, uploadez <span class="inline-code">chatgpt/00_INSTRUCTIONS_CHATGPT.md</span> (consignes complètes) et les 13 fichiers du dossier <span class="inline-code">knowledge/</span>, dont <span class="inline-code">chatgpt_only/</span>.<br>
           Si vous rencontrez une limite de taille, uploadez en priorité referentiel_parametres.json, puis les fichiers 01 à 06.</p>
         </div>
       </div>
@@ -652,7 +663,7 @@ Exemples :
 </main>
 
 <footer>
-  <p>Agent IA Comptable &amp; Patrimoine &mdash; version 2026.11.3 &mdash; 391 règles &mdash; 63 articles du CGI &mdash; 38 paramètres sourcés</p>
+  <p>Agent IA Comptable &amp; Patrimoine &mdash; version 2026.11.5 &middot; 378 règles &middot; 73 articles du CGI &middot; 40 paramètres sourcés</p>
   <p style="margin-top:8px">
     <a href="https://github.com/joachimpomme-ctrl/comptable" target="_blank"
        style="color:#94a3b8;text-decoration:none">
