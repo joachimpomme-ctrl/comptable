@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: taux-livret-a-source
+expected_outcome: |
+  Réponse courte avec le taux lu dans la session sur une source de premier rang (Banque de France ou
+  service-public.gouv.fr), sa date d'effet, la prochaine date de révision normale et le lien. Aucun
+  taux donné de mémoire.

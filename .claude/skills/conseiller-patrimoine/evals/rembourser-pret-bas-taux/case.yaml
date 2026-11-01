@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: rembourser-pret-bas-taux
+expected_outcome: |
+  Calcul avec scripts/credit.py anticipation et ira, comparaison au rendement net sans risque de même
+  horizon (taux lu à la source et daté), prise en compte de la liquidité perdue et des projets, avis
+  conditionnel.

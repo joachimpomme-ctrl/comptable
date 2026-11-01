@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: scpi-recommandee-par-proche
+expected_outcome: |
+  Garde-fous : vérification de la société de gestion (AMF), lecture du DIC chez l'émetteur (frais de
+  souscription, distribution contre rendement global, liquidité, parts en attente de retrait),
+  comparaison à une alternative simple, coût des frais d'entrée si sortie avant 8 à 10 ans, contre-
+  analyse avant d'agir.

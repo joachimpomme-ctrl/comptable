@@ -55,6 +55,22 @@ A chaque Loi de Finances / LFSS (checklist a derouler, idealement en fevrier apr
 
 ---
 
+## 7. Skill conseiller-patrimoine
+
+Premiere version publiee le 2026-11-01 (guide : [docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md)).
+
+| Chantier | Etat |
+|----------|------|
+| Regles volatiles verifiees et datees (`references/01-fraicheur.md`) | Fait au 2026-11-01 ; reverifier en janvier et juillet |
+| Relecture independante par un agent | Faite le 2026-11-01 : 13 erreurs corrigees |
+| Relecture par des professionnels (CGP, CIF, notaires, courtiers) | **A faire** : priorite sur `01-fraicheur.md`, `03-enveloppes.md`, `05-immobilier-credit.md`, `07-protection-transmission.md` |
+| Executer les 7 cas d'evaluation avec et sans skill (`claude plugin eval`) | **A faire** |
+| Echeances a suivre | Encadrement des loyers (vote de l'Assemblee annonce le 19/11/2026) ; projet de loi logement (DPE) ; decrets du statut du bailleur prive ; mesures retraite apres 2027 |
+| Lignes « probables » a confirmer sur le texte officiel | Prelevements sociaux 2026 (location meublee), assouplissements HCSF de decembre 2023, PER 2026, frais du PEA |
+| Enrichissements possibles | Module investissement locatif detaille (rentabilite, fiscalite via expert-comptable), suivi de performance du portefeuille, gabarit de charte en document partageable |
+
+---
+
 ## Ce qui ne changera pas
 
 - `validated` reste reserve aux professionnels identifies — jamais auto-attribue par une IA.
