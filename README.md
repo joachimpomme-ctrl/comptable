@@ -113,7 +113,7 @@ Source de verite : `knowledge/referentiel_parametres.json` (chaque cle porte sa 
 ## Ce que l'agent ne fait pas
 
 - **Pas de conseil** au sens reglementaire — uniquement des projets d'analyse a faire valider par un professionnel.
-- **Pas de teledeclaration** ni d'acces aux comptes, logiciels ou donnees reelles d'un client.
+- **Pas de teledeclaration.** La version Gemini peut lire et ecrire dans votre Google Drive si vous activez ces outils ; le skill conseiller-patrimoine peut lire un connecteur bancaire si vous en avez un. Ne saisissez aucune donnee qui identifie un client (nom, adresse, numero fiscal, IBAN) : travaillez sur des cas anonymises. Securite et signalement : [SECURITY.md](SECURITY.md).
 - **Pas de veille automatique** : la base fige a sa date de mise a jour ; les baremes changent a chaque Loi de Finances.
 - **Hors scope** (refus explicite) : fiscalite crypto-actifs, TVA intracommunautaire, fiscalite internationale, contentieux LPF.
 - Sur ChatGPT : pas d'integration Google Drive (archivage manuel uniquement).
@@ -266,10 +266,10 @@ L'agent peut sauvegarder les analyses dans un dossier Google Drive sur demande e
  2 enfants, TMI 41%, horizon 15 ans ?"
 
 -- Conseil patrimonial (skill conseiller-patrimoine) --
-"J'ai 100 000 EUR qui se debloquent en avril sur mon PEE. On veut acheter
- une maison d'ici deux ans. Je mets tout sur mon PEA ?"
-"Combien peut-on emprunter sur 25 ans avec 9 500 EUR de revenus nets,
- 960 EUR de credits locatifs et 1 400 EUR de loyers ?"
+"J'ai 60 000 EUR disponibles sur mon PEE. On veut acheter
+ un appartement d'ici deux ans. Je mets tout sur mon PEA ?"
+"Combien peut-on emprunter sur 25 ans avec 7 000 EUR de revenus nets,
+ 650 EUR de credit locatif et 800 EUR de loyers ?"
 "Mon PEA est a 100 % sur un ETF monde. Comment ajouter de l'Europe et
  des emergents sans rien vendre ?"
 "Un proche me conseille une SCPI a 6 %. J'y mets 30 000 EUR ?"

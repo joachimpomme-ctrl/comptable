@@ -7,10 +7,10 @@ mensuelle est la plus faible place la différence au rendement du placement,
 pour comparer deux budgets identiques.
 
 Exemple :
-  python louer_acheter.py --prix 800000 --frais-acquisition-pct 7.5 --apport 250000 \
-      --taux 3.5 --duree-mois 300 --assurance-mensuelle 120 --taxe-fonciere 2500 \
+  python louer_acheter.py --prix 450000 --frais-acquisition-pct 7.5 --apport 120000 \
+      --taux 3.5 --duree-mois 300 --assurance-mensuelle 60 --taxe-fonciere 1500 \
       --entretien-pct 1.0 --charges-proprio 0 --valorisation-pct 1.5 --frais-revente-pct 5 \
-      --loyer 2600 --hausse-loyer-pct 1.5 --rendement-placement-pct 4 --horizon 15
+      --loyer 1500 --hausse-loyer-pct 1.5 --rendement-placement-pct 4 --horizon 15
 
 Toutes les hypothèses de marché (valorisation, hausse des loyers, rendement)
 sont à sourcer et à tester en plusieurs valeurs.

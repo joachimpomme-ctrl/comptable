@@ -78,7 +78,7 @@ Une ligne par décision au-delà du seuil de la charte, ou irréversible.
 
 ### Décision (extrait)
 
-> Question : placer 100 000 € disponibles en avril sur le PEA ou les garder pour l'apport d'une maison en 2028 ?
+> Question : placer 60 000 € disponibles sur le PEA ou les garder pour l'apport d'un achat prévu dans deux ans ?
 > Données : fiche maître rév. NN du JJ/MM/AAAA (solde, projet, matelas).
 > Règles vérifiées : PEA, retrait avant 5 ans = clôture en principe (CMF art. L221-32, statut sûr) ; plafond de versement restant (relevé du courtier).
 > Options :
@@ -89,7 +89,7 @@ Une ligne par décision au-delà du seuil de la charte, ou irréversible.
 > | Liquidité | Retrait = clôture avant 5 ans | Poche maison disponible | Immédiate |
 > | Charte | Contraire : la poche maison exclut les actions | Conforme | Conforme mais sous-optimal à long terme |
 > Contre-argument contre B : si la maison se décale de plusieurs années, la poche maison aura peu rapporté.
-> Avis (probable) : B. Je changerais d'avis si l'achat était repoussé au-delà de 2031.
+> Avis (probable) : B. Je changerais d'avis si l'achat était repoussé de plus de trois ans.
 > À décider : montant exact de la poche maison, à deux, avant le versement.
 
 ### Signal d'alerte

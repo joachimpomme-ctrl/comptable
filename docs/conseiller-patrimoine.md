@@ -54,8 +54,8 @@ Paquet prêt à installer : [`dist/conseiller-patrimoine.zip`](../dist/conseille
 ### Exemples à copier-coller
 
 ```
-« J'ai 100 000 € qui se débloquent en avril sur mon PEE. On veut acheter une maison d'ici deux ans. Je mets tout sur mon PEA ? »
-« On gagne 9 500 € net par mois à deux, 960 € de crédits locatifs et 1 400 € de loyers. Combien peut-on emprunter sur 25 ans ? »
+« J'ai 60 000 € disponibles sur mon PEE. On veut acheter un appartement d'ici deux ans. Je mets tout sur mon PEA ? »
+« On gagne 7 000 € net par mois à deux, 650 € de crédit locatif et 800 € de loyers. Combien peut-on emprunter sur 25 ans ? »
 « Il me reste 200 000 € sur un prêt à 1,2 % pendant 18 ans. Je rembourse 50 000 € par anticipation ? »
 « Mon beau-frère me conseille une SCPI qui distribue 6 %. J'y mets 30 000 € ? »
 « Mon PEA est à 100 % sur un ETF monde. Comment ajouter de l'Europe et des émergents sans rien vendre ? »
@@ -256,7 +256,7 @@ python scripts/credit.py mensualite --capital 300000 --taux 3.5 --duree-mois 300
 python scripts/credit.py empruntable --mensualite 1800 --taux 3.5 --duree-mois 300
 python scripts/credit.py crd --capital 300000 --taux 3.5 --duree-mois 300 --apres 24
 python scripts/credit.py tableau --capital 300000 --taux 3.5 --duree-mois 300 --csv tableau.csv
-python scripts/credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.85
+python scripts/credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.5
 python scripts/credit.py anticipation --crd 200000 --taux 1.2 --mois-restants 216 \
     --montant 50000 --rendement-net 2.0 --mode duree --assurance-mensuelle 62.5
 ```
@@ -267,12 +267,12 @@ python scripts/credit.py anticipation --crd 200000 --taux 1.2 --mois-restants 21
 ### `capacite.py` : capacité d'emprunt et achat-revente
 
 ```bash
-python scripts/capacite.py simple --revenus 9000 --taux 3.5 --duree-mois 300 \
+python scripts/capacite.py simple --revenus 7000 --taux 3.5 --duree-mois 300 \
     --assurance-taux 0.30 --apport 150000 --frais-acquisition-pct 7.5 --impot-mensuel 900 --charges-fixes 2500
-python scripts/capacite.py achat-revente --revenus 9000 --charges-credit 950 --loyers 1400 \
+python scripts/capacite.py achat-revente --revenus 7000 --charges-credit 650 --loyers 800 \
     --taux 3.5 --duree-mois 300 --assurance-taux 0.30 --frais-acquisition-pct 7.5 \
-    --valeur-vente 550000 --crd-a-solder 300000 --frais-vente 5000 --epargne-apport 100000 \
-    --quotite-relais 0.7 --taux-relais 4.0 --mensualite-actuelle 2050 --decote-scenario 10
+    --valeur-vente 400000 --crd-a-solder 250000 --frais-vente 5000 --epargne-apport 50000 \
+    --quotite-relais 0.7 --taux-relais 4.0 --mensualite-actuelle 1500 --decote-scenario 10
 ```
 
 - Taux d'effort maximal (35 % par défaut), part des loyers retenue (70 % par défaut, pratique bancaire à confirmer) : paramètres modifiables.
@@ -313,10 +313,10 @@ Le fichier JSON liste les positions (valeur, ventilation par zone tirée de la f
 ### `louer_acheter.py` : louer ou acheter
 
 ```bash
-python scripts/louer_acheter.py --prix 800000 --frais-acquisition-pct 7.5 --apport 250000 \
-    --taux 3.5 --duree-mois 300 --assurance-mensuelle 120 --taxe-fonciere 2500 \
+python scripts/louer_acheter.py --prix 450000 --frais-acquisition-pct 7.5 --apport 120000 \
+    --taux 3.5 --duree-mois 300 --assurance-mensuelle 60 --taxe-fonciere 1500 \
     --entretien-pct 1.0 --valorisation-pct 1.5 --frais-revente-pct 5 \
-    --loyer 2600 --hausse-loyer-pct 1.5 --rendement-placement-pct 4 --horizon 15
+    --loyer 1500 --hausse-loyer-pct 1.5 --rendement-placement-pct 4 --horizon 15
 ```
 
 Compare année par année le patrimoine net de l'acheteur (revente nette moins capital restant dû, plus son épargne) et celui du locataire (apport et différences de budget placés), et donne l'année de bascule.

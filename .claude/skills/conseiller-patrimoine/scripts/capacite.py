@@ -5,13 +5,13 @@ Le taux d'effort, la durée et la part des loyers retenue sont des paramètres :
 les vérifier (references/01-fraicheur.md) et les confirmer avec la banque.
 
 Exemples :
-  python capacite.py simple --revenus 9000 --taux 3.5 --duree-mois 300 \
+  python capacite.py simple --revenus 7000 --taux 3.5 --duree-mois 300 \
       --assurance-taux 0.30 --apport 150000 --frais-acquisition-pct 7.5
 
-  python capacite.py achat-revente --revenus 9000 --charges-credit 950 --loyers 1400 \
+  python capacite.py achat-revente --revenus 7000 --charges-credit 650 --loyers 800 \
       --taux 3.5 --duree-mois 300 --assurance-taux 0.30 --frais-acquisition-pct 7.5 \
-      --valeur-vente 550000 --crd-a-solder 400000 --frais-vente 5000 \
-      --epargne-apport 100000 --quotite-relais 0.6 --taux-relais 4.0 --mensualite-actuelle 2050
+      --valeur-vente 400000 --crd-a-solder 250000 --frais-vente 5000 \
+      --epargne-apport 50000 --quotite-relais 0.6 --taux-relais 4.0 --mensualite-actuelle 1500
 
 Conventions :
   --revenus : revenus nets mensuels du foyer avant impôt sur le revenu.

@@ -8,8 +8,8 @@ Exemples :
   python credit.py empruntable --mensualite 1800 --taux 3.5 --duree-mois 300
   python credit.py crd --capital 300000 --taux 3.5 --duree-mois 300 --apres 24
   python credit.py tableau --capital 300000 --taux 3.5 --duree-mois 300 --csv tableau.csv
-  python credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.85
-  python credit.py anticipation --crd 200000 --taux 2.85 --mois-restants 280 \
+  python credit.py ira --rembourse 50000 --crd-avant 200000 --taux 2.5
+  python credit.py anticipation --crd 200000 --taux 2.5 --mois-restants 280 \
       --montant 50000 --rendement-net 2.0 --mode duree
 
 Plafond des indemnités de remboursement anticipé (C. consom. art. R313-25) :

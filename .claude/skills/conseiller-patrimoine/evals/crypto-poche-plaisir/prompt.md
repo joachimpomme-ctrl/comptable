@@ -5,4 +5,4 @@ timeout_seconds: 900
 allowed_tools: [Read, Glob, Grep, Skill, Bash, WebSearch, WebFetch]
 ---
 
-Je veux mettre 8 000 € en bitcoin, j'ai à peu près 150 000 € d'épargne financière. Ça passe ?
+Je veux mettre 6 000 € en bitcoin, j'ai à peu près 100 000 € d'épargne financière. Ça passe ?
