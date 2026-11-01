@@ -1256,10 +1256,11 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 ### GFPL-094 | règle
 - Module : M2
 - Statut : `candidate_to_validate`
-- Ancre : CGI art. 39 quindecies (PV nette a long terme imposee a 12,8 % + 17,2 % PS)
+- Ancre : CGI art. 39 quindecies (PV nette a long terme : 12,8 % d'IR plus prelevements sociaux)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-21
-- Règle : La plus-value à long terme, après imputation des moins-values à long terme des 10 exercices précédents, est imposée à 12,8 % plus 17,2 % de prélèvements sociaux, soit 30 % au total.
-- Taux : `"30 %"`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : La plus-value à long terme, après imputation des moins-values à long terme des 10 exercices précédents, est imposée à 12,8 % plus 17,2 % de prélèvements sociaux, soit 30 % au total.
+- Taux : `{"revenus_2024": "30 %", "revenus_2025": "31,4 % (probable)"}`
+- Correction (audit du 2026-11-01) : 12,8 % d'IR plus prélèvements sociaux. PS de 17,2 % (30 % au total) jusqu'aux revenus 2024 ; 18,6 % (31,4 % au total) pour les revenus 2025 et suivants, probable (LFSS 2026, art. 12 ; une seule source pour les plus-values professionnelles) [referentiel: ps_revenus_patrimoine].
 
 ### GFPL-095 | condition
 - Module : M2
@@ -1304,7 +1305,8 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 151 septies A (exoneration IR maintenue, PS dus) ; BOI-BIC-PVMV-40-20
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 20-21
-- Règle : L’exonération pour départ à la retraite s’applique à la totalité des plus-values à court et long terme, mais les prélèvements sociaux de 17,2 % restent dus.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : L’exonération pour départ à la retraite s’applique à la totalité des plus-values à court et long terme, mais les prélèvements sociaux de 17,2 % restent dus.
+- Correction (audit du 2026-11-01) : les prélèvements sociaux restent dus, au taux de l'année : 17,2 % jusqu'aux revenus 2024, 18,6 % probable pour les revenus 2025 et suivants [referentiel: ps_revenus_patrimoine].
 
 ### GFPL-101 | condition
 - Module : M2
@@ -1751,9 +1753,10 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CSS art. L.136-8 (CSG/CRDS sur revenus du patrimoine) ; CGI art. 1600-0 S (prelevement de solidarite)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 30-32
-- Règle : Pour les revenus du patrimoine et les produits de placement, la CSG est de 9,2 %, la CRDS de 0,5 % et le prélèvement de solidarité de 7,5 %, soit un taux global de 17,2 %.
-- Taux : `"17,2 %"`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Pour les revenus du patrimoine et les produits de placement, la CSG est de 9,2 %, la CRDS de 0,5 % et le prélèvement de solidarité de 7,5 %, soit un taux global de 17,2 %.
+- Taux : `{"2025": "17,2 %", "2026": "18,6 % (hors revenus fonciers, plus-values immobilieres, assurance-vie, PEL, CEL, PEP)"}`
 - Précision (vérif. source officielle 2026-08-26) : Taux exacts millésime 2025 : CSG 9,2 % + CRDS 0,5 % + prélèvement de solidarité 7,5 % = 17,2 % (service-public.gouv.fr F2329) ; mais la LFSS pour 2026 porte la CSG sur les revenus du capital à 10,6 %, soit un taux global de 18,6 % applicable à compter de 2026 (placements dès le 01/01/2026).
+- Correction (audit du 2026-11-01) : depuis la LFSS 2026 (art. 12), CSG de 10,6 % (total 18,6 %) sur les produits de placement perçus depuis le 01/01/2026 [referentiel: ps_produits_placement] et sur les revenus du patrimoine dès les revenus 2025, dont la location meublée non professionnelle [referentiel: ps_revenus_patrimoine] ; taux maintenu à 17,2 % pour les revenus fonciers, les plus-values immobilières, l'assurance-vie, les PEL, CEL et PEP [referentiel: ps_revenus_fonciers_av_epargne_logement]. La Précision du 2026-08-26 ne distinguait pas les catégories.
 
 ### GFPL-156 | règle
 - Module : M2
@@ -1839,6 +1842,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : CGI art. 163 quatervicies (deductibilite des versements PER) ; C. mon. fin. art. L.224-2
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 49-50
 - Règle : Les versements volontaires sur un PER sont déductibles du revenu global pour tous ou du revenu catégoriel pour les seuls TNS ; il est possible de renoncer à la déduction au moment du versement.
+- Précision (audit du 2026-11-01) : versements volontaires et obligatoires effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9 ; BOFiP ACTU-2026-00106 du 10/08/2026).
 
 ### GFPL-167 | règle
 - Module : M2
@@ -1850,9 +1854,10 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 ### GFPL-168 | pratique
 - Module : M2
 - Statut : `candidate_to_validate`
-- Ancre : CGI art. 163 quatervicies, I-2 (report du plafond de deduction sur 3 ans)
+- Ancre : CGI art. 163 quatervicies, I-2-b (report de la fraction non utilisee du plafond : 5 ans a compter de l'imposition des revenus 2026, 3 ans auparavant ; LF 2026 art. 10)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 45-45
-- Règle : Si le professionnel libéral n’a pas utilisé le plafond de déduction du revenu global de l’année 2022, il doit choisir en priorité cette déduction car elle n’est utilisable que pendant 3 ans.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Si le professionnel libéral n’a pas utilisé le plafond de déduction du revenu global de l’année 2022, il doit choisir en priorité cette déduction car elle n’est utilisable que pendant 3 ans.
+- Correction (audit du 2026-11-01) : l'art. 163 quatervicies en vigueur depuis le 21/02/2026 (LF 2026, art. 10) porte le report à cinq ans, à compter de l'imposition des revenus 2026 (BOFiP ACTU-2026-00106 du 10/08/2026). L'énoncé, écrit pour le plafond 2022 sous le régime de trois ans, ne vaut plus tel quel : vérifier au BOFiP quelles fractions antérieures restent mobilisables avant de chiffrer.
 
 ### GFPL-169 | pratique
 - Module : M2
@@ -1924,22 +1929,24 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : C. trav. art. L.3332-1 et s. (plan d'epargne entreprise, PEE) ; CGI art. 81, 18 (exoneration)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 45-46
-- Règle : Le PEE est un système collectif d'épargne à moyen terme permettant aux salariés de se constituer un portefeuille de valeurs mobilières avec l'aide de l'entreprise. Alimentation: versements volontaires du salarié (plafond: 25 % de la rémunération annuelle brute), intéressement, participation, abondement employeur. Abondement employeur: exonéré d'IR et de cotisations sociales (hors CSG/CRDS) dans la limite de 3 fois le versement salarié et 8 % du PASS (3 768 € en 2025). Indisponibilité: 5 ans (sauf déblocage anticipé). Fiscalité à la sortie: exonération IR sur les gains; PS 17,2 % dus.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Le PEE est un système collectif d'épargne à moyen terme permettant aux salariés de se constituer un portefeuille de valeurs mobilières avec l'aide de l'entreprise. Alimentation: versements volontaires du salarié (plafond: 25 % de la rémunération annuelle brute), intéressement, participation, abondement employeur. Abondement employeur: exonéré d'IR et de cotisations sociales (hors CSG/CRDS) dans la limite de 3 fois le versement salarié et 8 % du PASS (3 768 € en 2025). Indisponibilité: 5 ans (sauf déblocage anticipé). Fiscalité à la sortie: exonération IR sur les gains; PS 17,2 % dus.
 - Seuils : `{"versement_max_pct_salaire": 25, "abondement_max_pct_versement": 300, "abondement_max_pct_PASS": 8, "abondement_max_euros_2025": 3768, "indisponibilite_ans": 5}`
-- Taux : `{"PS_sortie_pct": 17.2}`
+- Taux : `{"PS_sortie_pct_2025": 17.2, "PS_sortie_pct_2026": 18.6}`
 - Exceptions : Cas de déblocage anticipé similaires à la participation | Abondement majoré possible pour les PEE investis en titres de l'entreprise
 - Précision (vérif. source officielle 2026-08-26) : Énoncé exact millésime 2025 (C. trav. L.3332-10 : versements ≤ 25 % de la rémunération annuelle brute ; L.3332-11 et R.3332-8 : abondement ≤ 300 % du versement et 8 % du PASS, soit 3 768 € en 2025 ; L.3332-25 : blocage 5 ans ; CGI 81, 18° a : exonération IR ; PS 17,2 % à la sortie) — mais en 2026 le plafond d'abondement passe à 8 % × 48 060 = 3 844,80 € (PASS 2026 = 48 060 €, référentiel sourcé).
+- Correction (audit du 2026-11-01) : PS sur les gains à la sortie : 17,2 % jusqu'au 31/12/2025, 18,6 % pour les gains réalisés depuis le 01/01/2026 (probable : LFSS 2026, art. 12 ; service-public ne détaille pas l'épargne salariale) [referentiel: ps_produits_placement]. Plafond d'abondement 2026 : 8 % du PASS 2026, soit 3 844,80 € [referentiel: PASS/2026].
 
 ### ES-004 | définition
 - Module : M11
 - Statut : `candidate_to_validate`
 - Ancre : C. mon. fin. art. L.224-13 a L.224-26 (PER collectif, PERCOL, loi PACTE 2019-486) ; C. trav. art. L.3334-1
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 58-58
-- Règle : Le PERCO (ancien) est remplacé par le PER Collectif (PERCOL) depuis la loi PACTE 2019. Le PERCOL fonctionne comme le PEE mais avec une épargne bloquée jusqu'à la retraite (sauf déblocage anticipé dont l'achat de la résidence principale). Les sommes investies peuvent bénéficier de l'abondement employeur (mêmes plafonds que PEE majorés: jusqu'à 16 % du PASS soit 7 536 € en 2025). Fiscalité à la sortie en capital: exonération IR sur les capitaux épargne salariale, PS 17,2 % sur les gains. Les anciens PERCO peuvent toujours être alimentés et ont vocation à être transformés en PERCOL.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Le PERCO (ancien) est remplacé par le PER Collectif (PERCOL) depuis la loi PACTE 2019. Le PERCOL fonctionne comme le PEE mais avec une épargne bloquée jusqu'à la retraite (sauf déblocage anticipé dont l'achat de la résidence principale). Les sommes investies peuvent bénéficier de l'abondement employeur (mêmes plafonds que PEE majorés: jusqu'à 16 % du PASS soit 7 536 € en 2025). Fiscalité à la sortie en capital: exonération IR sur les capitaux épargne salariale, PS 17,2 % sur les gains. Les anciens PERCO peuvent toujours être alimentés et ont vocation à être transformés en PERCOL.
 - Seuils : `{"abondement_max_pct_PASS": 16, "abondement_max_euros_2025": 7536}`
-- Taux : `{"PS_sortie_pct": 17.2}`
+- Taux : `{"PS_sortie_pct_2025": 17.2, "PS_sortie_pct_2026": 18.6}`
 - Exceptions : Déblocage anticipé pour achat RP possible (contrairement au PERCO classique) | PERCO existants: non souscription de nouveaux depuis oct 2020 mais alimentation possible
 - Précision (vérif. source officielle 2026-08-26) : Tout est exact millésime 2025 (C. mon. fin. art. L.224-13 s. issus de la loi PACTE ; abondement plafonné à 16 % du PASS = 7 536 € en 2025, ≤ 3× les versements ; sortie en capital : versements d'épargne salariale exonérés d'IR, gains soumis aux seuls PS 17,2 % ; anciens PERCO toujours alimentables), mais le PASS 2026 est de 48 060 € (référentiel local), soit un plafond d'abondement porté à 7 689,60 € en 2026.
+- Correction (audit du 2026-11-01) : PS sur les gains à la sortie : 17,2 % jusqu'au 31/12/2025, 18,6 % pour les gains réalisés depuis le 01/01/2026 (probable : LFSS 2026, art. 12 ; service-public ne détaille pas l'épargne salariale) [referentiel: ps_produits_placement]. Plafond d'abondement 2026 : 16 % du PASS 2026, soit 7 689,60 € [referentiel: PASS/2026].
 
 ### ES-005 | règle
 - Module : M11
@@ -1954,8 +1961,9 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : C. trav. art. L.3315-2 (interessement affecte a un plan, exoneration IR) ; C. mon. fin. art. L.224-40 (transferts)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 46-48
-- Règle : Stratégies d'optimisation: (1) Placer l'intéressement sur le PEE ou PERCOL dans les 15 jours → exonération IR immédiate; (2) Maximiser l'abondement employeur (chaque euro d'abondement est exonéré d'IR et de cotisations); (3) Utiliser le PEE comme épargne intermédiaire (5 ans) avant le PER (retraite); (4) Transférer les droits PERCO vers PER individuel pour profiter d'une gestion plus large; (5) En cas de déblocage anticipé (acquisition RP), le montant est exonéré d'IR mais soumis aux PS 17,2 % sur les gains.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Stratégies d'optimisation: (1) Placer l'intéressement sur le PEE ou PERCOL dans les 15 jours → exonération IR immédiate; (2) Maximiser l'abondement employeur (chaque euro d'abondement est exonéré d'IR et de cotisations); (3) Utiliser le PEE comme épargne intermédiaire (5 ans) avant le PER (retraite); (4) Transférer les droits PERCO vers PER individuel pour profiter d'une gestion plus large; (5) En cas de déblocage anticipé (acquisition RP), le montant est exonéré d'IR mais soumis aux PS 17,2 % sur les gains.
 - Précision (vérif. source officielle 2026-08-26) : C. trav. art. L.3315-2 : l'exonération d'IR de l'intéressement affecté à un plan d'épargne dans les 15 jours n'est acquise que DANS LA LIMITE de 75 % du PASS (limite omise) ; de même l'abondement n'est exonéré que dans les plafonds de l'art. L.3332-11 (300 % du versement, 8 % PASS) et reste soumis à CSG-CRDS — « chaque euro » est excessif. Les points 3, 4 et 5 (blocage 5 ans, transfert L.224-40 CMF, déblocage RP exonéré d'IR avec PS 17,2 % sur les gains) sont exacts.
+- Correction (audit du 2026-11-01) : point (5), PS sur les gains : 17,2 % jusqu'au 31/12/2025, 18,6 % depuis le 01/01/2026 (probable) [referentiel: ps_produits_placement]. Les limites signalées par la Précision restent valables.
 
 ### FORM-003 | formule
 - Module : FORM
@@ -2017,11 +2025,12 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 ### RISK-006 | risque
 - Module : FORM
 - Statut : `candidate_to_validate`
-- Ancre : CGI art. 150 VB, II (reintegration des amortissements LMNP a la PV, LDF 2025 art. 84) ; BOI-RFPI-PVI
+- Ancre : CGI art. 150 VB, III (reintegration des amortissements LMNP a la PV, LDF 2025 art. 84) ; BOI-RFPI-PVI
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 69-70
 - Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : RISQUE: LMNP au réel depuis de nombreuses années — amortissements déduits depuis 2025 réintégrés dans la base PV à la cession. Un investisseur qui amorti significativement son bien et le revend après plusieurs années de déduction verra sa PV imposable augmenter du montant des amortissements déduits depuis 2025. Impact d'autant plus fort si le bien est vendu peu après la mise en location (pas de bénéfice des abattements de durée de détention).
 - Exceptions : Résidences étudiantes/apprentissage: exception | Plus de 22 ans de détention: exonération IR (les amortissements réintégrés restent soumis aux PS)
 - Correction (vérif. source officielle 2026-08-26) : CGI art. 150 VB, III (créé par LF 2025, art. 84) : pour les cessions intervenues à compter du 15 février 2025, le prix d'acquisition est minoré du montant TOTAL des amortissements admis en déduction pendant la période de location (y compris ceux déduits avant 2025) — et non des seuls « amortissements déduits depuis 2025 » comme l'énonce la règle ; correction : réintégration de l'ensemble des amortissements déduits, quelle que soit leur date.
+- Précision (audit du 2026-11-01) : cessions depuis le 15/02/2025 ; exceptions : résidences pour étudiants, pour jeunes de moins de 30 ans en formation et pour personnes de plus de 65 ans (CCH L631-12 et L631-13), établissements des 6° et 7° du I de l'art. L312-1 CASF, résidences services agréées, accueil familial salarié, unités de soins de longue durée.
 
 ### RISK-007 | risque
 - Module : FORM
@@ -2212,15 +2221,17 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Ancre : C. mon. fin. art. L.224-1 a L.224-8 (PER, loi PACTE 2019-486 du 22/05/2019)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 58-58
 - Règle : Plan d'épargne retraite (PER, loi PACTE mai 2019): 3 compartiments: (1) versements volontaires (libres, déductibles ou non du revenu); (2) épargne salariale transférée (intéressement, participation, abondement, CET); (3) cotisations obligatoires (sortie uniquement en rente). Remplace: Perp, Madelin, Perco, art. 83 (impossibles à souscrire depuis oct 2020; transfert possible sur PER). Déblocage anticipé possible: décès conjoint, invalidité, achat résidence principale.
+- Précision (audit du 2026-11-01) : versements volontaires et obligatoires effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9 ; BOFiP ACTU-2026-00106 du 10/08/2026).
 
 ### PAT-021 | règle
 - Module : M6
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 163 quatervicies (deduction PER) ; art. 158, 5 (rentes) ; C. mon. fin. art. L.224-1
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 58-59
-- Règle : Compartiment versements volontaires: OPTION A (déduction à l'entrée) → sortie en rente: IR régime rentes viagères à titre gratuit (abattement 10%) + PS; sortie en capital: partie capital au barème IR + PV au PFU 30%. OPTION B (pas de déduction) → sortie en rente: IR régime rentes à titre onéreux (fraction imposable selon âge: 70%/<50 ans, 50%/50-59 ans, 40%/60-69 ans, 30%/>69 ans) + PS; sortie en capital: PV uniquement au PFU. Compartiment épargne salariale: exonération IR sur le capital en sortie; PV soumises aux PS 17,2%.
-- Taux : `{"PFU": 30, "PS": 17.2}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Compartiment versements volontaires: OPTION A (déduction à l'entrée) → sortie en rente: IR régime rentes viagères à titre gratuit (abattement 10%) + PS; sortie en capital: partie capital au barème IR + PV au PFU 30%. OPTION B (pas de déduction) → sortie en rente: IR régime rentes à titre onéreux (fraction imposable selon âge: 70%/<50 ans, 50%/50-59 ans, 40%/60-69 ans, 30%/>69 ans) + PS; sortie en capital: PV uniquement au PFU. Compartiment épargne salariale: exonération IR sur le capital en sortie; PV soumises aux PS 17,2%.
+- Taux : `{"PFU_2025": 30, "PS_2025": 17.2, "PFU_2026": 31.4, "PS_2026": 18.6}`
 - Précision (vérif. source officielle 2026-08-26) : Architecture exacte (versements déduits : rente imposée comme pension avec abattement 10 % + PS, capital au barème IR et gains au PFU ; versements non déduits : rente à titre onéreux avec fractions imposables 70 %/<50 ans, 50 %/50-59, 40 %/60-69, 30 %/>69 — CGI art. 158, 6 — et gains seuls au PFU ; épargne salariale : capital exonéré d'IR, gains aux seuls PS). Nuance millésime : depuis la LFSS 2026 (art. 12), les prélèvements sociaux sur les revenus du capital passent de 17,2 % à 18,6 %, soit un PFU global d'environ 31,4 % au lieu de 30 % (valeurs 2025 citées par la règle).
+- Correction (audit du 2026-11-01) : taux 2025 dans l'énoncé. Depuis le 01/01/2026 : gains en sortie de capital au PFU de 31,4 % (12,8 % + PS 18,6 %) [referentiel: pfu_taux_global/2026] ; PS sur les gains d'épargne salariale et sur les rentes : 18,6 % (probable, questions-réponses BOSS citées par Weblex le 20/07/2026) [referentiel: ps_produits_placement/2026]. Versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9).
 
 ### PAT-022 | règle
 - Module : M6
@@ -2238,9 +2249,10 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 150-0 A et 157, 5 bis (fiscalite PEA) ; CSS art. L.136-7
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 63-64
-- Règle : PEA fiscalité: retrait avant 5 ans: PFU 12,8% sur les gains (ou barème IR sur option) + PS 17,2%. Retrait après 5 ans: gains exonérés d'IR + PS 17,2%. Sortie en rente viagère après 8 ans: exonération totale d'IR sur la rente; fraction déterminée selon âge soumise aux PS. Compte-titres ordinaire: dividendes et PV soumis au PFU 12,8% + PS 17,2% (ou barème IR option); dividendes avec option barème: abattement 40% sur les dividendes.
-- Taux : `{"PFU": 12.8, "PS": 17.2, "abattement_dividendes_bareme": 40}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : PEA fiscalité: retrait avant 5 ans: PFU 12,8% sur les gains (ou barème IR sur option) + PS 17,2%. Retrait après 5 ans: gains exonérés d'IR + PS 17,2%. Sortie en rente viagère après 8 ans: exonération totale d'IR sur la rente; fraction déterminée selon âge soumise aux PS. Compte-titres ordinaire: dividendes et PV soumis au PFU 12,8% + PS 17,2% (ou barème IR option); dividendes avec option barème: abattement 40% sur les dividendes.
+- Taux : `{"PFU_IR": 12.8, "PS_2025": 17.2, "PS_2026": 18.6, "abattement_dividendes_bareme": 40}`
 - Précision (vérif. source officielle 2026-08-26) : Tout est exact (retrait < 5 ans : 12,8 % + PS 17,2 % ; > 5 ans : exoneration IR + PS ; CTO : PFU ou bareme avec abattement de 40 % sur dividendes) SAUF la condition de la rente viagere : depuis la loi PACTE, la rente est exoneree d'IR des lors que le PEA se denoue APRES 5 ANS (CGI art. 157, 5. ter ; BOI-RPPM-RCM-40-50-30), et non 8 ans ; la fraction de la rente imposable aux PS selon l'age reste exacte.
+- Correction (audit du 2026-11-01) : taux de PS 2025 dans l'énoncé. Depuis le 01/01/2026 : PS de 18,6 % sur les dividendes et intérêts du CTO, soit un PFU global de 31,4 % [referentiel: pfu_taux_global/2026] ; gains de PEA retirés depuis 2026 : 18,6 % (probable ; taux historiques possibles pour les gains acquis avant 2018, service-public F2329) [referentiel: ps_produits_placement/2026]. Rente viagère : exonération d'IR dès que le PEA a plus de 5 ans (voir la Précision).
 
 ### PAT-024 | définition
 - Module : M6
@@ -2508,6 +2520,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 65-66
 - Règle : Différences fiscales clés entre location nue (revenus fonciers) et location meublée (BIC): Location nue → revenus fonciers, micro si < 15 000 €, déficit imputable sur RG (plafond 10 700 €), PV régime particuliers avec abattements durée détention. Location meublée → BIC, micro si < 77 700 € (50 % abattement), amortissements déductibles (art. 39-C), mais PV depuis 2025 réintègre les amortissements.
 - Précision (vérif. source officielle 2026-08-26) : Fond exact : location meublee = BIC (art. 35, I-5. bis, corpus local), micro-foncier < 15 000 EUR (art. 32), deficit foncier imputable sur le revenu global dans la limite de 10 700 EUR (art. 156, I-3.), amortissements deductibles avec plafonnement art. 39 C, et depuis 2025 les amortissements deduits sont reintegres dans le calcul de la PV LMNP (LF 2025, art. 84, modif. CGI 150 VB). Nuance millesime : le seuil micro-BIC de 77 700 EUR (50 %) vaut pour le triennat 2023-2025 ; il est porte a 83 600 EUR pour 2026-2028 (referentiel local, meme revalorisation que le micro-BNC).
+- Précision (audit du 2026-11-01) : réintégration pour les cessions depuis le 15/02/2025, de tous les amortissements déduits quelle que soit leur date (voir LMN-022) ; seuil micro-BIC 2026 : 83 600 € [referentiel: seuil_micro_bic_classe/2026].
 
 ### PV-RP-001 | règle
 - Module : M9
@@ -2884,11 +2897,12 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 ### LMN-005 | seuil
 - Module : M5
 - Statut : `candidate_to_validate`
-- Ancre : CGI art. 50-0 (micro-BIC) ; loi 2024-322 (loi Le Meur) ; BOI-BIC-DECLA-10-10 (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159220/) (verifie le 2026-06-05)
+- Ancre : CGI art. 50-0 (micro-BIC) ; loi n° 2024-1039 du 19/11/2024 (loi Le Meur) ; BOI-BIC-DECLA-10-10 (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159220/) (verifie le 2026-06-05)
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 28-29
 - Règle : Seuils micro-BIC pour revenus 2025 (déclarés 2026) selon type: meublés tourisme CLASSÉS + chambres d'hôtes + gîtes classés: CA < 77 700 € → abattement 50%; meublés tourisme NON classés: CA < 15 000 € → abattement 30%; autres locations (longue durée, résidence principale, EHPAD, résidences services): CA < 77 700 € → abattement 50%. Abattement minimum: 305 €.
 - Seuils : `{"tourisme_classe_CA": 77700, "tourisme_classe_abattement_pct": 50, "tourisme_non_classe_CA": 15000, "tourisme_non_classe_abattement_pct": 30, "autres_CA": 77700, "autres_abattement_pct": 50, "abattement_minimum": 305}`
 - Exceptions : Revenus 2024 déclarés 2025: anciens seuils applicables (188700€/71% classés; 77700€/50% non classés) selon loi Le Meur 2024 | Indivisions et sociétés de personnes: exclues du micro-BIC
+- Précision (audit du 2026-11-01) : revenus 2026 (triennat 2026-2028) : 83 600 € / 50 % pour les meublés de tourisme classés, les chambres d'hôtes et la location longue durée [referentiel: seuil_micro_bic_classe/2026] ; 15 000 € / 30 % inchangé pour les non classés. Numéro de la loi Le Meur corrigé dans l'ancre (2024-1039, et non 2024-322).
 
 ### LMN-006 | obligation
 - Module : M5
@@ -3017,9 +3031,10 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 60-62
 - Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-08-26 — lire la Correction ci-dessous) : Assujettissement aux cotisations sociales (SSI): (1) recettes de location de COURTE DURÉE > 23 000 €/an, OU (2) statut LMP (recettes > 23 000 € ET supérieures aux revenus professionnels du foyer). En dessous de ces seuils: prélèvements sociaux de 17,2% uniquement (pas de droits retraite/assurance maladie). Exception: propriétaires ayant délégué la gestion à un professionnel de l'immobilier → pas d'affiliation même si > 23 000 €.
 - Seuils : `{"cotisations_sociales_seuil_courte_duree": 23000}`
-- Taux : `{"prelevements_sociaux_sous_seuil": 17.2}`
+- Taux : `{"prelevements_sociaux_sous_seuil_revenus_2024": 17.2, "prelevements_sociaux_sous_seuil_revenus_2025": 18.6}`
 - Exceptions : Gestion déléguée à un professionnel: prélèvements sociaux uniquement (RM Pellois, JO 10/07/2018)
 - Correction (vérif. source officielle 2026-08-26) : Les cas d'affiliation énoncés (courte durée > 23 000 € ; statut LMP ; PS 17,2 % en dessous) sont exacts, MAIS l'exception « gestion déléguée à un professionnel de l'immobilier → pas d'affiliation » ne figure pas dans CSS art. L.611-1, 6° : la seule alternative prévue par le texte est l'option, lors de l'affiliation, pour le régime général (CSS L.311-3, 35°) — confier la gestion à une agence ne dispense pas d'affiliation au-delà du seuil.
+- Correction (audit du 2026-11-01) : sous les seuils, prélèvements sociaux de 18,6 % dès les revenus 2025 (LFSS 2026, art. 12 ; impots.gouv : « En location meublé : 18,6 % ») et 17,2 % pour les revenus 2024 et antérieurs [referentiel: ps_revenus_patrimoine].
 
 ### LMN-021 | règle
 - Module : M5
@@ -3034,11 +3049,12 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 ### LMN-022 | règle
 - Module : M5
 - Statut : `candidate_to_validate`
-- Ancre : CGI art. 150 U et s. (PV particuliers) ; art. 150 VB, II (reintegration amortissements LMNP, LDF 2025 art. 84) ; BOI-RFPI-PVI (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046860944/) (verifie le 2026-06-05)
+- Ancre : CGI art. 150 U et s. (PV particuliers) ; art. 150 VB, III (reintegration amortissements LMNP, LDF 2025 art. 84) ; BOI-RFPI-PVI (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046860944/) (verifie le 2026-06-05)
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 68-69
-- Règle : En LMNP (cession sous statut LMNP): régime des plus-values des particuliers. À compter du 1er janvier 2025: PV = Prix vente - (Prix acquisition - Amortissements déduits pendant la détention). Avant 2025: PV = Prix vente - Prix acquisition. Imposition: 19% IR + 17,2% PS, après abattements pour durée de détention.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : En LMNP (cession sous statut LMNP): régime des plus-values des particuliers. À compter du 1er janvier 2025: PV = Prix vente - (Prix acquisition - Amortissements déduits pendant la détention). Avant 2025: PV = Prix vente - Prix acquisition. Imposition: 19% IR + 17,2% PS, après abattements pour durée de détention.
 - Taux : `{"IR": 19, "PS": 17.2, "taxe_supplement_seuil_PV": 50000}`
 - Exceptions : Résidences jeunes en formation/apprentissage: exception au régime des amortissements 2025
+- Correction (audit du 2026-11-01) : CGI art. 150 VB, III (LF 2025, art. 84) : pour les cessions réalisées depuis le 15/02/2025 (et non le 01/01/2025), le prix d'acquisition est minoré de la totalité des amortissements déduits pendant la location au titre de l'art. 39 C, y compris ceux déduits avant 2025 (RM Mette n° 10097, JOAN 24/03/2026). Exceptions : résidences pour étudiants, pour jeunes de moins de 30 ans en formation et pour personnes de plus de 65 ans (CCH L631-12 et L631-13), établissements des 6° et 7° du I de l'art. L312-1 CASF, résidences services agréées, accueil familial salarié, unités de soins de longue durée. LF 2026 : le III vise aussi les amortissements du statut du bailleur privé (art. 31, I, 1° i et j). Taux inchangés : 19 % d'IR et 17,2 % de PS, maintenu en 2026 pour les plus-values immobilières [referentiel: pv_immo_taux_prelevements_sociaux].
 
 ### LMN-023 | seuil
 - Module : M5
@@ -3058,6 +3074,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : statut LMP l'année de cession
 - Seuils : `{"duree_CT_ans": 2}`
 - Taux : `{"PV_LT_IR": 12.8, "PV_LT_PS": 17.2}`
+- Précision (audit du 2026-11-01) : PS sur la PV à long terme : 17,2 % jusqu'aux revenus 2024 ; pour les revenus 2025 et suivants, taux à vérifier (18,6 % probable, LFSS 2026, art. 12) [referentiel: ps_revenus_patrimoine].
 
 ### LMN-025 | condition
 - Module : M5
@@ -3186,14 +3203,15 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 ### FORM-002 | formule
 - Module : FORM
 - Statut : `candidate_to_validate`
-- Ancre : CGI art. 150 VB, II (reintegration amortissements LMNP, LDF 2025) et art. 150 V/VC ; BOI-RFPI-PVI
+- Ancre : CGI art. 150 VB, III (reintegration amortissements LMNP, LDF 2025) et art. 150 V/VC ; BOI-RFPI-PVI
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 69-70
-- Règle : PV brute LMNP (depuis 2025) = Prix cession − (Prix acquisition − Amortissements déduits pendant la détention). Prix acquisition majoré: + frais d'acquisition réels OU + 7,5 % forfait si > 5 ans; + travaux réels OU + 15 % forfait si > 5 ans. PV nette imposable IR = PV brute × (1 − Abattement IR durée détention). PV nette imposable PS = PV brute × (1 − Abattement PS durée détention). IR = PV nette IR × 19 %. PS = PV nette PS × 17,2 %. Taxe supplémentaire = f(PV nette IR) si > 50 000 €.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : PV brute LMNP (depuis 2025) = Prix cession − (Prix acquisition − Amortissements déduits pendant la détention). Prix acquisition majoré: + frais d'acquisition réels OU + 7,5 % forfait si > 5 ans; + travaux réels OU + 15 % forfait si > 5 ans. PV nette imposable IR = PV brute × (1 − Abattement IR durée détention). PV nette imposable PS = PV brute × (1 − Abattement PS durée détention). IR = PV nette IR × 19 %. PS = PV nette PS × 17,2 %. Taxe supplémentaire = f(PV nette IR) si > 50 000 €.
 - Conditions : statut LMNP à la date de cession | cession depuis 1er janvier 2025
 - Seuils : `{"seuil_taxe_supplementaire": 50000}`
 - Taux : `{"IR_pct": 19, "PS_pct": 17.2}`
 - Exceptions : Avant 2025: PV brute = Prix cession − Prix acquisition (amortissements non réintégrés) | Résidences étudiantes/apprentissage: exception au régime de réintégration des amortissements
 - Précision (vérif. source officielle 2026-08-26) : Formule conforme à CGI art. 150 VB, III (LF 2025, art. 84 ; cessions dès le 15/2/2025 : prix d'acquisition minoré des amortissements déduits) et aux taux 19 %/17,2 %, surtaxe si PV nette IR > 50 000 € ; MAIS le forfait de frais d'acquisition de 7,5 % n'est PAS conditionné à une détention > 5 ans (150 VB, II, 3°, texte local : aucune condition de durée) — la condition « > 5 ans » ne vaut que pour le forfait travaux de 15 % (II, 4°).
+- Correction (audit du 2026-11-01) : (1) cessions depuis le 15/02/2025, et non le 01/01/2025 ; (2) tous les amortissements déduits au titre de l'art. 39 C sont réintégrés, quelle que soit leur date ; (3) forfait de frais de 7,5 % sans condition de durée, forfait travaux de 15 % pour une cession plus de 5 ans après l'acquisition (art. 150 VB, II, 3° et 4°) ; (4) exceptions plus larges que les résidences étudiantes (voir LMN-022) ; (5) surtaxe calculée sur la PV nette imposable à l'IR, barème par paliers [referentiel: pv_immo_surtaxe_seuil]. PS de 17,2 % maintenu en 2026 [referentiel: pv_immo_taux_prelevements_sociaux].
 
 ### RISK-001 | risque
 - Module : FORM
@@ -3208,6 +3226,8 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 206, 2 (IS de plein droit si location meublee par SCI) ; art. 239 ; BOI-IS-CHAMP-10-30
 - source_ingest : M6_gestion_patrimoniale.jsonl
-- Règle : RISQUE: SCI optant pour la location meublée → soumise à l'IS de plein droit (activité commerciale). Cette option IS est IRRÉVOCABLE. La SCI perd: (1) l'abattement pour durée de détention sur les PV immobilières; (2) la possibilité de retourner à l'IR. Les dividendes distribués sont ensuite imposés au PFU 30 % (double imposition IS + PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI IR.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : RISQUE: SCI optant pour la location meublée → soumise à l'IS de plein droit (activité commerciale). Cette option IS est IRRÉVOCABLE. La SCI perd: (1) l'abattement pour durée de détention sur les PV immobilières; (2) la possibilité de retourner à l'IR. Les dividendes distribués sont ensuite imposés au PFU 30 % (double imposition IS + PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI IR.
 
 - Précision (vérif. source officielle 2026-08-26) : Confirmé : la location meublée habituelle est commerciale et rend la SCI passible de l'IS de plein droit (CGI art. 206, 2 ; BOI-IS-CHAMP-10-30), avec perte des abattements de durée sur les PV et imposition des dividendes au PFU ; NUANCES : (1) tolérance administrative si les recettes commerciales n'excèdent pas 10 % des recettes totales HT ; (2) il s'agit d'un assujettissement de plein droit et non d'une « option » ; l'option volontaire pour l'IS (CGI art. 239) n'est d'ailleurs plus irrévocable depuis 2019 (renonciation possible pendant 5 exercices) — l'impossibilité de revenir à l'IR ne vaut que tant que l'activité meublée se poursuit.
+- Correction (audit du 2026-11-01) : dividendes au PFU de 31,4 % s'ils sont perçus depuis le 01/01/2026, 30 % en 2025 [referentiel: pfu_taux_global] ; assujettissement à l'IS de plein droit et non option, et l'option volontaire (art. 239) est révocable jusqu'au 5e exercice qui suit (voir la Précision).
+

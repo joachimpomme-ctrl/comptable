@@ -32,12 +32,13 @@
 - **SI** professionnel libéral au réel BNC
   - **ALORS** cotisations PER déductibles du BNC (charge de l'année de paiement) ET mention sur la 2035
   - **ET** déductibles du revenu global jusqu'à épuisement du plafond global
-  - **STRATÉGIE** utiliser d'abord le plafond BNC (réduit le RFR) avant le plafond global
+  - **STRATÉGIE** utiliser d'abord le plafond BNC (art. 154 bis : 15 % supplémentaires sur la fraction du bénéfice comprise entre 1 et 8 PASS) avant le plafond global, ce qui préserve les plafonds du revenu global reportables ; la déduction ne réduit pas l'assiette des cotisations sociales (versements réintégrés, CSS art. L131-6) ; effet sur le RFR à vérifier (CGI art. 1417, IV)
 - **SI** professionnel libéral au micro-BNC
   - **ALORS** cotisations PER NON déductibles du revenu catégoriel
   - **MAIS** déductibles du revenu global uniquement
 - **SI** versement volontaire PER avec renonciation à la déduction
   - **ALORS** choix irrévocable au moment du versement
+- **ATTENTION LF 2026** versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9) ; fraction non utilisée du plafond du revenu global reportable sur les cinq années suivantes à compter de l'imposition des revenus 2026, trois ans auparavant (LF 2026, art. 10 ; BOFiP ACTU-2026-00106 du 10/08/2026)
 - **SEUIL** PASS 2025 = 47 100 € ; PASS 2026 = 48 060 € [referentiel: PASS]
 - **SOURCE** GFPL-165 à GFPL-174, M2
 
@@ -94,6 +95,7 @@
 - **SI** réel BIC
   - **ALORS** déduction charges réelles + amortissements; FEC obligatoire si comptabilité informatisée
 - **ATTENTION** revenus 2024 déclarés 2025: anciens seuils (188 700 €/71 % classés, 77 700 €/50 % non classés)
+- **REVENUS 2026 (triennat 2026-2028)** seuil du 2° porté à **83 600 €** / 50 % pour la location longue durée, les meublés de tourisme classés et les chambres d'hôtes [referentiel: seuil_micro_bic_classe/2026] ; 1° (fourniture de logement, para-hôtellerie) 203 100 € / 71 % [referentiel: seuil_micro_bic_ventes_fourniture_logement/2026] ; meublés non classés : 15 000 € / 30 %, non actualisé ; plafonds du réel simplifié portés à 945 000 € et 286 000 € (probable : source secondaire citant le BOFiP du 19/08/2026)
 - **SOURCE** LMN-005, LMN-006, LMN-007, M5
 
 ### B3 — Amortissements et article 39-C CGI (réel BIC uniquement)
@@ -124,11 +126,14 @@
 
 - **SI** cession sous statut LMNP (apprécié l'année de la cession)
   - **ALORS** régime PV des particuliers
-  - **CALCUL (depuis 2025)** PV = Prix vente − (Prix acquisition − Amortissements déduits pendant la détention)
-  - **CALCUL (avant 2025)** PV = Prix vente − Prix acquisition (amortissements ignorés)
+  - **CALCUL (cessions depuis le 15/02/2025)** PV = Prix vente − (Prix acquisition − TOTALITÉ des amortissements déduits pendant la location au titre de l'art. 39 C, y compris ceux déduits avant 2025) (CGI art. 150 VB, III, créé par la LF 2025 art. 84 ; RM Mette n° 10097, JOAN 24/03/2026)
+  - **CALCUL (cessions avant le 15/02/2025)** PV = Prix vente − Prix acquisition (amortissements ignorés)
+  - **EXCEPTIONS** (pas de réintégration) : résidences pour étudiants, pour jeunes de moins de 30 ans en formation et pour personnes de plus de 65 ans (CCH L631-12 et L631-13) ; établissements des 6° et 7° du I de l'art. L312-1 CASF ; résidences services agréées ; accueil familial salarié ; unités de soins de longue durée
+  - **PRIX D'ACQUISITION** majoré des frais réels ou du forfait de 7,5 % (sans condition de durée) et des travaux réels ou du forfait de 15 % (cession plus de 5 ans après l'acquisition) ; articulation des forfaits avec la réintégration : à confirmer au BOFiP
+  - **LF 2026** l'art. 150 VB, III minore aussi le prix d'acquisition des amortissements du statut du bailleur privé (art. 31, I, 1° i et j)
   - **ABATTEMENTS IR:** 0 % (0–5 ans), 6 %/an (6–21 ans), 4 % (22ème), exonération IR > 22 ans
   - **ABATTEMENTS PS:** 0 % (0–5 ans), 1,65 %/an (6–21 ans), 1,6 % (22ème), 9 %/an (23–30 ans), exonération PS > 30 ans
-  - **TAUX** 19 % IR + 17,2 % PS (sur base après abattements); taxe supplémentaire si PV > 50 000 €
+  - **TAUX** 19 % IR + 17,2 % PS, taux maintenu en 2026 (sur base après abattements) [referentiel: pv_immo_taux_prelevements_sociaux] ; taxe supplémentaire si la PV nette imposable à l'IR dépasse 50 000 € [referentiel: pv_immo_surtaxe_seuil]
 - **SOURCE** LMN-022, LMN-023, M5
 
 ### B6 — Plus-values LMP (régime professionnel)
@@ -136,7 +141,7 @@
 - **SI** cession sous statut LMP
   - **ALORS** PV professionnelle = Prix vente − VNC (valeur d'origine − amortissements DÉDUITS, hors ARD)
   - **SI** bien détenu < 2 ans → PV court terme (IR barème progressif)
-  - **SI** bien détenu > 2 ans → PV CT dans la limite des amortissements déduits + PV LT au-delà (12,8 % + 17,2 % PS)
+  - **SI** bien détenu > 2 ans → PV CT dans la limite des amortissements déduits + PV LT au-delà (12,8 % IR + PS : 17,2 % jusqu'aux revenus 2024 ; pour les revenus 2025 et suivants, taux à vérifier, 18,6 % probable [referentiel: ps_revenus_patrimoine])
   - **EXONÉRATIONS possibles** (activité ≥ 5 ans):
     - Art. 151 septies: totale si recettes moy. < 90 000 € (250 000 € tourisme classé); partielle jusqu'à 126 000 €
     - Art. 151 septies B: abattement 10 %/an sur PV LT immo au-delà de 5 ans (exo totale à 15 ans)
@@ -161,11 +166,11 @@
 ### B8 — Cotisations sociales en location meublée
 
 - **SI** recettes de courte durée ≤ 23 000 € ET statut LMNP
-  - **ALORS** prélèvements sociaux 17,2 % uniquement (pas de cotisations sociales)
+  - **ALORS** pas de cotisations sociales ; prélèvements sociaux de **18,6 %** sur le résultat BIC à compter de l'imposition des revenus 2025 (LFSS 2026, art. 12), 17,2 % pour les revenus 2024 et antérieurs [referentiel: ps_revenus_patrimoine]
 - **SI** recettes courte durée > 23 000 € OU statut LMP
   - **ALORS** affiliation SSI obligatoire
   - **ABATTEMENTS** 60 % (courte durée standard) ou 87 % (tourisme classé) sur les recettes
-  - **EXCEPTION** gestion déléguée à un professionnel de l'immobilier → PS uniquement même si > 23 000 €
+  - **ATTENTION** confier la gestion à une agence ne dispense pas d'affiliation au-delà du seuil (Correction de LMN-020) ; seule alternative prévue : l'option pour le régime général lors de l'affiliation (CSS L311-3, 35°)
 - **SOURCE** LMN-020, LMN-021, M5
 
 ---
@@ -189,20 +194,23 @@
 ### C2 — PFU (Flat Tax) vs barème progressif sur revenus financiers
 
 - **SI** dividendes, intérêts, PV mobilières, gains assurance-vie
-  - **ALORS** PFU de 12,8 % + PS 17,2 % = 30 % par défaut
+  - **ALORS** PFU par défaut : 12,8 % IR + PS, soit **31,4 %** pour les revenus perçus depuis le 01/01/2026 (PS 18,6 %) et 30 % pour ceux perçus en 2025 (PS 17,2 %) [referentiel: pfu_taux_global] ; assurance-vie, PEL et CEL : PS maintenus à 17,2 %
   - **OPTION** barème progressif possible (option globale sur tous les revenus financiers de l'année)
   - **SI** option barème + dividendes → abattement 40 % sur les dividendes
   - **SI** TMI ≤ 11 % → option barème avantageuse
   - **SI** TMI ≥ 30 % → PFU généralement plus avantageux
 
-### C3 — Prélèvements sociaux 2025
+### C3 — Prélèvements sociaux (2025 et 2026)
 
 | Assiette | CSG | CRDS | Prélèvement solidarité | TOTAL |
 |---|---|---|---|---|
-| Revenus du patrimoine (placements, loyers, PV) | 9,2 % | 0,5 % | 7,5 % | **17,2 %** |
+| Revenus fonciers, PV immobilières, assurance-vie, PEL/CEL/PEP | 9,2 % | 0,5 % | 7,5 % | **17,2 %** en 2025 et 2026 [referentiel: ps_revenus_fonciers_av_epargne_logement] |
+| Produits de placement (dividendes, intérêts, gains de PEA), selon l'année de perception | 9,2 % puis 10,6 % | 0,5 % | 7,5 % | **17,2 %** en 2025 ; **18,6 %** depuis le 01/01/2026 [referentiel: ps_produits_placement] |
+| Autres revenus du patrimoine (LMNP, certaines PV mobilières), selon l'année des revenus | 9,2 % puis 10,6 % | 0,5 % | 7,5 % | **17,2 %** revenus 2024 ; **18,6 %** dès les revenus 2025 [referentiel: ps_revenus_patrimoine] |
 | Revenus d'activité (BNC, salaires) | 9,2 % | 0,5 % | — | **9,7 %** |
 
-- **SOURCE** GFPL-155 à GFPL-159, M2
+- **ATTENTION** jamais de taux unique : le taux dépend de la catégorie de revenu et de l'année (perception pour les placements, revenus pour le patrimoine). Gains de PEA : taux historiques possibles pour les gains acquis avant 2018. LMP : cotisations sociales, pas ces taux.
+- **SOURCE** GFPL-155 à GFPL-159, M2 ; LFSS 2026 (loi n° 2025-1403, art. 12) ; service-public F2329
 
 ### C4 — CEHR (Contribution Exceptionnelle sur les Hauts Revenus)
 
@@ -231,7 +239,7 @@
 - **SI** élément amortissable détenu > 2 ans → PV CT dans la limite des amortissements déduits + PV LT au-delà
 - **SI** élément NON amortissable détenu > 2 ans → PV long terme
 - **PV CT** intégrée au résultat imposable (barème IR); étalement possible sur 3 ans (option)
-- **PV LT** 12,8 % IR + 17,2 % PS = 30 %
+- **PV LT** 12,8 % IR + PS : 30 % jusqu'aux revenus 2024 ; 31,4 % probable dès les revenus 2025 (PS 18,6 %, LFSS 2026, une seule source) [referentiel: ps_revenus_patrimoine]
 - **SOURCE** GFPL-082 à GFPL-094, M2
 
 ### D2 — Exonérations (activité ≥ 5 ans)
@@ -241,7 +249,7 @@
   - **SI** recettes moy. entre 90 000 € et 126 000 € → exonération PARTIELLE et dégressive
 - **Art. 151 septies A** (départ à la retraite):
   - **SI** cessation de fonctions + retraite dans les 24 mois avant ou après la cession
-  - **ALORS** exonération IR sur PV CT + LT / PS 17,2 % maintenus
+  - **ALORS** exonération IR sur PV CT + LT ; prélèvements sociaux maintenus (taux : voir D1)
 - **Art. 238 quindecies** (cession d'entreprise):
   - **SI** prix cession ≤ 500 000 € → exonération TOTALE (IR + PS)
   - **SI** prix entre 500 000 € et 1 000 000 € → exonération PARTIELLE
@@ -353,12 +361,13 @@
 |---|---|---|---|
 | Plafond versements | 150 000 € | Illimité | Illimité |
 | Universel d'actifs | Actions UE + OPCVM UE | Tous actifs | Fonds €, UC (OPCVM, SCPI...) |
-| Fiscalité gains < 5 ans | PFU 30 % + clôture | PFU 30 % | PFU 30 % |
-| Fiscalité gains > 5 ans | Exonération IR + PS 17,2 % | PFU 30 % | PFU 30 % (< 8 ans) |
-| Fiscalité gains > 8 ans | Exonération IR + PS 17,2 % | PFU 30 % | 7,5 % + PS (si encours < 150K€) |
+| Fiscalité gains < 5 ans | PFU + clôture | PFU | 12,8 % + PS 17,2 % = 30 % |
+| Fiscalité gains > 5 ans | Exonération IR + PS | PFU | 12,8 % + PS 17,2 % = 30 % (< 8 ans) |
+| Fiscalité gains > 8 ans | Exonération IR + PS | PFU | 7,5 % + PS 17,2 % (primes ≤ 150 K€) |
 | Transmission au décès | Clôture (PV soumises à PS) | Succession ordinaire | Hors succession (152 500 €/bénéf.) |
 | Liquidité | Retrait avant 5 ans = clôture | Libre | Libre (rachat partiel) |
 
+- **TAUX** PFU 30 % pour les revenus perçus en 2025, **31,4 %** depuis le 01/01/2026 [referentiel: pfu_taux_global] ; PS sur les gains de PEA : 18,6 % depuis 2026 (probable) [referentiel: ps_produits_placement] ; assurance-vie : PS maintenus à 17,2 %
 - **STRATÉGIE** PEA en priorité pour actions européennes long terme; assurance-vie pour transmission hors succession et liquidité; CTO pour diversification internationale ou produits non éligibles PEA
 - **SOURCE** PAT-022, PAT-023, M6
 
@@ -368,8 +377,8 @@
   - **ALORS** revenus = fonciers pour les associés; PV immobilières = régime particuliers avec abattements durée de détention; charges déductibles (intérêts, réparations, taxe foncière)
   - **AVANTAGE** abattement durée de détention sur PV (exo IR après 22 ans, PS après 30 ans)
 - **SI** SCI option pour l'IS
-  - **ALORS** résultat soumis à IS 25 % (taux réduit 15 % < 42 500 €); amortissement du bien possible; dividendes soumis à PFU 30 %
-  - **ATTENTION** option IS = IRRÉVOCABLE; perte de l'abattement durée de détention sur PV
+  - **ALORS** résultat soumis à IS 25 % (taux réduit 15 % < 42 500 €); amortissement du bien possible; dividendes soumis au PFU (30 % jusqu'en 2025, 31,4 % depuis le 01/01/2026) [referentiel: pfu_taux_global]
+  - **ATTENTION** option IS révocable seulement jusqu'au 5e exercice suivant celui de l'option (CGI art. 239, 1, depuis la LF 2019), définitive ensuite ; plus d'abattement pour durée de détention : la société paie l'IS sur la PV de cession de l'immeuble ; la cession des parts par l'associé relève des PV mobilières
 - **SI** SCI fait de la location meublée → soumise à l'IS de PLEIN DROIT (activité commerciale)
 - **SI** SCI héberge la résidence principale des associés → perd abattement IFI 30 % et droit au logement du conjoint survivant
 - **COMPTABILITÉ** obligatoire si SCI: soumise à TVA, à IS, > 2 des 3 seuils (bilan 1 550 000 €, CA 3 100 000 €, 50 salariés)
@@ -395,12 +404,14 @@
 
 - **SI** professionnel libéral au réel BNC
   - **ALORS** déduction possible du revenu catégoriel BNC (charge de l'année de paiement) ET/OU du revenu global
-  - **STRATÉGIE** utiliser d'abord le plafond BNC (réduit le RFR, donc aussi l'IFI et les cotisations sociales)
+  - **STRATÉGIE** utiliser d'abord le plafond BNC (art. 154 bis) : il ajoute 15 % du bénéfice compris entre 1 et 8 PASS et préserve les plafonds du revenu global reportables. Il ne réduit ni les cotisations sociales (versements réintégrés dans l'assiette des TNS, CSS art. L131-6) ni l'IFI (qui ne dépend pas du RFR ; seul son plafonnement dépend des revenus)
 - **SI** salarié
-  - **ALORS** déduction du revenu global uniquement (dans les plafonds: 10 % du salaire plafonné à 8 PASS)
+  - **ALORS** déduction du revenu global uniquement (plafond : 10 % des revenus d'activité de N-1 nets de frais, dans la limite de 8 PASS de N-1, minimum 10 % du PASS de N-1)
 - **SI** option de ne PAS déduire les versements
   - **ALORS** choix irrévocable au moment du versement; sortie capital: plus-values soumises au PFU uniquement
 - **SEUIL** PASS 2025 = 47 100 € ; PASS 2026 = 48 060 € [referentiel: PASS]
+- **PLAFOND TNS (art. 154 bis, II, 1°)** 10 % du bénéfice imposable dans la limite de 8 PASS, plus 15 % de la fraction comprise entre 1 et 8 PASS ; minimum 10 % du PASS. Exemple revenus 2025 : bénéfice 95 000 € → 9 500 + 15 % × (95 000 − 47 100) = 16 685 €
+- **ATTENTION LF 2026** versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9) ; fraction non utilisée du plafond du revenu global reportable sur les cinq années suivantes à compter de l'imposition des revenus 2026, trois ans auparavant (LF 2026, art. 10 ; BOFiP ACTU-2026-00106 du 10/08/2026)
 - **SORTIE** en rente ou en capital au choix (sauf compartiment cotisations obligatoires = rente uniquement)
 - **SOURCE** GFPL-165 à GFPL-174 (M2), PAT-020, PAT-021 (M6)
 
@@ -408,8 +419,10 @@
 
 | Option | Sortie en rente | Sortie en capital |
 |---|---|---|
-| Déduction à l'entrée (option 1) | IR régime rentes à titre gratuit (abattement 10 %) + PS | Partie capital: barème IR / Plus-values: PFU 30 % |
-| Pas de déduction à l'entrée (option 2) | IR régime rentes à titre onéreux (fraction selon âge) + PS | Plus-values uniquement: PFU 30 % |
+| Déduction à l'entrée (option 1) | IR régime rentes à titre gratuit (abattement 10 %) + PS | Partie capital: barème IR / Plus-values: PFU |
+| Pas de déduction à l'entrée (option 2) | IR régime rentes à titre onéreux (fraction selon âge) + PS | Plus-values uniquement: PFU |
+
+- **TAUX** PFU 30 % pour les sorties de 2025, 31,4 % depuis le 01/01/2026 [referentiel: pfu_taux_global] ; PS de 18,6 % sur les gains et les rentes depuis le 01/01/2026 (probable : questions-réponses BOSS citées par Weblex le 20/07/2026) [referentiel: ps_produits_placement]
 
 - **RENTES À TITRE ONÉREUX** fraction imposable: 70 % (< 50 ans), 50 % (50–59 ans), 40 % (60–69 ans), 30 % (> 69 ans)
 - **SOURCE** PAT-021, M6
@@ -498,9 +511,10 @@ Avant toute préconisation, auditer systématiquement:
 |---|---|---|
 | PASS (Plafond Annuel Sécurité Sociale) | 47 100 € | **48 060 €** [referentiel: PASS] |
 | Seuil micro-BNC | 77 700 € | **83 600 €** (triennat 2026-2028) [referentiel: seuil_micro_bnc] |
-| Seuil micro-BIC (autres locations meublées) | 77 700 € | 77 700 € [referentiel: seuil_micro_bic_classe] |
+| Seuil micro-BIC (location meublée longue durée, chambres d'hôtes) | 77 700 € | **83 600 €** (triennat 2026-2028) [referentiel: seuil_micro_bic_classe] |
 | Seuil micro-BIC (tourisme NON classé) | 15 000 € | 15 000 € [referentiel: seuil_micro_bic_tourisme_non_classe] |
-| Seuil micro-BIC (tourisme CLASSÉ) | 77 700 € | 77 700 € [referentiel: seuil_micro_bic_classe] |
+| Seuil micro-BIC (tourisme CLASSÉ) | 77 700 € | **83 600 €** (triennat 2026-2028) [referentiel: seuil_micro_bic_classe] |
+| Seuil micro-BIC (fourniture de logement, para-hôtellerie, 1° de l'art. 50-0) | 188 700 € | **203 100 €** [referentiel: seuil_micro_bic_ventes_fourniture_logement] |
 | Seuil LMP (recettes location) | 23 000 € | 23 000 € [referentiel: seuil_lmp_recettes] |
 | Seuil IFI | 1 300 000 € | 1 300 000 € [referentiel: seuil_ifi] |
 | Seuil CEHR (célibataire) | 250 000 € RFR | non vérifié 2026 |
@@ -512,10 +526,11 @@ Avant toute préconisation, auditer systématiquement:
 | Abattement donation parent/enfant | 100 000 € / parent / enfant (15 ans) | 100 000 € [referentiel: abattement_donation_parent_enfant] |
 | Taux IS normal | 25 % | non vérifié 2026 |
 | Taux IS réduit (bénéfice < 42 500 €, PME) | 15 % | non vérifié 2026 |
-| PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) | **~31,4 % attendu** (12,8 % + PS 18,6 %, LFSS 2026) — hors référentiel, à sourcer avant usage |
-| Prélèvements sociaux — PV immobilières, revenus fonciers, assurance-vie | 17,2 % | **17,2 % maintenu** (CSS art. L136-8, IV) [referentiel: pv_immo_taux_prelevements_sociaux] |
-| Prélèvements sociaux — autres revenus du capital (dividendes, intérêts) | 17,2 % | **18,6 %** (CSG portée à 10,6 %, LFSS 2026 art. 12) — hors référentiel, à sourcer avant usage |
+| PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) | **31,4 %** (12,8 % + PS 18,6 %), revenus perçus depuis le 01/01/2026 [referentiel: pfu_taux_global] |
+| Prélèvements sociaux — PV immobilières, revenus fonciers, assurance-vie | 17,2 % | **17,2 % maintenu** (CSS art. L136-8, IV) [referentiel: ps_revenus_fonciers_av_epargne_logement] |
+| Prélèvements sociaux, dividendes et intérêts (année de perception) | 17,2 % | **18,6 %** (CSG portée à 10,6 %, LFSS 2026 art. 12) [referentiel: ps_produits_placement] |
+| Prélèvements sociaux, LMNP et certaines PV mobilières (année des revenus) | **18,6 %** (revenus 2025) | **18,6 %** [referentiel: ps_revenus_patrimoine] |
 
 ---
 
-*Dernière mise à jour : 2026-08-26 — Sources : M1 à M8, éditions 2022-2025 ; referentiel_parametres.json pour les millésimes 2026*
+*Dernière mise à jour : 2026-11-01 (lot 1 de l'audit : prélèvements sociaux et PFU 2026, micro-BIC 2026, LMNP, PER). Sources : M1 à M8, éditions 2022-2025 ; referentiel_parametres.json pour les millésimes 2026*

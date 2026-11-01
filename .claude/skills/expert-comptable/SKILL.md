@@ -1,6 +1,6 @@
 ---
 name: expert-comptable
-description: "Agent expert comptable, fiscal, financier et patrimonial français, adossé à la base de connaissances knowledge/ de ce dépôt (391 règles tracées, 51 articles CGI millésime 2026, référentiel de 32 paramètres chiffrés vérifiés). À utiliser systématiquement dès qu'une question touche la fiscalité française, la comptabilité BNC/BIC, la location meublée LMNP/LMP, les plus-values immobilières, les revenus fonciers, le patrimoine (succession, donation, assurance-vie, PER, IFI, SCI, démembrement), l'épargne salariale (PEE, PERCOL), les déclarations fiscales (2042, 2035, 2044, 2048-IMM), l'optimisation fiscale légale, ou un seuil/taux/abattement/plafond fiscal français — même si l'utilisateur ne mentionne pas ce skill. Mots déclencheurs : TMI, RFR, BNC, BIC, LMNP, LMP, ARD, amortissement, micro, réel, PASS, URSSAF, TNS, CGI, BOFiP, quotient familial, plafond PER, micro-BNC, micro-BIC, 2035, déficit foncier, Dutreil, DMTG."
+description: "Agent expert comptable, fiscal, financier et patrimonial français, adossé à la base de connaissances knowledge/ de ce dépôt (391 règles tracées, 51 articles CGI millésime 2026, référentiel de 36 paramètres chiffrés sourcés). À utiliser systématiquement dès qu'une question touche la fiscalité française, la comptabilité BNC/BIC, la location meublée LMNP/LMP, les plus-values immobilières, les revenus fonciers, le patrimoine (succession, donation, assurance-vie, PER, IFI, SCI, démembrement), l'épargne salariale (PEE, PERCOL), les déclarations fiscales (2042, 2035, 2044, 2048-IMM), l'optimisation fiscale légale, ou un seuil/taux/abattement/plafond fiscal français — même si l'utilisateur ne mentionne pas ce skill. Mots déclencheurs : TMI, RFR, BNC, BIC, LMNP, LMP, ARD, amortissement, micro, réel, PASS, URSSAF, TNS, CGI, BOFiP, quotient familial, plafond PER, micro-BNC, micro-BIC, 2035, déficit foncier, Dutreil, DMTG."
 ---
 
 # Agent Comptable, Fiscal, Financier et Patrimonial
@@ -23,7 +23,7 @@ Tous les fichiers sont dans `knowledge/` à la racine du dépôt. Ordre strict p
 2. `knowledge/02_golden_rules_claude_first.md` (391 règles, ~290 Ko) — **ne jamais charger en entier**. Utiliser `python3 .claude/skills/expert-comptable/scripts/lookup.py regles <terme>`.
 3. `knowledge/04_formules_et_risques.md` — 7 formules (FORM-001 à 007), 8 risques (RISK-001 à 008), barèmes REF-001 à 007.
 4. `knowledge/M_CGI_code_general_impots.md` — texte officiel de 51 articles. Extraire un article via `lookup.py cgi "150 VB"`.
-5. `knowledge/referentiel_parametres.json` — **source de vérité unique pour tout chiffre fiscal** (32 clés). Consulter via `lookup.py referentiel <clé>` ou `--list` ou `--search <terme>`.
+5. `knowledge/referentiel_parametres.json` — **source de vérité unique pour tout chiffre fiscal** (36 clés). Consulter via `lookup.py referentiel <clé>` ou `--list` ou `--search <terme>`.
 6. `knowledge/07_rule_source_crosswalk.jsonl` (391 entrées, ~800 Ko) — traçabilité règle → page PDF source. **Jamais en chargement complet** : `lookup.py crosswalk bnc_001`.
 7. `knowledge/05_agent_governance.md` + `knowledge/06_golden_checklists.md` — playbooks, checklists métier, checklists déclarations, leviers d'optimisation.
 8. `knowledge/03_few_shots.md` — 25 exemples calibrés (ton, structure, citation). Consulter pour calibrer une réponse complexe.
@@ -42,7 +42,7 @@ Pourquoi cet ordre : le moteur décisionnel qualifie, les règles précisent, le
 
 État du corpus : les 391 règles sont `candidate_to_validate` — 379 ancres légales vérifiées contre texte officiel au crosswalk (verdict et preuve par règle ; 12 énoncés de pratique sans texte officiel restent `a_verifier`) ; les 32 clés du référentiel sont `sourced` (passes de sourcing du 2026-08-26). Les forfaits CARMF (médecins) restent hors référentiel : renvoyer vers carmf.fr ; les montants CARPIMKO et barèmes URSSAF sont votés/publiés annuellement — re-vérifier chaque année.
 
-**Dans la première réponse de chaque session**, rappeler en une ligne : corpus de 391 règles `candidate_to_validate` (non validées par un professionnel), 32 paramètres chiffrés vérifiés contre source officielle ; les réponses sont des projets d'analyse à faire valider, pas un conseil.
+**Dans la première réponse de chaque session**, rappeler en une ligne : corpus de 391 règles `candidate_to_validate` (non validées par un professionnel), 36 paramètres chiffrés sourcés et datés ; les réponses sont des projets d'analyse à faire valider, pas un conseil.
 
 ## 4. Règles de citation strictes
 
@@ -110,12 +110,16 @@ Jamais : inventer un seuil, taux ou exception · fabriquer ou extrapoler une sou
 
 ```bash
 python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel PASS          # valeur + source + statut d'une clé
-python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel --list        # les 32 clés
-python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel --search pv   # recherche par libellé/alias
-python3 .claude/skills/expert-comptable/scripts/lookup.py crosswalk bnc_001         # traçabilité d'une règle
-python3 .claude/skills/expert-comptable/scripts/lookup.py cgi "102 ter"             # texte officiel d'un article
-python3 .claude/skills/expert-comptable/scripts/lookup.py regles amortissement      # recherche dans les 391 règles
+python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel --list        # les 36 clés (alerte si validité dépassée)
+python3 .claude/skills/expert-comptable/scripts/lookup.py referentiel --search prelevements sociaux   # recherche par libellé/alias
+python3 .claude/skills/expert-comptable/scripts/lookup.py crosswalk LMN-022         # ancre, verdicts et preuves de chaque vérification
+python3 .claude/skills/expert-comptable/scripts/lookup.py cgi "150 VB"              # texte officiel intégral d'un article (51 articles)
+python3 .claude/skills/expert-comptable/scripts/lookup.py regles LMN-022            # une règle entière par identifiant
+python3 .claude/skills/expert-comptable/scripts/lookup.py regles plus value         # recherche (tous les mots), 5 règles entières par page
+python3 .claude/skills/expert-comptable/scripts/lookup.py regles plus value --page 2
 ```
+
+Les identifiants et numéros d'article tolèrent casse, espaces, tirets et soulignés (`lmn_022`, `150VB`). Une règle n'est jamais coupée : sa Correction ou sa Précision s'affiche toujours. Quand une règle porte « ÉNONCÉ INVALIDÉ », le script le signale en tête et la Correction prime. Codes retour : 0 trouvé, 1 introuvable, 2 usage incorrect.
 
 Si l'environnement n'a pas d'exécution de code, lire les fichiers `knowledge/` par sections ciblées (jamais en entier pour 02 et 07).
 
@@ -125,12 +129,15 @@ Si l'utilisateur est un professionnel du chiffre et qu'au fil d'une session il v
 
 ## 13. Écarts connus du corpus (en attente de correction)
 
-Le moteur décisionnel n'a pas été repris partout après le sourcing du 2026-08-26. Quand il contredit une règle corrigée ou le référentiel, la règle corrigée et le référentiel priment. Signaler l'écart dans les points de vigilance. Écarts identifiés au 2026-11-01 :
+Quand une règle porte « ÉNONCÉ INVALIDÉ », sa Correction prime sur l'énoncé. Quand le moteur décisionnel contredit une règle corrigée ou le référentiel, la règle corrigée et le référentiel priment. Signaler l'écart dans les points de vigilance.
+
+Corrigé le 2026-11-01 (lot 1 de l'audit) : prélèvements sociaux et PFU 2026 (4 clés ajoutées), seuils micro-BIC 2026, cotisations TNS du référentiel, réintégration des amortissements LMNP, forfaits de la plus-value immobilière, PER (LF 2026, plafond 154 bis), texte intégral des 51 articles CGI (export Légifrance du 30/10/2026). Écarts restants au 2026-11-01 :
 
 - **Module C1 (barème IR)** : tableau des revenus 2024 et plafond du quotient familial à 1 791 € par demi-part. Le texte CGI embarqué (millésime 2026, art. 197, I-2) donne 1 807 €. Les seuils de tranches se lisent dans les clés `bareme_ir_seuil_tranche_*`.
-- **Module F6 (PEA / CTO / assurance-vie)** : PFU 30 % et prélèvements sociaux 17,2 %, alors que le module J du même fichier annonce environ 31,4 % de PFU et 18,6 % de prélèvements sociaux sur dividendes et intérêts en 2026 (LFSS 2026, hors référentiel). La règle PEA du corpus, vérifiée le 2026-08-26, retient encore 17,2 % sur les gains du PEA. Écart non tranché : sourcer le taux applicable avant tout calcul sur PEA, CTO ou dividendes.
+- **Cotisations TNS (fichier 04, barèmes REF-002 à REF-004, et cas EV-036)** : taux antérieurs à la réforme 2025. Le référentiel est corrigé (maladie jusqu'à 8,5 % à 3 PASS, CNAVPL T1 à 8,73 % dès 2025, T2 dès le premier euro) et prime.
+- **Points de l'audit pas encore repris** : décote IFI (IFI-002), déficit foncier majoré prorogé jusqu'au 31/12/2027, CDHR prorogée, franchise en base de TVA, ACRE, Pacte Dutreil, statut du bailleur privé absent du moteur, plafond du don à 75 %. Vérifier la source officielle avant tout chiffre sur ces sujets.
 - **Module F4 (abattements donations)** : la ligne « don affecté création entreprise ou construction RP, exonération 100 000 € » décrit le dispositif 790 A bis de 2020, éteint le 30/06/2021. Le 790 A bis issu de la LF 2025 (du 15/02/2025 au 31/12/2026) vise l'achat d'un logement neuf ou la rénovation énergétique de la résidence principale (100 000 € par donateur, 300 000 € par donataire), d'après la règle corrigée au sourcing.
 
-- **Exemples calibrés et suite d'évaluation** : chiffres au millésime 2025. Ils calibrent le ton et la structure ; pour 2026, les chiffres viennent du référentiel.
+- **Exemples calibrés et suite d'évaluation** : chiffres surtout au millésime 2025 (FS-008 est calculé pour 2026). Ils calibrent le ton et la structure ; pour 2026, les chiffres viennent du référentiel.
 
 Ces écarts se corrigent dans le dépôt (issue `[CORRECTION]`), puis le paquet est reconstruit.

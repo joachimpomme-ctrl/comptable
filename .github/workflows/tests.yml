@@ -24,6 +24,8 @@ jobs:
         run: python3 scripts/verifier_donnees_personnelles.py
       - name: Tests des scripts de calcul (conseiller-patrimoine)
         run: python3 .claude/skills/conseiller-patrimoine/scripts/tests/test_calculs.py
+      - name: Tests du script de lookup et integrite du corpus CGI (expert-comptable)
+        run: python3 .claude/skills/expert-comptable/scripts/tests/test_lookup.py
       - name: En-têtes YAML des SKILL.md valides
         run: |
           pip install --quiet "pyyaml==6.0.2"

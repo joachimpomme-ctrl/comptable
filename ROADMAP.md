@@ -19,7 +19,7 @@ Le sourcing IA etablit qu'une regle correspond au texte ; la validation professi
 
 ## 2. Referentiel : cles a ajouter (mises en evidence par la passe du 2026-08-26)
 
-- **PFU / prelevements sociaux sur les revenus du capital** : la LFSS 2026 porte la CSG a 10,6 % (total 18,6 %) sur la plupart des revenus du capital → clés `ps_revenus_capital` et `pfu_taux` (~31,4 % en 2026) a creer et sourcer. Aujourd'hui signale « hors referentiel, a sourcer » dans le moteur decisionnel.
+- **Fait le 2026-11-01** : cles `pfu_taux_global`, `ps_produits_placement`, `ps_revenus_patrimoine`, `ps_revenus_fonciers_av_epargne_logement` (LFSS 2026) ; seuils micro-BIC 2026 corriges.
 - **CARMF (medecins)** : forfaits annuels a capturer sur carmf.fr (meme traitement que CARPIMKO).
 - **Reforme CARPIMKO 2026** : confirmer la complementaire proportionnelle 8,70 % (0,5–3 PASS) et l'ASV sur le bulletin officiel, puis promouvoir.
 - **Bareme kilometrique 2026** et **taux URSSAF 2026 detailles** : publies par arrete en debut d'annee — voir §4.
@@ -28,7 +28,7 @@ Le sourcing IA etablit qu'une regle correspond au texte ; la validation professi
 ## 3. Corpus et tests
 
 - **Etoffer la suite d'evaluation** (45 cas) : ajouter des cas sur les nouveautes 2026 (seuil micro-BNC 83 600 €, PS 17,2 % vs 18,6 %, CNAVPL 8,73 %, chambres d'hotes 2°) et des cas pieges proposes par les relecteurs (`[CAS DE TEST]`).
-- **Elargir le corpus CGI** si l'usage le justifie (art. 787 B en detail, 199 sexdecies, 244 bis A...) — en restant dans le perimetre declare.
+- **Elargir le corpus CGI** : priorite aux articles deja cites par le referentiel ou le moteur sans etre embarques (50-0 micro-BIC, 200 A PFU, 150 VC, 1609 nonies G surtaxe), puis 199 sexdecies, 244 bis A. Le texte integral du 30/10/2026 est disponible (export Legifrance), l'extraction est outillee.
 - **Few-shots** : ajouter 2-3 exemples calibres sur le millesime 2026.
 
 ## 4. Processus recurrent : la mise a jour de janvier
@@ -44,7 +44,7 @@ A chaque Loi de Finances / LFSS (checklist a derouler, idealement en fevrier apr
 ## 5. Outillage communaute
 
 - **Modeles d'issues GitHub** (`.github/ISSUE_TEMPLATE/`) pre-remplis pour `[VALIDATION]`, `[CORRECTION]`, `[REFERENTIEL]`, `[CAS DE TEST]`, `[BUG REPONSE]` — abaisse encore la barriere pour les non-techniciens.
-- **Controles automatiques a chaque push** (GitHub Action) : JSON valides, comptes coherents (391/51/45/32) entre README, manifest et fichiers reels, absence de donnees personnelles, paquet `dist/` a jour.
+- **Controles automatiques a chaque push** (GitHub Action) : JSON valides, comptes coherents (391/51/45/36), aucun article CGI coupe, tests du script de lookup entre README, manifest et fichiers reels, absence de donnees personnelles, paquet `dist/` a jour.
 - **Compteur de validation auto-genere** : script qui lit les statuts des regles et met a jour le tableau « Etat de validation » du README.
 - **Releases GitHub versionnees** (ex. `v2026-08`) avec changelog, pour que les utilisateurs sachent quelle version de la base ils ont installee.
 

@@ -1,5 +1,5 @@
 {
-  "_doc": "SOURCE DE VERITE UNIQUE des chiffres fiscaux du corpus. Tout chiffre cite ailleurs doit referencer une cle d'ici avec son millesime, ex. [referentiel: PASS/2026]. statut=sourced -> verifie contre source officielle (source_url, verifie_le) ; statut=candidate_to_validate -> a faire valider par un professionnel avant de s'y fier ; a_verifier -> exploration uniquement.",
+  "_doc": "SOURCE DE VERITE UNIQUE des chiffres fiscaux du corpus. Tout chiffre cite ailleurs doit referencer une cle d'ici avec son millesime, ex. [referentiel: PASS/2026]. statut=sourced -> verifie contre source officielle (source_url, verifie_le) ; statut=candidate_to_validate -> a faire valider par un professionnel avant de s'y fier ; a_verifier -> exploration uniquement. Champ base_millesime (cles PS et PFU) : precise si l'annee indiquee est l'annee de perception, l'annee des revenus ou l'annee d'imposition. Pour les autres cles, lire libelle et note.",
   "millesime_courant": 2026,
   "schema_version": 1,
   "parametres": {
@@ -59,41 +59,46 @@
       "note": "Reforme loi Le Meur (loi 2024-1039). Seuil 15 000 EUR, abattement 30 %. Applicable revenus 2025 declares en 2026."
     },
     "seuil_micro_bic_classe": {
-      "libelle": "Seuil micro-BIC meuble de tourisme classe (abattement 50 % depuis 2025, loi Le Meur)",
+      "libelle": "Seuil micro-BIC location meublee relevant du 2° de l'art. 50-0 (meubles de tourisme classes, chambres d'hotes, location meublee longue duree), abattement 50 %",
       "alias": [
         "tourisme classe",
-        "meuble classe"
+        "meuble classe",
+        "location meublee longue duree",
+        "LMNP micro-BIC",
+        "83 600"
       ],
       "unite": "EUR",
       "valeurs": {
         "2025": 77700,
-        "2026": 77700
+        "2026": 83600
       },
-      "source": "Loi n° 2024-1039 du 19/11/2024 (loi Le Meur) ; CGI art. 50-0 ; service-public.fr F32744. Seuil micro-BIC 77 700 EUR et abattement reduit de 71 % a 50 % pour les meubles de tourisme classes, applicable aux revenus percus a compter de 2025.",
+      "source": "CGI art. 50-0, 1-2° (version en vigueur depuis le 01/07/2026) : 77 700 EUR pour 2023-2025, 83 600 EUR pour 2026-2028, abattement 50 %. service-public.fr F32744 (page verifiee le 15/04/2026) : 83 600 EUR / 50 % pour les revenus 2026, location longue duree, chambres d'hotes et meubles de tourisme classes.",
       "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
-      "verifie_le": "2026-06-05",
-      "valable_jusqu_au": "2026-12-31",
+      "verifie_le": "2026-11-01",
+      "valable_jusqu_au": "2028-12-31",
       "statut": "sourced",
-      "note": "Reforme loi Le Meur. Seuil 77 700 EUR, abattement 50 %. ATTENTION : les chambres d'hotes restent a 188 700 EUR / abattement 71 % (parametre distinct ci-dessous)."
+      "note": "CORRIGE le 2026-11-01 (audit) : la valeur 2026 etait 77 700 EUR, faux. Le seuil du 2° est actualise tous les trois ans (2026-2028 : 83 600 EUR). Seul le seuil des meubles de tourisme non classes (15 000 EUR) echappe a l'actualisation. Les chambres d'hotes relevent aussi du 2° (cle seuil_micro_bic_chambres_hotes_locmeublee, meme valeur). Le micro s'apprecie sur les recettes de N-1 et N-2 : il reste applicable l'annee du premier depassement et la suivante."
     },
-    "seuil_micro_bic_chambres_hotes": {
-      "libelle": "Seuil micro-BIC para-hotellerie / fourniture de logement (1° art. 50-0, abattement 71 %) - ne s'applique PLUS aux chambres d'hotes",
+    "seuil_micro_bic_ventes_fourniture_logement": {
+      "libelle": "Seuil micro-BIC du 1° de l'art. 50-0 (ventes, fourniture de logement hors meubles de tourisme, para-hotellerie), abattement 71 %",
       "alias": [
-        "chambres d'hotes",
+        "ventes",
+        "fourniture de logement",
         "parahotellerie",
-        "188 700"
+        "188 700",
+        "203 100"
       ],
       "unite": "EUR",
       "valeurs": {
         "2025": 188700,
-        "2026": 188700
+        "2026": 203100
       },
-      "source": "CGI art. 50-0, 1-1° : 188 700 EUR / abattement 71 % pour les ventes et la fourniture de logement (para-hotellerie). DEPUIS l'imposition des revenus 2025, les chambres d'hotes n'en relevent PLUS : elles sont classees au 2° (RM Lemoyne n° 2460, JO Senat 15/05/2025 ; CE 16/09/2025 n° 505228) — voir la cle seuil_micro_bic_chambres_hotes_locmeublee.",
+      "source": "CGI art. 50-0, 1-1° (version en vigueur depuis le 01/07/2026) : 188 700 EUR pour 2023-2025, 203 100 EUR pour 2026-2028, abattement 71 %. entreprendre.service-public.gouv.fr A18813 (26/02/2026). Les chambres d'hotes n'en relevent plus depuis l'imposition des revenus 2025 (RM Lemoyne n° 2460, JO Senat 15/05/2025 ; CE 16/09/2025 n° 505228) : voir seuil_micro_bic_chambres_hotes_locmeublee.",
       "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159220/",
-      "verifie_le": "2026-08-26",
-      "valable_jusqu_au": "2026-12-31",
+      "verifie_le": "2026-11-01",
+      "valable_jusqu_au": "2028-12-31",
       "statut": "sourced",
-      "note": "Divergence historique RESOLUE le 2026-08-26 : cette cle ne modelise plus les chambres d'hotes mais le seuil du 1° de l'art. 50-0 (veritable para-hotellerie : petit-dejeuner, nettoyage regulier, linge, reception — cf. criteres 261 D 4° CGI). Pour les chambres d'hotes, utiliser seuil_micro_bic_chambres_hotes_locmeublee (77 700/83 600 EUR, 50 %). Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
+      "note": "CORRIGE le 2026-11-01 (audit) : la valeur 2026 etait 188 700 EUR, faux (actualisation triennale 2026-2028 : 203 100 EUR). Cle renommee : l'ancien nom seuil_micro_bic_chambres_hotes etait trompeur. Ne vise que la veritable fourniture de logement (para-hotellerie : petit-dejeuner, nettoyage regulier, linge, reception, cf. art. 261 D 4°)."
     },
     "seuil_micro_bic_chambres_hotes_locmeublee": {
       "libelle": "Seuil micro-BIC chambres d'hotes (2° art. 50-0, abattement 50 %) - position officielle confirmee",
@@ -320,6 +325,94 @@
       "statut": "sourced",
       "note": "CGI art. 200-0 A = LEGIARTI000051213369 (version en vigueur ; ancien LEGIARTI000047620953 remplace). Plafond majore 18 000 EUR (Girardin industriel, SOFICA, outre-mer)."
     },
+    "ps_revenus_fonciers_av_epargne_logement": {
+      "libelle": "Prelevements sociaux au taux maintenu de 17,2 % : revenus fonciers, plus-values immobilieres, assurance-vie, PEL, CEL, PEP",
+      "alias": [
+        "prelevements sociaux revenus fonciers",
+        "PS location nue",
+        "PS assurance-vie",
+        "PS PEL CEL",
+        "17,2 %"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 17.2,
+        "2026": 17.2
+      },
+      "base_millesime": "annee des revenus (fonciers, plus-values) ou annee de perception (assurance-vie, epargne logement) : taux identique",
+      "source": "LFSS 2026 (loi n° 2025-1403 du 30/12/2025, art. 12) : la CSG reste a 9,2 % pour ces revenus, soit 17,2 % avec la CRDS (0,5 %) et le prelevement de solidarite (7,5 %). service-public.fr F2329 (page verifiee le 30/06/2026) ; impots.gouv, FAQ « Je donne un bien en location. Dois-je payer des prelevements sociaux ? » (modifiee le 17/07/2026) : « En location nue (vide) : 17,2 % ».",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "verifie_le": "2026-11-01",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Taux sur. PEL et CEL : 17,2 % aussi pour les interets inscrits a compter du 01/01/2026 (questions-reponses BOSS citees par Weblex le 20/07/2026). Plus-value immobiliere : meme taux, voir aussi pv_immo_taux_prelevements_sociaux."
+    },
+    "ps_produits_placement": {
+      "libelle": "Prelevements sociaux sur les produits de placement (dividendes, interets, gains de PEA, autres produits hors assurance-vie et epargne logement), selon l'annee de perception",
+      "alias": [
+        "prelevements sociaux dividendes",
+        "PS interets",
+        "PS PEA",
+        "CSG 10,6",
+        "18,6 %"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 17.2,
+        "2026": 18.6
+      },
+      "base_millesime": "annee de perception",
+      "source": "LFSS 2026 (loi n° 2025-1403 du 30/12/2025, art. 12) : CSG portee de 9,2 % a 10,6 % pour les produits de placement realises a compter du 01/01/2026, soit 18,6 % au total. service-public.fr F2329 (page verifiee le 30/06/2026) : revenus de placement de 2025 a 17,2 %, de 2026 a 18,6 % ; assurance-vie, PEL, CEL et PEP maintenus a 17,2 %.",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "verifie_le": "2026-11-01",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Sur pour les dividendes et interets. Gains de PEA realises depuis 2026 : 18,6 % (probable ; des taux historiques peuvent s'appliquer aux gains acquis avant 2018, service-public F2329). Epargne salariale : probable. PER : retraits en capital d'un PER assurantiel et rentes de PER a 18,6 % (probable, questions-reponses BOSS citees par Weblex le 20/07/2026)."
+    },
+    "ps_revenus_patrimoine": {
+      "libelle": "Prelevements sociaux sur les revenus du patrimoine autres que fonciers et plus-values immobilieres (location meublee non professionnelle, certaines plus-values mobilieres, plus-values professionnelles a long terme), selon l'annee des revenus",
+      "alias": [
+        "prelevements sociaux LMNP",
+        "PS location meublee",
+        "PS plus-values mobilieres",
+        "18,6 % LMNP"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2024": 17.2,
+        "2025": 18.6,
+        "2026": 18.6
+      },
+      "base_millesime": "annee des revenus",
+      "source": "LFSS 2026 (loi n° 2025-1403 du 30/12/2025, art. 12) : CSG a 10,6 % sur les revenus du patrimoine a compter de l'imposition des revenus de 2025 (questions-reponses BOSS citees par Weblex le 20/07/2026). impots.gouv, FAQ « Je donne un bien en location. Dois-je payer des prelevements sociaux ? » (modifiee le 17/07/2026) : « En location meuble : 18,6 % ».",
+      "source_url": "https://www.impots.gouv.fr/particulier/questions/je-donne-un-bien-en-location-dois-je-payer-des-prelevements-sociaux",
+      "verifie_le": "2026-11-01",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Sur pour la location meublee non professionnelle (revenus 2025 declares en 2026). Probable pour les plus-values mobilieres de 2025 (le BOSS parle de « certaines plus-values mobilieres ») et pour les plus-values professionnelles a long terme (une seule source). Les loueurs en meuble professionnels relevent des cotisations sociales, pas de ce taux. Dividendes et interets percus en 2025 : 17,2 % (cle ps_produits_placement)."
+    },
+    "pfu_taux_global": {
+      "libelle": "Prelevement forfaitaire unique (PFU, flat tax) : taux global, IR 12,8 % plus prelevements sociaux",
+      "alias": [
+        "PFU",
+        "flat tax",
+        "prelevement forfaitaire unique",
+        "31,4 %",
+        "30 %"
+      ],
+      "unite": "pourcentage",
+      "valeurs": {
+        "2025": 30,
+        "2026": 31.4
+      },
+      "base_millesime": "annee de perception",
+      "source": "CGI art. 200 A (12,8 % d'IR, inchange) plus les prelevements sociaux de la cle ps_produits_placement (17,2 % en 2025, 18,6 % en 2026, LFSS 2026 art. 12). service-public.fr F2329 (page verifiee le 30/06/2026) : option pour le PFU « au taux de 31,4 % (ou de 30 %) ».",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "verifie_le": "2026-11-01",
+      "valable_jusqu_au": "2026-12-31",
+      "statut": "sourced",
+      "note": "Sur : 31,4 % pour les produits de placement percus a compter du 01/01/2026. Exceptions a 30 % ou moins : assurance-vie (12,8 % ou 7,5 % plus 17,2 %), PEL et CEL (12,8 % plus 17,2 %). Plus-values mobilieres de 2025 : 12,8 % plus 18,6 %, probable (cle ps_revenus_patrimoine). Toujours preciser l'annee de perception ou de realisation."
+    },
     "pv_immo_taux_ir": {
       "libelle": "Taux d'imposition a l'IR de la plus-value immobiliere des particuliers",
       "alias": [
@@ -351,12 +444,12 @@
         "2025": 17.2,
         "2026": 17.2
       },
-      "source": "CSS art. L136-8 (CSG) + CRDS 0,5 % + prelevement de solidarite 7,5 % (CGI art. 235 ter) = 17,2 %. LFSS 2026 (art. 12) : la CSG sur les revenus du capital passe a 10,6 % (total 18,6 %) pour la plupart des revenus, MAIS les plus-values immobilieres des particuliers (comme les revenus fonciers et l'assurance-vie) restent a CSG 9,2 % soit 17,2 % au total (CSS art. L136-8, IV nouveau).",
-      "source_url": "https://bofip.impots.gouv.fr/bofip/7508-PGP.html/identifiant=BOI-RFPI-PVINR-20-20-20220629",
-      "verifie_le": "2026-08-26",
+      "source": "LFSS 2026 (loi n° 2025-1403 du 30/12/2025, art. 12) ; CSS art. L136-8. CSG 9,2 % + CRDS 0,5 % + prelevement de solidarite 7,5 % = 17,2 %, taux maintenu en 2026 pour les plus-values immobilieres, les revenus fonciers et l'assurance-vie (service-public.fr F2329, page verifiee le 30/06/2026).",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "verifie_le": "2026-11-01",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "PROMU sourced le 2026-08-26. Taux global PS sur PV immobiliere = 17,2 % (CSG 9,2 + CRDS 0,5 + solidarite 7,5), maintenu en 2026 malgre la hausse generale LFSS 2026 a 18,6 % sur les autres revenus du capital (dividendes, interets, PFU). ATTENTION corollaire : le PFU global passe de 30 % a ~31,4 % en 2026 (12,8 % IR + 18,6 % PS) — parametre PFU hors referentiel, a sourcer. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
+      "note": "Taux global PS sur la plus-value immobiliere = 17,2 %, maintenu en 2026 malgre la hausse a 18,6 % sur les autres revenus du capital. CORRIGE le 2026-11-01 (audit) : l'URL citee jusqu'ici (BOFiP non-residents de 2022) ne mentionnait pas ce taux. Pour le PFU et les autres PS : cles pfu_taux_global, ps_produits_placement, ps_revenus_patrimoine."
     },
     "pv_immo_abattement_ir_par_an_6e_21e": {
       "libelle": "Abattement IR pour duree de detention - PV immobiliere - taux annuel de la 6e a la 21e annee",
@@ -405,12 +498,12 @@
         "2025": 1.65,
         "2026": 1.65
       },
-      "source": "CGI art. 150 VC I (assiette prelevements sociaux). Abattement de 1,65 % par annee de detention au-dela de la 5e et jusqu'a la 21e annee, pour l'assiette des prelevements sociaux.",
-      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
-      "verifie_le": "2026-06-05",
+      "source": "service-public.fr F10864 (page verifiee le 15/04/2026) : abattement pour duree de detention sur l'assiette des prelevements sociaux, 1,65 % par an de la 6e a la 21e annee. Ancre legale a identifier : le texte en vigueur de l'art. 150 VC ne porte que les abattements de l'IR.",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "verifie_le": "2026-11-01",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "CGI art. 150 VC (assiette PS). 1,65 %/an de la 6e a la 21e annee.abattement_ps_pv_immo. Valeur en pourcentage par an."
+      "note": "CORRIGE le 2026-11-01 (audit) : ancre CGI art. 150 VC inexacte pour les PS ; valeur inchangee."
     },
     "pv_immo_abattement_ps_22e_annee": {
       "libelle": "Abattement PS pour duree de detention - PV immobiliere - taux de la 22e annee",
@@ -423,12 +516,12 @@
         "2025": 1.6,
         "2026": 1.6
       },
-      "source": "CGI art. 150 VC I (assiette prelevements sociaux). Abattement de 1,60 % au titre de la 22e annee de detention, pour l'assiette des prelevements sociaux.",
-      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
-      "verifie_le": "2026-06-05",
+      "source": "service-public.fr F10864 (page verifiee le 15/04/2026) : abattement pour duree de detention sur l'assiette des prelevements sociaux, 1,60 % la 22e annee. Ancre legale a identifier : le texte en vigueur de l'art. 150 VC ne porte que les abattements de l'IR.",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "verifie_le": "2026-11-01",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "CGI art. 150 VC (assiette PS). 1,60 % la 22e annee.abattement_ps_pv_immo. Valeur en pourcentage."
+      "note": "CORRIGE le 2026-11-01 (audit) : ancre CGI art. 150 VC inexacte pour les PS ; valeur inchangee."
     },
     "pv_immo_abattement_ps_par_an_23e_30e": {
       "libelle": "Abattement PS pour duree de detention - PV immobiliere - taux annuel de la 23e a la 30e annee (exoneration PS atteinte)",
@@ -441,12 +534,12 @@
         "2025": 9,
         "2026": 9
       },
-      "source": "CGI art. 150 VC I (assiette prelevements sociaux). Abattement de 9 % par annee de detention de la 23e a la 30e annee, portant l'abattement PS a 100 % : exoneration totale de prelevements sociaux apres 30 ans.",
-      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
-      "verifie_le": "2026-06-05",
+      "source": "service-public.fr F10864 (page verifiee le 15/04/2026) : abattement pour duree de detention sur l'assiette des prelevements sociaux, 9 % par an de la 23e a la 30e annee (exoneration de PS apres 30 ans). Ancre legale a identifier : le texte en vigueur de l'art. 150 VC ne porte que les abattements de l'IR.",
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "verifie_le": "2026-11-01",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "CGI art. 150 VC (assiette PS). 9 %/an de la 23e a la 30e annee => exoneration PS a 30 ans.abattement_ps_pv_immo. Valeur en pourcentage par an."
+      "note": "CORRIGE le 2026-11-01 (audit) : ancre CGI art. 150 VC inexacte pour les PS ; valeur inchangee."
     },
     "pv_immo_surtaxe_seuil": {
       "libelle": "Seuil de declenchement de la taxe additionnelle sur les plus-values immobilieres elevees",
@@ -503,45 +596,47 @@
       "note": "CGI art. 150 VB = LEGIARTI000051202577. Forfait travaux 15 % applicable uniquement si detention > 5 ans. Confirme BOFiP BOI-RFPI-PVI-20-10-20-20. Valeur en pourcentage."
     },
     "tns_maladie_maternite_taux_max": {
-      "libelle": "Cotisation maladie-maternite TNS (profession liberale / independant) - taux maximal du bareme progressif",
+      "libelle": "Cotisation maladie-maternite des independants non agricoles (dont professions liberales) : taux maximal du bareme progressif, atteint a 300 % du PASS",
       "alias": [
         "cotisation maladie TNS",
         "maladie maternite independant",
-        "6,5 % maladie"
+        "8,5 % maladie",
+        "bareme maladie TNS"
       ],
       "unite": "pourcentage",
       "valeurs": {
-        "2025": 6.5,
-        "2026": 6.5
+        "2025": 8.5,
+        "2026": 8.5
       },
-      "source": "urssaf.fr — Taux de cotisations, profession liberale reglementee hors Cipav / artisan-commercant-PL non reglementee. Bareme PROGRESSIF de 0 % (revenus < ~40 % PASS) jusqu'au taux maximal de 6,50 % ; reforme de l'assiette sociale (LFSS 2024 art. 18) applicable a compter de la regularisation des cotisations 2025 (campagne declarative avril 2026).",
-      "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html",
-      "verifie_le": "2026-08-26",
+      "source": "CSS art. D621-2 (decret n° 2024-688 du 5/07/2024), periodes courant a compter du 01/01/2025 : bareme a paliers, 0 % sous 20 % du PASS, 1,5 % a 40 %, 4 % a 60 %, 6,5 % a 110 %, 7,7 % a 200 %, 8,5 % a 300 % du PASS, taux interpole entre paliers et applique a toute l'assiette ; au-dela de 3 PASS, 6,5 % sur la part excedentaire.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049904592",
+      "verifie_le": "2026-11-01",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "PROMU sourced le 2026-08-26. 6,5 % = PLAFOND du bareme progressif (0 % -> 6,50 %), pas un taux unique. Reforme assiette 2025 : assiette unique = revenu professionnel abattu de 26 %, appliquee des la regularisation d'avril 2026. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
+      "note": "CORRIGE le 2026-11-01 (audit) : la valeur etait 6,5 %, ce qui sous-estime les cotisations entre 1,1 et 3 PASS. Paliers : texte reglementaire (sur). Regle des 6,5 % au-dela de 3 PASS et application aux professions liberales reglementees : bareme URSSAF repris par Weblex le 01/06/2026 (probable). Le bareme REF-002 de 04_formules_et_risques.md et le cas EV-036 restent a corriger (lot 2)."
     },
     "tns_retraite_base_cnavpl_t1": {
       "libelle": "Retraite de base CNAVPL (profession liberale) - taux tranche 1 (revenu <= 1 PASS)",
       "alias": [
         "retraite base CNAVPL T1",
-        "8,23 % retraite base",
+        "8,73 % retraite base",
         "retraite base liberale tranche 1"
       ],
       "unite": "pourcentage",
       "valeurs": {
-        "2025": 8.23,
+        "2024": 8.23,
+        "2025": 8.73,
         "2026": 8.73
       },
-      "source": "cnavpl.fr (Cotiser pour sa retraite) ; urssaf.fr (taux PLR hors Cipav). T1 = 8,23 % sur la part de revenu <= 1 PASS en 2025 ; porte a 8,73 % dans le cadre de la reforme de l'assiette sociale, applique a compter de la regularisation des cotisations 2025 (campagne declarative avril 2026), avec revalorisation des points acquis.",
+      "source": "cnavpl.fr (Preparer sa retraite, mise a jour du 30/12/2025) : T1 = 8,23 % de 2015 a 2024, 8,73 % a compter de 2025, T2 inchangee ; bulletin special CARPIMKO d'avril 2026.",
       "source_url": "https://www.cnavpl.fr/preparer-sa-retraite/",
-      "verifie_le": "2026-08-26",
+      "verifie_le": "2026-11-01",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "PROMU sourced le 2026-08-26. Hausse 8,23 % -> 8,73 % confirmee par sources concordantes (cnavpl.fr, urssaf.fr, presse specialisee) ; elle compense la baisse de CSG-CRDS issue de la reforme d'assiette (davantage de cotisations creatrices de droits). Pour les auxiliaires medicaux, la cotisation CNAVPL est collectee par la CARPIMKO. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
+      "note": "CORRIGE le 2026-11-01 (audit) : la valeur 2025 etait 8,23 %. Les cotisations definitives 2025 sont calculees a 8,73 % ; les appels provisionnels 2025 ont pu l'etre a 8,23 %, regularises en 2026. Pour les auxiliaires medicaux, la cotisation CNAVPL est collectee par la CARPIMKO."
     },
     "tns_retraite_base_cnavpl_t2": {
-      "libelle": "Retraite de base CNAVPL (profession liberale) - taux tranche 2 (revenu de 1 a 5 PASS)",
+      "libelle": "Retraite de base CNAVPL (profession liberale) - taux tranche 2 (revenu des le premier euro, dans la limite de 5 PASS, en plus de la T1)",
       "alias": [
         "retraite base CNAVPL T2",
         "1,87 % retraite base",
@@ -552,12 +647,12 @@
         "2025": 1.87,
         "2026": 1.87
       },
-      "source": "cnavpl.fr (Cotiser pour sa retraite) ; urssaf.fr. T2 = 1,87 % sur la fraction de revenu comprise entre 1 et 5 PASS (PASS 2026 = 48 060 EUR). Taux confirme inchange pour 2026.",
+      "source": "cnavpl.fr ; bulletin special CARPIMKO d'avril 2026 (tranche 2 « entre 0 EUR et 240 300 EUR » en 2026). T2 = 1,87 % sur le revenu compris entre 0 et 5 PASS, en plus de la T1.",
       "source_url": "https://www.cnavpl.fr/preparer-sa-retraite/",
-      "verifie_le": "2026-08-26",
+      "verifie_le": "2026-11-01",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "PROMU sourced le 2026-08-26. T2 stable a 1,87 % en 2025 et 2026, assiette plafonnee a 5 PASS. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
+      "note": "CORRIGE le 2026-11-01 (audit) : le libelle disait « de 1 a 5 PASS », faux ; la T2 porte sur tout le revenu jusqu'a 5 PASS. Taux 1,87 % inchange en 2025 et 2026. Le bareme REF-002 et EV-036 restent a corriger (lot 2)."
     },
     "tns_csg_crds_taux": {
       "libelle": "CSG-CRDS sur revenus d'activite des independants (TNS)",
@@ -594,7 +689,7 @@
       "verifie_le": "2026-08-26",
       "valable_jusqu_au": "2026-12-31",
       "statut": "sourced",
-      "note": "PROMU sourced le 2026-08-26 (perimetre restreint au forfait invalidite-deces, seul montant confirme sur carpimko.com). REFORME 2026 du regime complementaire CARPIMKO : la cotisation devient proportionnelle a 8,70 % sur une assiette de 0,5 a 3 PASS (soit ~2 091 a ~12 544 EUR) — relayee par le bulletin special CARPIMKO avril 2026 et des sources concordantes, A CONFIRMER sur le bulletin officiel avant tout calcul. ASV : forfait ~224 EUR + 0,4 % proportionnel (part assure, conventionne). Montants votes annuellement : re-verifier chaque annee sur carpimko.com. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
+      "note": "PROMU sourced le 2026-08-26 (perimetre restreint au forfait invalidite-deces, seul montant confirme sur carpimko.com). REFORME 2026 du regime complementaire CARPIMKO : la cotisation devient proportionnelle a 8,70 % sur une assiette de 0,5 a 3 PASS (soit ~2 091 a ~12 544 EUR) : relayee par le bulletin special CARPIMKO avril 2026 et des sources concordantes, A CONFIRMER sur le bulletin officiel avant tout calcul. ASV : forfait ~224 EUR + 0,4 % proportionnel (part assure, conventionne). Montants votes annuellement : re-verifier chaque annee sur carpimko.com. Verification du 2026-08-26 : contenu des sources officielles confirme par recherche web (acces direct aux sites .fr bloque par le proxy de la session de verification ; recoupement multi-sources effectue)."
     }
   },
   "comptages_attendus": {

@@ -8,7 +8,7 @@ Checklists opérationnelles et workflows détaillés pour l'agent Gem.
 
 **Fiscal:** Identifier l'année fiscale + régime. Vérifier seuils et conditions. Lister obligations déclaratives. Séparer fiscalité/comptabilité. Mentionner les exceptions. Citer les sources. Conclure prudemment. Ne jamais répondre sans millésime ou sans signaler son absence.
 
-**LMNP/LMP:** Qualifier — meublé/nu, tourisme classé/non classé, LMNP ou LMP, micro-BIC ou réel. Traiter charges + amortissements (CGI art. 39-C). Vérifier déficits, TVA/parahôtellerie, CFE/cotisations. Alerter sur la plus-value à la sortie (réintégration amortissements déduits depuis 2025). Toujours distinguer : revenus 2024 déclarés 2025 / revenus 2025 déclarés 2026 / longue durée / meublé tourisme classé / non classé.
+**LMNP/LMP:** Qualifier — meublé/nu, tourisme classé/non classé, LMNP ou LMP, micro-BIC ou réel. Traiter charges + amortissements (CGI art. 39-C). Vérifier déficits, TVA/parahôtellerie, CFE/cotisations. Alerter sur la plus-value à la sortie (cessions depuis le 15/02/2025 : réintégration de tous les amortissements déduits, quelle que soit leur date, sauf résidences exclues par l'art. 150 VB, III). Prélèvements sociaux LMNP : 18,6 % dès les revenus 2025. Micro-BIC : 77 700 € (revenus 2025), 83 600 € (revenus 2026-2028). Toujours distinguer : revenus 2024 déclarés 2025 / revenus 2025 déclarés 2026 / longue durée / meublé tourisme classé / non classé.
 
 **Gestion financière:** Identifier l'objectif (trésorerie / rentabilité / BFR / CAF / point mort / financement). Lister les données nécessaires. Utiliser les formules de `04_formules_et_risques.md`. Calculer si données disponibles. Interpréter + proposer des actions. Citer les sources. Ne jamais conclure sur un seul ratio.
 
@@ -150,7 +150,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 
 | Dispositif | Économie | Conditions | Source |
 |-----------|----------|------------|--------|
-| PER | Versements déductibles × TMI | Plafond 10 % revenus N-1 (ou PASS), report 3 ans | CGI art. 163 quatervicies |
+| PER | Versements déductibles × TMI | Plafond 10 % des revenus d'activité N-1 (minimum 10 % du PASS N-1) ; report de la fraction non utilisée sur 3 ans, puis 5 ans à compter de l'imposition des revenus 2026 ; versements à 70 ans ou plus non déductibles depuis 2026 | CGI art. 163 quatervicies ; LF 2026 art. 9 et 10 |
 | Dons associations | Réduction 66 % (75 % aide aux personnes) | Don ≤ 20 % revenu imposable | CGI art. 200 |
 | Déficit foncier | Imputation ≤ 10 700 €/an revenu global | Régime réel, travaux déductibles, location 3 ans | CGI art. 156 |
 | Micro-BNC vs réel | Réel avantageux si charges > 34 % CA | CA ≤ 77 700 € (revenus 2025) / 83 600 € (revenus 2026-2028) pour micro | CGI art. 93, 102 ter |
@@ -165,7 +165,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 | LMNP au réel | Amortissement bien → résultat fiscal nul/négatif | Nécessite compta, risque LMP si CA > 23 000 € | CGI art. 39 C, M5 |
 | Démembrement | NP sortie du patrimoine taxable (IFI, succession) | Barème âge art. 669. Irréversible. | CGI art. 669, M6 |
 | SCI à l'IR | Transparence fiscale, optimisation succession | Pas d'IS → PV pro impossibles | M6 |
-| SCI à l'IS | Amortissement bien, capitalisation résultats | Double imposition sortie. Irréversible. | M6 |
+| SCI à l'IS | Amortissement bien, capitalisation résultats | Double imposition à la sortie (IS puis PFU 31,4 % sur les dividendes perçus depuis 2026). Option révocable jusqu'au 5e exercice qui la suit, définitive ensuite (art. 239) ; IS de plein droit en cas de location meublée. | M6 |
 | Pacte Dutreil | Abattement 75 % DMTG transmission entreprise | Engagement collectif + individuel conservation | CGI art. 787 B, M12 |
 | Assurance-vie | Rachats allégés + transmission 152 500 €/bénéficiaire | Versements avant 70 ans, durée > 8 ans | CGI art. 125-0 A, 990 I |
 | Donation-partage | Figer valeurs, abattement 100 000 € × enfant/15 ans | Irréversible. Notaire obligatoire. | CGI art. 779, 784 |
@@ -174,7 +174,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 
 | Dispositif | Économie | Conditions | Source |
 |-----------|----------|------------|--------|
-| Madelin / PER Madelin | Déductibles BNC dans plafond (10 % + 25 % PASS) | Contrat éligible, cotisations régulières | CGI art. 154 bis |
+| Madelin / PER Madelin | Déductibles du BNC dans le plafond 154 bis : 10 % du bénéfice (limite 8 PASS) + 15 % de la fraction entre 1 et 8 PASS, minimum 10 % du PASS | Contrat éligible, cotisations régulières | CGI art. 154 bis |
 | PER individuel TNS | Déduction revenu global + plafond majoré TNS | Revenu professionnel TNS | CGI art. 163 quatervicies |
 | Option TVA | Récupérer TVA si activité partiellement taxée | Professions mixtes (ex. formations) | CGI art. 261 |
 | Micro vs réel | Réel si charges + amortissements > 34 % CA | Analyse annuelle | CGI art. 93, 102 ter |

@@ -61,18 +61,18 @@
 ## FS-008 | claude_few_shot
 - Fonction : financier
 - Difficulté : standard
-- Contexte : Personne physique, résidente fiscale française.
+- Contexte : Personne physique, résidente fiscale française, dividendes perçus en 2026.
 - Question : J'ai un TMI à 30 %. J'ai perçu 5 000 € de dividendes. Je choisis quoi : PFU ou barème ?
 - Règles attendues : GFPL-086
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; chiffres attendus : PFU 31,4 % = 1 570 €, barème 900 € + PS 18,6 % 930 € = 1 830 € (environ 1 728 € après CSG déductible), PFU retenu
 
 ## FS-009 | claude_few_shot
 - Fonction : financier
 - Difficulté : standard
 - Contexte : Infirmier libéral, BNC réel, bénéfice imposable 70 000 €, PER versement envisagé 5 000 €.
 - Question : Vaut-il mieux déduire mon versement PER de mon revenu BNC ou de mon revenu global ?
-- Règles attendues : GFPL-166, GFPL-167, GFPL-170
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Règles attendues : GFPL-166, GFPL-167, GFPL-168, GFPL-170
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; chiffres attendus : plafond 154 bis 2025 = 10 435 €, pas d'effet sur les cotisations sociales, report 5 ans à compter de l'imposition des revenus 2026
 
 ## FS-010 | claude_few_shot
 - Fonction : financier
@@ -119,8 +119,8 @@
 - Difficulté : standard
 - Contexte : Particulier, location nue, 8 ans de détention.
 - Question : J'ai un appartement locatif (location nue) acheté 200 000 € il y a 8 ans, je le revends 280 000 €. Quel est le montant de la plus-value imposable ?
-- Règles attendues : PV-IMM-002, PV-IMM-003
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Règles attendues : PV-IMM-001, PV-IMM-002, PV-IMM-003
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; chiffres attendus : forfaits 7,5 % et 15 % appliqués, PV 35 000 €, IR 5 453 €, PS 5 722 €, total environ 11 175 €, pas de surtaxe
 
 ## FS-016 | claude_few_shot
 - Fonction : patrimonial
@@ -173,10 +173,10 @@
 ## FS-022 | claude_few_shot
 - Fonction : patrimonial
 - Difficulté : complexe
-- Contexte : Vente en 2027 (hypothèse: amortissements déduits depuis 2025 = 40 000 €). LMNP réel BIC.
-- Question : Je suis en LMNP depuis 10 ans. Je vends mon appartement 300 000 € (acheté 180 000 €). J'ai amorti 40 000 € depuis 2025. Quelle PV ?
-- Règles attendues : LMN-022, LMN-023
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Contexte : Vente en 2027 (hypothèse), détention de 10 ans, LMNP au réel BIC, logement hors résidences exclues.
+- Question : Je suis en LMNP au réel depuis 10 ans. Je vends mon appartement 300 000 € (acheté 180 000 €). J'ai déduit 40 000 € d'amortissements au total depuis le début de la location. Quelle PV ?
+- Règles attendues : LMN-022, LMN-023, FORM-002, RISK-006
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; chiffres attendus : réintégration de tous les amortissements (cessions depuis le 15/02/2025), PV 160 000 €, IR 21 280 €, PS 25 250 €, surtaxe 3 % = 3 360 €, total environ 49 890 € ; mentionne les forfaits (hypothèse : PV 119 500 €)
 
 ## FS-023 | claude_few_shot
 - Fonction : patrimonial
@@ -197,10 +197,10 @@
 ## FS-025 | claude_few_shot
 - Fonction : patrimonial
 - Difficulté : complexe
-- Contexte : Médecin libéral, célibataire, TMI 45 % (> 180 295 €), pas d'immobilier locatif, pas d'IFI.
+- Contexte : Médecin libéral, célibataire (une part), revenus 2025, TMI 41 %, pas d'immobilier locatif, pas d'IFI.
 - Question : J'ai un bénéfice BNC de 150 000 €. Quelles sont les 3 optimisations fiscales les plus efficaces pour moi ?
 - Règles attendues : GFPL-125, GFPL-166, GFPL-170
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; chiffres attendus : plafond 154 bis 2025 = 30 435 €, économie environ 12 480 € à 41 %, aucune baisse de cotisations sociales annoncée
 
 ## advanced_lmnp_arbitrage | codex_golden_qa
 - Fonction : location_meublee_lmnp_lmp
@@ -276,7 +276,7 @@
 - Contexte : Cession d'un appartement détenu 14 ans, prix vente 280 000 €, prix achat 180 000 €, frais achat réels 12 600 €, travaux 15 000 € il y a 3 ans.
 - Question : Calcule ma plus-value nette imposable et le montant d'impôt dû.
 - Règles attendues : CGI Art. 150 U, 150 VB (M_CGI) ; M9
-- Critères de succès : cite Art. 150 U et 150 VB, prix de revient = 207 600 € (180 000 + frais réels 12 600 + travaux 15 000), PV brute = 72 400 €, abattement durée IR (14 ans = 9 ans × 6 % = 54 %), PV nette IR = 33 304 €, abattement durée PS (9 ans × 1,65 % = 14,85 %), PV nette PS = 61 649 €, taux 19 % IR + 17,2 % PS, résultat ~6 328 € IR + ~10 604 € PS, surtaxe non applicable (PV nette IR 33 304 € < 50 000 €)
+- Critères de succès : cite Art. 150 U et 150 VB, compare frais réels (12 600 €) et forfait de 7,5 % (13 500 €, sans condition de durée) puis travaux réels (15 000 €) et forfait de 15 % (27 000 €, détention de plus de 5 ans) et retient les forfaits, prix de revient = 220 500 €, PV brute = 59 500 €, abattement durée IR (14 ans = 9 ans × 6 % = 54 %), PV nette IR = 27 370 €, abattement durée PS (9 ans × 1,65 % = 14,85 %), PV nette PS = 50 664 €, taux 19 % IR + 17,2 % PS (maintenu en 2026), résultat ~5 200 € IR + ~8 714 € PS, soit ~13 915 €, surtaxe non applicable (PV nette IR 27 370 € < 50 000 €). Corrigé le 2026-11-01 : l'ancien attendu (frais et travaux réels, ~16 932 €) sanctionnait la réponse optimale.
 
 ## EV-032 | declaration_citations_cgi_obligatoires
 - Fonction : conformite
@@ -291,8 +291,8 @@
 - Difficulté : standard
 - Contexte : Libéral BNC, revenus nets 2025 = 95 000 €, TMI = 41 %.
 - Question : Quel est mon plafond PER 2025 et quelle économie fiscale si je verse le maximum ?
-- Règles attendues : CGI Art. 163 quatervicies (M_CGI) ; M6 ; M13 (PASS 2025)
-- Critères de succès : cite Art. 163 quatervicies, calcul plafond = max(10 % × 95 000, 10 % PASS) = 9 500 €, économie = 9 500 × 41 % = 3 895 €, mentionne report 3 ans, alerte sur TMI à la sortie retraite, validation CGP
+- Règles attendues : CGI Art. 154 bis et 163 quatervicies (M_CGI) ; M6 ; M13 (PASS 2025)
+- Critères de succès : cite Art. 154 bis, calcule le plafond TNS = 10 % × 95 000 + 15 % × (95 000 − 47 100) = 16 685 €, économie ≈ déduction × TMI en vérifiant que la déduction ne fait pas changer de tranche (16 685 × 41 % ≈ 6 841 € si tout reste à 41 %), signale que le plafond 163 quatervicies se calcule sur les revenus et le PASS de N-1 (diminué des sommes déduites au titre du 154 bis hors part de 15 %), mentionne le report de la fraction non utilisée (5 ans à compter de l'imposition des revenus 2026, 3 ans auparavant) et la fin de la déduction à 70 ans ou plus depuis 2026, alerte sur la TMI à la sortie, validation CGP. Corrigé le 2026-11-01 : l'ancien attendu (9 500 €, report 3 ans) ignorait la majoration de 15 % du 154 bis.
 
 ## EV-034 | optimisation_deficit_foncier
 - Fonction : optimisation_fiscale

@@ -9,7 +9,7 @@ Le depot contient **deux skills Claude complementaires** : `expert-comptable` (r
 > ## ⚠️ A lire avant toute utilisation
 >
 > - **Les sorties de l'agent sont des projets de reponse a verifier — jamais un livrable client, jamais un conseil.** La consultation fiscale a titre habituel est une activite reglementee : cet outil est une aide a la recherche et a la pre-qualification, la responsabilite professionnelle reste celle du praticien.
-> - **Etat de validation : 0 des 391 regles metier a ete validee par un professionnel** (statut `candidate_to_validate`). Les 32 parametres chiffres du referentiel sont verifies contre une source officielle (URL + date). Voir [Etat de validation du corpus](#etat-de-validation-du-corpus).
+> - **Etat de validation : 0 des 391 regles metier a ete validee par un professionnel** (statut `candidate_to_validate`). Les 36 parametres chiffres du referentiel citent chacun leur source officielle, leur URL et leur date de verification ; l'audit du 01/11/2026 en a corrige 6 et ajoute 4 (prelevements sociaux et PFU 2026). Voir [Etat de validation du corpus](#etat-de-validation-du-corpus).
 > - **Millesimes :** les chiffres verifies couvrent 2025 et partiellement 2026 ; les baremes URSSAF/kilometrique restent au millesime 2025. Voir la [table des millesimes](#table-des-millesimes).
 
 ---
@@ -18,7 +18,7 @@ Le depot contient **deux skills Claude complementaires** : `expert-comptable` (r
 
 | Skill | Role | Paquet | Documentation |
 |-------|------|--------|---------------|
-| `expert-comptable` | Fiscalite, comptabilite BNC/BIC, LMNP, revenus fonciers, transmission : regles tracees, referentiel de 32 parametres sources, 51 articles CGI | [`dist/expert-comptable.zip`](dist/expert-comptable.zip) | Ce README |
+| `expert-comptable` | Fiscalite, comptabilite BNC/BIC, LMNP, revenus fonciers, transmission : regles tracees, referentiel de 36 parametres sources, 51 articles CGI | [`dist/expert-comptable.zip`](dist/expert-comptable.zip) | Ce README |
 | `conseiller-patrimoine` | Conseil patrimonial et investissement : ou placer, PEA, assurance-vie, PER, ETF et allocation, credit et capacite d'emprunt, achat-revente, louer ou acheter, retraite, protection du conjoint, charte d'investissement. Va chercher chaque chiffre volatil a sa source officielle et le date, calcule avec ses scripts | [`dist/conseiller-patrimoine.zip`](dist/conseiller-patrimoine.zip) | **[Guide complet : docs/conseiller-patrimoine.md](docs/conseiller-patrimoine.md)** |
 
 Les deux se completent : le conseiller delegue toute question fiscale a `expert-comptable`. Installer les deux pour un usage patrimonial.
@@ -80,14 +80,14 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 | Composant | Volume | Statut |
 |-----------|--------|--------|
 | Regles metier (`02_golden_rules_claude_first.md`) | 391 | **0 validee** — 391 `candidate_to_validate` |
-| Referentiel de parametres chiffres (`referentiel_parametres.json`) | 32 cles | **32 `sourced`** — verifies contre source officielle, avec URL et date (passe de sourcing du 2026-08-26) |
-| Articles CGI (`M_CGI_code_general_impots.md`) | 51 | Texte legal officiel (millesime 2026) |
+| Referentiel de parametres chiffres (`referentiel_parametres.json`) | 36 cles | **36 `sourced`** : source officielle, URL et date pour chacune (passe du 2026-08-26, corrections et ajouts du 2026-11-01) |
+| Articles CGI (`M_CGI_code_general_impots.md`) | 51 | Texte legal officiel integral (export Legifrance du 30/10/2026 pour les 30 articles reextraits le 2026-11-01) |
 | Tracabilite regle → source (`07_rule_source_crosswalk.jsonl`) | 391 entrees | **379 ancres legales verifiees** contre texte officiel (passes des 2026-08-26) · 12 enonces de pratique sans texte officiel restent `a_verifier` |
 | Cas de test (`08_evaluation_suite.md`) | 45 | Reponses attendues ecrites |
 
 **Vous etes expert-comptable, fiscaliste, CGP, notaire ?** Chaque regle validee (ou corrigee) augmente la valeur du corpus pour tout le monde. Le workflow est simple : une issue GitHub par regle, passage `candidate_to_validate` → `validated` avec votre nom et la date. Voir **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
-**Ce qui reste a faire et ou aider :** voir la **[feuille de route (ROADMAP.md)](ROADMAP.md)** — validation professionnelle des regles (le sourcing IA des ancres est termine : 379/391), cles de referentiel a ajouter (PFU/PS 2026, CARMF), mise a jour annuelle de janvier, outillage communaute.
+**Ce qui reste a faire et ou aider :** voir la **[feuille de route (ROADMAP.md)](ROADMAP.md)** — validation professionnelle des regles (le sourcing IA des ancres est termine : 379/391), cles de referentiel a ajouter (CARMF, plafonds PER, deficit foncier majore), mise a jour annuelle de janvier, outillage communaute.
 
 ---
 
@@ -98,10 +98,14 @@ Pour tester serieusement l'agent : `knowledge/08_evaluation_suite.md` contient *
 | PASS | 47 100 € | **48 060 €** | `sourced` (arretes JO) |
 | Seuil micro-BNC (CGI 102 ter) | 77 700 € | **83 600 €** (triennat 2026-2028) | `sourced` |
 | Micro-BIC tourisme non classe (loi Le Meur) | 15 000 € / 30 % | 15 000 € / 30 % | `sourced` |
-| Micro-BIC tourisme classe | 77 700 € / 50 % | 77 700 € / 50 % | `sourced` |
+| Micro-BIC tourisme classe, chambres d'hotes, location meublee longue duree | 77 700 € / 50 % | **83 600 € / 50 %** (2026-2028) | `sourced` |
+| Micro-BIC fourniture de logement (para-hotellerie, 1° de l'art. 50-0) | 188 700 € / 71 % | **203 100 € / 71 %** (2026-2028) | `sourced` |
 | Seuil LMP / Seuil IFI / Deficit foncier | 23 000 € / 1,3 M€ / 10 700 € | inchanges | `sourced` |
+| PFU (IR 12,8 % + prelevements sociaux) | 30 % | **31,4 %** (revenus percus depuis le 01/01/2026) | `sourced` |
+| Prelevements sociaux dividendes, interets (annee de perception) | 17,2 % | **18,6 %** | `sourced` |
+| Prelevements sociaux location meublee non professionnelle (annee des revenus) | **18,6 %** (revenus 2025) | 18,6 % | `sourced` |
 | PV immobiliere (IR + PS) | 19 % + 17,2 % | 19 % + **17,2 % maintenu** (LFSS 2026 : 18,6 % sur la plupart des autres revenus du capital, mais PV immo/fonciers/AV restent a 17,2 %) | `sourced` |
-| Taux URSSAF PL (maladie max 6,5 %, CNAVPL 8,23 % -> **8,73 %** en 2026, CSG-CRDS 9,7 %) | 2025 | 2026 verifie | `sourced` |
+| Taux URSSAF PL (maladie jusqu'a 8,5 % a 3 PASS, CNAVPL T1 **8,73 %** depuis 2025, CSG-CRDS 9,7 %) | 2025 | 2026 | `sourced` (bareme detaille du fichier 04 en cours de correction) |
 | Bareme kilometrique | millesime 2025 | mise a jour 2026 en attente | `sourced` 2025 |
 | CARPIMKO invalidite-deces (forfait) | — | **1 022 €** (reforme 2026 : complementaire proportionnelle 8,70 %) | `sourced` |
 | CARMF (forfaits medecins) | indicatifs 2025 | a verifier sur carmf.fr | `candidate_to_validate` (hors referentiel) |
@@ -149,7 +153,7 @@ gemini/
 chatgpt/
   00_INSTRUCTIONS_CHATGPT.md            <- System prompt ChatGPT (sans Drive)
 knowledge/
-  referentiel_parametres.json           <- SOURCE DE VERITE des chiffres (32 cles, sources + millesimes)
+  referentiel_parametres.json           <- SOURCE DE VERITE des chiffres (36 cles, sources + millesimes)
   01_decision_engine.md                 <- Moteur decisionnel IF/THEN (10 modules)
   02_golden_rules_claude_first.md       <- 391 regles curatees
   03_few_shots.md                       <- 25 exemples calibres
@@ -208,7 +212,7 @@ Exemples : "Mon client kine a encaisse 80 000 EUR en 2026, peut-il rester au mic
 | 2 | `02_golden_rules_claude_first.md` | 391 regles curatees |
 | 3 | `03_few_shots.md` | Calibrage du style de reponse |
 | 4 | `04_formules_et_risques.md` | Formules de calcul + risques + baremes M13 |
-| 5 | `referentiel_parametres.json` | **Source de verite des chiffres** (32 cles verifiees) |
+| 5 | `referentiel_parametres.json` | **Source de verite des chiffres** (36 cles sourcees) |
 | 6 | `05_agent_governance.md` | Playbooks + deontologie |
 | 7 | `06_golden_checklists.md` | Checklists par domaine |
 | 8 | `07_rule_source_crosswalk.jsonl` | Tracabilite regles -> sources |

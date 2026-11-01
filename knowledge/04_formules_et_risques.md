@@ -20,10 +20,12 @@ Amortissement déductible (art. 39-C) = MAX(0 ; Loyers acquis − Charges hors a
 
 ---
 
-### [FORM-002] Calcul PV LMNP depuis 2025
+### [FORM-002] Calcul PV LMNP (cessions depuis le 15/02/2025)
 
 **Formule :**
-PV brute LMNP (depuis 2025) = Prix cession − (Prix acquisition − Amortissements déduits pendant la détention). Prix acquisition majoré: + frais d'acquisition réels OU + 7,5 % forfait si > 5 ans; + travaux réels OU + 15 % forfait si > 5 ans. PV nette imposable IR = PV brute × (1 − Abattement IR durée détention). PV nette imposable PS = PV brute × (1 − Abattement PS durée détention). IR = PV nette IR × 19 %. PS = PV nette PS × 17,2 %. Taxe supplémentaire = f(PV nette IR) si > 50 000 €.
+PV brute LMNP (cessions depuis le 15/02/2025, CGI art. 150 VB, III) = Prix cession − (Prix acquisition majoré − TOTALITÉ des amortissements déduits pendant la location au titre de l'art. 39 C, quelle que soit leur date). Prix acquisition majoré (art. 150 VB, II) : + frais d'acquisition réels OU forfait de 7,5 % du prix d'acquisition (sans condition de durée) ; + travaux réels non déjà déduits OU forfait de 15 % si la cession intervient plus de 5 ans après l'acquisition (articulation des forfaits avec la minoration : à confirmer au BOFiP). PV nette imposable IR = PV brute × (1 − Abattement IR durée détention). PV nette imposable PS = PV brute × (1 − Abattement PS durée détention). IR = PV nette IR × 19 %. PS = PV nette PS × 17,2 % (taux maintenu en 2026 pour les plus-values immobilières). Taxe supplémentaire = barème par paliers sur la PV nette imposable à l'IR si elle dépasse 50 000 € (CGI art. 1609 nonies G).
+
+*Corrigé le 2026-11-01 (audit) : date d'effet, totalité des amortissements, forfait de 7,5 % sans condition de durée, exceptions.*
 
 **Paramètres :**
 - `seuil_taxe_supplementaire` : 50000
@@ -33,8 +35,9 @@ PV brute LMNP (depuis 2025) = Prix cession − (Prix acquisition − Amortisseme
 - `PS_pct` : 17.2
 
 **Exceptions :**
-- Avant 2025: PV brute = Prix cession − Prix acquisition (amortissements non réintégrés)
-- Résidences étudiantes/apprentissage: exception au régime de réintégration des amortissements
+- Cessions avant le 15/02/2025 : PV brute = Prix cession − Prix acquisition (amortissements non réintégrés)
+- Pas de réintégration pour les logements situés dans : résidences pour étudiants, jeunes de moins de 30 ans en formation ou personnes de plus de 65 ans (CCH L631-12 et L631-13) ; établissements des 6° et 7° du I de l'art. L312-1 CASF ; résidences services agréées ; accueil familial salarié ; établissements de soins de longue durée
+- LF 2026 : la minoration vise aussi les amortissements du statut du bailleur privé (art. 31, I, 1° i et j)
 
 *Source: Guide fiscal LM ARCOLIB 2025, 6211-6213*
 
@@ -143,9 +146,11 @@ RISQUE: Oubli de comptabiliser un amortissement dans la déclaration 2031 avant 
 ### [RISK-002] ⚠️ Risques LMNP/LMP
 
 **Risque :**
-RISQUE: SCI optant pour la location meublée → soumise à l'IS de plein droit (activité commerciale). Cette option IS est IRRÉVOCABLE. La SCI perd: (1) l'abattement pour durée de détention sur les PV immobilières; (2) la possibilité de retourner à l'IR. Les dividendes distribués sont ensuite imposés au PFU 30 % (double imposition IS + PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI IR.
+RISQUE: SCI optant pour la location meublée → soumise à l'IS de plein droit (activité commerciale). Cette option IS est IRRÉVOCABLE. La SCI perd: (1) l'abattement pour durée de détention sur les PV immobilières; (2) la possibilité de retourner à l'IR. Les dividendes distribués sont ensuite imposés au PFU (double imposition IS + PFU). Piège fréquent lors de la mise en location meublée d'un bien détenu en SCI IR.
 
-**Conséquence :** Double imposition IS 25 % + PFU 30 % sur les dividendes; perte abattement PV
+*Corrigé le 2026-11-01 (audit) : il s'agit d'un assujettissement de plein droit, pas d'une option (tolérance si les recettes commerciales ne dépassent pas 10 % des recettes) ; l'option volontaire pour l'IS (art. 239) est révocable jusqu'au 5e exercice qui la suit.*
+
+**Conséquence :** Double imposition : IS (15 % jusqu'à 42 500 € de bénéfice, 25 % au-delà) puis PFU sur les dividendes (31,4 % s'ils sont perçus depuis le 01/01/2026, 30 % en 2025) [referentiel: pfu_taux_global] ; perte de l'abattement pour durée de détention
 
 *Source: Guide patrimoine CV Finance 2022, Immobilier/SCI*
 
@@ -165,9 +170,11 @@ RISQUE: Utilisation d'un tableur Excel pour la comptabilité informatisée → n
 ### [RISK-004] ⚠️ Risques transmission
 
 **Risque :**
-RISQUE: Option IS irrévocable d'une SCI puis cession des parts → perte de l'abattement pour durée de détention sur PV immobilières (abattement qui exonère après 22 ans d'IR et 30 ans de PS). En IS, la PV de cession est imposée à l'IS 25 % quel que soit le nombre d'années de détention. Erreur fréquente lors d'une structuration patrimoniale à long terme.
+RISQUE: Option IS d'une SCI (devenue définitive après le 5e exercice qui la suit, art. 239) → perte de l'abattement pour durée de détention sur les PV immobilières (abattement qui exonère après 22 ans d'IR et 30 ans de PS). La cession de l'immeuble par la société est imposée à l'IS quel que soit le nombre d'années de détention, sur une valeur nette diminuée des amortissements. La cession des parts par l'associé relève, elle, des plus-values mobilières (PFU). Erreur fréquente lors d'une structuration patrimoniale à long terme.
 
-**Conséquence :** PV imposée à IS 25 % au lieu de l'exonération totale possible après 22-30 ans
+*Corrigé le 2026-11-01 (audit) : option révocable pendant 5 exercices ; distinction cession de l'immeuble et cession des parts.*
+
+**Conséquence :** PV imposée à l'IS au lieu de l'exonération totale possible après 22-30 ans
 
 *Source: Guide patrimoine CV Finance 2022, Immobilier/SCI*
 
@@ -184,12 +191,14 @@ RISQUE: Donation temporaire d'usufruit à un enfant rattaché au foyer fiscal de
 
 ---
 
-### [RISK-006] ⚠️ Risques PV LMNP 2025
+### [RISK-006] ⚠️ Risques PV LMNP (cessions depuis le 15/02/2025)
 
 **Risque :**
-RISQUE: LMNP au réel depuis de nombreuses années — amortissements déduits depuis 2025 réintégrés dans la base PV à la cession. Un investisseur qui amorti significativement son bien et le revend après plusieurs années de déduction verra sa PV imposable augmenter du montant des amortissements déduits depuis 2025. Impact d'autant plus fort si le bien est vendu peu après la mise en location (pas de bénéfice des abattements de durée de détention).
+RISQUE: LMNP au réel depuis de nombreuses années. Pour toute cession depuis le 15/02/2025, la TOTALITÉ des amortissements déduits pendant la location (art. 39 C), y compris ceux déduits avant 2025, minore le prix d'acquisition (CGI art. 150 VB, III). Un investisseur qui a beaucoup amorti verra sa PV imposable augmenter d'autant. Impact d'autant plus fort si le bien est vendu peu après la mise en location (peu ou pas d'abattement pour durée de détention). Exceptions : résidences pour étudiants, jeunes en formation ou personnes âgées, établissements médico-sociaux, résidences services agréées, accueil familial salarié, soins de longue durée (voir FORM-002).
 
-**Conséquence :** PV LMNP plus élevée qu'avant 2025 → impôt plus important à la revente
+*Corrigé le 2026-11-01 (audit) : la version précédente limitait à tort la réintégration aux amortissements déduits depuis 2025.*
+
+**Conséquence :** PV LMNP plus élevée qu'avant la réforme → impôt plus important à la revente
 
 *Source: Guide fiscal LM ARCOLIB 2025, 6211-6213*
 

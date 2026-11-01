@@ -158,24 +158,26 @@ Source : GFPL-049 à GFPL-056 — M2
 
 **Question :** J'ai un TMI à 30 %. J'ai perçu 5 000 € de dividendes. Je choisis quoi : PFU ou barème ?
 
-*Contexte : Personne physique, résidente fiscale française.*
+*Contexte : Personne physique, résidente fiscale française, dividendes perçus en 2026.*
 
 **Réponse idéale :**
 
-**Comparaison PFU vs barème à TMI 30 % :**
+**Comparaison PFU vs barème à TMI 30 % (dividendes perçus en 2026) :**
 
 **Option PFU (flat tax) :**
-5 000 € × 30 % (12,8 % IR + 17,2 % PS) = **1 500 €**
+5 000 € × 31,4 % (12,8 % IR + 18,6 % PS) = **1 570 €** [referentiel: pfu_taux_global/2026]
 
 **Option barème progressif :**
 Base imposable = 5 000 × 60 % (abattement 40 %) = 3 000 €
 IR = 3 000 × 30 % = 900 €
-PS = 5 000 × 17,2 % = 860 €
-Total = **1 760 €**
+PS = 5 000 × 18,6 % = 930 € [referentiel: ps_produits_placement/2026]
+Total = **1 830 €**, ramené à environ 1 728 € par la CSG déductible (6,8 % × 5 000 × 30 % ≈ 102 € ; part déductible 2026 à vérifier)
 
-→ **PFU plus avantageux à TMI 30 %** (1 500 € vs 1 760 €).
+→ **PFU plus avantageux à TMI 30 %** (1 570 € contre environ 1 730 €).
 
-L'option barème devient intéressante uniquement si TMI ≤ 11 % (les dividendes sont alors imposés à 11 % + 17,2 % PS, soit 28,2 % < 30 %).
+À TMI 11 % : 5 000 × 60 % × 11 % = 330 € d'IR + 930 € de PS = 1 260 € (25,2 % des dividendes), moins la CSG déductible : le barème est plus avantageux que le PFU (1 570 €). À TMI 0 %, le barème l'est aussi.
+
+Dividendes perçus en 2025 : mêmes calculs avec des PS de 17,2 % (PFU 1 500 €).
 
 ⚠️ L'option barème est **globale** : elle s'applique à tous les revenus financiers de l'année (pas uniquement aux dividendes).
 
@@ -193,21 +195,24 @@ Source : GFPL-086 (PFU), M2 — Module C2
 
 **Réponse idéale :**
 
-**Déduire du revenu BNC en priorité** — c'est systématiquement plus avantageux pour un TNS au réel.
+**Déduire au titre du plafond professionnel (art. 154 bis) en priorité**, en général.
 
 **Pourquoi :**
-1. La déduction du BNC réduit votre **revenu catégoriel net** → réduit le **RFR** (revenu fiscal de référence)
-2. Un RFR plus bas réduit les cotisations sociales URSSAF/CARPIMKO calculées sur le bénéfice
-3. La déduction du revenu global n'a pas cet effet sur les cotisations sociales
+1. Le plafond 154 bis ajoute 15 % du bénéfice compris entre 1 et 8 PASS, absent du plafond du revenu global. Pour 70 000 € de bénéfice (revenus 2025, PASS 47 100 €) : 10 % × 70 000 + 15 % × (70 000 − 47 100) = **10 435 €**. Le versement de 5 000 € y tient.
+2. Utiliser le plafond professionnel préserve les plafonds du revenu global non utilisés, qui restent reportables.
 
-**Stratégie optimale :**
-- Utiliser d'abord le **plafond de déduction du revenu professionnel** (BNC)
-- Stocker les plafonds du revenu global des années antérieures non utilisés (récupérables 3 ans)
-- Si plafond BNC épuisé → utiliser le plafond revenu global
+**Ce que la déduction ne fait pas :**
+- Elle ne réduit pas les cotisations sociales : les versements déduits au titre du 154 bis sont réintégrés dans l'assiette des cotisations des TNS (CSS art. L131-6).
+- L'économie d'impôt par euro déduit est la même (TMI) quel que soit le plafond utilisé. Effet sur le RFR : à vérifier (CGI art. 1417, IV).
+
+**Stratégie :**
+- Utiliser d'abord le **plafond professionnel** (154 bis).
+- Plafonds du revenu global non utilisés : report sur 3 ans jusqu'à l'imposition des revenus 2025, sur 5 ans à compter de l'imposition des revenus 2026 (LF 2026, art. 10).
+- Versements effectués à 70 ans ou plus : non déductibles depuis le 01/01/2026 (LF 2026, art. 9).
 
 Source : GFPL-165 à GFPL-170 — M2, Module G1
 
-*Modules : M2 | Règles : GFPL-166, GFPL-167, GFPL-170*
+*Modules : M2 | Règles : GFPL-166, GFPL-167, GFPL-168, GFPL-170*
 
 ---
 
@@ -350,26 +355,33 @@ Source : M9 (PV-RP-001)
 
 **Calcul de la plus-value nette imposable :**
 
-PV brute = 280 000 − 200 000 = **80 000 €**
+**Prix d'acquisition majoré** (CGI art. 150 VB, II, 3° et 4°), faute de justificatifs plus élevés :
+- frais d'acquisition : forfait de 7,5 % (sans condition de durée) = 15 000 €
+- travaux : forfait de 15 % (cession plus de 5 ans après l'acquisition) = 30 000 €
+→ prix de revient = 200 000 + 15 000 + 30 000 = **245 000 €**
+
+PV brute = 280 000 − 245 000 = **35 000 €**
 
 **Abattements pour durée de détention (8 ans) :**
 - Pour l'IR : 0 % les 5 premières années + 6 %/an de la 6ème à la 21ème → 6 % × 3 ans = **18 %**
-  → PV imposable IR = 80 000 × (100 % − 18 %) = **65 600 €**
+  → PV imposable IR = 35 000 × (100 % − 18 %) = **28 700 €**
 - Pour les PS : 0 % les 5 premières années + 1,65 %/an de la 6ème à la 21ème → 1,65 % × 3 = **4,95 %**
-  → PV imposable PS = 80 000 × (100 % − 4,95 %) = **76 040 €**
+  → PV imposable PS = 35 000 × (100 % − 4,95 %) = **33 268 €**
 
 **Impôts :**
-- IR = 65 600 × 19 % = **12 464 €**
-- PS = 76 040 × 17,2 % = **13 079 €**
-- **Total ≈ 25 543 €**
+- IR = 28 700 × 19 % = **5 453 €**
+- PS = 33 268 × 17,2 % = **5 722 €** (taux maintenu en 2026 pour les plus-values immobilières) [referentiel: pv_immo_taux_prelevements_sociaux]
+- **Total ≈ 11 175 €**
 
-(Taxe supplémentaire si PV brute > 50 000 € : de 2 à 6 % sur la PV imposable IR → ici applicable sur 65 600 €, environ 2 % = 1 312 €)
+Pas de taxe supplémentaire : elle ne vise que la PV nette imposable à l'IR supérieure à 50 000 € (ici 28 700 €).
+
+Sans les forfaits, la PV serait de 80 000 € et l'impôt d'environ 26 850 € (dont 1 312 € de taxe supplémentaire) : toujours comparer frais et travaux réels aux forfaits.
 
 ⚠️ Ce calcul est effectué par le notaire lors de la vente. En pratique, il prélève l'impôt directement.
 
 Source : M9 (PV-IMM-002, PV-IMM-003)
 
-*Modules : M9 | Règles : PV-IMM-002, PV-IMM-003*
+*Modules : M9 | Règles : PV-IMM-001, PV-IMM-002, PV-IMM-003*
 
 ---
 
@@ -536,13 +548,13 @@ Source : M9 (RF-001, RF-003)
 
 ## [FS-022] 🏠 Patrimonial — 🟥 Complexe
 
-**Question :** Je suis en LMNP depuis 10 ans. Je vends mon appartement 300 000 € (acheté 180 000 €). J'ai amorti 40 000 € depuis 2025. Quelle PV ?
+**Question :** Je suis en LMNP au réel depuis 10 ans. Je vends mon appartement 300 000 € (acheté 180 000 €). J'ai déduit 40 000 € d'amortissements au total depuis le début de la location. Quelle PV ?
 
-*Contexte : Vente en 2027 (hypothèse: amortissements déduits depuis 2025 = 40 000 €). LMNP réel BIC.*
+*Contexte : Vente en 2027 (hypothèse), détention de 10 ans, LMNP au réel BIC, logement hors résidences exclues du dispositif.*
 
 **Réponse idéale :**
 
-**Nouveau régime 2025 : les amortissements sont réintégrés dans le calcul de la PV LMNP.**
+**Régime en vigueur pour les cessions depuis le 15/02/2025 (CGI art. 150 VB, III) : le prix d'acquisition est minoré de TOUS les amortissements déduits pendant la location (art. 39 C), y compris ceux déduits avant 2025.**
 
 **PV brute = Prix vente − (Prix acquisition − Amortissements déduits)**
 = 300 000 − (180 000 − 40 000)
@@ -555,15 +567,19 @@ Source : M9 (RF-001, RF-003)
 
 **Impôts :**
 - IR = 112 000 × 19 % = **21 280 €**
-- PS = 146 800 × 17,2 % = **25 250 €**
-- Taxe supplémentaire PV > 50 000 € : ~2 % × 112 000 = **2 240 €**
-- **Total ≈ 48 770 €**
+- PS = 146 800 × 17,2 % = **25 250 €** (taux maintenu en 2026 pour les plus-values immobilières)
+- Taxe supplémentaire : PV nette IR de 112 000 €, tranche de 110 001 à 150 000 € → 3 % × 112 000 = **3 360 €** (CGI art. 1609 nonies G) [referentiel: pv_immo_surtaxe_seuil]
+- **Total ≈ 49 890 €**
 
-⚠️ Sans le nouveau régime 2025, la PV aurait été 300 000 − 180 000 = 120 000 € et les impôts ≈ 28 000 €. La réintégration des amortissements coûte ici ~20 000 € supplémentaires.
+**Forfaits de l'art. 150 VB, II :** frais 7,5 % (13 500 €) et travaux 15 % (27 000 €, détention de plus de 5 ans). S'ils s'ajoutent au prix d'acquisition avant la minoration (hypothèse à confirmer au BOFiP), la PV tombe à 119 500 € et l'impôt à environ 36 400 € (IR 15 894 €, PS 18 858 €, taxe 1 673 €).
+
+⚠️ Sans réintégration (cession avant le 15/02/2025, ou logement exclu du dispositif), la PV aurait été de 120 000 € et l'impôt d'environ 36 577 € (IR 15 960 €, PS 18 937 €, taxe 2 % = 1 680 €), hors forfaits. La réintégration coûte ici environ 13 300 € de plus.
+
+Logements exclus de la réintégration : résidences pour étudiants, jeunes en formation ou personnes âgées (CCH L631-12 et L631-13), établissements médico-sociaux (CASF L312-1, I, 6° et 7°), résidences services agréées, accueil familial salarié, soins de longue durée.
 
 Source : LMN-022, LMN-023 — M5
 
-*Modules : M5 | Règles : LMN-022, LMN-023*
+*Modules : M5 | Règles : LMN-022, LMN-023, FORM-002, RISK-006*
 
 ---
 
@@ -610,12 +626,12 @@ Source : GFPL-123 — M2
 - Déduction de tous les frais réels
 
 **SCI à l'IS — inconvénients majeurs dans votre cas :**
-1. **Option irrévocable** — impossible de revenir à l'IR
-2. **Perte de l'abattement pour durée de détention sur les PV** (exo IR après 22 ans, PS après 30 ans) → en IS, la PV de cession est imposée à l'IS 25 %
-3. **Dividendes imposés au PFU 30 %** lors de la distribution → double imposition (IS 25 % + PFU 30 %)
+1. **Option révocable seulement jusqu'au 5e exercice suivant celui de l'option** (CGI art. 239, 1), définitive ensuite
+2. **Perte de l'abattement pour durée de détention sur les PV** (exo IR après 22 ans, PS après 30 ans) → la société paie l'IS sur la PV de cession de l'immeuble ; la cession des parts par l'associé relève des PV mobilières
+3. **Dividendes imposés au PFU** lors de la distribution (31,4 % s'ils sont perçus depuis le 01/01/2026, 30 % en 2025) → double imposition (IS puis PFU) [referentiel: pfu_taux_global]
 4. **Sans transmission à court terme**, l'intérêt de la SCI IR (démembrement + abattements donations) n'est pas pleinement exploité
 
-**Recommandation :** SCI à l'**IR** — avantages fiscaux IFI (abattement si RP dans la SCI non recommandé), transmission via démembrement, abattements donations, exonération PV longue durée. Ou envisager le LMNP (location meublée) pour bénéficier des amortissements SANS les inconvénients de l'IS.
+**Recommandation :** SCI à l'**IR** — avantages fiscaux IFI (abattement si RP dans la SCI non recommandé), transmission via démembrement, abattements donations, exonération PV longue durée. Ou envisager le LMNP (location meublée) pour les amortissements, en sachant que depuis le 15/02/2025 ils sont réintégrés dans la plus-value à la revente (CGI art. 150 VB, III).
 
 Source : PAT-016 — M6, Module F7
 
@@ -627,23 +643,22 @@ Source : PAT-016 — M6, Module F7
 
 **Question :** J'ai un bénéfice BNC de 150 000 €. Quelles sont les 3 optimisations fiscales les plus efficaces pour moi ?
 
-*Contexte : Médecin libéral, célibataire, TMI 45 % (> 180 295 €), pas d'immobilier locatif, pas d'IFI.*
+*Contexte : Médecin libéral, célibataire (une part), revenus 2025, TMI 41 % (tranche de 84 578 € à 181 917 € du barème des revenus 2025), pas d'immobilier locatif, pas d'IFI.*
 
 **Réponse idéale :**
 
-À TMI 45 %, chaque euro de charge déductible économise 45 centimes d'IR + réduction des cotisations sociales sur le bénéfice.
+À TMI 41 %, chaque euro de charge déductible économise 41 centimes d'IR, tant que la déduction ne fait pas changer de tranche. Un versement PER déduit au titre du 154 bis ne réduit pas les cotisations sociales (réintégré dans l'assiette, CSS art. L131-6).
 
 **1. PER (Plan d'Épargne Retraite) — impact maximal**
 Versement déductible du BNC dans la limite du plafond TNS. Sur 150 000 € de bénéfice :
-Plafond ≈ 10 % × 150 000 + 15 % × (bénéfice entre 1 et 8 × PASS 47 100 €)
-→ Plafond estimé ~32 000–38 000 € de versement déductible
-Économie fiscale = ~38 000 × 45 % = **17 100 € d'IR économisé** + réduction des cotisations sociales
+Plafond = 10 % × 150 000 + 15 % × (150 000 − 47 100) = 15 000 + 15 435 = **30 435 €** (PASS 2025 ; 30 291 € avec le PASS 2026)
+Économie fiscale ≈ 30 435 × 41 % ≈ **12 480 € d'IR** (le revenu imposable reste dans la tranche à 41 % après déduction)
 
 **2. Contrat Madelin / loi Madelin (remplacé par PER mais cotisations santé/prévoyance déductibles)**
 Cotisations de santé complémentaire et de prévoyance souscrites dans le cadre professionnel sont déductibles du BNC.
 
 **3. Dons aux organismes d'intérêt général**
-Réduction d'impôt de **66 %** des dons dans la limite de 20 % du revenu imposable (ou 75 % jusqu'à 1 000 €/an pour organismes d'aide aux personnes en difficulté).
+Réduction d'impôt de **66 %** des dons dans la limite de 20 % du revenu imposable (75 % pour les organismes d'aide aux personnes en difficulté, dans une limite de 1 000 € portée à 2 000 € pour les dons effectués depuis le 14/10/2025 selon la LF 2026, à confirmer).
 Exemple : 3 000 € de dons → réduction de 66 % = **1 980 €** d'IR en moins (hors niches fiscales)
 
 ⚠️ À ce niveau de revenus, vérifier si CEHR est applicable (RFR > 250 000 € → 3 % puis 4 % sur l'excédent).
