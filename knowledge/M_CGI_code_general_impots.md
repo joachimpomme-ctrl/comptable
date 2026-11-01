@@ -1,11 +1,11 @@
 # Module M_CGI — Code Général des Impôts
 
 Extraction ciblée des articles pertinents pour comptabilité, fiscalité, patrimoine.
-Source : CGI Légifrance — Dernière modification 01 mai 2026
+Source : CGI Légifrance. Export du 30/10/2026 (dernière modification du code le 31/10/2026) pour 30 articles réextraits le 2026-11-01 (22 qui étaient coupés à 4 000 caractères, 92 et 102 ter modifiés depuis mai, 6 nettoyés de titres parasites) ; export du 01/05/2026 pour les 21 autres, dont le texte est identique au 30/10/2026 (seuls les tableaux des art. 194, 669 et 777 sont mis en page différemment).
 
 **Statut :** `sourced` — texte légal officiel
 
-**Version :** v3 — 2026-05-22
+**Version :** v4, 2026-11-01 (tous les articles en texte intégral)
 
 **Note :** Art. L64 LPF (abus de droit) est dans le Livre des Procédures Fiscales, hors scope CGI.
 
@@ -29,7 +29,6 @@ c Des bateaux utilisés en un point fixe et aménagés pour l'habitation, le com
 sont seulement retenus par des amarres.
 2° Les revenus des propriétés non bâties de toute nature, y compris ceux des terrains occupés par les
 carrières, mines et tourbières, les étangs, les salines et marais salants.
-Code général des impôts, CGI. - Dernière modification le 01 mai 2026 - Document généré le 11 mai 2026
 ```
 
 ---
@@ -124,22 +123,6 @@ l'amélioration des propriétés, y compris celles dont le contribuable est nu-p
 appartient à un organisme d'habitations à loyer modéré mentionné à l'article L. 411-2 du code de la
 construction et de l'habitation, à une société d'économie mixte ou à un organisme disposant de l'agrément
 prévu à l'article L. 365-1 du même code ;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 e) Les frais de gestion, fixés à 20 € par local, majorés, lorsque ces dépenses sont effectivement supportées
 par le propriétaire, des frais de rémunération des gardes et concierges, des frais de procédure et des frais de
 rémunération, honoraire et commission versés à un tiers pour la gestion des immeubles ;
@@ -156,7 +139,510 @@ et le 31 décembre 1998 et à la demande du contribuable, une déduction au titr
 10 % du prix d'acquisition du logement pour les quatre premières années et à 2 % de ce prix pour les vingt
 années suivantes. La période d'amortissement a pour point de départ le premier jour du mois de l'achèvement
 de l'immeuble ou de son acquisition si elle est postérieure.
-L'avantage prévu au premier alinéa est applicable, dans les mêmes condition
+L'avantage prévu au premier alinéa est applicable, dans les mêmes conditions, aux logements affectés à la
+location après réhabilitation dès lors que leur acquisition entre dans le champ d'application du I de l'article
+257 et aux logements que le contribuable fait construire et qui ont fait l'objet, avant le 31 décembre 1998,
+de la déclaration d'ouverture de chantier prévue à l'article R. * 421-40 du code de l'urbanisme. Il en est de
+même des logements loués après transformation lorsque ces locaux étaient, avant leur acquisition, affectés à
+un usage autre que l'habitation. Dans ce cas, la déduction au titre de l'amortissement est calculée sur le prix
+d'acquisition des locaux augmenté du montant des travaux de transformation. La période d'amortissement a
+pour point de départ le premier jour du mois de l'achèvement de ces travaux.
+L'option, qui doit être exercée lors du dépôt de la déclaration des revenus de l'année d'achèvement de
+l'immeuble ou de son acquisition si elle est postérieure, est irrévocable pour le logement considéré et
+comporte l'engagement du propriétaire de louer le logement nu pendant une durée de neuf ans. Cette location
+doit prendre effet dans les douze mois qui suivent la date d'achèvement de l'immeuble ou de son acquisition
+si elle est postérieure. En cas de transmission à titre gratuit, le ou les héritiers, légataires ou donataires,
+peuvent demander la reprise à leur profit, dans les mêmes conditions et selon les mêmes modalités, du
+dispositif prévu aux premier et deuxième alinéas pour la période d'amortissement restant à courir à la date de
+la transmission.
+Lorsque l'option est exercée, les dispositions du b ne sont pas applicables mais les droits suivants sont
+ouverts :
+1. les dépenses de reconstruction et d'agrandissement ouvrent droit à une déduction, au titre de
+l'amortissement, égale à 10 % du montant des dépenses pour les quatre premières années et à 2 % de ce
+montant pour les vingt années suivantes. Le propriétaire doit s'engager à louer le logement nu pendant une
+nouvelle durée de neuf ans ;
+2. les dépenses d'amélioration ouvrent droit à une déduction, au titre de l'amortissement, égale à 10 % du
+montant de la dépense pendant dix ans.
+La période d'amortissement a pour point de départ le premier jour du mois d'achèvement des travaux.
+Les dispositions des premier à septième alinéas s'appliquent dans les mêmes conditions lorsque les
+immeubles sont la propriété d'une société non soumise à l'impôt sur les sociétés à la condition que les
+porteurs de parts s'engagent à conserver les titres jusqu'à l'expiration de la durée de neuf ans mentionnée au
+troisième alinéa et au 1.
+Le revenu net foncier de l'année au cours de laquelle l'un des engagements définis aux troisième à huitième
+alinéas n'est pas respecté est majoré du montant des amortissements déduits. Pour son imposition, la fraction
+du revenu net foncier correspondant à cette majoration est divisée par le nombre d'années civiles pendant
+lesquelles l'amortissement a été déduit ; le résultat est ajouté au revenu global net de l'année de la rupture
+de l'engagement et l'impôt correspondant est égal au produit de la cotisation supplémentaire ainsi obtenue
+par le nombre d'années utilisé pour déterminer le quotient. En cas d'invalidité correspondant au classement
+dans la deuxième ou la troisième des catégories prévues à l'article L. 341-4 du code de la sécurité sociale,
+de licenciement ou de décès du contribuable ou de l'un des époux soumis à imposition commune, cette
+majoration ne s'applique pas.
+Pour un même logement, les dispositions du présent f sont exclusives de l'application des dispositions des
+articles 199 nonies à 199 undecies A.
+Les dix premiers alinéas du présent f sont applicables lorsque l'achèvement du logement ou des travaux
+intervient au plus tard le 1er juillet 2025.
+Les dispositions du présent f s'appliquent, sous les mêmes conditions, aux logements acquis neufs ou en l'état
+futur d'achèvement entre le 1er janvier 1999 et le 31 août 1999 lorsque les conditions suivantes sont réunies :
+1. Le permis de construire prévu à l'article L. 421-1 du code de l'urbanisme doit avoir été délivré avant le 1er
+janvier 1999 ;
+2. La construction du logement ou les travaux doivent avoir été achevés, respectivement, avant le 1er juillet
+2001 ou le 1er juillet 2025.
+Pour l'application des dispositions des douzième à quatorzième alinéas, les contribuables doivent joindre à
+la déclaration des revenus mentionnée au troisième alinéa une copie de la notification de l'arrêté délivrant le
+permis de construire et de la déclaration d'achèvement des travaux accompagnée des pièces attestant de sa
+réception en mairie.
+Un décret en Conseil d'Etat détermine les modalités d'application du présent f, notamment les obligations
+déclaratives incombant aux contribuables et aux sociétés qui y sont mentionnés, ainsi que les modalités de
+décompte des déductions pratiquées au titre des amortissements considérés ;
+g) Pour les logements situés en France, acquis neufs ou en l'état futur d'achèvement entre le 1er janvier 1999
+et le 2 avril 2003, et à la demande du contribuable, une déduction au titre de l'amortissement égale à 8 % du
+prix d'acquisition du logement pour les cinq premières années et à 2,5 % de ce prix pour les quatre années
+suivantes. La période d'amortissement a pour point de départ le premier jour du mois de l'achèvement de
+l'immeuble ou de son acquisition si elle est postérieure.
+La déduction au titre de l'amortissement est applicable, dans les mêmes conditions, aux logements que
+le contribuable fait construire et qui ont fait l'objet, entre le 1er janvier 1999 et le 2 avril 2003, de la
+déclaration d'ouverture de chantier prévue à l'article R. * 421-40 du code de l'urbanisme. Il en est de même
+des locaux affectés à un usage autre que l'habitation acquis entre le 1er janvier 1999 et le 2 avril 2003 et
+que le contribuable transforme en logements. Dans ce cas, la déduction au titre de l'amortissement est
+calculée sur le prix d'acquisition des locaux augmenté du montant des travaux de transformation. La période
+d'amortissement a pour point de départ le premier jour du mois de l'achèvement de ces travaux.
+Le bénéfice de la déduction est subordonné à une option qui doit être exercée lors du dépôt de la déclaration
+des revenus de l'année d'achèvement de l'immeuble ou de son acquisition si elle est postérieure. Cette option
+est irrévocable pour le logement considéré et comporte l'engagement du propriétaire de louer le logement nu
+pendant au moins neuf ans à usage d'habitation principale à une personne autre qu'un membre de son foyer
+fiscal. Cette location doit prendre effet dans les douze mois qui suivent la date d'achèvement de l'immeuble
+ou de son acquisition si elle est postérieure. Cet engagement prévoit, en outre, que le loyer et les ressources
+du locataire appréciées à la date de conclusion du bail ne doivent pas excéder des plafonds fixés par décret.
+La location du logement consentie dans les conditions fixées au deuxième alinéa du j à un organisme public
+ou privé pour le logement à usage d'habitation principale de son personnel, à l'exclusion du propriétaire
+du logement, de son conjoint, ou des membres de son foyer fiscal, ne fait pas obstacle au bénéfice de la
+déduction.
+A l'issue de la période couverte par l'engagement de location, tant que la condition de loyer prévue au
+troisième alinéa reste remplie, le propriétaire peut, par période de trois ans et pendant une durée maximale
+de six ans, bénéficier d'une déduction au titre de l'amortissement égale à 2,5 % du prix d'acquisition ou de
+revient du logement en cas de poursuite, de reconduction ou de renouvellement du bail ou, si la condition de
+ressources prévue au troisième alinéa est remplie, en cas de changement de titulaire du bail. En cas de non-
+respect des conditions de location ou de cession du logement, les déductions pratiquées pendant l'ensemble
+de la période triennale sont remises en cause dans les conditions de droit commun.
+La déduction au titre de l'amortissement n'est pas applicable aux revenus des immeubles dont le droit de
+propriété est démembré. Toutefois, lorsque le transfert de la propriété du bien ou le démembrement de ce
+droit résulte du décès de l'un des époux soumis à imposition commune, le conjoint survivant attributaire du
+bien ou titulaire de son usufruit peut demander la reprise à son profit, dans les mêmes conditions et selon les
+mêmes modalités, du dispositif prévu au présent g pour la période restant à courir à la date du décès.
+Lorsque l'option est exercée, les dispositions du b ne sont pas applicables, mais les droits suivants sont
+ouverts :
+1. Les dépenses de reconstruction et d'agrandissement ouvrent droit à une déduction, au titre de
+l'amortissement, égale à 8 % du montant des dépenses pour les cinq premières années et à 2,5 % de ce
+montant pour les quatre années suivantes. Le propriétaire doit s'engager à louer le logement dans les
+conditions prévues au troisième alinéa pendant une nouvelle durée de neuf ans. A l'issue de la période
+couverte par l'engagement de location, tant que la condition de loyer prévue au troisième alinéa reste
+remplie, le propriétaire peut, par période de trois ans et pendant une durée maximale de six ans, bénéficier
+d'une déduction au titre de l'amortissement égale à 2,5 % du montant des dépenses en cas de poursuite, de
+reconduction ou de renouvellement du bail ou, si la condition de ressources prévue au troisième alinéa est
+remplie, en cas de changement de titulaire du bail. En cas de non-respect des conditions de location ou de
+cession du logement, les déductions pratiquées pendant l'ensemble de la période triennale sont remises en
+cause dans les conditions de droit commun.
+2. Les dépenses d'amélioration ouvrent droit à une déduction, au titre de l'amortissement, égale à 10 % du
+montant de la dépense pendant dix ans.
+La période d'amortissement a pour point de départ le premier jour du mois d'achèvement des travaux.
+Les dispositions du présent g s'appliquent dans les mêmes conditions lorsque l'immeuble est la propriété
+d'une société non soumise à l'impôt sur les sociétés, à la condition que le porteur de parts s'engage à
+conserver la totalité de ses titres jusqu'à l'expiration de la durée de neuf ans mentionnée au troisième alinéa
+et au 1.. Si un logement dont la société est propriétaire est loué à l'un des associés ou à un membre du foyer
+fiscal d'un associé, ce dernier ne peut pas bénéficier de la déduction au titre de l'amortissement. En outre, la
+déduction au titre de l'amortissement n'est pas applicable aux revenus des titres dont le droit de propriété est
+démembré. Toutefois, lorsque le transfert de la propriété des titres ou le démembrement de ce droit résulte
+du décès de l'un des époux soumis à imposition commune, le conjoint survivant attributaire des titres ou
+titulaire de leur usufruit peut demander la reprise à son profit, dans les mêmes conditions et selon les mêmes
+modalités, du dispositif prévu au présent g pour la période restant à courir à la date du décès.
+Le revenu net foncier de l'année au cours de laquelle l'un des engagements définis au présent g n'est
+pas respecté est majoré du montant des amortissements déduits. Pour son imposition, la fraction du
+revenu net foncier correspondant à cette majoration est divisée par le nombre d'années civiles pendant
+lesquelles l'amortissement a été déduit ; le résultat est ajouté au revenu global net de l'année de la rupture
+de l'engagement et l'impôt correspondant est égal au produit de la cotisation supplémentaire ainsi obtenue
+par le nombre d'années utilisé pour déterminer le quotient. En cas d'invalidité correspondant au classement
+dans la deuxième ou la troisième des catégories prévues à l'article L. 341-4 du code de la sécurité sociale,
+de licenciement ou de décès du contribuable ou de l'un des époux soumis à imposition commune, cette
+majoration ne s'applique pas.
+Pour un même logement, les dispositions du présent g sont exclusives de l'application des dispositions des
+articles 199 undecies ou 199 undecies A.
+Le présent g est applicable lorsque l'achèvement des logements ou des travaux intervient au plus tard le 1er
+juillet 2025 ;
+h) Pour les logements situés en France, acquis neufs ou en l'état futur d'achèvement entre le 3 avril 2003 et
+le 31 décembre 2009, et à la demande du contribuable, une déduction au titre de l'amortissement égale à 6
+% du prix d'acquisition du logement pour les sept premières années et à 4 % de ce prix pour les deux années
+suivantes. La période d'amortissement a pour point de départ le premier jour du mois de l'achèvement de
+l'immeuble ou de son acquisition si elle est postérieure.
+La déduction au titre de l'amortissement est applicable, dans les mêmes conditions, aux logements que
+le contribuable fait construire et qui ont fait l'objet, entre le 3 avril 2003 et le 31 décembre 2009, de la
+déclaration d'ouverture de chantier prévue à l'article R. * 421-40 du code de l'urbanisme. Il en est de même
+des locaux affectés à un usage autre que l'habitation acquis à compter du 3 avril 2003 et que le contribuable
+transforme en logements, ainsi que des logements acquis à compter du 3 avril 2003 qui ne satisfont pas aux
+caractéristiques de décence prévues à l'article 6 de la loi n° 89-462 du 6 juillet 1989 tendant à améliorer
+les rapports locatifs et portant modification de la loi n° 86-1290 du 23 décembre 1986 et qui font l'objet de
+travaux de réhabilitation définis par décret permettant aux logements d'acquérir des performances techniques
+voisines de celles des logements neufs lorsque les travaux de transformation du local ou de réhabilitation du
+logement ont fait l'objet de la déclaration d'ouverture de chantier avant le 31 décembre 2009. Dans ces cas,
+la déduction au titre de l'amortissement est calculée sur le prix d'acquisition des locaux augmenté du montant
+des travaux de transformation ou de réhabilitation. La période d'amortissement a pour point de départ le
+premier jour du mois de l'achèvement de ces travaux.
+Le bénéfice de la déduction est subordonné à une option qui doit être exercée lors du dépôt de la déclaration
+des revenus de l'année d'achèvement de l'immeuble ou de son acquisition si elle est postérieure. Cette option
+est irrévocable pour le logement considéré et comporte l'engagement du propriétaire de louer le logement nu
+pendant au moins neuf ans à usage d'habitation principale à une personne autre qu'un membre de son foyer
+fiscal. Cette location doit prendre effet dans les douze mois qui suivent la date d'achèvement de l'immeuble
+ou de son acquisition si elle est postérieure. Cet engagement prévoit, en outre, que le loyer ne doit pas
+excéder un plafond fixé par décret. La location du logement consentie à un organisme public ou privé qui
+le donne en sous-location nue à usage d'habitation principale à une personne autre que le propriétaire du
+logement, son conjoint ou les membres de son foyer fiscal, ne fait pas obstacle au bénéfice de la déduction, à
+la condition que cet organisme ne fournisse aucune prestation hôtelière ou parahôtelière.
+La déduction au titre de l'amortissement n'est pas applicable aux revenus des immeubles dont le droit de
+propriété est démembré. Toutefois, lorsque le transfert de la propriété du bien ou le démembrement de ce
+droit résulte du décès de l'un des époux soumis à imposition commune, le conjoint survivant attributaire du
+bien ou titulaire de son usufruit peut demander la reprise à son profit, dans les mêmes conditions et selon les
+mêmes modalités, du dispositif prévu au présent h pour la période restant à courir à la date du décès.
+Lorsque l'option est exercée, les dispositions du b ne sont pas applicables, mais les droits suivants sont
+ouverts :
+1. Les dépenses de reconstruction et d'agrandissement ouvrent droit à une déduction, au titre de
+l'amortissement, égale à 6 % du montant des dépenses pour les sept premières années et à 4 % de ce montant
+pour les deux années suivantes. Le propriétaire doit s'engager à louer le logement dans les conditions prévues
+au troisième alinéa pendant une nouvelle durée de neuf ans.
+2. Les dépenses d'amélioration ouvrent droit à une déduction, au titre de l'amortissement, égale à 10 % du
+montant de la dépense pendant dix ans.
+La période d'amortissement a pour point de départ le premier jour du mois d'achèvement des travaux.
+Les dispositions du présent h s'appliquent dans les mêmes conditions lorsque l'immeuble est la propriété
+d'une société non soumise à l'impôt sur les sociétés autre qu'une société civile de placement immobilier, à la
+condition que le porteur de parts s'engage à conserver la totalité de ses titres jusqu'à l'expiration de la durée
+de neuf ans mentionnée au troisième alinéa et au 1.
+Si un logement dont la société est propriétaire est loué à l'un des associés ou à un membre du foyer fiscal
+d'un associé, ce dernier ne peut pas bénéficier de la déduction au titre de l'amortissement. En outre, la
+déduction au titre de l'amortissement n'est pas applicable aux revenus des titres dont le droit de propriété est
+démembré. Toutefois, lorsque le transfert de la propriété des titres ou le démembrement de ce droit résulte
+du décès de l'un des époux soumis à imposition commune, le conjoint survivant attributaire des titres ou
+titulaire de leur usufruit peut demander la reprise à son profit, dans les mêmes conditions et selon les mêmes
+modalités, du dispositif prévu au présent h pour la période restant à courir à la date du décès.
+Le revenu net foncier de l'année au cours de laquelle l'un des engagements définis au présent h n'est
+pas respecté est majoré du montant des amortissements déduits. Pour son imposition, la fraction du
+revenu net foncier correspondant à cette majoration est divisée par le nombre d'années civiles pendant
+lesquelles l'amortissement a été déduit ; le résultat est ajouté au revenu global net de l'année de la rupture
+de l'engagement et l'impôt correspondant est égal au produit de la cotisation supplémentaire ainsi obtenue
+par le nombre d'années utilisé pour déterminer le quotient. En cas d'invalidité correspondant au classement
+dans la deuxième ou la troisième des catégories prévues à l'article L. 341-4 du code de la sécurité sociale,
+de licenciement ou de décès du contribuable ou de l'un des époux soumis à imposition commune, cette
+majoration ne s'applique pas.
+Pour un même logement, les dispositions du présent h sont exclusives de l'application des dispositions des
+articles 199 undecies ou 199 undecies A. Elles ne s'appliquent pas aux monuments classés monuments
+historiques, inscrits au titre des monuments historiques ou ayant reçu le label délivré par la Fondation du
+patrimoine, mentionnés au premier alinéa du 3° du I de l'article 156.
+La déduction au titre de l'amortissement des logements acquis neufs, en l'état futur d'achèvement ou que
+le contribuable fait construire n'est applicable qu'aux logements dont les caractéristiques thermiques et
+la performance énergétique atteignent les résultats minimaux définis en application des articles L. 171-1
+et L. 172-1 du code de la construction et de l'habitation . Le respect de cette condition est justifié par le
+contribuable selon des modalités définies par décret.
+Le présent h s'applique aux logements situés dans des communes classées dans des zones géographiques se
+caractérisant par un déséquilibre entre l'offre et la demande de logements. Un arrêté des ministres chargés du
+budget et du logement, révisé au moins tous les trois ans, établit le classement des communes par zone.
+Le présent h est applicable lorsque l'achèvement des logements ou des travaux intervient au plus tard le 1er
+juillet 2025 ;
+i) Pour les logements, situés en France dans un bâtiment d'habitation collectif au sens du 6° de l'article
+L. 111-1 du code de la construction et de l'habitation, acquis neufs ou en état futur d'achèvement et
+donnés en location à titre de résidence principale, à la demande du contribuable, une déduction au titre de
+l'amortissement du prix d'acquisition du logement net de frais.
+La déduction au titre de l'amortissement est applicable, dans les mêmes conditions, aux logements que le
+contribuable fait construire.
+Cette déduction s'applique en contrepartie d'un engagement du propriétaire de les louer pendant une durée
+minimale de neuf ans, sous réserve de respecter les plafonds de loyer et de ressources, appréciées pour ces
+dernières à la date de conclusion du bail, fixés respectivement, pour les logements affectés à la location
+intermédiaire, en application du III de l'article 199 novovicies et, pour les logements affectés à la location
+sociale ou très sociale, en application du 3° du A du I de l'article 199 tricies selon la localisation du logement
+et son affectation. Cette location doit prendre effet dans les douze mois qui suivent la date d'achèvement de
+l'immeuble, ou de son acquisition si elle est postérieure.
+L'amortissement ne peut être pratiqué sur la valeur du foncier, lequel est estimé forfaitairement à 20 % du
+prix d'acquisition net de frais.
+Le taux de l'amortissement est fixé à 3,5 % pour les logements affectés à la location intermédiaire au sens du
+III de l'article 199 novovicies. Ce taux est majoré d'un point ou de deux points au titre d'un logement affecté
+respectivement à la location sociale ou à la location très sociale au sens du IV de l'article 199 tricies.
+La période d'amortissement a pour point de départ le premier jour du mois d'achèvement de l'immeuble, ou
+de son acquisition si elle est postérieure.
+Le cumul des amortissements pratiqués sur un bien ne peut excéder la valeur hors foncier du prix
+d'acquisition mentionné au quatrième alinéa du présent i.
+La somme des déductions au titre des amortissements prévus au présent i et au j ne peut excéder 8 000 € par
+an et par foyer fiscal. Ce montant est majoré de 2 000 € ou 4 000 € lorsque 50 % au moins des revenus bruts
+issus des logements bénéficiaires desdits amortissements sont affectés respectivement à la location sociale ou
+à la location très sociale mentionnées au IV de l'article 199 tricies.
+Le bénéfice de la déduction est subordonné à une option qui doit être exercée lors du dépôt de la déclaration
+des revenus de l'année d'achèvement du logement, ou de son acquisition si elle est postérieure. Cette option
+est irrévocable pour le logement considéré et comporte l'engagement du propriétaire de louer le logement nu
+à usage d'habitation principale, de manière effective et continue, à une personne autre qu'un membre de son
+foyer fiscal et qu'un parent ou allié jusqu'au deuxième degré inclus.
+Le présent i s'applique dans les mêmes conditions lorsque l'immeuble est la propriété d'une société non
+soumise à l'impôt sur les sociétés, à la condition que le porteur de parts s'engage à conserver la totalité
+de ses titres jusqu'à l'expiration de la période de location mentionnée au troisième alinéa du présent i. Si
+un logement dont la société est propriétaire est loué à l'un des associés ou à un membre du foyer fiscal,
+un parent ou un allié jusqu'au deuxième degré inclus d'un associé, ce dernier ne peut pas bénéficier de la
+déduction au titre de l'amortissement.
+La déduction au titre de l'amortissement n'est pas applicable aux revenus des logements ou des titres dont le
+droit de propriété est démembré. Toutefois, lorsque le transfert de la propriété ou le démembrement résulte
+du décès de l'un des époux soumis à une imposition commune, le conjoint survivant attributaire du logement
+ou des titres ou titulaire de leur usufruit peut demander la reprise à son profit, dans les mêmes conditions et
+selon les mêmes modalités, du dispositif prévu au présent i pour la période restant à courir à la date du décès.
+Le revenu net foncier de l'année au cours de laquelle l'un des engagements définis au présent i n'est
+pas respecté est majoré du montant des amortissements déduits. Pour son imposition, la fraction du
+revenu net foncier correspondant à cette majoration est divisée par le nombre d'années civiles pendant
+lesquelles l'amortissement a été déduit. Le résultat est ajouté au revenu global net de l'année de la rupture de
+l'engagement et l'impôt correspondant est égal au produit de la cotisation supplémentaire ainsi obtenue par
+le nombre d'années utilisé pour déterminer le quotient. En cas d'invalidité correspondant au classement dans
+la deuxième ou la troisième des catégories mentionnées à l'article L. 341-4 du code de la sécurité sociale,
+de licenciement ou de décès du contribuable ou de l'un des époux soumis à imposition commune, cette
+majoration ne s'applique pas.
+Le bénéfice du présent i est exclusif, pour un même logement, de celui de l'article 199 undecies C.
+Le présent i s'applique aux acquisitions de logements ou, s'agissant des logements que le contribuable fait
+construire, aux dépôts de demande de permis de construire réalisés entre le lendemain de la publication de la
+loi n° 2026-103 du 19 février 2026 de finances pour 2026 et le 31 décembre 2028 ;
+j) Pour les logements situés en France dans un bâtiment d'habitation collectif, au sens du 6° de l'article L.
+111-1 du code de la construction et de l'habitation, que le contribuable acquiert, qui font ou ont fait l'objet
+de travaux concourant à la production ou à la livraison d'un immeuble neuf, au sens du 2° du 2 du I de
+l'article 257 du présent code, ou pour lesquels les travaux d'amélioration représentent au moins 30 % du
+prix d'acquisition, qui satisfont les critères d'une réhabilitation lourde, au sens du deuxième alinéa du b
+du 7° du II de l'article 150 U, et qui sont donnés en location à titre de résidence principale, à la demande
+du contribuable, une déduction au titre de l'amortissement du prix d'acquisition du logement net de frais,
+majoré le cas échéant du montant des travaux. Pour les logements qui ont fait l'objet de travaux avant leur
+acquisition, la déduction s'applique à condition que le logement n'ait pas été utilisé ou occupé à quelque titre
+que ce soit depuis l'achèvement des travaux.
+Cette déduction s'applique en contrepartie d'un engagement du propriétaire de le louer pendant une
+durée minimale de neuf ans, sous réserve de respecter les plafonds de loyer et de ressources, appréciées
+pour ces dernières à la date de conclusion du bail, fixés respectivement, pour les logements affectés à la
+location intermédiaire, en application du III de l'article 199 novovicies et, pour les logements affectés à la
+location sociale ou à la location très sociale, en application du 3° du A du I de l'article 199 tricies selon la
+localisation du logement et son affectation. Cette location doit prendre effet dans les douze mois qui suivent
+l'achèvement des travaux, ou la date d'acquisition si elle est postérieure.
+L'amortissement ne peut être pratiqué sur la valeur du foncier, lequel est estimé forfaitairement à 20 % du
+prix d'acquisition net de frais, majoré le cas échéant du montant des travaux.
+Le taux de l'amortissement est fixé à 3 % pour les logements affectés à la location intermédiaire au sens du
+III de l'article 199 novovicies. Ce taux est majoré de 0,5 point ou d'un point au titre d'un logement affecté
+respectivement à la location sociale ou à la location très sociale au sens du IV de l'article 199 tricies.
+La période d'amortissement a pour point de départ le premier jour du mois d'achèvement des travaux, ou de
+la date d'acquisition si elle est postérieure.
+Le cumul des amortissements pratiqués sur un bien ne peut excéder la valeur hors foncier du prix
+d'acquisition, majoré le cas échéant du montant des travaux mentionné au troisième alinéa du présent j.
+La somme des déductions au titre des amortissements prévus au i et au présent j ne peut excéder 8 000 € par
+an et par foyer fiscal. Ce montant est majoré de 2 000 € ou de 4 000 € lorsque 50 % au moins des revenus
+bruts issus des logements bénéficiaires desdits amortissements sont affectés respectivement à la location
+sociale ou à la location très sociale mentionnées au IV de l'article 199 tricies.
+Le bénéfice de la déduction est subordonné à une option qui doit être exercée lors du dépôt de la déclaration
+des revenus de l'année d'achèvement des travaux, ou de l'acquisition du logement si elle est postérieure.
+Cette option est irrévocable pour le logement considéré et comporte l'engagement du propriétaire de louer
+le logement nu à usage d'habitation principale, de manière effective et continue, à une personne autre qu'un
+membre de son foyer fiscal et qu'un parent ou allié jusqu'au deuxième degré inclus.
+Le présent j s'applique dans les mêmes conditions lorsque l'immeuble est la propriété d'une société non
+soumise à l'impôt sur les sociétés, à la condition que le porteur de parts s'engage à conserver la totalité
+de ses titres jusqu'à l'expiration de la période de location mentionnée au deuxième alinéa du présent j. Si
+un logement dont la société est propriétaire est loué à l'un des associés ou à un membre du foyer fiscal,
+un parent ou un allié jusqu'au deuxième degré inclus d'un associé, ce dernier ne peut pas bénéficier de la
+déduction au titre de l'amortissement.
+La déduction au titre de l'amortissement n'est pas applicable aux revenus des logements ou des titres dont le
+droit de propriété est démembré. Toutefois, lorsque le transfert de la propriété ou le démembrement résulte
+du décès de l'un des époux soumis à une imposition commune, le conjoint survivant attributaire du logement
+ou des titres ou titulaire de leur usufruit peut demander la reprise à son profit, dans les mêmes conditions et
+selon les mêmes modalités, du dispositif prévu au présent j pour la période restant à courir à la date du décès.
+Le revenu net foncier de l'année au cours de laquelle l'un des engagements définis au présent j n'est
+pas respecté est majoré du montant des amortissements déduits. Pour son imposition, la fraction du
+revenu net foncier correspondant à cette majoration est divisée par le nombre d'années civiles pendant
+lesquelles l'amortissement a été déduit. Le résultat est ajouté au revenu global net de l'année de la rupture
+de l'engagement et l'impôt correspondant est égal au produit de la cotisation supplémentaire ainsi obtenue
+par le nombre d'années utilisé pour déterminer le quotient. En cas d'invalidité correspondant au classement
+dans la deuxième ou la troisième des catégories prévues à l'article L. 341-4 du code de la sécurité sociale,
+de licenciement ou de décès du contribuable ou de l'un des époux soumis à imposition commune, cette
+majoration ne s'applique pas.
+Le bénéfice du présent j est exclusif, pour un même logement, de celui des articles 199 undecies A, 199
+undecies C, 199 tervicies et 199 novovicies. Le présent j n'est pas non plus applicable aux immeubles classés
+ou inscrits au titre des monuments historiques ou ayant reçu le label délivré par la Fondation du patrimoine,
+mentionnés au premier alinéa du 3° du I de l'article 156. Les a et b du présent 1° ne sont pas applicables au
+montant des travaux déductibles au titre de l'amortissement prévu au présent j.
+Le présent j s'applique aux logements que le contribuable acquiert entre le lendemain de la publication de la
+loi n° 2026-103 du 19 février 2026 de finances pour 2026 et le 31 décembre 2028 ;
+k) Une déduction fixée à 26 % des revenus bruts, pour les logements situés en zone de revitalisation rurale,
+lorsque l'option prévue au h est exercée, ou, pour les logements au titre desquels la réduction d'impôt prévue
+à l'article 199 septvicies a été acquise, lorsque les engagements prévus à cet article sont respectés et pendant
+la durée de ceux-ci.
+l) Une déduction fixée à 30 % des revenus bruts lorsque le contribuable a exercé l'option prévue au h pendant
+la durée de l'engagement de location du logement ou provenant des logements au titre desquels la réduction
+d'impôt prévue à l'article 199 septvicies a été acquise lorsque le contribuable respecte les engagements
+prévus aux I ou V de cet article et pendant la durée de ceux-ci.
+Pour l'application du premier alinéa, les personnes concernées, les investissements éligibles et les
+conditions d'application de cette déduction sont identiques à ceux prévus au h ou à l'article 199 septvicies.
+L'engagement de location doit toutefois prévoir que le locataire est une personne autre qu'un ascendant ou
+descendant du contribuable et que le loyer et les ressources du locataire appréciées à la date de conclusion du
+bail ne doivent pas excéder des plafonds fixés par décret à des niveaux inférieurs, pour les loyers, aux quatre
+cinquièmes de ceux mentionnés au troisième alinéa du h ou au III de l'article 199 septvicies. L'engagement
+de location peut être suspendu, à l'issue d'une période de location d'au moins trois ans, pour mettre le
+logement à la disposition d'un ascendant ou descendant du contribuable. Ce dernier ne bénéficie pas, pendant
+la période de mise à disposition du logement, de la déduction au titre de l'amortissement. Cette période de
+mise à disposition du logement, qui ne peut excéder neuf ans, n'est pas prise en compte pour la durée de
+location minimale de neuf ans.
+Lorsque l'immeuble est la propriété d'une société non soumise à l'impôt sur les sociétés, le locataire doit être
+une personne autre qu'un des associés ou un membre du foyer fiscal, un ascendant ou un descendant d'un
+associé.
+A l'issue de la période couverte par l'engagement de location des logements pour lesquels le contribuable
+a exercé l'option prévue au h, tant que les conditions de loyer et de ressources du locataire prévues au
+deuxième alinéa restent remplies, le propriétaire peut, par périodes de trois ans et pendant une durée
+maximale de six ans, bénéficier d'un complément de la déduction au titre de l'amortissement prévue au h égal
+à 2,5 % du prix d'acquisition ou de revient du logement en cas de poursuite, de renouvellement du bail ou de
+changement de titulaire du bail. En cas de non-respect des conditions de location ou de cession du logement,
+les compléments de déductions pratiqués pendant l'ensemble de la période triennale sont remis en cause dans
+les conditions de droit commun.
+Les trois premiers alinéas sont applicables, dans les mêmes conditions et limites, aux sociétés civiles
+de placement immobilier régies par les articles L. 214-114 et suivants du code monétaire et financier au
+prorata des revenus bruts correspondant aux droits des associés qui ont opté pour la déduction au titre de
+l'amortissement prévue à l'article 31 bis du présent code.
+Pour un même logement, les dispositions du présent l sont exclusives de l'application de celles prévues aux j
+et k.
+m) Pour les baux conclus à compter du 1er octobre 2006, une déduction fixée à 30 % des revenus bruts des
+logements donnés en location si ces logements font l'objet d'une convention mentionnée à l'article L. 321-4
+du code de la construction et de l'habitation et conclue au plus tard le 31 décembre 2016. Cette déduction est
+consentie à compter de la date de prise d'effet de la convention et pendant toute sa durée d'application.
+Cette déduction est portée à 60 % des revenus bruts des logements lorsque ces logements font l'objet d'une
+convention mentionnée à l'article L. 321-8 du code de la construction et de l'habitation et conclue au plus
+tard le 31 décembre 2016. Cette déduction est consentie à compter de la date de prise d'effet de la convention
+et pendant toute sa durée d'application.
+Un décret précise les modalités de prise d'effet de ces conventions.
+Lorsque, à l'échéance de l'une des conventions mentionnées à l'article L. 321-4 ou L. 321-8 du code de la
+construction et de l'habitation et conclues au plus tard le 31 décembre 2016, y compris après une période
+triennale de prorogation, le contrat de location du logement concerné est en cours de validité conformément
+à l'article 10 de la loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant
+modification de la loi n° 86-1290 du 23 décembre 1986, le bénéfice de l'une des déductions des revenus
+bruts prévue au présent m est maintenu jusqu'à la date fixée pour le renouvellement ou la reconduction de ce
+contrat de location, tant que le même locataire reste en place et que toutes les conditions, notamment celles
+de loyer, sont remplies.
+Le contribuable ou la société propriétaire doit louer le logement nu pendant toute la durée de la convention
+à des personnes qui en font leur habitation principale. Pour l'application du premier alinéa, le loyer et les
+ressources du locataire appréciées à la date de conclusion du bail ne doivent pas excéder des plafonds fixés à
+des niveaux inférieurs à ceux prévus au premier alinéa du j. La location ne peut être conclue avec un membre
+du foyer fiscal, un ascendant ou un descendant du contribuable, une personne occupant déjà le logement,
+sauf à l'occasion du renouvellement du bail, ou si le logement est la propriété d'une société non soumise à
+l'impôt sur les sociétés, l'un de ses associés ou un membre du foyer fiscal, un ascendant ou un descendant
+d'un associé. Les associés d'une société non soumise à l'impôt sur les sociétés doivent conserver leurs parts
+pendant toute la durée de la convention.
+Lorsqu'elle fait l'objet d'une convention mentionnée aux articles L. 321-4 ou L. 321-8 du code de la
+construction et de l'habitation et conclue au plus tard le 31 décembre 2016, la location du logement consentie
+dans les mêmes conditions à un organisme public ou privé pour le logement ou l'hébergement de personnes
+physiques à usage d'habitation principale, à l'exclusion du propriétaire du logement, des membres de son
+foyer fiscal ou de ses descendants ou ascendants, ne fait pas obstacle au bénéfice de la déduction, à la
+condition que cet organisme ne fournisse aucune prestation hôtelière ou parahôtelière. Un décret précise les
+modalités d'appréciation des loyers et des ressources de l'occupant, ainsi que les conditions de cette location.
+Pour les baux conclus à compter de l'entrée en vigueur de la loi n° 2009-323 du 25 mars 2009 de
+mobilisation pour le logement et la lutte contre l'exclusion, cette déduction est portée à 70 % des revenus
+bruts des logements donnés en location dans le cadre d'une convention mentionnée aux articles L. 321-4 ou
+L. 321-8 du code de la construction et de l'habitation et conclue au plus tard le 31 décembre 2016, lorsque
+le logement est loué à un organisme public ou privé, soit en vue de sa sous-location, meublée ou non, à des
+personnes mentionnées au II de l'article L. 301-1 du même code ou aux personnes physiques dont la situation
+nécessite une solution locative de transition, soit en vue de l'hébergement de ces mêmes personnes. Cette
+déduction s'applique pendant la durée de location à l'organisme. Elle s'applique pour les logements situés
+dans les communes classées dans les zones géographiques se caractérisant par un déséquilibre entre l'offre et
+la demande de logements définies par arrêté.
+Ces dispositions sont exclusives de celles prévues aux f à l, à l'article 199 decies I et à l'article 199 undecies
+A. Elles cessent de s'appliquer aux prorogations des conventions mentionnées aux articles L. 321-4 ou L.
+321-8 du code de la construction et de l'habitation lorsque la prorogation intervient après le 1er janvier 2024 ;
+n) Périmé
+o) 1. Une déduction fixée :
+A. – Pour les logements situés dans les communes classées par arrêté des ministres chargés du budget et
+du logement dans les zones géographiques se caractérisant par un déséquilibre important entre l'offre et la
+demande de logements entraînant des difficultés d'accès au logement sur le parc locatif existant :
+-à 30 % des revenus bruts des logements donnés en location dans le cadre d'une convention mentionnée à
+l'article L. 321-4 du code de la construction et de l'habitation conclue à compter du 1er janvier 2017 et dont
+la date d'enregistrement par l'Agence nationale de l'habitat de la demande de conventionnement intervient
+jusqu'au 28 février 2022 ;
+-à 70 % des revenus bruts des logements donnés en location dans le cadre d'une convention mentionnée à
+l'article L. 321-8 du même code conclue à compter du 1er janvier 2017 et dont la date d'enregistrement par
+l'Agence nationale de l'habitat de la demande de conventionnement intervient jusqu'au 28 février 2022.
+B. – Dans les zones géographiques se caractérisant par un déséquilibre entre l'offre et la demande de
+logements, autres que celles mentionnées au A du présent 1 :
+-à 15 % des revenus bruts des logements donnés en location dans le cadre d'une convention mentionnée à
+l'article L. 321-4 du code de la construction et de l'habitation conclue à compter du 1er janvier 2017 et dont
+la date d'enregistrement par l'Agence nationale de l'habitat de la demande de conventionnement intervient
+jusqu'au 28 février 2022 ;
+-à 50 % des revenus bruts des logements donnés en location dans le cadre d'une convention mentionnée à
+l'article L. 321-8 du même code conclue à compter du 1er janvier 2017 et dont la date d'enregistrement par
+l'Agence nationale de l'habitat de la demande de conventionnement intervient jusqu'au 28 février 2022.
+C. – Dans les zones géographiques autres que celles mentionnées aux A et B du présent 1, à 50 % des
+revenus bruts des logements donnés en location dans le cadre d'une convention mentionnée à l'article L.
+321-8 du code de la construction et de l'habitation, conclue à compter du 1er janvier 2018 et dont la date
+d'enregistrement par l'Agence nationale de l'habitat de la demande de conventionnement intervient jusqu'au
+28 février 2022, lorsque cette convention prévoit la réalisation de travaux mentionnés au a de l'article L.
+321-4 du même code.
+D. – Les taux mentionnés aux A, B et C du présent 1 sont portés, y compris lorsque la convention prévue
+au C ne prévoit pas la réalisation de travaux, à 85 % des revenus bruts lorsque les logements mentionnés
+au présent 1 sont donnés en mandat de gestion ou en location à un organisme public ou privé, agréé en
+application de l'article L. 365-4 du code de la construction et de l'habitation, soit en vue de leur location
+ou sous-location, meublée ou non, à des personnes mentionnées au II de l'article L. 301-1 du même code
+ou aux personnes physiques dont la situation nécessite une solution locative de transition, soit en vue de
+l'hébergement de ces mêmes personnes.
+2. La déduction mentionnée au 1 du présent o s'applique à compter de la date de prise d'effet de la
+convention et pendant toute sa durée.
+3. La déduction prévue au 1 du présent o s'applique aux logements pour lesquels le contribuable justifie du
+respect d'un niveau de performance énergétique globale fixé par arrêté conjoint des ministres chargés du
+logement, de l'énergie et du budget.
+4. Le bénéfice de la déduction prévue au 1 du présent o est subordonné à l'engagement du contribuable ou de
+la société propriétaire de louer le logement nu pendant toute la durée d'application de la convention à usage
+d'habitation principale.
+Cet engagement prévoit que :
+A. – Le loyer et les ressources du locataire appréciées à la date de conclusion du bail ne doivent pas excéder
+des plafonds fixés par décret en fonction de la localisation du logement ;
+B. – La location ne peut être conclue avec un membre du foyer fiscal, un ascendant ou un descendant du
+contribuable, une personne occupant déjà le logement, sauf à l'occasion du renouvellement du bail, ou, si
+le logement est la propriété d'une société non soumise à l'impôt sur les sociétés, l'un de ses associés ou un
+membre du foyer fiscal, un ascendant ou un descendant d'un associé. Les associés d'une société non soumise
+à l'impôt sur les sociétés doivent conserver leurs parts pendant toute la durée de la convention.
+5. Pour le bénéfice des déductions prévues au présent o, lorsqu'elle fait l'objet de l'une des conventions
+mentionnées au 1 du présent o, la location du logement consentie dans les mêmes conditions à un organisme
+public ou privé pour le logement ou l'hébergement de personnes physiques à usage d'habitation principale,
+à l'exclusion du propriétaire du logement, des membres de son foyer fiscal ou de ses descendants ou
+ascendants, ne fait pas obstacle au bénéfice de la déduction, à la condition que cet organisme ne fournisse
+aucune prestation hôtelière ou para-hôtelière. Un décret précise les modalités d'appréciation des loyers et des
+ressources de l'occupant, ainsi que les conditions de cette location.
+6. Lorsque, à l'échéance de l'une des conventions mentionnées au 1 du présent o, y compris après une
+période triennale de prorogation, le contrat de location du logement concerné est en cours de validité
+conformément à l'article 10 de la loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs
+et portant modification de la loi n° 86-1290 du 23 décembre 1986, le bénéfice de l'une des déductions
+des revenus bruts prévues au présent o est maintenu jusqu'à la date fixée pour le renouvellement ou la
+reconduction de ce contrat de location tant que le même locataire reste en place et que toutes les conditions,
+notamment celle relative au montant du loyer, sont remplies.
+7. En cas de non-respect de l'un des engagements mentionnés au présent o ou de cession du logement ou des
+parts sociales, la déduction fait l'objet d'une reprise au titre de l'année de la rupture de l'engagement ou de
+la cession. Toutefois, aucune reprise n'est effectuée si la rupture de l'engagement ou la cession survient à la
+suite de l'invalidité correspondant au classement dans la deuxième ou la troisième des catégories prévues à
+l'article L. 341-4 du code de la sécurité sociale, du licenciement ou du décès du contribuable ou de l'un des
+membres du couple soumis à imposition commune.
+8. Les dispositions du présent o sont exclusives de celles prévues aux f à m du présent 1° et aux articles 31
+bis, 199 decies I, 199 undecies A, 199 septvicies et 199 novovicies du présent code. Elles ne sont pas non
+plus applicables aux immeubles classés ou inscrits au titre des monuments historiques ou ayant reçu le label
+délivré par la " Fondation du patrimoine ", mentionnés au premier alinéa du 3° du I de l'article 156.
+9. Le présent o cesse de s'appliquer aux prorogations des conventions mentionnées aux articles L. 321-4 ou
+L. 321-8 du code de la construction et de l'habitation lorsque la prorogation intervient après le 1er janvier
+2024.
+2° Pour les propriétés rurales :
+a) Les dépenses énumérées aux a à e du 1° ;
+b) (abrogé)
+c) Les dépenses d'amélioration non rentables afférentes aux propriétés bâties autres que les locaux
+d'habitation, effectivement supportées par le propriétaire. Sont considérées comme des dépenses
+d'amélioration non rentables les dépenses qui ne sont pas susceptibles d'entraîner une augmentation du
+fermage ;
+c bis) Dans les conditions fixées par décret, les dépenses d'amélioration et de construction, qui s'incorporent
+aux bâtiments d'exploitation rurale, destinées à satisfaire aux obligations prévues au titre Ier du livre V du
+code de l'environnement, relatif aux installations classées pour la protection de l'environnement ;
+c ter) Les dépenses engagées pour la construction d'un nouveau bâtiment d'exploitation rurale, destiné à
+remplacer un bâtiment de même nature, vétuste ou inadapté aux techniques modernes de l'agriculture, à
+condition que la construction nouvelle n'entraîne pas une augmentation du fermage ;
+c quater) Les dépenses d'amélioration afférentes aux propriétés non bâties et effectivement supportées par le
+propriétaire ;
+c quinquies) Les travaux de restauration et de gros entretien effectués sur des espaces naturels mentionnés
+aux articles L. 331-2, L. 332-2 à L. 332-2-2, L. 341-2 et L. 414-1 du code de l'environnement et dans
+leurs textes d'application, ainsi que des espaces mentionnés aux articles L. 121-23 et L. 121-50 du code de
+l'urbanisme, en vue de leur maintien en bon état écologique et paysager qui ont reçu l'accord préalable de
+l'autorité administrative compétente.
+d) (Abrogé)
+e) (Abrogé)
+II. – (Transféré sous l'article 156 II 1° ter).
 ```
 
 ---
@@ -177,7 +663,7 @@ pour que l'imputation puisse être intégralement opérée, l'excédent du défi
 revenu global des années suivantes jusqu'à la sixième année inclusivement.
 Toutefois, n'est pas autorisée l'imputation :
 1° des déficits provenant d'exploitations agricoles lorsque le total des revenus nets d'autres sources excède
-127 677 € ; ces déficits peuvent cependant être admis en déduction des bénéfices de même nature des années
+128 826 € ; ces déficits peuvent cependant être admis en déduction des bénéfices de même nature des années
 suivantes jusqu'à la sixième inclusivement.
 Le montant mentionné au premier alinéa est révisé chaque année selon les mêmes modalités que la limite
 supérieure de la première tranche du barème de l'impôt sur le revenu.
@@ -190,14 +676,6 @@ déficits non déductibles pour ces motifs peuvent cependant être imputés sur 
 de même nature exercées dans les mêmes conditions, durant la même année ou les six années suivantes.
 Ces modalités d'imputation ne sont pas applicables aux déficits provenant de l'activité de location directe ou
 indirecte de locaux d'habitation meublés ou destinés à être loués meublés.
- 
- 
- 
- 
- 
- 
- 
-
 Toutefois, lorsque l'un des membres du foyer fiscal fait l'objet d'une procédure de liquidation judiciaire
 prévue par le titre IV du livre VI du code de commerce à raison de l'activité génératrice des déficits
 mentionnés au premier alinéa, les dispositions du premier alinéa du I sont applicables au montant de ces
@@ -215,7 +693,138 @@ Les dispositions du premier alinéa s'appliquent également à la fraction du d�
 reprises avant le 1er janvier 1996 provenant des investissements réalisés à compter de cette date. Cette
 fraction est déterminée selon le rapport existant entre la somme des valeurs nettes comptables de ces
 investissements et la somme des valeurs nettes comptables de l'ensemble des éléments de l'actif immobilisé,
-y compris ces investissements. Les biens loués ou affectés à l'activité par l'effet de toute autre conventi
+y compris ces investissements. Les biens loués ou affectés à l'activité par l'effet de toute autre convention
+sont assimilés à des investissements pour l'application de ces dispositions.
+Les dispositions du premier alinéa ne sont pas applicables au déficit ou à la fraction de déficit provenant de
+l'exploitation :
+a. d'immeubles ayant fait l'objet avant le 1er janvier 1996 d'une déclaration d'ouverture de chantier prévue à
+l'article R.* 421-40 du code de l'urbanisme et acquis par le contribuable, directement ou indirectement, dans
+les cinq ans de cette déclaration, lorsque les biens ou droits ainsi acquis n'ont pas été détenus directement ou
+indirectement par une personne physique ;
+b. de biens meubles corporels acquis à l'état neuf, non encore livrés au 1er janvier 1996 et ayant donné lieu
+avant cette date à une commande accompagnée du versement d'acomptes au moins égaux à 50 % de leur
+prix ;
+1° ter Des déficits du foyer fiscal provenant de l'activité de location directe ou indirecte de locaux
+d'habitation meublés ou destinés à être loués meublés lorsque l'activité n'est pas exercée à titre professionnel
+au sens du IV de l'article 155. Ces déficits s'imputent exclusivement sur les revenus provenant d'une telle
+activité au cours de celles des dix années suivantes pendant lesquelles l'activité n'est pas exercée à titre
+professionnel au sens des mêmes dispositions.
+Toutefois, lorsque l'activité est exercée, dès le commencement de la location, à titre professionnel au sens
+des mêmes dispositions, la part des déficits qui n'a pu être imputée en application du premier alinéa et qui
+provient des charges engagées en vue de la location directe ou indirecte d'un local d'habitation avant le
+commencement de cette location, tel que déterminé conformément au dernier alinéa du 2 du IV de l'article
+155, peut être imputée par tiers sur le revenu global des trois premières années de location du local, tant que
+l'activité reste exercée à titre professionnel.
+2° Des déficits provenant d'activités non commerciales au sens de l'article 92, autres que ceux qui
+proviennent de l'exercice d'une profession libérale ou des charges et offices dont les titulaires n'ont pas
+la qualité de commerçants ; ces déficits peuvent cependant être imputés sur les bénéfices tirés d'activités
+semblables durant la même année ou les six années suivantes ;
+3° Des déficits fonciers, lesquels s'imputent exclusivement sur les revenus fonciers des dix années suivantes ;
+cette disposition n'est pas applicable aux propriétaires de monuments classés ou inscrits au titre des
+monuments historiques ou ayant reçu le label délivré par la " Fondation du patrimoine " en application de
+l'article L. 143-2 du code du patrimoine si ce label a été accordé sur avis favorable du service départemental
+de l'architecture et du patrimoine.
+L'imputation exclusive sur les revenus fonciers n'est pas non plus applicable aux déficits fonciers résultant
+de dépenses autres que les intérêts d'emprunt. L'imputation est limitée à 10 700 €. La fraction du déficit
+supérieure à 10 700 € et la fraction du déficit non imputable résultant des intérêts d'emprunt sont déduites
+dans les conditions prévues au premier alinéa.
+La limite mentionnée au deuxième alinéa est portée à 15 300 € pour les contribuables qui constatent un
+déficit foncier sur un logement pour lequel est pratiquée l'une des déductions prévues aux f ou o du 1° du I
+de l'article 31.
+La limite mentionnée au deuxième alinéa du présent 3° est rehaussée, sans pouvoir excéder 21 400 € par an,
+à concurrence du montant des dépenses déductibles de travaux de rénovation énergétique permettant à un
+bien de passer d'une classe énergétique E, F ou G, au sens de l'article L. 173-1-1 du code de la construction
+et de l'habitation, à une classe de performance énergétique A, B, C ou D, au sens du même article L. 173-1-1,
+au plus tard le 31 décembre 2027, dans des conditions définies par décret. Si le contribuable ne justifie
+pas du nouveau classement de performance énergétique du bien au plus tard le 31 décembre 2027, le
+revenu foncier et le revenu global des années de déduction des dépenses de travaux sont, nonobstant toute
+disposition contraire et sans préjudice de l'avant-dernier alinéa du présent 3°, reconstitués selon les modalités
+prévues aux trois premiers alinéas du présent 3°.
+Lorsque le propriétaire cesse de louer un immeuble ou lorsque le propriétaire de titres d'une société non
+soumise à l'impôt sur les sociétés les vend, le revenu foncier et le revenu global des trois années qui
+précèdent celle au cours de laquelle intervient cet événement sont, nonobstant toute disposition contraire,
+reconstitués selon les modalités prévues au premier alinéa du présent 3°. Cette disposition ne s'applique pas
+en cas d'invalidité correspondant au classement dans la deuxième ou la troisième des catégories prévues à
+l'article L. 341-4 du code de la sécurité sociale, de licenciement ou de décès du contribuable ou de l'un des
+époux soumis à une imposition commune.
+Un contribuable ne peut pour un même logement ou une même souscription de titres pratiquer les réductions
+d'impôt mentionnées aux articles 199 undecies ou 199 undecies A et imputer un déficit foncier sur le revenu
+global.
+4° (Abrogé à compter de l'imposition des revenus de 1996) ;
+5° (Abrogé)
+6° (Abrogé)
+7° (Abrogé)
+8° Des déficits constatés dans la catégorie des revenus des capitaux mobiliers ; ces déficits peuvent
+cependant être imputés sur les revenus de même nature des six années suivantes ;
+I bis. – (Abrogé)
+II. – Des charges ci-après lorsqu'elles n'entrent pas en compte pour l'évaluation des revenus des différentes
+catégories :
+1° Intérêts des emprunts contractés antérieurement au 1er novembre 1959 pour faire un apport en capital à
+une entreprise industrielle ou commerciale ou à une exploitation agricole ; intérêts des emprunts qui sont ou
+qui seront contractés, au titre des dispositions relatives aux prêts de réinstallation ou de reconversion, par les
+Français rapatriés ou rentrant de l'étranger ou des Etats ayant accédé à l'indépendance ;
+1° bis (sans objet).
+1° ter. Dans les conditions fixées par décret, les charges foncières afférentes aux immeubles classés
+monuments historiques ou inscrits au titre des monuments historiques, ainsi qu'aux immeubles faisant partie
+du patrimoine national ou en raison du label délivré par la " Fondation du patrimoine " en application de
+l'article L. 143-2 du code du patrimoine si ce label a été accordé sur avis favorable du service départemental
+de l'architecture et du patrimoine ;
+1° quater (sans objet).
+2° Arrérages de rentes payés par lui à titre obligatoire et gratuit constituées avant le 2 novembre 1959 ;
+pensions alimentaires répondant aux conditions fixées par les articles 205 à 211,367 et 767 du code civil à
+l'exception de celles versées aux ascendants quand il est fait application des dispositions prévues aux 1 et 2
+de l'article 199 sexdecies ; versements de sommes d'argent mentionnés à l'article 275 du code civil lorsqu'ils
+sont effectués sur une période supérieure à douze mois à compter de la date à laquelle la convention de
+divorce par consentement mutuel mentionnée à l'article 229-1 du même code a acquis force exécutoire ou
+le jugement de divorce, que celui-ci résulte ou non d'une demande conjointe, est passé en force de chose
+jugée et les rentes versées en application des articles 276,278 ou 279-1 du même code en cas de séparation
+de corps ou de divorce, ou en cas d'instance en séparation de corps ou en divorce et lorsque le conjoint fait
+l'objet d'une imposition séparée, les pensions alimentaires versées en vertu d'une convention de divorce
+mentionnée à l'article 229-1 du même code ou d'une décision de justice et en cas de révision amiable de ces
+pensions, le montant effectivement versé dans les conditions fixées par les articles 208 et 371-2 du code
+civil ; contribution aux charges du mariage définie à l'article 214 du code civil, à condition que les époux
+fassent l'objet d'une imposition séparée ; dans la limite de 2 700 € et, dans les conditions fixées par un décret
+en Conseil d'Etat, les versements destinés à constituer le capital de la rente prévue à l'article 373-2-3 du code
+civil.
+Le contribuable ne peut opérer aucune déduction pour ses descendants mineurs lorsqu'ils sont pris en compte
+pour la détermination de son quotient familial.
+La déduction est limitée, par enfant majeur, au montant fixé pour l'abattement prévu par l'article 196 B.
+Lorsque l'enfant est marié, cette limite est doublée au profit du parent qui justifie qu'il participe seul à
+l'entretien du ménage.
+Un contribuable ne peut, au titre d'une même année et pour un même enfant, bénéficier à la fois de
+la déduction d'une pension alimentaire et du rattachement. L'année où l'enfant atteint sa majorité, le
+contribuable ne peut à la fois déduire une pension pour cet enfant et le considérer à charge pour le calcul de
+l'impôt ;
+2° bis (Abrogé) ;
+2° ter. Avantages en nature consentis en l'absence d'obligation alimentaire résultant des articles 205 à 211
+du code civil à des personnes agées de plus de 75 ans vivant sous le toit du contribuable et dont le revenu
+imposable n'excède pas le plafond de ressources mentionné à l'article L. 815-9 du code de la sécurité sociale
+pour l'octroi de l'allocation de solidarité aux personnes âgées mentionnée à l'article L. 815-1 du même code
+et de l'allocation supplémentaire d'invalidité mentionnée à l'article L. 815-24 du même code. La déduction
+opérée par le contribuable ne peut excéder, par bénéficiaire, la somme de 4 075 €.
+Le montant de la déduction mentionnée au premier alinéa est relevé chaque année dans la même proportion
+que la limite supérieure de la première tranche du barème de l'impôt sur le revenu ;
+2° quater (Abrogé) ;
+3° (Abrogé) ;
+4° Versements effectués à titre de cotisations de sécurité sociale, à l'exception de ceux effectués pour les
+gens de maison ;
+5° Versements effectués en vue de la retraite mutualiste du combattant visée à l'article L. 222-2 du code de la
+mutualité ;
+6° (Abrogé) ;
+7° a et b (sans objet).
+c. (Abrogé) ;
+d. (sans objet).
+8° (Abrogé) ;
+9°....
+9° bis et 9° ter (Abrogés) ;
+10° Les cotisations mentionnées aux articles L. 621-1 et L. 622-2 du code de la sécurité sociale ;
+11° Les primes ou cotisations des contrats d'assurances conclus en application des articles L. 752-1 à L.
+752-21 du code rural et de la pêche maritime relatifs à l'assurance obligatoire contre les accidents de la vie
+privée, les accidents du travail et les maladies professionnelles des non salariés des professions agricoles ;
+12° (sans objet).
+13° Les cotisations versées par les chefs d'exploitation ou d'entreprise agricole au titre des contrats
+d'assurance de groupe mentionnés au 2° de l'article L. 144-1 du code des assurances, dans les limites prévues
+par l'article 154 bis-0 A.
 ```
 
 ---
@@ -284,7 +893,7 @@ correspondent à un travail effectif et ne sont pas excessives eu égard à l'im
 disposition s'applique à toutes les rémunérations directes ou indirectes, y compris les indemnités, allocations,
 avantages en nature et remboursements de frais.
 Une entreprise mettant à disposition de manière temporaire un salarié dans les conditions prévues à l'article
-L. 8241-3 du code du travail peut déduire les salaires, charges sociales afférentes et frais professionnels
+L. 8241-3 du code du travailpeut déduire les salaires, charges sociales afférentes et frais professionnels
 remboursés au salarié mis à disposition, même lorsqu'elle ne refacture que partiellement ces coûts à
 l'entreprise bénéficiaire de la mise à disposition. Le bénéfice de la déduction, pour la part excédant la
 refacturation, est subordonné au respect du règlement (UE) 2023/2831 de la Commission du 13 décembre
@@ -292,7 +901,7 @@ refacturation, est subordonné au respect du règlement (UE) 2023/2831 de la Com
 aides de minimis.
 1° bis Pour les exercices clos à compter du 31 décembre 1987 et sous réserve des dispositions du 9,
 l'indemnité de congé payé calculée dans les conditions prévues aux articles L. 3141-24 à L. 3141-27 du code
-du travail , y compris les charges sociales et fiscales afférentes à cette indemnité.
+du travail, y compris les charges sociales et fiscales afférentes à cette indemnité.
 Par exception aux dispositions du premier alinéa et sur option irrévocable de l'entreprise, cette indemnité
 ainsi que les charges sociales et fiscales y afférentes revêtent du point de vue fiscal le caractère d'un salaire
 de substitution qui constitue une charge normale de l'exercice au cours duquel le salarié prend le congé
@@ -300,28 +909,13 @@ correspondant. Cette option ne peut pas être exercée par les entreprises cré�
 Elle est exercée avant l'expiration du délai de dépôt de la déclaration des résultats du premier exercice clos à
 compter du 31 décembre 1987.
 Pour les exercices clos avant le 31 décembre 1987, l'indemnité de congé payé calculée dans les conditions
-prévues aux articles L. 3141-24 à L. 3141-27 du code du travail revêt du point de vue fiscal le caractère
-d'un salaire de substitution qui constitue une charge normale de l'exercice au cours duquel le salarié prend le
+prévues aux articles L. 3141-24 à L. 3141-27 du code du travailrevêt du point de vue fiscal le caractère d'un
+salaire de substitution qui constitue une charge normale de l'exercice au cours duquel le salarié prend le
 congé correspondant. Pour la détermination des résultats imposables des exercices clos du 1er janvier 1986
 au 30 décembre 1987, il en est de même des charges sociales et fiscales afférentes à cette indemnité.
 Un décret fixe les modalités d'application de ces dispositions.
 1° ter Pour les emprunts contractés à compter du 1er janvier 1993, la fraction, courue au cours de l'exercice,
 de la rémunération égale à la différence entre les sommes ou valeurs à verser, autres que les intérêts, et celles
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 reçues à l'émission, lorsque cette rémunération excède 10 % des sommes initialement mises à la disposition
 de l'emprunteur.
 Cette fraction courue est déterminée de manière actuarielle, selon la méthode des intérêts composés.
@@ -332,7 +926,407 @@ convertibles et à ceux dont le remboursement est à la seule initiative de l'em
 1° quater Sur option irrévocable et globale de l'émetteur pour une période de deux ans, les frais d'émission
 des emprunts répartis par fractions égales ou au prorata de la rémunération courue, sur la durée des emprunts
 émis pendant cette période.
-En cas de remboursement anticipé d'un emprunt, de conversion ou d'échange, les frai
+En cas de remboursement anticipé d'un emprunt, de conversion ou d'échange, les frais d'émission non encore
+déduits sont admis en charge au prorata du capital remboursé, converti ou échangé.
+Ces dispositions ne sont pas applicables aux emprunts dont le remboursement est à la seule initiative de
+l'emprunteur.
+Un décret fixe les conditions d'application de ces dispositions, notamment en ce qui concerne les modalités
+d'option et les obligations déclaratives.
+2° Sauf s'ils sont pratiqués par une copropriété de navires, une copropriété de cheval de course ou d'étalon,
+les amortissements réellement effectués par l'entreprise, dans la limite de ceux qui sont généralement
+admis d'après les usages de chaque nature d'industrie, de commerce ou d'exploitation et compte tenu des
+dispositions de l'article 39 A, sous réserve des dispositions de l'article 39 B.
+Toutefois, ne sont pas admis en déduction les amortissements des fonds commerciaux.
+Par dérogation au deuxième alinéa du présent 2°, sont admis en déduction les amortissements constatés
+dans la comptabilité des entreprises au titre des fonds commerciaux lorsqu'ils sont acquis à compter du 1er
+janvier 2022 et jusqu'au 31 décembre 2029. Le présent alinéa ne s'applique pas aux fonds acquis auprès
+d'une entreprise liée au sens du 12 du présent article ou auprès d'une entreprise, y compris une entreprise
+individuelle, placée, dans les conditions définies au a du même 12, sous le contrôle de la même personne
+physique que l'entreprise qui acquiert le fonds.
+Les décrets en Conseil d'Etat prévus à l'article 273 fixent les conséquences des déductions prévues à l'article
+271 sur la comptabilisation et l'amortissement des biens ;
+3° Les intérêts servis aux associés à raison des sommes qu'ils laissent ou mettent à la disposition de la
+société, en sus de leur part du capital, quelle que soit la forme de la société, dans la limite de ceux calculés à
+un taux égal à la moyenne annuelle des taux effectifs moyens pratiqués par les établissements de crédit et les
+sociétés de financement pour des prêts à taux variable aux entreprises, d'une durée initiale supérieure à deux
+ans.
+Cette déduction est subordonnée à la condition que le capital ait été entièrement libéré.
+A compter du 1er janvier 1983, les produits des clauses d'indexation afférentes aux sommes mises ou
+laissées à la disposition d'une société par ses associés ou ses actionnaires sont assimilés à des intérêts.
+La rémunération mentionnée au 1° ter est retenue pour l'appréciation de la limitation prévue au premier
+alinéa.
+La limite prévue au premier alinéa n'est pas applicable aux intérêts afférents aux avances consenties par une
+société à une autre société lorsque la première possède, au regard de la seconde, la qualité de société-mère au
+sens de l'article 145 et que ces avances proviennent de sommes empruntées par offre au public sur le marché
+obligataire, à l'exception des offres mentionnées au 1° ou au 2° de l'article L. 411-2 du code monétaire
+et financier ou à l'article L. 411-2-1 du même code, ou par émission de titres de créances mentionnés au
+premier alinéa de l'article 124 B ; dans ce cas, les intérêts sont déductibles dans la limite des intérêts des
+ressources ainsi collectées par la société-mère pour le compte de sa ou de ses filiales. Ces dispositions sont
+applicables aux intérêts afférents aux ressources empruntées à compter du 1er janvier 1986. Elles cessent
+de s'appliquer pour la détermination des résultats imposables des exercices ouverts à compter du 1er janvier
+1988.
+Les conditions d'application de l'alinéa précédent, notamment les obligations déclaratives des sociétés
+mentionnées, sont fixées par décret ;
+3° bis (Abrogé) ;
+4° Sous réserve des dispositions de l'article 153, les impôts à la charge de l'entreprise, mis en recouvrement
+au cours de l'exercice, à l'exception des impôts prélevés par un Etat ou territoire conformément aux
+stipulations d'une convention fiscale d'élimination des doubles impositions en matière d'impôt sur les revenus
+conclue par cet Etat ou territoire avec la France, de l'impôt complémentaire mentionné au deuxième alinéa
+de l'article 223 VJ, des taxes prévues aux articles 231 ter, 231 quater, 235 ter C, 235 ter X, 235 ter XB ,
+235 ter ZE bis et 990 G du présent code ainsi qu'au 1° de l'article L. 421-94 et à l'article L. 425-1 du code
+des impositions sur les biens et services et, pour les rappels de taxe sur la valeur ajoutée afférents à des
+opérations au titre desquelles la taxe due peut être totalement ou partiellement déduite par le redevable lui-
+même, du montant de la taxe déductible.
+Par exception aux dispositions du premier alinéa, lorsque, en application du huitième alinéa de l'article 1679
+quinquies, un redevable réduit le montant du solde de cotisation foncière des entreprises du montant du
+dégrèvement attendu du plafonnement de la contribution économique territoriale due au titre de la même
+année, le montant de la cotisation foncière des entreprises déductible du bénéfice net est réduit dans les
+mêmes proportions. Corrélativement, le montant du dégrèvement ainsi déduit ne constitue pas un produit
+imposable, lorsqu'il est accordé ultérieurement.
+4° bis-Le prélèvement opéré au titre de l'article 4 modifié de la loi n° 51-675 du 24 mai 1951, relative à la
+construction navale, et faisant l'objet d'un ordre de versement émis au cours de l'exercice ;
+4° ter (Abrogé) ;
+4° quater (Abrogé) ;
+5° Les provisions constituées en vue de faire face à des pertes ou charges nettement précisées et que des
+événements en cours rendent probables, à condition qu'elles aient été effectivement constatées dans les
+écritures de l'exercice. Toutefois, ne sont pas déductibles les provisions que constitue une entreprise en
+vue de faire face au versement d'allocations en raison du départ à la retraite ou préretraite des membres ou
+anciens membres de son personnel, ou de ses mandataires sociaux. Les provisions pour pertes afférentes
+à des opérations en cours à la clôture d'un exercice ne sont déductibles des résultats de cet exercice qu'à
+concurrence de la perte qui est égale à l'excédent du coût de revient des travaux exécutés à la clôture du
+même exercice sur le prix de vente de ces travaux compte tenu des révisions contractuelles certaines à cette
+date. S'agissant des produits en stock à la clôture d'un exercice, les dépenses non engagées à cette date en vue
+de leur commercialisation ultérieure ne peuvent, à la date de cette clôture, être retenues pour l'évaluation de
+ces produits en application des dispositions du 3 de l'article 38, ni faire l'objet d'une provision pour perte.
+La dépréciation des oeuvres d'art inscrites à l'actif d'une entreprise peut donner lieu à la constitution d'une
+provision. Cette dépréciation doit être constatée par un expert agréé près les tribunaux lorsque le coût
+d'acquisition de l'oeuvre est supérieur à 7 600 €.
+Un décret fixe les règles d'après lesquelles des provisions pour fluctuation des cours peuvent être retranchées
+des bénéfices des entreprises dont l'activité consiste essentiellement à transformer directement des matières
+premières acquises sur les marchés internationaux ou des matières premières acquises sur le territoire
+national et dont les prix sont étroitement liés aux variations des cours internationaux.
+Pour les entreprises dont l'objet principal est de faire subir en France la première transformation au pétrole
+brut, le montant de la provision pour fluctuation des cours ne peut excéder 69 % de la limite maximale de
+la provision calculée conformément aux dispositions législatives et réglementaires en vigueur. L'excédent
+éventuel de la provision antérieurement constituée, par rapport à la nouvelle limite maximale calculée à la
+clôture du premier exercice auquel elle s'applique, est rapporté au bénéfice imposable de cet exercice. Ces
+dispositions s'appliquent pour la détermination des résultats des exercices clos à compter du 24 septembre
+1975.
+Les dispositions des troisième et quatrième alinéas cessent de s'appliquer pour la détermination des résultats
+des exercices clos à compter du 31 décembre 1997. Les provisions pour fluctuation des cours inscrites au
+bilan à l'ouverture du premier exercice clos à compter de cette même date sont rapportées, par fractions
+égales, aux résultats imposables de ce même exercice et des deux exercices suivants.
+Toutefois, les dispositions de la dernière phrase de l'alinéa qui précède ne sont pas applicables au montant
+des provisions visées à la même phrase qui sont portées, à la clôture du premier exercice clos à compter du
+31 décembre 1997, à un compte de réserve spéciale. Les sommes inscrites à cette réserve ne peuvent excéder
+9 146 941 €.
+Les sommes prélevées sur la réserve mentionnée à l'alinéa précédent sont rapportées aux résultats de
+l'exercice en cours lors de ce prélèvement. Cette disposition n'est toutefois pas applicable :
+a) Si l'entreprise est dissoute ;
+b) Si la réserve est incorporée au capital ; en cas de réduction de capital avant la fin de la cinquième année
+suivant celle au cours de laquelle est intervenue l'incorporation au capital de la réserve, les sommes qui
+ont été incorporées au capital sont rapportées aux résultats de l'exercice au cours duquel intervient cette
+réduction. Le montant de la reprise est, s'il y a lieu, limité au montant de cette réduction ;
+c) En cas d'imputation de pertes sur la réserve spéciale, les pertes ainsi annulées cessent d'être reportables.
+Sous réserve des dispositions prévues au quatorzième alinéa, les entreprises peuvent, d'autre part, en ce qui
+concerne les variations de prix postérieures au 30 juin 1959, pratiquer en franchise d'impôt une provision
+pour hausse des prix lorsque, pour une matière ou un produit donné, il est constaté, au cours d'une période ne
+pouvant excéder deux exercices successifs clos postérieurement à cette date, une hausse de prix supérieure à
+10 %. Le montant de la dotation à cette provision ne peut excéder 15 millions d'euros par période de douze
+mois, au titre de chaque exercice, majoré le cas échéant d'une fraction égale à 10 % de la dotation à cette
+provision déterminée dans les conditions prévues à la phrase précédente. Toutefois, pour les entreprises dont
+la durée moyenne de rotation des stocks, pondérée par matières et produits, est supérieure à un an, le plafond
+fixé à la phrase précédente est multiplié par cette durée moyenne, exprimée en mois, divisée par douze.
+La provision pratiquée à la clôture d'un exercice en application de l'alinéa précédent est rapportée de plein
+droit aux bénéfices imposables de l'exercice en cours à l'expiration de la sixième année suivant la date de
+cette clôture. Toutefois, la réintégration dans les bénéfices pourra être effectuée après la sixième année dans
+les secteurs professionnels où la durée normale de rotation des stocks est supérieure à trois ans. Dans ce
+dernier cas, les entreprises effectueront la réintégration dans un délai double de celui de la rotation normale
+des stocks.
+Un décret fixe les modalités d'application des deux alinéas qui précèdent.
+Les matières, produits ou approvisionnements existant en stock à la clôture de chaque exercice et qui peuvent
+donner lieu à la constitution de la provision pour fluctuation des cours prévue au troisième alinéa n'ouvrent
+pas droit à la provision pour hausse des prix.
+Les provisions qui, en tout ou en partie, reçoivent un emploi non conforme à leur destination ou deviennent
+sans objet au cours d'un exercice ultérieur sont rapportées aux résultats dudit exercice. Lorsque le rapport n'a
+pas été effectué par l'entreprise elle-même, l'administration peut procéder aux rectifications nécessaires dès
+qu'elle constate que les provisions sont devenues sans objet. Par dérogation, la provision constituée à raison
+d'un fonds commercial dont l'amortissement est admis en déduction en application du troisième alinéa du 2°
+du 1 du présent article est rapportée aux résultats imposables de chacun des exercices suivant celui au titre
+duquel elle a été déduite, pour un montant égal à la différence entre l'amortissement qui aurait été pratiqué
+si la provision n'avait pas été comptabilisée et l'amortissement effectivement comptabilisé à la clôture de
+l'exercice.
+Par dérogation aux dispositions des premier et quinzième alinéas, la provision pour dépréciation qui résulte
+éventuellement de l'estimation du portefeuille est soumise au régime fiscal des moins-values à long terme
+défini au 2 du I de l'article 39 quindecies ; si elle devient ultérieurement sans objet, elle est comprise dans
+les plus-values à long terme de l'exercice, visées au 1 du I de l'article 39 quindecies. La provision pour
+dépréciation constituée antérieurement, le cas échéant, sur des titres financiers prêtés n'est pas réintégrée ;
+elle doit figurer sur une ligne distincte au bilan et demeurer inchangée jusqu'à la restitution de ces titres.
+Toutefois, pour les exercices ouverts à partir du 1er janvier 1974, les titres de participation ne peuvent
+faire l'objet d'une provision que s'il est justifié d'une dépréciation réelle par rapport au prix de revient. Pour
+l'application de la phrase précédente, constituent des titres de participation les parts ou actions de sociétés
+revêtant ce caractère sur le plan comptable. Il en va de même des actions acquises en exécution d'une offre
+publique d'achat ou d'échange par l'entreprise qui en est l'initiatrice ainsi que des titres ouvrant droit au
+régime des sociétés mères à condition de détenir au moins 5 % des droits de vote de la société émettrice, si
+ces actions ou titres sont inscrits en comptabilité au compte de titres de participation ou à une subdivision
+spéciale d'un autre compte du bilan correspondant à leur qualification comptable.
+Les provisions pour dépréciation, en ce qui concerne les titres et actions susvisés, précédemment
+comptabilisées seront rapportées aux résultats des exercices ultérieurs à concurrence du montant des
+provisions de même nature constituées à la clôture de chacun de ces exercices ou, le cas échéant, aux
+résultats de l'exercice de cession.
+Toutefois, les dotations aux provisions pour dépréciation comptabilisées au titre de l'exercice sur l'ensemble
+des titres de participation définis au dix-septième alinéa ne sont pas déductibles à hauteur du montant des
+plus-values latentes existant à la clôture du même exercice sur les titres appartenant à cet ensemble. Pour
+l'application des dispositions de la phrase précédente, les plus-values latentes, qui s'entendent de la différence
+existant entre la valeur réelle de ces titres à la clôture de l'exercice et leur prix de revient corrigé des plus
+ou moins-values en sursis d'imposition sur ces mêmes titres, sont minorées du montant des provisions non
+admises en déduction au titre des exercices précédents en application de la même phrase et non encore
+rapportées au résultat à la clôture de l'exercice. Le montant des dotations ainsi non admis en déduction est
+affecté à chaque titre de participation provisionné à proportion des dotations de l'exercice comptabilisées sur
+ce titre. Le présent alinéa s'applique aux seuls titres de sociétés à prépondérance immobilière définies au a
+sexies-0 bis du I de l'article 219 pour la détermination des résultats des exercices ouverts à compter du 1er
+janvier 2007.
+Les dotations aux provisions non admises en déduction au titre d'un exercice et affectées à un titre
+de participation en application de l'alinéa précédent viennent minorer le montant des provisions pour
+dépréciation sur ce titre rapporté au résultat des exercices ultérieurs.
+La dépréciation de titres prêtés dans les conditions prévues à l'article L. 211-22 du code monétaire et
+financierne peut donner lieu, de la part du prêteur ou de l'emprunteur, à la constitution d'une provision. De
+même le prêteur ne peut constituer de provision pour dépréciation de la créance représentative de ces titres ;
+La dépréciation des titres financiers qui sont l'objet d'une pension dans les conditions prévues par les articles
+L. 211-27 à L. 211-34du code monétaire et financier, ne peut donner lieu, de la part du cessionnaire, à la
+constitution d'une provision déductible sur le plan fiscal.
+La dépréciation des titres qui font l'objet d'une remise en garantie dans les conditions prévues à l'article 38
+bis-0 A bis ne peut donner lieu à la constitution d'une provision déductible sur le plan fiscal. De même, le
+constituant ne peut déduire de provision pour dépréciation de la créance représentative de ces titres.
+Par exception aux dispositions du seizième alinéa, la provision éventuellement constituée par une entreprise
+en vue de faire face à la dépréciation d'une participation dans une filiale implantée à l'étranger n'est admise
+sur le plan fiscal que pour la fraction de son montant qui excède les sommes déduites en application des
+dispositions de l'article 39 octies A et non rapportées au résultat de l'entreprise. Cette disposition s'applique
+pour la détermination des résultats des exercices ouverts à compter du 1er janvier 1988.
+Les dispositions de l'alinéa précédent sont également applicables à la fraction du montant de la provision
+pour dépréciation mentionnée à cet alinéa, qui excède les sommes déduites en application de l'article 39
+octies D ; cette disposition s'applique pour la détermination des résultats des exercices ouverts à compter du
+1er janvier 1992.
+La provision éventuellement constituée en vue de faire face à la dépréciation d'éléments d'actif non
+amortissables reçus lors d'une opération placée sous l'un des régimes prévus aux articles mentionnés au
+II de l'article 54 septies ou réévalués dans les conditions prévues à l'article 238 bis JB, est déterminée par
+référence à la valeur fiscale des actifs auxquels les éléments reçus se sont substitués ou à celle des actifs
+réévalués.
+La provision constituée par l'entreprise en vue de faire face à l'obligation de renouveler un bien amortissable
+dont elle assure l'exploitation est déductible, à la clôture de l'exercice, dans la limite de la différence entre le
+coût estimé de remplacement de ce bien à la clôture du même exercice et son prix de revient initial affectée
+d'un coefficient progressif. Ce coefficient est égal au quotient du nombre d'années d'utilisation du bien
+depuis sa mise en service sur sa durée totale d'utilisation.
+Les dotations à la provision visée au vingt-septième alinéa ne sont pas déductibles si elles sont passées après
+l'expiration du plan de renouvellement en vigueur au 15 septembre 1997 ou, pour les biens mis en service
+après cette date, après l'expiration du plan initial de renouvellement.
+La fraction de la provision pour renouvellement régulièrement constituée, figurant au bilan du dernier
+exercice clos avant le 31 décembre 1997 et qui, à la clôture des exercices suivants, est supérieure au montant
+déterminé en application des vingt-septième et vingt-huitième alinéas et n'a pas été utilisée, n'est pas
+rapportée au résultat de ces exercices, sous réserve des dispositions du quinzième alinéa.
+Lorsque le bien à renouveler ne fait pas l'objet de dotations aux amortissements déductibles pour la
+détermination du résultat imposable de l'entreprise, le prix de revient initial du bien est retenu pour une
+valeur nulle.
+Dans l'hypothèse où cette obligation de renouvellement est mise à la charge d'un tiers, les dispositions des
+vingt-septième à trentième alinéas sont applicables à celui-ci.
+Les provisions pour indemnités de licenciement constituées en vue de faire face aux charges liées aux
+licenciements pour motif économique ne sont pas déductibles des résultats des exercices clos à compter du
+15 octobre 1997. Les provisions pour indemnités de licenciement constituées à cet effet et inscrites au bilan
+à l'ouverture du premier exercice clos à compter du 15 octobre 1997 sont rapportées aux résultats imposables
+de cet exercice.
+Les provisions constituées en vue de faire face au risque de change afférent aux prêts soumis, sur option, aux
+dispositions prévues au quatrième alinéa du 4 de l'article 38 ne sont pas déductibles du résultat imposable.
+Les dotations aux provisions pour dépréciation comptabilisées au titre de l'exercice sur l'ensemble des
+immeubles de placement ne sont pas déductibles à hauteur du montant des plus-values latentes sur
+ces mêmes immeubles existant à la clôture du même exercice. Pour l'application de cette disposition,
+constituent des immeubles de placement les biens immobiliers inscrits à l'actif immobilisé et non affectés
+par l'entreprise à sa propre exploitation industrielle, commerciale ou agricole ou à l'exercice d'une profession
+non commerciale, à l'exclusion des biens mis à la disposition ou donnés en location à titre principal à des
+entreprises liées au sens du 12 de l'article 39 affectant ce bien à leur propre exploitation. Pour l'application
+des dispositions de la première phrase, les plus-values latentes, qui s'entendent de la différence existant entre
+la valeur réelle de ces immeubles à la clôture de l'exercice et leur prix de revient corrigé des plus ou moins-
+values en sursis d'imposition sur les immeubles appartenant à cet ensemble, sont minorées du montant des
+provisions non admises en déduction au titre des exercices précédents en application de la même phrase et
+non encore rapportées au résultat à la clôture de l'exercice.
+Le montant total des dotations aux provisions non admises en déduction au titre de l'exercice en application
+de l'alinéa précédent vient minorer le montant total des provisions pour dépréciation des immeubles de
+placement rapporté au résultat des exercices ultérieurs.
+6° La contribution sociale de solidarité mentionnée à l'article L. 137-30 du code de la sécurité sociale
+et la taxe d'aide au commerce et à l'artisanat issue de l'article 3 modifié de la loi n° 72-657 du 13 juillet
+1972instituant des mesures en faveur de certaines catégories de commerçants et artisans âgés ;
+6° bis La taxe sur les vidéogrammes mentionnée à l'article L. 452-28 du code des impositions sur les biens
+et services, la taxe sur les services d'accès à des contenus audiovisuels à la demande mentionnée à l'article L.
+453-25 du même code et la taxe sur la publicité diffusée au moyen de services de contenus audiovisuels à la
+demande mentionnée à l'article L. 454-16 du même code ;
+7° Les dépenses engagées dans le cadre de manifestations de caractère philanthropique, éducatif,
+scientifique, social, humanitaire, sportif, familial, culturel ou concourant à la mise en valeur du patrimoine
+artistique, à la défense de l'environnement naturel ou à la diffusion de la culture, de la langue et des
+connaissances scientifiques françaises, lorsqu'elles sont exposées dans l'intérêt direct de l'exploitation ;
+8° Les abandons de créances à caractère commercial consentis ou supportés dans le cadre d'un plan de
+sauvegarde ou de redressement ainsi que ceux consentis en application d'un accord constaté ou homologué
+dans les conditions prévues à l'article L. 611-8 du code de commerce ;
+9° (Abrogé).
+2. Les sanctions pécuniaires et pénalités de toute nature mises à la charge des contrevenants à des obligations
+légales ne sont pas admises en déduction des bénéfices soumis à l'impôt.
+Il en est de même du versement libératoire prévu à l'article L. 221-4du code de l'énergie.
+2 bis. A compter de l'entrée en vigueur sur le territoire de la République de la convention sur la lutte contre
+la corruption d'agents publics étrangers dans les transactions commerciales internationales, les sommes
+versées ou les avantages octroyés, directement ou par des intermédiaires, au profit d'un agent public au
+sens du 4 de l'article 1er de ladite convention ou d'un tiers pour que cet agent agisse ou s'abstienne d'agir
+dans l'exécution de fonctions officielles, en vue d'obtenir ou conserver un marché ou un autre avantage indu
+dans des transactions commerciales internationales, ne sont pas admis en déduction des bénéfices soumis à
+l'impôt.
+3. Les allocations forfaitaires qu'une société attribue à ses dirigeants ou aux cadres de son entreprise pour
+frais de représentation et de déplacement sont exclues de ses charges déductibles pour l'assiette de l'impôt
+lorsque parmi ces charges figurent déjà les frais habituels de cette nature remboursés aux intéressés.
+Pour l'application de cette disposition, les dirigeants s'entendent, dans les sociétés de personnes et les
+sociétés en participation qui n'ont pas opté pour le régime fiscal des sociétés de capitaux, des associés en
+nom et des membres de ces sociétés.
+4. Qu'elles soient supportées directement par l'entreprise ou sous forme d'allocations forfaitaires ou de
+remboursements de frais, sont exclues des charges déductibles pour l'établissement de l'impôt, d'une part, les
+dépenses et charges de toute nature ayant trait à l'exercice de la chasse ainsi qu'à l'exercice non professionnel
+de la pêche et, d'autre part, les charges, à l'exception de celles ayant un caractère social, résultant de l'achat,
+de la location ou de toute autre opération faite en vue d'obtenir la disposition de résidences de plaisance ou
+d'agrément, ainsi que de l'entretien de ces résidences ; les dépenses et charges ainsi définies comprennent
+notamment les amortissements.
+Sauf justifications, les dispositions du premier alinéa sont applicables :
+1° A l'amortissement des véhicules de tourisme au sens de l'article L. 421-2 du code des impositions sur les
+biens et servicespour la fraction de leur prix d'acquisition qui dépasse 18 300 € :
+a) Pour les véhicules immatriculés en recourant à la méthode de détermination des émissions de dioxyde de
+carbone dite WLTP au sens de l'article L. 421-6 du code des impositions sur les biens et services, la somme
+mentionnée au premier alinéa du présent 1° est de :
+-30 000 € si leurs émissions de dioxyde de carbone sont inférieures à 20 grammes par kilomètre ;
+-20 300 € si leurs émissions de dioxyde de carbone sont supérieures ou égales à 20 grammes et inférieures à
+50 grammes par kilomètre ;
+-9 900 € si leurs émissions de dioxyde de carbone sont supérieures à 165 grammes pour ceux acquis avant le
+1er janvier 2021 et à 160 grammes pour ceux acquis à compter de cette date.
+b) Pour les autres véhicules, la somme mentionnée au premier alinéa du présent 1° est de 30 000 € si les
+émissions sont inférieures à 20 grammes par kilomètre et de 20 300 € si les émissions de dioxyde de carbone
+sont supérieures ou égales à 20 grammes et inférieures à 60 grammes par kilomètre.
+Elle est ramenée à 9 900 € lorsque les émissions de dioxyde de carbone sont supérieures à :
+-155 grammes par kilomètre, pour ceux acquis entre le 1er janvier 2017 et le 31 décembre 2017 ;
+-150 grammes par kilomètre, pour ceux acquis entre le 1er janvier 2018 et le 31 décembre 2018 ;
+-140 grammes par kilomètre, pour ceux acquis entre le 1er janvier 2019 et le 31 décembre 2019 ;
+-135 grammes par kilomètre, pour ceux acquis entre le 1er janvier 2020 et le 31 décembre 2020 ;
+-130 grammes par kilomètre, pour ceux acquis à compter du 1er janvier 2021.
+2° En cas d'opérations de crédit bail ou de location, à l'exception des locations de courte durée n'excédant
+pas trois mois non renouvelables, portant sur des véhicules de tourisme au sens de l'article L. 421-2 du
+code des impositions sur les biens et services, à la part du loyer supportée par le locataire et correspondant
+à l'amortissement pratiqué par le bailleur pour la fraction du prix d'acquisition du véhicule qui excède les
+limites déterminées conformément au a.
+3° Aux dépenses de toute nature résultant de l'achat, de la location ou de toute autre opération faite en vue
+d'obtenir la disposition de yachts ou de bateaux de plaisance à voile ou à moteur ainsi que de leur entretien ;
+les amortissements sont regardés comme faisant partie de ces dépenses.
+La fraction de l'amortissement des véhicules de tourisme au sens de l'article L. 421-2 du code des
+impositions sur les biens et services exclue des charges déductibles par les limitations ci-dessus est
+néanmoins retenue pour la détermination des plus-values ou moins-values résultant de la vente ultérieure des
+véhicules ainsi amortis.
+Les dispositions du premier alinéa ne sont pas applicables aux charges exposées pour les besoins de
+l'exploitation et résultant de l'achat, de la location ou de l'entretien des demeures historiques classées ou
+inscrites au titre des monuments historiques, des résidences servant d'adresse ou de siège de l'entreprise
+en application des articles L. 123-10 et L. 123-11-1 du code de commerce, ou des résidences faisant partie
+intégrante d'un établissement de production et servant à l'accueil de la clientèle.
+5. Sont également déductibles les dépenses suivantes :
+a. Les rémunérations directes et indirectes, y compris les remboursements de frais versés aux personnes les
+mieux rémunérées ;
+b. Les frais de voyage et de déplacements exposés par ces personnes ;
+c. Les dépenses et charges afférentes aux véhicules et autres biens dont elles peuvent disposer en dehors des
+locaux professionnels ;
+d. Les dépenses et charges de toute nature afférentes aux immeubles qui ne sont pas affectés à l'exploitation ;
+e. Les cadeaux de toute nature, à l'exception des objets de faible valeur conçus spécialement pour la
+publicité ;
+f. Les frais de réception, y compris les frais de restaurant et de spectacles.
+Pour l'application de ces dispositions, les personnes les mieux rémunérées s'entendent, suivant que l'effectif
+du personnel excède ou non 200 salariés, des dix ou des cinq personnes dont les rémunérations directes ou
+indirectes ont été les plus importantes au cours de l'exercice.
+Les dépenses ci-dessus énumérées peuvent également être réintégrées dans les bénéfices imposables dans la
+mesure où elles sont excessives et où la preuve n'a pas été apportée qu'elles ont été engagées dans l'intérêt
+direct de l'entreprise.
+Lorsqu'elles augmentent dans une proportion supérieure à celle des bénéfices imposables ou que leur
+montant excède celui de ces bénéfices, l'administration peut demander à l'entreprise de justifier qu'elles sont
+nécessitées par sa gestion.
+5 bis. Les rémunérations différées visées au 4° du I de l'article L. 22-10-9 du code de commercesont
+admises en déduction du bénéfice net dans la limite de trois fois le plafond annuel de la sécurité sociale par
+bénéficiaire.
+6. (périmé).
+7. (Abrogé).
+8. Si un fonds de commerce, un fonds artisanal ou l'un de leurs éléments incorporels non amortissables ou
+des parts sociales ou des actions de sociétés commerciales non négociables sur un marché réglementé sont
+loués dans les conditions prévues au 3 ou au 4 de l'article L. 313-7 du code monétaire et financier, la quote-
+part de loyers prise en compte pour la fixation du prix de vente convenu pour l'acceptation de la promesse
+unilatérale de vente n'est pas déductible pour l'assiette de l'impôt sur les bénéfices dû par le locataire. Elle
+doit être indiquée distinctement dans le contrat de crédit-bail.
+Un décret fixe les modalités d'application de ces dispositions, notamment les obligations déclaratives.
+9. L'indemnité de congé payé correspondant aux droits acquis durant la période neutralisée définie ci-
+après, calculée dans les conditions prévues aux articles L. 3141-24 à L. 3141-27 du code du travail, n'est
+pas déductible. Cette période neutralisée est celle qui est retenue pour le calcul de l'indemnité afférente aux
+droits acquis et non utilisés à l'ouverture du premier exercice clos à compter du 31 décembre 1987 ; sa durée
+ne peut être inférieure à celle de la période d'acquisition des droits à congé payé non utilisés à la clôture de
+cet exercice. L'indemnité correspondant à ces derniers droits est considérée comme déduite du point de vue
+fiscal.
+Ces dispositions s'appliquent aux charges sociales et fiscales attachées à ces indemnités.
+Un décret fixe les modalités d'application du présent 9.
+10. Si un immeuble est loué dans les conditions prévues au 2 de l'article L. 313-7 du code monétaire et
+financier, la quote-part de loyers prise en compte pour la détermination du prix de cession de l'immeuble à
+l'issue du contrat et se rapportant à des éléments non amortissables n'est pas déductible du résultat imposable
+du crédit-preneur.
+Toutefois, pour les opérations concernant les immeubles achevés après le 31 décembre 1995 et affectés à
+titre principal à usage de bureaux entrant dans le champ d'application de la taxe prévue à l'article 231 ter,
+autres que ceux situés dans les zones d'aide à finalité régionale et dans les zones de redynamisation urbaine,
+définis au A du 3 de l'article 42 de la loi n° 95-115 du 4 février 1995d'orientation pour l'aménagement et le
+développement du territoire, la quote-part de loyer prise en compte pour la détermination du prix de cession
+de l'immeuble à l'issue du contrat n'est déductible du résultat imposable du crédit-preneur que dans la limite
+des frais d'acquisition de l'immeuble et de l'amortissement que le crédit-preneur aurait pu pratiquer s'il avait
+été propriétaire du bien objet du contrat.
+Pour l'application du premier alinéa, le loyer est réputé affecté au financement des différents éléments dans
+l'ordre suivant :
+a. D'abord aux frais supportés par le crédit-bailleur lors de l'acquisition de l'immeuble ;
+b. Ensuite aux éléments amortissables ;
+c. Enfin aux éléments non amortissables.
+Pour l'application des premier et deuxième alinéas, le prix convenu pour la cession de l'immeuble à l'issue du
+contrat est réputé affecté en priorité au prix de vente des éléments non amortissables.
+Lorsque le bien n'est pas acquis à l'issue du contrat ou lorsque le contrat de crédit-bail est résilié, les quotes-
+parts de loyers non déductibles prévues aux premier et deuxième alinéas sont admises en déduction du
+résultat imposable.
+Lorsque le contrat de crédit-bail est cédé, les quotes-parts de loyers non déductibles sont considérées comme
+un élément du prix de revient du contrat pour le calcul de la plus-value dans les conditions de l'article 39
+duodecies A.
+11. (Périmé)
+12. Des liens de dépendance sont réputés exister entre deux entreprises :
+a-lorsque l'une détient directement ou par personne interposée la majorité du capital social de l'autre ou y
+exerce en fait le pouvoir de décision ;
+b-lorsqu'elles sont placées l'une et l'autre, dans les conditions définies au a, sous le contrôle d'une même
+tierce entreprise.
+(Alinéa disjoint).
+12 bis. (Abrogé)
+12 ter. Les redevances de concession de licences d'exploitation de droits de la propriété intellectuelle
+versées à une entreprise liée au sens du 12 qui n'est pas, au titre de l'exercice en cours, soumise à raison
+de ces mêmes redevances à un impôt sur le revenu ou sur les bénéfices dont le taux effectif est au moins
+égal à 25 % sont exclues des charges déductibles pour l'établissement de l'impôt à hauteur d'une fraction
+de leur montant. Cette fraction est égale au produit du montant des redevances par le rapport entre, au
+numérateur, la différence entre 25 % et le taux effectif d'imposition auquel ont été soumises les redevances
+et, au dénominateur, 25 %.
+Lorsque les redevances mentionnées au premier alinéa du présent 12 ter sont versées à une entreprise
+qui a pris en concession, directement ou par l'intermédiaire d'entreprises liées au sens du 12, les droits
+mentionnés au premier alinéa du présent 12 ter auprès d'une entreprise à laquelle elle est liée au sens du 12,
+les conditions de déductibilité de ces redevances sont appréciées au regard de leur taux effectif d'imposition
+constaté au niveau de cette dernière entreprise.
+Les deux premiers alinéas du présent 12 ter s'appliquent lorsque l'entreprise au niveau de laquelle est
+apprécié le taux d'imposition effectif des redevances :
+1° Est établie dans un Etat qui n'est ni membre de l'Union européenne, ni partie à l'accord sur l'Espace
+économique européen ;
+2° Et bénéficie, au titre des redevances mentionnées au premier alinéa, d'un régime fiscal considéré comme
+dommageable par l'Organisation de coopération et de développement économiques.
+13. Sont exclues des charges déductibles pour l'établissement de l'impôt les aides de toute nature consenties à
+une autre entreprise, à l'exception des aides à caractère commercial.
+Le premier alinéa ne s'applique pas aux aides consenties en application d'un accord constaté ou homologué
+dans les conditions prévues à l'article L. 611-8 du code de commerceni aux aides consenties aux entreprises
+pour lesquelles une procédure de sauvegarde, de redressement judiciaire ou de liquidation judiciaire est
+ouverte.
+Les aides mentionnées au deuxième alinéa qui ne revêtent pas un caractère commercial sont déductibles
+à hauteur de la situation nette négative de l'entreprise qui en bénéficie et, pour le montant excédant cette
+situation nette négative, à proportion des participations détenues par d'autres personnes que l'entreprise qui
+consent les aides.
 ```
 
 ---
@@ -350,7 +1344,7 @@ de profits ne se rattachant pas à une autre catégorie de bénéfices ou de rev
 2. Ces bénéfices comprennent notamment :
 1° Les produits des opérations de bourse effectuées dans des conditions analogues à celles qui caractérisent
 une activité exercée par une personne se livrant à titre professionnel à ce type d'opérations ;
-1° bis Les produits des opérations d'achat, de vente et d'échange d'actifs numériques effectuées dans des
+1° bis Les produits des opérations d'achat, de vente et d'échange de crypto-actifs effectuées dans des
 conditions analogues a # celles qui caractérisent une activité exercée par une personne se livrant a # titre
 professionnel a # ce type d'opérations ;
 2° Les produits de droits d'auteurs perçus par les écrivains ou compositeurs et par leurs héritiers ou
@@ -361,15 +1355,6 @@ fabrication ;
 4° Les remises allouées pour la vente de tabacs fabriqués ;
 5° Les produits des opérations réalisées à titre habituel, directement, par personne interposée ou par
 l'intermédiaire d'une fiducie, sur des contrats financiers, également dénommés " instruments financiers à
- 
- 
- 
- 
- 
- 
- 
- 
-
 terme ”, mentionnés au III de l'article L. 211-1 du code monétaire et financier, lorsque l'option prévue au 8°
 du I de l'article 35 n'était pas ouverte au contribuable ou lorsqu'il ne l'a pas exercée ;
 6° Les sommes et indemnités perçues par les arbitres ou juges au titre de la mission arbitrale mentionnée à
@@ -407,16 +1392,6 @@ de loyer visée au 4 de l'article 39 ;
 5° (Abrogé) ;
 6° Les loyers versés en exécution d'un contrat de crédit-bail portant sur un immeuble, dans les conditions et
 limites fixées au 10 de l'article 39 ;
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 7° Les droits de mutation à titre gratuit acquittés par les héritiers, donataires ou légataires d'une exploitation,
 pour la part des droits afférente à cette exploitation, et les intérêts payés en application des dispositions de
 l'article 1717, pour la même part ;
@@ -446,7 +1421,43 @@ Les contribuables ayant demandé l'application de ce régime doivent joindre à 
 état donnant la ventilation des sommes reçues suivant les parties versantes.
 1 quater. Lorsqu'ils sont intégralement déclarés par les tiers, les produits de droits d'auteur perçus par les
 auteurs des œuvres de l'esprit mentionnées à l'article L. 112-2 du code de la propriété intellectuelle sont,
-sans préjudice de l'article 100 bis, soumis à l'impôt sur le revenu selon les règles prévues en matiè
+sans préjudice de l'article 100 bis, soumis à l'impôt sur le revenu selon les règles prévues en matière de
+traitements et salaires.
+La déduction forfaitaire de 10 % pour frais professionnels, prévue au 3° de l'article 83, s'applique au montant
+brut des droits perçus diminué des cotisations payées au titre des régimes obligatoire et complémentaire
+obligatoire de sécurité sociale.
+2. Dans le cas de concession de licence d'exploitation d'un brevet, ou de cession ou de concession d'un
+procédé ou formule de fabrication par l'inventeur lui-même, il est appliqué sur les produits d'exploitation ou
+sur le prix de vente un abattement de 30 % pour tenir compte des frais exposés en vue de la réalisation de
+l'invention, lorsque les frais réels n'ont pas déjà été admis en déduction pour la détermination du bénéfice
+imposable, sauf application des dispositions du deuxième alinéa du I de l'article 93 quater.
+3. (Abrogé).
+4. (Transféré sous l'article 93 quater II).
+4 bis. (Abrogé).
+5. Pour l'application du 1, les parts de sociétés civiles de moyens constituent des éléments affectés à
+l'exercice de la profession.
+6. Les biens acquis à l'échéance des contrats mentionnés au III de l'article 93 quater constituent des éléments
+d'actif affectés à l'exercice de l'activité non commerciale pour l'application du présent article.
+7. (Abrogé).
+8. Sur demande expresse des contribuables soumis au régime de la déclaration contrôlée qui exercent une
+activité professionnelle au sens du 1 de l'article 92, les subventions visées à l'article 42 septies ne sont
+pas comprises dans les résultats de l'année en cours à la date de leur versement. Dans ce cas, elles sont
+imposables dans les conditions définies par ce dernier article.
+9. Les auteurs d'oeuvres d'art au sens du 1° du I de l'article 297 A bénéficient d'un abattement de 50 % sur
+le montant de leur bénéfice imposable au titre de la première année d'activité ainsi que des quatre années
+suivantes.
+Ces dispositions s'appliquent aux revenus résultant de la cession des oeuvres mentionnées à l'alinéa
+précédent, ainsi que de la cession et de l'exploitation des droits patrimoniaux reconnus par la loi sur ces
+mêmes oeuvres, et perçus par les auteurs personnes physiques imposées selon le régime de la déclaration
+contrôlée.
+Les revenus provenant des opérations mentionnées à l'article 279 bis ne bénéficient pas de l'abattement prévu
+au premier alinéa.
+L'abattement mentionné au premier alinéa ne peut excéder 50 000 € par an.
+Il ne s'applique pas en cas d'option pour le régime prévu à l'article 100 bis.
+10. Lorsque le montant total des sommes et indemnités perçues par les arbitres ou juges mentionnées au 6°
+du 2 de l'article 92 est inférieur, pour une année civile, à la limite définie au premier alinéa de l'article L.
+241-16 du code de la sécurité sociale, plafonné à 14,5 % du montant annuel du plafond mentionné à l'article
+L. 241-3 du même code, ces sommes et indemnités sont exonérées.
 ```
 
 ---
@@ -460,7 +1471,6 @@ Article 95
 En ce qui concerne le mode de détermination du bénéfice à retenir dans les bases de l'impôt sur le revenu, les
 contribuables qui perçoivent des bénéfices non commerciaux ou des revenus assimilés sont placés soit sous
 le régime de la déclaration contrôlée du bénéfice net, soit sous le régime déclaratif spécial.
-1 : Régime de la déclaration contrôlée
 ```
 
 ---
@@ -574,13 +1584,13 @@ concernant les indications de leur livre-journal ou de leur comptabilité.
 
 **Source :** CGI Art. 102 ter | **Module :** BNC | **Tags :** BNC, micro_BNC, seuils, 77700
 
-> **Note millésime :** le texte ci-dessous mentionne 77 700 € (triennat 2023-2025). Le seuil est revalorisé à **83 600 € pour les revenus 2026-2028** (actualisation triennale prévue au dernier alinéa du 1). En cas d'écart entre un texte du corpus et `referentiel_parametres.json`, le référentiel prime [referentiel: seuil_micro_bnc].
+> **Note millésime :** texte en vigueur depuis le 01/07/2026 (décret n° 2026-562) : **83 600 € pour les revenus 2026-2028** ; le seuil était de 77 700 € pour les revenus 2023-2025. En cas d'écart entre un texte du corpus et `referentiel_parametres.json`, le référentiel prime [referentiel: seuil_micro_bnc].
 
 ```
 Article 102 ter
 1. Le bénéfice imposable des contribuables qui perçoivent des revenus non commerciaux dont le montant
 hors taxes de l'année civile précédente ou de la pénultième année, ajusté s'il y a lieu au prorata du temps
-d'activité au cours de l'année de référence, n'excède pas 77 700 € est égal au montant brut des recettes
+d'activité au cours de l'année de référence, n'excède pas 83 600 € est égal au montant brut des recettes
 annuelles diminué d'un abattement forfaitaire de 34 %. Cet abattement ne peut être inférieur à 305 €.
 Les plus ou moins-values provenant de la cession des biens affectés à l'exploitation sont prises en compte
 distinctement pour l'assiette de l'impôt sur le revenu dans les conditions prévues à l'article 93 quater, sous
@@ -604,20 +1614,6 @@ l'article 93 A.
 2. Les contribuables visés au 1 portent directement sur la déclaration prévue à l'article 170 le montant des
 recettes annuelles et des plus ou moins-values réalisées ou subies au cours de cette même année.
 3. (Abrogé).
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 4. Les contribuables visés au 1 doivent tenir et, sur demande du service des impôts, présenter un document
 donnant le détail journalier de leurs recettes professionnelles.
 Ce document comporte, quelle que soit la profession exercée, l'identité déclarée par le client ainsi que le
@@ -636,7 +1632,6 @@ c. Les contribuables dont tout ou partie des biens affectés à l'exploitation s
 fiduciaire en application d'une opération de fiducie définie à l'article 2011 du code civil ;
 d Les contribuables qui exercent une activité occulte au sens du deuxième alinéa de l'article L. 169 du livre
 des procédures fiscales.
-3 : Dispositions communes
 ```
 
 ---
@@ -653,28 +1648,6 @@ prévues à l'article 60, deuxième alinéa, et conformément aux dispositions d
 de l'article 102 ter pour l'associé unique d'une société à responsabilité limitée vérifiant les conditions fixées
 à cet article lorsque cet associé est une personne physique dirigeant cette société, et de l'article L. 53 du livre
 des procédures fiscales.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-Livre premier : Assiette et liquidation de l'impôt
-Première Partie : Impôts d'État
-Titre premier : Impôts directs et taxes assimilées
-Chapitre premier : Impôt sur le revenu
-Section II : Revenus imposables
-1re Sous-section : Détermination des bénéfices ou revenus nets des
-diverses catégories de revenus
-VII : Revenus des capitaux mobiliers
-1 : Produits des actions et parts sociales - Revenus assimilés
-a : Généralités
 ```
 
 ---
@@ -690,16 +1663,6 @@ avantages en argent ou en nature accordés :
 1° Les cotisations de sécurité sociale, y compris :
 a) Les cotisations d'assurance vieillesse versées en exercice des facultés de rachat prévues aux articles L.
 351-14-1 du code de la sécurité sociale, L. 9 bis du code des pensions civiles et militaires de retraite, ainsi
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 que celles prévues par des dispositions réglementaires ayant le même objet prises sur le fondement de
 l'article L. 711-1 du code de la sécurité sociale ;
 b) Les cotisations versées aux régimes de retraite complémentaire mentionnés au chapitre Ier du titre II du
@@ -737,7 +1700,81 @@ institution mentionnée à l'article L. 370-1 du code des assurances pour les co
 143-1 dudit code lorsqu'ils ont pour objet l'acquisition et la jouissance de droits viagers, auxquels le salarié
 est affilié à titre obligatoire, les cotisations versées, à compter du 1er janvier 1993, à titre obligatoire au
 régime de prévoyance des joueurs professionnels de football institué par la charte du football professionnel
-ainsi que les cotisations versées, à compter du 1er janvier 2026, par les joueurs pr
+ainsi que les cotisations versées, à compter du 1er janvier 2026, par les joueurs professionnels de rugby au
+titre du pécule de reconversion institué par la convention collective du rugby professionnel.
+Il en va de même des versements mentionnés au 3° de l'article L. 224-2 du code monétaire et financier dans
+un plan d'épargne retraite mentionné à l'article L. 224-13 ou à l'article L. 224-23 du même code.
+Les versements mentionnés aux alinéas précédents sont déductibles dans la limite, y compris les versements
+de l'employeur, de 8 % de la rémunération annuelle brute retenue à concurrence de huit fois le montant
+annuel du plafond mentionné à l'article L. 241-3 du code de la sécurité sociale. En cas d'excédent, celui-ci est
+ajouté à la rémunération ;
+La limite mentionnée au troisième alinéa est réduite, le cas échéant, des sommes versées aux plans d'épargne
+retraite qui sont exonérées en application du 18° de l'article 81 ;
+2°-0 bis (Abrogé) ;
+2°-0 ter Dans les limites prévues au quatrième alinéa du 1° quater, les cotisations versées aux régimes de
+prévoyance complémentaire et, dans les limites prévues aux troisième et dernier alinéas du 2°, les cotisations
+versées aux régimes de retraite complémentaire répondant aux conditions fixées à l'article 3 de la directive
+98/49/ CE du Conseil du 29 juin 1998 relative à la sauvegarde des droits à pension complémentaire des
+travailleurs salariés et non salariés qui se déplacent à l'intérieur de la Communauté ou à celles prévues par
+les conventions ou accords internationaux de sécurité sociale, auxquels les personnes désignées au 1 du
+I de l'article 155 B étaient affiliées ès qualités dans un autre Etat avant leur prise de fonctions en France.
+Les cotisations sont déductibles jusqu'au 31 décembre de la huitième année suivant celle de leur prise de
+fonctions ;
+2°-0 quater La contribution prévue à l'article L. 137-11-1 du code de la sécurité sociale dans la limite de la
+fraction acquittée au titre des premiers 1 000 € de rente mensuelle ;
+2° bis Les contributions versées par les salariés en application des dispositions de l'article L. 5422-9 du code
+du travail et destinées à financer le régime d'assurance des travailleurs privés d'emploi ;
+2° ter (Abrogé).
+2° quater (Abrogé).
+2° quinquies (Abrogé).
+3° Les frais inhérents à la fonction ou à l'emploi lorsqu'ils ne sont pas couverts par des allocations spéciales.
+La déduction à effectuer du chef des frais professionnels est calculée forfaitairement en fonction du revenu
+brut, après défalcation des cotisations, contributions et intérêts mentionnés aux 1° à 2° ter ; elle est fixée à 10
+% du montant de ce revenu. Elle est limitée à 14 555 € pour l'imposition des rémunérations perçues en 2025 ;
+chaque année, le plafond retenu pour l'imposition des revenus de l'année précédente est relevé dans la même
+proportion que la limite supérieure de la première tranche du barème de l'impôt sur le revenu.
+Le montant de la déduction forfaitaire pour frais professionnels ne peut être inférieur à 509 €, sans
+pouvoir excéder le montant brut des traitements et salaires. Cette disposition s'applique séparément aux
+rémunérations perçues par chaque membre du foyer fiscal désigné aux 1 et 3 de l'article 6.
+La somme figurant au troisième alinéa est révisée chaque année dans la même proportion que la limite
+supérieure de la première tranche du barème de l'impôt sur le revenu.
+Les bénéficiaires de traitements et salaires sont également admis à justifier du montant de leurs frais réels,
+soit dans la déclaration visée à l'article 170, soit sous forme de réclamation adressée au service des impôts
+dans le délai prévu aux articles R* 196-1 et R* 196-3 du livre des procédures fiscales. Le montant des frais
+réels à prendre en compte au titre de l'acquisition des immeubles, des véhicules et autres biens dont la durée
+d'utilisation est supérieure à un an s'entend de la dépréciation que ces biens ont subie au cours de l'année
+d'imposition.
+Sont assimilées à des frais professionnels réels les dépenses exposées en vue de l'obtention d'un diplôme ou
+d'une qualification professionnelle dans la perspective d'une insertion ou d'une conversion professionnelle
+par les personnes tirant un revenu de la pratique d'un sport.
+Les frais de déplacement de moins de quarante kilomètres entre le domicile et le lieu de travail sont admis,
+sur justificatifs, au titre des frais professionnels réels. Lorsque la distance est supérieure, la déduction admise
+porte sur les quarante premiers kilomètres, sauf circonstances particulières notamment liées à l'emploi
+justifiant une prise en compte complète. Les frais de déplacement mentionnés au présent alinéa engagés par
+un passager au titre du partage des frais dans le cadre d'un covoiturage défini à l'article L. 3132-1 du code
+des transports sont admis, sur justificatifs, au titre des frais professionnels réels.
+Lorsque les bénéficiaires de traitements et salaires optent pour le régime des frais réels, l'évaluation des
+frais de déplacement, autres que les frais de péage, de garage ou de parking et d'intérêts annuels afférents à
+l'achat à crédit du véhicule utilisé, peut s'effectuer sur le fondement d'un barème forfaitaire fixé par arrêté
+du ministre chargé du budget en fonction de la puissance administrative du véhicule, retenue dans la limite
+maximale de sept chevaux, du type de motorisation du véhicule, et de la distance annuelle parcourue.
+Lorsque les bénéficiaires mentionnés au huitième alinéa ne font pas application dudit barème, les frais réels
+déductibles, autres que les frais de péage, de garage ou de parking et d'intérêts annuels afférents à l'achat
+à crédit du véhicule utilisé, ne peuvent excéder le montant qui serait admis en déduction en application du
+barème précité, à distance parcourue identique, pour un véhicule de la puissance administrative maximale
+retenue par le barème.
+Les frais, droits et intérêts d'emprunt versés pour acquérir ou souscrire des parts ou des actions d'une société
+ayant une activité industrielle, commerciale, artisanale, agricole ou libérale dans laquelle le salarié ou
+le dirigeant exerce son activité professionnelle principale sont admis, sur justificatifs, au titre des frais
+professionnels réels dès lors que ces dépenses sont utiles à l'acquisition ou à la conservation de ses revenus.
+Les intérêts admis en déduction sont ceux qui correspondent à la part de l'emprunt dont le montant est
+proportionné à la rémunération annuelle perçue ou escomptée au moment où l'emprunt est contracté. La
+rémunération prise en compte s'entend des revenus mentionnés à l'article 79 et imposés sur le fondement de
+cet article. La fraction des versements effectués au titre des souscriptions ou acquisitions de titres donnant
+lieu aux réductions d'impôt prévues aux articles 199 terdecies-0A, 199 terdecies-0 AB ou 199 terdecies-0 B,
+ainsi que les souscriptions et acquisitions de titres figurant dans un plan d'épargne en actions défini à l'article
+163 quinquies D ou dans un plan d'épargne salariale prévu au titre III du livre III de la troisième partie du
+code du travail, ne peuvent donner lieu à aucune déduction d'intérêts d'emprunt.
 ```
 
 ---
@@ -985,13 +2022,6 @@ général, à but non lucratif et des établissements d'enseignement supérieur 
 711-17 du code de commerce pour leurs activités de formation professionnelle initiale et continue ainsi que
 de recherche ;
 d) D'organismes visés au 4 de l'article 238 bis ;
- 
- 
- 
- 
- 
- 
-
 e) D'associations cultuelles et de bienfaisance, ainsi que des établissements publics des cultes reconnus
 d'Alsace-Moselle ;
 f) D'organismes publics ou privés dont la gestion est désintéressée et qui ont pour activité principale la
@@ -1013,7 +2043,103 @@ code forestier, ou pour l'acquisition de bois et forêts destinés à être int�
 d'aménagement mentionné à l'article L. 212-1 du même code ;
 g) De fonds de dotation :
 1° Répondant aux caractéristiques mentionnées au b ou au f bis ;
-2° Ou dont la gestion est désintéressée et qui reversent les revenus tirés d
+2° Ou dont la gestion est désintéressée et qui reversent les revenus tirés des dons et versements mentionnés
+au premier alinéa du 1 à des organismes mentionnés aux a à f ter ou à la Fondation du patrimoine dans les
+conditions mentionnées aux quatre premiers alinéas du 2 bis, ou à une fondation ou association reconnue
+d'utilité publique agréée par le ministre chargé du budget dans les conditions mentionnées au dernier alinéa
+du même 2 bis. Ces organismes délivrent aux fonds de dotation une attestation justifiant le montant et
+l'affectation des versements effectués à leur profit.
+Ouvrent également droit à la réduction d'impôt les frais engagés dans le cadre d'une activité bénévole
+et en vue strictement de la réalisation de l'objet social d'un organisme mentionné aux a à g, lorsque ces
+frais, dûment justifiés, ont été constatés dans les comptes de l'organisme et que le contribuable a renoncé
+expressément à leur remboursement. Les frais de déplacement en véhicule automobile, vélomoteur, scooter
+ou moto dont le contribuable est propriétaire peuvent être évalués sur le fondement du barème forfaitaire
+prévu au huitième alinéa du 3° de l'article 83.
+1 bis. Pour l'application des dispositions du 1, lorsque les dons et versements effectués au cours d'une
+année excèdent la limite de 20 %, l'excédent est reporté successivement sur les années suivantes jusqu'à la
+cinquième inclusivement et ouvre droit à la réduction d'impôt dans les mêmes conditions.
+1 ter. Le taux de la réduction d'impôt visée au 1 est porté à 75 % pour les versements effectués au profit
+d'organismes sans but lucratif qui procèdent à la fourniture gratuite de repas à des personnes en difficulté,
+qui contribuent à favoriser leur logement ou qui procèdent, à titre principal, à la fourniture gratuite des soins
+mentionnés au 1° du 4 de l'article 261 à des personnes en difficulté ainsi qu'au profit d'organismes d'intérêt
+général qui, à titre principal et gratuitement, accompagnent les victimes de violence domestique, au sens de
+l'article 3 de la convention du Conseil de l'Europe sur la prévention et la lutte contre la violence à l'égard
+des femmes et la violence domestique du 11 mai 2011, ou contribuent à favoriser leur relogement. Ces
+versements sont retenus dans la limite de 2 000 €. Il n'en est pas tenu compte pour l'application de la limite
+mentionnée au 1.
+2. Les fondations et associations reconnues d'utilité publique peuvent, lorsque leurs statuts ont été approuvés
+à ce titre par décret en Conseil d'Etat, recevoir des versements pour le compte d'oeuvres ou d'organismes
+mentionnés au 1.
+La condition relative à la reconnaissance d'utilité publique est réputée remplie par les associations régies
+par la loi locale maintenue en vigueur dans les départements de la Moselle, du Bas-Rhin et du Haut-Rhin,
+lorsque la mission de ces associations est reconnue d'utilité publique.
+Un décret en Conseil d'Etat fixe les conditions de cette reconnaissance et les modalités de procédure
+déconcentrée permettant de l'accorder.
+2 bis. Ouvrent également droit à la réduction d'impôt les dons versés à la " Fondation du patrimoine " ou à
+une fondation ou une association qui affecte irrévocablement ces dons à la " Fondation du patrimoine ", en
+vue de subventionner la réalisation des travaux prévus par les conventions conclues en application de l'article
+L. 143-2-1 du code du patrimoine entre la " Fondation du patrimoine " et les propriétaires des immeubles,
+personnes physiques ou sociétés civiles composées uniquement de personnes physiques et qui ont pour objet
+exclusif la gestion et la location nue des immeubles dont elles sont propriétaires.
+Les immeubles mentionnés au premier alinéa ne doivent pas faire l'objet d'une exploitation commerciale.
+Toutefois, ces dispositions ne sont pas applicables lorsque la gestion de l'immeuble est désintéressée et que
+les conditions suivantes sont cumulativement remplies :
+1° Les revenus fonciers nets, les bénéfices agricoles, les bénéfices industriels et commerciaux et les
+bénéfices des sociétés commerciales, augmentés des charges déduites en application du 5° du 1 de l'article
+39, générés par l'immeuble au cours des trois années précédentes sont affectés au financement des travaux
+prévus par la convention ;
+2° Le montant des dons collectés n'excède pas le montant restant à financer au titre de ces travaux, après
+affectation des subventions publiques et des sommes visées au 1°.
+Le donateur ou l'un des membres de son foyer fiscal ne doit pas avoir conclu de convention avec la "
+Fondation du patrimoine " en application de l'article L. 143-2-1 précité, être propriétaire de l'immeuble sur
+lequel sont effectués les travaux ou être un ascendant, un descendant ou un collatéral du propriétaire de cet
+immeuble. En cas de détention de l'immeuble par une société mentionnée au premier alinéa, le donateur ou
+l'un des membres de son foyer fiscal ne doit pas être associé de cette société ou un ascendant, un descendant
+ou un collatéral des associés de la société propriétaire de l'immeuble.
+Les dons versés à d'autres fondations ou associations reconnues d'utilité publique agréées par le ministre
+chargé du budget dont l'objet est culturel, en vue de subventionner la réalisation de travaux de conservation,
+de restauration ou d'accessibilité de monuments historiques classés ou inscrits, ouvrent droit à la réduction
+d'impôt dans les mêmes conditions.
+3. Ouvrent également droit à la réduction d'impôt les dons, prévus à l'article L. 52-8 du code électoral versés
+à une association de financement électorale ou à un mandataire financier visé à l'article L. 52-4 du même
+code qui sont consentis à titre définitif et sans contrepartie, soit par chèque, soit par virement, prélèvement
+automatique ou carte bancaire, et dont il est justifié à l'appui du compte de campagne présenté par un
+candidat, un binôme de candidats ou une liste. Il en va de même des dons mentionnés à l'article 11-4 de la loi
+n° 88-227 du 11 mars 1988 relative à la transparence financière de la vie politique ainsi que des cotisations
+versées aux partis et groupements politiques par l'intermédiaire de leur mandataire.
+Les dons et cotisations mentionnés à la seconde phrase du premier alinéa du présent 3 sont retenus dans la
+limite de 15 000 €.
+4. (abrogé).
+4 bis. Ouvrent également droit à la réduction d'impôt les dons et versements effectués au profit d'organismes
+agréés dans les conditions prévues à l'article 1649 nonies dont le siège est situé dans un Etat membre de
+l'Union européenne ou dans un autre Etat partie à l'accord sur l'Espace économique européen ayant conclu
+avec la France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion
+fiscales. L'agrément est accordé lorsque l'organisme poursuit des objectifs et présente des caractéristiques
+similaires aux organismes dont le siège est situé en France répondant aux conditions fixées par le présent
+article.
+Lorsque les dons et versements ont été effectués au profit d'un organisme non agréé dont le siège est situé
+dans un Etat membre de l'Union européenne ou dans un autre Etat partie à l'accord sur l'Espace économique
+européen ayant conclu avec la France une convention d'assistance administrative en vue de lutter contre
+la fraude et l'évasion fiscales, la réduction d'impôt obtenue fait l'objet d'une reprise, sauf si le contribuable
+produit, à la demande de l'administration fiscale, les pièces justificatives attestant que cet organisme poursuit
+des objectifs et présente des caractéristiques similaires aux organismes dont le siège est situé en France
+répondant aux conditions fixées par le présent article.
+Un décret fixe les conditions d'application du présent 4 bis et notamment la durée de validité ainsi que les
+modalités de délivrance, de publicité et de retrait de l'agrément.
+5. Les versements ouvrent droit au bénéfice de la réduction d'impôt, sous réserve que le contribuable soit
+en mesure de présenter, à la demande de l'administration fiscale, les pièces justificatives répondant à un
+modèle fixé par l'administration attestant du montant et de la date des versements ainsi que de l'identité des
+bénéficiaires.
+Toutefois, pour l'application du 3, les reçus délivrés pour les dons et les cotisations d'un montant égal
+ou inférieur à 3 000 € ne mentionnent pas la dénomination du bénéficiaire. Un décret en Conseil d'Etat
+détermine les modalités d'application de cette disposition.
+6. Ouvrent également droit à la réduction d'impôt les dons et versements effectués au profit d'organismes qui
+ont pour objet la sauvegarde, contre les effets d'un conflit armé, des biens culturels mentionnés à l'article 1er
+de la Convention du 14 mai 1954 pour la protection des biens culturels en cas de conflit armé, dont le siège
+est situé dans un Etat membre de l'Union européenne ou dans un autre Etat ayant conclu avec la France une
+convention d'assistance administrative en vue de lutter contre la fraude et l'évasion fiscales, sous réserve que
+l'Etat français soit représenté au sein des instances dirigeantes avec voix délibérative.
+7. Abrogé
 ```
 
 ---
@@ -1049,23 +2175,7 @@ au titre des investissements mentionnés à la deuxième phrase du vingt-sixièm
 undecies B est retenue pour l'application du plafonnement mentionné au second alinéa du 1 pour 44 % de son
 montant. La réduction d'impôt acquise au titre des investissements mentionnés à l'article 199 undecies C est
 retenue pour l'application du plafonnement mentionné au second alinéa du 1 pour 30 % de son montant.
- 
- 
- 
- 
- 
- 
- 
-
 4. Un décret fixe les modalités d'application du présent article.
-
-Livre premier : Assiette et liquidation de l'impôt
-Première Partie : Impôts d'État
-Titre premier : Impôts directs et taxes assimilées
-Chapitre premier : Impôt sur le revenu
-Section V : Calcul de l'impôt
-IV : Imposition des gains nets réalisés à l'occasion de cessions de
-valeurs mobilières et de droits sociaux
 ```
 
 ---
@@ -1095,13 +2205,6 @@ pertes a été exercée dans les conditions du deuxième alinéa du 12 de l'arti
 titre de l'année au cours de laquelle elles sont reçues, à hauteur de la perte imputée ou reportée.
 5. La fraction ayant le caractère de gain net des sommes versées par la Caisse des dépôts et consignations
 en application du sixième alinéa du I de l'article L. 312-20 du code monétaire et financier est soumise à
- 
- 
- 
- 
- 
- 
-
 l'impôt sur le revenu déterminé suivant les règles de taxation en vigueur l'année de ce versement. Le montant
 imposable du gain net est déterminé dans les conditions et selon les modalités applicables à la date de la
 liquidation des titres opérée en application du même sixième alinéa.
@@ -1126,7 +2229,164 @@ Le présent 2 n'est pas applicable aux retraits de titres mentionnés à l'artic
 réalisation du gain net mentionné au I du même article 163 bis H ;
 2 bis. Au gain net réalisé depuis l'ouverture d'un plan d'épargne en actions défini à l'article 163 quinquies
 D en cas de clôture après l'expiration de la cinquième année lorsqu'à la date de cet événement la valeur
-liquidative du plan ou de rachat du contrat de capitalisat
+liquidative du plan ou de rachat du contrat de capitalisation est inférieure au montant des versements
+effectués sur le plan depuis son ouverture, compte non tenu de ceux afférents aux retraits ou rachats n'ayant
+pas entraîné la clôture du plan, et à condition que, à la date de la clôture, les titres figurant dans le plan aient
+été cédés en totalité ou que le contrat de capitalisation ait fait l'objet d'un rachat total ;
+2 ter. Au gain net déterminé dans les conditions prévues à l'article 150-0 B quinquies lors du retrait de titres
+ou de liquidités ou de la clôture d'un compte défini à l'article L. 221-32-4 du code monétaire et financier ;
+3. Au gain net retiré des cessions de titres de sociétés immobilières pour le commerce et l'industrie non
+cotées ;
+4. Au gain net retiré des rachats d'actions de sociétés d'investissement à capital variable et au gain net
+résultant des rachats de parts de fonds communs de placement définis au 2 du III ou de la dissolution de tels
+fonds ou sociétés ;
+4 bis. Au gain net retiré des rachats d'actions de sociétés de placement à prépondérance immobilière à capital
+variable mentionnées au 3° nonies de l'article 208 ;
+4 ter. Par dérogation aux dispositions de l'article 239 nonies, aux titres cédés dans le cadre de leur gestion par
+les fonds de placement immobilier régis par les articles L. 214-33 et suivants du code monétaire et financier,
+lorsqu'une personne physique agissant directement, par personne interposée ou par l'intermédiaire d'une
+fiducie possède plus de 10 % des parts du fonds.
+5. Au gain net retiré des cessions de parts des fonds communs de créances dont la durée à l'émission est
+supérieure à cinq ans.
+6. Au gain net retiré par le bénéficiaire lors d'un rachat par une société émettrice de ses propres titres et défini
+au 8 ter de l'article 150-0 D ;
+7. Sous réserve de l'application de l'article 163 quinquies B et du 8, en cas de distribution d'une fraction des
+actifs d'un fonds commun de placement à risques, d'un fonds professionnel spécialisé relevant de l'article L.
+214-37 du code monétaire et financier, dans sa rédaction antérieure à l'ordonnance n° 2013-676 du 25 juillet
+2013 modifiant le cadre juridique de la gestion d'actifs, d'un fonds professionnel de capital d'investissement
+ou d'une entité de même nature constituée sur le fondement d'un droit étranger, à l'excédent du montant des
+sommes ou valeurs distribuées sur le montant des apports, ou le prix d'acquisition des parts s'il est différent
+du montant des apports ;
+7 bis. Sous réserve de l'application de l'article 163 quinquies B, du 8 du présent II et du 2 du III, en cas
+de distribution de plus-values par un organisme de placement collectif en valeurs mobilières ou par un
+placement collectif relevant des articles L. 214-24-24 à L. 214-32-1, L. 214-139 à L. 214-147 et L. 214-152
+à L. 214-166 du code monétaire et financier, ou par une entité de même nature constituée sur le fondement
+d'un droit étranger ;
+8. Aux gains nets réalisés, directement, par personne interposée ou par l'intermédiaire d'une fiducie, par
+les salariés ou par les dirigeants soumis au régime fiscal des salariés, des sociétés de capital-risque, des
+sociétés de gestion de tels fonds ou de sociétés de capital-risque, ou des sociétés qui réalisent des prestations
+de services liées à la gestion des fonds précités ou des sociétés de capital-risque, lors de la cession ou du
+rachat de parts de fonds communs de placement à risques ou de fonds professionnels spécialisés relevant de
+l'article L. 214-37 du code monétaire et financier dans sa rédaction antérieure à l'ordonnance n° 2013-676
+du 25 juillet 2013 modifiant le cadre juridique de la gestion d'actifs ou de fonds professionnels de capital
+investissement ou d'actions de sociétés de capital-risque donnant lieu à des droits différents sur l'actif net ou
+les produits du fonds ou de la société et attribuées en fonction de la qualité de la personne, sous réserve du
+respect des conditions suivantes :
+1° Les parts ou actions cédées ont été souscrites ou acquises moyennant un prix correspondant à la valeur des
+parts ou actions ;
+2° L'ensemble des parts d'un même fonds commun de placement à risques ou d'un même fonds professionnel
+spécialisé relevant de l'article L. 214-37 du code monétaire et financier dans sa rédaction antérieure à
+l'ordonnance n° 2013-676 du 25 juillet 2013 modifiant le cadre juridique de la gestion d'actifs ou d'un même
+fonds professionnel de capital investissement ou des actions d'une même société de capital-risque donnant
+lieu à des droits différents sur l'actif net ou les produits du fonds ou de la société et attribuées en fonction de
+la qualité de la personne satisfont aux conditions suivantes :
+a) Elles constituent une seule et même catégorie de parts ou actions ;
+b) Elles représentent :
+-au moins 1 % du montant total des souscriptions dans le fonds ou la société pour sa fraction inférieure ou
+égale à un milliard d'euros ;
+-et au moins 0,5 % de la fraction du montant total des souscriptions dans le fonds ou la société qui excède un
+milliard d'euros.
+A titre dérogatoire, un pourcentage distinct peut être fixé par décret pour certaines catégories de fonds ou de
+sociétés, après avis de l'Autorité des marchés financiers ;
+c) Les sommes ou valeurs auxquelles donnent droit ces parts ou actions sont versées au moins cinq ans après
+la date de la constitution du fonds ou de l'émission de ces actions et, pour les parts de fonds communs de
+placement à risques ou de fonds professionnels spécialisés relevant de l'article L. 214-37 du code monétaire
+et financier dans sa rédaction antérieure à l'ordonnance n° 2013-676 du 25 juillet 2013 modifiant le cadre
+juridique de la gestion d'actifs ou de fonds professionnels de capital investissement, après le remboursement
+des apports des autres porteurs de parts ;
+3° Le cédant perçoit une rémunération normale au titre du contrat de travail ou du mandat social qui lui a
+permis de souscrire ou d'acquérir ces parts ou actions.
+Ces dispositions s'appliquent également dans les mêmes conditions :
+1° Aux distributions mentionnées aux 7 et 7 bis perçues par les personnes visées au premier alinéa du présent
+8 et afférentes à des parts de fonds communs de placement à risques ou de fonds professionnels spécialisés
+relevant de l'article L. 214-37 du code monétaire et financier dans sa rédaction antérieure à l'ordonnance n°
+2013-676 du 25 juillet 2013 modifiant le cadre juridique de la gestion d'actifs ou de fonds professionnels de
+capital investissement donnant lieu à des droits différents sur l'actif net ou les produits du fonds et attribuées
+en fonction de la qualité de la personne ;
+2° Aux gains nets mentionnés au premier alinéa du présent 8 réalisés par les salariés ou dirigeants soumis
+au régime fiscal des salariés d'une entité, constituée dans un Etat membre de l'Union européenne ou dans un
+autre Etat partie à l'accord sur l'Espace économique européen ayant conclu avec la France une convention
+d'assistance administrative en vue de lutter contre la fraude et l'évasion fiscales et dont l'objet principal est
+d'investir dans des sociétés dont les titres ne sont pas admis aux négociations sur un marché d'instruments
+financiers français ou étranger, ou d'une société qui réalise des prestations de services liées à la gestion de
+cette entité, lorsque les titres cédés ou rachetés sont des droits représentatifs d'un placement financier dans
+cette entité donnant lieu à des droits différents sur l'actif net ou les produits de l'entité et sont attribués en
+fonction de la qualité de la personne, ainsi qu'aux distributions, représentatives des plus-values réalisées par
+l'entité, perçues par ces mêmes salariés ou dirigeants en rémunération de ces droits.
+9. Aux gains nets réalisés et aux distributions perçues, directement ou par personne ou entité interposées, à
+raison de parts ou actions émises par une entité ayant pour objet principal d'investir dans des sociétés dont les
+titres ne sont pas admis aux négociations sur un marché d'instruments financiers, ou de droits représentatifs
+d'un placement financier dans cette entité qui donnent lieu à des droits différents sur l'actif net ou les produits
+de l'entité et attribués en fonction de la qualité de la personne, sous réserve du respect de l'ensemble des
+conditions suivantes :
+1° Le bénéficiaire établit en France son domicile fiscal, au sens de l'article 4 B, entre le 11 juillet 2018 et le
+31 décembre 2022 et n'a pas été fiscalement domicilié en France au cours des trois années civiles précédant
+cette installation ;
+2° Le bénéficiaire est salarié, prestataire, associé ou dirigeant de l'entité d'investissement mentionnée au
+premier alinéa du présent 9 ou d'une société réalisant des prestations de services liées à la gestion de cette
+entité et en retire une rémunération normale au titre de son contrat de travail, de son contrat de prestations de
+services, de son contrat d'association ou de son mandat social ;
+3° Les parts, actions ou droits mentionnés au premier alinéa du présent 9 ont été souscrits, obtenus ou
+acquis à une date à laquelle le bénéficiaire était fiscalement domicilié hors de France ou conformément
+aux termes et conditions fixés par le règlement ou les statuts de l'entité d'investissement préalablement
+à l'établissement en France du domicile fiscal du bénéficiaire. Ces parts, actions ou droits n'ont pas été
+intégralement souscrits, obtenus ou acquis à titre gratuit ;
+4° L'entité d'investissement mentionnée au premier alinéa du présent 9 est constituée hors de France dans
+un Etat partie à l'accord sur l'Espace économique européen ou dans un Etat ou territoire ayant conclu avec la
+France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion fiscales.
+Les dispositions du présent 9 ne peuvent pas donner lieu à l'application du II de l'article 155 B.
+10. Au gain net déterminé dans les conditions prévues au second alinéa du 4 ter du III du présent article en
+cas de clôture du plan dès lors que l'une des conditions prévues pour l'application des articles L. 221-34-2, L.
+221-34-3 et L. 221-34-4 du code monétaire et financier n'est pas remplie.
+III. – Les dispositions du I ne s'appliquent pas :
+1. Aux cessions et aux rachats de parts de fonds communs de placement à risques ou de fonds professionnels
+de capital d'investissement mentionnées à l'article 163 quinquies B, réalisés par les porteurs de parts,
+remplissant les conditions fixées aux I et II ou aux I et III bis de l'article précité, après l'expiration de la
+période mentionnée au I du même article. Cette disposition n'est pas applicable si, à la date de la cession ou
+du rachat, le fonds a cessé de remplir les conditions énumérées au II ou au III bis de l'article 163 quinquies
+B ;
+Les dispositions du premier alinéa ne s'appliquent pas aux parts de fonds communs de placement à risques
+ou de fonds professionnels de capital d'investissement donnant lieu à des droits différents sur l'actif net ou
+sur les produits du fonds et attribuées en fonction de la qualité de la personne.
+1 bis. Aux cessions d'actions de sociétés de capital-risque mentionnées au 2 du II de l'article 163 quinquies
+C souscrites ou acquises à compter du 1er janvier 2001, réalisées par des actionnaires remplissant les
+conditions fixées au 2 du II de l'article précité, après l'expiration de la période de cinq ans mentionnée au 2°
+du 2 du même II. Cette disposition n'est pas applicable si, à la date de la cession, la société a cessé de remplir
+les conditions énumérées à l'article 1er-1 de la loi n° 85-695 du 11 juillet 1985 ;
+Les dispositions du premier alinéa ne s'appliquent pas aux actions de sociétés de capital-risque donnant lieu
+à des droits différents sur l'actif net ou sur les produits du fonds et attribuées en fonction de la qualité de la
+personne.
+2. Aux titres cédés dans le cadre de leur gestion par les fonds communs de placement sous réserve qu'aucune
+personne physique agissant directement, par personne interposée ou par l'intermédiaire d'une fiducie ne
+possède plus de 10 % des parts du fonds. Cette condition ne s'applique pas aux fonds mentionnés au 3.
+3. Aux titres cédés dans le cadre de leur gestion par les fonds communs de placement, constitués en
+application des législations sur la participation des salariés aux résultats des entreprises et les plans d'épargne
+d'entreprise ainsi qu'aux rachats de parts de tels fonds ;
+4. A la cession des titres acquis dans le cadre de la législation sur la participation des salariés aux résultats
+de l'entreprise et sur l'actionnariat des salariés, à la condition que ces titres revêtent la forme nominative et
+comportent la mention d'origine ;
+4 bis A la cession des titres détenus dans un plan d'épargne retraite mentionné à l'article L. 224-1 du
+code monétaire et financier ou dans un sous-compte français du produit paneuropéen d'épargne-retraite
+individuelle mentionné à l'article L. 225-1 du même code ;
+4 ter. Au gain net réalisé dans le cadre d'un plan d'épargne avenir climat mentionné à l'article L. 221-34-2 du
+code monétaire et financier, lors du retrait de titres ou de liquidités ou du rachat dudit plan.
+Le gain net réalisé à l'occasion de chaque retrait ou rachat s'entend de la différence entre, d'une part, le
+montant du retrait ou du rachat et, d'autre part, une fraction du montant total des versements effectués sur le
+plan depuis la date de son ouverture diminué du montant des versements correspondant aux retraits ou aux
+rachats effectués antérieurement ; cette fraction est égale au rapport entre le montant du retrait ou du rachat
+effectué et la valeur liquidative totale du plan à la date du retrait ou du rachat ;
+5. (Abrogé) ;
+6. Aux profits réalisés dans le cadre des placements en report par les contribuables qui effectuent de tels
+placements ;
+7. A la fraction de plus-values due dans les conditions prévues aux articles L. 23-11-1 à L. 23-11-4 du code
+de commerce.
+IV. – Le I ne s'applique pas aux partages qui portent sur des valeurs mobilières, des droits sociaux et des
+titres assimilés, dépendant d'une succession ou d'une communauté conjugale et qui interviennent uniquement
+entre les membres originaires de l'indivision, leur conjoint, des ascendants, des descendants ou des ayants
+droit à titre universel de l'un ou de plusieurs d'entre eux. Il en est de même des partages portant sur des biens
+indivis issus d'une donation-partage et des partages portant sur des biens indivis acquis par des partenaires
+ayant conclu un pacte civil de solidarité ou par des époux, avant ou pendant le pacte ou le mariage. Ces
+partages ne sont pas considérés comme translatifs de propriété dans la mesure des soultes ou plus-values.
 ```
 
 ---
@@ -1157,12 +2417,6 @@ imposables acquis à compter du 1er janvier 1998, ou constatés à compter de la
 contrats en unités de compte visés au deuxième alinéa de l'article L. 131-1 du code des assurances.
 L'abattement mentionné au quatrième alinéa du présent 1° s'applique en priorité aux produits attachés aux
 primes versées avant le 27 septembre 2017, puis, pour les produits attachés aux primes versées à compter
- 
- 
- 
- 
- 
-
 de cette même date et lorsque l'option prévue au 2 de l'article 200 A n'est pas exercée, à la fraction de ces
 produits imposables au taux mentionné au 2° du B du 1 de l'article 200 A, puis à ceux imposables au taux
 mentionné au 1° du même B.
@@ -1181,7 +2435,223 @@ au quatrième alinéa du présent 1° et que l'intégralité des sommes reçues 
 avant le 31 décembre de l'année dudit rachat sur un plan d'épargne retraite défini à l'article L. 224-1 du code
 monétaire et financier, les produits imposables afférents à ce rachat, sont exonérés dans la limite annuelle
 globale, pour l'ensemble de leurs bons ou contrats, de 4 600 € pour les contribuables célibataires, veufs ou
-divorcés et de 9 200 € pour les contribuabl
+divorcés et de 9 200 € pour les contribuables mariés soumis à imposition commune. L'application de cette
+exonération aux produits afférents aux différentes primes du bon ou contrat suit la règle de priorité fixée au
+cinquième alinéa du présent 1°. L'abattement mentionné au quatrième alinéa s'applique le cas échéant aux
+produits non exonérés du bon ou contrat, suivant la même règle de priorité.
+2° La transformation partielle ou totale d'un bon ou contrat mentionné au 1° du présent I en un bon ou
+contrat mentionné au même 1° permettant qu'une part ou l'intégralité des primes versées soient affectées à
+l'acquisition de droits exprimés en unités de compte mentionnées au deuxième alinéa de l'article L. 131-1 du
+code des assurances ou de droits donnant lieu à la constitution d'une provision de diversification n'entraîne
+pas les conséquences fiscales d'un dénouement. Cette transformation s'effectue soit par avenant au bon ou
+contrat, soit par la souscription d'un nouveau bon ou contrat auprès de la même entreprise d'assurance.
+I bis. – Les produits attachés aux bons ou contrats mentionnés au I d'une durée égale ou supérieure à six ans
+pour les bons ou contrats souscrits entre le 1er janvier 1983 et le 31 décembre 1989 et à huit ans pour les
+bons ou contrats souscrits à compter du 1er janvier 1990, acquis au 31 décembre 1997 ou constatés à cette
+même date pour les bons ou contrats en unités de compte visés au deuxième alinéa de l'article L. 131-1 du
+code des assurances, sont exonérés d'impôt sur le revenu quelle que soit la date des versements auxquels ces
+produits se rattachent. Il en est de même des produits de ces bons ou contrats afférents à des primes versées
+antérieurement au 26 septembre 1997, acquis ou constatés à compter du 1er janvier 1998.
+I ter. – Sont également exonérés d'impôt sur le revenu les produits des contrats mentionnés au I bis souscrits
+antérieurement au 26 septembre 1997, lorsque ces produits, acquis ou constatés à compter du 1er janvier
+1998, sont afférents :
+1° aux primes versées sur les contrats à primes périodiques et n'excédant pas celles prévues initialement au
+contrat ;
+2° aux versements programmés effectués du 26 septembre 1997 au 31 décembre 1997 ; les versements
+programmés s'entendent de ceux effectués en exécution d'un engagement antérieur au 26 septembre 1997
+prévoyant la périodicité et le montant du versement ;
+3° aux autres versements effectués du 26 septembre 1997 au 31 décembre 1997, sous réserve que le total de
+ces versements n'excède pas 200 000 F par souscripteur.
+I quater A. - Sont également exonérés d'impôt sur le revenu les produits des bons ou contrats souscrits avant
+le 1er janvier 1983 attachés à des primes versées antérieurement au 10 octobre 2019.
+I quater. – Sont exonérés d'impôt sur le revenu les produits attachés aux bons ou contrats en unités de compte
+visés au deuxième alinéa de l'article L. 131-1 du code des assurances mentionnés au I, d'une durée égale ou
+supérieure à huit ans, souscrits avant le 1er janvier 2005 et dont l'unité de compte est la part ou l'action d'un
+organisme de placement collectif en valeurs mobilières ou d'un placement collectif relevant des paragraphes
+1,2 et 6 de la sous-section 2, du paragraphe 2 ou du sous-paragraphe 1 du paragraphe 1 de la sous-section 3
+de la section 2 du chapitre IV du titre Ier du livre II du code monétaire et financier, dont l'actif est constitué
+pour 50 % au moins de :
+a) Actions ou certificats d'investissement de sociétés et certificats coopératifs d'investissement admis aux
+négociations sur un marché réglementé d'instruments financiers figurant sur les listes mentionnées à l'article
+16 de la directive 93/22/ CEE du Conseil, du 10 mai 1993, concernant les services d'investissement dans le
+domaine des valeurs mobilières ;
+b) Droits ou bons de souscription ou d'attribution attachés aux actions mentionnées au a ;
+c) Actions ou parts d'organismes de placement collectif en valeurs mobilières ou de placements collectifs
+relevant des paragraphes 1,2 et 6 de la sous-section 2, du paragraphe 2 ou du sous-paragraphe 1 du
+paragraphe 1 de la sous-section 3 de la section 2 du chapitre IV du titre Ier du livre II du code monétaire et
+financier, qui emploient plus de 60 % de leur actif en titres et droits mentionnés aux a et b ;
+d) Parts de fonds communs de placement à risques, de fonds professionnels spécialisés relevant de l'article L.
+214-37 du code monétaire et financier dans sa rédaction antérieure à l'ordonnance n° 2013-676 du 25 juillet
+2013 modifiant le cadre juridique de la gestion d'actifs, de fonds professionnels de capital investissement, de
+fonds d'investissement de proximité, de fonds communs de placement dans l'innovation, actions de sociétés
+de capital risque ou de sociétés financières d'innovation ;
+e) Actions émises par des sociétés qui exercent une activité autre que les activités mentionnées à la deuxième
+phrase du premier alinéa du I de l'article 44 sexies et dont les titres ne sont pas admis aux négociations sur un
+marché réglementé ;
+f) Actions, admises aux négociations sur un marché d'instruments financiers, dont le fonctionnement est
+assuré par une entreprise de marché ou un prestataire de services d'investissement autre qu'une société de
+gestion de portefeuille ou tout autre organisme similaire étranger, d'un Etat partie à l'accord sur l'Espace
+économique européen, émises par des sociétés qui exercent une activité mentionnée à l'article 34 autre que
+celles mentionnées à la deuxième phrase du premier alinéa du I de l'article 44 sexies et dont la capitalisation
+boursière est inférieure à 150 millions d'euros. La capitalisation boursière est évaluée selon la moyenne des
+cours d'ouverture des soixante jours de bourse précédant celui de l'investissement. Un décret en Conseil
+d'Etat détermine les modalités d'application de cette évaluation, notamment en cas de première cotation ou
+d'opération de restructuration d'entreprises.
+Les titres mentionnés aux a, b, e et f doivent être émis par des sociétés qui ont leur siège dans un Etat de
+l'Union européenne, ou dans un autre Etat partie à l'accord sur l'Espace économique européen ayant conclu
+avec la France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion
+fiscales, et sont soumises à l'impôt sur les sociétés dans les conditions de droit commun au taux normal ou le
+seraient dans les mêmes conditions si l'activité était exercée en France.
+Les titres mentionnés aux d, e et f doivent représenter 5 % au moins de l'actif de l'organisme de placement
+collectif en valeurs mobilières ou du placement collectif relevant des paragraphes 1,2 et 6 de la sous-section
+2, du paragraphe 2 ou du sous-paragraphe 1 du paragraphe 1 de la sous-section 3 de la section 2 du chapitre
+IV du titre Ier du livre II du code monétaire et financier.
+I quinquies. – 1. Sont exonérés d'impôt sur le revenu les produits attachés aux bons ou contrats de
+capitalisation et placements de même nature mentionnés au I, souscrits du 1er janvier 2005 au 31 décembre
+2013, d'une durée égale ou supérieure à huit ans et dans lesquels les primes versées sont représentées par
+une ou plusieurs unités de compte constituées de parts ou d'actions d'organismes de placement collectif
+en valeurs mobilières, de placements collectifs relevant des paragraphes 1,2 et 6 de la sous-section 2, du
+paragraphe 2 ou du sous-paragraphe 1 du paragraphe 1 de la sous-section 3 de la section 2 du chapitre IV
+du titre Ier du livre II du code monétaire et financier ou d'organismes de même nature établis soit dans un
+autre Etat membre de l'Union européenne, soit dans un autre Etat partie à l'accord sur l'Espace économique
+européen ayant conclu avec la France une convention d'assistance administrative en vue de lutter contre
+la fraude et l'évasion fiscales et qui bénéficient de la procédure de reconnaissance mutuelle des agréments
+prévue par la directive 85/611/CEE du Conseil, du 20 décembre 1985, portant coordination des dispositions
+législatives, réglementaires et administratives concernant certains organismes de placement collectif en
+valeurs mobilières (OPCVM), et dont l'actif est constitué pour 30 % au moins :
+a. D'actions ne relevant pas du 3 du II de l'article L. 211-1 du code monétaire et financier, admises aux
+négociations sur un marché d'instruments financiers, dont le fonctionnement est assuré par une entreprise de
+marché ou un prestataire de services d'investissement autre qu'une société de gestion de portefeuille ou tout
+autre organisme similaire étranger, d'un Etat partie à l'accord sur l'Espace économique européen ;
+b. De droits ou bons de souscription ou d'attribution attachés aux actions mentionnées au a ;
+c. D'actions ou parts d'organismes de placement collectif en valeurs mobilières et des placements collectifs
+mentionnés au premier alinéa dont l'actif est constitué à plus de 75 % en titres et droits mentionnés aux a et
+b ;
+d. De parts de fonds communs de placement à risques ou de fonds professionnels de capital investissement
+qui remplissent les conditions prévues au II de l'article 163 quinquies B, de fonds d'investissement de
+proximité mentionnés à l'article L. 214-31 du code monétaire et financier, de fonds communs de placement
+dans l'innovation mentionnés à l'article L. 214-30 du même code et d'actions de sociétés de capital-risque
+qui remplissent les conditions prévues à l'article 1er-1 de la loi n° 85-695 du 11 juillet 1985 portant diverses
+dispositions d'ordre économique et financier ;
+e. D'actions ou parts émises par des sociétés qui exercent une activité mentionnée à l'article 34 dont les titres
+ne sont pas admis aux négociations sur un marché d'instruments financiers français ou étranger, dont le
+fonctionnement est assuré par une entreprise de marché ou un prestataire de services d'investissement ou
+tout autre organisme similaire étranger, sous réserve que le souscripteur du bon ou contrat, son conjoint et
+leurs ascendants et descendants ne détiennent pas ensemble, pendant la durée du bon ou contrat, directement
+ou indirectement, plus de 25 % des droits dans les bénéfices de la société ou n'ont pas détenu une telle
+participation à un moment quelconque au cours des cinq années précédant la souscription du bon ou contrat ;
+f. D'actions, admises aux négociations sur un marché d'instruments financiers, dont le fonctionnement est
+assuré par une entreprise de marché ou un prestataire de services d'investissement ou tout autre organisme
+similaire étranger, d'un Etat partie à l'accord sur l'Espace économique européen, émises par des sociétés qui
+exercent une activité mentionnée à l'article 34 et dont la capitalisation boursière est inférieure à 150 millions
+d'euros. La capitalisation boursière est évaluée selon la moyenne des cours d'ouverture des soixante jours de
+bourse précédant celui de l'investissement. Un décret en Conseil d'Etat détermine les modalités d'application
+de cette évaluation, notamment en cas de première cotation ou d'opération de restructuration d'entreprises ;
+g. De parts de fonds ou actions de sociétés mentionnées au d, dont l'actif est constitué à plus de 50 % en titres
+mentionnés au e.
+Les titres et droits mentionnés aux a, b, e et f doivent être émis par des sociétés qui ont leur siège dans
+un Etat membre de l'Union européenne, ou dans un autre Etat partie à l'accord sur l'Espace économique
+européen ayant conclu avec la France une convention d'assistance administrative en vue de lutter contre
+la fraude et l'évasion fiscales, et qui sont soumises à l'impôt sur les sociétés dans les conditions de droit
+commun au taux normal ou le seraient dans les mêmes conditions si elles exerçaient leur activité en France.
+Les titres mentionnés aux d à g doivent représenter 10 % au moins de l'actif de chaque organisme de
+placement collectif en valeurs mobilières ou placement collectif relevant des paragraphes 1,2 et 6 de la sous-
+section 2, du paragraphe 2 ou du sous-paragraphe 1 du paragraphe 1 de la sous-section 3 de la section 2 du
+chapitre IV du titre Ier du livre II du code monétaire et financier dont les parts ou actions constituent les
+unités de compte du bon ou contrat, les titres mentionnés aux e et g représentant au moins 5 % de ce même
+actif.
+Les règlements ou les statuts des organismes de placement collectif en valeurs mobilières et des placements
+collectifs mentionnés au premier alinéa prévoient le respect des proportions d'investissement prévues à ce
+même alinéa et au dixième alinéa. Il en est de même pour les organismes et sociétés mentionnés aux c et g
+s'agissant des proportions d'investissement mentionnées à ces mêmes alinéas.
+2. Lorsque les organismes de placement collectif en valeurs mobilières, les placements collectifs et les
+sociétés mentionnés au premier alinéa et aux c et g du 1 recourent à des instruments financiers à terme,
+à des opérations de pension, ainsi qu'à toute autre opération temporaire de cession ou d'acquisition de
+titres, ces organismes ou sociétés doivent respecter, outre les règles d'investissement de l'actif prévues au
+1, les proportions d'investissement minimales mentionnées aux premier et dixième alinéas et aux c et g du
+1, calculées en retenant au numérateur la valeur des titres éligibles à ces proportions dont ils perçoivent
+effectivement les produits. Un décret en Conseil d'Etat précise les modalités de calcul et les justificatifs à
+produire par les organismes ou sociétés concernés.
+3. Les bons ou contrats mentionnés au 1 peuvent également prévoir qu'une partie des primes versées est
+affectée à l'acquisition de droits qui ne sont pas exprimés en unités de compte ou qui sont exprimés en unités
+de compte autres que celles mentionnées au premier alinéa du 1. Pour ces bons ou contrats, les proportions
+d'investissement que doivent respecter la ou les unités de compte mentionnées au premier alinéa du 1 sont
+égales aux proportions prévues au même 1 multipliées par le rapport qui existe entre la prime versée et la
+part de cette prime représentée par la ou les unités de compte précitées.
+I sexies. – Un décret fixe les modalités d'application des I à I quinquies et notamment les obligations
+déclaratives des contribuables et des établissements payeurs.
+II. – 1. Les personnes physiques qui bénéficient de produits mentionnés au I attachés à des primes versées
+jusqu'au 26 septembre 2017 peuvent opter pour leur assujettissement à un prélèvement qui libère les revenus
+auxquels il s'applique de l'impôt sur le revenu lorsque la personne qui assure le paiement de ces revenus est
+établie en France, qu'il s'agisse ou non du débiteur, ce dernier étant établi dans un Etat membre de l'Union
+européenne ou dans un autre Etat partie à l'accord sur l'Espace économique européen ayant conclu avec la
+France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion fiscales.
+L'option, qui est irrévocable, est exercée au plus tard lors de l'encaissement des revenus.
+Le caractère libératoire du prélèvement ne peut être invoqué pour les produits qui sont pris en compte pour
+la détermination du bénéfice imposable d'une entreprise industrielle, commerciale, artisanale ou agricole ou
+d'une profession non commerciale.
+Le taux du prélèvement est fixé :
+a. A 45 % lorsque la durée du contrat a été inférieure à deux ans ; ce taux est de 35 p. 100 pour les contrats
+souscrits à compter du 1er janvier 1990 ;
+b. A 25 % lorsque cette durée a été égale ou supérieure à deux ans et inférieure à quatre ans ; ce taux est de
+35 p. 100 pour les contrats souscrits à compter du 1er janvier 1990.
+c. A 15 % lorsque cette durée a été égale ou supérieure à quatre ans.
+d. A 7,5 % lorsque cette durée a été égale ou supérieure à six ans pour les bons ou contrats souscrits entre
+le 1er janvier 1983 et le 31 décembre 1989 et à huit ans pour les contrats souscrits à compter du 1er janvier
+1990.
+La durée des contrats s'entend, pour les contrats à prime unique et les contrats comportant le versement de
+primes périodiques régulièrement échelonnées, de la durée effective du contrat et, dans les autres cas, de
+la durée moyenne pondérée. La disposition relative à la durée moyenne pondérée n'est pas applicable aux
+contrats conclus à compter du 1er janvier 1990.
+2. Les I et V de l'article 125 A sont applicables aux produits de bons ou contrats de capitalisation ou
+placements de même nature mentionnés au I du présent article ou au 6° de l'article 120, attachés à des primes
+versées à compter du 27 septembre 2017.
+Le taux du prélèvement appliqué à ces produits est fixé à :
+a) 12,8 % ;
+b) 7,5 % lorsque la durée du contrat a été égale ou supérieure à six ans pour les bons ou contrats souscrits
+entre le 1er janvier 1983 et le 31 décembre 1989 et à huit ans pour les contrats souscrits à compter du 1er
+janvier 1990. Ce taux est également applicable aux bons ou contrats souscrits avant le 1er janvier 1983.
+Ce prélèvement n'est pas libératoire de l'impôt sur le revenu établi dans les conditions prévues aux 1 ou 2 de
+l'article 200 A et dû à raison des revenus auxquels s'est appliqué ce prélèvement.
+Le prélèvement s'impute sur l'impôt sur le revenu dû au titre de l'année au cours de laquelle il a été opéré. S'il
+excède l'impôt dû, l'excédent est restitué.
+II bis. – Les prélèvements mentionnés aux 1 et 2 du II sont obligatoirement applicables aux produits et gains
+de cession de bons ou contrats mentionnés au I, aux taux prévus aux a à d du 1 du même II ou, pour les
+produits ou gains attachés à des primes versées à compter du 27 septembre 2017, au taux prévu au a du 2 de
+ce même II, lorsque ceux-ci bénéficient à des personnes qui n'ont pas leur domicile fiscal ou qui ne sont pas
+établies en France.
+Le taux de ces prélèvements est fixé à 75 %, quelle que soit la durée du contrat, lorsque les produits ou gains
+bénéficient à des personnes qui ont leur domicile fiscal ou qui sont établies dans un Etat ou territoire non
+coopératif au sens de l'article 238-0 A autre que ceux mentionnés au 2° du 2 bis du même article 238-0 A,
+sauf si le débiteur apporte la preuve que les opérations auxquelles correspondent ces revenus et produits ont
+principalement un objet et un effet autres que de permettre la localisation de ces revenus et produits dans un
+Etat ou territoire non coopératif au sens dudit article 238-0 A.
+Les prélèvements mentionnés au premier alinéa du présent II bis libèrent les revenus auxquels ils
+s'appliquent de l'impôt sur le revenu ou sur les bénéfices.
+Toutefois, lorsque le bénéficiaire mentionné au même premier alinéa est une personne physique qui a son
+domicile fiscal dans un Etat ou territoire autre que ceux mentionnés au deuxième alinéa, il peut demander,
+par voie de réclamation présentée conformément aux dispositions de l'article L. 190 du livre des procédures
+fiscales, le bénéfice du taux mentionné au premier alinéa du 2° du B du 1 de l'article 200 A du présent code
+dans les conditions prévues par ce même 2°. Pour l'appréciation du seuil de 150 000 € mentionné audit 2°,
+seules sont retenues, suivant les mêmes règles que celles prévues au a du même 2°, les primes sur l'ensemble
+des bons ou contrats de capitalisation ainsi que les placements de même nature souscrits auprès d'entreprises
+d'assurance établies en France.
+II ter. – La fraction ayant le caractère de produits attachés aux bons ou contrats de capitalisation, ainsi qu'aux
+produits de même nature, notamment les contrats d'assurance sur la vie, des sommes versées par la Caisse
+des dépôts et consignations en application des articles L. 132-27-2 du code des assurances et L. 223-25-4 du
+code de la mutualité est soumise à l'impôt sur le revenu déterminé suivant les règles de taxation en vigueur
+l'année de ce versement ou, le cas échéant, sur option du contribuable et pour les seuls produits se rattachant
+à des primes versées jusqu'au 26 septembre 2017, au prélèvement prévu au 1 du II du présent article. Le
+montant du revenu imposable est déterminé dans les conditions et selon les modalités applicables à la date de
+l'échéance de ces bons ou contrats.
+III. – Les prélèvements mentionnés aux II et II bis sont établis, liquidés et recouvrés sous les mêmes
+garanties et sanctions que celui mentionné à l'article 125 A. Les dispositions du 1 des articles 242 ter et 1736
+sont applicables.
+IV. – Les entreprises d'assurance sont tenues de communiquer à l'assuré l'ensemble des informations et
+documents permettant à ce dernier de déclarer les produits, le cas échéant rachetés, selon le régime fiscal qui
+leur est applicable.
+Elles communiquent également ces informations à l'administration. Cette déclaration est effectuée dans les
+conditions prévues à l'article 242 ter.
 ```
 
 ---
@@ -1227,18 +2697,6 @@ L'exonération mentionnée au premier alinéa du présent 2° s'applique, dans l
 contribuable et de 150 000 € de plus-value nette imposable, aux cessions réalisées :
 a) Au plus tard le 31 décembre de la dixième année suivant celle du transfert par le cédant de son domicile
 fiscal hors de France ;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 b) Sans condition de délai, lorsque le cédant a la libre disposition du bien au moins depuis le 1er janvier de
 l'année précédant celle de la cession ;
 3° Qui constituent les dépendances immédiates et nécessaires des biens mentionnés aux 1° et 2°, à la
@@ -1247,7 +2705,109 @@ condition que leur cession intervienne simultanément avec celle desdits immeubl
 lesquels le cédant a exercé le droit de délaissement prévu aux articles L. 152-2 et L. 311-2 ainsi qu'au
 dernier alinéa de l'article L. 424-1 du code de l'urbanisme ou au I de l'article L. 515-16-3 du code de
 l'environnement, à condition qu'il soit procédé au remploi de l'intégralité de l'indemnité d'expropriation ou du
-prix de cession par l'acquisition, la construction, l
+prix de cession par l'acquisition, la construction, la reconstruction ou l'agrandissement d'un ou de plusieurs
+immeubles dans un délai de douze mois à compter de la date de perception de l'indemnité d'expropriation ou
+du prix de cession ;
+5° Qui sont échangés dans le cadre d'opérations de remembrement mentionnées à l'article 1055, d'opérations
+effectuées conformément aux articles L. 123-1, L. 123-24 et L. 124-1 du code rural et de la pêche maritime
+ainsi qu'aux soultes versées en application de l'article L. 123-4 du même code. En cas de vente de biens reçus
+à cette occasion, la plus-value est calculée à partir de la date et du prix d'acquisition du bien originel ou de la
+partie constitutive la plus ancienne dans les cas de vente de lots remembrés ;
+6° Dont le prix de cession est inférieur ou égal à 15 000 €. Le seuil de 15 000 € s'apprécie en tenant compte
+de la valeur en pleine propriété de l'immeuble ou de la partie d'immeuble ;
+En cas de cession d'un bien détenu en indivision, ce seuil s'apprécie au regard de chaque quote-part indivise.
+En cas de cession d'un bien dont le droit de propriété est démembré, le seuil de 15 000 € s'apprécie au regard
+de chaque quote-part indivise en pleine propriété ;
+7° Qui sont cédés jusqu'au 31 décembre 2027 :
+a) A un organisme d'habitations à loyer modéré, à une société d'économie mixte gérant des logements
+sociaux, à l'association mentionnée à l'article L. 313-34 du code de la construction et de l'habitation, à une
+société civile immobilière dont cette association détient la majorité des parts pour les logements mentionnés
+au 4° de l'article L. 831-1 du même code, à un organisme bénéficiant de l'agrément relatif à la maîtrise
+d'ouvrage prévu à l'article L. 365-2 dudit code ou à un organisme de foncier solidaire ;
+b) A tout autre cessionnaire.
+Pour l'application du présent 7°, les cessionnaires mentionnés aux a et b s'engagent personnellement,
+dans un délai respectivement de dix ans et de quatre ans à compter de la date de l'acquisition, par une
+mention portée dans l'acte authentique d'acquisition, à la construction, le cas échéant à la démolition des
+constructions existantes suivie d'une reconstruction, à la réhabilitation complète de ces dernières concourant
+à la production d'immeubles neufs au sens du 2° du 2 du I de l'article 257 ou à la réhabilitation lourde
+de ces dernières dans des conditions définies par décret et à l'achèvement d'un ou de plusieurs bâtiments
+d'habitation collectifs, au sens du 6° de l'article L. 111-1 du code de la construction et de l'habitation, dont
+le gabarit est au moins égal à 75 % du gabarit maximal autorisé tel qu'il résulte de l'application des règles
+du plan local d'urbanisme ou d'un document d'urbanisme en tenant lieu ainsi qu'à l'affectation, dès leur
+achèvement, d'un prorata de la surface habitable des logements ainsi réalisés ou réhabilités par rapport à
+la surface totale des constructions du programme immobilier, à du logement social défini aux 3°, 5° et 6°
+de l'article L. 831-1 du même code, à du logement faisant l'objet d'un bail réel solidaire défini à l'article L.
+255-1 dudit code ou, lorsque les biens ou droits définis au I du présent article se situent pour tout ou partie
+de leur surface dans des communes classées, par arrêté des ministres chargés du budget et du logement,
+dans des zones géographiques se caractérisant par un déséquilibre important entre l'offre et la demande
+de logements, à du logement intermédiaire défini à l'article L. 302-16 du code de la construction et de
+l'habitation. Lorsque les biens ou les droits sont situés dans une commune mentionnée au I de l'article L.
+302-5 du même code et que celle-ci n'atteint pas les seuils fixés aux I et II du même article L. 302-5, le
+cessionnaire s'engage également à ce que la part de surface habitable de logements sociaux définis à la
+première phrase du présent alinéa représente un seuil minimal de 25 % de la surface totale des constructions
+du programme immobilier.
+L'exonération est calculée au prorata de la surface habitable que le cessionnaire s'est engagé à affecter à
+des logements sociaux ou intermédiaires par rapport à la surface totale des constructions du programme
+immobilier. Elle est totale pour les organismes mentionnés au a du présent 7° lorsque le prorata dépasse 80
+%.
+En cas de manquement aux engagements prévus au quatrième alinéa du présent 7°, le cessionnaire est
+redevable d'une amende d'un montant égal à 10 % du prix de cession mentionné dans l'acte.
+En cas de fusion de sociétés, les engagements souscrits par le cessionnaire ne sont pas rompus lorsque
+la société absorbante s'engage, dans l'acte de fusion, à se substituer à la société absorbée pour le respect
+des engagements précités dans le délai restant à courir. Le non-respect de cet engagement par la société
+absorbante entraîne l'application à cette société de l'amende prévue pour le cessionnaire.
+En cas d'acquisitions successives, les engagements souscrits par le cessionnaire ne sont pas rompus lorsque
+le nouvel acquéreur s'engage, dans l'acte authentique d'acquisition, à se substituer au cédant pour le respect
+des engagements pris par celui-ci dans le délai restant à courir. Le non-respect de cet engagement par le
+nouvel acquéreur entraîne l'application à celui-ci de l'amende prévue au sixième alinéa du présent 7°. Les
+deux premières phrases du présent alinéa ne s'appliquent aux cessions réalisées au profit d'un organisme
+mentionné au a du présent 7° que si le nouvel acquéreur est lui-même un organisme mentionné au même a.
+Le présent 7° ne s'applique pas à la création de logements sociaux ou à l'affectation de surfaces à de tels
+logements dans les quartiers faisant l'objet d'une convention prévue à l'article 10-3 de la loi n° 2003-710 du
+1er août 2003 d'orientation et de programmation pour la ville et la rénovation urbaine ;
+8° Qui sont cédés jusqu'au 31 décembre 2027 à une collectivité territoriale, à un établissement public de
+coopération intercommunale compétent ou à un établissement public foncier mentionné aux articles L. 321-1
+et L. 324-1 du code de l'urbanisme en vue de leur cession selon les modalités prévues au a et au quatrième
+alinéa du 7° du présent II.
+L'exonération est calculée au prorata de la surface habitable des logements sociaux ou intermédiaires
+destinés à être construits ou des surfaces destinées à être affectées à de tels logements conformément au
+cinquième alinéa du même 7°.
+Le bénéfice de l'exonération est subordonné à la condition que le bien soit cédé, dans le délai d'un an suivant
+son acquisition, étendu à dix ans pour les cessions réalisées par un établissement public foncier.
+En cas de manquement à la condition de cession prévue au troisième alinéa du présent 8°, la collectivité
+territoriale, l'établissement public de coopération intercommunale ou l'établissement public foncier reverse à
+l'Etat le montant dû au titre du I du présent article.
+En cas de manquement aux engagements prévus aux quatrième, septième et avant-dernier alinéas du 7° du
+présent II, l'organisme, la société ou l'association mentionné au a du même 7° ayant acquis directement,
+successivement ou par fusion les biens ou droits définis au I est redevable de l'amende prévue au sixième
+alinéa du 7° du présent II.
+Le présent 8° ne s'applique pas à la création de logements sociaux ou à l'affectation de surfaces à de tels
+logements dans les quartiers faisant l'objet d'une convention prévue à l'article 10-3 de la loi n° 2003-710 du
+1er août 2003 précitée ;
+9° Au titre de la cession d'un droit de surélévation au plus tard le 31 décembre 2026, à condition que le
+cessionnaire s'engage à réaliser et à achever exclusivement des locaux destinés à l'habitation dans un délai
+de quatre ans à compter de la date de l'acquisition. En cas de manquement à cet engagement, le cessionnaire
+est redevable d'une amende d'un montant égal à 25 % de la valeur de cession du droit de surélévation.
+Cette amende n'est pas due en cas de licenciement, d'invalidité correspondant au classement dans les
+deuxième ou troisième des catégories prévues à l'article L. 341-4 du code de la sécurité sociale ou de
+décès du cessionnaire ou de l'un des époux soumis à une imposition commune. Elle n'est pas due non plus
+lorsqu'il ne respecte pas son engagement en raison de circonstances exceptionnelles indépendantes de sa
+volonté. En cas de fusion de sociétés, l'engagement souscrit par le cessionnaire n'est pas rompu lorsque la
+société absorbante s'engage, dans l'acte de fusion, à se substituer à la société absorbée pour le respect de
+l'engagement d'achèvement des locaux dans le délai restant à courir. Le non-respect par la société absorbante
+de l'engagement d'achèvement des locaux entraîne l'application de l'amende prévue pour le cessionnaire.
+III. – Les dispositions du I ne s'appliquent pas aux plus-values réalisées par les titulaires de pensions de
+vieillesse ou de la carte “ mobilité inclusion ” portant la mention “ invalidité ” mentionnée à l'article L. 241-3
+du code de l'action sociale et des familles qui, au titre de l'avant-dernière année précédant celle de la cession,
+ne sont pas passibles de l'impôt sur la fortune immobilière et dont le revenu fiscal de référence n'excède pas
+la limite prévue au I de l'article 1417, appréciés au titre de cette année.
+IV. – Le I ne s'applique pas aux partages qui portent sur des biens meubles ou immeubles dépendant d'une
+succession ou d'une communauté conjugale et qui interviennent uniquement entre les membres originaires
+de l'indivision, leur conjoint, des ascendants, des descendants ou des ayants droit à titre universel de l'un ou
+de plusieurs d'entre eux. Il en est de même des partages portant sur des biens indivis issus d'une donation-
+partage et des partages portant sur des biens indivis acquis par des partenaires ayant conclu un pacte civil
+de solidarité ou par des époux, avant ou pendant le pacte ou le mariage. Ces partages ne sont pas considérés
+comme translatifs de propriété dans la mesure des soultes ou plus-values.
 ```
 
 ---
@@ -1274,18 +2834,6 @@ pour 2004 (n° 2003-1311 du 30 décembre 2003) ou au II de l'article 150 UB, la 
 en application du I de l'article 150 UB est calculée par référence, le cas échéant, au prix ou à la valeur
 d'acquisition des titres échangés, diminué du montant de la soulte reçue, qui n'a pas fait l'objet d'une
 imposition au titre de l'année de l'échange, ou majoré de la soulte versée lors de cet échange.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 En cas de cession d'un bien ou d'un droit mentionné aux articles 150 U à 150 UD, dont le droit de propriété
 est démembré à la suite d'une succession intervenue avant le 1er janvier 2004, le prix d'acquisition est
 déterminé en appliquant le barème prévu à l'article 669, apprécié à la date de la cession.
@@ -1310,7 +2858,27 @@ bâti plus de cinq ans après son acquisition, n'est pas en état d'apporter la 
 une majoration égale à 15 % du prix d'acquisition est pratiquée. Cette majoration n'est pas applicable
 aux cessions d'immeubles détenus directement ou indirectement par un fonds de placement immobilier
 mentionné à l'article 239 nonies ;
-5° Des frais de voiri
+5° Des frais de voirie, réseaux et distribution en ce qui concerne les terrains à bâtir ;
+6° Des frais acquittés pour la restauration et la remise en état des biens meubles.
+III. – Le prix d'acquisition est minoré du montant des amortissements admis en déduction en application des
+i et j du 1° du I de l'article 31 ou de l'article 39 C, à l'exception de ceux de ces amortissements constitutifs
+de dépenses prises en compte pour la détermination de l'impôt sur le revenu en application de la première
+phrase du 4° du II du présent article.
+Le premier alinéa du présent III n'est pas applicable aux biens ou aux droits relatifs à ces biens situés dans :
+1° Une résidence mentionnée aux articles L. 631-12 ou L. 631-13 du code de la construction et de
+l'habitation destinée à l'accueil exclusif des étudiants, des personnes de moins de trente ans en formation ou
+en stage, des personnes titulaires d'un contrat de professionnalisation ou d'apprentissage ou des personnes
+âgées de plus de 65 ans ;
+2° Un établissement mentionné aux 6° ou 7° du I de l'article L. 312-1 du code de l'action sociale et des
+familles, une résidence avec services pour personnes âgées ou handicapées ayant obtenu l'agrément prévu à
+l'article L. 7232-1 du code du travail ou l'autorisation prévue à l'article L. 313-1 du code de l'action sociale
+et des familles pour son service d'aide et d'accompagnement à domicile relevant des 6° ou 7° du I de l'article
+L. 312-1 du même code ou l'ensemble des logements affectés à l'accueil familial salarié de personnes âgées
+ou handicapées, prévu aux articles L. 444-1 à L. 444-9 dudit code, géré par un groupement de coopération
+sociale ou médico-sociale ;
+3° Un établissement délivrant des soins de longue durée, mentionné à l'avant-dernier alinéa du I de l'article
+L. 6143-5 du code de la santé publique, et comportant un hébergement pour des personnes n'ayant pas leur
+autonomie de vie et dont l'état nécessite une surveillance médicale constante et des traitements d'entretien.
 ```
 
 ---
@@ -1358,25 +2926,51 @@ a) Pour les entreprises mentionnées au a du 1°, un taux égal au rapport entre
 entre 350 000 € et le montant des recettes et, au dénominateur, le montant de 100 000 € ;
 b) Pour les entreprises mentionnées au b du 1°, un taux égal au rapport entre, au numérateur, la différence
 entre 126 000 € et le montant des recettes et, au dénominateur, le montant de 36 000 € ;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 c) Pour les entreprises mentionnées au c du même 1°, un taux égal au rapport entre, au numérateur, la
 différence entre 450 000 € et le montant des recettes et, au dénominateur, le montant de 100 000 € ;
 d) Pour les entreprises mentionnées au d dudit 1°, un taux égal au rapport entre, au numérateur, la différence
-entre 550 000 € et le montant des recettes et, au dénominateur, le montant de 100 000
+entre 550 000 € et le montant des recettes et, au dénominateur, le montant de 100 000 €.
+Lorsque l'activité de l'entreprise se rattache à au moins deux des catégories définies aux a à d du même 1°,
+l'exonération totale n'est applicable que si le montant global des recettes est inférieur ou égal au plus élevé
+des montants mentionnés au même 1° au titre des activités exercées et si le montant des recettes afférentes à
+chacune de ces activités est inférieur ou égal au montant mentionné au même 1° afférent à chacune d'elles.
+Lorsque ces conditions ne sont pas remplies, si le montant global des recettes est inférieur au plus élevé des
+montants mentionnés au 2° au titre des activités exercées et si le montant des recettes afférentes à chacune de
+ces activités est inférieur au montant afférent à chacune d'elles mentionné au même 2°, le montant exonéré
+de la plus-value est déterminé en appliquant le moins élevé des taux entre celui qui aurait été déterminé dans
+les conditions fixées audit 2° si l'entreprise avait réalisé la totalité de ses recettes au titre de l'activité pour
+laquelle le montant mentionné au même 2° est le plus élevé et celui ou ceux déterminés dans les conditions
+fixées au même 2° si l'entreprise avait réalisé exclusivement chacune des autres activités exercées.
+III. – Les plus-values réalisées à l'occasion de la cession de matériels agricoles ou forestiers par des
+entreprises de travaux agricoles ou forestiers sont exonérées dans les conditions applicables aux entreprises
+mentionnées au c du 1° du II. Un décret précise les modalités d'application du présent III.
+IV. – Le montant des recettes annuelles s'entend de la moyenne des recettes, appréciées hors taxes, réalisées
+au titre des exercices clos, ramenés le cas échéant à douze mois, au cours des deux années civiles qui
+précèdent la date de clôture de l'exercice de réalisation des plus-values.
+Pour les entreprises dont les recettes correspondent à des sommes encaissées, le montant des recettes
+annuelles s'entend de la moyenne des recettes, appréciées hors taxes, au cours des deux années civiles qui
+précèdent l'année de réalisation des plus-values.
+Lorsque le contribuable exerce plusieurs activités, il est tenu compte du montant total des recettes réalisées
+dans l'ensemble de ces activités.
+Il est également tenu compte des recettes réalisées par les sociétés mentionnées aux articles 8 et 8 ter et les
+groupements non soumis à l'impôt sur les sociétés dont il est associé ou membre, à proportion de ses droits
+dans les bénéfices de ces sociétés et groupements.
+Pour l'application des troisième et quatrième alinéas, la globalisation des recettes est effectuée par catégorie
+de revenus.
+Lorsque les plus-values sont réalisées par une société ou un groupement mentionnés au quatrième alinéa, le
+montant des recettes annuelles s'apprécie au niveau de la société ou du groupement.
+V. – Pour les plus-values réalisées à la suite d'une expropriation ou de la perception d'indemnités
+d'assurance, la condition d'exercice de l'activité pendant au moins cinq ans n'est pas requise.
+Les terrains expropriés qui ne remplissent pas les conditions mentionnées à l'article L. 322-3 du code de
+l'expropriation pour cause d'utilité publique ne sont pas considérés comme des biens entrant dans le champ
+d'application du I du A de l'article 1594-0 G du présent code.
+VI. – Les plus-values mentionnées aux II et III s'entendent des plus-values nettes déterminées après
+compensation avec les moins-values de même nature.
+VII. – Les articles 150 U à 150 VH sont applicables aux plus-values réalisées lors de la cession de locaux
+d'habitation meublés ou destinés à être loués meublés et faisant l'objet d'une location directe ou indirecte
+lorsque cette activité n'est pas exercée à titre professionnel.
+VIII. – Les dispositions du présent article ne s'appliquent pas aux transferts de biens ou de droits dans un
+patrimoine fiduciaire effectués dans le cadre d'une opération de fiducie définie à l'article 2011 du code civil.
 ```
 
 ---
@@ -1422,23 +3016,115 @@ I ter. – Sont également éligibles au présent dispositif, dans les condition
 imposable au nom de l'associé, les cessions d'activité réalisées par les sociétés visées au 2° du I à condition
 qu'il soit procédé à la dissolution de la société de manière concomitante à la cession et que ledit associé fasse
 valoir ses droits à la retraite dans les deux années suivant ou précédant la cession.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 I quater. – A.-Sont également exonérées les plus-values de cession soumises au régime des articles 39
 duodecies à 39 quindecies, autres que celles mentionnées au III du présent article, réalisées dans le cadre d'un
 contrat de cessions échelonnées d'une société ou d'un groupement agricole, lorsque les conditions suivantes
 sont réunies :
 1° Le contrat porte sur l'intégralité des droits ou des parts détenus par un contribuable dans une société ou
-un groupement dont les bénéfices sont, en application des articles 8 et 8 ter, so
+un groupement dont les bénéfices sont, en application des articles 8 et 8 ter, soumis en son nom à l'impôt
+sur le revenu et qui sont considérés, au jour de la première cession ou, s'il est antérieur, au jour précédant
+son départ à la retraite ou la cessation de ses fonctions, comme des éléments d'actif affectés à l'exercice de la
+profession, au sens du I de l'article 151 nonies ;
+2° Le contribuable exerce, au jour de la première cession ou, s'il est antérieur, au jour précédant son départ
+à la retraite ou la cessation de ses fonctions, son activité professionnelle dans le cadre de la société ou du
+groupement dont les droits ou les parts sont cédés. Cette activité doit avoir été exercée pendant au moins cinq
+ans à cette date ;
+3° Les cessions sont réalisées à titre onéreux au profit :
+a) D'une ou de plusieurs personnes physiques justifiant de l'octroi des aides à l'installation des jeunes
+agriculteurs mentionnées au I de l'article 73 B au titre de la première cession ;
+b) Ou d'une société ou d'un groupement dont chacun des associés ou des membres justifie de l'octroi des
+aides mentionnées au a du présent 3° au titre de la première cession ;
+4° L'intégralité des droits ou des parts mentionnés au 1° doit être cédée dans un délai de six ans à compter de
+la première cession ;
+5° Le cédant cesse toute fonction dans la société ou le groupement dont les droits ou les parts sont cédés et
+fait valoir ses droits à la retraite au plus tôt dans les deux années précédant la date de première cession et au
+plus tard dans les deux années suivant la date de la dernière cession ;
+6° Le cédant ne détient ni directement ni indirectement de droits de vote ou de droits dans les bénéfices
+sociaux après la dernière cession ;
+7° Le cédant respecte la condition prévue au 4° du I aux dates de la première et de la dernière cessions et
+pendant toute la période entre ces deux dates ;
+8° Les conditions prévues aux 5° et 6° du même I sont respectées au jour de la première cession.
+B. - Les plus-values de cession exonérées, mentionnées au A du présent I quater, sont portées sur un état de
+suivi conforme au modèle fourni par l'administration, qui mentionne la date de chaque cession, la quotité de
+droits ou de parts transmise et les renseignements nécessaires au calcul des plus-values exonérées. Le cédant
+doit joindre cet état de suivi à sa déclaration de revenus.
+II. – L'exonération prévue au I est remise en cause si le cédant relève de la situation mentionnée au 4° du I à
+un moment quelconque au cours des trois années qui suivent la réalisation de l'opération ayant bénéficié du
+régime prévu au présent article.
+Lorsque l'une des conditions prévues aux 2° ou 3° du I n'est pas remplie au terme du délai prévu à ce même
+3°, l'exonération prévue au I est remise en cause au titre de l'année au cours de laquelle intervient le terme de
+ce délai.
+II bis. – A.-L'exonération prévue au I quater est remise en cause au titre de l'année qui suit celle de la
+première cession si le cédant n'est pas en mesure de justifier, au plus tard à la date du dépôt de la déclaration
+de revenus relative à cette année, de l'octroi, aux cessionnaires mentionnés aux a et b du 3° du A du même I
+quater, des aides mentionnées au I de l'article 73 B.
+B.-Si le cédant ne remplit plus la condition mentionnée aux 6° ou 7° du A du I quater, l'exonération prévue
+au même I quater est remise en cause, pour l'ensemble des cessions, au titre de l'année au cours de laquelle
+cette condition n'est plus remplie.
+C.-Lorsque l'une des conditions prévues aux 4° ou 5° du A du I quater n'est pas remplie à l'expiration du
+délai prévu aux mêmes 4° et 5°, l'exonération prévue au même I quater est remise en cause, pour l'ensemble
+des cessions, au titre de l'année au cours de laquelle intervient l'expiration de ce délai.
+D.-Par dérogation au B du présent II bis, si le contrat de cessions échelonnées mentionné au premier alinéa
+du A du I quater fait l'objet d'une résiliation au sens de l'article 1229 du code civil, l'exonération prévue au
+I quater du présent article est remise en cause, pour l'ensemble des cessions réalisées, au titre de l'année au
+cours de laquelle intervient cette résiliation.
+III. – Sont imposées dans les conditions de droit commun les plus-values portant sur :
+1° Des biens immobiliers bâtis ou non bâtis ou des droits ou parts de sociétés dont l'actif est principalement
+constitué de biens immobiliers bâtis ou non bâtis ou de droits ou parts de sociétés dont l'actif est
+principalement constitué des mêmes biens, droits ou parts ;
+2° Des droits ou parts mentionnés au 2° du I lorsque l'actif de la société ou du groupement est principalement
+constitué de biens immobiliers bâtis ou non bâtis non affectés par la société ou le groupement à sa propre
+exploitation ou de droits ou parts de sociétés dont l'actif est principalement constitué des mêmes biens, droits
+ou parts.
+IV. – Par dérogation au 2° du I, la cession à titre onéreux d'une activité qui fait l'objet d'un contrat de
+location-gérance ou d'un contrat comparable peut bénéficier du régime mentionné au I si les conditions
+suivantes sont simultanément satisfaites :
+1° L'activité est exercée depuis au moins cinq ans au moment de la mise en location ;
+2° La cession est réalisée au profit du locataire ou, dans le respect du contrat, de toute autre personne, sous
+réserve que cette cession porte sur l'intégralité des éléments concourant à l'exploitation de l'activité qui a fait
+l'objet du contrat de location-gérance ou d'un contrat comparable.
+IV bis. – En cas de cession à titre onéreux de parts ou d'actions de sociétés passibles de l'impôt sur les
+sociétés ou d'un impôt équivalent ou soumises sur option à cet impôt, rendant imposable une plus-value en
+report d'imposition sur le fondement du I ter de l'article 93 quater, du a du I de l'article 151 octies, des I et
+II de l'article 151 octies A, du I de l'article 151 octies B ou du III de l'article 151 nonies, cette plus-value en
+report est exonérée, lorsque les conditions suivantes sont réunies :
+1° Le cédant :
+a) Doit avoir exercé, de manière continue pendant les cinq années précédant la cession, l'une des fonctions
+énumérées au 1° du 1 du III de l'article 975 et dans les conditions prévues au même 1° dans la société dont
+les titres sont cédés ;
+b) Cesse toute fonction dans la société dont les titres sont cédés et fait valoir ses droits à la retraite, dans les
+deux années suivant ou précédant la cession ;
+c) Remplit la condition prévue au 4° du I ;
+2° La cession porte sur l'intégralité des titres de la société ;
+3° La société dont les titres sont cédés :
+a) Répond aux conditions prévues aux 5° et 6° du I ;
+b) A son siège social dans un État membre de l'Union européenne ou dans un autre Etat partie à l'accord sur
+l'Espace économique européen ayant conclu avec la France une convention d'assistance administrative en
+vue de lutter contre la fraude et l'évasion fiscales ;
+c) Doit avoir exercé, de manière continue pendant les cinq années précédant la cession, une activité
+commerciale, industrielle, artisanale, libérale ou agricole, à l'exception de la gestion de son propre
+patrimoine mobilier ou immobilier.
+L'exonération mentionnée au premier alinéa du présent IV bis est remise en cause si le cédant relève de la
+situation mentionnée au 4° du I à un moment quelconque au cours des trois années qui suivent la réalisation
+de la cession de l'intégralité des titres.
+Lorsque l'une des conditions prévues au b du 1° ou au 2° n'est pas remplie au terme du délai prévu à ce
+même b, l'exonération prévue au présent IV bis est remise en cause au titre de l'année au cours de laquelle
+intervient le terme de ce délai.
+V. – 1. L'indemnité compensatrice versée à un agent général d'assurances par la compagnie d'assurances
+qu'il représente à l'occasion de la cessation du mandat bénéficie du régime mentionné au I si les conditions
+suivantes sont réunies :
+a) Le contrat dont la cessation est indemnisée doit avoir été conclu depuis au moins cinq ans au moment de
+la cessation ;
+b) L'agent général d'assurances fait valoir ses droits à la retraite dans les deux années suivant la cessation du
+contrat ;
+c) L'activité est intégralement poursuivie dans le délai de deux ans.
+2. Lorsque le régime de faveur prévu au 1 s'applique, l'agent général d'assurances qui cesse son activité
+est assujetti, sur le montant de l'indemnité compensatrice, à une taxe exceptionnelle établie selon le tarif
+prévu à l'article 719. Cette taxe est établie, contrôlée et recouvrée comme l'impôt sur le revenu et sous les
+mêmes garanties et sanctions. Un décret détermine les modalités d'application du présent 2 et les obligations
+déclaratives incombant aux redevables et aux compagnies d'assurances.
+VI. – L'option pour le bénéfice du régime défini au présent article est exclusive de celui des régimes prévus
+au I ter de l'article 93 quater et aux articles 151 octies et 151 octies A.
 ```
 
 ---
@@ -1471,10 +3157,6 @@ dans un sous-compte français du produit paneuropéen d'épargne-retraite indivi
 225-1 dudit code par les titulaires des bénéfices mentionnés au premier alinéa du I, à l'exception de la part
 de ces versements correspondant à la garantie complémentaire prévue au 6° de l'article L. 142-3 du code des
 assurances.
- 
- 
- 
-
 II. – Les cotisations versées aux régimes obligatoires complémentaires d'assurance vieillesse mentionnés
 au premier alinéa du I, pour la part de ces cotisations excédant la cotisation minimale obligatoire, et les
 cotisations ou primes mentionnées aux deuxième et troisième alinéas du I sont déductibles :
@@ -1493,7 +3175,21 @@ sont exonérées en application des a et a bis du 18° de l'article 81 ;
 assurances dans le cadre d'un plan d'épargne retraite mentionné à l'article L. 224-13 ou à l'article L. 224-28
 du code monétaire et financier ou d'un sous-compte français du produit paneuropéen d'épargne-retraite
 individuelle mentionné à l'article L. 225-1 du même code, dans la limite d'un montant égal à la somme de 7
-% du montant annuel du plafond mentionné à l'article
+% du montant annuel du plafond mentionné à l'article L. 241-3 du code de la sécurité sociale et de 3,75 %
+du bénéfice imposable, sans que le total ainsi obtenu puisse excéder 3 % de huit fois le montant annuel du
+plafond précité ;
+3° Pour la perte d'emploi subie et pour la garantie complémentaire prévue au 5° de l'article L. 142-3 du
+code des assurances dans le cadre d'un plan d'épargne retraite mentionné à l'article L. 224-13 ou à l'article
+L. 224-28 du code monétaire et financier ou d'un sous-compte français du produit paneuropéen d'épargne-
+retraite individuelle mentionné à l'article L. 225-1 du même code, dans une limite égale au plus élevé des
+deux montants suivants :
+a) 1,875 % du bénéfice imposable retenu dans la limite de huit fois le montant annuel du plafond mentionné
+à l'article L. 241-3 du code de la sécurité sociale ;
+b) Ou 2,5 % du montant annuel du plafond mentionné à l'article L. 241-3 du code de la sécurité sociale.
+Les revenus exonérés en application des articles 44 sexies à 44 nonies, 44 terdecies à 44 septdecies ou au 9
+de l'article 93 sont retenus pour l'appréciation du montant du bénéfice imposable mentionné aux 1°, 2° et 3°.
+Il n'est pas tenu compte des plus-values et moins-values professionnelles à long terme.
+III. – (Périmé).
 ```
 
 ---
@@ -1502,7 +3198,7 @@ individuelle mentionné à l'article L. 225-1 du même code, dans la limite d'un
 
 **Source :** CGI Art. 163 quatervicies | **Module :** retraite | **Tags :** PER, plafond_epargne_retraite, deduction_revenu_global
 
-> **Correction de transcription (2026-08-26) :** le report du plafond de déduction non utilisé vaut pour l'une des **trois** années suivantes (texte officiel Légifrance LEGIARTI000038836248 ; BOI-IR-BASE-20-50-30). La transcription initiale du corpus portait par erreur « cinq années ».
+> **Version en vigueur depuis le 21/02/2026 (LF 2026, art. 10) :** le report de la fraction non utilisée du plafond vaut pour l'une des **cinq** années suivantes, à compter de l'imposition des revenus 2026 (trois années auparavant). Rétabli le 2026-11-01 : la « correction » du 2026-08-26, qui remettait « trois », s'appuyait sur une version abrogée (BOFiP ACTU-2026-00106 du 10/08/2026). La LF 2026 (art. 9) supprime aussi, depuis le 01/01/2026, la déduction des versements effectués à 70 ans ou plus.
 
 ```
 Article 163 quatervicies
@@ -1524,12 +3220,6 @@ mutualité ;
 d) Sauf application de l'option prévue au deuxième alinéa de l'article L. 224-20 du code monétaire et
 financier, aux plans d'épargne retraite mentionnés à l'article L. 224-1 du même code ou aux sous-comptes
 français du produit paneuropéen d'épargne-retraite individuelle mentionné à l'article L. 225-1 dudit code, qui
- 
- 
- 
- 
- 
-
 correspondent à des versements mentionnés au 1° de l'article L. 224-2 dudit code et qui ne sont pas déduits
 en application des articles 154 bis ou 154 bis-0 A.
 2. – a) Les cotisations ou les primes mentionnées au 1 sont déductibles pour chaque membre du foyer fiscal
@@ -1551,10 +3241,25 @@ du code civil, soumis à imposition commune, peuvent déduire les cotisations ou
 dans une limite annuelle égale au total des montants déductibles pour chaque membre du couple ou chaque
 partenaire du pacte.
 b) La différence, lorsqu'elle est positive, constatée au titre d'une année entre, d'une part, la limite définie au a
-et, d'autre part, les cotisations ou primes mentionnées au 1 peut être utilisée au cours de l'une des trois années
+et, d'autre part, les cotisations ou primes mentionnées au 1 peut être utilisée au cours de l'une des cinq années
 suivantes.
 c) (Abrogé).
-d) Les personnes qui, pour des ra
+d) Les personnes qui, pour des raisons qui ne sont pas liées à la mise en oeuvre de procédures judiciaires,
+fiscales ou douanières, n'ont pas été fiscalement domiciliées en France au cours des trois années civiles
+précédant celle au cours de laquelle elles s'y domicilient bénéficient au titre de cette dernière année d'un
+plafond complémentaire de déduction égal au triple du montant de la différence définie au a.
+II. – Les revenus d'activité professionnelle mentionnés au 1° du a du 2 du I s'entendent :
+1. – Des traitements et salaires définis à l'article 79 et des rémunérations allouées aux gérants et associés des
+sociétés mentionnées à l'article 62, pour leur montant déterminé respectivement en application des articles 83
+à 84 A et du dernier alinéa de l'article 62 ;
+2. – Des bénéfices industriels et commerciaux définis aux articles 34 et 35, des bénéfices agricoles
+mentionnés à l'article 63 et des bénéfices tirés de l'exercice d'une profession non commerciale mentionnés au
+1 de l'article 92, pour leur montant imposable.
+Les revenus exonérés en application des articles 44 sexies à 44 nonies, 44 terdecies à 44 septdecies ou au 9
+de l'article 93 ainsi que les abattements prévus à l'article 73 B sont retenus pour l'appréciation du montant des
+revenus définis au premier alinéa. Sont également retenus les revenus imposés dans les conditions prévues à
+l'article 151-0 pour leur montant diminué, selon le cas, de l'abattement prévu au 1 de l'article 50-0 ou au 1 de
+l'article 102 ter. Il n'est pas tenu compte des plus-values et moins-values professionnelles à long terme.
 ```
 
 ---
@@ -1584,21 +3289,6 @@ l'état frais par un procédé frigorifique) ;
 3. (Biens usagés) :
 1° a. Sous réserve, le cas échéant, des dispositions des 1° et 2° du III de l'article 257, les ventes de biens
 usagés faites par les personnes qui les ont utilisés pour les besoins de leurs exploitations.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 Toutefois, l'exonération ne s'applique pas aux biens qui ont ouvert droit à déduction complète ou partielle
 de la taxe sur la valeur ajoutée lors de leur achat, acquisition intracommunautaire, importation ou livraison à
 soi-même.
@@ -1633,7 +3323,147 @@ de l'enseignement primaire, secondaire et supérieur dispensé dans les établis
 443-5 et L. 731-1 à L. 731-17 du code de l'éducation ;
 de l'enseignement universitaire dispensé dans les établissements publics et dans les établissements privés
 visés aux articles L. 613-7, L. 714-2 et L. 718-16 du code de l'éducation ;
-de l'enseignement et de la formation professionnelle agricoles régleme
+de l'enseignement et de la formation professionnelle agricoles réglementés par la loi n° 60-791 du 2 août
+1960 relative à l'enseignement et la formation professionnelle agricole ;
+de la formation professionnelle continue, telle qu'elle est définie par les dispositions législatives et
+réglementaires qui la régissent, assurée soit par des personnes morales de droit public, soit par des
+personnes de droit privé titulaires d'une attestation délivrée par l'autorité administrative compétente
+reconnaissant qu'elles remplissent les conditions fixées pour exercer leur activité dans le cadre de la
+formation professionnelle continue.
+Un décret en Conseil d'Etat fixe les conditions d'application de ces dispositions, notamment pour ce qui
+concerne les conditions de délivrance et de validité de l'attestation ;
+de l'enseignement primaire, secondaire, supérieur ou technique à distance, dispensé par les organismes
+publics ou les organismes privés régis par les articles L. 444-1 à L. 444-11 du code de l'éducation, et les
+textes subséquents ;
+b. les cours ou leçons relevant de l'enseignement scolaire, universitaire, professionnel, artistique ou sportif,
+dispensés par des personnes physiques qui sont rémunérées directement par leurs élèves ;
+5° à 8° (Abrogés) ;
+8° bis Les prestations de services et les livraisons de biens qui leur sont étroitement liées, effectuées dans le
+cadre de la garde d'enfants par les établissements visés au premier alinéa de l'article L. 2324-1 du code de la
+santé publique et assurant l'accueil des enfants de moins de trois ans ;
+8° ter Les prestations de services réalisées par les mandataires judiciaires à la protection des majeurs au sens
+de l'article L. 471-2 du code de l'action sociale et des familles ;
+9° les prestations de services et les livraisons de biens qui leur sont étroitement liées fournies à leurs
+membres, moyennant une cotisation fixée conformément aux statuts, par des organismes légalement
+constitués agissant sans but lucratif dont la gestion est désintéressée et qui poursuivent des objectifs
+de nature philosophique, religieuse, politique, patriotique, civique ou syndicale, dans la mesure où ces
+opérations se rattachent directement à la défense collective des intérêts moraux ou matériels des membres ;
+les dispositions des c et d du 1° du 7 s'appliquent à ces organismes ;
+10° Les travaux de construction, d'aménagement, de réparation et d'entretien des monuments, cimetières ou
+sépultures commémoratifs des combattants, héros, victimes ou morts des guerres ou des attentats, effectués
+pour les collectivités publiques et les organismes légalement constitués agissant sans but lucratif ;
+11° Les prestations de services et les livraisons de biens accessoires à ces prestations, à l'exception des
+transports de personnes et télécommunications, qui relèvent du service universel postal tel que défini par
+l'article L. 1 du code des postes et communications électroniques, effectuées par le prestataire en France du
+service universel postal tel que désigné à l'article L. 2 du même code.
+5. (Opérations immobilières) :
+1° Les livraisons de terrains qui ne sont pas des terrains à bâtir au sens du 1° du 2 du I de l'article 257 ;
+2° Les livraisons d'immeubles achevés depuis plus de cinq ans.
+6. (Abrogé).
+7. (Organismes d'utilité générale) :
+1° a. les services de caractère social, éducatif, culturel ou sportif rendus à leurs membres par les organismes
+légalement constitués agissant sans but lucratif, et dont la gestion est désintéressée.
+Il en est de même des ventes consenties à leurs membres par ces organismes, dans la limite de 10 % de leurs
+recettes totales.
+Toutefois, demeurent soumises à la taxe sur la valeur ajoutée, sous réserve des dispositions du b :
+les opérations d'hébergement et de restauration ;
+l'exploitation des bars et buvettes.
+Ces dispositions sont également applicables aux unions d'associations qui répondent aux conditions ci-
+dessus, dans leurs rapports avec les membres des associations faisant partie de ces unions ;
+b. les opérations faites au bénéfice de toutes personnes par des oeuvres sans but lucratif qui présentent un
+caractère social ou philanthropique et dont la gestion est désintéressée, lorsque les prix pratiqués ont été
+homologués par l'autorité publique ou que des opérations analogues ne sont pas couramment réalisées à
+des prix comparables par des entreprises commerciales, en raison notamment du concours désintéressé des
+membres de ces organismes ou des contributions publiques ou privées dont ils bénéficient.
+Les organismes mentionnés au premier alinéa du 1 bis de l'article 206 et qui en remplissent les conditions,
+sont également exonérés pour leurs autres opérations lorsque les recettes encaissées afférentes à ces
+opérations n'ont pas excédé au cours de l'année civile précédente le montant de 81 051 €.
+Les opérations mentionnées au I de l'article 257 et les opérations donnant lieu à la perception de revenus
+patrimoniaux soumis aux dispositions de l'article 219 bis ne bénéficient pas de l'exonération et ne sont pas
+prises en compte pour le calcul de la limite de 81 051 €.
+Lorsque la limite de 81 051 € est atteinte en cours d'année, l'organisme ne peut plus bénéficier de
+l'exonération prévue au deuxième alinéa à compter du premier jour du mois suivant celui au cours duquel
+cette limite a été dépassée ;
+Les limites mentionnées aux deuxième à avant-dernier alinéas du présent b sont indexées, chaque année, sur
+la prévision de l'indice des prix à la consommation, hors tabac, retenue dans le projet de loi de finances de
+l'année ;
+c. les recettes de six manifestations de bienfaisance ou de soutien organisées dans l'année à leur profit
+exclusif par les organismes désignés aux a et b ainsi que par les organismes permanents à caractère social des
+collectivités locales et des entreprises ;
+d. le caractère désintéressé de la gestion résulte de la réunion des conditions ci-après :
+L'organisme doit, en principe, être géré et administré à titre bénévole par des personnes n'ayant elles-mêmes,
+ou par personne interposée, aucun intérêt direct ou indirect dans les résultats de l'exploitation.
+Toutefois, lorsqu'une association régie par la loi du 1er juillet 1901 relative au contrat d'association, une
+association régie par la loi locale en vigueur dans les départements de la Moselle, du Bas-Rhin et du Haut-
+Rhin, une fondation reconnue d'utilité publique ou une fondation d'entreprise décide que l'exercice des
+fonctions dévolues à ses dirigeants justifie le versement d'une rémunération, le caractère désintéressé de sa
+gestion n'est pas remis en cause si ses statuts et ses modalités de fonctionnement assurent sa transparence
+financière, l'élection régulière et périodique de ses dirigeants, le contrôle effectif de sa gestion par ses
+membres et l'adéquation de la rémunération aux sujétions effectivement imposées aux dirigeants concernés ;
+cette disposition s'applique dans les conditions suivantes :
+l'un des organismes visés au troisième alinéa peut rémunérer l'un de ses dirigeants uniquement si le montant
+annuel de ses ressources, majorées de celles des organismes qui lui sont affiliés et qui remplissent les
+conditions leur permettant de bénéficier de la présente disposition, hors ressources issues des versements
+effectués par des personnes morales de droit public, est supérieur à 200 000 € en moyenne sur les trois
+exercices clos précédant celui pendant lequel la rémunération est versée ;
+un tel organisme peut rémunérer deux de ses dirigeants si le montant annuel de ses ressources, majorées de
+celles des organismes qui lui sont affiliés et qui remplissent les conditions leur permettant de bénéficier de
+la présente disposition, hors ressources issues des versements effectués par des personnes morales de droit
+public, est supérieur à 500 000 €, en moyenne sur les trois exercices clos précédant celui pendant lequel la
+rémunération est versée ;
+un tel organisme peut rémunérer trois de ses dirigeants si le montant annuel de ses ressources, majorées de
+celles des organismes qui lui sont affiliés et qui remplissent les conditions leur permettant de bénéficier de
+la présente disposition, hors ressources issues des versements effectués par des personnes morales de droit
+public, est supérieur à 1 000 000 € en moyenne sur les trois exercices clos précédant celui pendant lequel la
+rémunération est versée ;
+un tel organisme peut verser des rémunérations dans le cadre de la présente disposition uniquement si ses
+statuts le prévoient explicitement et si une décision de son organe délibérant l'a expressément décidé à la
+majorité des deux tiers de ses membres ;
+le montant des ressources le cas échéant hors ressources issues des versements effectués par des personnes
+morales de droit public est constaté par un commissaire aux comptes ;
+le montant de toutes les rémunérations versées à chaque dirigeant au titre de la présente disposition ne peut
+en aucun cas excéder trois fois le montant du plafond visé à l'article L. 241-3 du code de la sécurité sociale.
+La condition d'exclusion des ressources issues des versements effectués par des personnes morales de droit
+public mentionnée aux quatrième à sixième alinéas du présent d n'est pas applicable aux associations de
+jeunesse et d'éducation populaire ayant fait l'objet d'un agrément par le ministre chargé de la jeunesse dont
+l'instance dirigeante est composée de membres dont la moyenne d'âge est inférieure à trente ans et qui
+décident de rémunérer, dans la limite du plafond mentionné à l'article L. 241-3 du code de la sécurité sociale,
+pour une durée maximale de trois ans, renouvelable une fois, leurs dirigeants âgés de moins de trente ans à la
+date de leur élection.
+Un décret en Conseil d'Etat fixe les modalités d'application des neuf alinéas précédents ;
+l'organisme ne doit procéder à aucune distribution directe ou indirecte de bénéfice, sous quelque forme que
+ce soit ;
+les membres de l'organisme et leurs ayants droit ne doivent pas pouvoir être déclarés attributaires d'une part
+quelconque de l'actif, sous réserve du droit de reprise des apports.
+Tous les organismes concernés par les a, b et c sont placés sous le régime du chiffre d'affaires réel ; un décret
+en Conseil d'Etat détermine leurs obligations ainsi que l'étendue et les modalités d'exercice de leurs droits à
+déduction ;
+1° bis Les opérations effectuées par les associations intermédiaires conventionnées, mentionnées à l'article L.
+5132-7 du code du travail, dont la gestion est désintéressée dans les conditions prévues au 1° ;
+1° ter Les prestations de services mentionnées au D de l'article 278-0 bis et au i de l'article 279, réalisées par
+des associations agréées en application de l'article L. 7232-1 du code du travail ou autorisées en application
+de l'article L. 313-1 du code de l'action sociale et des familles, et dont la gestion est désintéressée au sens du
+d du 1° du présent 7, au profit des personnes physiques ou des familles mentionnées aux 1°, 6°, 7° et 16° du
+I de l'article L. 312-1 du code de l'action sociale et des familles, ainsi qu'au profit des personnes mentionnées
+au 1° de l'article L. 7232-1 du code du travail ;
+1° quater Les prestations de services et les livraisons de biens qui leur sont étroitement liées, effectuées dans
+les lieux de vie et d'accueil mentionnés au III de l'article L. 312-1 du code de l'action sociale et des familles,
+conformément à leur objet ;
+2° (Abrogé) ;
+3° les ventes portant sur les articles fabriqués par des groupements d'aveugles ou de travailleurs handicapés,
+agréés dans les conditions prévues par la loi n° 72-616 du 5 juillet 1972, ainsi que les réparations effectuées
+par ces groupements. Ils peuvent toutefois, sur leur demande, renoncer à l'exonération dans les conditions et
+selon les modalités prévues par décret en Conseil d'Etat ;
+4° (Abrogé) ;
+8. En cas de catastrophe affectant le territoire d'un Etat membre de l'Union européenne, par arrêté du ministre
+chargé du budget pris après information du comité institué à l'article 398 de la directive 2006/112/ CE du
+Conseil du 28 novembre 2006 relative au système commun de taxe sur la valeur ajoutée, les livraisons de
+biens et les prestations de services liées à ces livraisons, lorsque l'importation de ces biens par le destinataire
+de ces livraisons ou par le preneur de ces services aurait été exonérée en application du 2° bis du II de
+l'article 291 du présent code.
+L'arrêté mentionné au premier alinéa du présent 8 peut prévoir que l'exonération s'applique rétroactivement à
+partir de la date à laquelle l'autorisation mentionnée au 2° bis du II de l'article 291 entre en vigueur.
+9. (Abrogé).
 ```
 
 ---
@@ -1856,20 +3686,6 @@ leur acquisition, et jusqu'à la fin de l'engagement prévu au c ou, à défaut,
 industrielle, commerciale, artisanale, agricole ou libérale au sens du premier alinéa :
 - les biens affectés à l'exercice de la chasse ;
 - les biens affectés à l'exercice de la pêche ;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 - les véhicules de tourisme, au sens de l'article L. 421-2 du code des impositions sur les biens et services, les
 yachts, les bateaux de plaisance à voile ou à moteur et les aéronefs ;
 - les bijoux, les métaux précieux et les objets d'art, de collection ou d'antiquité, à l'exclusion de ceux
@@ -1894,7 +3710,133 @@ six mois qui suivent la transmission l'engagement prévu au premier alinéa ;
 b. 1. L'engagement collectif de conservation doit porter sur au moins 10 % des droits financiers et 20 %
 des droits de vote attachés aux titres émis par la société s'ils sont admis à la négociation sur un marché
 réglementé ou, à défaut, sur au moins 17 % des droits financiers et 34 % des droits de vote, y compris les
-parts ou actions transm
+parts ou actions transmises.
+Ces pourcentages doivent être respectés tout au long de la durée de l'engagement collectif de conservation.
+Les associés de l'engagement collectif de conservation peuvent effectuer entre eux des cessions ou donations
+des titres soumis à l'engagement. Ils peuvent également admettre un nouvel associé dans l'engagement
+collectif à condition que cet engagement collectif soit reconduit pour une durée minimale de deux ans.
+L'engagement collectif de conservation est opposable à l'administration à compter de la date de
+l'enregistrement de l'acte qui le constate. Dans le cas de titres admis à la négociation sur un marché
+réglementé, l'engagement collectif de conservation est soumis aux dispositions de l'article L. 233-11 du code
+de commerce.
+2. L'engagement collectif de conservation est réputé acquis lorsque les parts ou actions détenues depuis deux
+ans au moins, directement ou indirectement dans les conditions prévues au 3 du présent b, par une personne
+physique seule ou avec son conjoint, le partenaire avec lequel elle est liée par un pacte civil de solidarité ou
+son concubin notoire atteignent les seuils prévus au premier alinéa du 1, sous réserve que cette personne ou
+son conjoint, le partenaire lié à elle par un pacte civil de solidarité ou son concubin notoire exerce depuis
+deux ans au moins dans la société concernée son activité professionnelle principale ou l'une des fonctions
+énumérées au 1° du 1 du III de l'article 975 lorsque la société est soumise à l'impôt sur les sociétés. En cas de
+détention indirecte, l'exonération partielle est accordée dans les proportions et sous les conditions prévues au
+3 du présent b.
+3. Pour le calcul des pourcentages prévus au premier alinéa du 1, il est tenu compte des titres détenus par
+une société possédant directement une participation dans la société dont les parts ou actions font l'objet de
+l'engagement collectif de conservation visé au a et auquel elle a souscrit.
+La valeur des titres de cette société qui sont transmis bénéficie de l'exonération partielle à proportion de la
+valeur réelle de son actif brut qui correspond à la participation ayant fait l'objet de l'engagement collectif de
+conservation ;
+L'exonération s'applique également lorsque la société détenue directement par le redevable possède une
+participation dans une société qui détient les titres de la société dont les parts ou actions font l'objet de
+l'engagement de conservation.
+Dans cette hypothèse, l'exonération partielle est appliquée à la valeur des titres de la société détenus
+directement par le redevable, dans la limite de la fraction de la valeur réelle de l'actif brut de celle-ci
+représentative de la valeur de la participation indirecte ayant fait l'objet d'un engagement de conservation.
+Le bénéfice de l'exonération partielle est subordonné à la condition que les participations soient conservées
+inchangées à chaque niveau d'interposition pendant toute la durée de l'engagement collectif. Toutefois, le
+bénéfice du régime de faveur n'est pas remis en cause en cas d'augmentation de la participation détenue par
+les sociétés interposées.
+c. Chacun des héritiers, donataires ou légataires prend l'engagement dans la déclaration de succession ou
+l'acte de donation, pour lui et ses ayants cause à titre gratuit, de conserver les parts ou les actions transmises
+pendant une durée de six ans à compter de la date d'expiration du délai visé au a.
+Le cas échéant, la société dont les titres sont transmis, qui possède directement ou indirectement dans
+les conditions prévues au 3 du b une participation dans la société dont les parts ou actions font l'objet de
+l'engagement collectif de conservation mentionné au a, doit conserver cette participation durant cette même
+période ;
+c bis. La condition d'exercice par la société d'une activité industrielle, commerciale, artisanale, agricole
+ou libérale, prévue au premier alinéa du présent article, doit être satisfaite à compter de la conclusion
+de l'engagement de conservation prévu au premier alinéa du a et jusqu'au terme de l'engagement de
+conservation prévu au c. Par dérogation, cette condition doit être satisfaite, dans le cas prévu au second
+alinéa du a, à compter de la transmission des titres et, dans le cas prévu au 2 du b, depuis deux ans au moins
+à la date de cette transmission ;
+d. L'un des associés mentionnés au a ou l'un des héritiers, donataires ou légataires mentionnés au c exerce
+effectivement dans la société dont les parts ou actions font l'objet de l'engagement collectif de conservation,
+pendant la durée de l'engagement prévu au a et pendant les trois années qui suivent la date de la transmission,
+son activité professionnelle principale si celle-ci est une société de personnes visée aux articles 8 et 8 ter, ou
+l'une des fonctions énumérées au 1° du 1 du III de l'article 975 lorsque celle-ci est soumise à l'impôt sur les
+sociétés, de plein droit ou sur option ;
+d bis. Les parts ou actions ne sont pas inscrites sur un compte PME innovation mentionné à l'article L.
+221-32-4 du code monétaire et financier. Le non-respect de cette condition par l'un des signataires jusqu'au
+terme du délai mentionné au c entraîne la remise en cause de l'exonération partielle dont il a bénéficié ;
+e. La déclaration de succession ou l'acte de donation doit être appuyée d'une attestation de la société dont les
+parts ou actions font l'objet de l'engagement collectif de conservation certifiant que les conditions prévues
+aux a et b ont été remplies jusqu'au jour de la transmission.
+L'héritier, le donataire ou le légataire adresse, sur demande de l'administration et dans un délai de trois
+mois à compter de cette demande, une attestation, que la société dont les parts ou actions font l'objet des
+engagements de conservation mentionnés aux a et c lui transmet, certifiant que les conditions prévues aux a à
+d ont été respectées de manière continue depuis la date de la transmission.
+Dans un délai de trois mois à compter du terme de l'engagement de conservation mentionné au c, l'héritier, le
+donataire ou le légataire adresse à l'administration une attestation, que la société lui transmet, certifiant que
+les conditions prévues aux a à d ont été respectées jusqu'à leur terme.
+En cas de détention indirecte des parts ou actions faisant l'objet des engagements de conservation mentionnés
+aux a et c, chacune des sociétés composant la chaîne de participation transmet aux personnes soumises à ces
+engagements, dans les cas prévus aux deuxième et troisième alinéas du présent e, une attestation certifiant du
+respect, à son niveau, des obligations de conservation prévues aux a et c ;
+e bis. En cas de non-respect de la condition prévue au a par l'un des signataires, l'exonération partielle n'est
+pas remise en cause à l'égard des signataires autres que le cédant si :
+1° Soit les titres que ces autres signataires détiennent ensemble respectent la condition prévue au b et ceux-ci
+les conservent jusqu'au terme initialement prévu ;
+2° Soit le cessionnaire s'associe à l'engagement collectif à raison des titres cédés afin que le pourcentage
+prévu au b demeure respecté. Dans ce cas, l'engagement collectif est reconduit pour une durée minimale de
+deux ans pour l'ensemble des signataires.
+e ter. En cas de non-respect de la condition de conservation prévue au a, par l'un des héritiers, donataires
+ou légataires à la suite de la cession ou de la donation, à un autre associé de l'engagement mentionné au a
+d'une partie des parts ou actions qui lui ont été transmises à titre gratuit, l'exonération partielle n'est remise en
+cause pour le cédant ou le donateur qu'à hauteur des seules parts ou actions cédées ou données ;
+f. En cas de non-respect des conditions prévues aux a et c par suite d'un apport partiellement rémunéré par
+la prise en charge d'une soulte consécutive à un partage ou d'un apport pur et simple de titres d'une société
+ayant une activité industrielle, commerciale, artisanale, agricole ou libérale à une société dont la valeur réelle
+de l'actif brut est, à l'issue de l'apport et jusqu'au terme des engagements de conservation mentionnés aux a
+et c, composée à plus de 50 % de participations dans la société soumises à ces engagements, l'exonération
+partielle n'est pas remise en cause si les conditions suivantes sont réunies :
+1° Les trois-quarts au moins du capital et des droits de vote y afférents de la société bénéficiaire de l'apport
+sont, à l'issue de l'apport, détenus par les personnes soumises aux obligations de conservation prévues aux
+a et c. Cette société est dirigée directement par une ou plusieurs de ces personnes. Les conditions tenant à
+la composition de l'actif de la société, à la détention de son capital et à sa direction doivent être respectées à
+l'issue de l'opération d'apport et jusqu'au terme des engagements mentionnés aux a et c ;
+2° La société bénéficiaire de l'apport prend l'engagement de conserver les titres apportés jusqu'au terme des
+engagements mentionnés aux a et c ;
+3° Les personnes mentionnées au 1°, associées de la société bénéficiaire des apports, doivent conserver,
+pendant la durée mentionnée au 2°, les titres reçus en contrepartie de l'opération d'apport.
+Le présent f s'applique également, sous les mêmes conditions, à l'apport de titres d'une société possédant
+directement une participation dans la société dont les parts ou actions font l'objet de l'engagement de
+conservation mentionné aux a ou c. Dans ce cas, à l'issue de l'apport et jusqu'au terme des engagements
+de conservation mentionnés aux a et c, la valeur réelle de l'actif brut de la société bénéficiaire de l'apport
+est composée à plus de 50 % de participations indirectes dans la société soumises aux obligations de
+conservation prévues aux a et c ;
+g) En cas de non-respect des conditions prévues aux a ou b, par suite d'une fusion ou d'une scission au sens
+de l'article 817 A, d'une augmentation de capital ou d'une offre publique d'échange préalable à une fusion
+ou une scission dès lors que cette fusion ou cette scission est opérée dans l'année qui suit la clôture de l'offre
+publique d'échange, l'exonération partielle accordée lors d'une mutation à titre gratuit avant l'une de ces
+opérations n'est pas remise en cause si les signataires respectent l'engagement prévu au a jusqu'à son terme.
+Les titres reçus en contrepartie de ces opérations doivent être conservés jusqu'au même terme. De même,
+cette exonération n'est pas non plus remise en cause lorsque la condition prévue au b n'est pas respectée par
+suite d'une annulation des titres pour cause de pertes ou de liquidation judiciaire ;
+h) En cas de non-respect de la condition prévue au c par suite d'une fusion ou d'une scission au sens de
+l'article 817 A, d'une augmentation de capital, ou d'une offre publique d'échange préalable à une fusion ou
+une scission dès lors que cette fusion ou cette scission est opérée dans l'année qui suit la clôture de l'offre
+publique d'échange, l'exonération partielle accordée lors de la mutation à titre gratuit n'est pas remise en
+cause si les titres reçus en contrepartie de ces opérations sont conservés par le signataire de l'engagement
+jusqu'à son terme.
+De même, cette exonération n'est pas remise en cause lorsque la condition prévue aux b ou c n'est pas
+respectée par suite d'une annulation des titres pour cause de pertes ou de liquidation judiciaire ;
+i) En cas de non-respect de la condition prévue au c par suite d'une donation, l'exonération partielle accordée
+au titre de la mutation à titre gratuit n'est pas remise en cause, à condition que le ou les donataires soient le
+ou les descendants du donateur et que le ou les donataires poursuivent l'engagement prévu au c jusqu'à son
+terme.
+Les dispositions du présent article s'appliquent en cas de donation avec réserve d'usufruit à la condition que
+les droits de vote de l'usufruitier soient statutairement limités aux décisions concernant l'affectation des
+bénéfices.
+Un décret en Conseil d'Etat détermine les modalités d'application du présent article, notamment les
+obligations déclaratives incombant aux redevables et aux sociétés.
 ```
 
 ---
@@ -1919,21 +3861,8 @@ c.L'un des héritiers, donataires ou légataires mentionnés au b poursuit effec
 qui suivent la date de la transmission l'exploitation de l'entreprise.
 d) En cas de non-respect de la condition prévue au b par suite d'une donation, l'exonération partielle accordée
 au titre de la mutation à titre gratuit n'est pas remise en cause, à condition que le ou les donataires soient le
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 ou les descendants du donateur et que le ou les donataires poursuivent l'engagement prévu au b jusqu'à son
 terme.
-b : Dispositions spéciales aux successions
 ```
 
 ---
@@ -2011,11 +3940,6 @@ indiquant le montant des abattements déjà appliqués aux sommes, rentes ou val
 ou plusieurs organismes d'assurance et assimilés à raison du décès du même assuré.
 Le bénéficiaire n'est pas assujetti au prélèvement visé au premier alinéa lorsqu'il est exonéré de droits de
 mutation à titre gratuit en application des dispositions des articles 795,795-0 A, 796-0 bis et 796-0 ter.
- 
- 
- 
- 
-
 Le bénéficiaire est assujetti au prélèvement prévu au premier alinéa dès lors qu'il a, au moment du décès, son
 domicile fiscal en France au sens de l'article 4 B et qu'il l'a eu pendant au moins six années au cours des dix
 années précédant le décès ou dès lors que l'assuré a, au moment du décès, son domicile fiscal en France au
@@ -2028,7 +3952,85 @@ mêmes proportions.
 I bis. – 1. Les sommes, valeurs ou rentes qui bénéficient de l'abattement proportionnel de 20 % sont celles
 qui sont issues des contrats et placements de même nature souscrits à compter du 1er janvier 2014 ou
 des contrats souscrits avant cette date et ayant subi, entre le 1er janvier 2014 et le 1er janvier 2016, une
-transformation partielle ou totale entrant dans le champ 
+transformation partielle ou totale entrant dans le champ du I de l'article 1er de la loi n° 2005-842 du 26 juillet
+2005 pour la confiance et la modernisation de l'économie ou du 2° du I de l'article 125-0 A du présent code
+et dans lesquels les primes versées sont représentées par une ou plusieurs unités de compte constituées :
+a) De parts ou d'actions d'organismes de placement collectif en valeurs mobilières ;
+b) De placements collectifs relevant des articles L. 214-24-24 à L. 214-32-1 ou L. 214-139 à L. 214-147 du
+code monétaire et financier ;
+c) D'organismes de même nature que les organismes mentionnés aux a et b établis soit dans un autre Etat
+membre de l'Union européenne, soit dans un autre Etat partie à l'accord sur l'Espace économique européen
+ayant conclu avec la France une convention d'assistance administrative en vue de lutter contre la fraude et
+l'évasion fiscales et qui bénéficient de la procédure de reconnaissance mutuelle des agréments prévue par
+la directive 2009/65/ CE du Parlement européen et du Conseil du 13 juillet 2009 portant coordination des
+dispositions législatives réglementaires et administratives concernant certains organismes de placement
+collectif en valeurs mobilières (OPCVM) (refonte) ;
+d) De parts ou d'actions de sociétés mentionnées au I de l'article 150 UB du présent code ayant leur siège
+social sur le territoire de l'un des Etats membres de l'Union européenne ou dans un autre Etat partie à l'accord
+sur l'Espace économique européen ayant conclu avec la France une convention d'assistance administrative en
+vue de lutter contre la fraude et l'évasion fiscales ;
+e) De parts ou d'actions d'organismes de placement collectif immobilier ou de sociétés civiles de placement
+immobilier.
+2. Bénéficient de l'abattement proportionnel de 20 % mentionné au premier alinéa du I, les sommes, valeurs
+ou rentes issues des contrats définis au 1 du présent I bis et qui sont investies notamment :
+1° En titres et droits mentionnés aux d et e du même 1 et contribuant au financement du logement social ou
+intermédiaire selon des modalités définies par décret en Conseil d'Etat ;
+2° Ou en titres d'organismes de placement collectif mentionnés aux a à c dudit 1 dont l'actif est constitué
+notamment par :
+a) Des parts de fonds communs de placement à risques ou de fonds professionnels de capital investissement
+ou de sociétés de libre partenariat qui remplissent les conditions prévues au II de l'article 163 quinquies B
+du présent code, de fonds communs de placement dans l'innovation mentionnés à l'article L. 214-30 du code
+monétaire et financier, de fonds d'investissement de proximité mentionnés à l'article L. 214-31 du même
+code et d'actions de sociétés de capital-risque, qui remplissent les conditions prévues à l'article 1er-1 de la loi
+n° 85-695 du 11 juillet 1985 portant diverses dispositions d'ordre économique et financier, ou d'un organisme
+similaire d'un Etat membre de l'Union européenne ou d'un Etat partie à l'accord sur l'Espace économique
+européen ayant conclu avec la France une convention d'assistance administrative en vue de lutter contre la
+fraude et l'évasion fiscales ;
+b) Des actions ou parts émises par des sociétés exerçant une activité mentionnée à l'article 34 du présent
+code qui, d'une part, occupent moins de 5 000 personnes et qui, d'autre part, ont un chiffre d'affaires annuel
+n'excédant pas 1 500 millions d'euros ou un total de bilan n'excédant pas 2 000 millions d'euros, sous réserve
+que le souscripteur du contrat, son conjoint et leurs ascendants et descendants ne détiennent pas ensemble,
+pendant la durée du contrat, directement ou indirectement, plus de 25 % des droits dans les bénéfices de
+la société ou n'ont pas détenu une telle participation à un moment quelconque au cours des cinq années
+précédant la souscription du contrat ;
+c) Des actifs relevant de l'économie sociale et solidaire respectant des conditions définies par décret en
+Conseil d'Etat.
+Les titres et droits mentionnés au b du présent 2° et les titres et droits constituant l'actif des organismes
+mentionnés aux a et c sont émis par des sociétés qui ont leur siège dans un Etat membre de l'Union
+européenne ou dans un autre Etat partie à l'accord sur l'Espace économique européen ayant conclu avec la
+France une convention d'assistance administrative en vue de lutter contre la fraude et l'évasion fiscales, et qui
+sont soumises à l'impôt sur les sociétés dans les conditions de droit commun au taux normal ou le seraient
+dans les mêmes conditions si elles exerçaient leur activité en France.
+Un décret en Conseil d'Etat détermine les modalités d'appréciation des seuils d'effectif salarié, de chiffre
+d'affaires et de total de bilan mentionnés au même b.
+Les titres mentionnés au 1° et aux a à c du 2° du présent 2 représentent au moins 33 % des actifs dont sont
+constituées les unités de compte mentionnées au 1.
+3. Les règlements ou les statuts des organismes de placement collectif en valeurs mobilières et des
+placements collectifs mentionnés au 1 prévoient le respect des catégories d'investissement prévues au 2.
+Un décret en Conseil d'Etat précise les modalités de calcul et d'appréciation du respect des proportions
+d'investissement ainsi que les justificatifs à produire par les organismes ou sociétés concernés.
+4. Lorsque les organismes de placement collectif en valeurs mobilières, les placements collectifs et les
+sociétés mentionnés au 1 recourent à des instruments financiers à terme, à des opérations de pension ainsi
+qu'à toute autre opération temporaire de cession ou d'acquisition de titres, ces organismes ou sociétés doivent
+respecter les règles d'investissement de l'actif prévues au 2, calculées en retenant au numérateur la valeur des
+titres éligibles à ces règles dont ils perçoivent effectivement les produits. Un décret en Conseil d'Etat précise
+les modalités de calcul et les justificatifs à produire par les organismes ou sociétés concernés.
+5. Les contrats mentionnés au présent I bis peuvent également prévoir qu'une partie des primes versées est
+affectée à l'acquisition de droits qui sont exprimés en unités de compte autres que celles mentionnées au 1.
+Pour ces contrats, la proportion d'investissement que doivent respecter les unités de compte mentionnées
+au même 1 est au moins égale à la proportion prévue au 2 multipliée par le rapport qui existe entre la prime
+versée et la part de cette prime représentée par la ou les unités de compte précitées.
+I ter. – Le prélèvement prévu au I est applicable aux sommes versées au bénéficiaire par la Caisse des dépôts
+et consignations en application des articles L. 132-27-2 du code des assurances et L. 223-25-4 du code de la
+mutualité, lorsqu'elles entrent dans le champ d'application du I au jour de leur dépôt à la Caisse des dépôts et
+consignations.
+II. – Le prélèvement prévu au I est dû par le bénéficiaire et versé au comptable public compétent par les
+organismes d'assurance et assimilés ou, dans le cas prévu au I ter, par la Caisse des dépôts et consignations,
+dans les quinze jours qui suivent la fin du mois au cours duquel les sommes, rentes ou valeurs quelconques
+dues par eux ont été versées aux bénéficiaires à titre gratuit.
+Il est recouvré suivant les mêmes règles, sous les mêmes garanties et les mêmes sanctions que la taxe sur les
+conventions d'assurances prévue aux articles 991 et suivants.
+III. – (Abrogé)
 ```
 
 ---
@@ -2060,22 +4062,6 @@ commune.
 Les partenaires liés par un pacte civil de solidarité défini à l'article 515-1 du code civil et les personnes
 vivant en concubinage notoire font l'objet d'une imposition commune.
 Les conditions d'assujettissement sont appréciées au 1er janvier de chaque année.
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-Livre premier : Assiette et liquidation de l'impôt
-Première Partie : Impôts d'État
-Titre IV : Enregistrement, publicité foncière, timbre, impôt sur la
-fortune, immobilière
-Chapitre II bis : Impôt sur la fortune immobilière
-Section II : Assiette de l'impôt
 ```
 
 ---
@@ -2116,16 +4102,6 @@ article se réserve la jouissance en fait ou en droit.
 Ne sont pas retenus pour le calcul de la fraction mentionnée au premier alinéa du présent 2° :
 a) Les biens ou droits immobiliers détenus directement par la société ou l'organisme mentionné au même
 premier alinéa ou par une société ou un organisme dont la société ou l'organisme mentionné audit premier
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 alinéa détient directement ou indirectement des parts ou actions, lorsque ces biens ou droits immobiliers sont
 affectés à l'activité industrielle, commerciale, artisanale, agricole ou libérale de la société ou de l'organisme
 qui les détient ;
@@ -2136,7 +4112,17 @@ activité industrielle, commerciale, artisanale, agricole ou libérale ; à cell
 les détient directement ; ou à celle d'une société ou d'un organisme dans lesquels la société ou l'organisme
 détient directement ou par personne interposée la majorité des droits de vote ou exerce en fait le pouvoir de
 décision.
-3° Aucun rehaussement n'est effectué si le redevab
+3° Aucun rehaussement n'est effectué si le redevable, de bonne foi, démontre qu'il n'était pas en mesure
+de disposer des informations nécessaires à l'estimation de la fraction de la valeur des parts ou actions
+mentionnées au premier alinéa du 2° du présent article représentative des biens ou droits immobiliers qu'il
+détient indirectement.
+Le premier alinéa du présent 3° ne s'applique pas si le redevable contrôle, au sens du 2° du III de l'article
+150-0 B ter, la société ou l'organisme qui détient directement les biens ou droits immobiliers imposables ou
+si l'une des personnes mentionnée au 1° du présent article se réserve, en fait ou en droit, la jouissance des
+biens ou droits immobiliers que le redevable détient indirectement ou si le redevable détient directement ou
+indirectement, seul ou conjointement avec les personnes mentionnées au même 1°, plus de 10 % du capital
+ou des droits de vote de la société ou de l'organisme qui détient directement les biens ou droits immobiliers
+imposables.
 ```
 
 ---
@@ -2208,15 +4194,6 @@ mentionnées au 1° de l'article 965, seule ou conjointement avec les autres per
 pour des dépenses mentionnées aux 2° et 3° du I de l'article 974 afférentes à un tel actif, à proportion de la
 participation que détient cette personne dans la société ou l'organisme, seule ou conjointement avec les autres
 personnes mentionnées au 1° de l'article 965.
- 
- 
- 
- 
- 
- 
- 
- 
-
 Les 1°, 2° et 4° du présent II ne s'appliquent pas si le redevable justifie que le prêt n'a pas été contracté dans
 un objectif principalement fiscal.
 Le 3° du présent II ne s'applique pas si le redevable justifie du caractère normal des conditions du prêt,
@@ -2232,6 +4209,8 @@ Sans préjudice des II et III du présent article, la valeur imposable à l'imp�
 parts ou actions déterminée conformément au premier alinéa du présent IV ne peut être supérieure à leur
 valeur vénale déterminée conformément au I ou, si elle est inférieure à cette dernière, à la valeur vénale
 des actifs imposables de la société diminuée des dettes y afférentes qu'elle a contractées, à proportion de la
+fraction de capital de la société à laquelle donnent droit les parts ou actions comprises dans le patrimoine du
+redevable.
 ```
 
 ---
@@ -2271,18 +4250,6 @@ du concubin notoire mentionnés à l'article 964, des enfants mineurs de ces per
 l'administration légale des biens de ceux-ci ;
 2° Contractés directement, ou indirectement par l'intermédiaire d'une ou de plusieurs sociétés ou organismes
 interposés, auprès d'un ascendant, descendant autre que celui mentionné au 1°, frère ou sœur de l'une
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 des personnes physiques mentionnées au même 1°, sauf si le redevable justifie du caractère normal des
 conditions du prêt, notamment du respect du terme des échéances, du montant et du caractère effectif des
 remboursements ;
@@ -2297,7 +4264,7 @@ millions d'euros et que le montant total des dettes admises en déduction en app
 d'une même année d'imposition excède 60 % de cette valeur, le montant des dettes excédant ce seuil n'est
 admis en déduction qu'à hauteur de 50 % de cet excédent.
 Ne sont pas retenues pour l'application du premier alinéa du présent IV les dettes dont le redevable justifie
-q
+qu'elles n'ont pas été contractées dans un objectif principalement fiscal.
 ```
 
 ---
@@ -2335,14 +4302,6 @@ d'une société soumise, de droit ou sur option, à l'impôt sur les sociétés,
 responsabilité limitée ou en commandite par actions, d'associé en nom d'une société de personnes ou de
 président, directeur général, président du conseil de surveillance ou membre du directoire d'une société par
 actions.
- 
- 
- 
- 
- 
- 
- 
-
 Les fonctions mentionnées au premier alinéa du présent 1° doivent être effectivement exercées et donner
 lieu à une rémunération normale, dans les catégories imposables à l'impôt sur le revenu des traitements et
 salaires, bénéfices industriels et commerciaux, bénéfices agricoles, bénéfices non commerciaux et revenus
@@ -2355,7 +4314,56 @@ l'intermédiaire de son conjoint, de leurs ascendants ou descendants ou de leurs
 Les titres détenus dans les mêmes conditions dans une société possédant une participation dans la société
 dans laquelle le redevable exerce ses fonctions sont pris en compte à proportion de cette participation.
 Le respect de la condition de détention de 25 % au moins des droits de vote attachés aux titres émis par la
-société prévue au premier alinéa du 2° n'est pas exigé après une a
+société prévue au premier alinéa du 2° n'est pas exigé après une augmentation de capital si, à compter de la
+date de cette dernière, le redevable remplit les trois conditions suivantes :
+a) Il a respecté cette condition au cours des cinq années ayant précédé l'augmentation de capital ;
+b) Il détient 12,5 % au moins des droits de vote attachés aux titres émis par la société, directement ou par
+l'intermédiaire de son conjoint, de leurs ascendants ou descendants ou de leurs frères et sœurs ;
+c) Il est partie à un pacte conclu avec d'autres associés ou actionnaires représentant au total 25 % au moins
+des droits de vote et exerçant un pouvoir d'orientation dans la société.
+Par dérogation au premier alinéa du 2°, la condition de détention de 25 % au moins des droits de vote
+attachés aux titres émis par la société n'est pas exigée des gérants et associés mentionnés à l'article 62.
+2. Sont également exonérés les biens ou droits immobiliers mentionnés au 1 affectés à l'activité industrielle,
+commerciale, artisanale, agricole ou libérale d'une société soumise, de droit ou sur option, à l'impôt sur les
+sociétés dont les parts ou actions sont détenues directement par le gérant, nommé conformément aux statuts
+d'une société à responsabilité limitée ou en commandite par actions, le président, le directeur général, le
+président du conseil de surveillance ou le membre du directoire d'une société par actions, qui remplit les
+conditions prévues au 1° du même 1, lorsque la valeur des titres qu'il détient dans cette société excède 50 %
+de la valeur brute du patrimoine total du redevable, y compris les biens ou droits immobiliers précités.
+IV.-1. Sont également exonérés les biens ou droits immobiliers mentionnés au 1° de l'article 965 et les parts
+ou actions mentionnées au 2° du même article 965 représentatives de ces mêmes biens ou droits, lorsque ces
+biens et droits immobiliers sont affectés à l'activité industrielle, commerciale, artisanale, agricole ou libérale
+de plusieurs sociétés soumises, de droit ou sur option, à l'impôt sur les sociétés lorsque chaque participation,
+prise isolément, satisfait aux conditions prévues au III. Toutefois, la condition de rémunération prévue à la
+seconde phrase du second alinéa du 1° du 1 du même III est respectée si la somme des rémunérations perçues
+au titre des fonctions énumérées au premier alinéa du même 1° dans les sociétés dont le redevable possède
+des parts ou actions représente plus de la moitié des revenus mentionnés à la même phrase.
+Lorsque les sociétés mentionnées au premier alinéa du présent 1 ont des activités soit similaires, soit
+connexes et complémentaires, la condition de rémunération normale s'apprécie au regard des fonctions
+exercées dans l'ensemble des sociétés dont les parts ou actions répondent aux conditions du III.
+2. Sont également exonérés les biens ou droits immobiliers mentionnés au 1 du présent IV affectés par le
+redevable mentionné aux I ou II dans une ou plusieurs sociétés soumises à l'impôt sur les sociétés lorsque
+chaque participation, prise isolément, satisfait aux conditions prévues au III.
+V.-Pour l'application du présent article, les activités commerciales s'entendent de celles définies à l'article
+966.
+Par exception au premier alinéa du présent V, est considérée comme une activité commerciale pour
+l'application des I à IV :
+1° L'exercice d'une activité de location de locaux d'habitation loués meublés ou destinés à être loués
+meublés, par une personne mentionnée au 1° de l'article 965 ou par une société ou organisme, sous réserve,
+s'agissant des personnes mentionnées au même 1°, qu'elles réalisent plus de 23 000 € de recettes annuelles et
+retirent de cette activité plus de 50 % des revenus à raison desquels le foyer fiscal auquel elles appartiennent
+est soumis à l'impôt sur le revenu dans les catégories des traitements et salaires, bénéfices industriels et
+commerciaux, bénéfices agricoles, bénéfices non commerciaux, revenus des gérants et associés mentionnés à
+l'article 62 ;
+2° L'exercice, par une personne mentionnée au 1° de l'article 965 ou par une société ou un organisme, d'une
+activité de location d'établissements commerciaux ou industriels munis du mobilier ou du matériel nécessaire
+à leur exploitation.
+VI.-Les biens ou droits immobiliers affectés à des sociétés mentionnées aux II à IV qui n'en ont pas la
+propriété sont exonérés à hauteur de la participation du redevable dans les sociétés auxquelles ils sont
+affectés.
+VII. - Les actifs mentionnés au 2° de l'article 965 sont exonérés lorsqu'ils ont été soumis à la taxe instituée à
+l'article 235 ter C au titre de l'exercice de la société mentionnée au premier alinéa du A du I du même article
+235 ter C clos au cours de l'année précédant le 1er janvier.
 ```
 
 ---
@@ -2387,17 +4395,6 @@ IV.-Sous les conditions prévues au 4° du 1 de l'article 793, les parts de grou
 et de groupements agricoles fonciers soumis à la loi n° 62-933 du 8 août 1962 complémentaire à la loi
 d'orientation agricole et à l'article 11 de la loi n° 70-1299 du 31 décembre 1970 relative aux groupements
 fonciers agricoles sont exonérées, sous réserve que ces parts soient représentatives d'apports constitués par
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 des immeubles ou des droits immobiliers à destination agricole et que les baux consentis par le groupement
 ainsi que leurs preneurs répondent aux conditions prévues au premier alinéa du III du présent article.
 A défaut de remplir les deux dernières conditions du premier alinéa du présent IV, ces mêmes biens sont,
@@ -2415,13 +4412,6 @@ III, lorsqu'ils sont mis à la disposition d'une société mentionnée au premie
 lorsque le droit au bail y afférent est apporté à une société de même nature, dans les conditions prévues,
 respectivement, aux articles L. 411-37 et L. 411-38 du code rural et de la pêche maritime, sont exonérés dans
 les mêmes proportions et sous les mêmes conditions que celles définies au premier alinéa du présent V.
- 
- 
- 
-
-Livre premier : Assiette et liquidation de l'impôt
-Première Partie : Impôts d'État
-Titre 
 ```
 
 ---
