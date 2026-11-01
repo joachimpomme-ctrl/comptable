@@ -1,0 +1,34 @@
+name: Tests des skills
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests des scripts de calcul (conseiller-patrimoine)
+        run: python .claude/skills/conseiller-patrimoine/scripts/tests/test_calculs.py
+      - name: En-têtes YAML des SKILL.md valides
+        run: |
+          pip install --quiet pyyaml
+          python - <<'PY'
+          import re, sys, yaml, pathlib
+          ok = True
+          for p in sorted(pathlib.Path(".claude/skills").glob("*/SKILL.md")):
+              m = re.match(r"^---\n(.*?)\n---", p.read_text(encoding="utf-8"), re.S)
+              fm = yaml.safe_load(m.group(1)) if m else None
+              if not isinstance(fm, dict) or not fm.get("name") or not fm.get("description"):
+                  print(f"KO {p}"); ok = False; continue
+              if len(fm["description"]) > 1024 or "<" in fm["description"] or ">" in fm["description"]:
+                  print(f"KO {p} : description trop longue ou chevrons"); ok = False; continue
+              print(f"OK {p} ({len(fm['description'])} caractères)")
+          sys.exit(0 if ok else 1)
+          PY
+      - name: Paquets dist/ reconstructibles
+        run: python3 scripts/build_skill_package.py

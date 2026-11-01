@@ -44,6 +44,13 @@ Date : <AAAA-MM-JJ>
 - **Cas de test** (`knowledge/08_evaluation_suite.md`) : proposer un cas reel anonymise avec la reponse attendue sourcee — issue `[CAS DE TEST]`.
 - **Erreur constatee en utilisant l'agent** : issue `[BUG REPONSE]` avec la question posee, la reponse obtenue et ce qui est faux (et la source qui le montre).
 
+### Skill conseiller-patrimoine
+
+- **Erreur de fond, regle perimee, garde-fou manquant** : issue `[CONSEILLER] <fichier ou sujet>` avec la source officielle qui le montre.
+- **Regle volatile qui a change** (taux, plafond, norme, calendrier) : issue `[FRAICHEUR] <regle>` avec le nouveau texte, sa date d'effet et le lien. C'est la contribution la plus utile : `references/01-fraicheur.md` vieillit vite.
+- **Cas de test** : issue `[CAS DE TEST] conseiller` avec une question reelle anonymisee et ce que la bonne reponse doit contenir.
+- Relecteurs particulierement bienvenus : CGP, CIF, notaires, courtiers en credit. Voir le [guide du skill](docs/conseiller-patrimoine.md#13-signaler-une-erreur-contribuer).
+
 ---
 
 ## Ce que ce depot n'accepte pas
