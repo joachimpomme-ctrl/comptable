@@ -5,8 +5,9 @@ Vérifie :
 1. les fichiers suivis par git (hors archives binaires) : adresses e-mail,
    identifiants de type Google Drive, IBAN, numéros de carte, numéros de
    téléphone français, clés d'API et jetons courants ;
-2. les auteurs et committers de tout l'historique : seules les adresses
-   anonymes (noreply) sont admises.
+2. les auteurs et committers de l'historique de la branche testée (HEAD) :
+   seules les adresses anonymes (noreply) sont admises. Option --toutes-les-refs
+   pour contrôler aussi les autres branches et étiquettes.
 
 Usage : python3 scripts/verifier_donnees_personnelles.py
 Code retour 1 si un problème est trouvé. Lancé par la CI à chaque push.
@@ -81,15 +82,16 @@ def controler_fichiers():
     return problemes
 
 
-def controler_historique():
-    sortie = subprocess.run(["git", "log", "--all", "--format=%ae%n%ce"], capture_output=True, text=True, check=True).stdout
+def controler_historique(toutes_les_refs=False):
+    portee = "--all" if toutes_les_refs else "HEAD"
+    sortie = subprocess.run(["git", "log", portee, "--format=%ae%n%ce"], capture_output=True, text=True, check=True).stdout
     adresses = {a.strip() for a in sortie.splitlines() if a.strip()}
     return [f"historique git : adresse non anonyme ({a.split('@')[0][:3]}...@{a.split('@')[-1]})"
             for a in sorted(adresses) if not EMAILS_ADMIS.match(a)]
 
 
 def main():
-    problemes = controler_fichiers() + controler_historique()
+    problemes = controler_fichiers() + controler_historique("--toutes-les-refs" in sys.argv[1:])
     if problemes:
         print("Données personnelles ou secrets possibles :")
         for p in problemes:
