@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agent IA Comptable &amp; Patrimoine</title>
-<meta name="description" content="Agent IA open source pour la fiscalité française : 391 règles tracées, 51 articles CGI, référentiel de paramètres vérifiés. Pour Claude, Gemini Gems et ChatGPT.">
+<meta name="description" content="Agent IA open source pour la fiscalité française : 391 règles tracées, 63 articles CGI, référentiel de paramètres vérifiés. Pour Claude, Gemini Gems et ChatGPT.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📒</text></svg>">
 <style>
   :root {
@@ -95,8 +95,8 @@
     <p class="lead">Un agent IA spécialisé en fiscalité française, comptabilité BNC/BIC, location meublée et gestion de patrimoine — dont chaque chiffre est tracé jusqu'à sa source officielle. Pour <strong>Claude</strong>, <strong>Gemini Gems</strong> et <strong>ChatGPT</strong>.</p>
     <div class="stats">
       <div><strong>391</strong>règles tracées<br>379 ancres vérifiées</div>
-      <div><strong>51</strong>articles CGI (2026)</div>
-      <div><strong>36</strong>paramètres chiffrés<br>sourcés et datés</div>
+      <div><strong>63</strong>articles CGI (2026)</div>
+      <div><strong>38</strong>paramètres chiffrés<br>sourcés et datés</div>
       <div><strong>45</strong>cas de test</div>
     </div>
     <div class="cta">
@@ -112,7 +112,7 @@
   <div class="warnbox">
     <h3>⚠️ À lire avant toute utilisation</h3>
     <p><strong>Les sorties de l'agent sont des projets de réponse à vérifier — jamais un livrable client, jamais un conseil.</strong> La consultation fiscale à titre habituel est une activité réglementée : cet outil est une aide à la recherche et à la pré-qualification, la responsabilité professionnelle reste celle du praticien.</p>
-    <p>État de validation : <strong>0 des 391 règles métier n'a encore été validée par un professionnel</strong> (statut <code>candidate_to_validate</code>). Les 36 paramètres du référentiel sont <code>sourced</code> : chacun cite sa source officielle, son URL et sa date de vérification (passe du 26/08/2026, corrections et ajouts du 01/11/2026).</p>
+    <p>État de validation : <strong>0 des 391 règles métier n'a encore été validée par un professionnel</strong> (statut <code>candidate_to_validate</code>). Les 38 paramètres du référentiel sont <code>sourced</code> : chacun cite sa source officielle, son URL et sa date de vérification (passe du 26/08/2026, corrections et ajouts du 01/11/2026).</p>
   </div>
 </div>
 
@@ -158,12 +158,12 @@
     <div class="card">
       <span class="tag ok">Source de vérité</span>
       <h3>Référentiel de paramètres</h3>
-      <p>36 clés (seuils, taux, abattements, plafonds), chacune avec sa source officielle, son millésime, son URL et sa date de vérification. En cas d'écart avec un texte, <strong>le référentiel prime</strong>.</p>
+      <p>38 clés (seuils, taux, abattements, plafonds), chacune avec sa source officielle, son millésime, son URL et sa date de vérification. En cas d'écart avec un texte, <strong>le référentiel prime</strong>.</p>
     </div>
     <div class="card">
       <span class="tag ok">Traçabilité</span>
       <h3>Chaque règle a sa source</h3>
-      <p>391 règles reliées une à une à leur document et page d'origine — dont <strong>379 ancres vérifiées</strong> contre le texte officiel (Légifrance, BOFiP), avec verdict et preuve tracés. Les 51 articles du CGI (millésime 2026) sont embarqués.</p>
+      <p>391 règles reliées une à une à leur document et page d'origine — dont <strong>379 ancres vérifiées</strong> contre le texte officiel (Légifrance, BOFiP), avec verdict et preuve tracés. Les 63 articles du CGI (millésime 2026) sont embarqués.</p>
     </div>
     <div class="card">
       <span class="tag ok">Testé</span>
@@ -223,13 +223,14 @@
     <tr><td>Seuil micro-BNC (CGI 102 ter)</td><td>77 700 €</td><td><strong>83 600 €</strong> (2026-2028)</td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>Micro-BIC tourisme non classé / classé, chambres d'hôtes, longue durée (loi Le Meur)</td><td>15 000 € / 77 700 €</td><td>15 000 € (non actualisé) / <strong>83 600 €</strong></td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>Seuil LMP · Seuil IFI · Déficit foncier</td><td>23 000 € · 1,3 M€ · 10 700 €</td><td>inchangés</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>Déficit foncier majoré (rénovation énergétique)</td><td>21 400 €</td><td>21 400 € jusqu'au 31/12/2027</td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>PFU (IR 12,8 % + prélèvements sociaux)</td><td>30 %</td><td><strong>31,4 %</strong> (perçus depuis le 01/01/2026)</td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>Prélèvements sociaux location meublée non professionnelle</td><td><strong>18,6 %</strong> (revenus 2025)</td><td>18,6 %</td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>PV immobilière (IR + PS)</td><td colspan="2">19 % + 17,2 % (maintenu en 2026 malgré la hausse LFSS 2026 à 18,6 % sur les autres revenus du capital)</td><td><span class="badge src">sourced</span></td></tr>
     <tr><td>Taux URSSAF PL (maladie jusqu'à 8,5 %, CNAVPL T1 8,73 % depuis 2025, CSG-CRDS)</td><td>2025</td><td>2026</td><td><span class="badge src">sourced</span></td></tr>
-    <tr><td>Barème kilométrique</td><td>millésime 2025</td><td>mise à jour en attente</td><td><span class="badge src">sourced 2025</span></td></tr>
-    <tr><td>CARPIMKO invalidité-décès (forfait)</td><td>—</td><td>1 022 €</td><td><span class="badge src">sourced</span></td></tr>
-    <tr><td>CARMF (forfaits médecins)</td><td>indicatifs</td><td>vérifier carmf.fr</td><td><span class="badge cand">à valider</span></td></tr>
+    <tr><td>Barème kilométrique</td><td>revenus 2025 : barème 2023 reconduit</td><td>PLF 2027 en discussion</td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>CARPIMKO : invalidité-décès / complémentaire</td><td>1 022 € / forfait 2 312 € + 3 %</td><td>1 022 € / <strong>8,70 %</strong></td><td><span class="badge src">sourced</span></td></tr>
+    <tr><td>CARMF (médecins)</td><td>non reporté</td><td>proportionnelles (à vérifier sur carmf.fr)</td><td><span class="badge cand">probable</span></td></tr>
   </table>
   </div>
 </section>

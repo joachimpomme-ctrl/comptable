@@ -106,7 +106,11 @@ Valeur NP transmise = Valeur PP × (1 − Taux usufruit selon âge art. 669 CGI)
 ### [FORM-006] Calcul déficit foncier imputable
 
 **Formule :**
-Déficit foncier imputable sur le revenu global = MIN(10 700 €, déficit hors intérêts d'emprunt). Si travaux rénovation énergétique E/F/G → A/B/C/D payés entre 2023 et 2025: plafond doublé à 21 400 €. Déficit sur intérêts d'emprunt = reportable sur revenus fonciers uniquement (10 ans). Déficit total année = Revenus locatifs nets bruts − Charges déductibles. Charges déductibles = intérêts emprunt + travaux entretien/réparation + taxe foncière + assurances + frais gestion + provisions copropriété.
+Ordre d'imputation : le revenu foncier brut s'impute d'abord sur les intérêts d'emprunt, puis sur les autres charges. Déficit imputable sur le revenu global = MIN(limite, déficit provenant des charges autres que les intérêts). Limite = 10 700 € [referentiel: deficit_foncier_plafond_standard], rehaussée du montant des dépenses de rénovation énergétique faisant passer le bien de E, F ou G à A, B, C ou D au plus tard le 31/12/2027, sans dépasser 21 400 € [referentiel: deficit_foncier_plafond_renovation_energetique]. Déficit provenant des intérêts et excédent au-delà de la limite : reportables sur les revenus fonciers des 10 années suivantes. Exemple : recettes 12 000 €, intérêts 4 000 €, travaux 25 000 € → 12 000 − 4 000 = 8 000 € ; 8 000 − 25 000 = −17 000 € ; 10 700 € imputables sur le revenu global, 6 300 € reportables.
+
+*Corrigé le 2026-11-01 (audit) : ordre d'imputation, majoration non automatique, prorogation jusqu'au 31/12/2027 (CGI art. 156, I-3°, texte du 30/10/2026).*
+
+Rappel : Déficit total année = Revenus locatifs nets bruts − Charges déductibles. Charges déductibles = intérêts emprunt + travaux entretien/réparation + taxe foncière + assurances + frais gestion + provisions copropriété.
 
 **Paramètres :**
 - `plafond_standard` : 10700
@@ -228,17 +232,16 @@ RISQUE: Non-respect des engagements de conservation dans un Pacte Dutreil → re
 
 ## BARÈMES DE RÉFÉRENCE (Module M13 — millésimes 2025-2026)
 
-> **Statut :** `sourced` pour PASS 2025-2026, barème kilométrique 2025, taux URSSAF/CNAVPL et forfait invalidité-décès CARPIMKO (clés `tns_*` du référentiel, vérifiées le 2026-08-26 contre urssaf.fr / cnavpl.fr / carpimko.com). `candidate_to_validate` pour les forfaits CARMF uniquement (votés annuellement — vérifier sur carmf.fr).  
-> **Millésimes :** PASS vérifié pour 2026 (48 060 €). Taux URSSAF et barème kilométrique ci-dessous = millésime 2025, mise à jour 2026 en attente de sourcing officiel.  
+> **Statut au 2026-11-01 :** PASS 2025-2026 et CARPIMKO `sourced` (arrêtés, bulletin de la caisse) ; taux URSSAF 2026 et CARMF 2026 probables (fiches URSSAF reprises par Weblex) ; réforme de l'assiette sociale intégrée (décret n° 2024-688) ; barème kilométrique des revenus 2025 identique à 2022-2024.  
 > **Source de vérité des chiffres :** `referentiel_parametres.json` (clé + millésime). En cas d'écart avec un texte du corpus, le référentiel prime.  
 > **Mise à jour :** janvier de chaque année (PASS, taux URSSAF, barèmes km publiés par arrêté).
 
 ### [REF-001] PASS 2025 et 2026
 
-**PASS annuel 2025 : 47 100 € [referentiel: PASS/2025]** — PASS mensuel : 3 925 € | PASS journalier : 204 €  
+**PASS annuel 2025 : 47 100 € [referentiel: PASS/2025]** — PASS mensuel : 3 925 € | PASS journalier : 216 € (220 € en 2026)  
 **PASS annuel 2026 : 48 060 € [referentiel: PASS/2026]** — PASS mensuel : 4 005 €
 
-Utilisé pour : plafond PER (10 % PASS 2025 = 4 710 € ; 10 % PASS 2026 = 4 806 €), Madelin, retraite de base, seuils micro (102 ter), seuils micro-BIC.
+Utilisé pour : plafond PER (10 % PASS 2025 = 4 710 € ; 10 % PASS 2026 = 4 806 €), Madelin, cotisations sociales des indépendants. Les seuils micro ne dépendent pas du PASS : ils sont actualisés tous les trois ans comme la première tranche du barème de l'IR (CGI art. 50-0 et 102 ter).
 
 **Seuil micro-BNC associé (CGI art. 102 ter) : 77 700 € pour les revenus 2023-2025 ; 83 600 € pour les revenus 2026-2028 [referentiel: seuil_micro_bnc].**
 
@@ -246,63 +249,64 @@ Utilisé pour : plafond PER (10 % PASS 2025 = 4 710 € ; 10 % PASS 2026 = 4 806
 
 ---
 
-### [REF-002] Cotisations URSSAF — Professions libérales 2025
+### [REF-002] Cotisations URSSAF des professions libérales (2026)
 
-| Cotisation | Base | Taux |
+Assiette : depuis la régularisation des revenus 2025 (avril 2026), assiette sociale unique égale au revenu professionnel abattu de 26 % (réforme de l'assiette, décret n° 2024-688). Les appels 2026 portent sur l'assiette sociale de 2025.
+
+| Cotisation | Assiette | Taux 2026 |
 |-----------|------|------|
-| Maladie-maternité | Revenus nets | 1,50 % (< 40 % PASS) → 6,50 % (> 110 % PASS) progressif |
-| Retraite de base — PL NON réglementée (régime général/SSI) | ≤ 1 PASS (47 100 € [referentiel: PASS/2025]) | 17,75 % |
-| Retraite de base — PL NON réglementée | > 1 PASS | 0,60 % |
-| Retraite de base — PL réglementée (CNAVPL) | ≤ 1 PASS | 8,23 % (2025) → **8,73 %** dès la régularisation 2025, campagne avril 2026 [referentiel: tns_retraite_base_cnavpl_t1] |
-| Retraite de base — PL réglementée (CNAVPL) | 1 à 5 PASS | 1,87 % [referentiel: tns_retraite_base_cnavpl_t2] |
-| Invalidité-décès | ≤ 1 PASS | 1,30 % |
-| Indemnités journalières | ≤ 3 PASS | 0,85 % |
-| Allocations familiales | Revenus nets | 0 % (< 110 % PASS) → 3,10 % (> 140 % PASS) progressif |
-| CSG déductible IR | 98,25 % revenus nets | 6,80 % |
-| CSG non déductible + CRDS | 98,25 % revenus nets | 2,90 % |
-| Formation professionnelle | 1 PASS | 0,25 % |
+| Maladie-maternité | Assiette sociale | 0 % sous 20 % du PASS (9 612 €), progressif jusqu'à 8,50 % à 3 PASS (144 180 €), 6,50 % sur la part au-delà [referentiel: tns_maladie_maternite_taux_max] |
+| Maladie, praticiens et auxiliaires médicaux conventionnés (PAMC) | Revenus conventionnés | Même barème, pris en charge par l'Assurance maladie jusqu'à 8,40 points (reste à charge de l'ordre de 0,10 %) ; revenus hors convention : 3,25 % à 11,75 % |
+| Indemnités journalières | 40 % du PASS minimum, 3 PASS maximum | 0,30 % (professions libérales réglementées, PAMC) ; artisans, commerçants et PL non réglementées : 0,50 % jusqu'à 5 PASS (probable) |
+| Allocations familiales | Assiette sociale | 0 % sous 110 % du PASS (52 866 €), progressif jusqu'à 3,10 % à 140 % (67 284 €) |
+| CSG-CRDS | Voir la note de la clé | 9,70 %, dont 6,80 % déductible [referentiel: tns_csg_crds_taux] |
+| CURPS (professions de santé) | Revenu d'activité | 0,10 % (auxiliaires médicaux) à 0,50 % (médecins), plafonné à 240 € en 2026 |
+| Formation professionnelle | PASS | 0,25 %, soit 120 € (0,34 % avec conjoint collaborateur) |
+| Retraite de base, PL réglementée (CNAVPL), T1 | ≤ 1 PASS | 8,73 % (8,23 % jusqu'en 2024) [referentiel: tns_retraite_base_cnavpl_t1] |
+| Retraite de base, PL réglementée (CNAVPL), T2 | 0 à 5 PASS, en plus de T1 | 1,87 % [referentiel: tns_retraite_base_cnavpl_t2] |
+| Retraite de base, PL non réglementée (SSI) | ≤ 1 PASS / au-delà | 17,87 % / 0,72 % (depuis 2025, circulaire Cnav 2025-14) |
 
-**Total charges sociales estimé :** 30–45 % selon niveau de revenus.  
-**Déduction 2035 :** cotisations EFFECTIVEMENT PAYÉES dans l'année (ligne BT) — logique trésorerie BNC.  
+**Total charges sociales :** de l'ordre de 30 à 45 % selon le revenu et la caisse (ordre de grandeur, pas un taux).  
+**Déduction 2035 :** cotisations EFFECTIVEMENT PAYÉES dans l'année (ligne BT), logique de trésorerie BNC.  
 **Cotisations minimales :** dues même en cas de revenu nul ou déficitaire.
 
-*Source : URSSAF.fr — taux 2025 professions libérales*
+*Sources : CSS art. D621-2 ; URSSAF, fiche « Taux de cotisations 2026 - Praticien ou auxiliaire médical » (20/03/2026) reprise par Weblex le 21/04/2026 ; Weblex, médecins secteur 2, 04/05/2026 ; circulaire Cnav 2025-14. Corrigé le 2026-11-01 (audit) : l'ancienne version reprenait des taux d'avant la réforme 2025.*
 
 ---
 
-### [REF-003] Cotisations retraite complémentaire — CARMF (Médecins) 2025
+### [REF-003] Cotisations CARMF (médecins), 2026
 
-Cotisations majoritairement **forfaitaires** (indépendantes du revenu) :
+Cotisations **proportionnelles** pour l'essentiel (et non forfaitaires) :
 
-| Poste | Montant indicatif 2025 |
-|-------|----------------------|
-| Retraite de base (ASS) | ~10 056 €/an |
-| Retraite complémentaire (RCV, taux plein) | ~6 004 €/an |
-| Prévoyance (décès/invalidité) | ~926 €/an |
-| ASV secteur 1 (participation CNAM) | ~4 648 €/an |
+| Poste | 2026 |
+|-------|------|
+| Retraite de base | 8,73 % jusqu'à 1 PASS (48 060 €) + 1,87 % jusqu'à 5 PASS (240 300 €), sur les revenus nets 2025 |
+| Retraite complémentaire | 11,80 % jusqu'à 3,5 PASS (168 210 €) |
+| ASV (secteur 2) | 5 751 € + 4 % du revenu conventionnel net 2025, plafonné à 5 PASS (secteur 1 : participation de l'Assurance maladie) |
+| Invalidité-décès | 626 € (revenus < 1 PASS) à 1 010 € (> 3 PASS) |
 
-> **Validation requise :** Vérifier sur carmf.fr — montants votés annuellement.
+> **Statut :** probable (Weblex du 04/05/2026 citant carmf.fr) : vérifier sur carmf.fr avant tout calcul.
 
 ---
 
-### [REF-004] Cotisations CARPIMKO (Paramédicaux) — 2025 et réforme 2026
+### [REF-004] Cotisations CARPIMKO (auxiliaires médicaux), 2025 et 2026
 
 Kinésithérapeutes, infirmiers, orthophonistes, pédicures-podologues, orthoptistes.
 
-| Poste | 2025 | 2026 (réforme) |
-|-------|------|----------------|
-| Retraite de base (CNAVPL, collectée par la CARPIMKO) | 8,23 % (≤ 1 PASS) + 1,87 % (1 à 5 PASS) | **8,73 %** (≤ 1 PASS, dès la régularisation 2025) + 1,87 % [referentiel: tns_retraite_base_cnavpl_t1 / _t2] |
-| Retraite complémentaire | forfait par classe (~2 640 € à ~7 920 €/an, indicatif) | **proportionnelle 8,70 %** sur l'assiette de 0,5 à 3 PASS (~2 091 € à ~12 544 €) — à confirmer sur le bulletin officiel CARPIMKO |
-| Invalidité-décès | ~1 013 €/an (indicatif) | **1 022 €/an** (forfait, carpimko.com) [referentiel: tns_carpimko_forfaitaires] |
-| ASV (part assuré, conventionné) | — | ~224 € forfait + 0,4 % proportionnel (à confirmer) |
+| Poste | 2025 | 2026 |
+|-------|------|------|
+| Retraite de base (CNAVPL, collectée par la CARPIMKO) | appels : 8,23 % jusqu'à 47 100 € + 1,87 % jusqu'à 235 500 € (base BNC N-1) | 8,73 % jusqu'à 48 060 € + 1,87 % jusqu'à 240 300 € (base assiette sociale N-1) |
+| Retraite complémentaire | forfait de 2 312 € + 3 % entre 25 246 € et 231 840 € | forfait supprimé ; **8,70 %** entre 24 030 € et 144 180 € [referentiel: carpimko_complementaire_taux] |
+| Invalidité-décès | 1 022 € | 1 022 € [referentiel: carpimko_invalidite_deces_forfait] |
+| ASV (conventionnés, part de l'assuré) | 221 € + 0,16 % | 224 € + 0,16 % (Assurance maladie : 447 € + 0,24 %) |
 
-> **Statut :** retraite de base et invalidité-décès 2026 `sourced` (vérifiés le 2026-08-26) ; réforme de la complémentaire (8,70 %) et ASV relayées par des sources concordantes dont le bulletin CARPIMKO avril 2026 — **à confirmer sur carpimko.com avant tout calcul**. Montants votés annuellement.
+> **Statut :** `sourced` (bulletin spécial CARPIMKO, assiette sociale, avril 2026). Corrigé le 2026-11-01 : la complémentaire 2025 n'était pas un « forfait par classe ».
 
 ---
 
-### [REF-005] Barème kilométrique BNC 2025 — Voitures
+### [REF-005] Barème kilométrique BNC — voitures (revenus 2022 à 2025)
 
-*Source : Arrêté du 2 février 2025 — applicable aux revenus 2024 déclarés en 2025. Identique au barème salarié (CGI art. 83).*
+*Source : arrêté du 27 mars 2023, barème reconduit pour les revenus 2023, 2024 et 2025 (brochure IR 2026). Identique au barème salarié (CGI art. 83). Revenus 2026 : un amendement au PLF 2027 prévoit une revalorisation, non définitive au 16/10/2026. Corrigé le 2026-11-01 : l'« arrêté du 2 février 2025 » cité auparavant n'a pas été trouvé.*
 
 | Puissance fiscale | ≤ 5 000 km | 5 001–20 000 km | > 20 000 km |
 |------------------|-----------|----------------|------------|
@@ -322,12 +326,14 @@ Kinésithérapeutes, infirmiers, orthophonistes, pédicures-podologues, orthopti
 
 ---
 
-### [REF-006] ACRE — Exonération début d'activité libérale
+### [REF-006] ACRE : exonération de début d'activité (règles 2026)
 
-- **Durée :** 12 mois à compter du début d'activité.
-- **Taux :** 25 % des taux normaux (exonération 75 %) si revenus ≤ 2/3 PASS (≈ 30 912 €). Dégressive au-delà.
-- **Attention :** Ne couvre pas la CSG/CRDS. CARMF/CARPIMKO maintiennent leurs cotisations minimales.
-- *Source : Art. L613-7 CSS*
+- **Indépendant hors micro :** exonération partielle (25 %) des cotisations maladie, maternité, retraite de base, invalidité-décès et allocations familiales pendant 12 mois si le revenu professionnel ne dépasse pas 75 % du PASS (36 045 € en 2026) ; dégressive jusqu'au PASS (48 060 €) ; nulle au-delà.
+- **Micro-entrepreneur :** taux minoré égal à 75 % du taux normal, jusqu'à la fin du 3e trimestre civil suivant le début d'activité.
+- **Demande obligatoire** à l'URSSAF dans les 60 jours suivant le début d'activité ; réponse sous 30 jours, accord tacite à défaut. Pas d'ACRE si elle a été obtenue dans les 3 années précédentes.
+- **Avant 2026 :** exonération totale sous 75 % du PASS (probable).
+- **Attention :** ne couvre ni la CSG-CRDS ni la retraite complémentaire ; CARMF et CARPIMKO maintiennent leurs cotisations propres.
+- *Sources : entreprendre.service-public.gouv.fr F11677 (vérifiée le 01/07/2026) ; Weblex, 18/02/2026. Corrigé le 2026-11-01 (audit).*
 
 ---
 

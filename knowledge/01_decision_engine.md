@@ -50,12 +50,12 @@
   - **ALORS** soumises à TVA
   - **SI** CA < 37 500 € (seuil de base) ET CA N-1 < 37 500 €
     - **ALORS** franchise en base — mention obligatoire: "TVA non applicable — art. 293 B du CGI"
-    - **ATTENTION** réforme abaissement à 25 000 € suspendue jusqu'au 1er juin 2025
   - **SI** CA entre 37 500 € et 41 250 € en N avec CA N-1 < 37 500 €
     - **ALORS** franchise applicable jusqu'au 31/12/N; assujettissement au 01/01/N+1
   - **SI** CA > 41 250 € en cours d'année
-    - **ALORS** assujettissement dès le 1er jour du mois de dépassement
-  - **SI** CA entre 25 000 € et 254 000 € ET TVA annuelle < 15 000 €
+    - **ALORS** fin de la franchise pour les opérations réalisées à compter de la date du dépassement (CGI art. 293 B, II)
+  - **ATTENTION** la réforme du seuil unique à 25 000 € a été abandonnée : seuils 2026 inchangés (85 000 / 93 500 € ventes et hébergement ; 37 500 / 41 250 € services ; avocats et auteurs 50 000 / 55 000 € et 35 000 / 38 500 €, art. 293 B, texte du 30/10/2026)
+  - **SI** hors franchise ET CA ≤ plafond du régime simplifié (CIBS art. L162-4 : 254 000 € pour les services jusqu'en 2025 ; 286 000 € pour 2026-2028, probable) ET TVA annuelle < 15 000 €
     - **ALORS** régime réel simplifié (2 acomptes: juillet + décembre; déclaration annuelle 3517-S-SD)
   - **SI** CA > 254 000 € OU TVA annuelle > 15 000 €
     - **ALORS** régime réel normal (déclaration mensuelle CA3)
@@ -143,7 +143,7 @@
   - **SI** bien détenu < 2 ans → PV court terme (IR barème progressif)
   - **SI** bien détenu > 2 ans → PV CT dans la limite des amortissements déduits + PV LT au-delà (12,8 % IR + PS : 17,2 % jusqu'aux revenus 2024 ; pour les revenus 2025 et suivants, taux à vérifier, 18,6 % probable [referentiel: ps_revenus_patrimoine])
   - **EXONÉRATIONS possibles** (activité ≥ 5 ans):
-    - Art. 151 septies: totale si recettes moy. < 90 000 € (250 000 € tourisme classé); partielle jusqu'à 126 000 €
+    - Art. 151 septies: totale si recettes moy. < 90 000 € ; partielle jusqu'à 126 000 € (la catégorie à 250 000 € exclut expressément la location de locaux d'habitation meublés, art. 151 septies, II, 1° a ; Correction de LMN-025)
     - Art. 151 septies B: abattement 10 %/an sur PV LT immo au-delà de 5 ans (exo totale à 15 ans)
     - Art. 238 quindecies: totale si cession < 500 000 € (hors immeubles); partielle jusqu'à 1 000 000 €
     - Art. 151 septies A: exonération totale si départ retraite dans 2 ans avant/après (hors immeubles)
@@ -160,7 +160,7 @@
   - **SI** CA entre 85 000 € et 93 500 €
     - **ALORS** franchise applicable jusqu'à fin N; assujettissement au 01/01/N+1
   - **SI** CA > 93 500 €
-    - **ALORS** déchéance franchise dès le 1er jour du mois de dépassement
+    - **ALORS** fin de la franchise pour les opérations réalisées à compter de la date du dépassement (CGI art. 293 B, II)
 - **SOURCE** LMN-016, LMN-017, M5
 
 ### B8 — Cotisations sociales en location meublée
@@ -173,21 +173,34 @@
   - **ATTENTION** confier la gestion à une agence ne dispense pas d'affiliation au-delà du seuil (Correction de LMN-020) ; seule alternative prévue : l'option pour le régime général lors de l'affiliation (CSS L311-3, 35°)
 - **SOURCE** LMN-020, LMN-021, M5
 
+### B9 - Location NUE : statut du bailleur privé (LF 2026, CGI art. 31, I, 1°, i et j)
+
+- **SI** logement situé dans un immeuble collectif, loué nu en résidence principale, acquis neuf ou en VEFA (i) ou ancien avec travaux d'au moins 30 % du prix et réhabilitation lourde (j)
+  - **ALORS** option pour un amortissement déductible des revenus fonciers, sur le prix hors foncier (foncier forfaitaire de 20 %)
+  - **TAUX** neuf : 3,5 % (location intermédiaire), 4,5 % (sociale), 5,5 % (très sociale) ; ancien : 3 %, 3,5 %, 4 %
+  - **PLAFOND** 8 000 € par an et par foyer pour l'ensemble des amortissements i et j, majoré de 2 000 € ou 4 000 € si au moins 50 % des loyers viennent de logements en location sociale ou très sociale
+  - **CONDITIONS** engagement de location de 9 ans, plafonds de loyer et de ressources, option irrévocable exercée avec la déclaration de l'année d'achèvement ou d'acquisition
+  - **ATTENTION** à la revente, le prix d'acquisition est minoré des amortissements déduits (CGI art. 150 VB, III) ; acquisitions visées du 21/02/2026 au 31/12/2028 (probable, source secondaire)
+- **SOURCE** CGI art. 31, texte du 30/10/2026 ; pas encore de règle dédiée dans le corpus
+
 ---
 
 ## MODULE C — IMPÔT SUR LE REVENU ET PRÉLÈVEMENTS SOCIAUX
 
-### C1 — Barème IR 2024 (déclaré 2025)
+### C1 — Barème IR des revenus 2025 (déclarés en 2026)
 
-| Tranche | TMI |
+| Tranche (par part) | TMI |
 |---|---|
-| ≤ 11 497 € | 0 % |
-| 11 498 € – 29 315 € | 11 % |
-| 29 316 € – 83 823 € | 30 % |
-| 83 824 € – 180 294 € | 41 % |
-| > 180 295 € | 45 % |
+| ≤ 11 600 € | 0 % |
+| 11 601 € à 29 579 € | 11 % |
+| 29 580 € à 84 577 € | 30 % |
+| 84 578 € à 181 917 € | 41 % |
+| > 181 917 € | 45 % |
 
-- **QUOTIENT FAMILIAL** avantage fiscal plafonné à 1 791 € par demi-part
+- **SOURCE DES CHIFFRES** CGI art. 197 en vigueur (LF 2026) [referentiel: bareme_ir_seuil_tranche_11pct/2026, _30pct, _41pct, _45pct]
+- **REVENUS 2024 (déclarés en 2025)** 11 497 / 29 315 / 83 823 / 180 294 € ; quotient familial plafonné à 1 791 € par demi-part
+- **REVENUS 2026** barème fixé par la LF 2027, non promulguée au 01/11/2026 : ne pas l'anticiper
+- **QUOTIENT FAMILIAL** avantage plafonné à 1 807 € par demi-part (revenus 2025)
 - **DÉCLARATION AUTOMATIQUE** possible si revenus intégralement déclarés par tiers (mais nécessaire pour PFU→barème ou crédits d'impôt)
 - **SOURCE** GFPL-105 à GFPL-115, M2
 
@@ -220,12 +233,14 @@
   - **BARÈME couple** 3 % de 500 001 € à 1 000 000 € / 4 % au-delà
 - **SOURCE** GFPL-142 à GFPL-145, M2
 
-### C5 — CDHR (Contribution Différentielle sur les Hauts Revenus, revenus 2025 uniquement)
+### C5 — CDHR (Contribution Différentielle sur les Hauts Revenus, CGI art. 224)
+
+- **DURÉE** créée pour les revenus 2025 (LF 2025), prorogée par la LF 2026 jusqu'à l'année où le déficit public passe sous 3 % du PIB (probable : sources secondaires ; le texte de l'art. 224 en vigueur ne fixe pas d'année de fin)
 
 - **SI** RFR retraité > 250 000 € (célibataire) OU > 500 000 € (couple)
   **ET** IR + CEHR < 20 % du RFR retraité
   - **ALORS** CDHR = 20 % × RFR retraité − (IR + CEHR)
-  - **ACOMPTE** 95 % du montant estimé à verser entre le 1er et le 15 décembre 2025
+  - **ACOMPTE** 95 % du montant estimé à verser entre le 1er et le 15 décembre de l'année des revenus
   - **PÉNALITÉ** 20 % si défaut/retard ou acompte insuffisant de > 20 %
 - **SOURCE** GFPL-146 à GFPL-154, M2
 
@@ -324,7 +339,7 @@
   - **SI** marié + enfants NON communs → conjoint: 1/4 PP seulement (pas de choix)
 - **SI** pas d'enfants + marié → conjoint hérite (moitié si parents en vie)
 - **SI** pas d'enfants + pas de conjoint → parents 50 %/50 % (+ frères/sœurs si présents)
-- **PACS** aucun droit légal en succession → testament obligatoire pour protéger le partenaire
+- **PACS** aucun droit successoral légal → testament nécessaire pour protéger le partenaire ; seul droit légal : jouissance gratuite du logement et du mobilier pendant un an (C. civ. art. 515-6, al. 3, renvoyant à l'art. 763)
 - **SOURCE** PAT-006, M6
 
 ### F4 — Abattements fiscaux donations (15 ans glissants)
@@ -336,7 +351,7 @@
 | Arrière-grand-parent → arrière-petit-enfant | 5 310 € |
 | Don en numéraire (donateur < 80 ans, donataire majeur) | + 31 865 € supplémentaire |
 | Enfant handicapé (abattement spécifique supplémentaire) | + 159 325 € (soit 259 325 € total par parent) |
-| Don affecté création entreprise ou construction RP | Exonération 100 000 € |
+| Don de sommes d'argent affecté sous 6 mois à l'achat d'un logement neuf ou en VEFA, ou à des travaux de rénovation énergétique de la résidence principale (CGI art. 790 A bis) | Exonération jusqu'à 100 000 € par donateur et 300 000 € par donataire, pour les dons versés du 15/02/2025 au **31/12/2026** ; conservation du logement 5 ans |
 
 - **RECONSTITUTION** tous les 15 ans → possibilité de renouveler les abattements
 - **SOURCE** PAT-009, M6
@@ -345,13 +360,14 @@
 
 **RACHATS (gains):**
 - **SI** contrat < 8 ans → PFU 12,8 % + PS 17,2 % sur les gains
-- **SI** contrat ≥ 8 ans ET encours primes non rachetées < 150 000 €
-  - **ALORS** PFU 7,5 % + PS 17,2 % + abattement annuel 4 600 € (seul) ou 9 200 € (couple)
-- **SI** contrat ≥ 8 ans ET encours > 150 000 € → PFU 12,8 % + PS 17,2 %
+- **SI** contrat ≥ 8 ans ET primes versées non remboursées (tous contrats) ≤ 150 000 €
+  - **ALORS** 7,5 % + PS 17,2 % après abattement annuel de 4 600 € (seul) ou 9 200 € (couple)
+- **SI** contrat ≥ 8 ans ET primes > 150 000 € → 7,5 % sur la fraction des gains égale à gains × 150 000 / primes, 12,8 % sur le reste (CGI art. 200 A, 1, B, 2°), PS 17,2 %
 
 **TRANSMISSION AU DÉCÈS:**
 - **SI** bénéficiaire = conjoint/partenaire PACS → EXONÉRATION TOTALE
-- **SI** primes versées avant 70 ans → abattement 152 500 € par bénéficiaire; 20 % de 152 501 € à 700 000 €; 31,25 % au-delà
+- **SI** primes versées avant 70 ans → abattement 152 500 € par bénéficiaire, puis 20 % sur la part taxable jusqu'à 700 000 € (soit jusqu'à 852 500 € de capital), 31,25 % au-delà (CGI art. 990 I)
+- **ATTENTION** au dénouement par décès, les prélèvements sociaux (17,2 %) restent dus sur les gains qui n'y ont pas encore été soumis, notamment en unités de compte (probable)
 - **SI** primes versées après 70 ans → abattement global 30 500 € (partagé entre tous bénéficiaires); droits de succession sur l'excédent
 - **SOURCE** PAT-018, PAT-019, M6
 
@@ -386,15 +402,26 @@
 
 ### F8 — IFI : assiette, seuil et réductions
 
-- **SEUIL** IFI dû si valeur nette du patrimoine immobilier > 1 300 000 € (seuil 2025)
+- **SEUIL** IFI dû si valeur nette du patrimoine immobilier > 1 300 000 € (CGI art. 964, inchangé en 2026) [referentiel: seuil_ifi]
 - **RÉDUCTIONS ET EXONÉRATIONS:**
   - SIIC: actifs immobiliers EXCLUS de l'assiette (si détention < 5 % du capital)
   - Nue-propriété: valeur de la PP n'entre pas dans l'assiette du nu-propriétaire pendant l'usufruit
   - Bois et forêts: exonération 75 % (engagement 30 ans d'exploitation + certificat gestion durable)
   - Dons à organismes d'intérêt général: réduction IFI = 75 % des versements, plafond 50 000 €/an
   - Donation temporaire d'usufruit: sort le bien de l'assiette IFI du donateur (à justifier par un besoin réel)
+- **DÉCOTE** patrimoine net taxable P entre 1 300 000 € et 1 400 000 € : IFI réduit de 17 500 € − 1,25 % × P (CGI art. 977, 2). Exemple : P = 1 350 000 € → barème 2 850 €, décote 625 €, IFI 2 225 €
+- **DÉMEMBREMENT** l'usufruitier déclare la pleine propriété (CGI art. 968), sauf exceptions de cet article
 - **PLAFONNEMENT** IFI + IR ≤ 75 % des revenus de l'année précédente
-- **SOURCE** PAT-013, PAT-014, M6
+- **SOURCE** PAT-013, PAT-014, IFI-002 (Correction), M6
+
+### F9 - Pacte Dutreil (CGI art. 787 B)
+
+- **EFFET** exonération de droits de mutation à titre gratuit à hauteur de 75 % de la valeur des titres transmis (donation ou succession)
+- **CONDITIONS** engagement collectif de conservation d'au moins 2 ans en cours au jour de la transmission (ou réputé acquis) ; engagement individuel de chaque héritier ou donataire de **6 ans** (texte en vigueur depuis la LF 2026 ; 4 ans auparavant) ; fonction de direction exercée par l'un des signataires ou bénéficiaires
+- **AUCUNE CONDITION DE PARENTÉ** : le bénéficiaire n'a pas à être un descendant
+- **EXCLUSIONS (LF 2026)** la fraction de valeur correspondant aux biens non affectés à l'activité : chasse, pêche, véhicules de tourisme, yachts, bateaux de plaisance, aéronefs, bijoux, métaux précieux, objets d'art, chevaux de course, vins et alcools, logements
+- **ATTENTION** date d'application de ces changements aux transmissions et sort des pactes déjà signés : à vérifier avant tout conseil ; montage à faire valider par un notaire ou un avocat fiscaliste
+- **SOURCE** TRM-003 (Correction), RISK-008 ; CGI art. 787 B, texte du 30/10/2026
 
 ---
 
@@ -450,7 +477,7 @@
 | Pinel (logement neuf, zones A/B1) — FERMÉ | 12/18/21 % | Engagement 6/9/12 ans | 300 000 € (5 500 €/m²) |
 | Malraux (restauration historique) | 22 % ou 30 % | Zone concernée | 400 000 € (hors niches) |
 | Censi-Bouvard (LMNP résidences services) — FERMÉ | 11 % sur 9 ans | Neuf uniquement | 300 000 €/an |
-| Don organismes détresse/Fondation patrimoine | 75 % puis 66 % | Plafond 1 000 € pour 75 % | 20 % du revenu imposable |
+| Don organismes détresse/Fondation patrimoine | 75 % puis 66 % | Plafond 2 000 € pour 75 % (CGI art. 200, 1 ter en vigueur ; 1 000 € auparavant, dons depuis le 14/10/2025 selon la LF 2026, probable) | 20 % du revenu imposable |
 | Réduction IFI (dons organismes intérêt général) | 75 % | Dons avant date dépôt déclaration | 50 000 €/an |
 
 > **ATTENTION — Dispositifs FERMÉS aux nouvelles acquisitions :**
@@ -466,7 +493,7 @@
   - **STRATÉGIE** étaler les donations dans le temps pour maximiser l'utilisation des abattements
   - **DÉMEMBREMENT** donner la nue-propriété, garder l'usufruit (les loyers) → usufruit s'éteint au décès SANS droits de succession
 - **SI** objectif transmettre en limitant les conflits entre héritiers
-  - **ALORS** donation-partage (non rapportable, évaluée au jour de la donation, sécurisée)
+  - **ALORS** donation-partage : effet civil (biens évalués au jour de la donation pour l'imputation et le calcul de la réserve, sous les conditions de l'art. 1078 C. civ. ; pas de rapport) ; effet fiscal identique à une donation simple (donations de moins de 15 ans rappelées pour leur valeur au jour de l'acte, CGI art. 784)
 - **SI** objectif favoriser une personne hors famille ou faire un legs
   - **ALORS** testament (utilisation de la quotité disponible)
 - **SI** objectif transmettre un capital important hors succession
@@ -517,15 +544,17 @@ Avant toute préconisation, auditer systématiquement:
 | Seuil micro-BIC (fourniture de logement, para-hôtellerie, 1° de l'art. 50-0) | 188 700 € | **203 100 €** [referentiel: seuil_micro_bic_ventes_fourniture_logement] |
 | Seuil LMP (recettes location) | 23 000 € | 23 000 € [referentiel: seuil_lmp_recettes] |
 | Seuil IFI | 1 300 000 € | 1 300 000 € [referentiel: seuil_ifi] |
-| Seuil CEHR (célibataire) | 250 000 € RFR | non vérifié 2026 |
-| Seuil CEHR (couple) | 500 000 € RFR | non vérifié 2026 |
-| Seuil CDHR (célibataire) | 250 000 € RFR | non vérifié 2026 |
-| Plafond PEA | 150 000 € (+ 225 000 € PEA-PME) | non vérifié 2026 |
+| Seuil CEHR (célibataire) | 250 000 € RFR | 250 000 € (CGI art. 223 sexies, texte du CGI au 30/10/2026) |
+| Seuil CEHR (couple) | 500 000 € RFR | 500 000 € (CGI art. 223 sexies, texte du CGI au 30/10/2026) |
+| Seuil CDHR (célibataire / couple) | 250 000 € / 500 000 € RFR retraité | 250 000 € / 500 000 € (CGI art. 224, texte du CGI au 30/10/2026) ; CDHR prorogée par la LF 2026 (probable) |
+| Plafond PEA | 150 000 € ; plafond commun PEA + PEA-PME de 225 000 € (probable : à lire comme un total, pas comme 150 000 + 225 000) | à vérifier (Code monétaire et financier, hors corpus) |
 | Abattement assurance-vie (avant 70 ans) | 152 500 € / bénéficiaire | 152 500 € [referentiel: abattement_av_avant_70] |
-| Abattement assurance-vie (après 70 ans) | 30 500 € global | non vérifié 2026 |
+| Abattement assurance-vie (après 70 ans) | 30 500 € global | 30 500 € (CGI art. 757 B, texte du CGI au 30/10/2026) |
 | Abattement donation parent/enfant | 100 000 € / parent / enfant (15 ans) | 100 000 € [referentiel: abattement_donation_parent_enfant] |
-| Taux IS normal | 25 % | non vérifié 2026 |
-| Taux IS réduit (bénéfice < 42 500 €, PME) | 15 % | non vérifié 2026 |
+| Taux IS normal | 25 % | 25 % (CGI art. 219, texte du CGI au 30/10/2026) |
+| Taux IS réduit (bénéfice ≤ 42 500 €, PME, CA ≤ 10 M€) | 15 % | 15 % (CGI art. 219, texte du CGI au 30/10/2026) |
+| Plafond majoré du déficit foncier (rénovation énergétique E/F/G vers A-D) | 21 400 € | 21 400 € jusqu'au 31/12/2027 [referentiel: deficit_foncier_plafond_renovation_energetique] |
+| Barème IR, première tranche (par part) | 11 497 € (revenus 2024) | 11 600 € (revenus 2025) [referentiel: bareme_ir_seuil_tranche_11pct/2026] |
 | PFU (Flat Tax) | 30 % (12,8 % IR + 17,2 % PS) | **31,4 %** (12,8 % + PS 18,6 %), revenus perçus depuis le 01/01/2026 [referentiel: pfu_taux_global] |
 | Prélèvements sociaux — PV immobilières, revenus fonciers, assurance-vie | 17,2 % | **17,2 % maintenu** (CSS art. L136-8, IV) [referentiel: ps_revenus_fonciers_av_epargne_logement] |
 | Prélèvements sociaux, dividendes et intérêts (année de perception) | 17,2 % | **18,6 %** (CSG portée à 10,6 %, LFSS 2026 art. 12) [referentiel: ps_produits_placement] |

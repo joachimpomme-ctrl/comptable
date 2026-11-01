@@ -47,8 +47,19 @@ class TestLookup(unittest.TestCase):
         base = os.path.join(os.path.dirname(LOOKUP), "..", "..", "..", "..", "knowledge", "M_CGI_code_general_impots.md")
         md = open(base, encoding="utf-8").read()
         blocs = re.findall(r"^## Article (.+?) —.*?\n```\n(.*?)\n```", md, re.S | re.M)
-        self.assertEqual(len(blocs), 51)
+        self.assertEqual(len(blocs), 63)
         self.assertEqual([a for a, b in blocs if len(b) in (4000, 4001)], [])
+
+    def test_lot2(self):
+        code, out = run("cgi", "977")
+        self.assertIn("17 500", out)
+        for cle, valeur in (("carpimko_complementaire_taux", '"2026": 8.7'),
+                            ("deficit_foncier_plafond_renovation_energetique", '"2027": 21400')):
+            code, out = run("referentiel", cle)
+            self.assertEqual(code, 0, cle)
+            self.assertIn(valeur, out, cle)
+        code, out = run("regles", "IFI-002")
+        self.assertIn("17 500", out)
 
     def test_referentiel_lot1(self):
         for cle, valeur in (("seuil_micro_bic_classe", '"2026": 83600'), ("pfu_taux_global", '"2026": 31.4'),

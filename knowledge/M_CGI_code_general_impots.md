@@ -1,11 +1,11 @@
 # Module M_CGI — Code Général des Impôts
 
 Extraction ciblée des articles pertinents pour comptabilité, fiscalité, patrimoine.
-Source : CGI Légifrance. Export du 30/10/2026 (dernière modification du code le 31/10/2026) pour 30 articles réextraits le 2026-11-01 (22 qui étaient coupés à 4 000 caractères, 92 et 102 ter modifiés depuis mai, 6 nettoyés de titres parasites) ; export du 01/05/2026 pour les 21 autres, dont le texte est identique au 30/10/2026 (seuls les tableaux des art. 194, 669 et 777 sont mis en page différemment).
+Source : CGI Légifrance. Export du 30/10/2026 (dernière modification du code le 31/10/2026) pour 30 articles réextraits le 2026-11-01 (22 qui étaient coupés à 4 000 caractères, 92 et 102 ter modifiés depuis mai, 6 nettoyés de titres parasites) ; export du 01/05/2026 pour les 21 autres, dont le texte est identique au 30/10/2026 (seuls les tableaux des art. 194, 669 et 777 sont mis en page différemment). 12 articles ajoutés le 2026-11-01 depuis l'export du 30/10/2026 : 50-0, 150 VC, 200 A, 219, 223 sexies, 224, 293 B, 757 B, 790 A bis, 968, 977, 1609 nonies G.
 
 **Statut :** `sourced` — texte légal officiel
 
-**Version :** v4, 2026-11-01 (tous les articles en texte intégral)
+**Version :** v5, 2026-11-01 (63 articles, texte intégral)
 
 **Note :** Art. L64 LPF (abus de droit) est dans le Livre des Procédures Fiscales, hors scope CGI.
 
@@ -4370,7 +4370,7 @@ l'article 235 ter C au titre de l'exercice de la société mentionnée au premie
 
 ## Article 976 — Ifi
 
-**Source :** CGI Art. 976 | **Module :** IFI | **Tags :** IFI, bareme, 0_5pc_1_5pc, tranches
+**Source :** CGI Art. 976 | **Module :** IFI | **Tags :** IFI, exonerations, bois_forets, biens_ruraux (barème : art. 977)
 
 ```
 Article 976
@@ -4463,3 +4463,921 @@ au revenu total.
 
 ---
 
+## Article 50-0 — Micro Bic
+
+**Source :** CGI Art. 50-0 | **Module :** location_meublee | **Tags :** micro_BIC, seuils, 203100, 83600, 15000, abattements_71_50_30
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 50-0
+1. Sont soumises au régime défini au présent article pour l'imposition de leurs bénéfices les entreprises dont
+le chiffre d'affaires hors taxes, ajusté s'il y a lieu au prorata du temps d'exploitation au cours de l'année de
+référence, n'excède pas, l'année civile précédente ou la pénultième année :
+1° 203 100 € s'il s'agit d'entreprises dont le commerce principal est de vendre des marchandises, objets,
+fournitures et denrées à emporter ou à consommer sur place ou de fournir le logement, à l'exclusion de la
+location directe ou indirecte de locaux d'habitation meublés ou destinés à être loués meublés ;
+1° bis 15 000 € s'il s'agit d'entreprises dont l'activité principale est de louer directement ou indirectement des
+meublés de tourisme, au sens du I de l'article L. 324-1-1 du code du tourisme, autres que ceux mentionnés
+aux 1° et 2° du I de l'article 1414 bis du présent code ;
+2° 83 600 € s'il s'agit d'autres entreprises.
+Lorsque l'activité d'une entreprise se rattache à plusieurs catégories définies aux 1°, 1° bis et 2°, le régime
+défini au présent article n'est applicable que si le chiffre d'affaires hors taxes global de l'entreprise respecte la
+limite mentionnée au 1° et si le chiffre d'affaires hors taxes afférent aux activités mentionnées aux 1° bis et
+2° est inférieur ou égal aux limites respectives mentionnées aux mêmes 1° bis et 2°.
+Le résultat imposable, avant prise en compte des plus-values ou des moins-values provenant de la cession
+des biens affectés à l'exploitation, est égal au montant du chiffre d'affaires hors taxes diminué d'un
+abattement de 71 % pour le chiffre d'affaires provenant d'activités de la catégorie mentionnée au 1°, d'un
+abattement de 50 % pour le chiffre d'affaires provenant d'activités de la catégorie mentionnée au 2° et d'un
+abattement de 30 % pour le chiffre d'affaires provenant d'activités de la catégorie mentionnée au 1° bis. Ces
+abattements ne peuvent être inférieurs à 305 €.
+Les plus-values ou les moins-values mentionnées au sixième alinéa sont déterminées et imposées dans les
+conditions prévues aux articles 39 duodecies à 39 quindecies, sous réserve de l'article 151 septies. Pour
+l'application de la première phrase du présent alinéa, les abattements mentionnés au sixième alinéa du
+présent 1 sont réputés tenir compte des amortissements pratiqués selon le mode linéaire.
+Les seuils mentionnés au présent 1, à l'exception du seuil prévu au 1° bis, sont actualisés tous les trois ans
+dans la même proportion que l'évolution triennale de la première tranche du barème de l'impôt sur le revenu
+et arrondis à la centaine d'euros la plus proche.
+2. Sont exclus de ce régime :
+a. Les contribuables qui exploitent plusieurs entreprises dont le total des chiffres d'affaires excède les limites
+mentionnées aux 1°, 1° bis et 2° du 1, appréciées, s'il y a lieu, dans les conditions prévues au cinquième
+alinéa de ce même 1 ;
+b. (Abrogé) ;
+c. Les sociétés ou organismes dont les résultats sont imposés selon le régime des sociétés de personnes
+défini à l'article 8, à l'exception des sociétés à responsabilité limitée dont l'associé unique est une personne
+physique dirigeant cette société ;
+d. Les personnes morales passibles de l'impôt sur les sociétés ;
+e. Les opérations portant sur des immeubles, des fonds de commerce ou des actions ou parts de sociétés
+immobilières et dont les résultats doivent être compris dans les bases de l'impôt sur le revenu au titre des
+bénéfices industriels et commerciaux ;
+f. (Abrogé) ;
+g. Les opérations visées au 8° du I de l'article 35 ;
+h. Les contribuables dont tout ou partie des biens affectés à l'exploitation sont compris dans un patrimoine
+fiduciaire en application d'une opération de fiducie définie à l'article 2011 du code civil ;
+i) Les contribuables qui exercent une activité occulte au sens du deuxième alinéa de l'article L. 169 du livre
+des procédures fiscales.
+j) Les contribuables qui perçoivent des revenus d'un fonds de placement immobilier imposables dans les
+conditions définies au e du 1 du II de l'article 239 nonies.
+3. Les contribuables concernés portent directement le montant du chiffre d'affaires annuel et des plus ou
+moins-values réalisées ou subies au cours de cette même année sur la déclaration prévue à l'article 170.
+4. Les entreprises placées dans le champ d'application du présent article peuvent opter pour un régime réel
+d'imposition. Cette option doit être exercée dans les délais applicables au dépôt de la déclaration prévue à
+l'article 170 souscrite au titre de l'année précédant celle au titre de laquelle cette même option s'applique.
+Toutefois, lorsque de telles entreprises étaient soumises de plein droit à un régime réel d'imposition au titre
+de la période précédant celle au titre de laquelle elles sont placées dans le champ d'application du présent
+article, elles exercent cette option dans les délais applicables au dépôt de la déclaration souscrite au titre de
+l'année au titre de laquelle l'option s'applique. En cas de création d'entreprise, l'option est exercée dans les
+délais applicables au dépôt de la déclaration souscrite au titre de l'année de la première période d'activité.
+L'option pour un régime réel d'imposition est valable un an et reconduite tacitement chaque année civile pour
+un an. Les entreprises peuvent renoncer à cette option dans les délais applicables au dépôt de la déclaration
+souscrite au titre des résultats de l'année précédant celle au titre de laquelle la renonciation s'applique.
+5. Les entreprises qui n'ont pas exercé l'option visée au 4 doivent tenir et présenter, sur demande de
+l'administration, un livre-journal servi au jour le jour et présentant le détail de leurs recettes professionnelles,
+appuyé des factures et de toutes autres pièces justificatives. Elles doivent également, lorsque leur commerce
+principal est de vendre des marchandises, objets, fournitures et denrées à emporter ou à consommer sur
+place, ou de fournir le logement, tenir et présenter, sur demande de l'administration, un registre récapitulé par
+année, présentant le détail de leurs achats.
+```
+
+---
+
+## Article 150 VC — Plus Values Immobilieres
+
+**Source :** CGI Art. 150 VC | **Module :** plus_values_immobilieres | **Tags :** PV_immo, abattements_duree_detention, IR
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 150 VC
+I. - La plus-value brute réalisée sur les biens ou droits mentionnés aux articles 150 U , 150 UB et 150 UC est
+réduite d'un abattement fixé à :
+- 6 % pour chaque année de détention au-delà de la cinquième ;
+- 4 % au titre de la vingt-deuxième année de détention.
+La plus-value brute réalisée sur les biens ou droits mentionnés à l'article 150 UA est réduite d'un abattement
+de 5 % pour chaque année de détention au-delà de la deuxième.
+Pour l'application des abattements mentionnés aux deuxième à quatrième alinéas, la durée de détention est
+décomptée :
+1° En cas de cession de biens ou droits réalisée par une fiducie, à partir de la date d'acquisition de ces
+biens ou droits par la fiducie ou, si les biens ou droits ont été transférés dans le patrimoine fiduciaire dans
+les conditions prévues à l'article 238 quater N, à partir de la date d'acquisition des biens ou droits par le
+constituant ;
+2° En cas de cession de biens ou droits reçus par le constituant initial dans les conditions prévues à l'article
+238 quater Q, à partir de la date d'acquisition par le constituant de ces biens ou droits lorsqu'ils ont fait l'objet
+d'un transfert dans le patrimoine fiduciaire dans les conditions prévues à l'article 238 quater N, ou, dans le
+cas contraire, à partir de la date de transfert de ces biens ou droits dans le patrimoine fiduciaire ou de leur
+acquisition par la fiducie ;
+3° En cas de cession de biens ou droits reçus par le titulaire, autre que le constituant initial, de droits
+représentatifs des biens ou droits du patrimoine fiduciaire dans les conditions prévues à l'article 238 quater
+Q, à partir de la date d'acquisition de ces droits lorsque les biens ou droits cédés figuraient dans le patrimoine
+fiduciaire à cette date, ou à partir de la date d'acquisition des biens ou droits par la fiducie dans le cas
+contraire.
+II. - (Abrogé).
+```
+
+---
+
+## Article 200 A — Prelevement Forfaitaire Unique
+
+**Source :** CGI Art. 200 A | **Module :** plus_values_mobilieres | **Tags :** PFU, 12_8pc, assurance_vie_7_5pc, seuil_150000_primes
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 200 A
+1. L'impôt sur le revenu dû par les personnes physiques fiscalement domiciliées en France au sens de l'article
+4 B à raison des revenus, gains nets, profits, distributions, plus-values et créances énumérés aux 1° et 2° du
+A du présent 1 est établi par application du taux forfaitaire prévu au B du présent 1 à l'assiette imposable
+desdits revenus, gains nets, profits, distributions, plus-values et créances.
+A. Pour l'application du premier alinéa du présent 1, sont soumis à l'imposition forfaitaire :
+1° Les revenus de capitaux mobiliers mentionnés au VII de la 1ère sous-section de la section II du présent
+chapitre, à l'exception des revenus expressément exonérés de l'impôt en vertu des articles 125-0 A, 155
+B, 157 et 163 quinquies B à 163 quinquies C bis, des produits des bons ou contrats de capitalisation ou
+placements de même nature mentionnés au 6° de l'article 120 et au 1° du I de l'article 125-0 A, attachés
+à des primes versées jusqu'au 26 septembre 2017, ainsi que des revenus qui sont pris en compte pour la
+détermination du bénéfice imposable d'une entreprise industrielle, commerciale, artisanale ou agricole, ou
+d'une profession non commerciale. Sont également soumis à l'imposition forfaitaire les produits mentionnés
+au 5 de l'article 13 qui se rattachent à la catégorie des revenus de capitaux mobiliers.
+Pour le calcul de l'impôt dû, les revenus mentionnés au premier alinéa du présent 1° sont retenus pour leur
+montant brut, sous réserve, le cas échéant, de l'application des articles 124 C, 125-00 A et 125-0 A.
+Les revenus mentionnés au premier alinéa du présent 1° de source étrangère sont également retenus pour leur
+montant brut. L'impôt retenu à la source est imputé sur l'imposition à taux forfaitaire dans la limite du crédit
+d'impôt auquel il ouvre droit, dans les conditions prévues par les conventions internationales.
+Pour l'application des deuxième et troisième alinéas du présent 1°, lorsque les revenus sont de la nature de
+ceux mentionnés au 2° du 7 de l'article 158, leur montant brut est multiplié par 1,25 ;
+2° Les gains nets, profits, distributions, plus-values et créances mentionnés aux 1° à 6° du 6 bis de l'article
+158, déterminés conformément à ces mêmes dispositions. Toutefois, pour l'établissement de l'imposition
+forfaitaire mentionnée au premier alinéa du présent 1, il n'est pas fait application de l'abattement mentionné
+aux 1 ter ou 1 quater de l'article 150-0 D.
+B. 1° Le taux forfaitaire mentionné au premier alinéa du présent 1 est fixé à 12,8 % ;
+2° Par dérogation au 1° du présent B, lorsque les conditions d'application du b du 2 du II de l'article 125-0
+A sont remplies, le taux prévu au même b est appliqué aux produits des bons ou contrats de capitalisation
+et placements de même nature mentionnés au I de l'article 125-0 A et au II de l'article 125 D attachés à des
+primes versées à compter du 27 septembre 2017 :
+a) Pour le montant total desdits produits, lorsque le montant des primes versées sur le bon ou contrat ou
+placement auquel se rattachent ces produits ainsi que sur les autres bons ou contrats ou placements dont
+est titulaire le bénéficiaire desdits produits et qui, au 31 décembre de l'année qui précède le fait générateur
+d'imposition des produits concernés, n'ont pas déjà fait l'objet d'un remboursement en capital, n'excède pas
+le seuil de 150 000 €. Pour l'application du présent alinéa, en cas de démembrement de propriété du bon ou
+contrat, les primes versées sur ce bon ou contrat ne sont prises en compte que pour la détermination du seuil
+applicable à l'usufruitier ;
+b) Lorsque le montant des primes tel que déterminé au a du présent 2° excède le seuil de 150 000 €, pour
+la seule fraction de ces produits déterminée en multipliant le montant total desdits produits par le rapport
+existant entre :
+- au numérateur, le montant de 150 000 € réduit, le cas échéant, du montant des primes versées
+antérieurement au 27 septembre 2017 et qui, au 31 décembre de l'année qui précède le fait générateur
+d'imposition des produits concernés, n'ont pas déjà fait l'objet d'un remboursement en capital ;
+- au dénominateur, le montant des primes versées à compter du 27 septembre 2017 et qui, au 31 décembre
+de l'année qui précède le fait générateur de l'imposition des produits concernés, n'ont pas déjà fait l'objet d'un
+remboursement en capital.
+La fraction des produits mentionnés au premier alinéa du présent 2° qui n'est pas éligible au taux mentionné
+au même premier alinéa est imposable au taux mentionné au 1° du présent B ;
+3° Lorsque les conditions d'application du b du 2 du II de l'article 125-0 A ne sont pas remplies, les produits
+mentionnés au 2° du présent B attachés à des primes versées à compter du 27 septembre 2017 sont soumis au
+taux mentionné au 1° du présent B.
+2. Par dérogation au 1, sur option expresse du contribuable, l'ensemble des revenus, gains nets, profits, plus-
+values et créances mentionnés à ce même 1 est retenu dans l'assiette du revenu net global défini à l'article
+158. Cette option globale est exercée lors du dépôt de la déclaration prévue à l'article 170, et au plus tard
+avant l'expiration de la date limite de déclaration.
+2 bis. (Abrogé)
+2 ter. a. Les plus-values mentionnées au I de l'article 150-0 B ter sont imposables à l'impôt sur le revenu au
+taux déterminé comme suit :
+1° Le taux applicable aux plus-values résultant d'opérations d'apport réalisées entre le 14 novembre et le
+31 décembre 2012 est déterminé conformément au A du IV de l'article 10 de la loi n° 2012-1509 du 29
+décembre 2012 de finances pour 2013 ;
+2° Le taux applicable aux plus-values résultant d'opérations d'apport réalisées entre le 1er janvier 2013 et le
+31 décembre 2017 est égal au rapport entre les deux termes suivants :
+- le numérateur, constitué par le résultat de la différence entre, d'une part, le montant de l'impôt qui aurait
+résulté, au titre de l'année de l'apport, de l'application de l'article 197 à la somme de l'ensemble des plus-
+values mentionnées au premier alinéa du présent 2° réalisées au titre de cette même année ainsi que des
+revenus imposés au titre de la même année dans les conditions de ce même article 197 et, d'autre part, le
+montant de l'impôt dû au titre de cette même année et établi dans les conditions dudit article 197 ;
+- le dénominateur, constitué par l'ensemble des plus-values mentionnées au premier alinéa du présent 2°
+retenues au deuxième alinéa du présent 2°.
+Pour la détermination du taux mentionné au premier alinéa du présent 2°, les plus-values mentionnées au
+même premier alinéa sont, le cas échéant, réduites du seul abattement mentionné au 1 de l'article 150-0 D
+dans sa rédaction en vigueur jusqu'au 31 décembre 2017 ;
+3° Le taux applicable aux plus-values résultant d'opérations d'apport réalisées à compter du 1er janvier 2018
+est égal à 12,8 %. Toutefois, lorsque l'option globale prévue au 2 est exercée par le contribuable, le taux
+applicable à ces plus-values est déterminé suivant les mêmes modalités que celles prévues au 2° du présent a,
+compte tenu le cas échéant du seul abattement mentionné aux 1 ter ou 1 quater de l'article 150-0 D.
+Les plus-values mentionnées au premier alinéa du présent a auxquelles l'article 244 bis B est applicable sont
+imposables dans les conditions et au taux prévus au même article 244 bis B dans sa rédaction applicable à la
+date de l'apport.
+b. Les plus-values mentionnées au premier alinéa du a du présent 2 ter, retenues pour leur montant avant
+application de l'abattement mentionné aux 2° ou 3° du même a, sont également imposables, le cas échéant, à
+la contribution mentionnée à l'article 223 sexies au taux égal au rapport entre les deux termes suivants :
+1° Le numérateur, constitué par le résultat de la différence entre, d'une part, le montant de la contribution
+qui aurait résulté, au titre de l'année de l'apport, de l'application de l'article 223 sexies au revenu fiscal de
+référence défini à ce même article, majoré du montant de l'ensemble des plus-values mentionnées au premier
+alinéa du présent b réalisées au titre de la même année, et, d'autre part, le montant de la contribution due le
+cas échéant dans les conditions dudit article 223 sexies ;
+2° Le dénominateur, constitué par l'ensemble des plus-values mentionnées au premier alinéa du présent b
+retenues au 1° du présent b.
+3. L'avantage salarial mentionné au I de l'article 80 quaterdecies est retenu dans l'assiette du revenu net
+global défini à l'article 158, après application d'un abattement de 50 % ou, le cas échéant, de l'abattement
+fixe prévu au 1 du I de l'article 150-0 D ter et, pour le surplus éventuel, de l'abattement de 50 %. Pour
+l'application de ces dispositions, l'abattement fixe s'applique en priorité sur le gain net mentionné au V de
+l'article 80 quaterdecies puis, pour le surplus éventuel, sur l'avantage salarial précité.
+4. (Abrogé).
+5. Le gain net mentionné au 2 du II de l'article 150-0 A est imposé dans les conditions prévues aux 1 ou 2 du
+présent article.
+6. (Abrogé).
+6 bis (Abrogé).
+7. (Abrogé).
+```
+
+---
+
+## Article 219 — Impot Sur Les Societes
+
+**Source :** CGI Art. 219 | **Module :** IS | **Tags :** IS, taux_25pc, taux_reduit_15pc, 42500
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 219
+I.-Pour le calcul de l'impôt, le bénéfice imposable est arrondi à l'euro le plus proche. La fraction d'euro égale
+à 0,50 est comptée pour 1.
+Le taux normal de l'impôt est fixé à 25 %.
+Toutefois :
+a. Le montant net des plus-values à long terme fait l'objet d'une imposition séparée au taux de 15 %.
+Le résultat net bénéficiaire déterminé en application de l'article 238 est soustrait du résultat soumis au taux
+normal et fait l'objet d'une imposition séparée au taux de 10 %. Toutefois, ce résultat net n'est pas imposable
+lorsqu'il est utilisé pour compenser le déficit d'exploitation de l'exercice. Le déficit ainsi imputé ne peut plus
+être reporté sur les bénéfices des exercices ultérieurs.
+Pour les exercices ouverts à compter du 31 décembre 2007, le montant net des plus-values à long terme
+afférentes aux titres des sociétés à prépondérance immobilière définies au a sexies-0 bis cotées est imposé au
+taux prévu au IV.
+Est imposé au taux de 25 % le montant net des plus-values à long terme provenant de la cession :
+1° Des titres de sociétés dont l'actif est, à la date de la cession, constitué pour plus de 50 % de sa valeur réelle
+par une autorisation d'usage de ressources radioélectriques pour la diffusion de tout service de télévision
+par voie hertzienne terrestre en mode numérique délivrée par l'Autorité de régulation de la communication
+audiovisuelle et numérique dans les conditions prévues à l'article 30-1 de la loi n° 86-1067 du 30 septembre
+1986 relative à la liberté de communication ;
+2° Des titres de sociétés contrôlant une société définie au 1° du présent a et dont l'actif est, à la date de la
+cession, constitué pour plus de 50 % de sa valeur réelle par les titres d'une société mentionnée au même 1°.
+Les quatrième à sixième alinéas du présent a s'appliquent à la première cession de titres suivant la délivrance
+de l'autorisation mentionnée au 1° entraînant une modification du contrôle direct ou indirect, au sens de
+l'article L. 233-3 du code de commerce, de la société titulaire de l'autorisation. Lorsque cette première
+cession est placée sous le régime prévu aux articles 210 A et 210 B du présent code, la plus-value réalisée
+lors de la cession ultérieure des titres reçus en contrepartie de l'apport des titres mentionnés aux 1° et 2° du
+présent a est imposée au taux prévu au IV, à hauteur de la plus-value d'apport de ces derniers titres.
+Les provisions pour dépréciation afférentes aux titres mentionnés aux 1° et 2° du présent a sont soumises au
+régime applicable à ces mêmes titres.
+L'excédent éventuel des moins-values à long terme ne peut être imputé que sur les plus-values à long terme
+imposables aux taux visés au présent a et réalisées au cours des dix exercices suivants.
+a bis. Les moins-values à long terme existant à l'ouverture du premier des exercices ouverts à compter du
+1er janvier 1994 sont imputées sur les plus-values à long terme imposées au taux de 19 %. L'excédent des
+moins-values à long terme subies au cours d'un exercice ouvert à compter du 1er janvier 1994 peut être
+déduit des bénéfices de l'exercice de liquidation d'une entreprise à raison des 19/33,33 de son montant.
+Les moins-values à long terme existant à l'ouverture du premier des exercices ouverts à compter du 1er
+janvier 2005 sont imputées sur les plus-values à long terme imposées au taux de 15 %. L'excédent des
+moins-values à long terme subies au cours d'un exercice ouvert à compter du 1er janvier 2005 et afférentes à
+des éléments autres que les titres de participations définis au troisième alinéa du a quinquies peut être déduit
+des bénéfices de l'exercice de liquidation d'une entreprise dans la limite du rapport existant entre le taux
+d'imposition des plus-values à long terme applicable à l'exercice de réalisation des moins-values et le taux
+normal prévu au deuxième alinéa du présent I applicable à l'exercice de liquidation ;
+a ter. Le régime des plus-values et moins-values à long terme cesse de s'appliquer au résultat de la cession
+de titres du portefeuille réalisée au cours d'un exercice ouvert à compter du 1er janvier 1994 à l'exclusion
+des parts ou actions de sociétés revêtant le caractère de titres de participation et des parts de fonds commun
+de placement à risques, de fonds professionnel de capital investissement ou de société de capital risque qui
+remplissent les conditions prévues au II ou au III bis de l'article 163 quinquies B ou à l'article 1er-1 de la
+loi n° 85-695 du 11 juillet 1985 portant diverses dispositions d'ordre économique et financier et qui sont
+détenues par l'entreprise depuis au moins cinq ans.
+Pour les exercices ouverts à compter de la même date, le régime des plus ou moins-values à long terme cesse
+également de s'appliquer en ce qui concerne les titres de sociétés dont l'actif est constitué principalement par
+des titres exclus de ce régime ou dont l'activité consiste de manière prépondérante en la gestion des mêmes
+valeurs pour leur propre compte, à l'exception des moins-values afférentes aux titres de ces sociétés à hauteur
+du montant des produits de ces titres qui a ouvert droit à l'application du régime prévu aux articles 145 et 216
+au cours de l'exercice au titre duquel ces moins-values ont été constatées et des cinq exercices précédents.
+Il ne s'applique pas non plus aux titres émis par les organismes de placement collectif immobilier, les
+organismes professionnels de placement collectif immobilier ou par les organismes de droit étranger ayant
+un objet équivalent mentionnés au 5° du I de l'article L. 214-36 du code monétaire et financier.
+Pour l'application des premier et deuxième alinéas, constituent des titres de participation les parts ou actions
+de sociétés revêtant ce caractère sur le plan comptable. Il en va de même des actions acquises en exécution
+d'une offre publique d'achat ou d'échange par l'entreprise qui en est l'initiatrice ainsi que des titres ouvrant
+droit au régime des sociétés mères ou, lorsque leur prix de revient est au moins égal à 22 800 000 €, qui
+remplissent les conditions ouvrant droit à ce régime autres que la détention de 5 % au moins du capital de la
+société émettrice, si ces actions ou titres sont inscrits en comptabilité au compte de titres de participation ou
+à une subdivision spéciale d'un des comptes de titres quelle que soit, dans ce dernier cas, leur qualification
+comptable.
+Les provisions pour dépréciation afférentes aux titres exclus du régime des plus ou moins-values en
+application des premier et deuxième alinéas cessent d'être soumises à ce même régime, à l'exception des
+provisions pour dépréciation des titres de sociétés mentionnés à la première phrase du deuxième alinéa à
+hauteur du montant des produits de ces titres qui a ouvert droit à l'application du régime prévu aux articles
+145 et 216 au cours de l'exercice au titre duquel les provisions ont été comptabilisées et des cinq exercices
+précédents.
+Lorsque l'entreprise transfère des titres du compte de titres de participation à un autre compte du bilan, la
+plus-value ou la moins-value, égale à la différence existant entre leur valeur réelle à la date du transfert et
+celle qu'ils avaient sur le plan fiscal, n'est pas retenue, pour le calcul du résultat ou de la plus-value ou moins-
+value nette à long terme, au titre de l'exercice de ce transfert ; elle est comprise dans le résultat imposable
+de l'exercice de cession des titres en cause et soumise au régime fiscal qui lui aurait été appliqué lors du
+transfert des titres. Le résultat imposable de la cession des titres transférés est calculé par référence à leur
+valeur réelle à la date du transfert. Le délai mentionné à l'article 39 duodecies est apprécié à cette date.
+Ces règles s'appliquent lorsque l'entreprise transfère des titres d'un compte du bilan au compte de titres
+de participation ou procède à des transferts entre l'un des comptes du bilan et l'une des subdivisions
+spéciales mentionnées au troisième alinéa, sous réserve que le premier terme de la différence mentionnée au
+cinquième alinéa s'entend, pour les titres cotés, du cours moyen des trente derniers jours précédant celui du
+transfert et, pour les titres non cotés, de leur valeur probable de négociation et sans préjudice de l'application
+des dispositions de l'article 38 bis A.
+Les dispositions des cinquième et sixième alinéas ne sont pas applicables aux transferts entre le compte de
+titres de participation et les subdivisions spéciales mentionnées au troisième alinéa.
+Les titres inscrits au compte de titres de participation ou à l'une des subdivisions spéciales mentionnées au
+troisième alinéa qui cessent de remplir les conditions mentionnées à ce même alinéa doivent être transférés
+hors de ce compte ou de cette subdivision à la date à laquelle ces conditions ne sont plus remplies. A
+défaut d'un tel transfert, les titres maintenus à ce compte ou à cette subdivision sont réputés transférés pour
+l'application des cinquième, sixième et dixième alinéas ; les dispositions prévues au douzième alinéa en cas
+d'omission s'appliquent.
+Lorsqu'elles reçoivent un emploi non conforme à leur objet ou qu'elles deviennent sans objet au cours d'un
+exercice clos après la date du transfert des titres, les provisions pour dépréciation constituées antérieurement
+à cette date à raison de ces titres sont rapportées aux plus-values à long terme ou au résultat imposable
+au taux prévu au deuxième alinéa du I, selon qu'elles sont afférentes à des titres qui, avant leur transfert,
+constituaient ou non des titres de participation ; les provisions rapportées s'imputent alors en priorité sur les
+dotations les plus anciennes.
+Les provisions pour dépréciation constituées après le transfert à raison des titres transférés mentionnés aux
+cinquième et sixième alinéas sont déterminées par référence à la valeur des titres concernés à la date du
+transfert.
+Les entreprises qui appliquent les dispositions des cinquième et sixième alinéas doivent, pour les titres
+transférés, joindre à la déclaration de résultats de l'exercice du transfert et des exercices suivants un
+état conforme au modèle fourni par l'administration faisant apparaître, pour chaque catégorie de titres
+de même nature, la date de transfert, le nombre et la valeur des titres transférés, le montant de la plus-
+value ou de la moins-value et le régime d'imposition qui lui est applicable, à cette date, le montant des
+provisions constituées avant ou après le transfert et le montant de ces provisions qui a été rapporté au résultat
+imposable.
+Le défaut de production de l'état mentionné au onzième alinéa ou l'omission des valeurs ou provisions
+qui doivent y être portées entraînent l'imposition immédiate des plus-values et des provisions omises ; les
+moins-values ne peuvent être déduites que des résultats imposables de l'exercice au cours duquel les titres
+considérés sont cédés ;
+a quater. Pour les exercices ouverts à compter du 1er janvier 1997, le régime des plus et moins-values à long
+terme cesse de s'appliquer à la plus ou moins-value provenant de la cession des éléments d'actif, à l'exception
+des parts ou actions visées aux premier et troisième alinéas du a ter.
+Les moins-values à long terme afférentes à des éléments d'actif désormais exclus du régime des plus et
+moins-values à long terme en application du premier alinéa, et restant à reporter à l'ouverture du premier
+exercice ouvert à compter du 1er janvier 1997, peuvent, après compensation avec les plus-values et les
+résultats nets de la concession de licences d'exploitation continuant à bénéficier de ce régime, s'imputer à
+raison des 19/33,33 de leur montant sur les bénéfices imposables. Cette imputation n'est possible que dans la
+limite des gains nets retirés de la cession des éléments d'actifs exclus du régime des plus et moins-values à
+long terme en application du premier alinéa ;
+a quinquies. Pour les exercices ouverts à compter du 1er janvier 2006, le montant net des plus-values à long
+terme afférentes à des titres de participation fait l'objet d'une imposition séparée au taux de 8 %. Ce taux est
+fixé à 0 % pour les exercices ouverts à compter du 1er janvier 2007.
+Une quote-part de frais et charges égale à 12 % du montant brut des plus-values de cession est prise en
+compte pour la détermination du résultat imposable.
+Les titres de participation mentionnés au premier alinéa sont les titres de participation revêtant ce caractère
+sur le plan comptable, les actions acquises en exécution d'une offre publique d'achat ou d'échange par
+l'entreprise qui en est l'initiatrice et les titres ouvrant droit au régime des sociétés mères à condition de
+détenir au moins 5 % des droits de vote de la société émettrice, si ces actions ou titres sont inscrits en
+comptabilité au compte titres de participation ou à une subdivision spéciale d'un des comptes de titres
+quelle que soit, dans ce dernier cas, leur qualification comptable, à l'exception des titres des sociétés à
+prépondérance immobilière définis au troisième alinéa du a.
+La fraction des moins-values à long terme existant à l'ouverture du premier des exercices ouverts à
+compter du 1er janvier 2006 afférente à des éléments exclus du bénéfice des taux définis au premier alinéa
+demeure imputable sur les plus-values à long terme imposées au taux visé au a, sous réserve de justifier
+la ou les cessions de ces éléments. Elle est majorée, le cas échéant, des provisions dotées au titre de ces
+mêmes éléments et non réintégrées à cette date, dans la limite des moins-values à long terme reportables à
+l'ouverture du premier des exercices ouverts à compter du 1er janvier 2006.
+La fraction des moins-values à long terme existant à l'ouverture du premier des exercices ouverts à compter
+du 1er janvier 2006, non imputable en vertu des dispositions du quatrième alinéa, peut être déduite des plus-
+values à long terme afférentes aux titres de participation définis au troisième alinéa imposables au titre des
+seuls exercices ouverts en 2006. Le solde de cette fraction et l'excédent éventuel des moins-values à long
+terme afférentes aux titres de participation définis au troisième alinéa constaté au titre des exercices ouverts à
+compter du 1er janvier 2006 ne sont plus imputables ou reportables à partir des exercices ouverts à compter
+du 1er janvier 2007.
+a sexies-0) Pour les exercices clos à compter du 31 décembre 2006, le régime des plus et moins-values à
+long terme cesse de s'appliquer à la plus ou moins-value provenant de la cession des titres, autres que ceux
+mentionnés au troisième alinéa du a quinquies, dont le prix de revient est au moins égal à 22 800 000 € et qui
+satisfont aux conditions ouvrant droit au régime des sociétés mères autres que la détention de 5 % au moins
+du capital de la société émettrice.
+Les provisions pour dépréciation afférentes aux titres exclus du régime des plus ou moins-values à long
+terme en application du premier alinéa cessent d'être soumises à ce même régime.
+Les moins-values à long terme afférentes à ces titres exclus du régime des plus et moins-values à long terme
+en application du premier alinéa, et restant à reporter à l'ouverture du premier exercice clos à compter du 31
+décembre 2006, peuvent, après compensation avec les plus-values à long terme et produits imposables au
+taux visé au a, s'imputer à raison des 15/33,33 de leur montant sur les bénéfices imposables, dans la limite
+des gains nets retirés de la cession de titres de même nature.
+a sexies-0 bis) Le régime des plus et moins-values à long terme cesse de s'appliquer à la plus ou moins-value
+provenant des cessions de titres de sociétés à prépondérance immobilière non cotées réalisées à compter du
+26 septembre 2007. Sont considérées comme des sociétés à prépondérance immobilière les sociétés dont
+l'actif est, à la date de la cession de ces titres ou a été à la clôture du dernier exercice précédant cette cession,
+constitué pour plus de 50 % de sa valeur réelle par des immeubles, des droits portant sur des immeubles, des
+droits afférents à un contrat de crédit-bail conclu dans les conditions prévues au 2 de l'article L. 313-7 du
+code monétaire et financier ou par des titres d'autres sociétés à prépondérance immobilière. Pour l'application
+de ces dispositions, ne sont pas pris en considération les immeubles ou les droits mentionnés à la phrase
+précédente lorsque ces biens ou droits sont affectés par l'entreprise à sa propre exploitation industrielle,
+commerciale ou agricole ou à l'exercice d'une profession non commerciale.
+Les provisions pour dépréciation afférentes aux titres exclus du régime des plus et moins-values à long terme
+en application du premier alinéa cessent d'être soumises à ce même régime.
+Les moins-values à long terme afférentes aux titres exclus du régime des plus et moins-values à long terme
+en application du premier alinéa, restant à reporter à l'ouverture du premier exercice clos à compter du 26
+septembre 2007 ou réalisées au cours du même exercice, peuvent, après compensation avec les plus-values à
+long terme et produits imposables au taux visé au a, s'imputer à raison des 15/33, 33èmes de leur montant sur
+les bénéfices imposables, dans la limite des gains nets retirés de la cession de titres de même nature.
+a sexies-0 ter)-Pour les exercices ouverts à compter du 1er janvier 2011, le régime des plus et moins-values à
+long terme cesse de s'appliquer à la plus ou moins-value provenant de la cession de titres de sociétés établies
+dans un Etat ou territoire non coopératif au sens de l'article 238-0 A autre que ceux mentionnés au 2° du 2
+bis du même article 238-0 A, sauf si la société détentrice des titres apporte la preuve que les opérations de la
+société établie hors de France dans laquelle est prise la participation correspondent à des opérations réelles
+qui n'ont ni pour objet ni pour effet de permettre, dans un but de fraude fiscale, la localisation de bénéfices
+dans un tel Etat ou territoire.
+Les moins-values afférentes à des titres exclus du régime des plus et moins-values à long terme en
+application du premier alinéa peuvent s'imputer exclusivement sur des plus-values exclues du régime des
+plus et moins-values à long terme en application du même alinéa.
+a sexies. 1. Pour les exercices ouverts à compter du 1er janvier 2006, les sommes réparties par un fonds
+commun de placement à risques ou par un fonds professionnel de capital investissement et les distributions
+de sociétés de capital-risque soumises au régime fiscal des plus-values à long terme en application du 2° du
+5 de l'article 38 ou du 5 de l'article 39 terdecies sont soumises à l'impôt au taux de 8 % pour la fraction des
+sommes ou distributions afférentes aux cessions d'actions ou de parts de sociétés, à l'exception des titres des
+sociétés à prépondérance immobilière mentionnées au a sexies-0 bis et des titres des sociétés mentionnées
+au a sexies-0 ter, détenues depuis deux ans au moins et si le fonds ou la société a détenu au moins 5 % du
+capital de la société émettrice pendant deux ans au moins. Le taux de 8 % est fixé à 0 % pour les exercices
+ouverts à compter du 1er janvier 2007.
+Pour l'appréciation du seuil de 5 % prévu au premier alinéa, sont également pris en compte les titres détenus
+par d'autres fonds communs de placement à risques, fonds professionnels de capital investissement ou
+sociétés de capital-risque qui ont agi de concert avec le fonds ou la société concerné dans le cadre d'un
+contrat conclu en vue d'acquérir ces titres.
+Lorsque les actions ou parts cédées ont été reçues dans le cadre d'un échange, d'une conversion ou d'un
+remboursement d'un titre donnant accès au capital de la société, le délai de deux ans de détention des actions
+est décompté à partir de l'acquisition du titre donnant accès au capital de la société.
+2. Pour les exercices ouverts à compter du 1er janvier 2006, la plus-value réalisée sur la cession de parts
+de fonds communs de placement à risques, de parts de fonds professionnels de capital investissement
+ou d'actions de sociétés de capital-risque mentionnées au premier alinéa du a ter est soumise au taux de
+8 % à hauteur du rapport existant à la date de la cession entre la valeur des actions ou parts de sociétés
+mentionnées au premier alinéa du 1 inscrites à l'actif du fonds ou de la société augmentée des sommes
+en instance de distribution depuis moins de six mois représentative de la cession d'actions ou de parts de
+sociétés mentionnées au premier alinéa du 1 et la valeur de l'actif total de ce fonds ou de cette société. Ce
+taux est fixé à 0 % pour les exercices ouverts à compter du 1er janvier 2007.
+a septies) Lorsqu'il existe des liens de dépendance entre l'entreprise cédante et l'entreprise cessionnaire
+au sens du 12 de l'article 39, la déduction des moins-values de cession de titres de participation définis au
+dix-septième alinéa du 5° du 1 de l'article 39, autres que ceux mentionnés au a sexies-0 bis du présent I, et
+détenus depuis moins de deux ans, intervient à la première des dates suivantes :
+1°) La date à laquelle l'entreprise cédante cesse d'être soumise à l'impôt sur les sociétés ou est absorbée par
+une entreprise qui, à l'issue de l'absorption, n'est pas liée à l'entreprise détenant les titres cédés ;
+2°) La date à laquelle les titres cédés cessent d'être détenus par une entreprise liée à l'entreprise cédante, à
+l'exception du cas où la société dont les titres ont été cédés a été absorbée par une autre entreprise liée ou qui
+le devient à cette occasion et pour toute la période où elle demeure liée ;
+3°) La date correspondant à l'expiration d'un délai de deux ans, décompté à partir du jour où l'entreprise
+cédante a acquis les titres.
+L'imposition est établie au nom de l'entreprise cédante ou, en cas d'absorption dans des conditions autres que
+celles mentionnées au 1°, de l'entreprise absorbante, selon le régime de moins-value qui aurait été applicable
+si l'entreprise avait cédé les titres à cette date et, le cas échéant, les avait détenus depuis la date d'acquisition
+par l'entreprise absorbée.
+L'entreprise joint à sa déclaration de résultat au titre de chaque exercice concerné un état conforme au
+modèle fourni par l'administration, faisant apparaître les éléments nécessaires au calcul des moins-values et
+ceux relatifs à l'identification de l'entreprise qui détient les titres, explicitant les liens de dépendance qui les
+unissent.
+b. Par exception au deuxième alinéa du présent I et au premier alinéa du a, pour les redevables ayant réalisé
+un chiffre d'affaires n'excédant pas 10 millions d'euros au cours de l'exercice ou de la période d'imposition,
+ramené s'il y a lieu à douze mois, le taux de l'impôt applicable au bénéfice imposable est fixé, dans la limite
+de 42 500 € de bénéfice imposable par période de douze mois, à 25 % pour les exercices ouverts en 2001 et à
+15 % pour les exercices ouverts à compter du 1er janvier 2002.
+Pour la société mère d'un groupe mentionné à l'article 223 A ou à l'article 223 A bis, le chiffre d'affaires
+est apprécié en faisant la somme des chiffres d'affaires de chacune des sociétés membres de ce groupe.
+Le capital des sociétés mentionnées au premier alinéa du présent b doit être entièrement libéré et détenu
+de manière continue pour 75 % au moins par des personnes physiques ou par une société répondant aux
+mêmes conditions dont le capital est détenu, pour 75 % au moins, par des personnes physiques. Pour la
+détermination de ce pourcentage, les participations des sociétés de capital-risque, des fonds communs de
+placement à risques, des fonds professionnels spécialisés relevant de l'article L. 214-37 du code monétaire
+et financier dans sa rédaction antérieure à l'ordonnance n° 2013-676 du 25 juillet 2013 modifiant le
+cadre juridique de la gestion d'actifs, des fonds professionnels de capital investissement, des sociétés de
+développement régional et des sociétés financières d'innovation ne sont pas prises en compte à la condition
+qu'il n'existe pas de lien de dépendance au sens du 12 de l'article 39 entre la société en cause et ces dernières
+sociétés ou ces fonds.
+c. (Abrogé) ;
+d. à e. (dispositions devenues sans objet) ;
+f. Les sociétés mentionnées aux 1 à 3 de l'article 206, soumises à l'impôt sur les sociétés dans les conditions
+de droit commun, autres que les sociétés à capital variable et celles mentionnées à l'article 238 bis HE,
+peuvent bénéficier, pour une série comprenant un exercice bénéficiaire et les deux premiers exercices
+bénéficiaires suivant celui-ci, du taux fixé au a bis, à hauteur de la fraction de leurs résultats comptables
+qu'elles incorporent à leur capital au cours de l'exercice suivant celui de leur réalisation. Cette fraction doit
+représenter, pour chacun des trois exercices et dans la limite du résultat fiscal, le quart au plus du résultat
+comptable sans excéder la somme de 30 000 €. L'option ne peut plus être exercée pour l'imposition des
+résultats des exercices ouverts à compter du 1er janvier 2001. Lorsque, à cette date, la série de trois exercices
+bénéficiaires est en cours, le taux d'imposition prévu par le dispositif ne s'applique pas aux résultats des
+exercices restants, sauf, sur option de l'entreprise, pour les exercices ouverts en 2001. Dans ce dernier cas, le
+taux de 25 % prévu au b s'applique à la fraction des résultats imposables comprise entre la part des résultats
+imposables selon les modalités prévues au présent alinéa et 42 500 €, lorsque les conditions prévues au b
+sont réunies.
+Les dispositions du premier alinéa s'appliquent si les conditions suivantes sont remplies :
+1° La société a réalisé un chiffre d'affaires de moins de 7 630 000 € et n'est pas mère d'un groupe mentionné
+à l'article 223 A ou à l'article 223 A bis, au cours du premier des exercices pour lequel le bénéfice du taux
+réduit est demandé ;
+2° Le capital de la société, entièrement libéré, est détenu de manière continue, pour 75 % au moins par des
+personnes physiques ou par une société répondant aux conditions visées au 1° dont le capital est détenu, pour
+75 % au moins, par des personnes physiques. Pour la détermination de ce pourcentage, les participations des
+sociétés de capital-risque, des fonds communs de placement à risques, des fonds professionnels spécialisés
+relevant de l'article L. 214-37 du code monétaire et financier dans sa rédaction antérieure à l'ordonnance n°
+2013-676 du 25 juillet 2013 modifiant le cadre juridique de la gestion d'actifs, des fonds professionnels de
+capital investissement, des sociétés de développement régional et des sociétés financières d'innovation ne
+sont pas prises en compte à la condition qu'il n'existe pas de lien de dépendance au sens du 12 de l'article 39
+entre la société en cause et ces dernières sociétés ou ces fonds.
+Lorsque la société n'a pas dressé de bilan au cours d'un exercice, le bénéfice imposé provisoirement en
+application du deuxième alinéa de l'article 37 ne peut être soumis au taux réduit ; lorsqu'elle a dressé
+plusieurs bilans successifs au cours d'une même année, comme prévu au troisième alinéa de cet article, seule
+la fraction du bénéfice du dernier exercice clos au cours de ladite année est soumise aux dispositions du
+présent f.
+Si l'une des trois incorporations au capital mentionnées au premier alinéa n'est pas effectuée, la société
+acquitte, dans les trois mois suivant la clôture de l'exercice au cours duquel elle aurait dû procéder à cette
+incorporation, l'impôt au taux normal sur la fraction de résultat du ou des exercices qui a été soumise au taux
+réduit, diminué de l'impôt payé à ce titre, majoré de l'intérêt de retard mentionné à l'article 1727. Il en va
+de même en cas de réduction de capital non motivée par des pertes ou de survenance d'un des événements
+mentionnés aux 2 à 3 de l'article 221, avant la fin de la troisième année suivant celle au cours de laquelle
+est intervenue la dernière des incorporations au capital ayant ouvert droit au bénéfice du taux réduit ; en cas
+de réduction de capital, le montant de la reprise est, le cas échéant, limité au montant de cette réduction.
+Toutefois, si la société est absorbée dans le cadre d'une opération soumise à l'article 210 A, les sommes qui
+ont été incorporées à son capital ne sont pas rapportées à ses résultats au titre de l'exercice au cours duquel
+intervient cette opération si la société absorbante ne procède à aucune réduction de capital non motivée par
+des pertes avant l'expiration du délai précité.
+Les dispositions du présent f sont également applicables sous les mêmes conditions et sanctions lorsque
+les sociétés visées au premier alinéa portent à une réserve spéciale la fraction du bénéfice mentionnée à la
+deuxième phrase de cet alinéa.
+Cette réserve doit être incorporée au capital au plus tard au cours de l'exercice suivant le troisième exercice
+ayant bénéficié des dispositions du premier alinéa du présent f. En cas de prélèvement sur cette réserve
+ou d'absence d'incorporation au capital dans ce délai, les dispositions du sixième alinéa du présent f sont
+applicables. Lorsque les incorporations de capital afférentes à l'imposition de résultats d'exercices ouverts
+avant le 1er janvier 2001 ont été différées, elles doivent être effectuées au plus tard à la clôture du second
+exercice ouvert à compter de cette date.
+Les conditions d'application du présent f ainsi que les obligations déclaratives qui en découlent sont fixées
+par décret.
+II.-Les plus-values visées au I de l'article 238 octies sont soumises à l'impôt au taux de 15 % lorsque
+la société n'a pas demandé à bénéficier de l'exonération sous condition de remploi prévue audit article.
+L'application de la présente disposition est toutefois subordonnée à la double condition que :
+a. Les opérations génératrices des plus-values présentent un caractère accessoire ou occasionnel pour la
+société intéressée ;
+b. Les immeubles cédés aient fait l'objet d'un permis de construire délivré avant le 1er janvier 1966.
+III.-Les dispositions du II sont étendues, sous les mêmes conditions, aux profits réalisés à l'occasion de la
+cession d'immeubles ayant fait l'objet d'un permis de construire délivré entre le 1er janvier 1966 et le 1er
+janvier 1972 ou pour lesquels aura été déposée, avant le 1er janvier 1972, la déclaration de construction visée
+à l'article L. 430-3 du code de l'urbanisme.
+Toutefois, en ce qui concerne ces profits :
+a. Le taux réduit de l'impôt sur les sociétés est fixé à 25 % ;
+b. L'application de ce taux réduit est subordonnée à la condition que les opérations de construction
+correspondantes présentent un caractère accessoire pour la société intéressée.
+IV.-Le taux de l'impôt est fixé à 19 % en ce qui concerne les plus-values imposables en application du 2
+de l'article 221, du deuxième alinéa de l'article 223 F, du troisième alinéa du IV de l'article 208 C, et de
+l'article 208 C ter, relatives aux immeubles, droits afférents à un contrat de crédit-bail, droits portant sur un
+immeuble dont la jouissance a été conférée à titre temporaire par l'Etat, une collectivité territoriale ou un de
+leurs établissements publics et parts des organismes mentionnés au cinquième alinéa du II de l'article 208 C
+inscrits à l'actif des sociétés qui ont opté pour le régime prévu au II de ce même article.
+Ce taux s'applique également aux plus-values imposables en application du 2 de l'article 221 relatives
+aux actifs mentionnés aux 1° à 5° du I de l'article L. 214-36 du code monétaire et financier en cas de
+transformation d'une société soumise à l'impôt sur les sociétés en société de placement à prépondérance
+immobilière à capital variable ou en société professionnelle de placement à prépondérance immobilière à
+capital variable mentionnée au 3° nonies de l'article 208.
+```
+
+---
+
+## Article 223 sexies — Hauts Revenus
+
+**Source :** CGI Art. 223 sexies | **Module :** hauts_revenus | **Tags :** CEHR, 250000, 500000, 3pc_4pc
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 223 sexies
+I. – 1. Il est institué à la charge des contribuables passibles de l'impôt sur le revenu une contribution sur
+le revenu fiscal de référence du foyer fiscal, tel que défini au 1° du IV de l'article 1417, sans qu'il soit
+tenu compte des plus-values mentionnées au I de l'article 150-0 B ter, retenues pour leur montant avant
+application de l'abattement mentionné aux 1 ter ou 1 quater de l'article 150-0 D, pour lesquelles le report
+d'imposition expire et sans qu'il soit fait application des règles de quotient définies à l'article 163-0 A. La
+contribution est calculée en appliquant un taux de :
+– 3 % à la fraction de revenu fiscal de référence supérieure à 250 000 € et inférieure ou égale à 500 000 €
+pour les contribuables célibataires, veufs, séparés ou divorcés et à la fraction de revenu fiscal de référence
+supérieure à 500 000 € et inférieure ou égale à 1 000 000 € pour les contribuables soumis à imposition
+commune ;
+– 4 % à la fraction de revenu fiscal de référence supérieure à 500 000 € pour les contribuables célibataires,
+veufs, séparés ou divorcés et à la fraction de revenu fiscal de référence supérieure à 1 000 000 € pour les
+contribuables soumis à imposition commune.
+2. La contribution est déclarée, contrôlée et recouvrée selon les mêmes règles et sous les mêmes garanties et
+sanctions qu'en matière d'impôt sur le revenu.
+II. – 1. Toutefois si, au titre de l'année d'imposition à la contribution mentionnée au 1 du I, le revenu fiscal
+de référence du contribuable est supérieur ou égal à une fois et demie la moyenne des revenus fiscaux de
+référence des deux années précédentes, la fraction du revenu fiscal de l'année d'imposition supérieure à cette
+moyenne est divisée par deux, puis le montant ainsi obtenu est ajouté à cette même moyenne. La cotisation
+supplémentaire ainsi obtenue est alors multipliée par deux.
+Le premier alinéa est applicable aux contribuables dont le revenu fiscal de référence au titre de chacune des
+deux années précédant celle de l'imposition n'a pas excédé 250 000 € pour les contribuables célibataires,
+veufs, séparés ou divorcés et 500 000 € pour les contribuables soumis à imposition commune.
+Cette disposition est applicable aux contribuables qui ont été passibles de l'impôt sur le revenu au titre des
+deux années précédant celle de l'imposition pour plus de la moitié de leurs revenus de source française ou
+étrangère de même nature que ceux entrant dans la composition du revenu fiscal de référence.
+2. En cas de modification de la situation de famille du contribuable au cours de l'année d'imposition ou des
+deux années précédentes, les revenus fiscaux de référence mentionnés au 1 sont ceux :
+a) Du couple et des foyers fiscaux auxquels les conjoints ou les partenaires ont appartenu au cours des
+années mentionnées au présent 2 en cas d'union.
+Toutefois, en cas d'option au titre de l'année d'établissement de la contribution pour l'imposition séparée
+définie au second alinéa du 5 de l'article 6, le b du présent 2 s'applique ;
+b) Du contribuable et des foyers fiscaux auxquels le contribuable passible de la contribution a appartenu au
+cours des années mentionnées au présent 2 en cas de divorce, séparation ou décès.
+Le bénéfice du présent 2 est subordonné au dépôt d'une réclamation comprenant les informations nécessaires
+au calcul de la moyenne calculée selon les modalités ainsi précisées.
+Les réclamations sont adressées au service des impôts dans le délai prévu aux articles R. 196-1 et R. 196-3
+du livre des procédures fiscales. Elles sont présentées, instruites et jugées selon les règles de procédure
+applicables en matière d'impôt sur le revenu.
+3. Pour le calcul de la moyenne mentionnée au présent II, le revenu fiscal de référence déterminé au titre des
+années 2009 et 2010 s'entend de celui défini au 1° du IV de l'article 1417. Il s'entend de celui défini au 1 du I
+du présent article pour les revenus fiscaux de référence déterminés à compter de 2011.
+```
+
+---
+
+## Article 224 — Hauts Revenus
+
+**Source :** CGI Art. 224 | **Module :** hauts_revenus | **Tags :** CDHR, 20pc, 250000, 500000
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 224
+I. - Il est institué une contribution à la charge des contribuables domiciliés fiscalement en France au sens
+de l'article 4 B dont le revenu du foyer fiscal défini au II du présent article est supérieur à 250 000 € pour
+les contribuables célibataires, veufs, séparés ou divorcés et à 500 000 € pour les contribuables soumis à une
+imposition commune.
+II. - Le revenu mentionné au I s'entend du revenu fiscal de référence défini au 1° du IV de l'article 1417, sans
+qu'il soit fait application des règles de quotient définies au I de l'article 163-0 A, diminué du montant :
+1° Des abattements mentionnés au a bis du même 1° autres que ceux mentionnés aux 1 ter ou 1 quater de
+l'article 150-0 D ;
+2° Des bénéfices exonérés mentionnés au b du 1° du IV de l'article 1417 ;
+3° Des produits et revenus exonérés en application de l'article 155 B ;
+4° Du résultat net bénéficiaire déterminé en application de l'article 238 effectivement imposé au taux de 10
+% prévu à la première phrase du deuxième alinéa du a du I de l'article 219 ;
+5° Des produits imposés au taux de 10 % mentionnés au second alinéa du I de l'article 93 quater ;
+6° Des plus-values mentionnées au I de l'article 150-0 B ter pour lesquelles le report d'imposition expire ;
+7° Des produits et revenus exonérés en application d'une convention internationale relative aux doubles
+impositions.
+Pour la détermination du revenu mentionné au présent II, les revenus qui, par leur nature, ne sont pas
+susceptibles d'être recueillis annuellement et dont le montant dépasse la moyenne des revenus nets d'après
+lesquels le contribuable a été soumis à l'impôt sur le revenu au titre des trois dernières années sont retenus
+pour le quart de leur montant.
+En cas de modification de la situation de famille du contribuable au cours de l'année d'imposition ou des trois
+années précédentes, les revenus nets sur le fondement desquels il a été soumis à l'impôt sur le revenu au titre
+de chacune de ces années sont ceux :
+a) Du couple passible de la contribution et des foyers fiscaux auxquels les conjoints ou les partenaires de
+ce couple ont appartenu au cours de l'année d'imposition, ou des trois années précédentes en cas d'union.
+Toutefois, en cas d'option au titre de l'année d'établissement de la contribution pour l'imposition séparée
+définie au second alinéa du 5 de l'article 6, le b du présent II s'applique ;
+b) Du contribuable passible de la contribution et des foyers fiscaux auxquels il a appartenu au cours de
+l'année d'imposition, ou des trois années précédentes en cas de divorce, de séparation ou de décès.
+III. - La contribution mentionnée au I est égale à la différence, lorsqu'elle est positive, entre :
+1° Le montant résultant de l'application d'un taux de 20 % au revenu défini au II ;
+2° Et le montant résultant de la somme de l'impôt sur le revenu et de la contribution prévue à l'article 223
+sexies définis au IV du présent article ainsi que des prélèvements libératoires de l'impôt sur le revenu
+mentionnés au c du 1° du IV de l'article 1417, majoré de 1 500 € par personne à charge au sens des articles
+196 à 196 B et de 12 500 € pour les contribuables soumis à une imposition commune.
+IV. - A. - Pour la détermination de l'impôt sur le revenu mentionné au 2° du III du présent article :
+1° L'impôt sur le revenu se rapportant aux revenus remplissant les conditions prévues au neuvième alinéa du
+II est retenu pour le quart de son montant, sans qu'il soit fait application du I de l'article 163-0 A ;
+2° L'impôt sur le revenu est majoré de l'avantage en impôt procuré par les réductions d'impôt prévues à
+l'article 199 quater B, à l'article 199 undecies B, à l'exception des dix derniers alinéas du I, à l'article 200 et à
+l'article 238 bis du présent code et à l'article 107 de la loi n° 2021-1104 du 22 août 2021 portant lutte contre
+le dérèglement climatique et renforcement de la résilience face à ses effets, ainsi que de l'avantage en impôt
+procuré par les crédits d'impôt prévus à l'article 200 undecies et aux articles 244 quater B à 244 quater W du
+présent code et aux articles 27 et 151 de la loi n° 2020-1721 du 29 décembre 2020 de finances pour 2021, et
+par les crédits d'impôt prévus par les conventions fiscales internationales, dans la limite de l'impôt dû.
+L'impôt sur le revenu est minoré du montant de l'imposition séparée au taux de 10 % prévu au deuxième
+alinéa du a du I de l'article 219 dont a fait l'objet le résultat net bénéficiaire déterminé en application de
+l'article 238 et du montant de l'imposition au taux de 10 % des produits mentionnés au second alinéa du
+I de l'article 93 quater. Il est également minoré du montant de l'imposition se rapportant aux plus-values
+mentionnées au I de l'article 150-0 B ter pour lesquelles le report d'imposition expire.
+B. - Pour la détermination de la contribution mentionnée au 2° du III du présent article :
+1° Il n'est pas fait application du 1 du II de l'article 223 sexies ;
+2° La contribution est minorée de la part de son montant se rapportant aux éléments mentionnés aux 1° à 7°
+du II du présent article ;
+3° La contribution se rapportant aux revenus remplissant les conditions prévues au neuvième alinéa du même
+II est retenue pour le quart de son montant.
+V. - Toutefois, lorsque le revenu mentionné au II du présent article est inférieur ou égal à 330 000 € pour
+les contribuables célibataires, veufs, séparés ou divorcés et à 660 000 € pour les contribuables soumis à
+une imposition commune, le montant résultant de l'application du 1° du III est diminué de la différence,
+lorsqu'elle est positive, entre ce montant et 82,5 % de la différence entre ce revenu et 250 000 € pour les
+contribuables célibataires, veufs, séparés ou divorcés ou 500 000 € pour les contribuables soumis à une
+imposition commune.
+V bis. - A. - Les contribuables domiciliés en France qui transfèrent leur domicile à l'étranger sont passibles
+de la contribution au titre de l'année de leur départ au titre des revenus dont ils ont disposé pendant l'année
+de leur départ jusqu'à la date de celui-ci, des bénéfices industriels et commerciaux qu'ils ont réalisés depuis
+la fin du dernier exercice taxé et de tous les revenus qu'ils ont acquis sans en avoir la disposition avant leur
+départ. Pour ces contribuables, les impositions mentionnées au 2° du III sont déterminées au titre de ces
+mêmes revenus.
+B. - Les contribuables précédemment domiciliés à l'étranger qui transfèrent leur domicile en France
+sont passibles de la contribution au titre de l'année de l'établissement du domicile en France au titre des
+revenus dont l'imposition est entraînée par l'établissement du domicile en France, à compter du jour de cet
+établissement. Pour ces contribuables, les impositions mentionnées au même 2° sont déterminées au titre de
+ces mêmes revenus.
+VI. - La contribution est déclarée, contrôlée et recouvrée selon les mêmes règles et sous les mêmes garanties
+et sanctions qu'en matière d'impôt sur le revenu.
+```
+
+---
+
+## Article 293 B — Tva Franchise
+
+**Source :** CGI Art. 293 B | **Module :** TVA | **Tags :** franchise_en_base, 85000, 37500, date_depassement
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 293 B
+I. - Pour leurs livraisons de biens et leurs prestations de services, les assujettis établis en France bénéficient
+d'une franchise qui les dispense du paiement de la taxe sur la valeur ajoutée lorsqu'ils n'ont pas réalisé en
+France un chiffre d'affaires, évalué dans les conditions prévues à l'article 293 D, excédant les plafonds
+suivants :
+(En euros.)
+Année d'évaluation Chiffre d'affaires national total Chiffre d'affaires national afférent aux prestations de
+services autres que les ventes à consommer sur place et
+les prestations d'hébergement
+Année civile précédente 85 000 37 500
+Année en cours 93 500 41 250
+I bis. - A. - Les avocats, les avocats au Conseil d'Etat et à la Cour de cassation, les auteurs d'œuvres de
+l'esprit et les artistes-interprètes assujettis et établis en France bénéficient d'une franchise qui les dispense
+du paiement de la taxe sur la valeur ajoutée lorsqu'ils n'ont pas réalisé en France un chiffre d'affaires, évalué
+dans les conditions prévues à l'article 293 D, excédant les plafonds suivants :
+(En euros.)
+Année d'évaluation Chiffre d'affaires national afférent aux opérations
+mentionnées au B du présent I bis
+Chiffre d'affaires national afférent aux opérations autres
+que celles mentionnées au B du présent I bis
+Année civile précédente 50 000 35 000
+Année en cours 55 000 38 500
+B. - Les opérations prises en compte pour les besoins des plafonds mentionnés à la deuxième colonne du
+tableau du second alinéa du A du présent I bis sont les suivantes :
+1° Les opérations réalisées par les avocats et les avocats au Conseil d'Etat et à la Cour de cassation, dans le
+cadre de l'activité définie par la réglementation applicable à leur profession ;
+2° Les livraisons par les auteurs d'œuvres de l'esprit, à l'exception des architectes, de leurs œuvres
+mentionnées aux 1° à 12° de l'article L. 112-2 du code de la propriété intellectuelle et la cession des droits
+patrimoniaux qui leur sont reconnus par la loi ;
+3° Les opérations relatives à l'exploitation des droits patrimoniaux qui sont reconnus par la loi aux artistes-
+interprètes mentionnés à l'article L. 212-1 du même code.
+II. - Lorsque l'un des plafonds de chiffre d'affaires prévus aux I ou I bis du présent article pour les opérations
+de l'année en cours est dépassé, la franchise cesse de s'appliquer pour les opérations intervenant à compter de
+la date du dépassement.
+```
+
+---
+
+## Article 757 B — Assurance Vie
+
+**Source :** CGI Art. 757 B | **Module :** assurance_vie | **Tags :** primes_apres_70_ans, abattement_30500
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 757 B
+I.-Les sommes, rentes ou valeurs quelconques dues directement ou indirectement par un assureur, à raison
+du décès de l'assuré, donnent ouverture aux droits de mutation par décès suivant le degré de parenté existant
+entre le bénéficiaire à titre gratuit et l'assuré à concurrence de la fraction des primes versées après l'âge de
+soixante-dix ans.
+Par exception, les sommes, rentes ou valeurs quelconques dues directement ou indirectement par un assureur,
+à raison du décès après l'âge de soixante-dix ans du titulaire d'un plan d'épargne retraite mentionné à l'article
+L. 224-1 du code monétaire et financier ou d'un sous-compte français du produit paneuropéen d'épargne-
+retraite individuelle mentionné à l'article L. 225-1 du même code, donnent ouverture aux droits de mutation
+par décès suivant le degré de parenté existant entre le bénéficiaire à titre gratuit et l'assuré pour leur montant
+total.
+II.-L'ensemble des sommes, rentes ou valeurs visées au I dues à raison du ou des contrats conclus sur la tête
+d'un même assuré fait l'objet d'un abattement global de 30 500 €.
+II bis.-(Abrogé).
+III.-Les conditions d'application du présent article et notamment les obligations concernant les informations à
+fournir par les contribuables et les assureurs sont déterminées par décret en Conseil d'Etat (1).
+```
+
+---
+
+## Article 790 A bis — Donations
+
+**Source :** CGI Art. 790 A bis | **Module :** transmission | **Tags :** don_somme_argent, logement_neuf, renovation_energetique, 100000, 31_12_2026
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 790 A bis
+I.-Les dons de sommes d'argent consentis en pleine propriété à un enfant, un petit-enfant, un arrière-petit-
+enfant ou, à défaut d'une telle descendance, un neveu ou une nièce sont exonérés de droits de mutation à titre
+gratuit dans la double limite de 100 000 euros par un même donateur à un même donataire et de 300 000
+euros par donataire si ces sommes sont affectées par ce dernier, au plus tard le dernier jour du sixième mois
+suivant le versement :
+1° A l'acquisition d'un immeuble acquis neuf ou en l'état futur d'achèvement ;
+2° A des travaux et des dépenses éligibles à la prime prévue au II de l'article 15 de la loi n° 2019-1479 du 28
+décembre 2019 de finances pour 2020 et réalisés en faveur de la rénovation énergétique du logement dont il
+est propriétaire et qu'il affecte à son habitation principale.
+II.-Le bénéfice de cette exonération est remis en cause si le donataire n'a pas conservé comme résidence
+principale ou n'a pas affecté à la location à usage d'habitation principale le logement à l'acquisition duquel
+ont été affectées les sommes d'argent mentionnées au I du présent article pendant une durée de cinq ans à
+compter de la date d'acquisition de l'immeuble ou de son achèvement, s'il est postérieur, ou s'il n'a pas affecté
+à son habitation principale le logement ayant bénéficié des travaux mentionnés au 2° du même I pendant une
+durée de cinq ans à compter de leur date d'achèvement.
+En cas de location, le contrat de bail ne peut pas être conclu avec un membre du foyer fiscal du donataire.
+L'exonération ne s'applique pas aux dépenses au titre desquelles le donataire a bénéficié du crédit d'impôt
+prévu à l'article 199 sexdecies du présent code, d'une déduction de charges pour la détermination de l'impôt
+sur le revenu ou de la prime prévue au II de l'article 15 de la loi n° 2019-1479 du 28 décembre 2019 précitée.
+Le donataire conserve les pièces justificatives à la disposition de l'administration.
+III.-Le I s'applique aux sommes versées entre le lendemain de la promulgation de la loi n° 2025-127 du 14
+février 2025 de finances pour 2025 et le 31 décembre 2026.
+```
+
+---
+
+## Article 968 — Ifi
+
+**Source :** CGI Art. 968 | **Module :** IFI | **Tags :** IFI, usufruit, pleine_propriete
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 968
+Les actifs mentionnés à l'article 965 grevés d'un usufruit, d'un droit d'habitation ou d'un droit d'usage accordé
+à titre personnel sont compris dans le patrimoine de l'usufruitier ou du titulaire du droit pour leur valeur en
+pleine propriété.
+Toutefois, à condition, pour l'usufruit, que le droit constitué ne soit ni vendu ni cédé à titre gratuit par son
+titulaire, ces actifs grevés de l'usufruit ou du droit d'usage ou d'habitation sont compris, respectivement, dans
+les patrimoines de l'usufruitier ou du nu-propriétaire suivant les proportions fixées par l'article 669 lorsque :
+1° La constitution de l'usufruit résulte de l'application de l'article 757 du code civil, de l'article 767 du même
+code dans sa rédaction antérieure à la loi n° 2001-1135 du 3 décembre 2001 relative aux droits du conjoint
+survivant et des enfants adultérins et modernisant diverses dispositions de droit successoral, de l'article
+1094 dudit code dans sa rédaction antérieure à la loi n° 2006-728 du 23 juin 2006 portant réforme des
+successions et des libéralités ou de l'article 1098 du même code. Les biens dont la propriété est démembrée
+en application d'autres dispositions, notamment de l'article 1094-1 du même code, ne peuvent faire l'objet de
+cette imposition répartie ;
+2° Le démembrement de propriété résulte de la vente d'un bien dont le vendeur s'est réservé l'usufruit, le
+droit d'usage ou d'habitation et que l'acquéreur n'est pas l'une des personnes mentionnées à l'article 751 du
+présent code ;
+3° L'usufruit ou le droit d'usage ou d'habitation a été réservé par le donateur d'un bien ayant fait l'objet
+d'un don ou d'un legs à l'Etat, à un département, à une commune ou à un syndicat de communes ou à leurs
+établissements publics, à un établissement public national à caractère administratif ou à une association
+reconnue d'utilité publique.
+```
+
+---
+
+## Article 977 — Ifi
+
+**Source :** CGI Art. 977 | **Module :** IFI | **Tags :** IFI, bareme, decote_17500
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 977
+1. Le tarif de l'impôt est fixé à :
+Fraction de la valeur nette taxable du patrimoine Tarif applicable
+(en pourcentage)
+N'excédant pas 800 000 € 0
+Supérieure à 800 000 € et inférieure ou égale à 1 300 000 € 0,50
+Supérieure à 1 300 000 € et inférieure ou égale à 2 570 000 € 0,70
+Supérieure à 2 570 000 € et inférieure ou égale à 5 000 000 € 1
+Supérieure à 5 000 000 € et inférieure ou égale à 10 000 000 € 1,25
+Supérieure à 10 000 000 € 1,50
+2. Pour les redevables dont le patrimoine imposable a une valeur nette taxable égale ou supérieure à 1 300
+000 € et inférieure à 1 400 000 €, le montant de l'impôt calculé selon le tarif prévu au tableau du 1 est réduit
+d'une somme égale à 17 500 €-1,25 % P, où P est la valeur nette taxable du patrimoine.
+```
+
+---
+
+## Article 1609 nonies G — Plus Values Immobilieres
+
+**Source :** CGI Art. 1609 nonies G | **Module :** plus_values_immobilieres | **Tags :** PV_immo, taxe_supplementaire, 50000, 2pc_6pc
+
+> Ajouté le 2026-11-01 (lot 2 de l'audit) depuis l'export Légifrance du 30/10/2026 : article cité par le moteur, les règles ou le référentiel.
+
+```
+Article 1609 nonies G
+I. – Il est institué une taxe sur les plus-values réalisées dans les conditions prévues aux articles 150 U et 150
+UB à 150 UD par les personnes physiques ou les sociétés ou groupements qui relèvent des articles 8 à 8 ter et
+dans celles prévues à l'article 244 bis A par les contribuables non domiciliés fiscalement en France assujettis
+à l'impôt sur le revenu.
+La taxe ne s'applique pas aux plus-values réalisées lors de la cession de terrains à bâtir ou de droits s'y
+rapportant.
+II. – La taxe est assise sur le montant imposable des plus-values déterminé dans les conditions prévues, selon
+le cas, aux articles 150 V à 150 VE ou au II de l'article 244 bis A.
+Elle est due par le cédant et exigible lors de la cession.
+III. – La taxe est due à raison des plus-values imposables d'un montant supérieur à 50 000 €, selon le barème
+suivant appliqué au montant total de la plus-value imposable :
+(En euros)
+MONTANT DE LA PLUS-VALUE IMPOSABLE MONTANT DE LA TAXE
+De 50 001 à 60 000
+2 % PV-(60 000-PV) × 1/ 20
+De 60 001 à 100 000
+2 % PV
+De 100 001 à 110 000
+3 % PV-(110 000-PV) × 1/ 10
+De 110 001 à 150 000
+3 % PV
+De 150 001 à 160 000
+4 % PV-(160 000-PV) × 15/ 100
+De 160 001 à 200 000
+4 % PV
+De 200 001 à 210 000
+5 % PV-(210 000-PV) × 20/ 100
+De 210 001 à 250 000
+5 % PV
+De 250 001 à 260 000
+6 % PV-(260 000-PV) × 25/ 100
+Supérieur à 260 000
+6 % PV
+(PV = montant de la plus-value imposable)
+IV. – Une déclaration, conforme à un modèle établi par l'administration, retrace les éléments servant à la
+liquidation de la taxe. Elle est déposée dans les conditions prévues aux 1°, 2° et 4° du I et au II de l'article
+150 VG.
+V. – La taxe est versée lors du dépôt de la déclaration prévue au IV. Les I à II bis de l'article 150 VF, le
+second alinéa du I et les II et III de l'article 150 VH et le IV de l'article 244 bis A sont applicables.
+VI. – La taxe est contrôlée sous les mêmes garanties et sanctions qu'en matière d'impôt sur le revenu.
+```
+
+---

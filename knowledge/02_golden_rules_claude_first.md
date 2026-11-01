@@ -1344,53 +1344,59 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 197, I-1 (bareme progressif de l'IR, tranche a 0 %) (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 22-23
-- Règle : Jusqu’à 11 497 €, le taux marginal d’imposition est de 0 %.
-- Seuils : `{"revenu_max": 11497}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Jusqu’à 11 497 €, le taux marginal d’imposition est de 0 %.
+- Seuils : `{"revenu_max_revenus_2024": 11497, "revenu_max_revenus_2025": 11600}`
 - Taux : `"0 %"`
+- Correction (audit du 2026-11-01) : énoncé valable pour les revenus 2024 (imposés en 2025). Revenus 2025 (imposés en 2026), CGI art. 197 en vigueur (export Légifrance du 30/10/2026) : 0 % jusqu'à 11 600 €, par part [referentiel: bareme_ir_seuil_tranche_*].
 
 ### GFPL-106 | tranche
 - Module : M2
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 197, I-1 (bareme IR, tranche a 11 %) (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 22-23
-- Règle : De 11 498 € à 29 315 €, le taux marginal d’imposition est de 11 %.
-- Seuils : `{"revenu_min": 11498, "revenu_max": 29315}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : De 11 498 € à 29 315 €, le taux marginal d’imposition est de 11 %.
+- Seuils : `{"revenus_2024": [11498, 29315], "revenus_2025": [11601, 29579]}`
 - Taux : `"11 %"`
+- Correction (audit du 2026-11-01) : énoncé valable pour les revenus 2024 (imposés en 2025). Revenus 2025 (imposés en 2026), CGI art. 197 en vigueur (export Légifrance du 30/10/2026) : 11 % de 11 601 € à 29 579 €, par part [referentiel: bareme_ir_seuil_tranche_*].
 
 ### GFPL-107 | tranche
 - Module : M2
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 197, I-1 (bareme IR, tranche a 30 %) (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 22-23
-- Règle : De 29 316 € à 83 823 €, le taux marginal d’imposition est de 30 %.
-- Seuils : `{"revenu_min": 29316, "revenu_max": 83823}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : De 29 316 € à 83 823 €, le taux marginal d’imposition est de 30 %.
+- Seuils : `{"revenus_2024": [29316, 83823], "revenus_2025": [29580, 84577]}`
 - Taux : `"30 %"`
+- Correction (audit du 2026-11-01) : énoncé valable pour les revenus 2024 (imposés en 2025). Revenus 2025 (imposés en 2026), CGI art. 197 en vigueur (export Légifrance du 30/10/2026) : 30 % de 29 580 € à 84 577 €, par part [referentiel: bareme_ir_seuil_tranche_*].
 
 ### GFPL-108 | tranche
 - Module : M2
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 197, I-1 (bareme IR, tranche a 41 %) (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 22-23
-- Règle : De 83 824 € à 180 294 €, le taux marginal d’imposition est de 41 %.
-- Seuils : `{"revenu_min": 83824, "revenu_max": 180294}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : De 83 824 € à 180 294 €, le taux marginal d’imposition est de 41 %.
+- Seuils : `{"revenus_2024": [83824, 180294], "revenus_2025": [84578, 181917]}`
 - Taux : `"41 %"`
+- Correction (audit du 2026-11-01) : énoncé valable pour les revenus 2024 (imposés en 2025). Revenus 2025 (imposés en 2026), CGI art. 197 en vigueur (export Légifrance du 30/10/2026) : 41 % de 84 578 € à 181 917 €, par part [referentiel: bareme_ir_seuil_tranche_*].
 
 ### GFPL-109 | tranche
 - Module : M2
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 197, I-1 (bareme IR, tranche a 45 %) (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 22-23
-- Règle : Au-delà de 180 295 €, le taux marginal d’imposition est de 45 %.
-- Seuils : `{"revenu_min": 180295}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Au-delà de 180 295 €, le taux marginal d’imposition est de 45 %.
+- Seuils : `{"revenus_2024_au_dela_de": 180294, "revenus_2025_au_dela_de": 181917}`
 - Taux : `"45 %"`
+- Correction (audit du 2026-11-01) : énoncé valable pour les revenus 2024 (imposés en 2025). Revenus 2025 (imposés en 2026), CGI art. 197 en vigueur (export Légifrance du 30/10/2026) : 45 % au-delà de 181 917 €, par part [referentiel: bareme_ir_seuil_tranche_*]. La borne de l'énoncé est aussi fausse : la tranche à 45 % commence au-delà de 180 294 €.
 
 ### GFPL-110 | règle
 - Module : M2
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 197, I-2 (plafonnement des effets du quotient familial) (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 22-23
-- Règle : L’avantage fiscal attaché à chaque demi-part est plafonné à 1 791 €, soit 896 € par quart de part additionnelle.
-- Seuils : `{"demi_part": 1791, "quart_part": 896}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : L’avantage fiscal attaché à chaque demi-part est plafonné à 1 791 €, soit 896 € par quart de part additionnelle.
+- Seuils : `{"demi_part_revenus_2024": 1791, "demi_part_revenus_2025": 1807}`
+- Correction (audit du 2026-11-01) : 1 791 € valait pour les revenus 2024. Revenus 2025, CGI art. 197 en vigueur (export Légifrance du 30/10/2026) : 1 807 € par demi-part, la moitié par quart de part.
 
 ### GFPL-111 | règle
 - Module : M2
@@ -1506,10 +1512,11 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 200 (reduction d'impot pour dons, taux 75 %/66 %)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 4-4
-- Règle : Les dons aux organismes d’aide aux personnes en difficulté et d’aide aux victimes de violences domestiques ouvrent droit à une réduction d’impôt de 75 % dans la limite de 1 000 € par an ; au-delà, le taux est de 66 % dans la limite globale de 20 % du revenu imposable.
-- Seuils : `{"limite_75": 1000, "limite_globale_revenu_imposable": 20}`
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Les dons aux organismes d’aide aux personnes en difficulté et d’aide aux victimes de violences domestiques ouvrent droit à une réduction d’impôt de 75 % dans la limite de 1 000 € par an ; au-delà, le taux est de 66 % dans la limite globale de 20 % du revenu imposable.
+- Seuils : `{"limite_75_avant_LF2026": 1000, "limite_75": 2000, "limite_globale_revenu_imposable": 20}`
 - Taux : `"75 % puis 66 %"`
 - Précision (vérif. source officielle 2026-08-26) : CGI art. 200, 1 ter : taux de 75 % pour les dons aux organismes d'aide aux personnes en difficulté et aux victimes de violence domestique, au-delà 66 % dans la limite de 20 % du revenu imposable — exact ; mais le plafond de 1 000 € (millésime 2025) a été porté à 2 000 € par la LF 2026 (promulguée le 19/02/2026) pour les dons effectués à compter du 14/10/2025.
+- Correction (audit du 2026-11-01) : CGI art. 200, 1 ter en vigueur (texte du 30/10/2026) : versements retenus dans la limite de 2 000 € pour le taux de 75 % ; 1 000 € auparavant (dons effectués depuis le 14/10/2025 selon la LF 2026, probable).
 
 ### GFPL-126 | règle
 - Module : M2
@@ -1684,8 +1691,9 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : Loi n2025-127 du 14/02/2025 (LF 2025) art. 10 (contribution differentielle sur les hauts revenus, CDHR, revenus 2025)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 29-30
-- Règle : La CDHR s’applique temporairement, uniquement au titre des revenus de l’année 2025.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : La CDHR s’applique temporairement, uniquement au titre des revenus de l’année 2025.
 - Précision (vérif. source officielle 2026-08-26) : Exact au regard de la LF 2025 (art. 10 : CDHR au titre des seuls revenus 2025), mais énoncé daté : la loi de finances pour 2026 a prorogé la CDHR au-delà des revenus 2025 (imposition des revenus 2026).
+- Correction (audit du 2026-11-01) : la CDHR ne se limite plus aux revenus 2025 : la LF 2026 la proroge jusqu'à l'année où le déficit public passe sous 3 % du PIB (probable, sources secondaires) ; le texte de l'art. 224 en vigueur au 30/10/2026 ne fixe aucune année de fin.
 
 ### GFPL-147 | condition
 - Module : M2
@@ -1999,11 +2007,12 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 156, I-3 (imputation du deficit foncier sur le revenu global, plafond et doublement renovation energetique) ; BOI-RFPI-BASE-30-20
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 65-66
-- Règle : Déficit foncier imputable sur le revenu global = MIN(10 700 €, déficit hors intérêts d'emprunt). Si travaux rénovation énergétique E/F/G → A/B/C/D payés entre 2023 et 2025: plafond doublé à 21 400 €. Déficit sur intérêts d'emprunt = reportable sur revenus fonciers uniquement (10 ans). Déficit total année = Revenus locatifs nets bruts − Charges déductibles. Charges déductibles = intérêts emprunt + travaux entretien/réparation + taxe foncière + assurances + frais gestion + provisions copropriété.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Déficit foncier imputable sur le revenu global = MIN(10 700 €, déficit hors intérêts d'emprunt). Si travaux rénovation énergétique E/F/G → A/B/C/D payés entre 2023 et 2025: plafond doublé à 21 400 €. Déficit sur intérêts d'emprunt = reportable sur revenus fonciers uniquement (10 ans). Déficit total année = Revenus locatifs nets bruts − Charges déductibles. Charges déductibles = intérêts emprunt + travaux entretien/réparation + taxe foncière + assurances + frais gestion + provisions copropriété.
 - Conditions : régime réel foncier
 - Seuils : `{"plafond_standard": 10700, "plafond_renovation_energetique": 21400, "report_interets_annees": 10}`
 - Exceptions : La fraction au-delà de 10 700 € (ou 21 400 €) est reportable sur revenus fonciers des 10 ans suivants | La clause de location 3 ans obligatoire pour imputation sur revenu global
 - Précision (vérif. source officielle 2026-08-26) : Conforme a CGI art. 156, I-3 (plafond 10 700 EUR hors interets, report de l'excedent et des interets sur les revenus fonciers de 10 ans, plafond double 21 400 EUR pour travaux de renovation energetique faisant passer le bien d'une classe E/F/G a A/B/C/D) ; mais la fenetre « payes entre 2023 et 2025 » est datee : le dispositif exige un devis accepte a compter du 5/11/2022 et a ete prolonge aux depenses payees jusqu'au 31/12/2027.
+- Correction (audit du 2026-11-01) : (1) méthode : le revenu foncier brut s'impute d'abord sur les intérêts d'emprunt, puis sur les autres charges ; seule la part du déficit qui ne provient pas des intérêts s'impute sur le revenu global ; (2) le plafond de 21 400 € n'est pas un doublement : limite = 10 700 € + dépenses de rénovation énergétique éligibles, dans la limite de 21 400 € ; (3) dispositif prolongé jusqu'au 31/12/2027 (voir TRM-007) [referentiel: deficit_foncier_plafond_renovation_energetique].
 
 ### RISK-003 | risque
 - Module : FORM
@@ -2114,10 +2123,11 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 779 (abattement parent/enfant) et art. 790 G (don numeraire) ; art. 784 (delai 15 ans)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 26-26
-- Règle : Abattements fiscaux sur donations (reconstitution tous les 15 ans): parents vers enfants: 100 000 € par parent et par enfant; grands-parents vers petits-enfants: 31 865 €; arrière-grands-parents vers arrière-petits-enfants: 5 310 €. Abattement supplémentaire don en numéraire: 31 865 € (donateur < 80 ans, donataire majeur). Don affecté à création d'entreprise ou construction résidence principale: exonération 100 000 €.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Abattements fiscaux sur donations (reconstitution tous les 15 ans): parents vers enfants: 100 000 € par parent et par enfant; grands-parents vers petits-enfants: 31 865 €; arrière-grands-parents vers arrière-petits-enfants: 5 310 €. Abattement supplémentaire don en numéraire: 31 865 € (donateur < 80 ans, donataire majeur). Don affecté à création d'entreprise ou construction résidence principale: exonération 100 000 €.
 - Seuils : `{"abattement_parent_enfant": 100000, "abattement_grands_parents": 31865, "abattement_arriere_grands_parents": 5310, "abattement_don_numeraire": 31865, "exoneration_creation_entreprise": 100000, "delai_reconstitution_ans": 15}`
 - Exceptions : Enfant handicapé: abattement supplémentaire de 159 325 € (soit 259 325 € total par parent)
 - Précision (vérif. source officielle 2026-08-26) : Confirmé par CGI art. 779 I (100 000 €), 790 B (31 865 € petits-enfants), 790 G (31 865 €, donateur < 80 ans, donataire majeur), 784 (rappel 15 ans) ; NUANCE : l'exonération de 100 000 € « création d'entreprise ou résidence principale » était le dispositif temporaire 790 A bis version 2020 (éteint le 30/06/2021) ; le 790 A bis issu de la LF 2025 (15/02/2025-31/12/2026) vise l'achat d'un logement NEUF ou la rénovation énergétique de la résidence principale (100 000 €/donateur, 300 000 €/donataire), pas la création d'entreprise.
+- Correction (audit du 2026-11-01) : l'exonération de 100 000 € de l'énoncé (« création d'entreprise ou construction ») est périmée. Art. 790 A bis en vigueur (texte du 30/10/2026) : dons de sommes d'argent à un enfant, petit-enfant, arrière-petit-enfant ou, à défaut, neveu ou nièce, versés du 15/02/2025 au 31/12/2026, exonérés dans la limite de 100 000 € par donateur et par donataire et de 300 000 € par donataire, s'ils sont affectés dans les 6 mois à l'achat d'un logement neuf ou en VEFA, ou à des travaux de rénovation énergétique de la résidence principale ; logement conservé 5 ans comme résidence principale ou loué en résidence principale.
 
 ### PAT-010 | définition
 - Module : M6
@@ -2200,20 +2210,22 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 125-0 A (fiscalite de l'assurance-vie) ; CSS art. L.136-7 (PS)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 50-51
-- Règle : Fiscalité des gains (intérêts + PV) à la sortie par rachat: versements avant 27/09/2017: PFL 35%/15%/7,5% selon durée (0-4/4-8/>8 ans) ou barème IR + PS; versements depuis 27/09/2017: PFU 12,8% + PS (encours < 150 000 €) ou 7,5% + PS si contrat > 8 ans et encours < 150 000 € (sinon 12,8%). Après 8 ans: abattement annuel 4 600 € (personne seule) ou 9 200 € (couple). PS: 17,2%.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Fiscalité des gains (intérêts + PV) à la sortie par rachat: versements avant 27/09/2017: PFL 35%/15%/7,5% selon durée (0-4/4-8/>8 ans) ou barème IR + PS; versements depuis 27/09/2017: PFU 12,8% + PS (encours < 150 000 €) ou 7,5% + PS si contrat > 8 ans et encours < 150 000 € (sinon 12,8%). Après 8 ans: abattement annuel 4 600 € (personne seule) ou 9 200 € (couple). PS: 17,2%.
 - Seuils : `{"abattement_personne_seule": 4600, "abattement_couple": 9200, "seuil_taux_7_5": 150000}`
 - Taux : `{"PFU_standard": 12.8, "PFU_plus8ans_moins150k": 7.5, "PS": 17.2}`
 - Exceptions : Option pour le barème progressif IR possible lors de la déclaration de revenus
 - Précision (vérif. source officielle 2026-08-26) : Structure et taux exacts (PFL 35 %/15 %/7,5 % avant 27/09/2017 ; 12,8 % ou 7,5 % après ; abattements 4 600/9 200 € après 8 ans confirmés par CGI art. 125-0 A, al. 4 ; PS 17,2 % maintenus sur l'assurance-vie en 2026) ; NUANCE : le seuil de 150 000 € s'apprécie sur les PRIMES VERSÉES nettes de remboursements au 31/12 N-1 (CGI art. 200 A, 1-B-2°), non sur l'« encours » du contrat, et avant 8 ans le 12,8 % s'applique quel que soit le montant des primes.
+- Correction (audit du 2026-11-01) : le seuil de 150 000 € s'apprécie sur les primes versées non remboursées (tous contrats), pas sur l'encours. Au-delà, le taux de 7,5 % s'applique à la fraction des gains égale à gains × 150 000 / primes, et 12,8 % au reste (CGI art. 200 A, 1, B, 2°, b). PS de 17,2 % maintenus en 2026 pour l'assurance-vie.
 
 ### PAT-019 | règle
 - Module : M6
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 990 I (assurance-vie hors succession) et art. 757 B (primes apres 70 ans) (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047288653/) (verifie le 2026-06-05)
 - source_ingest : 6-guide_gestion_patrimoine.pdf, p. 50-51
-- Règle : Transmission hors succession: bénéficiaires librement désignés dans la clause. Fiscalité: conjoint/partenaire PACS bénéficiaire → EXONÉRATION TOTALE de droits. Autres bénéficiaires: abattement de 152 500 € par bénéficiaire sur primes versées avant 70 ans; taxe 20% de 152 501 € à 700 000 €; taxe 31,25% au-delà de 700 000 €. Primes versées après 70 ans: abattement global de 30 500 € (partagé entre tous les bénéficiaires) puis droits de succession sur l'excédent.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Transmission hors succession: bénéficiaires librement désignés dans la clause. Fiscalité: conjoint/partenaire PACS bénéficiaire → EXONÉRATION TOTALE de droits. Autres bénéficiaires: abattement de 152 500 € par bénéficiaire sur primes versées avant 70 ans; taxe 20% de 152 501 € à 700 000 €; taxe 31,25% au-delà de 700 000 €. Primes versées après 70 ans: abattement global de 30 500 € (partagé entre tous les bénéficiaires) puis droits de succession sur l'excédent.
 - Seuils : `{"abattement_avant_70ans": 152500, "seuil_taxe_20_pct": 700000, "abattement_apres_70ans": 30500}`
 - Taux : `{"taxe_tranche_1": 20, "taxe_tranche_2": 31.25}`
+- Correction (audit du 2026-11-01) : CGI art. 990 I : 20 % sur la fraction de la part taxable (après l'abattement de 152 500 €) jusqu'à 700 000 €, soit jusqu'à 852 500 € de capital transmis, puis 31,25 %. Au décès, les prélèvements sociaux restent dus sur les gains qui n'y ont pas encore été soumis, notamment en unités de compte (probable).
 
 ### PAT-020 | définition
 - Module : M6
@@ -2483,6 +2495,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : revenus fonciers bruts ≤ 15 000 € | location nue uniquement
 - Seuils : `{"seuil_micro_foncier": 15000, "abattement_pct": 30}`
 - Exceptions : Contribuables détenant des parts de SCPI ou bénéficiant de certains dispositifs (Malraux, Monuments historiques) ne peuvent pas être au micro-foncier | Option pour le régime réel: exercée par dépôt d'une 2044, valable 3 ans irrévocablement
+- Précision (audit du 2026-11-01) : l'exclusion du micro-foncier pour les porteurs de parts de SCPI ne joue que s'ils ne sont pas aussi propriétaires d'un immeuble donné en location nue (hors SCPI Robien et Borloo) (BOI-RFPI-DECLA-10, § 70).
 
 ### RF-002 | règle
 - Module : M9
@@ -2576,16 +2589,18 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Règle : Cession de parts de SCI soumise à l'IR: PV imposée selon le régime des PV immobilières des particuliers (abattements durée de détention, taux 19 % + 17,2 % PS). La durée de détention est calculée depuis l'acquisition des parts. Si la SCI a opté pour l'IS: la cession de parts relève du régime des PV mobilières (PFU 30 % ou barème IR, sans abattement durée de détention).
 - Exceptions : SCI à l'IS: perte de l'abattement pour durée de détention → PV imposée à 12,8 % + 17,2 % PS = PFU 30 %
 - Précision (vérif. source officielle 2026-08-26) : Confirmé : cession de parts de SCI à l'IR = régime des PV immobilières des particuliers (CGI art. 150 UB), 19 % + PS, abattements pour durée de détention décomptés depuis l'acquisition des PARTS ; SCI à l'IS : PV mobilières (CGI art. 150-0 A) sans abattement de durée ; NUANCE : depuis le 01/01/2026 (LFSS 2026) les PS sur les PV mobilières passent à 18,6 %, soit un PFU global de 31,4 % (le « 30 % » est le chiffre millésime 2025).
+- Précision (audit du 2026-11-01) : cession de parts d'une SCI à l'IS par une personne physique : plus-value mobilière au PFU de 31,4 % (12,8 % + PS 18,6 %), dès les plus-values réalisées en 2025 selon les questions-réponses du BOSS (probable) [referentiel: ps_revenus_patrimoine].
 
 ### DSD-001 | règle
 - Module : M10
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 796-0 bis (exoneration conjoint / PACS, loi TEPA 2007) ; CGI art. 790 E (abattement donation entre epoux)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 79-81
-- Règle : Exonération totale de droits de succession pour: (1) le conjoint survivant (depuis loi TEPA du 21/08/2007); (2) le partenaire de PACS survivant. Ces exonérations s'appliquent aux transmissions par décès uniquement. Pour les donations entre époux/partenaires PACS, des droits peuvent s'appliquer selon les barèmes (mais abattement spécifique de 80 724 € entre époux).
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Exonération totale de droits de succession pour: (1) le conjoint survivant (depuis loi TEPA du 21/08/2007); (2) le partenaire de PACS survivant. Ces exonérations s'appliquent aux transmissions par décès uniquement. Pour les donations entre époux/partenaires PACS, des droits peuvent s'appliquer selon les barèmes (mais abattement spécifique de 80 724 € entre époux).
 - Conditions : transmission par décès
 - Seuils : `{"abattement_donation_epoux": 80724}`
 - Exceptions : Les donations entre époux sont imposables selon le barème en ligne directe avec abattement de 80 724 €
+- Correction (audit du 2026-11-01) : les donations entre époux et partenaires de PACS ont leur propre barème (CGI art. 777, tableau II) : 5 % jusqu'à 8 072 €, 10 % jusqu'à 15 932 €, 15 % jusqu'à 31 865 €, 20 % jusqu'à 552 324 €, puis 30 %, 40 % et 45 % ; abattement de 80 724 € (art. 790 E).
 
 ### DSD-002 | seuil
 - Module : M10
@@ -2637,7 +2652,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 ### IFI-001 | règle
 - Module : M10
 - Statut : `candidate_to_validate`
-- Ancre : CGI art. 964 a 966 (champ IFI) et art. 977 (seuil) ; art. 973, II (abattement RP) ; BOI-PAT-IFI (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036384999/) (verifie le 2026-06-05)
+- Ancre : CGI art. 964 a 966 (champ IFI) et art. 964 (seuil de 1 300 000 EUR) ; art. 973, I, 2e alinea (abattement RP ; ancre corrigee le 2026-11-01) ; BOI-PAT-IFI (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036384999/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 73-75
 - Règle : L'IFI est dû lorsque la valeur nette taxable du patrimoine immobilier dépasse 1 300 000 € au 1er janvier de l'année d'imposition. L'assiette est constituée de la valeur de marché des biens immobiliers détenus directement ou via des sociétés (SCI, SCPI, OPCI, foncières non cotées), diminuée du passif déductible (emprunts immobiliers, taxes foncières dues). Abattement de 30 % sur la valeur de la résidence principale.
 - Conditions : patrimoine net immobilier > 1 300 000 €
@@ -2649,11 +2664,12 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 977 (bareme IFI) ; BOI-PAT-IFI-40-10-10
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 76-78
-- Règle : Barème IFI 2025 (calculé sur la valeur nette taxable, à partir de 800 000 €): De 0 à 800 000 € → 0 %; De 800 001 € à 1 300 000 € → 0,5 %; De 1 300 001 € à 2 570 000 € → 0,7 %; De 2 570 001 € à 5 000 000 € → 1 %; De 5 000 001 € à 10 000 000 € → 1,25 %; Au-delà de 10 000 000 € → 1,5 %. Note: si le patrimoine net dépasse 1 300 000 €, l'IFI est calculé DEPUIS 800 000 € (pas uniquement sur la fraction > 1 300 000 €).
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Barème IFI 2025 (calculé sur la valeur nette taxable, à partir de 800 000 €): De 0 à 800 000 € → 0 %; De 800 001 € à 1 300 000 € → 0,5 %; De 1 300 001 € à 2 570 000 € → 0,7 %; De 2 570 001 € à 5 000 000 € → 1 %; De 5 000 001 € à 10 000 000 € → 1,25 %; Au-delà de 10 000 000 € → 1,5 %. Note: si le patrimoine net dépasse 1 300 000 €, l'IFI est calculé DEPUIS 800 000 € (pas uniquement sur la fraction > 1 300 000 €).
 - Conditions : patrimoine net IFI > 1 300 000 €
 - Seuils : `{"tranche_0_max": 800000, "tranche_1_min": 800001, "tranche_1_max": 1300000, "tranche_2_min": 1300001, "tranche_2_max": 2570000, "tranche_3_min": 2570001, "tranche_3_max": 5000000, "tranche_4_min": 5000001, "tranche_4_max": 10000000}`
 - Taux : `{"tranche_0_pct": 0, "tranche_1_pct": 0.5, "tranche_2_pct": 0.7, "tranche_3_pct": 1.0, "tranche_4_pct": 1.25, "tranche_5_pct": 1.5}`
 - Exceptions : Décote si patrimoine net entre 1 300 000 € et 1 400 000 €: IFI = IFI calculé × (3 − 2,5 × patrimoine / 1 400 000)
+- Correction (audit du 2026-11-01) : la formule de décote de l'énoncé est fausse. CGI art. 977, 2 : pour un patrimoine net taxable P de 1 300 000 € à moins de 1 400 000 €, l'impôt est réduit de 17 500 € − 1,25 % × P. Exemple P = 1 350 000 € : barème 2 850 €, décote 625 €, IFI 2 225 € (la formule de l'énoncé donnait environ 1 680 €). Concordant avec TRM-011 et FORM-003.
 
 ### IFI-003 | définition
 - Module : M10
@@ -2693,16 +2709,18 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Seuils : `{"abattement_numeraire": 31865, "exoneration_renforcee_LDF2025": 100000}`
 - Exceptions : Exonération renforcée LDF 2025 (100 000 €) limitée à certains usages: création entreprise ou construction RP
 - Correction (vérif. source officielle 2026-08-26) : Volet 790 G exact (31 865 EUR, donateur < 80 ans, donataire majeur ou emancipe, enfants/petits-enfants/arriere-petits-enfants ou a defaut neveux/nieces, cumul avec l'abattement de l'art. 779 — texte local CGI art. 790 G verifie) ; mais le volet LDF 2025 est errone : le nouvel art. 790 A bis (LF 2025, art. 71, dons du 15/2/2025 au 31/12/2026) exonere dans la DOUBLE limite de 100 000 EUR par donateur et 300 000 EUR par donataire, pour des sommes affectees dans les 6 mois a l'acquisition d'un logement NEUF ou en VEFA ou a des travaux de renovation energetique de la residence principale — ni creation d'entreprise ni construction en general.
+- Précision (audit du 2026-11-01) : le dispositif 790 A bis s'éteint pour les sommes versées après le 31/12/2026 (art. 790 A bis, III, texte du 30/10/2026) ; aucune prorogation publiée au 01/11/2026.
 
 ### TRM-003 | condition
 - Module : M12
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 787 B (Pacte Dutreil, exoneration 75 %) ; BOI-ENR-DMTG-10-20-40 (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047623071/) (verifie le 2026-06-05)
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 83-84
-- Règle : Pacte Dutreil (art. 787 B CGI): exonération de 75 % de la valeur de l'entreprise transmise par donation ou succession. Le donataire/héritier n'est imposé que sur 25 % de la valeur réelle. Conditions: les donataires s'engagent à CONSERVER les biens affectés à l'exploitation + l'un d'entre eux s'engage à POURSUIVRE l'exploitation (ou exercer une activité dans l'entreprise) jusqu'au terme de l'engagement individuel de conservation. En cas de profession réglementée: le donataire doit justifier des diplômes et/ou habilitations professionnelles.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Pacte Dutreil (art. 787 B CGI): exonération de 75 % de la valeur de l'entreprise transmise par donation ou succession. Le donataire/héritier n'est imposé que sur 25 % de la valeur réelle. Conditions: les donataires s'engagent à CONSERVER les biens affectés à l'exploitation + l'un d'entre eux s'engage à POURSUIVRE l'exploitation (ou exercer une activité dans l'entreprise) jusqu'au terme de l'engagement individuel de conservation. En cas de profession réglementée: le donataire doit justifier des diplômes et/ou habilitations professionnelles.
 - Conditions : engagement collectif de conservation préalable | engagement individuel de conservation post-donation | poursuite d'exploitation par au moins un donataire
 - Taux : `{"exoneration_pct": 75}`
 - Exceptions : Non applicable si l'entreprise n'est pas transmise à un descendant direct | Doit être combiné avec d'autres abattements pour optimiser
+- Correction (audit du 2026-11-01) : (1) l'art. 787 B ne pose aucune condition de parenté : l'exception « descendant direct » est fausse ; (2) texte en vigueur (export Légifrance du 30/10/2026, LF 2026) : engagement individuel de conservation de 6 ans (4 ans auparavant), engagement collectif d'au moins 2 ans ; (3) la fraction de valeur des biens non affectés à l'activité est exclue (chasse, pêche, véhicules de tourisme, yachts, aéronefs, bijoux, objets d'art, chevaux de course, vins et alcools, logements). Date d'application aux transmissions : à vérifier.
 
 ### TRM-004 | seuil
 - Module : M12
@@ -2713,6 +2731,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Conditions : barème applicable à tous les démembrements (donation, succession, IFI)
 - Seuils : `{"age_moins_21_usufruit_pct": 90, "age_21_30_usufruit_pct": 80, "age_31_40_usufruit_pct": 70, "age_41_50_usufruit_pct": 60, "age_51_60_usufruit_pct": 50, "age_61_70_usufruit_pct": 40, "age_71_80_usufruit_pct": 30, "age_81_90_usufruit_pct": 20, "age_plus_90_usufruit_pct": 10}`
 - Exceptions : Au décès de l'usufruitier: le nu-propriétaire devient plein propriétaire EN FRANCHISE DE DROITS (pas de nouvelle taxation)
+- Précision (audit du 2026-11-01) : en IFI, l'usufruitier déclare la pleine propriété (CGI art. 968), sauf exceptions de cet article ; l'usufruit à durée fixe vaut 23 % de la pleine propriété par période de 10 ans (art. 669, II). Le barème du I de l'art. 669 ne s'applique donc pas à tous les démembrements.
 
 ### TRM-005 | obligation
 - Module : M12
@@ -2739,11 +2758,12 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 156, I-3 (doublement deficit foncier renovation energetique) ; BOI-RFPI-BASE-30
 - source_ingest : 00788-bp-guidefiscaliteprofessionsliberales-210x240-042025-vf.pdf, p. 65-66
-- Règle : Le plafond d'imputation du déficit foncier sur le revenu global est porté de 10 700 € à 21 400 € lorsque le déficit est lié à des dépenses de travaux de rénovation énergétique permettant au bien de passer d'une classe énergétique E, F ou G à une classe A, B, C ou D. Cette mesure s'applique aux dépenses de rénovation énergétique payées entre le 1er janvier 2023 et le 31 décembre 2025. Le double plafond est conditionné à la nature des travaux (attestée par un professionnel certifié RGE).
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Le plafond d'imputation du déficit foncier sur le revenu global est porté de 10 700 € à 21 400 € lorsque le déficit est lié à des dépenses de travaux de rénovation énergétique permettant au bien de passer d'une classe énergétique E, F ou G à une classe A, B, C ou D. Cette mesure s'applique aux dépenses de rénovation énergétique payées entre le 1er janvier 2023 et le 31 décembre 2025. Le double plafond est conditionné à la nature des travaux (attestée par un professionnel certifié RGE).
 - Conditions : dépenses de rénovation énergétique payées entre 01/01/2023 et 31/12/2025 | bien passant de classe E/F/G vers A/B/C/D | travaux réalisés par professionnel certifié RGE
 - Seuils : `{"plafond_standard": 10700, "plafond_renovation_energetique": 21400}`
 - Exceptions : Applicable seulement aux dépenses payées avant le 31/12/2025 | Exige un changement de classe énergétique attesté (pas uniquement des travaux d'entretien)
 - Précision (vérif. source officielle 2026-08-26) : Dispositif exact (CGI art. 156, I-3° mod. LFR 2022 art. 12 : plafond porté de 10 700 € à 21 400 € pour les dépenses de rénovation énergétique payées du 1/1/2023 au 31/12/2025 faisant passer le bien d'une classe E, F ou G à une classe A, B, C ou D, devis accepté à compter du 5/11/2022), mais la justification exigée est la production de deux DPE (avant travaux et après, au plus tard le 31/12/2025) — pas une attestation par un professionnel certifié RGE, condition qui ne figure pas dans le texte.
+- Correction (audit du 2026-11-01) : fenêtre périmée. CGI art. 156, I-3° en vigueur (texte du 30/10/2026) : la limite de 10 700 € est rehaussée, sans pouvoir excéder 21 400 € par an, à concurrence des dépenses de rénovation énergétique faisant passer le bien de E, F ou G à A, B, C ou D au plus tard le 31/12/2027 (prorogation LF 2026 aux dépenses payées jusqu'au 31/12/2027, probable) [referentiel: deficit_foncier_plafond_renovation_energetique].
 
 ### TRM-008 | règle
 - Module : M12
@@ -2860,6 +2880,7 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Exceptions : Transmission dans le cadre familial sous conditions peut préserver le pacte
 
 ## location_meublee_lmnp_lmp
+- Précision (audit du 2026-11-01) : depuis la LF 2026, l'engagement individuel dure 6 ans (texte de l'art. 787 B au 30/10/2026) : le risque de remise en cause court plus longtemps.
 
 ### LMN-001 | définition
 - Module : M5
@@ -3001,10 +3022,11 @@ Règles curated issues du dossier Claude, normalisées par Codex et reliées aux
 - Statut : `candidate_to_validate`
 - Ancre : CGI art. 293 B (franchise en base de TVA) ; directive UE 2020/285 ; BOI-TVA-DECLA-40-10
 - source_ingest : GUIDE_FISCAL_LOCATION_MEUBLEE_2025.pdf, p. 50-51
-- Règle : Franchise en base TVA pour locations meublées soumises à TVA (depuis 1er jan 2025 selon directive UE 2020/285): seuil de base 85 000 €, seuil majoré 93 500 €. Franchise cesse si CA dépasse 93 500 € en cours d'année (dès le 1er jour du mois de dépassement). Mention obligatoire sur factures: 'TVA non applicable - art. 293 B du CGI'. Réforme à 25 000 € suspendue jusqu'au 1er juin 2025.
+- Règle (⚠️ ÉNONCÉ INVALIDÉ le 2026-11-01 : lire la Correction ci-dessous) : Franchise en base TVA pour locations meublées soumises à TVA (depuis 1er jan 2025 selon directive UE 2020/285): seuil de base 85 000 €, seuil majoré 93 500 €. Franchise cesse si CA dépasse 93 500 € en cours d'année (dès le 1er jour du mois de dépassement). Mention obligatoire sur factures: 'TVA non applicable - art. 293 B du CGI'. Réforme à 25 000 € suspendue jusqu'au 1er juin 2025.
 - Seuils : `{"franchise_base": 85000, "franchise_majoree": 93500}`
 - Exceptions : Option pour le paiement de la TVA: valable 2 ans, renouvelable tacitement; option par écrit au SIE; effet au 1er jour du mois de l'option
 - Précision (vérif. source officielle 2026-08-26) : Seuils 2025 exacts pour l'hebergement (85 000 EUR, seuil majore 93 500 EUR, CGI art. 293 B version au 1/1/2025) et mention de facturation exacte ; mais depuis le 1/1/2025 la franchise cesse pour les operations intervenant A COMPTER DE LA DATE du depassement du seuil majore (et non plus au 1er jour du mois de depassement, regle anterieure) ; et l'information sur le seuil unique de 25 000 EUR est datee : suspendu puis definitivement abandonne (suppression votee en 2025, seuils maintenus).
+- Correction (audit du 2026-11-01) : CGI art. 293 B, II (texte du 30/10/2026) : en cas de dépassement du seuil majoré en cours d'année, la franchise cesse pour les opérations intervenant à compter de la date du dépassement, et non au premier jour du mois. Seuils 2026 inchangés (85 000 / 93 500 € pour l'hébergement).
 
 ### LMN-018 | obligation
 - Module : M5

@@ -224,17 +224,23 @@ Source : GFPL-165 à GFPL-170 — M2, Module G1
 
 **Réponse idéale :**
 
-Pour les **revenus 2025 déclarés en 2026**, le seuil micro-BIC pour un meublé de tourisme **NON classé** est de **15 000 €** avec un abattement de **30 %** (loi Le Meur 2024).
+Pour les **revenus 2025 déclarés en 2026**, le seuil micro-BIC d'un meublé de tourisme **NON classé** est de **15 000 €** avec un abattement de **30 %** (loi Le Meur) [referentiel: seuil_micro_bic_tourisme_non_classe].
 
-Votre CA de 18 000 € **dépasse ce seuil** → vous êtes obligatoirement au **régime réel BIC simplifié**.
+**Le micro s'apprécie sur les recettes des deux années précédentes, pas sur celles de l'année en cours** (CGI art. 50-0, 1 : « l'année civile précédente ou la pénultième année ») :
+- si votre CA de 2024 **ou** de 2023 n'a pas dépassé 15 000 €, 2025 reste au micro-BIC : revenu imposable = 18 000 × 70 % = **12 600 €** (sauf option pour le réel) ;
+- si 2023 **et** 2024 ont tous deux dépassé 15 000 €, le régime réel simplifié s'impose dès 2025 ;
+- avec 18 000 € en 2025, vous sortez du micro l'année où les deux années précédentes dépassent le seuil (2027 si 2026 dépasse aussi).
+Comparaison des seuils de 2025 avec les recettes de 2023 et 2024, année de transition de la loi Le Meur : à confirmer au BOFiP.
 
-**Conséquences :**
+Prélèvements sociaux : 18,6 % sur le résultat dès les revenus 2025 [referentiel: ps_revenus_patrimoine] ; pas de cotisations sociales tant que les recettes de courte durée restent sous 23 000 €.
+
+**Au réel (obligatoire ou sur option) :**
 - Dépôt déclarations 2031 + 2033 + report sur 2042 C PRO
 - Déduction des charges réelles (intérêts emprunt, taxe foncière, CFE, entretien, comptabilité)
 - Amortissement du bien possible (méthode composants)
 - FEC obligatoire si comptabilité informatisée
 
-⚠️ Si vous aviez fait **classer** votre bien (1 à 5 étoiles), le seuil serait 77 700 € avec abattement 50 % → vous resteriez en micro-BIC.
+⚠️ Si vous aviez fait **classer** votre bien (1 à 5 étoiles), le seuil serait de 77 700 € pour les revenus 2025 et de 83 600 € pour les revenus 2026-2028, avec un abattement de 50 % [referentiel: seuil_micro_bic_classe].
 
 Source : LMN-005, LMN-006, LMN-007 — M5
 
@@ -252,12 +258,12 @@ Source : LMN-005, LMN-006, LMN-007 — M5
 
 **CEHR :** Non. Le seuil de déclenchement est un **RFR > 250 000 €** (célibataire). Avec 90 000 € de recettes BNC, votre RFR sera nettement inférieur après charges et cotisations sociales déductibles.
 
-**CDHR (revenus 2025 uniquement) :** Non plus, pour les mêmes raisons — seuil RFR retraité > 250 000 €.
+**CDHR :** Non plus : seuil de RFR retraité > 250 000 € (CGI art. 224). Créée pour les revenus 2025, elle est prorogée par la LF 2026 (probable).
 
 **Votre situation fiscale probable :**
-- Recettes 90 000 € → déclaration contrôlée (> 77 700 €)
-- Bénéfice imposable ≈ 90 000 − charges réelles − cotisations sociales
-- Tranche marginale d'imposition probable : 30 % (entre 29 316 € et 83 823 €)
+- Recettes 2025 de 90 000 € > 77 700 € (seuil micro-BNC des revenus 2025) : le micro-BNC reste applicable en 2025 si les recettes de 2024 **ou** de 2023 n'ont pas dépassé 77 700 € (CGI art. 102 ter) ; sinon déclaration contrôlée (2035). Seuil des revenus 2026-2028 : 83 600 € [referentiel: seuil_micro_bnc]
+- Bénéfice imposable ≈ 90 000 − charges réelles − cotisations sociales (déclaration contrôlée), ou 90 000 × 66 % = 59 400 € (micro-BNC)
+- Tranche marginale d'imposition probable pour une part : 30 % (de 29 580 € à 84 577 €, barème des revenus 2025)
 
 ⚠️ CEHR et CDHR concernent les contribuables à très hauts revenus. Pour une sage-femme libérale en début/milieu de carrière, ces contributions ne sont généralement pas applicables.
 
@@ -275,7 +281,9 @@ Source : GFPL-053, GFPL-142, GFPL-147 — M2
 
 **Réponse idéale :**
 
-**Rien**, légalement. Le PACS **n'attribue aucun droit successoral** à un partenaire de PACS. Sans testament, les biens du défunt reviennent à ses héritiers légaux (enfants, parents, frères et sœurs selon l'ordre légal).
+**Aucun droit successoral.** Le PACS n'attribue aucune part de la succession au partenaire. Sans testament, les biens du défunt reviennent à ses héritiers légaux (enfants, parents, frères et sœurs selon l'ordre légal).
+
+**Seul droit légal :** vous pouvez rester gratuitement dans le logement commun et utiliser le mobilier pendant un an (C. civ. art. 515-6, al. 3, qui renvoie à l'art. 763).
 
 **Ce qu'il faut faire pour être protégé(e) :**
 1. Rédiger un **testament** en faveur de l'autre — permet de transmettre jusqu'à la quotité disponible (50 % en présence d'un enfant, etc.)
@@ -418,12 +426,12 @@ Source : LMN-015 — M5
 
 | Critère | Donation-partage | Donations séparées |
 |---------|-----------------|--------------------|
-| Rapport à la succession | Non rapportable | Rapportable (risque réévaluation) |
-| Évaluation des biens | Figée au jour de la donation | Au jour du décès (peut avoir augmenté) |
+| Rapport à la succession (civil) | Pas de rapport | Rapport, en principe pour la valeur au jour du partage |
+| Évaluation civile des biens | Figée au jour de la donation pour l'imputation et la réserve, si tous les héritiers réservataires y participent (C. civ. art. 1078) | Réévaluée au jour du partage (peut avoir augmenté) |
 | Équilibre entre enfants | Garanti au moment de la donation | Peut créer des tensions ultérieures |
-| Abattements fiscaux | 100 000 €/parent/enfant (mêmes) | 100 000 €/parent/enfant |
+| Fiscalité | Abattement de 100 000 € par parent et par enfant ; donations de moins de 15 ans rappelées pour leur valeur au jour de l'acte (CGI art. 784) | Identique |
 
-**Avantage décisif :** Dans une donation-partage, les biens sont évalués au jour de la donation pour le calcul des droits de succession futurs — pas au jour du décès. Si l'immobilier s'apprécie, l'économie peut être substantielle.
+**Avantage décisif : il est civil, pas fiscal.** La donation-partage fige la valeur des biens entre les enfants et évite le rapport, donc les conflits si l'immobilier s'apprécie. Fiscalement, les deux formes ont les mêmes abattements et le même rappel sur 15 ans.
 
 **Recommandation :** Faire appel à un notaire pour organiser la donation-partage, en pensant au démembrement (garder l'usufruit, donner la nue-propriété) pour réduire les droits.
 
@@ -437,20 +445,20 @@ Source : PAT-010 — M6
 
 **Question :** Je suis LMP avec un déficit de 15 000 € cette année, et ma femme est salariée à 60 000 €. Quel revenu imposable pour le foyer ?
 
-*Contexte : Foyer fiscal commun, 1 enfant à charge (1 part supplémentaire).*
+*Contexte : Foyer fiscal commun, revenus 2025, 1 enfant à charge (1/2 part supplémentaire).*
 
 **Réponse idéale :**
 
 **En LMP, le déficit s'impute sur le revenu global du foyer sans limitation.**
 
 Calcul du revenu imposable :
-- Salaires nets de Madame = 60 000 − 10 % (forfait frais pro, plafond 14 426 €) = **54 000 €** (ou frais réels si supérieurs)
+- Salaires nets de Madame = 60 000 − 10 % (forfait frais pro, plafond 14 555 € pour les revenus 2025, CGI art. 83) = **54 000 €** (ou frais réels si supérieurs)
 - Déficit LMP = −15 000 €
 - **Revenu imposable du foyer = 54 000 − 15 000 = 39 000 €**
 
 Sur 2,5 parts (2 adultes + 1 enfant = 1/2 part supplémentaire) :
 - Quotient = 39 000 / 2,5 = 15 600 €
-- TMI = 11 % (tranche 11 498 € → 29 315 €)
+- TMI = 11 % (tranche de 11 601 € à 29 579 €, barème des revenus 2025)
 
 ⚠️ Aucun déficit n'est reportable en N+1 dans cet exemple (le déficit a été entièrement absorbé). Si les salaires de Madame avaient été insuffisants, le déficit global résiduel serait reportable sur **6 ans**.
 
@@ -476,14 +484,15 @@ Capital transmis = 200 000 €
 Abattement applicable = 152 500 €
 Base taxable = 200 000 − 152 500 = **47 500 €**
 
-Taxe à 20 % sur la tranche 152 501 € → 700 000 € = 47 500 × 20 % = **9 500 €**
+Prélèvement de 20 % sur la part taxable jusqu'à 700 000 € (CGI art. 990 I) = 47 500 × 20 % = **9 500 €**
 
-**Votre fils paiera donc 9 500 €** sur les 200 000 € reçus — soit un taux effectif de **4,75 %**, bien plus avantageux que les droits de succession ordinaires.
+**Votre fils paiera 9 500 € de prélèvement** sur les 200 000 € reçus, soit un taux effectif de **4,75 %**.
 
-**À titre de comparaison** : hors assurance-vie, une succession de 200 000 € à un enfant unique (après abattement de 100 000 €) donnerait :
-- 100 000 € × barème ligne directe ≈ 20 000 € de droits
+**Prélèvements sociaux au décès :** dus sur les gains qui n'y ont pas encore été soumis, notamment en unités de compte : jusqu'à 80 000 × 17,2 % = **13 760 €** si tous les gains sont en unités de compte (probable ; sur un fonds en euros, ils ont été prélevés chaque année).
 
-L'assurance-vie économise ici **~10 500 €** de droits.
+**À titre de comparaison** : hors assurance-vie, une succession de 200 000 € à un enfant unique (après abattement de 100 000 €) donnerait, au barème en ligne directe : 403,60 + 403,70 + 573,45 + 16 813,60 = **18 194 €** de droits.
+
+L'assurance-vie économise ici **8 694 €** de droits, avant prélèvements sociaux éventuels sur les gains.
 
 Source : PAT-019 — M6
 

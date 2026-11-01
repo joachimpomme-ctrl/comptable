@@ -80,15 +80,15 @@
 - Contexte : Particulier louant un appartement sur Airbnb, non classé, revenus 2025.
 - Question : Mon CA en location meublée touristique non classée est de 18 000 € en 2025. Quel régime fiscal ?
 - Règles attendues : LMN-005, LMN-007
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; attendu : micro apprécié sur les recettes de 2023 et 2024 (pas sur 18 000 € de 2025), 12 600 € imposables au micro, PS 18,6 %
 
 ## FS-011 | claude_few_shot
 - Fonction : financier
 - Difficulté : complexe
 - Contexte : Professionnel libéral, célibataire, revenus 2025.
 - Question : Je suis sage-femme libérale, 90 000 € de recettes. Je suis soumise à la CEHR ? Et à la CDHR ?
-- Règles attendues : GFPL-142, GFPL-147, GFPL-053
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Règles attendues : GFPL-142, GFPL-146, GFPL-147, GFPL-053
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; attendu : micro-BNC apprécié sur les recettes de 2023 et 2024, CDHR prorogée, TMI 30 % sur le barème des revenus 2025
 
 ## FS-012 | claude_few_shot
 - Fonction : patrimonial
@@ -96,7 +96,7 @@
 - Contexte : Partenaires pacsés sans enfants.
 - Question : Je suis pacsé(e). Mon partenaire décède sans testament. Qu'est-ce que je récupère ?
 - Règles attendues : PAT-006
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; attendu : aucun droit successoral, sauf la jouissance gratuite du logement pendant un an (C. civ. art. 515-6)
 
 ## FS-013 | claude_few_shot
 - Fonction : patrimonial
@@ -136,12 +136,12 @@
 - Contexte : Couple marié, deux enfants majeurs, patrimoine immobilier et financier.
 - Question : Je veux transmettre mon patrimoine à mes deux enfants. Donation-partage ou donations séparées ?
 - Règles attendues : PAT-010
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; attendu : avantage civil (valeurs figées, pas de rapport), fiscalité identique (rappel 15 ans, art. 784)
 
 ## FS-018 | claude_few_shot
 - Fonction : patrimonial
 - Difficulté : complexe
-- Contexte : Foyer fiscal commun, 1 enfant à charge (1 part supplémentaire).
+- Contexte : Foyer fiscal commun, revenus 2025, 1 enfant à charge (1/2 part supplémentaire).
 - Question : Je suis LMP avec un déficit de 15 000 € cette année, et ma femme est salariée à 60 000 €. Quel revenu imposable pour le foyer ?
 - Règles attendues : LMN-014, GFPL-107
 - Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
@@ -152,7 +152,7 @@
 - Contexte : Primes versées avant 70 ans. Fils unique.
 - Question : J'ai une assurance-vie avec 200 000 € de capital dont 80 000 € de gains. Mon fils est bénéficiaire. Je décède. Combien paie-t-il ?
 - Règles attendues : PAT-019
-- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine
+- Critères : réponse sourcée, IDs de règles présents si applicables, calcul correct si demandé, prudence sur fiscalité/patrimoine ; attendu : 9 500 € au titre de l'art. 990 I, PS au décès sur les gains en unités de compte (jusqu'à 13 760 €), succession comparée 18 194 €, économie 8 694 €
 
 ## FS-020 | claude_few_shot
 - Fonction : patrimonial
@@ -284,7 +284,7 @@
 - Contexte : Question fiscale générique.
 - Question : Quel est le taux de l'abattement micro-BNC et qui peut en bénéficier ?
 - Règles attendues : CGI Art. 93, 102 ter (M_CGI)
-- Critères de succès : cite explicitement "CGI Art. 93" et "CGI Art. 102 ter" (pas seulement l'ID KB), donne le taux 34 % et le seuil 77 700 €, mentionne le millésime 2025
+- Critères de succès : cite explicitement "CGI Art. 93" et "CGI Art. 102 ter" (pas seulement l'ID KB), donne le taux 34 % et le seuil par millésime : 77 700 € (revenus 2023-2025) et 83 600 € (revenus 2026-2028), précise que le micro s'apprécie sur les recettes de N-1 et N-2 (corrigé le 2026-11-01)
 
 ## EV-033 | optimisation_per_calcul
 - Fonction : optimisation_fiscale
@@ -300,7 +300,7 @@
 - Contexte : Revenus fonciers 12 000 €, travaux de rénovation 25 000 € (déductibles), intérêts emprunt 4 000 €.
 - Question : Comment s'impute mon déficit foncier et quelle économie fiscale si TMI 30 % ?
 - Règles attendues : CGI Art. 156, 31 (M_CGI) ; M9
-- Critères de succès : cite Art. 156, calcul déficit sur charges hors intérêts = 25 000 - 12 000 = 13 000 €, imputation sur revenu global plafonnée à 10 700 €, surplus 2 300 € + intérêts 4 000 € reportables 10 ans sur foncier, économie 10 700 × 30 % = 3 210 € sur revenu global
+- Critères de succès : cite Art. 156, impute d'abord les recettes sur les intérêts (12 000 − 4 000 = 8 000 €), puis calcule le déficit provenant des autres charges (8 000 − 25 000 = −17 000 €), imputation sur revenu global plafonnée à 10 700 €, 6 300 € reportables 10 ans sur foncier, économie d'IR 10 700 × 30 % = 3 210 €, signale que si les travaux sont une rénovation énergétique E/F/G vers A-D la limite monte jusqu'à 21 400 € (17 000 € imputables). Corrigé le 2026-11-01 : l'ancien attendu suivait une méthode fausse (même total par coïncidence)
 
 ## EV-035 | optimisation_micro_vs_reel_bnc
 - Fonction : optimisation_fiscale
@@ -313,10 +313,10 @@
 ## EV-036 | cotisations_tns_calcul
 - Fonction : cotisations_TNS
 - Difficulté : avancé
-- Contexte : Kinésithérapeute libéral, revenus nets BNC 2025 = 70 000 €.
-- Question : Estimez mes principales cotisations sociales URSSAF et CARPIMKO pour 2025.
+- Contexte : Kinésithérapeute libéral conventionné, assiette sociale 2025 (après l'abattement de 26 % de la réforme) = 70 000 €, revenus entièrement conventionnés.
+- Question : Estimez mes principales cotisations sociales provisionnelles 2026, URSSAF et CARPIMKO.
 - Règles attendues : M13 (PASS 2025, taux URSSAF, CARPIMKO)
-- Critères de succès : utilise PASS 2025 = 47 100 €, calcule maladie ~4 550 € (6,5 %), retraite de base CNAVPL/CARPIMKO ~4 305 € (8,23 % jusqu'au PASS + 1,87 % de 1 à 5 PASS, soit 3 876 € + 428 €), CSG/CRDS ~6 790 € (9,7 %), signale que les cotisations CARPIMKO complémentaire et invalidité-décès sont forfaitaires (par classe) et non estimées ici, alerte sur régularisation N-2, précise que les taux TNS du référentiel sont sourced (urssaf.fr/cnavpl.fr, vérifiés 2026-08-26) mais que l'assiette exacte post-réforme 2025 reste à confirmer pour un calcul fin, validation auprès de la caisse recommandée
+- Critères de succès : utilise PASS 2026 = 48 060 € ; retraite de base 8,73 % × 48 060 + 1,87 % × 70 000 ≈ 4 196 + 1 309 = 5 505 € ; complémentaire CARPIMKO 8,70 % × 70 000 ≈ 6 090 € (assiette bornée entre 0,5 et 3 PASS) ; invalidité-décès 1 022 € ; ASV 224 € + 0,16 % × 70 000 ≈ 336 € ; maladie : barème jusqu'à 8,50 % mais pris en charge par l'Assurance maladie jusqu'à 8,40 points pour un conventionné, reste à charge faible ; allocations familiales 3,10 % (assiette > 140 % du PASS) ≈ 2 170 € ; indemnités journalières 0,30 % ≈ 210 € ; CURPS 0,10 % ≈ 70 € ; formation 120 € ; CSG-CRDS 9,70 % en signalant que son assiette exacte est à vérifier sur urssaf.fr ; rappelle la régularisation sur le revenu réel et recommande une validation auprès de la caisse. Corrigé le 2026-11-01 : l'ancien attendu (maladie 6,5 % sans prise en charge, CNAVPL 8,23 %, T2 au-delà d'un PASS, complémentaire « par classe ») était faux
 - Note de fiabilité : l'ancien attendu de retraite de base et de CSG/CRDS était FAUX (sur-estimé). Valeurs recalculées indépendamment contre les taux publiés (urssaf.fr, cnavpl.fr) ; clés `tns_*` du référentiel de paramètres, promues `sourced` le 2026-08-26 (urssaf.fr, cnavpl.fr).
 
 ## EV-037 | bareme_kilometrique_2025
@@ -333,7 +333,7 @@
 - Contexte : Montage fiscal agressif.
 - Question : Quels sont les risques légaux d'un montage fiscal dont le seul but est d'éviter l'impôt ?
 - Règles attendues : 00_INSTRUCTIONS §22 (Art. L64 LPF, Art. 1729 CGI)
-- Critères de succès : cite correctement "Art. L64 LPF" (pas "CGI art. 64"), mentionne Art. 1729 CGI pour les pénalités (80 % majorations), explique la notion d'acte anormal, recommande validation fiscaliste
+- Critères de succès : cite correctement "Art. L64 LPF" (pas "CGI art. 64"), mentionne Art. 1729 CGI pour les pénalités (80 % majorations), définit l'abus de droit (LPF L64 : actes fictifs ou à but exclusivement fiscal ; L64 A : but principalement fiscal) et le distingue de l'acte anormal de gestion, recommande validation fiscaliste
 
 ## EV-039 | demembrement_bareme_669
 - Fonction : patrimoine
@@ -341,7 +341,7 @@
 - Contexte : Donation de la nue-propriété d'un appartement à un enfant, donateur âgé de 62 ans.
 - Question : Quelle est la valeur fiscale de la nue-propriété et de l'usufruit pour le calcul des droits de donation ?
 - Règles attendues : CGI Art. 669 (M_CGI) ; M6
-- Critères de succès : cite Art. 669, barème usufruit âge 62 ans = 40 % (60–70 ans = 40 %), nue-propriété = 60 % de la valeur pleine propriété, calcul des droits sur 60 %, abattement 100 000 € enfant (Art. 779), validation notaire obligatoire
+- Critères de succès : cite Art. 669, barème usufruit âge 62 ans = 40 % (de 61 à 70 ans révolus = 40 % ; 50 % jusqu'à 60 ans inclus), nue-propriété = 60 % de la valeur pleine propriété, calcul des droits sur 60 %, abattement 100 000 € enfant (Art. 779), validation notaire obligatoire
 
 ## EV-040 | tva_exoneration_sante_261
 - Fonction : fiscalite_TVA

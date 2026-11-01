@@ -112,7 +112,7 @@ Checklists opérationnelles et workflows détaillés pour l'agent Gem.
 - [ ] Ligne 231 : charges copropriété déductibles
 - [ ] Ligne 250 : intérêts d'emprunt (déductibles sans limite en foncier)
 - [ ] Ligne 251 : taxe foncière
-- [ ] Déficit foncier : charges hors intérêts > recettes → imputable sur revenu global à 10 700 €/an ; surplus + intérêts reportables 10 ans sur foncier
+- [ ] Déficit foncier : imputer les recettes d'abord sur les intérêts ; le déficit provenant des autres charges s'impute sur le revenu global dans la limite de 10 700 €/an (jusqu'à 21 400 € avec des travaux de rénovation énergétique E/F/G vers A-D, reclassement au plus tard le 31/12/2027) ; excédent et intérêts reportables 10 ans sur foncier
 - [ ] Location à des proches : vérifier loyer normal (risque requalification)
 - [ ] SCI : reporter quote-part résultat sur 2044 S
 
@@ -152,7 +152,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 |-----------|----------|------------|--------|
 | PER | Versements déductibles × TMI | Plafond 10 % des revenus d'activité N-1 (minimum 10 % du PASS N-1) ; report de la fraction non utilisée sur 3 ans, puis 5 ans à compter de l'imposition des revenus 2026 ; versements à 70 ans ou plus non déductibles depuis 2026 | CGI art. 163 quatervicies ; LF 2026 art. 9 et 10 |
 | Dons associations | Réduction 66 % (75 % aide aux personnes) | Don ≤ 20 % revenu imposable | CGI art. 200 |
-| Déficit foncier | Imputation ≤ 10 700 €/an revenu global | Régime réel, travaux déductibles, location 3 ans | CGI art. 156 |
+| Déficit foncier | Imputation ≤ 10 700 €/an revenu global (jusqu'à 21 400 € avec rénovation énergétique, jusqu'au 31/12/2027) | Régime réel, travaux déductibles, location 3 ans | CGI art. 156 |
 | Micro-BNC vs réel | Réel avantageux si charges > 34 % CA | CA ≤ 77 700 € (revenus 2025) / 83 600 € (revenus 2026-2028) pour micro | CGI art. 93, 102 ter |
 | Quotient familial | Réduction TMI via demi-parts | Enfants à charge, invalidité, parent isolé | CGI art. 194-197 |
 | Frais réels salariés | Déduction charges vs abattement 10 % | Si charges > 10 % salaire net | CGI art. 83 |
@@ -166,7 +166,7 @@ Pour toute stratégie : citer le dispositif légal exact + article CGI — véri
 | Démembrement | NP sortie du patrimoine taxable (IFI, succession) | Barème âge art. 669. Irréversible. | CGI art. 669, M6 |
 | SCI à l'IR | Transparence fiscale, optimisation succession | Pas d'IS → PV pro impossibles | M6 |
 | SCI à l'IS | Amortissement bien, capitalisation résultats | Double imposition à la sortie (IS puis PFU 31,4 % sur les dividendes perçus depuis 2026). Option révocable jusqu'au 5e exercice qui la suit, définitive ensuite (art. 239) ; IS de plein droit en cas de location meublée. | M6 |
-| Pacte Dutreil | Abattement 75 % DMTG transmission entreprise | Engagement collectif + individuel conservation | CGI art. 787 B, M12 |
+| Pacte Dutreil | Exonération de 75 % des DMTG sur les titres transmis | Engagement collectif (2 ans minimum) + individuel (6 ans depuis la LF 2026) ; aucune condition de parenté ; biens non affectés à l'activité exclus | CGI art. 787 B, M12 |
 | Assurance-vie | Rachats allégés + transmission 152 500 €/bénéficiaire | Versements avant 70 ans, durée > 8 ans | CGI art. 125-0 A, 990 I |
 | Donation-partage | Figer valeurs, abattement 100 000 € × enfant/15 ans | Irréversible. Notaire obligatoire. | CGI art. 779, 784 |
 

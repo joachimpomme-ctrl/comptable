@@ -63,10 +63,10 @@
       "id": 5,
       "file": "referentiel_parametres.json",
       "label": "Référentiel de paramètres",
-      "description": "SOURCE DE VÉRITÉ UNIQUE des chiffres fiscaux : 36 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle, URL et date de vérification. 36 clés sourced (passe du 2026-08-26, corrections et ajouts du 2026-11-01). En cas d'écart avec un texte du corpus, le référentiel prime.",
+      "description": "SOURCE DE VÉRITÉ UNIQUE des chiffres fiscaux : 38 clés (seuils, taux, abattements, plafonds) avec millésime, source officielle, URL et date de vérification. 38 clés sourced (passe du 2026-08-26, corrections et ajouts du 2026-11-01). En cas d'écart avec un texte du corpus, le référentiel prime.",
       "module": "all",
       "priority": "niveau_0",
-      "parameter_count": 36
+      "parameter_count": 38
     },
     {
       "id": 6,
@@ -108,11 +108,11 @@
       "id": 10,
       "file": "M_CGI_code_general_impots.md",
       "label": "Code Général des Impôts",
-      "description": "51 articles du CGI extraits du texte officiel (millesime 2026) : BNC (92-103, 102 ter), revenus fonciers (14, 28-31, 156), BIC/LMNP (35, 39), plus-values (150 U, 150 VB, 150-0 A, 151 septies), assurance-vie (125-0 A, 990 I), retraite (154 bis, 163 quatervicies), barème IR (194, 195, 197), réductions impôt (200, 200-0 A), TVA (261), démembrement (669), niches (200-0 A), DMTG/succession (777, 779, 784, 787 B/C, 790 B/G), IFI (964-979). Salariés : 83.",
+      "description": "63 articles du CGI extraits du texte officiel (millesime 2026) : BNC (92-103, 102 ter), revenus fonciers (14, 28-31, 156), BIC/LMNP (35, 39), plus-values (150 U, 150 VB, 150-0 A, 151 septies), assurance-vie (125-0 A, 990 I), retraite (154 bis, 163 quatervicies), barème IR (194, 195, 197), réductions impôt (200, 200-0 A), TVA (261), démembrement (669), niches (200-0 A), DMTG/succession (777, 779, 784, 787 B/C, 790 B/G), IFI (964-979). Salariés : 83. Ajoutés le 2026-11-01 : 50-0, 150 VC, 200 A, 219, 223 sexies, 224, 293 B, 757 B, 790 A bis, 968, 977, 1609 nonies G.",
       "module": "M_CGI",
       "priority": "niveau_4",
       "millesime": 2026,
-      "article_count": 51,
+      "article_count": 63,
       "source": "LEGITEXT000006069577 — Code Général des Impôts (texte intégral ; export Légifrance du 30/10/2026 pour 30 articles réextraits le 2026-11-01)"
     },
     {
@@ -138,20 +138,20 @@
     "M11": "Épargne salariale — PEE, PERCOL, intéressement, abondement",
     "M12": "Transmission, Pacte Dutreil, DPE, décote IFI",
     "FORM": "Formules de calcul et risques critiques",
-    "M_CGI": "Texte légal officiel — 51 articles du CGI millesime 2026",
+    "M_CGI": "Texte légal officiel — 63 articles du CGI millesime 2026",
     "M13": "Intégré dans 04_formules_et_risques.md (section BARÈMES DE RÉFÉRENCE REF-001 à REF-007)"
   },
   "statistics": {
     "knowledge_files_gemini": 10,
     "golden_rules": 391,
-    "cgi_articles": 51,
+    "cgi_articles": 63,
     "few_shot_examples": 25,
     "evaluation_test_cases": 45,
     "governance_playbooks": 4,
     "formulas": 7,
     "critical_risks": 8,
-    "referentiel_parametres_keys": 36,
-    "referentiel_parametres_sourced": 36,
+    "referentiel_parametres_keys": 38,
+    "referentiel_parametres_sourced": 38,
     "gemini_note": "Limite Gemini 10 fichiers : referentiel_parametres.json remplace 09_agent_manifest.json dans la liste Gemini"
   },
   "rule_status": {

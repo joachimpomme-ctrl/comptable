@@ -157,8 +157,8 @@ def cgi(args):
         if m and _norm(m.group(1)) == _norm(article):
             print(s.strip())
             return 0
-    print(f"[DATA_NOT_FOUND_IN_KNOWLEDGE] Article {article} absent du corpus M_CGI (51 articles).")
     arts = re.findall(r"^## Article (.+?) —", text, re.MULTILINE)
+    print(f"[DATA_NOT_FOUND_IN_KNOWLEDGE] Article {article} absent du corpus M_CGI ({len(arts)} articles).")
     print("Articles disponibles :", ", ".join(a.strip() for a in arts))
     return 1
 
